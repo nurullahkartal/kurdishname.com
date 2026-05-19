@@ -2,7 +2,6 @@
 
 Kürtçe kız ve erkek isimlerini anlamları, köken bilgileri ve benzer isim önerileriyle birlikte keşfedebileceğiniz, modern ve performans odaklı bir web uygulaması.
 
-View your app in AI Studio: https://ai.studio/apps/134c0808-19d7-499c-b5ba-21fe699791c0
 
 ---
 
