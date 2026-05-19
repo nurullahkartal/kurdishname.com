@@ -1,0 +1,508 @@
+{
+  "title": "100 kurdische Blumen- und Pflanzennamen",
+  "description": "100 kurdische Blumen- und Pflanzennamen listesi.",
+  "names": [
+    {
+      "name": "Berfîn",
+      "id": "berfin",
+      "meaning": "Aus Schnee bestehend, Schneeglöckchen und Symbol der Reinheit."
+    },
+    {
+      "name": "Sosin",
+      "id": "sosin",
+      "meaning": "..."
+    },
+    {
+      "name": "Nergiz",
+      "id": "nergiz",
+      "meaning": "..."
+    },
+    {
+      "name": "Şîlan",
+      "id": "silan_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Beybûn",
+      "id": "beybun",
+      "meaning": "Weiße Kamille, Gänseblümchen, zarte Frühlingsblume."
+    },
+    {
+      "name": "Rihan",
+      "id": "rihan_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Pelîn",
+      "id": "pelin",
+      "meaning": "Blätter."
+    },
+    {
+      "name": "Nûpel",
+      "id": "nupel",
+      "meaning": "..."
+    },
+    {
+      "name": "Pelda",
+      "id": "pelda",
+      "meaning": "..."
+    },
+    {
+      "name": "Darîn",
+      "id": "darin",
+      "meaning": "Vom Herrscher, Baum, wie Herrscher, Baum."
+    },
+    {
+      "name": "Mazî",
+      "id": "mazi",
+      "meaning": "Eichel, Symbol für Langlebigkeit und tiefe Wurzeln."
+    },
+    {
+      "name": "Darçîn",
+      "id": "darcin",
+      "meaning": "..."
+    },
+    {
+      "name": "Henar",
+      "id": "henar",
+      "meaning": "Granatapfel, Symbol für Fruchtbarkeit und Schönheit."
+    },
+    {
+      "name": "Sêvê",
+      "id": "seve",
+      "meaning": "Wie ein Apfel, rotbäckiges, edles frisches Mädchen."
+    },
+    {
+      "name": "Mêw",
+      "id": "mew",
+      "meaning": "Rebe, Weinrebe, Symbol für Fruchtbarkeit."
+    },
+    {
+      "name": "Kulîlk",
+      "id": "kulilk",
+      "meaning": "Blume, Wildblume, schöne Blüte."
+    },
+    {
+      "name": "Heşîn",
+      "id": "hesin",
+      "meaning": "Grün, saftig grüne Weiden."
+    },
+    {
+      "name": "Sperî",
+      "id": "speri",
+      "meaning": "Seltene alpine Wildblume, die auf Klippen blüht."
+    },
+    {
+      "name": "Gezîz",
+      "id": "geziz",
+      "meaning": "Eine zarte, farbenfrohe Wildblume, die im Frühling blüht."
+    },
+    {
+      "name": "Gulan",
+      "id": "gulan",
+      "meaning": "..."
+    },
+    {
+      "name": "Nîsan",
+      "id": "nisan_2",
+      "meaning": "April, Frühlingsblütezeit."
+    },
+    {
+      "name": "Adar",
+      "id": "adar",
+      "meaning": "..."
+    },
+    {
+      "name": "Newroz",
+      "id": "newroz",
+      "meaning": "..."
+    },
+    {
+      "name": "Bihar",
+      "id": "bihar",
+      "meaning": "Frühlingszeit, Wiedergeburt der Natur, Freude."
+    },
+    {
+      "name": "Pizdane",
+      "id": "pizdane",
+      "meaning": "Knospe, frischer Spross, Frühlingsbote."
+    },
+    {
+      "name": "Şax",
+      "id": "sax",
+      "meaning": "Ast, Zweig eines Baumes, Ausläufer der Natur."
+    },
+    {
+      "name": "Dara",
+      "id": "dara",
+      "meaning": "..."
+    },
+    {
+      "name": "Nudar",
+      "id": "nudar",
+      "meaning": "Frischer Baum, neuer Spross; steht für Vitalität."
+    },
+    {
+      "name": "Gule",
+      "id": "gule",
+      "meaning": "Rose; der Name für Eleganz, Liebe und die eleganteste Blume der Natur."
+    },
+    {
+      "name": "Gulê",
+      "id": "gule",
+      "meaning": "Rose; der Name für Eleganz, Liebe und die eleganteste Blume der Natur."
+    },
+    {
+      "name": "Gulistan",
+      "id": "gulistan",
+      "meaning": "..."
+    },
+    {
+      "name": "Gulbahar",
+      "id": "gulbahar",
+      "meaning": "Frühlingsrose, die bunteste Rose des Frühlings."
+    },
+    {
+      "name": "Gulnaze",
+      "id": "gulnaze",
+      "meaning": "Zarte und kokette Rose, sich anmutig wiegend."
+    },
+    {
+      "name": "Guldane",
+      "id": "guldane",
+      "meaning": "Rosenkorn, einzige kostbare und einzigartige Knospe."
+    },
+    {
+      "name": "Gulsevin",
+      "id": "gulsevin",
+      "meaning": "Geliebte Rose, verbreitet Glück und Freude."
+    },
+    {
+      "name": "Gulperî",
+      "id": "gulperi",
+      "meaning": "Rosenfee."
+    },
+    {
+      "name": "Gulav",
+      "id": "gulav",
+      "meaning": "Rosenwasser, erfrischender Duft für Entspannung."
+    },
+    {
+      "name": "Gula",
+      "id": "gula",
+      "meaning": "Rosengarten."
+    },
+    {
+      "name": "Xunav",
+      "id": "xunav",
+      "meaning": "Tautropfen, Feuchtigkeit auf dem Blatt im Morgengrauen."
+    },
+    {
+      "name": "Hevîn",
+      "id": "hevin",
+      "meaning": "Vom Hoffnung, wie Hoffnung."
+    },
+    {
+      "name": "Zozan",
+      "id": "zozan_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Asmîn",
+      "id": "asmin",
+      "meaning": "..."
+    },
+    {
+      "name": "Bayan",
+      "id": "bayan",
+      "meaning": "Eine zarte Wildblume, die in Berghängen blüht."
+    },
+    {
+      "name": "Çimen",
+      "id": "cimen",
+      "meaning": "Jemand, der die Grünfläche, die Wiese und das frische Grün der Natur repräsentiert."
+    },
+    {
+      "name": "Giya",
+      "id": "giya",
+      "meaning": "Frisches grünes Gras, der smaragdgrüne Mantel der Natur."
+    },
+    {
+      "name": "Rezan",
+      "id": "rezan",
+      "meaning": "Pionier, Wegweiser, Mentor; Person mit der Weisheit, die die Gesellschaft erleuchtet."
+    },
+    {
+      "name": "Rez",
+      "id": "rez",
+      "meaning": "..."
+    },
+    {
+      "name": "Baxçe",
+      "id": "baxce",
+      "meaning": "Garten, gepflegtes buntes Heiligtum der Blumen."
+    },
+    {
+      "name": "Şîtil",
+      "id": "sitil",
+      "meaning": "Junger Setzling, Symbol für Wachstum und Hoffnung."
+    },
+    {
+      "name": "Kem",
+      "id": "kem_2",
+      "meaning": "Frische Rosenknospe, Symbol für Jugend und Reinheit."
+    },
+    {
+      "name": "Pelşîn",
+      "id": "pelsin",
+      "meaning": "..."
+    },
+    {
+      "name": "Pelzer",
+      "id": "pelzer",
+      "meaning": "Goldenes Herbstblatt, Symbol für poetische Tiefe."
+    },
+    {
+      "name": "Pelsor",
+      "id": "pelsor",
+      "meaning": "Sonnenrotes Blatt, Symbol für tiefe Leidenschaft."
+    },
+    {
+      "name": "Tirêj",
+      "id": "tirej_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Xunavî",
+      "id": "xunavi",
+      "meaning": "Taufrisch, nass von Morgentau, frisch und rein."
+    },
+    {
+      "name": "Nermîn",
+      "id": "nermin",
+      "meaning": "..."
+    },
+    {
+      "name": "Sosinî",
+      "id": "sosini",
+      "meaning": "Von der Schwertlilie, ihre violette Farbe tragend."
+    },
+    {
+      "name": "Nergizî",
+      "id": "nergizi",
+      "meaning": "Wie eine Narzisse."
+    },
+    {
+      "name": "Beybûnî",
+      "id": "beybuni",
+      "meaning": "Von der Kamille, sauber, sanft und duftend."
+    },
+    {
+      "name": "Henarî",
+      "id": "henari",
+      "meaning": "Vom Granatapfel, fruchtbar und süß rotbäckig."
+    },
+    {
+      "name": "Sêvîn",
+      "id": "sevin",
+      "meaning": "..."
+    },
+    {
+      "name": "Daristan",
+      "id": "daristan",
+      "meaning": "Wald, tiefes Waldland, Quelle von Sauerstoff und Leben."
+    },
+    {
+      "name": "Mêrg",
+      "id": "merg",
+      "meaning": "Wiese, üppiges grünes Grasland mit Bächen."
+    },
+    {
+      "name": "Newal",
+      "id": "newal",
+      "meaning": "Bachbett, sauberes Tal mit fließendem Wasser."
+    },
+    {
+      "name": "Kendal",
+      "id": "kendal",
+      "meaning": "..."
+    },
+    {
+      "name": "Havin",
+      "id": "havin_2",
+      "meaning": "Sommerzeit; repräsentiert Wärme, Fülle und die lebendigste Zeit der Natur."
+    },
+    {
+      "name": "Payiz",
+      "id": "payiz",
+      "meaning": "Herbstzeit, Zeit der goldenen Blätter."
+    },
+    {
+      "name": "Zivistan",
+      "id": "zivistan",
+      "meaning": "Winterzeit, Zeit der weißen Stille."
+    },
+    {
+      "name": "Cihan",
+      "id": "cihan",
+      "meaning": "..."
+    },
+    {
+      "name": "Amara",
+      "id": "amara",
+      "meaning": "Lebendig, unsterblich, ewig während."
+    },
+    {
+      "name": "Adarî",
+      "id": "adari",
+      "meaning": "Vom Monat März, geboren mit dem Erwachen des Frühlings."
+    },
+    {
+      "name": "Nûda",
+      "id": "nuda",
+      "meaning": "Neugeborenes, Knospe, frischer Anfang."
+    },
+    {
+      "name": "Jînda",
+      "id": "jinda",
+      "meaning": "..."
+    },
+    {
+      "name": "Berav",
+      "id": "berav",
+      "meaning": "Uferseite, Seeufer, schönes Flussufer."
+    },
+    {
+      "name": "Sitav",
+      "id": "sitav",
+      "meaning": "Sonnenseite, sonnenzugewandter Berghang."
+    },
+    {
+      "name": "Ava",
+      "id": "ava",
+      "meaning": "Wasser; erschlossen."
+    },
+    {
+      "name": "Rojîn",
+      "id": "rojin_3",
+      "meaning": "..."
+    },
+    {
+      "name": "Şevîn",
+      "id": "sevin",
+      "meaning": "..."
+    },
+    {
+      "name": "Hîvron",
+      "id": "hivron",
+      "meaning": "..."
+    },
+    {
+      "name": "Stêrk",
+      "id": "sterk",
+      "meaning": "..."
+    },
+    {
+      "name": "Tara",
+      "id": "tara_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Pîroz",
+      "id": "piroz_2",
+      "meaning": "Heilig, gesegnet und beglückwünscht."
+    },
+    {
+      "name": "Xerzî",
+      "id": "xerzi",
+      "meaning": "Aus der historischen Region Garzan stammend."
+    },
+    {
+      "name": "Botanî",
+      "id": "botani",
+      "meaning": "Aus Botan."
+    },
+    {
+      "name": "Soranî",
+      "id": "sorani",
+      "meaning": "Der reiche literarische Sorani-Dialekt und die Region."
+    },
+    {
+      "name": "Badînî",
+      "id": "badini",
+      "meaning": "Gläubig."
+    },
+    {
+      "name": "Lolanî",
+      "id": "lolani",
+      "meaning": "Vom Stamm."
+    },
+    {
+      "name": "Cizîrî",
+      "id": "ciziri",
+      "meaning": "Aus Cizre."
+    },
+    {
+      "name": "Merdînî",
+      "id": "merdin",
+      "meaning": "Die prächtige Steinstadt Mardin, bekannt für Toleranz."
+    },
+    {
+      "name": "Amedî",
+      "id": "amed",
+      "meaning": "Der historische und kulturelle Name von Diyarbakır."
+    },
+    {
+      "name": "Dersimî",
+      "id": "dersim",
+      "meaning": "Silbernes Tor; der Name einer alten und unbezwingbaren Region in Kurdistan."
+    },
+    {
+      "name": "Zapî",
+      "id": "zap",
+      "meaning": "Der Fluss Zap, wildes und reines Gewässer."
+    },
+    {
+      "name": "Dijlê",
+      "id": "dijle",
+      "meaning": "..."
+    },
+    {
+      "name": "Firatî",
+      "id": "firat",
+      "meaning": "Euphrat."
+    },
+    {
+      "name": "Arasî",
+      "id": "aras",
+      "meaning": "..."
+    },
+    {
+      "name": "Zagrosî",
+      "id": "zagros",
+      "meaning": "..."
+    },
+    {
+      "name": "Gabarî",
+      "id": "gabar",
+      "meaning": "Majestätischer, mächtiger und beständiger Berg."
+    },
+    {
+      "name": "Cudî",
+      "id": "cudii",
+      "meaning": "Berg Cudi."
+    },
+    {
+      "name": "Sîpanî",
+      "id": "sipan",
+      "meaning": "..."
+    }
+  ],
+  "content": "## Liste der Namen und Bedeutungen\n\n1. **[Berfîn](/de/name/berfin)**: Aus Schnee bestehend, Schneeglöckchen und Symbol der Reinheit.\n2. **[Sosin](/de/name/sosin)**: ...\n3. **[Nergiz](/de/name/nergiz)**: ...\n4. **Şîlan**: ...\n5. **[Beybûn](/de/name/beybun)**: Weiße Kamille, Gänseblümchen, zarte Frühlingsblume.\n6. **Rihan**: ...\n7. **[Pelîn](/de/name/pelin)**: Blätter.\n8. **[Nûpel](/de/name/nupel)**: ...\n9. **[Pelda](/de/name/pelda)**: ...\n10. **[Darîn](/de/name/darin)**: Vom Herrscher, Baum, wie Herrscher, Baum.\n11. **[Mazî](/de/name/mazi)**: Eichel, Symbol für Langlebigkeit und tiefe Wurzeln.\n12. **[Darçîn](/de/name/darcin)**: ...\n13. **[Henar](/de/name/henar)**: Granatapfel, Symbol für Fruchtbarkeit und Schönheit.\n14. **[Sêvê](/de/name/seve)**: Wie ein Apfel, rotbäckiges, edles frisches Mädchen.\n15. **[Mêw](/de/name/mew)**: Rebe, Weinrebe, Symbol für Fruchtbarkeit.\n16. **[Kulîlk](/de/name/kulilk)**: Blume, Wildblume, schöne Blüte.\n17. **[Heşîn](/de/name/hesin)**: Grün, saftig grüne Weiden.\n18. **[Sperî](/de/name/speri)**: Seltene alpine Wildblume, die auf Klippen blüht.\n19. **[Gezîz](/de/name/geziz)**: Eine zarte, farbenfrohe Wildblume, die im Frühling blüht.\n20. **[Gulan](/de/name/gulan)**: ...\n21. **Nîsan**: April, Frühlingsblütezeit.\n22. **[Adar](/de/name/adar)**: ...\n23. **[Newroz](/de/name/newroz)**: ...\n24. **[Bihar](/de/name/bihar)**: Frühlingszeit, Wiedergeburt der Natur, Freude.\n25. **[Pizdane](/de/name/pizdane)**: Knospe, frischer Spross, Frühlingsbote.\n26. **[Şax](/de/name/sax)**: Ast, Zweig eines Baumes, Ausläufer der Natur.\n27. **[Dara](/de/name/dara)**: ...\n28. **[Nudar](/de/name/nudar)**: Frischer Baum, neuer Spross; steht für Vitalität.\n29. **[Gule](/de/name/gule)**: Rose; der Name für Eleganz, Liebe und die eleganteste Blume der Natur.\n30. **[Gulê](/de/name/gule)**: Rose; der Name für Eleganz, Liebe und die eleganteste Blume der Natur.\n31. **Gulistan**: ...\n32. **Gulbahar**: Frühlingsrose, die bunteste Rose des Frühlings.\n33. **[Gulnaze](/de/name/gulnaze)**: Zarte und kokette Rose, sich anmutig wiegend.\n34. **Guldane**: Rosenkorn, einzige kostbare und einzigartige Knospe.\n35. **Gulsevin**: Geliebte Rose, verbreitet Glück und Freude.\n36. **[Gulperî](/de/name/gulperi)**: Rosenfee.\n37. **[Gulav](/de/name/gulav)**: Rosenwasser, erfrischender Duft für Entspannung.\n38. **[Gula](/de/name/gula)**: Rosengarten.\n39. **[Xunav](/de/name/xunav)**: Tautropfen, Feuchtigkeit auf dem Blatt im Morgengrauen.\n40. **[Hevîn](/de/name/hevin)**: Vom Hoffnung, wie Hoffnung.\n41. **Zozan**: ...\n42. **[Asmîn](/de/name/asmin)**: ...\n43. **[Bayan](/de/name/bayan)**: Eine zarte Wildblume, die in Berghängen blüht.\n44. **[Çimen](/de/name/cimen)**: Jemand, der die Grünfläche, die Wiese und das frische Grün der Natur repräsentiert.\n45. **[Giya](/de/name/giya)**: Frisches grünes Gras, der smaragdgrüne Mantel der Natur.\n46. **[Rezan](/de/name/rezan)**: Pionier, Wegweiser, Mentor; Person mit der Weisheit, die die Gesellschaft erleuchtet.\n47. **[Rez](/de/name/rez)**: ...\n48. **Baxçe**: Garten, gepflegtes buntes Heiligtum der Blumen.\n49. **[Şîtil](/de/name/sitil)**: Junger Setzling, Symbol für Wachstum und Hoffnung.\n50. **Kem**: Frische Rosenknospe, Symbol für Jugend und Reinheit.\n51. **[Pelşîn](/de/name/pelsin)**: ...\n52. **[Pelzer](/de/name/pelzer)**: Goldenes Herbstblatt, Symbol für poetische Tiefe.\n53. **[Pelsor](/de/name/pelsor)**: Sonnenrotes Blatt, Symbol für tiefe Leidenschaft.\n54. **Tirêj**: ...\n55. **[Xunavî](/de/name/xunavi)**: Taufrisch, nass von Morgentau, frisch und rein.\n56. **[Nermîn](/de/name/nermin)**: ...\n57. **[Sosinî](/de/name/sosini)**: Von der Schwertlilie, ihre violette Farbe tragend.\n58. **[Nergizî](/de/name/nergizi)**: Wie eine Narzisse.\n59. **[Beybûnî](/de/name/beybuni)**: Von der Kamille, sauber, sanft und duftend.\n60. **[Henarî](/de/name/henari)**: Vom Granatapfel, fruchtbar und süß rotbäckig.\n61. **[Sêvîn](/de/name/sevin)**: ...\n62. **[Daristan](/de/name/daristan)**: Wald, tiefes Waldland, Quelle von Sauerstoff und Leben.\n63. **[Mêrg](/de/name/merg)**: Wiese, üppiges grünes Grasland mit Bächen.\n64. **[Newal](/de/name/newal)**: Bachbett, sauberes Tal mit fließendem Wasser.\n65. **[Kendal](/de/name/kendal)**: ...\n66. **Havin**: Sommerzeit; repräsentiert Wärme, Fülle und die lebendigste Zeit der Natur.\n67. **[Payiz](/de/name/payiz)**: Herbstzeit, Zeit der goldenen Blätter.\n68. **[Zivistan](/de/name/zivistan)**: Winterzeit, Zeit der weißen Stille.\n69. **Cihan**: ...\n70. **[Amara](/de/name/amara)**: Lebendig, unsterblich, ewig während.\n71. **[Adarî](/de/name/adari)**: Vom Monat März, geboren mit dem Erwachen des Frühlings.\n72. **[Nûda](/de/name/nuda)**: Neugeborenes, Knospe, frischer Anfang.\n73. **[Jînda](/de/name/jinda)**: ...\n74. **[Berav](/de/name/berav)**: Uferseite, Seeufer, schönes Flussufer.\n75. **[Sitav](/de/name/sitav)**: Sonnenseite, sonnenzugewandter Berghang.\n76. **[Ava](/de/name/ava)**: Wasser; erschlossen.\n77. **Rojîn**: ...\n78. **[Şevîn](/de/name/sevin)**: ...\n79. **[Hîvron](/de/name/hivron)**: ...\n80. **[Stêrk](/de/name/sterk)**: ...\n81. **Tara**: ...\n82. **Pîroz**: Heilig, gesegnet und beglückwünscht.\n83. **Xerzî**: Aus der historischen Region Garzan stammend.\n84. **[Botanî](/de/name/botani)**: Aus Botan.\n85. **Soranî**: Der reiche literarische Sorani-Dialekt und die Region.\n86. **[Badînî](/de/name/badini)**: Gläubig.\n87. **[Lolanî](/de/name/lolani)**: Vom Stamm.\n88. **[Cizîrî](/de/name/ciziri)**: Aus Cizre.\n89. **Merdînî**: Die prächtige Steinstadt Mardin, bekannt für Toleranz.\n90. **[Amedî](/de/name/amed)**: Der historische und kulturelle Name von Diyarbakır.\n91. **[Dersimî](/de/name/dersim)**: Silbernes Tor; der Name einer alten und unbezwingbaren Region in Kurdistan.\n92. **[Zapî](/de/name/zap)**: Der Fluss Zap, wildes und reines Gewässer.\n93. **[Dijlê](/de/name/dijle)**: ...\n94. **[Firatî](/de/name/firat)**: Euphrat.\n95. **[Arasî](/de/name/aras)**: ...\n96. **[Zagrosî](/de/name/zagros)**: ...\n97. **[Gabarî](/de/name/gabar)**: Majestätischer, mächtiger und beständiger Berg.\n98. **[Cudî](/de/name/cudii)**: Berg Cudi.\n99. **[Sîpanî](/de/name/sipan)**: ...\n\n\n\n## Namensursprung\n\nDie Ursprünge kurdischer Mädchennamen sind tief in den historischen Schichten der kurdischen Sprache verwurzelt, die zur iranischen Gruppe der indogermanischen Sprachfamilie gehört. Viele dieser Namen haben bis heute überlebt, indem sie durch alte avestische Texte, sprachliche Überreste der Meder-Zivilisation und klassische kurdische Literatur gefiltert wurden. Diese Namen besitzen phonetisch äußerst melodische und weiche Töne und stehen meist für das Wiedererwachen der Natur, Himmelskörper und edle Gefühle. Die ästhetische Harmonisierung weiblicher Suffixe und Wortwurzeln in der kurdischen Grammatik verleiht Mädchennamen eine einzigartige Eleganz und Flüssigkeit.\n\n## Kulturelle Bedeutung\n\nIn der kurdischen Kultur ist die Frau das wichtigste Symbol für Leben, Fruchtbarkeit und gesellschaftliche Widerstandskraft. Dies spiegelt sich deutlich in den Namen wider, die Mädchen gegeben werden. Namen wie „Jiyan“ (Leben) oder „Hevîn“ (Hoffnung) verherrlichen die gründende und einende Rolle der Frau in der Gesellschaft. Zudem sind die fruchtbaren Böden, majestätischen Berge und Wildblumen Mesopotamiens die größte Inspirationsquelle für Mädchennamen. Bei der Wahl eines Mädchennamens wird gewünscht, dass das Kind seiner Familie Glück, Fülle und Licht bringt; daher wurden Namen rund um Licht, Sonne und Frühling in der Geschichte schon immer geschätzt.\n\n## Häufig gestellte Fragen (FAQ)\n\n### Was sind die Besonderheiten kurdischer Blumennamen?\n\nSie besitzen sehr weiche, süße und melodische Klänge, die das Erwachen des Frühlings und die zarte mesopotamische Flora widerspiegeln.",
+  "faqs": [
+    {
+      "question": "Was sind die Besonderheiten kurdischer Blumennamen?",
+      "answer": "Sie besitzen sehr weiche, süße und melodische Klänge, die das Erwachen des Frühlings und die zarte mesopotamische Flora widerspiegeln."
+    }
+  ]
+}

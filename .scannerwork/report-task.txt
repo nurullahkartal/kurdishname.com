@@ -1,0 +1,6 @@
+projectKey=KurdishName
+serverUrl=http://localhost:9000
+serverVersion=26.4.0.121862
+dashboardUrl=http://localhost:9000/dashboard?id=KurdishName
+ceTaskId=e5c3c577-b5e4-4ea6-a07e-fcb8afbad71d
+ceTaskUrl=http://localhost:9000/api/ce/task?id=e5c3c577-b5e4-4ea6-a07e-fcb8afbad71d

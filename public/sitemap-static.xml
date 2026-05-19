@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://kurdishname.com/tr</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr"/>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr"/>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/de</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr"/>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/ar</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr"/>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/tr/kategori/kiz</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/kiz"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/girls"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/maedchen"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/بنات"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/kiz"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/tr/kategori/erkek</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/erkek"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/boys"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/jungen"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/ذكور"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/erkek"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/en/category/girls</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/kiz"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/girls"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/maedchen"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/بنات"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/kiz"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/en/category/boys</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/erkek"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/boys"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/jungen"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/ذكور"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/erkek"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/de/kategorie/maedchen</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/kiz"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/girls"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/maedchen"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/بنات"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/kiz"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/de/kategorie/jungen</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/erkek"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/boys"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/jungen"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/ذكور"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/erkek"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/ar/فئة/بنات</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/kiz"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/girls"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/maedchen"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/بنات"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/kiz"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/ar/فئة/ذكور</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/erkek"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/boys"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/jungen"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/ذكور"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/erkek"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/tr/kategori/doga</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/doga"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/nature"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/natur"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/طبيعة"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/doga"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/en/category/nature</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/doga"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/nature"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/natur"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/طبيعة"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/doga"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/de/kategorie/natur</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/doga"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/nature"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/natur"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/طبيعة"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/doga"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/ar/فئة/طبيعة</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/doga"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/nature"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/natur"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/طبيعة"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/doga"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/tr/kategori/guc</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/guc"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/power"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/macht"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/قوة"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/guc"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/en/category/power</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/guc"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/power"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/macht"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/قوة"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/guc"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/de/kategorie/macht</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/guc"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/power"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/macht"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/قوة"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/guc"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/ar/فئة/قوة</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/guc"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/power"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/macht"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/قوة"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/guc"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/tr/kategori/guzellik</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/guzellik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/beauty"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/schoenheit"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/جمال"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/guzellik"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/en/category/beauty</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/guzellik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/beauty"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/schoenheit"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/جمال"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/guzellik"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/de/kategorie/schoenheit</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/guzellik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/beauty"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/schoenheit"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/جمال"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/guzellik"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/ar/فئة/جمال</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/guzellik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/beauty"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/schoenheit"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/جمال"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/guzellik"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/tr/kategori/isik</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/isik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/light"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/licht"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/نور"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/isik"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/en/category/light</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/isik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/light"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/licht"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/نور"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/isik"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/de/kategorie/licht</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/isik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/light"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/licht"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/نور"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/isik"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/ar/فئة/نور</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/isik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/light"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/licht"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/نور"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/isik"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/tr/kategori/bilgelik</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/bilgelik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/wisdom"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/weisheit"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/حكمة"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/bilgelik"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/en/category/wisdom</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/bilgelik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/wisdom"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/weisheit"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/حكمة"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/bilgelik"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/de/kategorie/weisheit</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/bilgelik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/wisdom"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/weisheit"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/حكمة"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/bilgelik"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/ar/فئة/حكمة</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kategori/bilgelik"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/category/wisdom"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kategorie/weisheit"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/فئة/حكمة"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kategori/bilgelik"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/tr/gizlilik-politikasi</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/gizlilik-politikasi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/datenschutzerklaerung"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/سياسة-الخصوصية"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/gizlilik-politikasi"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/tr/kullanim-kosullari</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kullanim-kosullari"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/terms-of-use"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/nutzungsbedingungen"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/شروط-الاستخدام"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kullanim-kosullari"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/tr/cerez-politikasi</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/cerez-politikasi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/cookie-richtlinie"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/سياسة-ملفات-تعريف-الارتباط"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/cerez-politikasi"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/tr/iletisim</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/iletisim"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/اتصل-بنا"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/iletisim"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/tr/isim-bul</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim-bul"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/find-name"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/name-finden"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/البحث-عن-اسم"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/isim-bul"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/tr/hakkimizda</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/hakkimizda"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/ueber-uns"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/من-نحن"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/hakkimizda"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/en/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/gizlilik-politikasi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/datenschutzerklaerung"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/سياسة-الخصوصية"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/gizlilik-politikasi"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/en/terms-of-use</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kullanim-kosullari"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/terms-of-use"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/nutzungsbedingungen"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/شروط-الاستخدام"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kullanim-kosullari"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/en/cookie-policy</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/cerez-politikasi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/cookie-richtlinie"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/سياسة-ملفات-تعريف-الارتباط"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/cerez-politikasi"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/iletisim"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/اتصل-بنا"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/iletisim"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/en/find-name</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim-bul"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/find-name"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/name-finden"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/البحث-عن-اسم"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/isim-bul"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/hakkimizda"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/ueber-uns"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/من-نحن"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/hakkimizda"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/de/datenschutzerklaerung</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/gizlilik-politikasi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/datenschutzerklaerung"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/سياسة-الخصوصية"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/gizlilik-politikasi"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/de/nutzungsbedingungen</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kullanim-kosullari"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/terms-of-use"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/nutzungsbedingungen"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/شروط-الاستخدام"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kullanim-kosullari"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/de/cookie-richtlinie</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/cerez-politikasi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/cookie-richtlinie"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/سياسة-ملفات-تعريف-الارتباط"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/cerez-politikasi"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/de/kontakt</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/iletisim"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/اتصل-بنا"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/iletisim"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/de/name-finden</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim-bul"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/find-name"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/name-finden"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/البحث-عن-اسم"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/isim-bul"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/de/ueber-uns</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/hakkimizda"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/ueber-uns"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/من-نحن"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/hakkimizda"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/ar/سياسة-الخصوصية</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/gizlilik-politikasi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/datenschutzerklaerung"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/سياسة-الخصوصية"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/gizlilik-politikasi"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/ar/شروط-الاستخدام</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/kullanim-kosullari"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/terms-of-use"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/nutzungsbedingungen"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/شروط-الاستخدام"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/kullanim-kosullari"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/ar/سياسة-ملفات-تعريف-الارتباط</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/cerez-politikasi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/cookie-richtlinie"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/سياسة-ملفات-تعريف-الارتباط"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/cerez-politikasi"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/ar/اتصل-بنا</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/iletisim"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/اتصل-بنا"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/iletisim"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/ar/البحث-عن-اسم</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim-bul"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/find-name"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/name-finden"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/البحث-عن-اسم"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/isim-bul"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/ar/من-نحن</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/hakkimizda"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/ueber-uns"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/من-نحن"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/hakkimizda"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/tr/blog</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/blog"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/مدونة"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/blog"/>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/en/blog</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/blog"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/مدونة"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/blog"/>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/de/blog</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/blog"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/مدونة"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/blog"/>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/ar/مدونة</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/blog"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/مدونة"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/blog"/>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>

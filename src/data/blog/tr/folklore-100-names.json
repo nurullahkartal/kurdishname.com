@@ -1,0 +1,513 @@
+{
+  "title": "100 Kürtçe Folklor ve Destan Karakteri İsmi",
+  "description": "100 Kürtçe Folklor ve Destan Karakteri İsmi listesi.",
+  "names": [
+    {
+      "name": "Mem",
+      "id": "mem",
+      "meaning": "Ünlü 'Mem û Zîn' destanının kahramanı; sadık aşkın ve dürüstlüğün simgesidir."
+    },
+    {
+      "name": "Zîn",
+      "id": "zin_2",
+      "meaning": "Hayat veren, dirilik; aynı zamanda ünlü 'Mem û Zîn' destanının asil ve sadık kadın kahramanıdır."
+    },
+    {
+      "name": "Xecê",
+      "id": "xece",
+      "meaning": "Hatice (Siyabend ve Xecê destanı kahramanı)."
+    },
+    {
+      "name": "Siyamend",
+      "id": "siyamend",
+      "meaning": "Gölge veren, koruyan görkemli dağ; kadim Kürt aşk destanının kahramanı."
+    },
+    {
+      "name": "Ferhad",
+      "id": "ferhad",
+      "meaning": "Anlayışlı, yiğit ve büyük zorlukların üstesinden gelen kimsedir."
+    },
+    {
+      "name": "Şîrîn",
+      "id": "sirin",
+      "meaning": "Süt, tatlı, aslan gibi, süt, tatlı, aslane dair."
+    },
+    {
+      "name": "Cembelî",
+      "id": "cembeli",
+      "meaning": "Kürt halk destanı kahramanı (Cembelîyê Kurê Mîrê Hekkarî)."
+    },
+    {
+      "name": "Binevş",
+      "id": "binevs",
+      "meaning": "Binevş; menekşe çiçeği, narin yapraklı ve çok güzel kokulu mor kır çiçeği."
+    },
+    {
+      "name": "Derwêş",
+      "id": "derwes",
+      "meaning": "Derviş, kendini arayan."
+    },
+    {
+      "name": "Edûlê",
+      "id": "edule",
+      "meaning": "Edûlê; Derwêşê Evdî destanının asil, vakur ve sarsılmaz sevgi sahibi kadın kahramanı."
+    },
+    {
+      "name": "Beko",
+      "id": "beko",
+      "meaning": "Beko; Mem û Zîn destanındaki ulu sadakati sınayan mitolojik karakter."
+    },
+    {
+      "name": "Kawa",
+      "id": "kawa",
+      "meaning": "Demirci Kawa; zulme baş kaldıran, özgürlüğü getiren efsanevi kahramanın adıdır."
+    },
+    {
+      "name": "Dehak",
+      "id": "dehak",
+      "meaning": "Dehak; Demirci Kawa destanındaki tiranlığı simgeleyen tarihi Mezopotamya hükümdarı."
+    },
+    {
+      "name": "Rustem",
+      "id": "rustem",
+      "meaning": "Rüstem-i Zal; mitolojik kahramanlık, sarsılmaz cesaret ve güç sahibi."
+    },
+    {
+      "name": "Sohrâb",
+      "id": "sohrab",
+      "meaning": "Sohrâb; Şahname destanındaki Rüstem'in asil, kahraman ve yenilmez yiğit oğlu."
+    },
+    {
+      "name": "Zal",
+      "id": "zal_2",
+      "meaning": "Ak saçlı bilge; mitolojik bir kahraman olup üstün gücü ve tecrübeyi temsil eder."
+    },
+    {
+      "name": "Siyaveş",
+      "id": "siyaves",
+      "meaning": "Siyaveş; dürüstlüğü, mutlak saflığı ve sarsılmaz adaleti simgeleyen mitolojik prens."
+    },
+    {
+      "name": "Teyran",
+      "id": "teyran",
+      "meaning": "Kuşların dilini anlayan, göklerde süzülen kuşlara ait özgür ruh."
+    },
+    {
+      "name": "Cano",
+      "id": "cano",
+      "meaning": "Canım."
+    },
+    {
+      "name": "Memo",
+      "id": "memo",
+      "meaning": "Memo; Mem isminin sevgi ve samimiyet bildiren klasik halk kısaltması."
+    },
+    {
+      "name": "Zîno",
+      "id": "zino",
+      "meaning": "Zîno; Zîn isminin sevecenlik ve yakınlık ifade eden sevgi dolu halk formu."
+    },
+    {
+      "name": "Fatê",
+      "id": "fate",
+      "meaning": "Fatma'nın Kürtçe kısaltılmışı."
+    },
+    {
+      "name": "Besê",
+      "id": "bese",
+      "meaning": "Orman, sık ağaçlık ve doğanın kalbini temsil eden kimsedir."
+    },
+    {
+      "name": "Zelal",
+      "id": "zelal",
+      "meaning": "Berrak, temiz, şeffaf, duru."
+    },
+    {
+      "name": "Egîd",
+      "id": "egid",
+      "meaning": "Yiğit, cesur, kahraman ve mertliğiyle tanınan ulu kimsedir."
+    },
+    {
+      "name": "Hejar",
+      "id": "hejar",
+      "meaning": "Yoksul ama gönlü zengin; gariban ve alçakgönüllü olan kimsedir."
+    },
+    {
+      "name": "Zana",
+      "id": "zana_2",
+      "meaning": "Bilge, alim, bilen; zekası ve ilmiyle topluma yön veren kimsedir."
+    },
+    {
+      "name": "Şerwan",
+      "id": "serwan_3",
+      "meaning": "Aslan bakıcısı, koruyucu; gücü yöneten ve adaletle hükmeden kimsedir."
+    },
+    {
+      "name": "Pîroz",
+      "id": "piroz_2",
+      "meaning": "Kutsal, mübarek, şanslı ve tebrik edilen."
+    },
+    {
+      "name": "Rênas",
+      "id": "renas",
+      "meaning": "Yol bilen, rehber, kılavuz ve hakikate ulaştıran bilgeliğe sahip kimsedir."
+    },
+    {
+      "name": "Baver",
+      "id": "baver",
+      "meaning": "İnanan, güvenilir ve sadık kişidir."
+    },
+    {
+      "name": "Heval",
+      "id": "heval",
+      "meaning": "Arkadaş, dost."
+    },
+    {
+      "name": "Azad",
+      "id": "azad",
+      "meaning": "Özgür, hür, kimseye bağımlı olmayan."
+    },
+    {
+      "name": "Viyan",
+      "id": "viyan_2",
+      "meaning": "İrade, istek, arzu; kararlı duruşu ve sarsılmaz azmi temsil eder."
+    },
+    {
+      "name": "Zerya",
+      "id": "zerya",
+      "meaning": "Okyanus, büyük deniz, sonsuz."
+    },
+    {
+      "name": "Şahmaran",
+      "id": "sahmaran",
+      "meaning": "Yılanların şahı; şifa, doğa üstü bilgelik ve sadakat timsali efsanevi kraliçe."
+    },
+    {
+      "name": "Simur",
+      "id": "simur",
+      "meaning": "Zümrüd-ü Anka kuşu; yeniden doğuş, bilgelik ve saflık sembolü."
+    },
+    {
+      "name": "Homa",
+      "id": "homa",
+      "meaning": "Mitolojik devlet kuşu, Hüma kuşu, şans getiren."
+    },
+    {
+      "name": "Keskosor",
+      "id": "keskosor",
+      "meaning": "Keskosor; yeşil ve kırmızı, gökkuşağının asil Kürtçe halk masallarındaki adı."
+    },
+    {
+      "name": "Teyrê Sîmurg",
+      "id": "teyre_simurg",
+      "meaning": "Teyrê Sîmurg; Kaf dağının arkasındaki küllerinden doğan bilge efsane kuşu, Zümrüd-ü Anka."
+    },
+    {
+      "name": "Dara",
+      "id": "dara",
+      "meaning": "Hükümdar, bey; ağaçlık yer."
+    },
+    {
+      "name": "Key",
+      "id": "key",
+      "meaning": "Kral, hükümdar, ulu başbuğ (Antik Kürtçe beylik hitabı)."
+    },
+    {
+      "name": "Baban",
+      "id": "baban",
+      "meaning": "Köklü ve tarihi bir Kürt beyliğinin adıdır."
+    },
+    {
+      "name": "Mervan",
+      "id": "mervan",
+      "meaning": "Cesur, yiğit savaşçı."
+    },
+    {
+      "name": "Eyyub",
+      "id": "eyyub",
+      "meaning": "Eyyub; sabrı, asil direnişi ve Selahaddin Eyyubi hanedanının soyunu simgeleyen asil ad."
+    },
+    {
+      "name": "Mîrxan",
+      "id": "mirxan",
+      "meaning": "Beylerin hanı, kudretli ve lider bey."
+    },
+    {
+      "name": "Şaho",
+      "id": "saho_2",
+      "meaning": "Şahane, görkemli; aynı zamanda Doğu Kürdistan'daki ihtişamlı bir dağın adıdır."
+    },
+    {
+      "name": "Gabar",
+      "id": "gabar",
+      "meaning": "Görkemli, ulu ve sarsılmaz dağ."
+    },
+    {
+      "name": "Bahoz",
+      "id": "bahoz",
+      "meaning": "Fırtına, kasırga ve doğanın güçlü devinimidir."
+    },
+    {
+      "name": "Brûsk",
+      "id": "brusk_2",
+      "meaning": "Şimşek, parıltı ve doğanın ani ve güçlü ışığını temsil eden kimsedir."
+    },
+    {
+      "name": "Tavîn",
+      "id": "tavin",
+      "meaning": "Güneş ışığı gibi, güneş ışığıe dair."
+    },
+    {
+      "name": "Hîvda",
+      "id": "hivda",
+      "meaning": "Ay doğdu, aydan gelen."
+    },
+    {
+      "name": "Rozerîn",
+      "id": "rozerin_2",
+      "meaning": "Altın güneş; güneşin en parlak ve kıymetli anını temsil eden asil kimsedir."
+    },
+    {
+      "name": "Berfîn",
+      "id": "berfin",
+      "meaning": "Kardan olan, kardelen çiçeği ve saflığın sembolüdür."
+    },
+    {
+      "name": "Asmîn",
+      "id": "asmin",
+      "meaning": "Dağ çiçeği, taze dağ kekiği."
+    },
+    {
+      "name": "Şîlan",
+      "id": "silan_2",
+      "meaning": "Yaban gülü, kuşburnu; doğanın vahşi ama şifalı ve zarif yanını temsil eder."
+    },
+    {
+      "name": "Xezal",
+      "id": "xezal_2",
+      "meaning": "Ceylan, ahu; zarafeti, masumiyeti ve doğanın eşsiz güzelliğini temsil eder."
+    },
+    {
+      "name": "Kejal",
+      "id": "kejal",
+      "meaning": "Ela gözlü; ceylan bakışlı, güzel ve zarafetiyle hayran bırakan kimsedir."
+    },
+    {
+      "name": "Nazê",
+      "id": "naze",
+      "meaning": "Nazlı, cilveli."
+    },
+    {
+      "name": "Rındê",
+      "id": "rinde_2",
+      "meaning": "Güzel kadın; huyu ve yüzü güzel olan, çevresinde saygı gören asil kimsedir."
+    },
+    {
+      "name": "Xatûn",
+      "id": "xatun",
+      "meaning": "Hanımefendi, asil, saygın ve yüce kadın."
+    },
+    {
+      "name": "Kezî",
+      "id": "kezi",
+      "meaning": "Saç örgüsü, asil örülmüş saç."
+    },
+    {
+      "name": "Lorîn",
+      "id": "lorin2",
+      "meaning": "Ninni, anneden evlada sevgi ezgisi."
+    },
+    {
+      "name": "Mizgîn",
+      "id": "mizgin",
+      "meaning": "Müjde, iyi haber."
+    },
+    {
+      "name": "Nalin",
+      "id": "nalin",
+      "meaning": "İnleyiş, derin duyguların ifadesi ve ruhun nazik çığlığı demektir."
+    },
+    {
+      "name": "Xemgîn",
+      "id": "xemgin",
+      "meaning": "Hüzünlü, kederli, derin hisleri olan duyarlı kimse."
+    },
+    {
+      "name": "Dilşad",
+      "id": "dilsad",
+      "meaning": "Gönlü şen, mutlu."
+    },
+    {
+      "name": "Evin",
+      "id": "evin",
+      "meaning": "Aşk, sevgi, muhabbet ve kalpten gelen büyük bağlılık demektir."
+    },
+    {
+      "name": "Yekbûn",
+      "id": "yekbun",
+      "meaning": "Birlik, tek olmak, bütünleşme ve uyum."
+    },
+    {
+      "name": "Peyman",
+      "id": "peyman",
+      "meaning": "Söz, yemin, antlaşma ve verilen sözün kutsallığını temsil eden kimsedir."
+    },
+    {
+      "name": "Vartin",
+      "id": "vartin",
+      "meaning": "Bahar yağmuru, toprağa can veren taze yağış."
+    },
+    {
+      "name": "Zerdüşt",
+      "id": "zerdest",
+      "meaning": "..."
+    },
+    {
+      "name": "Zend",
+      "id": "zend",
+      "meaning": "Zerdüşt'ün kutsal kitabı Avesta'nın şerhi ve yorumu."
+    },
+    {
+      "name": "Avesta",
+      "id": "avesta",
+      "meaning": "Zerdüştlük inancının kutsal kitabı; temel kural, sarsılmaz bilge metin."
+    },
+    {
+      "name": "Pîr",
+      "id": "pir",
+      "meaning": "Bilge, pir, yaşlı önder ve manevi mürşid."
+    },
+    {
+      "name": "Seyid",
+      "id": "seyid",
+      "meaning": "Efendi, lider, peygamber soyu."
+    },
+    {
+      "name": "Şêrko",
+      "id": "serko_3",
+      "meaning": "Küçük aslan; cesareti erken yaşta fark edilen, atak ve güçlü kimsedir."
+    },
+    {
+      "name": "Memoş",
+      "id": "memos",
+      "meaning": "Memoş; bebekler için kullanılan Mem isminin en tatlı halk küçültülmüş hali."
+    },
+    {
+      "name": "Gulê",
+      "id": "gule",
+      "meaning": "Gül; zarafetin, sevginin ve doğanın en zarif çiçeğinin adıdır."
+    },
+    {
+      "name": "Sêvê",
+      "id": "seve",
+      "meaning": "Elma gibi kırmızı, al yanaklı, asil taze kız."
+    },
+    {
+      "name": "Hesen",
+      "id": "hesen",
+      "meaning": "Hasan isminin geleneksel Kürtçe telaffuz biçimi; iyi, güzel, yiğit."
+    },
+    {
+      "name": "Huseyn",
+      "id": "huseyn",
+      "meaning": "Huseyn; hüsn kökünden gelen, güzelliği, iyiliği ve asilliği temsil eden klasik erkek adı."
+    },
+    {
+      "name": "Eli",
+      "id": "eli",
+      "meaning": "Eli; yüce, yüksek mertebeli, asil ve onurlu önder ve lider."
+    },
+    {
+      "name": "Mele",
+      "id": "mele",
+      "meaning": "Din alimi, hoca, saygın bilgin."
+    },
+    {
+      "name": "Feqî",
+      "id": "feqi",
+      "meaning": "İlim talebesi, öğrenci, bilim insanı (Feqîyê Teyran atıflı)."
+    },
+    {
+      "name": "Çoban",
+      "id": "coban",
+      "meaning": "Çoban; doğayla baş başa yaşayan, asil halk ezgilerinin koruyucusu şivan ve rehber."
+    },
+    {
+      "name": "Goran",
+      "id": "goran",
+      "meaning": "Kürtlerin kadim bir boyunun adıdır; aynı zamanda değişim ve dönüşümü temsil eder."
+    },
+    {
+      "name": "Koçer",
+      "id": "kocer",
+      "meaning": "Göçebe; yaylalarda yaşayan, özgürlüğüne düşkün ve doğayla iç içe olan kimsedir."
+    },
+    {
+      "name": "Bêrîvan",
+      "id": "berivan",
+      "meaning": "Süt sağan kadın, koyun sağan ve dağ yaşamının sembolüdür."
+    },
+    {
+      "name": "Semyan",
+      "id": "semyan",
+      "meaning": "Semyan; ocağın sarsılmaz direği, ailenin koruyucusu ve reisliğini simgeleyen onurlu isim."
+    },
+    {
+      "name": "Niştiman",
+      "id": "nistiman",
+      "meaning": "Vatan, memleket ve aidiyet hissedilen kutsal toprakların sembolüdür."
+    },
+    {
+      "name": "Reşo",
+      "id": "reso",
+      "meaning": "Esmer erkek; mert, karizmatik ve geleneksel bir gücü temsil eden kimsedir."
+    },
+    {
+      "name": "Zîrek",
+      "id": "zirek",
+      "meaning": "Zeki, yetenekli, akıllı."
+    },
+    {
+      "name": "Çalak",
+      "id": "calak",
+      "meaning": "Aktif, çevik, becerikli ve her işe hızla koşan kimsedir."
+    },
+    {
+      "name": "Merdan",
+      "id": "merdan",
+      "meaning": "Mertler."
+    },
+    {
+      "name": "Polat",
+      "id": "polat",
+      "meaning": "Çelik, güçlü, dayanıklı."
+    },
+    {
+      "name": "Senger",
+      "id": "senger",
+      "meaning": "Mevzi, sığınak, kale, siper, savunma hattı."
+    },
+    {
+      "name": "Teyr",
+      "id": "teyr",
+      "meaning": "Kuş, kartal, yırtıcı kuş; yükseklerde uçan, özgür ruhlu ve keskin bakışlı kimse."
+    },
+    {
+      "name": "Baz",
+      "id": "baz",
+      "meaning": "Şahin kuşu, yırtıcı ve özgür doğa canlısıdır."
+    },
+    {
+      "name": "Hêmin",
+      "id": "hemin",
+      "meaning": "Sakin, huzurlu, güven veren ve ağırbaşlılığıyla tanınan kimsedir."
+    }
+  ],
+  "content": "## İsim Listesi ve Anlamları\n\n1. **[Mem](/tr/isim/mem)**: Ünlü 'Mem û Zîn' destanının kahramanı; sadık aşkın ve dürüstlüğün simgesidir.\n2. **Zîn**: Hayat veren, dirilik; aynı zamanda ünlü 'Mem û Zîn' destanının asil ve sadık kadın kahramanıdır.\n3. **[Xecê](/tr/isim/xece)**: Hatice (Siyabend ve Xecê destanı kahramanı).\n4. **[Siyamend](/tr/isim/siyamend)**: Gölge veren, koruyan görkemli dağ; kadim Kürt aşk destanının kahramanı.\n5. **[Ferhad](/tr/isim/ferhad)**: Anlayışlı, yiğit ve büyük zorlukların üstesinden gelen kimsedir.\n6. **Şîrîn**: Süt, tatlı, aslan gibi, süt, tatlı, aslane dair.\n7. **[Cembelî](/tr/isim/cembeli)**: Kürt halk destanı kahramanı (Cembelîyê Kurê Mîrê Hekkarî).\n8. **[Binevş](/tr/isim/binevs)**: Binevş; menekşe çiçeği, narin yapraklı ve çok güzel kokulu mor kır çiçeği.\n9. **Derwêş**: Derviş, kendini arayan.\n10. **Edûlê**: Edûlê; Derwêşê Evdî destanının asil, vakur ve sarsılmaz sevgi sahibi kadın kahramanı.\n11. **Beko**: Beko; Mem û Zîn destanındaki ulu sadakati sınayan mitolojik karakter.\n12. **[Kawa](/tr/isim/kawa)**: Demirci Kawa; zulme baş kaldıran, özgürlüğü getiren efsanevi kahramanın adıdır.\n13. **Dehak**: Dehak; Demirci Kawa destanındaki tiranlığı simgeleyen tarihi Mezopotamya hükümdarı.\n14. **Rustem**: Rüstem-i Zal; mitolojik kahramanlık, sarsılmaz cesaret ve güç sahibi.\n15. **Sohrâb**: Sohrâb; Şahname destanındaki Rüstem'in asil, kahraman ve yenilmez yiğit oğlu.\n16. **Zal**: Ak saçlı bilge; mitolojik bir kahraman olup üstün gücü ve tecrübeyi temsil eder.\n17. **Siyaveş**: Siyaveş; dürüstlüğü, mutlak saflığı ve sarsılmaz adaleti simgeleyen mitolojik prens.\n18. **[Teyran](/tr/isim/teyran)**: Kuşların dilini anlayan, göklerde süzülen kuşlara ait özgür ruh.\n19. **Cano**: Canım.\n20. **[Memo](/tr/isim/memo)**: Memo; Mem isminin sevgi ve samimiyet bildiren klasik halk kısaltması.\n21. **[Zîno](/tr/isim/zino)**: Zîno; Zîn isminin sevecenlik ve yakınlık ifade eden sevgi dolu halk formu.\n22. **[Fatê](/tr/isim/fate)**: Fatma'nın Kürtçe kısaltılmışı.\n23. **Besê**: Orman, sık ağaçlık ve doğanın kalbini temsil eden kimsedir.\n24. **[Zelal](/tr/isim/zelal)**: Berrak, temiz, şeffaf, duru.\n25. **[Egîd](/tr/isim/egid)**: Yiğit, cesur, kahraman ve mertliğiyle tanınan ulu kimsedir.\n26. **[Hejar](/tr/isim/hejar)**: Yoksul ama gönlü zengin; gariban ve alçakgönüllü olan kimsedir.\n27. **Zana**: Bilge, alim, bilen; zekası ve ilmiyle topluma yön veren kimsedir.\n28. **Şerwan**: Aslan bakıcısı, koruyucu; gücü yöneten ve adaletle hükmeden kimsedir.\n29. **Pîroz**: Kutsal, mübarek, şanslı ve tebrik edilen.\n30. **[Rênas](/tr/isim/renas)**: Yol bilen, rehber, kılavuz ve hakikate ulaştıran bilgeliğe sahip kimsedir.\n31. **[Baver](/tr/isim/baver)**: İnanan, güvenilir ve sadık kişidir.\n32. **[Heval](/tr/isim/heval)**: Arkadaş, dost.\n33. **[Azad](/tr/isim/azad)**: Özgür, hür, kimseye bağımlı olmayan.\n34. **Viyan**: İrade, istek, arzu; kararlı duruşu ve sarsılmaz azmi temsil eder.\n35. **[Zerya](/tr/isim/zerya)**: Okyanus, büyük deniz, sonsuz.\n36. **Şahmaran**: Yılanların şahı; şifa, doğa üstü bilgelik ve sadakat timsali efsanevi kraliçe.\n37. **[Simur](/tr/isim/simur)**: Zümrüd-ü Anka kuşu; yeniden doğuş, bilgelik ve saflık sembolü.\n38. **Homa**: Mitolojik devlet kuşu, Hüma kuşu, şans getiren.\n39. **[Keskosor](/tr/isim/keskosor)**: Keskosor; yeşil ve kırmızı, gökkuşağının asil Kürtçe halk masallarındaki adı.\n40. **Teyrê Sîmurg**: Teyrê Sîmurg; Kaf dağının arkasındaki küllerinden doğan bilge efsane kuşu, Zümrüd-ü Anka.\n41. **[Dara](/tr/isim/dara)**: Hükümdar, bey; ağaçlık yer.\n42. **Key**: Kral, hükümdar, ulu başbuğ (Antik Kürtçe beylik hitabı).\n43. **[Baban](/tr/isim/baban)**: Köklü ve tarihi bir Kürt beyliğinin adıdır.\n44. **[Mervan](/tr/isim/mervan)**: Cesur, yiğit savaşçı.\n45. **Eyyub**: Eyyub; sabrı, asil direnişi ve Selahaddin Eyyubi hanedanının soyunu simgeleyen asil ad.\n46. **[Mîrxan](/tr/isim/mirxan)**: Beylerin hanı, kudretli ve lider bey.\n47. **Şaho**: Şahane, görkemli; aynı zamanda Doğu Kürdistan'daki ihtişamlı bir dağın adıdır.\n48. **[Gabar](/tr/isim/gabar)**: Görkemli, ulu ve sarsılmaz dağ.\n49. **[Bahoz](/tr/isim/bahoz)**: Fırtına, kasırga ve doğanın güçlü devinimidir.\n50. **Brûsk**: Şimşek, parıltı ve doğanın ani ve güçlü ışığını temsil eden kimsedir.\n51. **[Tavîn](/tr/isim/tavin)**: Güneş ışığı gibi, güneş ışığıe dair.\n52. **[Hîvda](/tr/isim/hivda)**: Ay doğdu, aydan gelen.\n53. **Rozerîn**: Altın güneş; güneşin en parlak ve kıymetli anını temsil eden asil kimsedir.\n54. **[Berfîn](/tr/isim/berfin)**: Kardan olan, kardelen çiçeği ve saflığın sembolüdür.\n55. **[Asmîn](/tr/isim/asmin)**: Dağ çiçeği, taze dağ kekiği.\n56. **Şîlan**: Yaban gülü, kuşburnu; doğanın vahşi ama şifalı ve zarif yanını temsil eder.\n57. **Xezal**: Ceylan, ahu; zarafeti, masumiyeti ve doğanın eşsiz güzelliğini temsil eder.\n58. **[Kejal](/tr/isim/kejal)**: Ela gözlü; ceylan bakışlı, güzel ve zarafetiyle hayran bırakan kimsedir.\n59. **[Nazê](/tr/isim/naze)**: Nazlı, cilveli.\n60. **Rındê**: Güzel kadın; huyu ve yüzü güzel olan, çevresinde saygı gören asil kimsedir.\n61. **[Xatûn](/tr/isim/xatun)**: Hanımefendi, asil, saygın ve yüce kadın.\n62. **[Kezî](/tr/isim/kezi)**: Saç örgüsü, asil örülmüş saç.\n63. **[Lorîn](/tr/isim/lorin2)**: Ninni, anneden evlada sevgi ezgisi.\n64. **[Mizgîn](/tr/isim/mizgin)**: Müjde, iyi haber.\n65. **[Nalin](/tr/isim/nalin)**: İnleyiş, derin duyguların ifadesi ve ruhun nazik çığlığı demektir.\n66. **[Xemgîn](/tr/isim/xemgin)**: Hüzünlü, kederli, derin hisleri olan duyarlı kimse.\n67. **[Dilşad](/tr/isim/dilsad)**: Gönlü şen, mutlu.\n68. **[Evin](/tr/isim/evin)**: Aşk, sevgi, muhabbet ve kalpten gelen büyük bağlılık demektir.\n69. **[Yekbûn](/tr/isim/yekbun)**: Birlik, tek olmak, bütünleşme ve uyum.\n70. **[Peyman](/tr/isim/peyman)**: Söz, yemin, antlaşma ve verilen sözün kutsallığını temsil eden kimsedir.\n71. **[Vartin](/tr/isim/vartin)**: Bahar yağmuru, toprağa can veren taze yağış.\n72. **[Zerdüşt](/tr/isim/zerdest)**: ...\n73. **[Zend](/tr/isim/zend)**: Zerdüşt'ün kutsal kitabı Avesta'nın şerhi ve yorumu.\n74. **Avesta**: Zerdüştlük inancının kutsal kitabı; temel kural, sarsılmaz bilge metin.\n75. **[Pîr](/tr/isim/pir)**: Bilge, pir, yaşlı önder ve manevi mürşid.\n76. **Seyid**: Efendi, lider, peygamber soyu.\n77. **Şêrko**: Küçük aslan; cesareti erken yaşta fark edilen, atak ve güçlü kimsedir.\n78. **[Memoş](/tr/isim/memos)**: Memoş; bebekler için kullanılan Mem isminin en tatlı halk küçültülmüş hali.\n79. **[Gulê](/tr/isim/gule)**: Gül; zarafetin, sevginin ve doğanın en zarif çiçeğinin adıdır.\n80. **[Sêvê](/tr/isim/seve)**: Elma gibi kırmızı, al yanaklı, asil taze kız.\n81. **Hesen**: Hasan isminin geleneksel Kürtçe telaffuz biçimi; iyi, güzel, yiğit.\n82. **Huseyn**: Huseyn; hüsn kökünden gelen, güzelliği, iyiliği ve asilliği temsil eden klasik erkek adı.\n83. **Eli**: Eli; yüce, yüksek mertebeli, asil ve onurlu önder ve lider.\n84. **[Mele](/tr/isim/mele)**: Din alimi, hoca, saygın bilgin.\n85. **[Feqî](/tr/isim/feqi)**: İlim talebesi, öğrenci, bilim insanı (Feqîyê Teyran atıflı).\n86. **[Çoban](/tr/isim/coban)**: Çoban; doğayla baş başa yaşayan, asil halk ezgilerinin koruyucusu şivan ve rehber.\n87. **[Goran](/tr/isim/goran)**: Kürtlerin kadim bir boyunun adıdır; aynı zamanda değişim ve dönüşümü temsil eder.\n88. **[Koçer](/tr/isim/kocer)**: Göçebe; yaylalarda yaşayan, özgürlüğüne düşkün ve doğayla iç içe olan kimsedir.\n89. **[Bêrîvan](/tr/isim/berivan)**: Süt sağan kadın, koyun sağan ve dağ yaşamının sembolüdür.\n90. **[Semyan](/tr/isim/semyan)**: Semyan; ocağın sarsılmaz direği, ailenin koruyucusu ve reisliğini simgeleyen onurlu isim.\n91. **[Niştiman](/tr/isim/nistiman)**: Vatan, memleket ve aidiyet hissedilen kutsal toprakların sembolüdür.\n92. **[Reşo](/tr/isim/reso)**: Esmer erkek; mert, karizmatik ve geleneksel bir gücü temsil eden kimsedir.\n93. **[Zîrek](/tr/isim/zirek)**: Zeki, yetenekli, akıllı.\n94. **[Çalak](/tr/isim/calak)**: Aktif, çevik, becerikli ve her işe hızla koşan kimsedir.\n95. **[Merdan](/tr/isim/merdan)**: Mertler.\n96. **[Polat](/tr/isim/polat)**: Çelik, güçlü, dayanıklı.\n97. **[Senger](/tr/isim/senger)**: Mevzi, sığınak, kale, siper, savunma hattı.\n98. **[Teyr](/tr/isim/teyr)**: Kuş, kartal, yırtıcı kuş; yükseklerde uçan, özgür ruhlu ve keskin bakışlı kimse.\n99. **[Baz](/tr/isim/baz)**: Şahin kuşu, yırtıcı ve özgür doğa canlısıdır.\n100. **[Hêmin](/tr/isim/hemin)**: Sakin, huzurlu, güven veren ve ağırbaşlılığıyla tanınan kimsedir.\n\n\n\n## İsim Kökenleri\n\nKürt mitolojik ve destansı isimlerinin kökenleri, insanlık tarihinin ve medeniyetinin beşiği sayılan kadim Mezopotamya topraklarına ve antik inanç sistemlerine dayanır. Bu isimler, Zerdüştlük felsefesinin kutsal metinlerinden, Demirci Kawa ve Şahmaran gibi ölümsüz kahramanlık destanlarından ve köklü Mezopotamya mitlerinden süzülerek günümüze ulaşmıştır. Dilsel açıdan bakıldığında, her bir mitolojik isim, kökünde derin felsefi mücadeleleri, iyilik ile kötülüğün savaşını ve özgürlük arayışını barındıran zengin etimolojik yapılara sahiptir.\n\n## Kültürel Önem\n\nMitolojik isimler, Kürt kültürel hafızasında ve kimliğinde son derece kritik bir yere sahiptir. Bu isimler sıradan birer kelime olmayıp, binlerce yıllık onurlu bir direncin, bilgeliğin ve toplumsal uyanışın canlı sembolleridir. Çocuğuna mitolojik bir isim veren aileler, ona yalnızca bir ad değil, aynı zamanda saygı duyulacak bir karakter ve köklü bir tarih bilinci armağan ederler. 'Kawa' ismi hürriyeti ve emeği temsil ederken, 'Şahmaran' ismi şifa ve kadim bilgeliği simgeler. Bu nedenle mitolojik isimler her çağda asaletini ve popülaritesini korur.\n\n## Sık Sorulan Sorular (FAQ)\n\n### Folklorik Kürtçe isimler hangi kaynaklardan gelir?\n\nBu isimler, bilge Dengbêj stranlarından, sözlü masal anlatılarından ve Mem û Zîn gibi ölümsüz halk destanlarından süzülmüştür.",
+  "faqs": [
+    {
+      "question": "Folklorik Kürtçe isimler hangi kaynaklardan gelir?",
+      "answer": "Bu isimler, bilge Dengbêj stranlarından, sözlü masal anlatılarından ve Mem û Zîn gibi ölümsüz halk destanlarından süzülmüştür."
+    }
+  ]
+}

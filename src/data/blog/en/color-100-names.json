@@ -1,0 +1,463 @@
+{
+  "title": "100 Kurdish Color and Light Names",
+  "description": "100 Kurdish Color and Light Names listesi.",
+  "names": [
+    {
+      "name": "Zer",
+      "id": "zer",
+      "meaning": "Gold, most precious and shining element."
+    },
+    {
+      "name": "Spi",
+      "id": "spi",
+      "meaning": "White, pure, clean snow brightness."
+    },
+    {
+      "name": "Reşo",
+      "id": "reso",
+      "meaning": "Brunette man; one representing a brave, charismatic, and traditional power."
+    },
+    {
+      "name": "Sor",
+      "id": "sor",
+      "meaning": "Red, bright scarlet, vibrant warm color."
+    },
+    {
+      "name": "Kesk",
+      "id": "kesk",
+      "meaning": "Green, color representing nature's revival and fresh life."
+    },
+    {
+      "name": "Şîn",
+      "id": "sin_3",
+      "meaning": "The color blue, freshness and depth of life."
+    },
+    {
+      "name": "Gewr",
+      "id": "gewr",
+      "meaning": "Gray, silver-haired, symbol of mature nobility."
+    },
+    {
+      "name": "Belek",
+      "id": "belek",
+      "meaning": "Speckled, black and white snow on high peaks."
+    },
+    {
+      "name": "Kejal",
+      "id": "kejal",
+      "meaning": "..."
+    },
+    {
+      "name": "Ronî",
+      "id": "roni_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Rojda",
+      "id": "rojda_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Rojîn",
+      "id": "rojin_3",
+      "meaning": "..."
+    },
+    {
+      "name": "Ronahî",
+      "id": "ronahi_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Rozerîn",
+      "id": "rozerin_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Roşna",
+      "id": "rosna_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Tav",
+      "id": "tav",
+      "meaning": "Sunlight, warm glow of the sun."
+    },
+    {
+      "name": "Tîrêj",
+      "id": "tirej_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Şevîn",
+      "id": "sevin",
+      "meaning": "..."
+    },
+    {
+      "name": "Hîvron",
+      "id": "hivron",
+      "meaning": "..."
+    },
+    {
+      "name": "Hîvda",
+      "id": "hivda",
+      "meaning": "..."
+    },
+    {
+      "name": "Sitav",
+      "id": "sitav",
+      "meaning": "Sunny side, mountain slope facing the sun."
+    },
+    {
+      "name": "Tavîn",
+      "id": "tavin",
+      "meaning": "Of sunlight, like sunlight."
+    },
+    {
+      "name": "Argeş",
+      "id": "arges",
+      "meaning": "Glowing fire, bright flame."
+    },
+    {
+      "name": "Arşêv",
+      "id": "arsev",
+      "meaning": "Night fire."
+    },
+    {
+      "name": "Rewşen",
+      "id": "rewsen",
+      "meaning": "One representing bright, radiant, clear wisdom with an open mind."
+    },
+    {
+      "name": "Zêr",
+      "id": "zer_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Zîv",
+      "id": "ziv",
+      "meaning": "..."
+    },
+    {
+      "name": "Pola",
+      "id": "pola",
+      "meaning": "Steel, unbreakable force, highly resilient."
+    },
+    {
+      "name": "Gevher",
+      "id": "gevher",
+      "meaning": "Jewel, essence, precious gemstone."
+    },
+    {
+      "name": "Sîmar",
+      "id": "simar",
+      "meaning": "Shadow giver, protector, majestic shade of a tree."
+    },
+    {
+      "name": "Siya",
+      "id": "siya",
+      "meaning": "Shadow, cool protective shade of a tree."
+    },
+    {
+      "name": "Tîn",
+      "id": "tin",
+      "meaning": "Heat, warmth, soul's passion and energy."
+    },
+    {
+      "name": "Pelda",
+      "id": "pelda",
+      "meaning": "..."
+    },
+    {
+      "name": "Beybûn",
+      "id": "beybun",
+      "meaning": "White chamomile, daisy, most delicate spring flower."
+    },
+    {
+      "name": "Sosin",
+      "id": "sosin",
+      "meaning": "..."
+    },
+    {
+      "name": "Nergiz",
+      "id": "nergiz",
+      "meaning": "..."
+    },
+    {
+      "name": "Şîlan",
+      "id": "silan_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Henar",
+      "id": "henar",
+      "meaning": "Pomegranate, ancient symbol of fertility and beauty."
+    },
+    {
+      "name": "Mêw",
+      "id": "mew",
+      "meaning": "Vine branch, grape vine, symbol of fruitfulness."
+    },
+    {
+      "name": "Boran",
+      "id": "boran",
+      "meaning": "One representing storm, blizzard, and the irresistible power of nature."
+    },
+    {
+      "name": "Berf",
+      "id": "berf",
+      "meaning": "Snow, symbol of purity and cleanliness."
+    },
+    {
+      "name": "Avaşîn",
+      "id": "avasin",
+      "meaning": "Blue water."
+    },
+    {
+      "name": "Avşêr",
+      "id": "avser",
+      "meaning": "Milk-white mountain water, pure and foaming stream."
+    },
+    {
+      "name": "Zerde",
+      "id": "zerde",
+      "meaning": "Yellow, golden sunray glow."
+    },
+    {
+      "name": "Reş",
+      "id": "res",
+      "meaning": "Black, representing depth, resilience and strong presence."
+    },
+    {
+      "name": "Keskosor",
+      "id": "keskosor",
+      "meaning": "Rainbow, literally green and red, symbol of nature's beauty."
+    },
+    {
+      "name": "Mor",
+      "id": "mor",
+      "meaning": "Purple, color of nobility, royalty and delicate wild flowers."
+    },
+    {
+      "name": "Pembe",
+      "id": "pembe",
+      "meaning": "Pink, representing joy, love and pure childhood innocence."
+    },
+    {
+      "name": "Narincî",
+      "id": "narinci",
+      "meaning": "Orange, the warm and energetic color of mountain sunset."
+    },
+    {
+      "name": "Qehweyî",
+      "id": "qehweyi",
+      "meaning": "Brown, the grounding color of fertile Mesopotamian soil."
+    },
+    {
+      "name": "Geş",
+      "id": "ges",
+      "meaning": "Bright, cheerful."
+    },
+    {
+      "name": "Mat",
+      "id": "mat",
+      "meaning": "Matte, simple, avoiding display, quiet deep personality."
+    },
+    {
+      "name": "Tarî",
+      "id": "tari",
+      "meaning": "Dark, mysterious, poetic representation of peaceful night."
+    },
+    {
+      "name": "Esmê",
+      "id": "esme",
+      "meaning": "Brunette beauty, dark-skinned beautiful woman."
+    },
+    {
+      "name": "Kejo",
+      "id": "kejo",
+      "meaning": "The hazel-eyed, highly friendly and cheerful blonde child."
+    },
+    {
+      "name": "Zeryan",
+      "id": "zeryan",
+      "meaning": "Sea storm, roaring ocean wind."
+    },
+    {
+      "name": "Asmân",
+      "id": "asman",
+      "meaning": "Sky, heavens, infinite blue space."
+    },
+    {
+      "name": "Şahbal",
+      "id": "sahbal",
+      "meaning": "The largest and most powerful wing of an eagle, majestic flight."
+    },
+    {
+      "name": "Tavban",
+      "id": "tavban",
+      "meaning": "Sunny rooftop, bright and airy place under the golden sun."
+    },
+    {
+      "name": "Ronya",
+      "id": "ronya_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Dîdar",
+      "id": "didar",
+      "meaning": "Vision, sight."
+    },
+    {
+      "name": "Roza",
+      "id": "roza_3",
+      "meaning": "..."
+    },
+    {
+      "name": "Rozalin",
+      "id": "rozalin",
+      "meaning": "Sun-red, the beautiful moment when the sky turns scarlet."
+    },
+    {
+      "name": "Helîn",
+      "id": "helin",
+      "meaning": "..."
+    },
+    {
+      "name": "Nûroj",
+      "id": "nuroj_2",
+      "meaning": "New day, fresh morning sun, bright future."
+    },
+    {
+      "name": "Şevder",
+      "id": "sevder",
+      "meaning": "..."
+    },
+    {
+      "name": "Brûsk",
+      "id": "brusk_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Agir",
+      "id": "agir",
+      "meaning": "..."
+    },
+    {
+      "name": "Alav",
+      "id": "alav",
+      "meaning": "Flame, glow."
+    },
+    {
+      "name": "Gazın",
+      "id": "gazin",
+      "meaning": "..."
+    },
+    {
+      "name": "Stêrk",
+      "id": "sterk",
+      "meaning": "..."
+    },
+    {
+      "name": "Gelavej",
+      "id": "gelavej",
+      "meaning": "Venus, morning star, guiding bright star."
+    },
+    {
+      "name": "Perwîn",
+      "id": "perwin",
+      "meaning": "Pleiades star cluster, shining noble guide star."
+    },
+    {
+      "name": "Hîvî",
+      "id": "hivii",
+      "meaning": "Hope."
+    },
+    {
+      "name": "Şerbet",
+      "id": "serbet",
+      "meaning": "Sherbet, sweet refreshing drink, metaphor for extreme sweetness."
+    },
+    {
+      "name": "Şîrîn",
+      "id": "sirin",
+      "meaning": "Of milk, sweet, lion, like milk, sweet, lion."
+    },
+    {
+      "name": "Zelal",
+      "id": "zelal",
+      "meaning": "..."
+    },
+    {
+      "name": "Paqîz",
+      "id": "paqiz",
+      "meaning": "Pure, pristine, clean and untouched by negativity."
+    },
+    {
+      "name": "Xasî",
+      "id": "xasi",
+      "meaning": "Pure, sincere, distinguished and original in nature."
+    },
+    {
+      "name": "Rengîn",
+      "id": "rengin",
+      "meaning": "One who is colorful, ornate, pleasant, and possesses a versatile beauty."
+    },
+    {
+      "name": "Çavreş",
+      "id": "cavres",
+      "meaning": "..."
+    },
+    {
+      "name": "Çavşîn",
+      "id": "cavsin",
+      "meaning": "..."
+    },
+    {
+      "name": "Çavbelek",
+      "id": "cavbelek",
+      "meaning": "Hazel-eyed."
+    },
+    {
+      "name": "Çavgezîz",
+      "id": "cavgeziz",
+      "meaning": "Wildflower-eyed, possessing delicate and beautiful eyes."
+    },
+    {
+      "name": "Çavxezal",
+      "id": "cavxezal",
+      "meaning": "Gazelle-eyed, possessing innocent and beautiful eyes."
+    },
+    {
+      "name": "Porzêr",
+      "id": "porzer",
+      "meaning": "Golden-haired, with shining beautiful hair."
+    },
+    {
+      "name": "Porreş",
+      "id": "porres",
+      "meaning": "Black-haired, with beautiful dark hair."
+    },
+    {
+      "name": "Sertav",
+      "id": "sertav",
+      "meaning": "Sunburst peak, head of light, brilliant start."
+    },
+    {
+      "name": "Serroj",
+      "id": "serroj",
+      "meaning": "First light of the day, fresh morning dawn."
+    },
+    {
+      "name": "Bêrî",
+      "id": "beri",
+      "meaning": "Longing, yearning, and nostalgia."
+    }
+  ],
+  "content": "## List of Names and Meanings\n\n1. **[Zer](/en/name/zer)**: Gold, most precious and shining element.\n2. **[Spi](/en/name/spi)**: White, pure, clean snow brightness.\n3. **[Reşo](/en/name/reso)**: Brunette man; one representing a brave, charismatic, and traditional power.\n4. **[Sor](/en/name/sor)**: Red, bright scarlet, vibrant warm color.\n5. **[Kesk](/en/name/kesk)**: Green, color representing nature's revival and fresh life.\n6. **Şîn**: The color blue, freshness and depth of life.\n7. **[Gewr](/en/name/gewr)**: Gray, silver-haired, symbol of mature nobility.\n8. **[Belek](/en/name/belek)**: Speckled, black and white snow on high peaks.\n9. **[Kejal](/en/name/kejal)**: ...\n10. **Ronî**: ...\n11. **Rojda**: ...\n12. **Rojîn**: ...\n13. **Ronahî**: ...\n14. **Rozerîn**: ...\n15. **Roşna**: ...\n16. **[Tav](/en/name/tav)**: Sunlight, warm glow of the sun.\n17. **Tîrêj**: ...\n18. **[Şevîn](/en/name/sevin)**: ...\n19. **[Hîvron](/en/name/hivron)**: ...\n20. **[Hîvda](/en/name/hivda)**: ...\n21. **[Sitav](/en/name/sitav)**: Sunny side, mountain slope facing the sun.\n22. **[Tavîn](/en/name/tavin)**: Of sunlight, like sunlight.\n23. **[Argeş](/en/name/arges)**: Glowing fire, bright flame.\n24. **[Arşêv](/en/name/arsev)**: Night fire.\n25. **[Rewşen](/en/name/rewsen)**: One representing bright, radiant, clear wisdom with an open mind.\n26. **Zêr**: ...\n27. **[Zîv](/en/name/ziv)**: ...\n28. **[Pola](/en/name/pola)**: Steel, unbreakable force, highly resilient.\n29. **Gevher**: Jewel, essence, precious gemstone.\n30. **[Sîmar](/en/name/simar)**: Shadow giver, protector, majestic shade of a tree.\n31. **[Siya](/en/name/siya)**: Shadow, cool protective shade of a tree.\n32. **[Tîn](/en/name/tin)**: Heat, warmth, soul's passion and energy.\n33. **[Pelda](/en/name/pelda)**: ...\n34. **[Beybûn](/en/name/beybun)**: White chamomile, daisy, most delicate spring flower.\n35. **[Sosin](/en/name/sosin)**: ...\n36. **[Nergiz](/en/name/nergiz)**: ...\n37. **Şîlan**: ...\n38. **[Henar](/en/name/henar)**: Pomegranate, ancient symbol of fertility and beauty.\n39. **[Mêw](/en/name/mew)**: Vine branch, grape vine, symbol of fruitfulness.\n40. **[Boran](/en/name/boran)**: One representing storm, blizzard, and the irresistible power of nature.\n41. **[Berf](/en/name/berf)**: Snow, symbol of purity and cleanliness.\n42. **[Avaşîn](/en/name/avasin)**: Blue water.\n43. **[Avşêr](/en/name/avser)**: Milk-white mountain water, pure and foaming stream.\n44. **[Zerde](/en/name/zerde)**: Yellow, golden sunray glow.\n45. **[Reş](/en/name/res)**: Black, representing depth, resilience and strong presence.\n46. **[Keskosor](/en/name/keskosor)**: Rainbow, literally green and red, symbol of nature's beauty.\n47. **Mor**: Purple, color of nobility, royalty and delicate wild flowers.\n48. **Pembe**: Pink, representing joy, love and pure childhood innocence.\n49. **[Narincî](/en/name/narinci)**: Orange, the warm and energetic color of mountain sunset.\n50. **[Qehweyî](/en/name/qehweyi)**: Brown, the grounding color of fertile Mesopotamian soil.\n51. **[Geş](/en/name/ges)**: Bright, cheerful.\n52. **Mat**: Matte, simple, avoiding display, quiet deep personality.\n53. **[Tarî](/en/name/tari)**: Dark, mysterious, poetic representation of peaceful night.\n54. **[Esmê](/en/name/esme)**: Brunette beauty, dark-skinned beautiful woman.\n55. **[Kejo](/en/name/kejo)**: The hazel-eyed, highly friendly and cheerful blonde child.\n56. **[Zeryan](/en/name/zeryan)**: Sea storm, roaring ocean wind.\n57. **[Asmân](/en/name/asman)**: Sky, heavens, infinite blue space.\n58. **[Şahbal](/en/name/sahbal)**: The largest and most powerful wing of an eagle, majestic flight.\n59. **[Tavban](/en/name/tavban)**: Sunny rooftop, bright and airy place under the golden sun.\n60. **Ronya**: ...\n61. **[Dîdar](/en/name/didar)**: Vision, sight.\n62. **Roza**: ...\n63. **[Rozalin](/en/name/rozalin)**: Sun-red, the beautiful moment when the sky turns scarlet.\n64. **[Helîn](/en/name/helin)**: ...\n65. **Nûroj**: New day, fresh morning sun, bright future.\n66. **[Şevder](/en/name/sevder)**: ...\n67. **Brûsk**: ...\n68. **[Agir](/en/name/agir)**: ...\n69. **[Alav](/en/name/alav)**: Flame, glow.\n70. **[Gazın](/en/name/gazin)**: ...\n71. **[Stêrk](/en/name/sterk)**: ...\n72. **[Gelavej](/en/name/gelavej)**: Venus, morning star, guiding bright star.\n73. **[Perwîn](/en/name/perwin)**: Pleiades star cluster, shining noble guide star.\n74. **[Hîvî](/en/name/hivii)**: Hope.\n75. **Şerbet**: Sherbet, sweet refreshing drink, metaphor for extreme sweetness.\n76. **Şîrîn**: Of milk, sweet, lion, like milk, sweet, lion.\n77. **[Zelal](/en/name/zelal)**: ...\n78. **[Paqîz](/en/name/paqiz)**: Pure, pristine, clean and untouched by negativity.\n79. **Xasî**: Pure, sincere, distinguished and original in nature.\n80. **[Rengîn](/en/name/rengin)**: One who is colorful, ornate, pleasant, and possesses a versatile beauty.\n81. **[Çavreş](/en/name/cavres)**: ...\n82. **[Çavşîn](/en/name/cavsin)**: ...\n83. **[Çavbelek](/en/name/cavbelek)**: Hazel-eyed.\n84. **[Çavgezîz](/en/name/cavgeziz)**: Wildflower-eyed, possessing delicate and beautiful eyes.\n85. **[Çavxezal](/en/name/cavxezal)**: Gazelle-eyed, possessing innocent and beautiful eyes.\n86. **[Porzêr](/en/name/porzer)**: Golden-haired, with shining beautiful hair.\n87. **[Porreş](/en/name/porres)**: Black-haired, with beautiful dark hair.\n88. **[Sertav](/en/name/sertav)**: Sunburst peak, head of light, brilliant start.\n89. **[Serroj](/en/name/serroj)**: First light of the day, fresh morning dawn.\n90. **[Bêrî](/en/name/beri)**: Longing, yearning, and nostalgia.\n\n\n\n## Name Origins\n\nThe origins of Kurdish girls' names are deeply rooted in the historical layers of the Kurdish language, which belongs to the Iranian group of the Indo-European language family. Many of these names have survived to the present day by filtering through ancient Avestan texts, linguistic remnants of the Medes civilization, and classical Kurdish literature. Possessing extremely melodic and soft tones phonetically, these names usually represent the revival of nature, celestial bodies, and noble emotions. The aesthetic harmony of feminine suffixes and word roots in Kurdish grammar gives girl names a unique elegance and fluidity.\n\n## Cultural Significance\n\nIn Kurdish culture, woman is the most important symbol of life, abundance, and social resilience. This situation is clearly reflected in the names given to baby girls. Names like 'Jiyan' (life) or 'Hevîn' (hope) glorify the founding and unifying role of women in society. In addition, the fertile lands, majestic mountains, and wildflowers of Mesopotamia are the greatest source of inspiration for girls' names. When choosing a girl's name, it is wished that the child will bring good luck, abundance, and light to her family; therefore, names themed around light, sun, and spring have always been cherished throughout history.\n\n## Frequently Asked Questions (FAQ)\n\n### What do Kurdish color and light names symbolize?\n\nThey symbolize the brightest shades of nature and the sky, visual aesthetics, divine illumination, and brilliant sparkles of light.",
+  "faqs": [
+    {
+      "question": "What do Kurdish color and light names symbolize?",
+      "answer": "They symbolize the brightest shades of nature and the sky, visual aesthetics, divine illumination, and brilliant sparkles of light."
+    }
+  ]
+}

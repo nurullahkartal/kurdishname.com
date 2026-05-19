@@ -1,0 +1,513 @@
+{
+  "title": "100 Bölgesel ve Coğrafi Kürtçe İsim (Şehir, Dağ, Nehir)",
+  "description": "100 Bölgesel ve Coğrafi Kürtçe İsim (Şehir, Dağ, Nehir) listesi.",
+  "names": [
+    {
+      "name": "Botan",
+      "id": "botan",
+      "meaning": "Kadim Botan bölgesinin adıdır; cesaret ve köklü mirası temsil eder."
+    },
+    {
+      "name": "Dersim",
+      "id": "dersim",
+      "meaning": "Gümüş kapı; Kürdistan'da kadim ve baş eğmez bir bölgenin adıdır."
+    },
+    {
+      "name": "Behdinan",
+      "id": "behdinan",
+      "meaning": "Behdinan bölgesi; Hakkari-Duhok hattını kapsayan tarihi ve asil Kürt coğrafyası."
+    },
+    {
+      "name": "Soran",
+      "id": "soran_2",
+      "meaning": "Kürdistan'da bir bölge ve lehçe adı olup, kültürel köklülüğü ve asaletini temsil eder."
+    },
+    {
+      "name": "Amed",
+      "id": "amed",
+      "meaning": "Diyarbakır'ın tarihi ve kültürel adıdır."
+    },
+    {
+      "name": "Cudî",
+      "id": "cudii",
+      "meaning": "Cudi dağı."
+    },
+    {
+      "name": "Sîpan",
+      "id": "sipan",
+      "meaning": "Süphan dağı, yüksek zirve."
+    },
+    {
+      "name": "Munzur",
+      "id": "munzur",
+      "meaning": "Munzur; Dersim bölgesindeki efsanevi berrak akarsu ve kutsal sıradağlar."
+    },
+    {
+      "name": "Zagros",
+      "id": "zagros_2",
+      "meaning": "Kürdistan coğrafyasının görkemli sıradağları; sarsılmaz gücü ve özgürlüğü temsil eder."
+    },
+    {
+      "name": "Gabar",
+      "id": "gabar",
+      "meaning": "Görkemli, ulu ve sarsılmaz dağ."
+    },
+    {
+      "name": "Zap",
+      "id": "zap",
+      "meaning": "Zap suyu, coşkulu akıntı, hırçın ve temiz nehir."
+    },
+    {
+      "name": "Fırat",
+      "id": "firat",
+      "meaning": "Fırat nehri."
+    },
+    {
+      "name": "Dicle",
+      "id": "dicle2",
+      "meaning": "Dicle nehri."
+    },
+    {
+      "name": "Aras",
+      "id": "aras",
+      "meaning": "Aras nehri, kavuşma."
+    },
+    {
+      "name": "Zîlan",
+      "id": "zilan",
+      "meaning": "Yıkıcı fırtına, rüzgar, isyan."
+    },
+    {
+      "name": "Erdelan",
+      "id": "erdelan",
+      "meaning": "Kürdistan'da hüküm sürmüş kadim bir emirliğin ve o asil sülalenin adıdır."
+    },
+    {
+      "name": "Mukrî",
+      "id": "mukri",
+      "meaning": "Mukri; Doğu Kürdistan'ın tarihi Mahabad bölgesindeki asil Kürt hanedanı ve lehçesi."
+    },
+    {
+      "name": "Lolan",
+      "id": "lolan",
+      "meaning": "Ünlü, asil ve tarihi bir Kürt aşireti ismi."
+    },
+    {
+      "name": "Barzan",
+      "id": "barzan",
+      "meaning": "Barzan; Güney Kürdistan'da yer alan, nehir kenarındaki asil ve yemyeşil yerleşim yeri."
+    },
+    {
+      "name": "Hevler",
+      "id": "hevler",
+      "meaning": "Hevler; Erbil (Erbîl) şehrinin Kürtçe tarihi adı, surlar kenti."
+    },
+    {
+      "name": "Qamişlo",
+      "id": "qamislo",
+      "meaning": "Qamişlo; Batı Kürdistan'ın (Rojava) meşhur Kamışlı şehri."
+    },
+    {
+      "name": "Kobanê",
+      "id": "kobane",
+      "meaning": "Kobanê; direnişiyle, dik duruşuyla ve sadakatiyle bilinen tarihi Rojava şehri."
+    },
+    {
+      "name": "Efrîn",
+      "id": "efrin",
+      "meaning": "Suriye'deki Kürt şehri, yaratılış."
+    },
+    {
+      "name": "Cizîr",
+      "id": "cizir",
+      "meaning": "Cizre şehri, tarihi bilim ve kültür merkezi."
+    },
+    {
+      "name": "Nusaybin",
+      "id": "nusaybin",
+      "meaning": "Nusaybin; antik adı Nisebîn olan tarihi ve köklü Mezopotamya kültür kenti."
+    },
+    {
+      "name": "Palo",
+      "id": "palo",
+      "meaning": "Tarihi kale, şehir ve Kürt hükümet merkezi."
+    },
+    {
+      "name": "Varto",
+      "id": "varto",
+      "meaning": "Tarihi ve coğrafi bir bölge ismi."
+    },
+    {
+      "name": "Xelat",
+      "id": "xelat",
+      "meaning": "Armağan, ödül, mükâfat."
+    },
+    {
+      "name": "Merdîn",
+      "id": "merdin",
+      "meaning": "Merdîn; taş evleri, tarihi dokusu ve hoşgörüsüyle ünlü asil Mardin şehri."
+    },
+    {
+      "name": "Colemêrg",
+      "id": "colemerg",
+      "meaning": "Colemêrg; Hakkari bölgesinin yüksek heybetli dağlarla çevrili kadim Kürtçe ismi."
+    },
+    {
+      "name": "Şirnex",
+      "id": "sirnex",
+      "meaning": "Şirnex; Nuh'un Gemisi efsanesine ev sahipliği yapan Şırnak şehrinin asıl Kürtçe adı."
+    },
+    {
+      "name": "Duhok",
+      "id": "duhok",
+      "meaning": "Duhok; Behdinan bölgesinin incisi, yemyeşil dağlar arasındaki güzel şehir."
+    },
+    {
+      "name": "Zaxo",
+      "id": "zaxo",
+      "meaning": "Zaxo; Khabur çayının hayat verdiği tarihi köprüleri olan asil sınır şehri."
+    },
+    {
+      "name": "Helebçe",
+      "id": "helebce",
+      "meaning": "Helebçe; tarihi acıları ve dirençli asil duruşu simgeleyen Güney Kürdistan şehri."
+    },
+    {
+      "name": "Kerkûk",
+      "id": "kerkuk",
+      "meaning": "Kerkûk; zengin petrolü, kadim tarihi ve çok kültürlü yapısıyla bilinen asil şehir."
+    },
+    {
+      "name": "Mahabad",
+      "id": "mahabad",
+      "meaning": "Mahabad; Doğu Kürdistan'ın tarihi cumhuriyet başkenti olan gururlu kenti."
+    },
+    {
+      "name": "Sîne",
+      "id": "sine_2",
+      "meaning": "Mavi, gökyüzü rengi; aynı zamanda derin bir hüzün ve dinginliği temsil eder."
+    },
+    {
+      "name": "Ranya",
+      "id": "ranya",
+      "meaning": "Ranya; Süleymaniye bölgesinde yer alan, serhildanların (başkaldırı) simgesi olan yiğit ilçe."
+    },
+    {
+      "name": "Soranî",
+      "id": "sorani",
+      "meaning": "Soranî; Erbil ve Süleymaniye çevresinde konuşulan zengin edebi Kürtçe lehçesi ve bölgesi."
+    },
+    {
+      "name": "Kurmancî",
+      "id": "kurmanci",
+      "meaning": "Kurmanci."
+    },
+    {
+      "name": "Luristan",
+      "id": "luristan",
+      "meaning": "Luristan; Lur Kürtlerinin yaşadığı görkemli dağlık eyalet ve bölge."
+    },
+    {
+      "name": "Germîyan",
+      "id": "germiyan",
+      "meaning": "Germîyan; sıcak iklimi ve zengin folkloruyla bilinen tarihi coğrafi bölge."
+    },
+    {
+      "name": "Berwarî",
+      "id": "berwari",
+      "meaning": "Yamaçlı."
+    },
+    {
+      "name": "Gever",
+      "id": "gever",
+      "meaning": "Gever; Yüksekova ilçesinin karla kaplı ulu dağlarla çevrili kadim ismi."
+    },
+    {
+      "name": "Şemzînan",
+      "id": "semzinan",
+      "meaning": "Şemzînan; Şemdinli'nin doğayla iç içe, yemyeşil ulu sınır coğrafyası."
+    },
+    {
+      "name": "Elbak",
+      "id": "elbak",
+      "meaning": "Elbak; Başkale ilçesinin tarihi ulu kalesi ve serin yaylalarıyla ünlü asıl adı."
+    },
+    {
+      "name": "Xakurke",
+      "id": "xakurke",
+      "meaning": "Xakurke; sarp dağların, ulu akarsuların ve yemyeşil bakir yaylaların buluştuğu asil bölge."
+    },
+    {
+      "name": "Qendîl",
+      "id": "qendil",
+      "meaning": "Kandil, ışık."
+    },
+    {
+      "name": "Agirî",
+      "id": "agiri",
+      "meaning": "Ağrı dağı, ateşe ait olan."
+    },
+    {
+      "name": "Nemrût",
+      "id": "nemrut",
+      "meaning": "Nemrût; ulu kralların tahtı olan efsanevi Nemrut yanardağı, dağı ve krateri."
+    },
+    {
+      "name": "Sînem",
+      "id": "sinem",
+      "meaning": "Göğsümdeki, canım, kalbimin en derinindeki asil sevgili."
+    },
+    {
+      "name": "Dilovan",
+      "id": "dilovan",
+      "meaning": "Sevecen, merhametli, yufka yürekli."
+    },
+    {
+      "name": "Şingal",
+      "id": "singal",
+      "meaning": "Şingal; Ezidi Kürtlerinin kutsal mekanı olan tarihi Sincar dağı ve şehri."
+    },
+    {
+      "name": "Laleş",
+      "id": "lales",
+      "meaning": "Kutsal mekan, Ezidi tapınağı."
+    },
+    {
+      "name": "Serhat",
+      "id": "serhat_3",
+      "meaning": "Aslan geldi; gücün ve beklenen kahramanlığın müjdecisi olan kimsedir."
+    },
+    {
+      "name": "Garzan",
+      "id": "garzan",
+      "meaning": "Bitlis/Siirt yöresinde bir dağ/bölge."
+    },
+    {
+      "name": "Hevsel",
+      "id": "hevsel",
+      "meaning": "Hevsel; Dicle nehri kıyısındaki binlerce yıllık bereketli ulu Hevsel bahçeleri."
+    },
+    {
+      "name": "Zê",
+      "id": "ze",
+      "meaning": "Zê; Kürtçede nehir kolu, akarsu, bereket kaynağı gür su."
+    },
+    {
+      "name": "Şat",
+      "id": "sat",
+      "meaning": "Şat; büyük nehir, gürül gürül akan coşkulu su yatağı."
+    },
+    {
+      "name": "Deşt",
+      "id": "dest",
+      "meaning": "Deşt; ova, düzlük, tarımın ve yaşamın yeşerdiği engin verimli arazi."
+    },
+    {
+      "name": "Zevî",
+      "id": "zevi",
+      "meaning": "Tarla, ekili alan, bereketli toprak."
+    },
+    {
+      "name": "Kendal",
+      "id": "kendal",
+      "meaning": "Bayır, uçuruma yakın yer, dağ yamacı."
+    },
+    {
+      "name": "Çal",
+      "id": "cal",
+      "meaning": "Çal; çukur, derin korunaklı dağ geçidi, vadi."
+    },
+    {
+      "name": "Newal",
+      "id": "newal",
+      "meaning": "Newal; dere yatağı, içinden tatlı su süzülen vadi."
+    },
+    {
+      "name": "Gelî",
+      "id": "gelii",
+      "meaning": "Vadiye dair."
+    },
+    {
+      "name": "Zinar",
+      "id": "zinar_2",
+      "meaning": "Kaya, sarp kayalık; sarsılmaz karakteri, dayanıklılığı ve gücü temsil eder."
+    },
+    {
+      "name": "War",
+      "id": "war",
+      "meaning": "Yer, yurt, sıla, asil toprak."
+    },
+    {
+      "name": "Bax",
+      "id": "bax",
+      "meaning": "Bahçe, meyvelik, yeşil vaha."
+    },
+    {
+      "name": "Gund",
+      "id": "gund",
+      "meaning": "Gund; köy, sıcak toplu yaşamın ve geleneksel asil üretimin beşiği."
+    },
+    {
+      "name": "Şar",
+      "id": "sar",
+      "meaning": "Şar; şehir, medeniyetin, ticaretin ve zengin kültürün merkezi."
+    },
+    {
+      "name": "Welat",
+      "id": "welat",
+      "meaning": "Vatan, memleket, doğduğu yer."
+    },
+    {
+      "name": "Nîştîman",
+      "id": "nistiman",
+      "meaning": "Vatan, memleket ve aidiyet hissedilen kutsal toprakların sembolüdür."
+    },
+    {
+      "name": "Niwar",
+      "id": "niwar",
+      "meaning": "Yeni vatan, taze yurt, yeni yerleşim yeri."
+    },
+    {
+      "name": "Bane",
+      "id": "bane",
+      "meaning": "Çığlık, sesleniş ve yankılanan sestir."
+    },
+    {
+      "name": "Serban",
+      "id": "serban",
+      "meaning": "Serban; dam üstü, yüksek teras, yıldızların ulu dağlarda izlendiği havadar yer."
+    },
+    {
+      "name": "Koz",
+      "id": "koz",
+      "meaning": "Koz; rüzgardan korunaklı ulu yer, sıcak ocak, güvenli sığınak."
+    },
+    {
+      "name": "Zozan",
+      "id": "zozan_2",
+      "meaning": "Yayla, yüksek dağ otlağı; serinliği, ferahlığı ve doğanın en saf halini temsil eder."
+    },
+    {
+      "name": "Soran",
+      "id": "soran_2",
+      "meaning": "Kürdistan'da bir bölge ve lehçe adı olup, kültürel köklülüğü ve asaletini temsil eder."
+    },
+    {
+      "name": "Badîn",
+      "id": "badin",
+      "meaning": "İnanç rüzgarı ve ruhani güç."
+    },
+    {
+      "name": "Hekar",
+      "id": "hekar",
+      "meaning": "Hakkari bölgesi, Hakkar Emirliği."
+    },
+    {
+      "name": "Cizîrî",
+      "id": "ciziri",
+      "meaning": "Cizreli."
+    },
+    {
+      "name": "Şirwan",
+      "id": "sirwan_2",
+      "meaning": "Akarsu, nehir; aynı zamanda Mezopotamya'nın önemli su kaynaklarından biri olan Zapsuyu'nu temsil eder."
+    },
+    {
+      "name": "Eruh",
+      "id": "eruh",
+      "meaning": "Eruh; Siirt'in kadim kalesi ve asırlık ulu kültür mirasıyla bilinen ilçesi."
+    },
+    {
+      "name": "Pirsus",
+      "id": "pirsus",
+      "meaning": "Pirsus; Suruç ilçesinin antik verimli ovalarını simgeleyen tarihi Kürtçe ismi."
+    },
+    {
+      "name": "Serekanî",
+      "id": "serekani",
+      "meaning": "Serekanî; Ceylanpınar ve Resulayn'daki göz alıcı ulu su gözelerini niteleyen Kürtçe isim."
+    },
+    {
+      "name": "Derik",
+      "id": "derik",
+      "meaning": "Derik; zeytin ağaçlarıyla ve tarihi taş kiliseleriyle ünlü asil Mardin ilçesi."
+    },
+    {
+      "name": "Midîyad",
+      "id": "midiyad",
+      "meaning": "Midîyad; telkari gümüş sanatı ve ulu taş konaklarıyla meşhur tarihi Midyat ilçesi."
+    },
+    {
+      "name": "Kerboran",
+      "id": "kerboran",
+      "meaning": "Kerboran; Dargeçit ilçesinin tarihi ve sarp dağ yamaçlarındaki asil yerleşimi."
+    },
+    {
+      "name": "Hezex",
+      "id": "hezex",
+      "meaning": "Hezex; İdil ilçesinin Süryani ve Kürt kültürünü harmanlayan kadim tarihi adı."
+    },
+    {
+      "name": "Silopi",
+      "id": "silopi",
+      "meaning": "Silopi; Cudi dağının ulu eteklerinde kurulu bereketli kadim sınır şehri."
+    },
+    {
+      "name": "Licê",
+      "id": "lice",
+      "meaning": "Licê; Lice ilçesinin ulu dağ yamaçlarındaki köklü ve tarihi Kürt yerleşimi."
+    },
+    {
+      "name": "Farqîn",
+      "id": "farqin",
+      "meaning": "Farqîn; Silvan ilçesinin antik ulu surları ve krallık mirası olan meşhur ismi."
+    },
+    {
+      "name": "Bismîl",
+      "id": "bismil",
+      "meaning": "Bismîl; Dicle nehri kenarındaki bereketli ve ulu tarım ovalarıyla ünlü güzel ilçe."
+    },
+    {
+      "name": "Çinar",
+      "id": "cinar",
+      "meaning": "Ulu çınar ağacı."
+    },
+    {
+      "name": "Hênê",
+      "id": "hene",
+      "meaning": "Hênê; Hani ilçesinin gür kaynak suları ve asırlık ulu yeşil bahçeleriyle bilinen adı."
+    },
+    {
+      "name": "Pîran",
+      "id": "piran",
+      "meaning": "Yaşlılar, bilgeler, pirler."
+    },
+    {
+      "name": "Erxenî",
+      "id": "erxeni",
+      "meaning": "Erxenî; asil bakır madenleri ve Neolitik ulu antik yerleşimiyle bilinen Ergani ilçesi."
+    },
+    {
+      "name": "Pasûr",
+      "id": "pasur",
+      "meaning": "Pasûr; Kulp ilçesinin sarp ulu dağ vadileri ve ipekçiliğiyle ünlü Kürtçe ismi."
+    },
+    {
+      "name": "Sûr",
+      "id": "sur",
+      "meaning": "Sûr; Diyarbakır'ın binlerce yıllık ulu taş surlarıyla çevrili tarihi ve asil kalbi."
+    },
+    {
+      "name": "Bağlar",
+      "id": "baglar",
+      "meaning": "Bağlar; Diyarbakır'ın nefis üzüm bağlarıyla ünlü meşhur asil ilçesi."
+    }
+  ],
+  "content": "## İsim Listesi ve Anlamları\n\n1. **[Botan](/tr/isim/botan)**: Kadim Botan bölgesinin adıdır; cesaret ve köklü mirası temsil eder.\n2. **[Dersim](/tr/isim/dersim)**: Gümüş kapı; Kürdistan'da kadim ve baş eğmez bir bölgenin adıdır.\n3. **Behdinan**: Behdinan bölgesi; Hakkari-Duhok hattını kapsayan tarihi ve asil Kürt coğrafyası.\n4. **Soran**: Kürdistan'da bir bölge ve lehçe adı olup, kültürel köklülüğü ve asaletini temsil eder.\n5. **[Amed](/tr/isim/amed)**: Diyarbakır'ın tarihi ve kültürel adıdır.\n6. **[Cudî](/tr/isim/cudii)**: Cudi dağı.\n7. **[Sîpan](/tr/isim/sipan)**: Süphan dağı, yüksek zirve.\n8. **Munzur**: Munzur; Dersim bölgesindeki efsanevi berrak akarsu ve kutsal sıradağlar.\n9. **Zagros**: Kürdistan coğrafyasının görkemli sıradağları; sarsılmaz gücü ve özgürlüğü temsil eder.\n10. **[Gabar](/tr/isim/gabar)**: Görkemli, ulu ve sarsılmaz dağ.\n11. **[Zap](/tr/isim/zap)**: Zap suyu, coşkulu akıntı, hırçın ve temiz nehir.\n12. **[Fırat](/tr/isim/firat)**: Fırat nehri.\n13. **Dicle**: Dicle nehri.\n14. **[Aras](/tr/isim/aras)**: Aras nehri, kavuşma.\n15. **[Zîlan](/tr/isim/zilan)**: Yıkıcı fırtına, rüzgar, isyan.\n16. **[Erdelan](/tr/isim/erdelan)**: Kürdistan'da hüküm sürmüş kadim bir emirliğin ve o asil sülalenin adıdır.\n17. **Mukrî**: Mukri; Doğu Kürdistan'ın tarihi Mahabad bölgesindeki asil Kürt hanedanı ve lehçesi.\n18. **[Lolan](/tr/isim/lolan)**: Ünlü, asil ve tarihi bir Kürt aşireti ismi.\n19. **Barzan**: Barzan; Güney Kürdistan'da yer alan, nehir kenarındaki asil ve yemyeşil yerleşim yeri.\n20. **Hevler**: Hevler; Erbil (Erbîl) şehrinin Kürtçe tarihi adı, surlar kenti.\n21. **Qamişlo**: Qamişlo; Batı Kürdistan'ın (Rojava) meşhur Kamışlı şehri.\n22. **Kobanê**: Kobanê; direnişiyle, dik duruşuyla ve sadakatiyle bilinen tarihi Rojava şehri.\n23. **[Efrîn](/tr/isim/efrin)**: Suriye'deki Kürt şehri, yaratılış.\n24. **[Cizîr](/tr/isim/cizir)**: Cizre şehri, tarihi bilim ve kültür merkezi.\n25. **Nusaybin**: Nusaybin; antik adı Nisebîn olan tarihi ve köklü Mezopotamya kültür kenti.\n26. **[Palo](/tr/isim/palo)**: Tarihi kale, şehir ve Kürt hükümet merkezi.\n27. **[Varto](/tr/isim/varto)**: Tarihi ve coğrafi bir bölge ismi.\n28. **[Xelat](/tr/isim/xelat)**: Armağan, ödül, mükâfat.\n29. **Merdîn**: Merdîn; taş evleri, tarihi dokusu ve hoşgörüsüyle ünlü asil Mardin şehri.\n30. **Colemêrg**: Colemêrg; Hakkari bölgesinin yüksek heybetli dağlarla çevrili kadim Kürtçe ismi.\n31. **Şirnex**: Şirnex; Nuh'un Gemisi efsanesine ev sahipliği yapan Şırnak şehrinin asıl Kürtçe adı.\n32. **Duhok**: Duhok; Behdinan bölgesinin incisi, yemyeşil dağlar arasındaki güzel şehir.\n33. **Zaxo**: Zaxo; Khabur çayının hayat verdiği tarihi köprüleri olan asil sınır şehri.\n34. **Helebçe**: Helebçe; tarihi acıları ve dirençli asil duruşu simgeleyen Güney Kürdistan şehri.\n35. **Kerkûk**: Kerkûk; zengin petrolü, kadim tarihi ve çok kültürlü yapısıyla bilinen asil şehir.\n36. **Mahabad**: Mahabad; Doğu Kürdistan'ın tarihi cumhuriyet başkenti olan gururlu kenti.\n37. **Sîne**: Mavi, gökyüzü rengi; aynı zamanda derin bir hüzün ve dinginliği temsil eder.\n38. **Ranya**: Ranya; Süleymaniye bölgesinde yer alan, serhildanların (başkaldırı) simgesi olan yiğit ilçe.\n39. **Soranî**: Soranî; Erbil ve Süleymaniye çevresinde konuşulan zengin edebi Kürtçe lehçesi ve bölgesi.\n40. **[Kurmancî](/tr/isim/kurmanci)**: Kurmanci.\n41. **Luristan**: Luristan; Lur Kürtlerinin yaşadığı görkemli dağlık eyalet ve bölge.\n42. **Germîyan**: Germîyan; sıcak iklimi ve zengin folkloruyla bilinen tarihi coğrafi bölge.\n43. **[Berwarî](/tr/isim/berwari)**: Yamaçlı.\n44. **Gever**: Gever; Yüksekova ilçesinin karla kaplı ulu dağlarla çevrili kadim ismi.\n45. **Şemzînan**: Şemzînan; Şemdinli'nin doğayla iç içe, yemyeşil ulu sınır coğrafyası.\n46. **Elbak**: Elbak; Başkale ilçesinin tarihi ulu kalesi ve serin yaylalarıyla ünlü asıl adı.\n47. **Xakurke**: Xakurke; sarp dağların, ulu akarsuların ve yemyeşil bakir yaylaların buluştuğu asil bölge.\n48. **[Qendîl](/tr/isim/qendil)**: Kandil, ışık.\n49. **[Agirî](/tr/isim/agiri)**: Ağrı dağı, ateşe ait olan.\n50. **Nemrût**: Nemrût; ulu kralların tahtı olan efsanevi Nemrut yanardağı, dağı ve krateri.\n51. **[Sînem](/tr/isim/sinem)**: Göğsümdeki, canım, kalbimin en derinindeki asil sevgili.\n52. **[Dilovan](/tr/isim/dilovan)**: Sevecen, merhametli, yufka yürekli.\n53. **Şingal**: Şingal; Ezidi Kürtlerinin kutsal mekanı olan tarihi Sincar dağı ve şehri.\n54. **[Laleş](/tr/isim/lales)**: Kutsal mekan, Ezidi tapınağı.\n55. **Serhat**: Aslan geldi; gücün ve beklenen kahramanlığın müjdecisi olan kimsedir.\n56. **[Garzan](/tr/isim/garzan)**: Bitlis/Siirt yöresinde bir dağ/bölge.\n57. **Hevsel**: Hevsel; Dicle nehri kıyısındaki binlerce yıllık bereketli ulu Hevsel bahçeleri.\n58. **[Zê](/tr/isim/ze)**: Zê; Kürtçede nehir kolu, akarsu, bereket kaynağı gür su.\n59. **[Şat](/tr/isim/sat)**: Şat; büyük nehir, gürül gürül akan coşkulu su yatağı.\n60. **[Deşt](/tr/isim/dest)**: Deşt; ova, düzlük, tarımın ve yaşamın yeşerdiği engin verimli arazi.\n61. **[Zevî](/tr/isim/zevi)**: Tarla, ekili alan, bereketli toprak.\n62. **[Kendal](/tr/isim/kendal)**: Bayır, uçuruma yakın yer, dağ yamacı.\n63. **[Çal](/tr/isim/cal)**: Çal; çukur, derin korunaklı dağ geçidi, vadi.\n64. **[Newal](/tr/isim/newal)**: Newal; dere yatağı, içinden tatlı su süzülen vadi.\n65. **[Gelî](/tr/isim/gelii)**: Vadiye dair.\n66. **Zinar**: Kaya, sarp kayalık; sarsılmaz karakteri, dayanıklılığı ve gücü temsil eder.\n67. **[War](/tr/isim/war)**: Yer, yurt, sıla, asil toprak.\n68. **[Bax](/tr/isim/bax)**: Bahçe, meyvelik, yeşil vaha.\n69. **[Gund](/tr/isim/gund)**: Gund; köy, sıcak toplu yaşamın ve geleneksel asil üretimin beşiği.\n70. **[Şar](/tr/isim/sar)**: Şar; şehir, medeniyetin, ticaretin ve zengin kültürün merkezi.\n71. **[Welat](/tr/isim/welat)**: Vatan, memleket, doğduğu yer.\n72. **[Nîştîman](/tr/isim/nistiman)**: Vatan, memleket ve aidiyet hissedilen kutsal toprakların sembolüdür.\n73. **[Niwar](/tr/isim/niwar)**: Yeni vatan, taze yurt, yeni yerleşim yeri.\n74. **[Bane](/tr/isim/bane)**: Çığlık, sesleniş ve yankılanan sestir.\n75. **[Serban](/tr/isim/serban)**: Serban; dam üstü, yüksek teras, yıldızların ulu dağlarda izlendiği havadar yer.\n76. **[Koz](/tr/isim/koz)**: Koz; rüzgardan korunaklı ulu yer, sıcak ocak, güvenli sığınak.\n77. **Zozan**: Yayla, yüksek dağ otlağı; serinliği, ferahlığı ve doğanın en saf halini temsil eder.\n78. **Soran**: Kürdistan'da bir bölge ve lehçe adı olup, kültürel köklülüğü ve asaletini temsil eder.\n79. **[Badîn](/tr/isim/badin)**: İnanç rüzgarı ve ruhani güç.\n80. **[Hekar](/tr/isim/hekar)**: Hakkari bölgesi, Hakkar Emirliği.\n81. **[Cizîrî](/tr/isim/ciziri)**: Cizreli.\n82. **Şirwan**: Akarsu, nehir; aynı zamanda Mezopotamya'nın önemli su kaynaklarından biri olan Zapsuyu'nu temsil eder.\n83. **Eruh**: Eruh; Siirt'in kadim kalesi ve asırlık ulu kültür mirasıyla bilinen ilçesi.\n84. **Pirsus**: Pirsus; Suruç ilçesinin antik verimli ovalarını simgeleyen tarihi Kürtçe ismi.\n85. **Serekanî**: Serekanî; Ceylanpınar ve Resulayn'daki göz alıcı ulu su gözelerini niteleyen Kürtçe isim.\n86. **Derik**: Derik; zeytin ağaçlarıyla ve tarihi taş kiliseleriyle ünlü asil Mardin ilçesi.\n87. **Midîyad**: Midîyad; telkari gümüş sanatı ve ulu taş konaklarıyla meşhur tarihi Midyat ilçesi.\n88. **Kerboran**: Kerboran; Dargeçit ilçesinin tarihi ve sarp dağ yamaçlarındaki asil yerleşimi.\n89. **Hezex**: Hezex; İdil ilçesinin Süryani ve Kürt kültürünü harmanlayan kadim tarihi adı.\n90. **Silopi**: Silopi; Cudi dağının ulu eteklerinde kurulu bereketli kadim sınır şehri.\n91. **Licê**: Licê; Lice ilçesinin ulu dağ yamaçlarındaki köklü ve tarihi Kürt yerleşimi.\n92. **Farqîn**: Farqîn; Silvan ilçesinin antik ulu surları ve krallık mirası olan meşhur ismi.\n93. **Bismîl**: Bismîl; Dicle nehri kenarındaki bereketli ve ulu tarım ovalarıyla ünlü güzel ilçe.\n94. **[Çinar](/tr/isim/cinar)**: Ulu çınar ağacı.\n95. **Hênê**: Hênê; Hani ilçesinin gür kaynak suları ve asırlık ulu yeşil bahçeleriyle bilinen adı.\n96. **[Pîran](/tr/isim/piran)**: Yaşlılar, bilgeler, pirler.\n97. **Erxenî**: Erxenî; asil bakır madenleri ve Neolitik ulu antik yerleşimiyle bilinen Ergani ilçesi.\n98. **Pasûr**: Pasûr; Kulp ilçesinin sarp ulu dağ vadileri ve ipekçiliğiyle ünlü Kürtçe ismi.\n99. **Sûr**: Sûr; Diyarbakır'ın binlerce yıllık ulu taş surlarıyla çevrili tarihi ve asil kalbi.\n100. **Bağlar**: Bağlar; Diyarbakır'ın nefis üzüm bağlarıyla ünlü meşhur asil ilçesi.\n\n\n\n## İsim Kökenleri\n\nKürtçe doğa ve coğrafya isimlerinin kökenleri, Kürt halkının tarih boyunca Zagros ve Munzur dağlarının yamaçlarında, Dicle ve Fırat nehirlerinin kıyılarında sürdürdüğü pastoral yaşam tarzına dayanır. Doğanın her bir unsuruna derin bir saygı duyan Kürtler, bu canlılığı dillerine ve isimlerine yansıtmışlardır. Yağmur (Baran), rüzgar (Bager), şimşek (Brûsk) ve nehirler gibi doğanın en görkemli halleri, Kürtçenin zengin coğrafi kelime haznesi aracılığıyla asil ve heybetli bebek isimlerine dönüşmüştür.\n\n## Kültürel Önem\n\nKürt kültüründe tabiat, sadece fiziksel bir çevre değil, özgürlüğün, direncin ve yaşamın kendisinin bir ifadesidir. Bu nedenle doğa isimleri, çocuğun karakterinin de tıpkı bir dağ gibi sarsılmaz, bir nehir gibi coşkulu ve bahar çiçekleri gibi narin ve taze olmasını simgeler. Doğa temalı isimler seçilirken, çocuğun evrenle olan uyumu ve doğanın sunduğu sonsuz bereket ve enerjiyi hayatı boyunca taşıması temenni edilir. Bu isimler hem doğaya duyulan minnettarlığı simgeler hem de kültürel sürekliliği sağlar.\n\n## Sık Sorulan Sorular (FAQ)\n\n### Bölgesel ve coğrafi Kürtçe isimlerin anlamı nedir?\n\nBu isimler Kürt coğrafyasındaki ulu dağlar, hırçın nehirler ve kadim şehirlerin (Botan, Munzur, Dersim) adlarından esinlenmiştir.",
+  "faqs": [
+    {
+      "question": "Bölgesel ve coğrafi Kürtçe isimlerin anlamı nedir?",
+      "answer": "Bu isimler Kürt coğrafyasındaki ulu dağlar, hırçın nehirler ve kadim şehirlerin (Botan, Munzur, Dersim) adlarından esinlenmiştir."
+    }
+  ]
+}

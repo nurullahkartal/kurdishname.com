@@ -1,0 +1,463 @@
+{
+  "title": "100 Kürtçe Renk ve Işık İsimleri",
+  "description": "100 Kürtçe Renk ve Işık İsimleri listesi.",
+  "names": [
+    {
+      "name": "Zer",
+      "id": "zer",
+      "meaning": "Altın, en değerli ve parlak maden."
+    },
+    {
+      "name": "Spi",
+      "id": "spi",
+      "meaning": "Beyaz, saf, temiz ve kar beyazı asalet."
+    },
+    {
+      "name": "Reşo",
+      "id": "reso",
+      "meaning": "Esmer erkek; mert, karizmatik ve geleneksel bir gücü temsil eden kimsedir."
+    },
+    {
+      "name": "Sor",
+      "id": "sor",
+      "meaning": "Kırmızı, kızıl parıltı, sıcak ve coşkulu renk."
+    },
+    {
+      "name": "Kesk",
+      "id": "kesk",
+      "meaning": "Yeşil; doğanın uyanışını, yaşamı ve bahar sanatını temsil eden renk."
+    },
+    {
+      "name": "Şîn",
+      "id": "sin_3",
+      "meaning": "Mavi renk, yaşamın tazeliği, derinliği ve gökyüzü genişliği."
+    },
+    {
+      "name": "Gewr",
+      "id": "gewr",
+      "meaning": "Gri, kır saç rengi, asalet ve olgunluk simgesi."
+    },
+    {
+      "name": "Belek",
+      "id": "belek",
+      "meaning": "Alaca, siyah-beyaz uyumu; yüksek dağlardaki alaca kar."
+    },
+    {
+      "name": "Kejal",
+      "id": "kejal",
+      "meaning": "Ela gözlü; ceylan bakışlı, güzel ve zarafetiyle hayran bırakan kimsedir."
+    },
+    {
+      "name": "Ronî",
+      "id": "roni_2",
+      "meaning": "Işık, aydınlık, görme yetisi ve feraset sahibi olan kimsedir."
+    },
+    {
+      "name": "Rojda",
+      "id": "rojda_2",
+      "meaning": "Güneşin doğuşu, gün doğumu ve yeni bir yaşamın başlangıcı demektir."
+    },
+    {
+      "name": "Rojîn",
+      "id": "rojin_3",
+      "meaning": "Güneş ışığı, güneşe ait; parlaklığı ve sıcaklığıyla etrafını ısıtan kimsedir."
+    },
+    {
+      "name": "Ronahî",
+      "id": "ronahi_2",
+      "meaning": "Aydınlık, ışık, parıltı ve her türlü karanlığı aydınlatan derin bilgeliği temsil eder."
+    },
+    {
+      "name": "Rozerîn",
+      "id": "rozerin_2",
+      "meaning": "Altın güneş; güneşin en parlak ve kıymetli anını temsil eden asil kimsedir."
+    },
+    {
+      "name": "Roşna",
+      "id": "rosna_2",
+      "meaning": "Aydınlık, ışık, parıltı; karanlıkları dağıtan bir nur gibi olan kimsedir."
+    },
+    {
+      "name": "Tav",
+      "id": "tav",
+      "meaning": "Güneş ışığı, hararet, sıcak parıltı."
+    },
+    {
+      "name": "Tîrêj",
+      "id": "tirej_2",
+      "meaning": "Işın, güneş ışığı; karanlığı delen ilk ışık hüzmesini ve umudu temsil eder."
+    },
+    {
+      "name": "Şevîn",
+      "id": "sevin",
+      "meaning": "Gece otlaması, gece manzarası."
+    },
+    {
+      "name": "Hîvron",
+      "id": "hivron",
+      "meaning": "Aydınlık ay."
+    },
+    {
+      "name": "Hîvda",
+      "id": "hivda",
+      "meaning": "Ay doğdu, aydan gelen."
+    },
+    {
+      "name": "Sitav",
+      "id": "sitav",
+      "meaning": "Güneş gören taraf, güneşe dönük sıcak yamaç."
+    },
+    {
+      "name": "Tavîn",
+      "id": "tavin",
+      "meaning": "Güneş ışığı gibi, güneş ışığıe dair."
+    },
+    {
+      "name": "Argeş",
+      "id": "arges",
+      "meaning": "Parlayan ateş."
+    },
+    {
+      "name": "Arşêv",
+      "id": "arsev",
+      "meaning": "Gece ateşi."
+    },
+    {
+      "name": "Rewşen",
+      "id": "rewsen",
+      "meaning": "Aydınlık, parlak, berrak ve zihni açık olan bilgeliği temsil eden kimsedir."
+    },
+    {
+      "name": "Zêr",
+      "id": "zer_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Zîv",
+      "id": "ziv",
+      "meaning": "Gümüş."
+    },
+    {
+      "name": "Pola",
+      "id": "pola",
+      "meaning": "Çelik, sarsılmaz, bükülmez, dayanıklı güç."
+    },
+    {
+      "name": "Gevher",
+      "id": "gevher",
+      "meaning": "Mücevher, öz, değerli taş, elmas."
+    },
+    {
+      "name": "Sîmar",
+      "id": "simar",
+      "meaning": "Gölge veren, koruyucu, ulu çınar gölgesi."
+    },
+    {
+      "name": "Siya",
+      "id": "siya",
+      "meaning": "Gölge, serinlik veren ulu ağaç gölgesi."
+    },
+    {
+      "name": "Tîn",
+      "id": "tin",
+      "meaning": "Isı, sıcaklık, coşku, ruhun enerjisi."
+    },
+    {
+      "name": "Pelda",
+      "id": "pelda",
+      "meaning": "Yaprak verdi, yeşillendi."
+    },
+    {
+      "name": "Beybûn",
+      "id": "beybun",
+      "meaning": "Beyaz papatya, baharın en zarif çiçeği."
+    },
+    {
+      "name": "Sosin",
+      "id": "sosin",
+      "meaning": "Sümbül, kır çiçeği."
+    },
+    {
+      "name": "Nergiz",
+      "id": "nergiz",
+      "meaning": "Nergis çiçeği; baharın müjdeleyicisi ve doğanın en güzel kokusunu temsil eder."
+    },
+    {
+      "name": "Şîlan",
+      "id": "silan_2",
+      "meaning": "Yaban gülü, kuşburnu; doğanın vahşi ama şifalı ve zarif yanını temsil eder."
+    },
+    {
+      "name": "Henar",
+      "id": "henar",
+      "meaning": "Nar meyvesi, bereket ve güzellik sembolü."
+    },
+    {
+      "name": "Mêw",
+      "id": "mew",
+      "meaning": "Asma dalı, üzüm asması, verimlilik."
+    },
+    {
+      "name": "Boran",
+      "id": "boran",
+      "meaning": "Fırtına, tipi ve doğanın karşı konulamaz gücünü temsil eden kimsedir."
+    },
+    {
+      "name": "Berf",
+      "id": "berf",
+      "meaning": "Kar, saflığı ve temizliği temsil eden beyaz örtü."
+    },
+    {
+      "name": "Avaşîn",
+      "id": "avasin",
+      "meaning": "Mavi su."
+    },
+    {
+      "name": "Avşêr",
+      "id": "avser",
+      "meaning": "Süt gibi beyaz, köpüklü ve berrak dağ suyu."
+    },
+    {
+      "name": "Zerde",
+      "id": "zerde",
+      "meaning": "Sarı renk, altın sarısı güneş ışığı parıltısı."
+    },
+    {
+      "name": "Reş",
+      "id": "res",
+      "meaning": "Reş; siyah, esmerlik, ulu vakar ve sarsılmaz asil duruşu simgeleyen asil renk."
+    },
+    {
+      "name": "Keskosor",
+      "id": "keskosor",
+      "meaning": "Keskosor; yeşil ve kırmızı, gökkuşağının asil Kürtçe halk masallarındaki adı."
+    },
+    {
+      "name": "Mor",
+      "id": "mor",
+      "meaning": "Mor; asalet ve eski krallık rengi, Mezopotamya kır çiçeklerindeki asil zarafet."
+    },
+    {
+      "name": "Pembe",
+      "id": "pembe",
+      "meaning": "Pembe; neşe, sevgi, saflık ve çocuksu masumiyeti temsil eden sevimli yumuşak renk."
+    },
+    {
+      "name": "Narincî",
+      "id": "narinci",
+      "meaning": "Narincî; turuncu, gün batımındaki sıcak, tatlı ve enerjik renk tonu."
+    },
+    {
+      "name": "Qehweyî",
+      "id": "qehweyi",
+      "meaning": "Qehweyî; kahverengi, bereketli Mezopotamya ulu topraklarının asıl doğal rengi."
+    },
+    {
+      "name": "Geş",
+      "id": "ges",
+      "meaning": "Parlak, neşeli."
+    },
+    {
+      "name": "Mat",
+      "id": "mat",
+      "meaning": "Mat; sönük, gösterişten uzak, sade, sessiz ve son derece derin karakter."
+    },
+    {
+      "name": "Tarî",
+      "id": "tari",
+      "meaning": "Tarî; karanlık, gizemli, gece esintisini ve sükuneti niteleyen şiirsel asil sıfat."
+    },
+    {
+      "name": "Esmê",
+      "id": "esme",
+      "meaning": "Esmer güzeli, asil esmer kadın."
+    },
+    {
+      "name": "Kejo",
+      "id": "kejo",
+      "meaning": "Kejo; ela gözlü, son derece sevimli, güler yüzlü ve cana yakın sarışın çocuk."
+    },
+    {
+      "name": "Zeryan",
+      "id": "zeryan",
+      "meaning": "Deniz fırtınası, rüzgarın denizdeki coşkulu dansı."
+    },
+    {
+      "name": "Asmân",
+      "id": "asman",
+      "meaning": "Gökyüzü, sema, sonsuz mavi boşluk."
+    },
+    {
+      "name": "Şahbal",
+      "id": "sahbal",
+      "meaning": "Şahbal; kartalın en büyük, en güçlü, ulu kanadı; görkemli süzülüş ve hür uçuş."
+    },
+    {
+      "name": "Tavban",
+      "id": "tavban",
+      "meaning": "Tavban; güneşli çatı, ışığın ve güneşin en çok vurduğu parlak havadar teras."
+    },
+    {
+      "name": "Ronya",
+      "id": "ronya_2",
+      "meaning": "Işık, aydınlık; parıltısıyla her yeri güzelleştiren asil ve zarif kimsedir."
+    },
+    {
+      "name": "Dîdar",
+      "id": "didar",
+      "meaning": "Görüş, vizyon."
+    },
+    {
+      "name": "Roza",
+      "id": "roza_3",
+      "meaning": "Gündoğumu, güneş; günün ilk ışıklarıyla gelen umudu ve aydınlığı temsil eder."
+    },
+    {
+      "name": "Rozalin",
+      "id": "rozalin",
+      "meaning": "Rozalin; güneş kırmızısı, gökyüzünün kızıla büründüğü eşsiz ve büyüleyici an."
+    },
+    {
+      "name": "Helîn",
+      "id": "helin",
+      "meaning": "Kuş yuvası, sıcaklık, şefkat."
+    },
+    {
+      "name": "Nûroj",
+      "id": "nuroj_2",
+      "meaning": "Yeni gün, doğan yeni güneş ışığı, aydınlık yarın."
+    },
+    {
+      "name": "Şevder",
+      "id": "sevder",
+      "meaning": "Gece yürüyen, geceye meydan okuyan."
+    },
+    {
+      "name": "Brûsk",
+      "id": "brusk_2",
+      "meaning": "Şimşek, parıltı ve doğanın ani ve güçlü ışığını temsil eden kimsedir."
+    },
+    {
+      "name": "Agir",
+      "id": "agir",
+      "meaning": "Ateş, coşku, heves."
+    },
+    {
+      "name": "Alav",
+      "id": "alav",
+      "meaning": "Alev, parıltı."
+    },
+    {
+      "name": "Gazın",
+      "id": "gazin",
+      "meaning": "Sitem, şikayet."
+    },
+    {
+      "name": "Stêrk",
+      "id": "sterk",
+      "meaning": "Yıldız, parlaklık."
+    },
+    {
+      "name": "Gelavej",
+      "id": "gelavej",
+      "meaning": "Çoban yıldızı, Venüs, yol gösteren parlak yıldız."
+    },
+    {
+      "name": "Perwîn",
+      "id": "perwin",
+      "meaning": "Ülker yıldız kümesi, geceleri parlayan asil kılavuz yıldız."
+    },
+    {
+      "name": "Hîvî",
+      "id": "hivii",
+      "meaning": "Umut."
+    },
+    {
+      "name": "Şerbet",
+      "id": "serbet",
+      "meaning": "Şerbet; tatlılık, cana can katan şifalı asil tatlı içecek, sonsuz sevecenlik."
+    },
+    {
+      "name": "Şîrîn",
+      "id": "sirin",
+      "meaning": "Süt, tatlı, aslan gibi, süt, tatlı, aslane dair."
+    },
+    {
+      "name": "Zelal",
+      "id": "zelal",
+      "meaning": "Berrak, temiz, şeffaf, duru."
+    },
+    {
+      "name": "Paqîz",
+      "id": "paqiz",
+      "meaning": "Paqîz; tertemiz, arınmış, kirden, kötülükten ve günahtan uzak duru kadın."
+    },
+    {
+      "name": "Xasî",
+      "id": "xasi",
+      "meaning": "Xasî; saf, katkısız, halis ve samimi niyetli, seçkin insan."
+    },
+    {
+      "name": "Rengîn",
+      "id": "rengin",
+      "meaning": "Renkli, süslü, hoş ve çok yönlü güzelliğe sahip olan kimsedir."
+    },
+    {
+      "name": "Çavreş",
+      "id": "cavres",
+      "meaning": "Siyah gözlü; derin ve anlamlı bakışlara sahip olan kimsedir."
+    },
+    {
+      "name": "Çavşîn",
+      "id": "cavsin",
+      "meaning": "Mavi gözlü, bakışları gökyüzü gibi ferah ve derin olan kimsedir."
+    },
+    {
+      "name": "Çavbelek",
+      "id": "cavbelek",
+      "meaning": "Ela gözlü."
+    },
+    {
+      "name": "Çavgezîz",
+      "id": "cavgeziz",
+      "meaning": "Çavgezîz; kır çiçeği gibi güzel, narin ve büyüleyici derin gözlere sahip olan kız."
+    },
+    {
+      "name": "Çavxezal",
+      "id": "cavxezal",
+      "meaning": "Çavxezal; ceylan gözlü, ürkek, masum ve büyüleyici derin bakışlı asil güzel."
+    },
+    {
+      "name": "Porzêr",
+      "id": "porzer",
+      "meaning": "Porzêr; altın sarısı ışıl ışıl parlayan ipeksi saçları olan sevimli bebek."
+    },
+    {
+      "name": "Porreş",
+      "id": "porres",
+      "meaning": "Porreş; gece karası ipeksi saçları olan, derin bakışlı ve asil mizaçlı bebek."
+    },
+    {
+      "name": "Sertav",
+      "id": "sertav",
+      "meaning": "Sertav; ulu güneşin doğduğu zirve, ışık başı, parıltılı asil başlangıç."
+    },
+    {
+      "name": "Serroj",
+      "id": "serroj",
+      "meaning": "Serroj; günün ilk ışığı, sabah feyzi, aydınlık ve tazeleyici gün başı."
+    },
+    {
+      "name": "Bêrî",
+      "id": "beri",
+      "meaning": "Özlem."
+    }
+  ],
+  "content": "## İsim Listesi ve Anlamları\n\n1. **[Zer](/tr/isim/zer)**: Altın, en değerli ve parlak maden.\n2. **[Spi](/tr/isim/spi)**: Beyaz, saf, temiz ve kar beyazı asalet.\n3. **[Reşo](/tr/isim/reso)**: Esmer erkek; mert, karizmatik ve geleneksel bir gücü temsil eden kimsedir.\n4. **[Sor](/tr/isim/sor)**: Kırmızı, kızıl parıltı, sıcak ve coşkulu renk.\n5. **[Kesk](/tr/isim/kesk)**: Yeşil; doğanın uyanışını, yaşamı ve bahar sanatını temsil eden renk.\n6. **Şîn**: Mavi renk, yaşamın tazeliği, derinliği ve gökyüzü genişliği.\n7. **[Gewr](/tr/isim/gewr)**: Gri, kır saç rengi, asalet ve olgunluk simgesi.\n8. **[Belek](/tr/isim/belek)**: Alaca, siyah-beyaz uyumu; yüksek dağlardaki alaca kar.\n9. **[Kejal](/tr/isim/kejal)**: Ela gözlü; ceylan bakışlı, güzel ve zarafetiyle hayran bırakan kimsedir.\n10. **Ronî**: Işık, aydınlık, görme yetisi ve feraset sahibi olan kimsedir.\n11. **Rojda**: Güneşin doğuşu, gün doğumu ve yeni bir yaşamın başlangıcı demektir.\n12. **Rojîn**: Güneş ışığı, güneşe ait; parlaklığı ve sıcaklığıyla etrafını ısıtan kimsedir.\n13. **Ronahî**: Aydınlık, ışık, parıltı ve her türlü karanlığı aydınlatan derin bilgeliği temsil eder.\n14. **Rozerîn**: Altın güneş; güneşin en parlak ve kıymetli anını temsil eden asil kimsedir.\n15. **Roşna**: Aydınlık, ışık, parıltı; karanlıkları dağıtan bir nur gibi olan kimsedir.\n16. **[Tav](/tr/isim/tav)**: Güneş ışığı, hararet, sıcak parıltı.\n17. **Tîrêj**: Işın, güneş ışığı; karanlığı delen ilk ışık hüzmesini ve umudu temsil eder.\n18. **[Şevîn](/tr/isim/sevin)**: Gece otlaması, gece manzarası.\n19. **[Hîvron](/tr/isim/hivron)**: Aydınlık ay.\n20. **[Hîvda](/tr/isim/hivda)**: Ay doğdu, aydan gelen.\n21. **[Sitav](/tr/isim/sitav)**: Güneş gören taraf, güneşe dönük sıcak yamaç.\n22. **[Tavîn](/tr/isim/tavin)**: Güneş ışığı gibi, güneş ışığıe dair.\n23. **[Argeş](/tr/isim/arges)**: Parlayan ateş.\n24. **[Arşêv](/tr/isim/arsev)**: Gece ateşi.\n25. **[Rewşen](/tr/isim/rewsen)**: Aydınlık, parlak, berrak ve zihni açık olan bilgeliği temsil eden kimsedir.\n26. **Zêr**: ...\n27. **[Zîv](/tr/isim/ziv)**: Gümüş.\n28. **[Pola](/tr/isim/pola)**: Çelik, sarsılmaz, bükülmez, dayanıklı güç.\n29. **Gevher**: Mücevher, öz, değerli taş, elmas.\n30. **[Sîmar](/tr/isim/simar)**: Gölge veren, koruyucu, ulu çınar gölgesi.\n31. **[Siya](/tr/isim/siya)**: Gölge, serinlik veren ulu ağaç gölgesi.\n32. **[Tîn](/tr/isim/tin)**: Isı, sıcaklık, coşku, ruhun enerjisi.\n33. **[Pelda](/tr/isim/pelda)**: Yaprak verdi, yeşillendi.\n34. **[Beybûn](/tr/isim/beybun)**: Beyaz papatya, baharın en zarif çiçeği.\n35. **[Sosin](/tr/isim/sosin)**: Sümbül, kır çiçeği.\n36. **[Nergiz](/tr/isim/nergiz)**: Nergis çiçeği; baharın müjdeleyicisi ve doğanın en güzel kokusunu temsil eder.\n37. **Şîlan**: Yaban gülü, kuşburnu; doğanın vahşi ama şifalı ve zarif yanını temsil eder.\n38. **[Henar](/tr/isim/henar)**: Nar meyvesi, bereket ve güzellik sembolü.\n39. **[Mêw](/tr/isim/mew)**: Asma dalı, üzüm asması, verimlilik.\n40. **[Boran](/tr/isim/boran)**: Fırtına, tipi ve doğanın karşı konulamaz gücünü temsil eden kimsedir.\n41. **[Berf](/tr/isim/berf)**: Kar, saflığı ve temizliği temsil eden beyaz örtü.\n42. **[Avaşîn](/tr/isim/avasin)**: Mavi su.\n43. **[Avşêr](/tr/isim/avser)**: Süt gibi beyaz, köpüklü ve berrak dağ suyu.\n44. **[Zerde](/tr/isim/zerde)**: Sarı renk, altın sarısı güneş ışığı parıltısı.\n45. **[Reş](/tr/isim/res)**: Reş; siyah, esmerlik, ulu vakar ve sarsılmaz asil duruşu simgeleyen asil renk.\n46. **[Keskosor](/tr/isim/keskosor)**: Keskosor; yeşil ve kırmızı, gökkuşağının asil Kürtçe halk masallarındaki adı.\n47. **Mor**: Mor; asalet ve eski krallık rengi, Mezopotamya kır çiçeklerindeki asil zarafet.\n48. **Pembe**: Pembe; neşe, sevgi, saflık ve çocuksu masumiyeti temsil eden sevimli yumuşak renk.\n49. **[Narincî](/tr/isim/narinci)**: Narincî; turuncu, gün batımındaki sıcak, tatlı ve enerjik renk tonu.\n50. **[Qehweyî](/tr/isim/qehweyi)**: Qehweyî; kahverengi, bereketli Mezopotamya ulu topraklarının asıl doğal rengi.\n51. **[Geş](/tr/isim/ges)**: Parlak, neşeli.\n52. **Mat**: Mat; sönük, gösterişten uzak, sade, sessiz ve son derece derin karakter.\n53. **[Tarî](/tr/isim/tari)**: Tarî; karanlık, gizemli, gece esintisini ve sükuneti niteleyen şiirsel asil sıfat.\n54. **[Esmê](/tr/isim/esme)**: Esmer güzeli, asil esmer kadın.\n55. **[Kejo](/tr/isim/kejo)**: Kejo; ela gözlü, son derece sevimli, güler yüzlü ve cana yakın sarışın çocuk.\n56. **[Zeryan](/tr/isim/zeryan)**: Deniz fırtınası, rüzgarın denizdeki coşkulu dansı.\n57. **[Asmân](/tr/isim/asman)**: Gökyüzü, sema, sonsuz mavi boşluk.\n58. **[Şahbal](/tr/isim/sahbal)**: Şahbal; kartalın en büyük, en güçlü, ulu kanadı; görkemli süzülüş ve hür uçuş.\n59. **[Tavban](/tr/isim/tavban)**: Tavban; güneşli çatı, ışığın ve güneşin en çok vurduğu parlak havadar teras.\n60. **Ronya**: Işık, aydınlık; parıltısıyla her yeri güzelleştiren asil ve zarif kimsedir.\n61. **[Dîdar](/tr/isim/didar)**: Görüş, vizyon.\n62. **Roza**: Gündoğumu, güneş; günün ilk ışıklarıyla gelen umudu ve aydınlığı temsil eder.\n63. **[Rozalin](/tr/isim/rozalin)**: Rozalin; güneş kırmızısı, gökyüzünün kızıla büründüğü eşsiz ve büyüleyici an.\n64. **[Helîn](/tr/isim/helin)**: Kuş yuvası, sıcaklık, şefkat.\n65. **Nûroj**: Yeni gün, doğan yeni güneş ışığı, aydınlık yarın.\n66. **[Şevder](/tr/isim/sevder)**: Gece yürüyen, geceye meydan okuyan.\n67. **Brûsk**: Şimşek, parıltı ve doğanın ani ve güçlü ışığını temsil eden kimsedir.\n68. **[Agir](/tr/isim/agir)**: Ateş, coşku, heves.\n69. **[Alav](/tr/isim/alav)**: Alev, parıltı.\n70. **[Gazın](/tr/isim/gazin)**: Sitem, şikayet.\n71. **[Stêrk](/tr/isim/sterk)**: Yıldız, parlaklık.\n72. **[Gelavej](/tr/isim/gelavej)**: Çoban yıldızı, Venüs, yol gösteren parlak yıldız.\n73. **[Perwîn](/tr/isim/perwin)**: Ülker yıldız kümesi, geceleri parlayan asil kılavuz yıldız.\n74. **[Hîvî](/tr/isim/hivii)**: Umut.\n75. **Şerbet**: Şerbet; tatlılık, cana can katan şifalı asil tatlı içecek, sonsuz sevecenlik.\n76. **Şîrîn**: Süt, tatlı, aslan gibi, süt, tatlı, aslane dair.\n77. **[Zelal](/tr/isim/zelal)**: Berrak, temiz, şeffaf, duru.\n78. **[Paqîz](/tr/isim/paqiz)**: Paqîz; tertemiz, arınmış, kirden, kötülükten ve günahtan uzak duru kadın.\n79. **Xasî**: Xasî; saf, katkısız, halis ve samimi niyetli, seçkin insan.\n80. **[Rengîn](/tr/isim/rengin)**: Renkli, süslü, hoş ve çok yönlü güzelliğe sahip olan kimsedir.\n81. **[Çavreş](/tr/isim/cavres)**: Siyah gözlü; derin ve anlamlı bakışlara sahip olan kimsedir.\n82. **[Çavşîn](/tr/isim/cavsin)**: Mavi gözlü, bakışları gökyüzü gibi ferah ve derin olan kimsedir.\n83. **[Çavbelek](/tr/isim/cavbelek)**: Ela gözlü.\n84. **[Çavgezîz](/tr/isim/cavgeziz)**: Çavgezîz; kır çiçeği gibi güzel, narin ve büyüleyici derin gözlere sahip olan kız.\n85. **[Çavxezal](/tr/isim/cavxezal)**: Çavxezal; ceylan gözlü, ürkek, masum ve büyüleyici derin bakışlı asil güzel.\n86. **[Porzêr](/tr/isim/porzer)**: Porzêr; altın sarısı ışıl ışıl parlayan ipeksi saçları olan sevimli bebek.\n87. **[Porreş](/tr/isim/porres)**: Porreş; gece karası ipeksi saçları olan, derin bakışlı ve asil mizaçlı bebek.\n88. **[Sertav](/tr/isim/sertav)**: Sertav; ulu güneşin doğduğu zirve, ışık başı, parıltılı asil başlangıç.\n89. **[Serroj](/tr/isim/serroj)**: Serroj; günün ilk ışığı, sabah feyzi, aydınlık ve tazeleyici gün başı.\n90. **[Bêrî](/tr/isim/beri)**: Özlem.\n\n\n\n## İsim Kökenleri\n\nKürtçe kız isimlerinin kökenleri, Hint-Avrupa dil ailesinin İrani grubuna dahil olan Kürt dilinin zengin tarihi katmanlarına dayanır. Bu isimlerin birçoğu antik Avesta metinlerinden, Med uygarlığının dil kalıntılarından ve klasik Kürt edebiyatından süzülerek günümüze ulaşmıştır. Fonetik yapıları itibarıyla son derece melodik ve yumuşak tınılara sahip olan bu isimler, genellikle doğanın canlanışını, göksel cisimleri ve asil duyguları temsil eder. Kürtçe dil bilgisindeki dişil takılar ve kelime köklerinin estetik uyumu, kız isimlerine eşsiz bir zarafet ve akıcılık kazandırır.\n\n## Kültürel Önem\n\nKürt kültüründe kadın, yaşamın, bereketin ve toplumsal direncin en önemli simgesidir. Bu durum, kız çocuklarına verilen isimlerde de kendini açıkça gösterir. 'Jiyan' (yaşam) veya 'Hevîn' (umut) gibi isimler, kadının toplumdaki kurucu ve birleştirici rolünü yüceltir. Ayrıca Mezopotamya'nın bereketli toprakları, ulu dağları ve kır çiçekleri, kız isimlerinin en büyük ilham kaynağıdır. Kız isimleri seçilirken, çocuğun ailesine uğur, bereket ve aydınlık getirmesi temenni edilir; bu nedenle ışık, güneş ve bahar temalı isimler tarih boyunca her zaman el üstünde tutulmuştur.\n\n## Sık Sorulan Sorular (FAQ)\n\n### Kürtçe renk ve ışık isimleri ne anlama gelir?\n\nDoğanın ve gökyüzünün en parlak tonlarını, görsel estetiği, ilahi nurları ve ışık parıltılarını simgeler.",
+  "faqs": [
+    {
+      "question": "Kürtçe renk ve ışık isimleri ne anlama gelir?",
+      "answer": "Doğanın ve gökyüzünün en parlak tonlarını, görsel estetiği, ilahi nurları ve ışık parıltılarını simgeler."
+    }
+  ]
+}

@@ -1,0 +1,513 @@
+{
+  "title": "100 Tarihi Kürt Hükümdar ve Hanedan İsmi",
+  "description": "100 Tarihi Kürt Hükümdar ve Hanedan İsmi listesi.",
+  "names": [
+    {
+      "name": "Bedirxan",
+      "id": "bedirxan",
+      "meaning": "Ay hanı, dolunay gibi parlak lider ve soylu kimsedir."
+    },
+    {
+      "name": "Selahaddin",
+      "id": "selahaddin",
+      "meaning": "Dinin iyiliği, doğruluğu (Selahaddin Eyyubi atıflı)."
+    },
+    {
+      "name": "Mervan",
+      "id": "mervan",
+      "meaning": "Cesur, yiğit savaşçı."
+    },
+    {
+      "name": "Şerefxan",
+      "id": "serefxan",
+      "meaning": "Şerefxan; Bitlis'in meşhur ulu miri, asil Şerefname adlı dev tarihi eserin asil yazarı."
+    },
+    {
+      "name": "Deysem",
+      "id": "deysem",
+      "meaning": "Tarihi bir Kürt lideri, Kürt komutanı."
+    },
+    {
+      "name": "Qazi",
+      "id": "qazi",
+      "meaning": "Yargıç, kanun koyucu, Qazi Muhammed (Mahabad Kürt Cumhuriyeti Kurucu Lideri) atıflı."
+    },
+    {
+      "name": "Simko",
+      "id": "simko_2",
+      "meaning": "İsmail isminin Kürtçe'deki yaygın bir formu olup, tarihi liderlik ve dirayeti temsil eder."
+    },
+    {
+      "name": "Barzanî",
+      "id": "barzani",
+      "meaning": "Barzanî; Barzan coğrafyasına ait olan, özgürlük ve ulu liderlikle anılan asil hanedan."
+    },
+    {
+      "name": "Said",
+      "id": "said",
+      "meaning": "Said; şanslı, mutlu, haksızlığa karşı boyun eğmeyen ulu asil lider, Şeyh Said."
+    },
+    {
+      "name": "Rıza",
+      "id": "riza",
+      "meaning": "Rıza; kadim Dersim ulu önderi, boyun eğmeyen vakar ve hoşgörü sahibi bilge lider."
+    },
+    {
+      "name": "Eyyub",
+      "id": "eyyub",
+      "meaning": "Eyyub; sabrı, asil direnişi ve Selahaddin Eyyubi hanedanının soyunu simgeleyen asil ad."
+    },
+    {
+      "name": "Zend",
+      "id": "zend",
+      "meaning": "Zerdüşt'ün kutsal kitabı Avesta'nın şerhi ve yorumu."
+    },
+    {
+      "name": "Ardelan",
+      "id": "ardelan",
+      "meaning": "Ünlü Erdelan Kürt Emirliği ve hanedanı ismi."
+    },
+    {
+      "name": "Baban",
+      "id": "baban",
+      "meaning": "Köklü ve tarihi bir Kürt beyliğinin adıdır."
+    },
+    {
+      "name": "Soran",
+      "id": "soran_2",
+      "meaning": "Kürdistan'da bir bölge ve lehçe adı olup, kültürel köklülüğü ve asaletini temsil eder."
+    },
+    {
+      "name": "Behdîn",
+      "id": "behdin_2",
+      "meaning": "Behdinan; asil emirlik bölgesi, iyi din inancına sahip bilge kişi."
+    },
+    {
+      "name": "Cizîrî",
+      "id": "ciziri",
+      "meaning": "Cizreli."
+    },
+    {
+      "name": "Mîr",
+      "id": "mir",
+      "meaning": "Bey, prens, lider."
+    },
+    {
+      "name": "Xan",
+      "id": "xan",
+      "meaning": "Han, hükümdar, bey, lider."
+    },
+    {
+      "name": "Key",
+      "id": "key",
+      "meaning": "Kral, hükümdar, ulu başbuğ (Antik Kürtçe beylik hitabı)."
+    },
+    {
+      "name": "Keyhusrev",
+      "id": "keyhusrev",
+      "meaning": "Büyük hükümdar, ulu ve adil imparator."
+    },
+    {
+      "name": "Dara",
+      "id": "dara",
+      "meaning": "Hükümdar, bey; ağaçlık yer."
+    },
+    {
+      "name": "Cemşîd",
+      "id": "cemsid",
+      "meaning": "Parlak, şanlı, padişah."
+    },
+    {
+      "name": "Hoşeng",
+      "id": "hoseng",
+      "meaning": "Akıllı, zeki, uslu kimse; aynı zamanda mitolojik bir Kürt kralı."
+    },
+    {
+      "name": "Feryad",
+      "id": "feryad",
+      "meaning": "Çığlık, sesleniş, yardım çağrısı."
+    },
+    {
+      "name": "Nizameddin",
+      "id": "nizameddin",
+      "meaning": "Dinin düzeni, intizamı, kuralı."
+    },
+    {
+      "name": "İmad",
+      "id": "imad",
+      "meaning": "İmad; Behdinan emirliğinin ulu merkezi olan görkemli İmadiye kalesinin kurucusu ve miri."
+    },
+    {
+      "name": "Zekî",
+      "id": "zeki",
+      "meaning": "Zekî; üstün zekalı, strateji uzmanı, ulu tarihi Kürt aydını ve yazarı."
+    },
+    {
+      "name": "Cemîl",
+      "id": "cemil_2",
+      "meaning": "Cemîl; ilahi yüce güzelliği simgeleyen, ahlakı ve yüzü son derece güzel insan."
+    },
+    {
+      "name": "Ekrem",
+      "id": "ekrem",
+      "meaning": "Ekrem; son derece cömert, tarihi Kürt aydınlanmasının asil ve saygın figürü."
+    },
+    {
+      "name": "Qedrî",
+      "id": "qedri",
+      "meaning": "Değerli, kıymetli, onurlu ve şerefli kişi."
+    },
+    {
+      "name": "Mele",
+      "id": "mele",
+      "meaning": "Din alimi, hoca, saygın bilgin."
+    },
+    {
+      "name": "Şêx",
+      "id": "sex",
+      "meaning": "Şêx; büyük ilim, tasavvuf ve maneviyat önderi, ulu hoca ve rehber."
+    },
+    {
+      "name": "Mehmûd",
+      "id": "mehmud",
+      "meaning": "Mehmûd; Kürdistan Krallığını ilan eden asil ve ünlü Şeyh Mahmud Berzenci."
+    },
+    {
+      "name": "Emin",
+      "id": "emin",
+      "meaning": "Emin; Bedirxan ailesinin sarsılmaz derecede güvenilir, asil ve entelektüel üyesi."
+    },
+    {
+      "name": "Sureyya",
+      "id": "sureyya",
+      "meaning": "Sureyya; gökyüzünün en parlak asil yıldız kümesi, tarihi öncü asil kadın."
+    },
+    {
+      "name": "Celadet",
+      "id": "celadet",
+      "meaning": "Yiğitlik, celadet."
+    },
+    {
+      "name": "Kamuran",
+      "id": "kamuran",
+      "meaning": "Kamuran; arzusuna, hayaline ve emeline ulaşmış, mutlu ve kutlu bahtiyar kişi."
+    },
+    {
+      "name": "Rewşen",
+      "id": "rewsen",
+      "meaning": "Aydınlık, parlak, berrak ve zihni açık olan bilgeliği temsil eden kimsedir."
+    },
+    {
+      "name": "Osman",
+      "id": "osman",
+      "meaning": "Osman; asil paşa, adaleti, koruyuculuğu ve gücü simgeleyen tarihi Kürt figürü."
+    },
+    {
+      "name": "Ali",
+      "id": "ali",
+      "meaning": "Ali; yüce, onurlu şahsiyet, Koçgiri önderi asil ve dirençli şahsiyet."
+    },
+    {
+      "name": "Zerîfe",
+      "id": "zerife",
+      "meaning": "Zarife Hanım; Koçgiri kadın direniş önderi, zarif ve mücadeleci."
+    },
+    {
+      "name": "Leyla",
+      "id": "leyla",
+      "meaning": "Gece, Leyla Qasım (Kürt ulusal kadın kahramanı) onuruna."
+    },
+    {
+      "name": "Mesture",
+      "id": "mesture",
+      "meaning": "Mesture; tarihin ilk Kürt kadın tarihçisi ve ulu şairi Erdelanlı asil hanımefendi."
+    },
+    {
+      "name": "Ehmed",
+      "id": "ehmed",
+      "meaning": "Ehmed; Ehmedê Xanî'nin ulu felsefesini taşıyan, övülmüş sarsılmaz asil isim."
+    },
+    {
+      "name": "Mela",
+      "id": "mela",
+      "meaning": "Mela; Melayê Cizîrî'nin derin tasavvufi aşkını simgeleyen saygın ulu bilgin."
+    },
+    {
+      "name": "Feqî",
+      "id": "feqi",
+      "meaning": "İlim talebesi, öğrenci, bilim insanı (Feqîyê Teyran atıflı)."
+    },
+    {
+      "name": "Nalî",
+      "id": "nali",
+      "meaning": "Nalî; Kürtçe şiirin babası, Süleymaniyeli ünlü ulu şair."
+    },
+    {
+      "name": "Hejar",
+      "id": "hejar",
+      "meaning": "Yoksul ama gönlü zengin; gariban ve alçakgönüllü olan kimsedir."
+    },
+    {
+      "name": "Hêmin",
+      "id": "hemin",
+      "meaning": "Sakin, huzurlu, güven veren ve ağırbaşlılığıyla tanınan kimsedir."
+    },
+    {
+      "name": "Şêrko",
+      "id": "serko_3",
+      "meaning": "Küçük aslan; cesareti erken yaşta fark edilen, atak ve güçlü kimsedir."
+    },
+    {
+      "name": "Cegerxwîn",
+      "id": "cegerxwin",
+      "meaning": "Ciğeri kanayan, derin acı çeken, ünlü şair."
+    },
+    {
+      "name": "Qanî",
+      "id": "qani",
+      "meaning": "Qanî; halkının acılarını dizeleyen, yetingen, gururlu ve asil vatansever şair."
+    },
+    {
+      "name": "Gorani",
+      "id": "gorani",
+      "meaning": "Goranî lehçesi."
+    },
+    {
+      "name": "Tevfîq",
+      "id": "tevfiq",
+      "meaning": "Tevfîq; Piramerd mahlaslı ünlü ulu yazar, gazeteci ve bilge şair."
+    },
+    {
+      "name": "Musa",
+      "id": "musa",
+      "meaning": "Musa; Apê Musa (Musa Anter) olarak bilinen, Kürt basınının ve edebiyatının ulu çınarı."
+    },
+    {
+      "name": "Mazlum",
+      "id": "mazlum",
+      "meaning": "Zulüm gören, uysal."
+    },
+    {
+      "name": "Kemal",
+      "id": "kemal",
+      "meaning": "Kemal; mutlak olgunluğa ulaşmış, sarsılmaz tarihi direncin ulu simgesi."
+    },
+    {
+      "name": "Xayrî",
+      "id": "xayri",
+      "meaning": "Xayrî; hayırlı, topluma faydalı, fedakar tarihi devrimci figür."
+    },
+    {
+      "name": "Sakine",
+      "id": "sakine",
+      "meaning": "Sakine; sarsılmaz iradeli, asil sessizliğin ve kararlılığın sembolü öncü devrimci kadın."
+    },
+    {
+      "name": "Arîn",
+      "id": "arin",
+      "meaning": "Ateşten olan, enerjik ve parlak."
+    },
+    {
+      "name": "Viyan",
+      "id": "viyan_2",
+      "meaning": "İrade, istek, arzu; kararlı duruşu ve sarsılmaz azmi temsil eder."
+    },
+    {
+      "name": "Zîlan",
+      "id": "zilan",
+      "meaning": "Yıkıcı fırtına, rüzgar, isyan."
+    },
+    {
+      "name": "Agît",
+      "id": "agit",
+      "meaning": "Yiğit."
+    },
+    {
+      "name": "Egîd",
+      "id": "egid",
+      "meaning": "Yiğit, cesur, kahraman ve mertliğiyle tanınan ulu kimsedir."
+    },
+    {
+      "name": "Mezdek",
+      "id": "mezdek",
+      "meaning": "Mezdek; antik çağda eşitliği, adaleti ve ortak yaşamı savunan ulu filozof lider."
+    },
+    {
+      "name": "Babek",
+      "id": "babek",
+      "meaning": "Babek; haksızlığa başkaldıran, sarsılmaz iradeli ulu antik kahraman."
+    },
+    {
+      "name": "Ebu-l Fida",
+      "id": "ebul_fida",
+      "meaning": "Ünlü 14. yüzyıl Kürt tarihçisi, coğrafyacısı ve Eyyubi hükümdarı."
+    },
+    {
+      "name": "Sohrâverdî",
+      "id": "sohraverdi",
+      "meaning": "Sohrâverdî; İşraki felsefesinin dahi kurucusu, asil ışık teorisyeni Kürt filozof."
+    },
+    {
+      "name": "Dînawerî",
+      "id": "dinaweri",
+      "meaning": "Dînawerî; botanik, astronomi ve büyük tarih biliminde çığır açan kadim dahi Kürt alimi."
+    },
+    {
+      "name": "Cahîz",
+      "id": "cahiz",
+      "meaning": "Keskin gözlü, bilge ve ulu edip şahsiyet."
+    },
+    {
+      "name": "İbn-i Hallikan",
+      "id": "ibni_hallikan",
+      "meaning": "İbn-i Hallikan; İslam dünyasının en büyük biyografi, edebiyat ve tarih yazarı ulu alimi."
+    },
+    {
+      "name": "Ziryar",
+      "id": "ziryar",
+      "meaning": "Ziryar; Endülüs sarayında müziğe yön veren usta Kürt müzisyen (Ziryab)."
+    },
+    {
+      "name": "Zerdeşt",
+      "id": "zerdest_2",
+      "meaning": "Antik inanç sisteminin kurucusu; aydınlığı, iyiliği ve bilgeliği temsil eden kadim kimsedir."
+    },
+    {
+      "name": "Manî",
+      "id": "mani",
+      "meaning": "Manî; resim ve ışıkla felsefesini yayan ulu antik Mezopotamya peygamberi."
+    },
+    {
+      "name": "Mezdak",
+      "id": "mezdak",
+      "meaning": "Mezdak; eşitlikçi ve özgürlükçü kadim felsefenin temsilcisi bilge lider."
+    },
+    {
+      "name": "Heftad",
+      "id": "heftad",
+      "meaning": "Heftad; yetmişler meclisi, kolektif kararı ve ulu birliği simgeleyen tarihi unvan."
+    },
+    {
+      "name": "Senger",
+      "id": "senger",
+      "meaning": "Mevzi, sığınak, kale, siper, savunma hattı."
+    },
+    {
+      "name": "Şêrwan",
+      "id": "serwan_3",
+      "meaning": "Aslan bakıcısı, koruyucu; gücü yöneten ve adaletle hükmeden kimsedir."
+    },
+    {
+      "name": "Mîrxan",
+      "id": "mirxan",
+      "meaning": "Beylerin hanı, kudretli ve lider bey."
+    },
+    {
+      "name": "Serdar",
+      "id": "serdar_2",
+      "meaning": "Komutan, önder, lider; topluluğun başında olan ve stratejik akla sahip olan kimsedir."
+    },
+    {
+      "name": "Şaho",
+      "id": "saho_2",
+      "meaning": "Şahane, görkemli; aynı zamanda Doğu Kürdistan'daki ihtişamlı bir dağın adıdır."
+    },
+    {
+      "name": "Zorab",
+      "id": "zorab_2",
+      "meaning": "Güçlü su; engelleri aşan, kararlı ve hırslı bir kişiliği temsil eder."
+    },
+    {
+      "name": "Rustem",
+      "id": "rustem",
+      "meaning": "Rüstem-i Zal; mitolojik kahramanlık, sarsılmaz cesaret ve güç sahibi."
+    },
+    {
+      "name": "Siyamend",
+      "id": "siyamend",
+      "meaning": "Gölge veren, koruyan görkemli dağ; kadim Kürt aşk destanının kahramanı."
+    },
+    {
+      "name": "Cembelî",
+      "id": "cembeli",
+      "meaning": "Kürt halk destanı kahramanı (Cembelîyê Kurê Mîrê Hekkarî)."
+    },
+    {
+      "name": "Binevş",
+      "id": "binevs",
+      "meaning": "Binevş; menekşe çiçeği, narin yapraklı ve çok güzel kokulu mor kır çiçeği."
+    },
+    {
+      "name": "Besê",
+      "id": "bese",
+      "meaning": "Orman, sık ağaçlık ve doğanın kalbini temsil eden kimsedir."
+    },
+    {
+      "name": "Xecê",
+      "id": "xece",
+      "meaning": "Hatice (Siyabend ve Xecê destanı kahramanı)."
+    },
+    {
+      "name": "Zîn",
+      "id": "zin_2",
+      "meaning": "Hayat veren, dirilik; aynı zamanda ünlü 'Mem û Zîn' destanının asil ve sadık kadın kahramanıdır."
+    },
+    {
+      "name": "Mem",
+      "id": "mem",
+      "meaning": "Ünlü 'Mem û Zîn' destanının kahramanı; sadık aşkın ve dürüstlüğün simgesidir."
+    },
+    {
+      "name": "Kawa",
+      "id": "kawa",
+      "meaning": "Demirci Kawa; zulme baş kaldıran, özgürlüğü getiren efsanevi kahramanın adıdır."
+    },
+    {
+      "name": "Dehak",
+      "id": "dehak",
+      "meaning": "Dehak; Demirci Kawa destanındaki tiranlığı simgeleyen tarihi Mezopotamya hükümdarı."
+    },
+    {
+      "name": "Ferhad",
+      "id": "ferhad",
+      "meaning": "Anlayışlı, yiğit ve büyük zorlukların üstesinden gelen kimsedir."
+    },
+    {
+      "name": "Şîrîn",
+      "id": "sirin",
+      "meaning": "Süt, tatlı, aslan gibi, süt, tatlı, aslane dair."
+    },
+    {
+      "name": "Ardelan",
+      "id": "ardelan",
+      "meaning": "Ünlü Erdelan Kürt Emirliği ve hanedanı ismi."
+    },
+    {
+      "name": "Botan",
+      "id": "botan",
+      "meaning": "Kadim Botan bölgesinin adıdır; cesaret ve köklü mirası temsil eder."
+    },
+    {
+      "name": "Mervanî",
+      "id": "mervani",
+      "meaning": "Mervanî."
+    },
+    {
+      "name": "Eyyubî",
+      "id": "eyyubi",
+      "meaning": "Eyyubî; Eyyubiler şanlı hanedanına mensup asil, cömert ve ulu savaşçı kişi."
+    },
+    {
+      "name": "Zendî",
+      "id": "zendii",
+      "meaning": "Zendî."
+    }
+  ],
+  "content": "## İsim Listesi ve Anlamları\n\n1. **[Bedirxan](/tr/isim/bedirxan)**: Ay hanı, dolunay gibi parlak lider ve soylu kimsedir.\n2. **Selahaddin**: Dinin iyiliği, doğruluğu (Selahaddin Eyyubi atıflı).\n3. **[Mervan](/tr/isim/mervan)**: Cesur, yiğit savaşçı.\n4. **Şerefxan**: Şerefxan; Bitlis'in meşhur ulu miri, asil Şerefname adlı dev tarihi eserin asil yazarı.\n5. **[Deysem](/tr/isim/deysem)**: Tarihi bir Kürt lideri, Kürt komutanı.\n6. **Qazi**: Yargıç, kanun koyucu, Qazi Muhammed (Mahabad Kürt Cumhuriyeti Kurucu Lideri) atıflı.\n7. **Simko**: İsmail isminin Kürtçe'deki yaygın bir formu olup, tarihi liderlik ve dirayeti temsil eder.\n8. **Barzanî**: Barzanî; Barzan coğrafyasına ait olan, özgürlük ve ulu liderlikle anılan asil hanedan.\n9. **Said**: Said; şanslı, mutlu, haksızlığa karşı boyun eğmeyen ulu asil lider, Şeyh Said.\n10. **Rıza**: Rıza; kadim Dersim ulu önderi, boyun eğmeyen vakar ve hoşgörü sahibi bilge lider.\n11. **Eyyub**: Eyyub; sabrı, asil direnişi ve Selahaddin Eyyubi hanedanının soyunu simgeleyen asil ad.\n12. **[Zend](/tr/isim/zend)**: Zerdüşt'ün kutsal kitabı Avesta'nın şerhi ve yorumu.\n13. **[Ardelan](/tr/isim/ardelan)**: Ünlü Erdelan Kürt Emirliği ve hanedanı ismi.\n14. **[Baban](/tr/isim/baban)**: Köklü ve tarihi bir Kürt beyliğinin adıdır.\n15. **Soran**: Kürdistan'da bir bölge ve lehçe adı olup, kültürel köklülüğü ve asaletini temsil eder.\n16. **Behdîn**: Behdinan; asil emirlik bölgesi, iyi din inancına sahip bilge kişi.\n17. **[Cizîrî](/tr/isim/ciziri)**: Cizreli.\n18. **[Mîr](/tr/isim/mir)**: Bey, prens, lider.\n19. **Xan**: Han, hükümdar, bey, lider.\n20. **Key**: Kral, hükümdar, ulu başbuğ (Antik Kürtçe beylik hitabı).\n21. **[Keyhusrev](/tr/isim/keyhusrev)**: Büyük hükümdar, ulu ve adil imparator.\n22. **[Dara](/tr/isim/dara)**: Hükümdar, bey; ağaçlık yer.\n23. **[Cemşîd](/tr/isim/cemsid)**: Parlak, şanlı, padişah.\n24. **[Hoşeng](/tr/isim/hoseng)**: Akıllı, zeki, uslu kimse; aynı zamanda mitolojik bir Kürt kralı.\n25. **[Feryad](/tr/isim/feryad)**: Çığlık, sesleniş, yardım çağrısı.\n26. **Nizameddin**: Dinin düzeni, intizamı, kuralı.\n27. **İmad**: İmad; Behdinan emirliğinin ulu merkezi olan görkemli İmadiye kalesinin kurucusu ve miri.\n28. **Zekî**: Zekî; üstün zekalı, strateji uzmanı, ulu tarihi Kürt aydını ve yazarı.\n29. **Cemîl**: Cemîl; ilahi yüce güzelliği simgeleyen, ahlakı ve yüzü son derece güzel insan.\n30. **Ekrem**: Ekrem; son derece cömert, tarihi Kürt aydınlanmasının asil ve saygın figürü.\n31. **Qedrî**: Değerli, kıymetli, onurlu ve şerefli kişi.\n32. **[Mele](/tr/isim/mele)**: Din alimi, hoca, saygın bilgin.\n33. **Şêx**: Şêx; büyük ilim, tasavvuf ve maneviyat önderi, ulu hoca ve rehber.\n34. **Mehmûd**: Mehmûd; Kürdistan Krallığını ilan eden asil ve ünlü Şeyh Mahmud Berzenci.\n35. **Emin**: Emin; Bedirxan ailesinin sarsılmaz derecede güvenilir, asil ve entelektüel üyesi.\n36. **Sureyya**: Sureyya; gökyüzünün en parlak asil yıldız kümesi, tarihi öncü asil kadın.\n37. **[Celadet](/tr/isim/celadet)**: Yiğitlik, celadet.\n38. **Kamuran**: Kamuran; arzusuna, hayaline ve emeline ulaşmış, mutlu ve kutlu bahtiyar kişi.\n39. **[Rewşen](/tr/isim/rewsen)**: Aydınlık, parlak, berrak ve zihni açık olan bilgeliği temsil eden kimsedir.\n40. **Osman**: Osman; asil paşa, adaleti, koruyuculuğu ve gücü simgeleyen tarihi Kürt figürü.\n41. **Ali**: Ali; yüce, onurlu şahsiyet, Koçgiri önderi asil ve dirençli şahsiyet.\n42. **Zerîfe**: Zarife Hanım; Koçgiri kadın direniş önderi, zarif ve mücadeleci.\n43. **Leyla**: Gece, Leyla Qasım (Kürt ulusal kadın kahramanı) onuruna.\n44. **Mesture**: Mesture; tarihin ilk Kürt kadın tarihçisi ve ulu şairi Erdelanlı asil hanımefendi.\n45. **Ehmed**: Ehmed; Ehmedê Xanî'nin ulu felsefesini taşıyan, övülmüş sarsılmaz asil isim.\n46. **Mela**: Mela; Melayê Cizîrî'nin derin tasavvufi aşkını simgeleyen saygın ulu bilgin.\n47. **[Feqî](/tr/isim/feqi)**: İlim talebesi, öğrenci, bilim insanı (Feqîyê Teyran atıflı).\n48. **Nalî**: Nalî; Kürtçe şiirin babası, Süleymaniyeli ünlü ulu şair.\n49. **[Hejar](/tr/isim/hejar)**: Yoksul ama gönlü zengin; gariban ve alçakgönüllü olan kimsedir.\n50. **[Hêmin](/tr/isim/hemin)**: Sakin, huzurlu, güven veren ve ağırbaşlılığıyla tanınan kimsedir.\n51. **Şêrko**: Küçük aslan; cesareti erken yaşta fark edilen, atak ve güçlü kimsedir.\n52. **[Cegerxwîn](/tr/isim/cegerxwin)**: Ciğeri kanayan, derin acı çeken, ünlü şair.\n53. **Qanî**: Qanî; halkının acılarını dizeleyen, yetingen, gururlu ve asil vatansever şair.\n54. **[Gorani](/tr/isim/gorani)**: Goranî lehçesi.\n55. **Tevfîq**: Tevfîq; Piramerd mahlaslı ünlü ulu yazar, gazeteci ve bilge şair.\n56. **Musa**: Musa; Apê Musa (Musa Anter) olarak bilinen, Kürt basınının ve edebiyatının ulu çınarı.\n57. **[Mazlum](/tr/isim/mazlum)**: Zulüm gören, uysal.\n58. **Kemal**: Kemal; mutlak olgunluğa ulaşmış, sarsılmaz tarihi direncin ulu simgesi.\n59. **Xayrî**: Xayrî; hayırlı, topluma faydalı, fedakar tarihi devrimci figür.\n60. **Sakine**: Sakine; sarsılmaz iradeli, asil sessizliğin ve kararlılığın sembolü öncü devrimci kadın.\n61. **[Arîn](/tr/isim/arin)**: Ateşten olan, enerjik ve parlak.\n62. **Viyan**: İrade, istek, arzu; kararlı duruşu ve sarsılmaz azmi temsil eder.\n63. **[Zîlan](/tr/isim/zilan)**: Yıkıcı fırtına, rüzgar, isyan.\n64. **Agît**: Yiğit.\n65. **[Egîd](/tr/isim/egid)**: Yiğit, cesur, kahraman ve mertliğiyle tanınan ulu kimsedir.\n66. **Mezdek**: Mezdek; antik çağda eşitliği, adaleti ve ortak yaşamı savunan ulu filozof lider.\n67. **Babek**: Babek; haksızlığa başkaldıran, sarsılmaz iradeli ulu antik kahraman.\n68. **Ebu-l Fida**: Ünlü 14. yüzyıl Kürt tarihçisi, coğrafyacısı ve Eyyubi hükümdarı.\n69. **Sohrâverdî**: Sohrâverdî; İşraki felsefesinin dahi kurucusu, asil ışık teorisyeni Kürt filozof.\n70. **Dînawerî**: Dînawerî; botanik, astronomi ve büyük tarih biliminde çığır açan kadim dahi Kürt alimi.\n71. **Cahîz**: Keskin gözlü, bilge ve ulu edip şahsiyet.\n72. **İbn-i Hallikan**: İbn-i Hallikan; İslam dünyasının en büyük biyografi, edebiyat ve tarih yazarı ulu alimi.\n73. **Ziryar**: Ziryar; Endülüs sarayında müziğe yön veren usta Kürt müzisyen (Ziryab).\n74. **Zerdeşt**: Antik inanç sisteminin kurucusu; aydınlığı, iyiliği ve bilgeliği temsil eden kadim kimsedir.\n75. **Manî**: Manî; resim ve ışıkla felsefesini yayan ulu antik Mezopotamya peygamberi.\n76. **Mezdak**: Mezdak; eşitlikçi ve özgürlükçü kadim felsefenin temsilcisi bilge lider.\n77. **Heftad**: Heftad; yetmişler meclisi, kolektif kararı ve ulu birliği simgeleyen tarihi unvan.\n78. **[Senger](/tr/isim/senger)**: Mevzi, sığınak, kale, siper, savunma hattı.\n79. **Şêrwan**: Aslan bakıcısı, koruyucu; gücü yöneten ve adaletle hükmeden kimsedir.\n80. **[Mîrxan](/tr/isim/mirxan)**: Beylerin hanı, kudretli ve lider bey.\n81. **Serdar**: Komutan, önder, lider; topluluğun başında olan ve stratejik akla sahip olan kimsedir.\n82. **Şaho**: Şahane, görkemli; aynı zamanda Doğu Kürdistan'daki ihtişamlı bir dağın adıdır.\n83. **Zorab**: Güçlü su; engelleri aşan, kararlı ve hırslı bir kişiliği temsil eder.\n84. **Rustem**: Rüstem-i Zal; mitolojik kahramanlık, sarsılmaz cesaret ve güç sahibi.\n85. **[Siyamend](/tr/isim/siyamend)**: Gölge veren, koruyan görkemli dağ; kadim Kürt aşk destanının kahramanı.\n86. **[Cembelî](/tr/isim/cembeli)**: Kürt halk destanı kahramanı (Cembelîyê Kurê Mîrê Hekkarî).\n87. **[Binevş](/tr/isim/binevs)**: Binevş; menekşe çiçeği, narin yapraklı ve çok güzel kokulu mor kır çiçeği.\n88. **Besê**: Orman, sık ağaçlık ve doğanın kalbini temsil eden kimsedir.\n89. **[Xecê](/tr/isim/xece)**: Hatice (Siyabend ve Xecê destanı kahramanı).\n90. **Zîn**: Hayat veren, dirilik; aynı zamanda ünlü 'Mem û Zîn' destanının asil ve sadık kadın kahramanıdır.\n91. **[Mem](/tr/isim/mem)**: Ünlü 'Mem û Zîn' destanının kahramanı; sadık aşkın ve dürüstlüğün simgesidir.\n92. **[Kawa](/tr/isim/kawa)**: Demirci Kawa; zulme baş kaldıran, özgürlüğü getiren efsanevi kahramanın adıdır.\n93. **Dehak**: Dehak; Demirci Kawa destanındaki tiranlığı simgeleyen tarihi Mezopotamya hükümdarı.\n94. **[Ferhad](/tr/isim/ferhad)**: Anlayışlı, yiğit ve büyük zorlukların üstesinden gelen kimsedir.\n95. **Şîrîn**: Süt, tatlı, aslan gibi, süt, tatlı, aslane dair.\n96. **[Ardelan](/tr/isim/ardelan)**: Ünlü Erdelan Kürt Emirliği ve hanedanı ismi.\n97. **[Botan](/tr/isim/botan)**: Kadim Botan bölgesinin adıdır; cesaret ve köklü mirası temsil eder.\n98. **[Mervanî](/tr/isim/mervani)**: Mervanî.\n99. **Eyyubî**: Eyyubî; Eyyubiler şanlı hanedanına mensup asil, cömert ve ulu savaşçı kişi.\n100. **[Zendî](/tr/isim/zendii)**: Zendî.\n\n\n\n## İsim Kökenleri\n\nKürtçe erkek isimlerinin kökeni, Kürt halkının binlerce yıllık göçebe ve savaşçı tarihi, coğrafi mücadeleleri ve Mezopotamya'nın asil destanlarıyla şekillenmiştir. İrani dil grubunun kadim köklerinden gelen bu isimler, genellikle heybetli doğa olaylarını, gücü, cesareti ve bilgeliği temsil eden kelimelerden türetilmiştir. Kürtçenin eril ses yapısı ve fonetik vurguları, erkek isimlerine karakteristik bir güç ve vakur bir tını kazandırır. Bu isimler, hem tarihi liderlerin anısını yaşatır hem de geleceğe yönelik asil bir duruşu simgeler.\n\n## Kültürel Önem\n\nKürt toplumsal yapısında erkek isimleri; dürüstlük, cesaret, cömertlik ve koruyuculuk gibi evrensel erdemleri yüceltmek amacıyla seçilir. 'Agît' (yiğit) veya 'Serhat' (sınır boyu kahramanı) gibi isimler, bireyin topluma ve vatanına karşı sorumluluklarını simgeler. Aynı zamanda 'Baran' (yağmur) gibi doğanın bereketini ve gücünü simgeleyen isimler de yaygındır. Erkek isimleri seçilirken, çocuğun adıyla büyümesi, karakterinin adının taşıdığı asalet ve güçle şekillenmesi en büyük temennidir.\n\n## Sık Sorulan Sorular (FAQ)\n\n### Tarihi hükümdar ve hanedan isimlerinin önemi nedir?\n\nMervaniler, Eyyubiler, Zendliler gibi ulu devletlerden ve hanedanlardan gelen asil, gururlu ve liderlik bildiren isimlerdir.",
+  "faqs": [
+    {
+      "question": "Tarihi hükümdar ve hanedan isimlerinin önemi nedir?",
+      "answer": "Mervaniler, Eyyubiler, Zendliler gibi ulu devletlerden ve hanedanlardan gelen asil, gururlu ve liderlik bildiren isimlerdir."
+    }
+  ]
+}
