@@ -90,6 +90,7 @@ export async function loadAllNames(): Promise<NameData[]> {
 let searchIndexCache: NameData[] | null = null;
 export async function fetchSearchIndex(): Promise<NameData[]> {
   if (searchIndexCache) return searchIndexCache;
+  if (typeof window === "undefined") return [];
   try {
     const res = await fetch('/search_index.json');
     searchIndexCache = await res.json();

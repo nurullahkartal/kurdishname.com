@@ -3,6 +3,10 @@ import { createRoot } from 'react-dom/client';
 import App from './App';
 import './i18n';
 import './index.css';
+import { registerSW } from 'virtual:pwa-register';
+
+// Auto-register service worker for PWA support
+registerSW({ immediate: true });
 
 // Silence third-party deprecation and React 19 compatibility warnings from older npm packages
 // to guarantee a 100% clean console log and 100/100 Lighthouse Best Practices score.

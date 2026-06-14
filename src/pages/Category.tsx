@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from "react";
-import { useParams, Link, useLocation } from "react-router-dom";
+import { useParams, Link, useLocation, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { Heart, Sparkles, Shuffle } from "lucide-react";
@@ -15,6 +15,44 @@ import { isLetterActive } from "../data/config";
 import { useFavorites } from "../context/FavoritesContext";
 const AdSlot = React.lazy(() => import("../components/AdSlot"));
 
+// ── Valid Category and Theme Slugs List ─────────────────────────────────────
+const VALID_SLUGS = new Set([
+  // Gender - Female
+  "kiz", "kız", "kız-isimleri", "kız-bebek-isimleri",
+  "girls", "girl", "female", "woman", "women",
+  "girl-names", "girls-names", "female-names",
+  "baby-girl-names", "feminine",
+  "maedchen", "mädchen", "madchen",
+  "mädchennamen", "maedchennamen",
+  "بنات", "اناث", "مؤnث", "مؤنث",
+
+  // Gender - Male
+  "erkek", "erkek-isimleri", "erkek-bebek-isimleri",
+  "boys", "boy", "male", "man", "men",
+  "boy-names", "boys-names", "male-names",
+  "baby-boy-names", "masculine",
+  "jungen", "junge", "männer", "manner",
+  "jungennamen", "männernamen",
+  "ذكور", "ذكر", "مذكر",
+
+  // Themes
+  "doga", "nature", "natur", "طبيعة",
+  "guc", "power", "macht", "قوة",
+  "guzellik", "beauty", "schoenheit", "جمال",
+  "isik", "light", "licht", "نور",
+  "bilgelik", "wisdom", "weisheit", "حكمة"
+]);
+
+const ALPHABET = new Set(["A","B","C","Ç","D","E","Ê","F","G","H","I","Î","J","K","L","M","N","O","P","Q","R","S","Ş","T","U","Û","V","W","X","Y","Z"]);
+
+function isValidSlug(slug: string | undefined): boolean {
+  if (!slug) return false;
+  const decoded = decodeURIComponent(slug).toLowerCase().trim();
+  if (VALID_SLUGS.has(decoded)) return true;
+  if (slug.length === 1 && ALPHABET.has(slug.toUpperCase())) return true;
+  return false;
+}
+
 export default function Category() {
   const { type } = useParams<{ type: string }>();
   const [searchTerm, setSearchTerm] = useState("");
@@ -25,6 +63,15 @@ export default function Category() {
   const { isFavorite, toggleFavorite } = useFavorites();
   const location = useLocation();
   const lng = i18n.language || "tr";
+
+  // URL'den gelen categorySlug parametresinin geçerliliğini kontrol et
+  const isValid = useMemo(() => {
+    return isValidSlug(type);
+  }, [type]);
+
+  if (!isValid) {
+    return <Navigate to="/404" replace />;
+  }
 
   const genderCategory = useMemo(() => {
     return getGenderFromSlug(lng, type);
@@ -389,8 +436,59 @@ export default function Category() {
         </div>
       )}
 
+      {/* SEO Intro Block for Theme Categories */}
+      {themeCategory && ["nature", "power", "beauty", "light"].includes(themeCategory) && (() => {
+        const themeIntroKey = `theme_${themeCategory}_intro`;
+        const introText = t(themeIntroKey, "");
+        if (!introText) return null;
+
+        const themeAccents: Record<string, { border: string; icon: string }> = {
+          nature:  { border: "#4ade80", icon: "🌿" },
+          power:   { border: "#f97316", icon: "⚡" },
+          beauty:  { border: "#f472b6", icon: "✦" },
+          light:   { border: "#facc15", icon: "☀" },
+        };
+        const accent = themeAccents[themeCategory] || { border: "var(--accent)", icon: "✦" };
+
+        return (
+          <div style={{
+            background: "var(--surface)",
+            borderLeft: `4px solid ${accent.border}`,
+            borderRadius: "12px",
+            padding: "1.25rem 1.5rem",
+            marginBottom: "1.5rem",
+            boxShadow: "0 1px 3px rgba(0,0,0,0.05)",
+            border: "1px solid var(--border)",
+            borderLeftWidth: "4px",
+            display: "flex",
+            gap: "1rem",
+            alignItems: "flex-start",
+          }}>
+            <span style={{
+              fontSize: "1.35rem",
+              lineHeight: 1,
+              flexShrink: 0,
+              marginTop: "0.15rem",
+              filter: "drop-shadow(0 1px 2px rgba(0,0,0,0.12))"
+            }} aria-hidden="true">
+              {accent.icon}
+            </span>
+            <p style={{
+              fontSize: "0.935rem",
+              lineHeight: 1.85,
+              color: "var(--text-muted)",
+              margin: 0,
+              textAlign: "justify",
+              fontStyle: "italic",
+            }}>
+              {introText}
+            </p>
+          </div>
+        );
+      })()}
+
       {/* AdSense: Kategori Başlık Altı Reklamı - Tüm uzunluklarda gösterilir */}
-      <React.Suspense fallback={<div style={{ height: '90px' }} />}>
+      <React.Suspense fallback={<div style={{ height: '120px' }} />}>
         <AdSlot slot="category_header_bottom" />
       </React.Suspense>
 
@@ -456,40 +554,60 @@ export default function Category() {
                     </tr>
                   </thead>
                   <tbody>
-                    {displayNames.map((item) => (
-                      <tr key={item.id}>
-                        <td>
-                          <Link
-                            to={generatePath(lng, "name", item.id)}
-                            className={item.gender === "female" ? "name-link-female" : "name-link-male"}
-                          >
-                            {item.name}
-                          </Link>
-                        </td>
-                        <td className="hidden sm:table-cell" style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}>{item.letter}</td>
-                        <td style={{ color: "var(--text-muted)", fontSize: "0.8125rem" }}>
-                          {getLocalizedMeaning(item, lng)}
-                        </td>
-                        <td className="hidden md:table-cell" style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}>{getLocalizedOrigin(item.origin, t)}</td>
-                        <td style={{ textAlign: "center" }}>
-                          <button
-                            onClick={() => toggleFavorite(item)}
-                            style={{
-                              color: isFavorite(item.id) ? "var(--female)" : "var(--text-faint)",
-                              padding: "0.25rem",
-                              display: "inline-flex",
-                              alignItems: "center",
-                              justifyContent: "center",
-                              transition: "transform 150ms",
-                            }}
-                            className="hover:scale-125 active:scale-90"
-                            title={isFavorite(item.id) ? t("favorites_remove") : t("favorites_add")}
-                          >
-                            <Heart size={16} fill={isFavorite(item.id) ? "var(--female)" : "none"} />
-                          </button>
-                        </td>
-                      </tr>
-                    ))}
+                    {displayNames.map((item, index) => {
+                      const showAd = (index + 1) % 10 === 0 && index < strictlyFilteredNames.length - 1;
+                      return (
+                        <React.Fragment key={item.id}>
+                          <tr key={item.id}>
+                            <td>
+                              <Link
+                                to={generatePath(lng, "name", item.id)}
+                                className={item.gender === "female" ? "name-link-female" : "name-link-male"}
+                              >
+                                {item.name}
+                              </Link>
+                            </td>
+                            <td className="hidden sm:table-cell" style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}>{item.letter}</td>
+                            <td style={{ color: "var(--text-muted)", fontSize: "0.8125rem" }}>
+                              {getLocalizedMeaning(item, lng)}
+                            </td>
+                            <td className="hidden md:table-cell" style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}>{getLocalizedOrigin(item.origin, t)}</td>
+                            <td style={{ textAlign: "center" }}>
+                              <button
+                                onClick={() => toggleFavorite(item)}
+                                style={{
+                                  color: isFavorite(item.id) ? "var(--female)" : "var(--text-faint)",
+                                  padding: "0.25rem",
+                                  display: "inline-flex",
+                                  alignItems: "center",
+                                  justifyContent: "center",
+                                  transition: "transform 150ms",
+                                }}
+                                className="hover:scale-125 active:scale-90"
+                                title={isFavorite(item.id) ? t("favorites_remove") : t("favorites_add")}
+                              >
+                                <Heart size={16} fill={isFavorite(item.id) ? "var(--female)" : "none"} />
+                              </button>
+                            </td>
+                          </tr>
+                          {showAd && (
+                            <tr key={`ad-${item.id}`}>
+                              <td colSpan={5} style={{ padding: "0.25rem 0.5rem", background: "var(--surface-alt)" }}>
+                                <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+                                  <React.Suspense fallback={<div style={{ height: "120px" }} />}>
+                                    <AdSlot 
+                                      slot={`category_list_inline_${index}`} 
+                                      format="horizontal"
+                                      style={{ margin: "0.25rem 0", padding: 0 }}
+                                    />
+                                  </React.Suspense>
+                                </div>
+                              </td>
+                            </tr>
+                          )}
+                        </React.Fragment>
+                      );
+                    })}
                   </tbody>
                 </table>
               </div>
@@ -618,7 +736,7 @@ export default function Category() {
 
       {/* AdSense: Kategori Altı Reklamı - Sadece Orta ve Uzun Sayfalarda Gösterilir */}
       {(isMedium || isLong) && (
-        <React.Suspense fallback={<div style={{ height: '90px' }} />}>
+        <React.Suspense fallback={<div style={{ height: '120px' }} />}>
           <AdSlot slot="category_footer_bottom" />
         </React.Suspense>
       )}

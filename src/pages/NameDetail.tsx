@@ -8,12 +8,113 @@ import { NameData } from "../data/names";
 import { getGenderPath } from "../utils/nameHelpers";
 import { generatePath } from "../utils/routes";
 import { getLocalizedMeaning, getLocalizedOrigin } from "../utils/localization";
+import { generateDynamicFaqs } from "../utils/faqGenerator";
 import { loadNamesForLetter, getLettersForId } from "../utils/nameLoader";
 import { isLetterActive } from "../data/config";
 import React, { lazy, Suspense } from "react";
 import { useFavorites } from "../context/FavoritesContext";
 import { getWikidataSameAs } from "../utils/wikidata";
 const AdSlot = lazy(() => import("../components/AdSlot"));
+
+// ── Fonetik okunuş üreteci ────────────────────────────────────────────────────
+function generatePronunciation(name: string): string {
+  const rules: [RegExp, string][] = [
+    [/ê/gi,  "ay"],
+    [/î/gi,  "ee"],
+    [/û/gi,  "oo"],
+    [/ş/gi,  "sh"],
+    [/ç/gi,  "ch"],
+    [/x/gi,  "kh"],
+    [/q/gi,  "q"],
+    [/w/gi,  "w"],
+    [/v/gi,  "v"],
+    [/j/gi,  "zh"],
+    [/z/gi,  "z"],
+    [/r/gi,  "r"],
+    // sesli uzatma: tek 'a' -> 'aa' (sözcük başında veya ortasında)
+    [/\ba/g, "aa"],
+    [/a(?=[^aeiouêîûAEIOUÊÎÛ])/g, "aa"],
+    [/e/gi,  "eh"],
+    [/i/gi,  "ih"],
+    [/u/gi,  "u"],
+    [/o/gi,  "o"],
+    [/y/gi,  "y"],
+  ];
+
+  // Heceye böl ve her hece için kural uygula
+  let phonetic = name;
+  // Özel çift harf kuralları (sıraya dikkat!)
+  phonetic = phonetic
+    .replace(/[Ê]/g, "Ay").replace(/[ê]/g, "ay")
+    .replace(/[Î]/g, "Ee").replace(/[î]/g, "ee")
+    .replace(/[Û]/g, "Oo").replace(/[û]/g, "oo")
+    .replace(/[Ş]/g, "Sh").replace(/[ş]/g, "sh")
+    .replace(/[Ç]/g, "Ch").replace(/[ç]/g, "ch")
+    .replace(/[X]/g, "Kh").replace(/[x]/g, "kh")
+    .replace(/[Q]/g, "Q").replace(/[q]/g, "q")
+    .replace(/[J]/g, "Zh").replace(/[j]/g, "zh")
+    .replace(/[W]/g, "W").replace(/[w]/g, "w");
+
+  // Büyük harf koru, heceleri tire ile böl (heuristik: sesli harf + sessiz + sesli)
+  const syllables: string[] = [];
+  let curr = "";
+  const vowels = new Set(["a","e","i","o","u","A","E","I","O","U"]);
+  for (let ci = 0; ci < phonetic.length; ci++) {
+    curr += phonetic[ci];
+    // Eğer bir sonraki harf varsa ve bu bir sessiz + sesli geçişi ise hecele
+    const next = phonetic[ci + 1];
+    const afterNext = phonetic[ci + 2];
+    if (
+      next &&
+      afterNext &&
+      !vowels.has(phonetic[ci]) &&
+      vowels.has(next) &&
+      curr.length > 1
+    ) {
+      syllables.push(curr);
+      curr = "";
+    }
+  }
+  if (curr) syllables.push(curr);
+
+  // Basit heuristik başarısız olursa orijinal phonetic'i kullan
+  const result = syllables.length > 1 ? syllables.join("-") : phonetic;
+  return `[${result}]`;
+}
+
+// ── Lehçe / köken badge sistemi ───────────────────────────────────────────────
+type DialectInfo = { label: Record<string,string>; color: string; bg: string; border: string };
+
+function detectDialect(origin: string | undefined): DialectInfo | null {
+  if (!origin) return null;
+  const o = origin.toLowerCase();
+
+  if (o.includes("kurmanci") || o.includes("kurmanc") || o.includes("kurmanji")) {
+    return {
+      label: { tr: "Kurmancî", en: "Kurmanji", de: "Kurmandschi", ar: "الكرمانجية" },
+      color: "#15803d", bg: "#f0fdf4", border: "#86efac"
+    };
+  }
+  if (o.includes("sorani") || o.includes("soranî") || o.includes("sorans")) {
+    return {
+      label: { tr: "Soranî", en: "Sorani", de: "Soranisch", ar: "السورانية" },
+      color: "#1d4ed8", bg: "#eff6ff", border: "#93c5fd"
+    };
+  }
+  if (o.includes("zazaki") || o.includes("zaza") || o.includes("dimli")) {
+    return {
+      label: { tr: "Zazaki", en: "Zazaki", de: "Zazaisch", ar: "الزازائية" },
+      color: "#7c3aed", bg: "#f5f3ff", border: "#c4b5fd"
+    };
+  }
+  if (o.includes("gorani") || o.includes("goranî") || o.includes("hawrami")) {
+    return {
+      label: { tr: "Goranî", en: "Gorani", de: "Goranisch", ar: "الغورانية" },
+      color: "#c2410c", bg: "#fff7ed", border: "#fdba74"
+    };
+  }
+  return null;
+}
 
 
 
@@ -111,77 +212,19 @@ export default function NameDetail() {
   const genderTextForFaq = useMemo(() => {
     if (!nameItem) return "";
     const isFemale = nameItem.gender === "female";
-    const isUnisex = nameItem.gender === "unisex";
-    return isUnisex ? t("gender_unisex", "Unisex") : (isFemale ? t("gender_female") : t("gender_male"));
+    return isFemale ? t("gender_female") : t("gender_male");
   }, [nameItem, t]);
 
+  // ── Dinamik FAQ Jeneratörü (faqGenerator.ts) ─────────────────────────────
   const faqs = useMemo(() => {
     if (!nameItem) return [];
-    
-    const name = nameItem.name;
-    const originText = translatedOrigin || "Kürtçe";
-    const genText = genderTextForFaq;
-
-    const templates: Record<string, Array<{ question: string; answer: string }>> = {
-      tr: [
-        {
-          question: `${name} isminin anlamı nedir?`,
-          answer: `${name} ismi; ${originText} kökenli bir isim olup, şu anlama gelmektedir: ${meaning}`
-        },
-        {
-          question: `${name} isminin kökeni nedir?`,
-          answer: `${name} isminin kökeni ${originText} kökenlidir ve geleneksel Kürt kültürü ile derin bağlara sahiptir.`
-        },
-        {
-          question: `${name} ismi hangi cinsiyet için uygundur?`,
-          answer: `${name} ismi bir ${genText} ismidir ve bu cinsiyet grubu için sıklıkla tercih edilmektedir.`
-        }
-      ],
-      en: [
-        {
-          question: `What is the meaning of the name ${name}?`,
-          answer: `The name ${name} is of ${originText} origin and is defined as: ${meaning}`
-        },
-        {
-          question: `What is the origin of the name ${name}?`,
-          answer: `The name ${name} originates from ${originText} cultural and historical roots.`
-        },
-        {
-          question: `Is the name ${name} for boys or girls?`,
-          answer: `The name ${name} is suitable as a ${genText} name.`
-        }
-      ],
-      de: [
-        {
-          question: `Was bedeutet der Name ${name}?`,
-          answer: `Der Name ${name} hat eine ${originText} Herkunft und bedeutet: ${meaning}`
-        },
-        {
-          question: `Was ist der Ursprung des Namens ${name}?`,
-          answer: `Der Name ${name} stammt aus ${originText} kulturellen und geschichtlichen Wurzeln.`
-        },
-        {
-          question: `Ist der Name ${name} für Jungen oder Mädchen geeignet?`,
-          answer: `Der Name ${name} ist ein ${genText} Name.`
-        }
-      ],
-      ar: [
-        {
-          question: `ما هو معنى اسم ${name}؟`,
-          answer: `اسم ${name} ذو أصل ${originText} ويعني: ${meaning}`
-        },
-        {
-          question: `ما هو أصل اسم ${name}؟`,
-          answer: `يعود أصل اسم ${name} إلى الجذور والثقافة ${originText}.`
-        },
-        {
-          question: `هل اسم ${name} مخصص للذكور أم الإناث؟`,
-          answer: `اسم ${name} هو اسم ${genText}.`
-        }
-      ]
-    };
-
-    return templates[lng] || templates.tr;
+    return generateDynamicFaqs(
+      nameItem,
+      lng,
+      meaning,
+      translatedOrigin || "Kürtçe",
+      genderTextForFaq,
+    );
   }, [nameItem, lng, meaning, translatedOrigin, genderTextForFaq]);
 
 
@@ -217,9 +260,8 @@ export default function NameDetail() {
   }
 
   const isFemale = nameItem.gender === "female";
-  const isUnisex = nameItem.gender === "unisex";
-  const genderColor = isUnisex ? "var(--accent)" : (isFemale ? "var(--female)" : "var(--male)");
-  const genderText = isUnisex ? t("gender_unisex", "Unisex") : (isFemale ? t("gender_female") : t("gender_male"));
+  const genderColor = isFemale ? "var(--female)" : "var(--male)";
+  const genderText = isFemale ? t("gender_female") : t("gender_male");
   const isActive = isLetterActive(nameItem.letter || nameItem.name.charAt(0));
 
   const origin = translatedOrigin;
@@ -259,22 +301,45 @@ export default function NameDetail() {
 
   const description = buildMetaDescription(lng, nameItem?.name, genderText, origin, nameItem?.meaning);
 
+  const dialectInfo = detectDialect(nameItem.origin);
+  const pronunciationStr = generatePronunciation(nameItem.name);
+
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "DefinedTerm",
-    "name": nameItem.name,
-    "description": description,
-    "inLanguage": "ku",
-    "termCode": nameItem.id.toString(),
-    "url": `https://kurdishname.com${generatePath(lng, "name", nameItem.id)}`,
-    "mainEntityOfPage": `https://kurdishname.com${generatePath(lng, "name", nameItem.id)}`,
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "name": "KurdishName Dictionary",
-      "description": "Comprehensive dictionary of Kurdish names, meanings, and origins.",
-      "url": "https://kurdishname.com"
-    },
-    ...(wikidataSameAs.length > 0 ? { "sameAs": wikidataSameAs } : {})
+    "@graph": [
+      {
+        "@type": ["DefinedTerm", "Thing"],
+        "name": nameItem.name,
+        "alternateName": pronunciationStr,
+        "description": description,
+        "inLanguage": "ku",
+        "termCode": nameItem.id.toString(),
+        "url": `https://kurdishname.com${generatePath(lng, "name", nameItem.id)}`,
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": `https://kurdishname.com${generatePath(lng, "name", nameItem.id)}`,
+          "name": `${nameItem.name} - Kurdish Name Meaning & Origin`,
+          "description": description,
+          "inLanguage": lng,
+          "isPartOf": { "@type": "WebSite", "name": "KurdishName", "url": "https://kurdishname.com" }
+        },
+        "inDefinedTermSet": {
+          "@type": "DefinedTermSet",
+          "name": "KurdishName Dictionary",
+          "description": "Comprehensive dictionary of Kurdish personal names with etymology, gender, and dialect information.",
+          "url": "https://kurdishname.com",
+          "inLanguage": "ku"
+        },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "gender", "value": nameItem.gender },
+          { "@type": "PropertyValue", "name": "origin", "value": nameItem.origin || "Kurdish" },
+          { "@type": "PropertyValue", "name": "pronunciation", "value": pronunciationStr },
+          ...(dialectInfo ? [{ "@type": "PropertyValue", "name": "dialect", "value": dialectInfo.label["en"] }] : []),
+          ...(nameItem.tags ? [{ "@type": "PropertyValue", "name": "themes", "value": nameItem.tags.join(", ") }] : [])
+        ],
+        ...(wikidataSameAs.length > 0 ? { "sameAs": wikidataSameAs } : {})
+      }
+    ]
   };
 
   const faqSchema = {
@@ -308,14 +373,10 @@ export default function NameDetail() {
 
       // Background Gradient based on Gender
       const isFemale = nameItem.gender === "female";
-      const isUnisex = nameItem.gender === "unisex";
       const grad = ctx.createLinearGradient(0, 0, 0, 1080);
       
       if (isFemale) {
         grad.addColorStop(0, "#FFF3F5");
-        grad.addColorStop(1, "#FFFFFF");
-      } else if (isUnisex) {
-        grad.addColorStop(0, "#F7F4FF");
         grad.addColorStop(1, "#FFFFFF");
       } else {
         grad.addColorStop(0, "#F0F5FF");
@@ -325,7 +386,7 @@ export default function NameDetail() {
       ctx.fillRect(0, 0, 1080, 1080);
 
       // Decorative soft background circles for texture
-      ctx.fillStyle = isFemale ? "rgba(225, 29, 72, 0.025)" : (isUnisex ? "rgba(124, 58, 237, 0.025)" : "rgba(37, 99, 235, 0.025)");
+      ctx.fillStyle = isFemale ? "rgba(225, 29, 72, 0.025)" : "rgba(37, 99, 235, 0.025)";
       ctx.beginPath();
       ctx.arc(1080, 0, 420, 0, Math.PI * 2);
       ctx.fill();
@@ -334,7 +395,7 @@ export default function NameDetail() {
       ctx.fill();
 
       // Elegant inner border/frame with rounded corners
-      ctx.strokeStyle = isFemale ? "rgba(225, 29, 72, 0.08)" : (isUnisex ? "rgba(124, 58, 237, 0.08)" : "rgba(37, 99, 235, 0.08)");
+      ctx.strokeStyle = isFemale ? "rgba(225, 29, 72, 0.08)" : "rgba(37, 99, 235, 0.08)";
       ctx.lineWidth = 2;
       ctx.beginPath();
       const pad = 50;
@@ -350,7 +411,7 @@ export default function NameDetail() {
 
       // Main Large Name (Serif & Bold)
       ctx.font = "700 110px Georgia, serif";
-      ctx.fillStyle = isFemale ? "#BE123C" : (isUnisex ? "#6D28D9" : "#1D4ED8");
+      ctx.fillStyle = isFemale ? "#BE123C" : "#1D4ED8";
       ctx.fillText(nameItem.name, 1080 / 2, 295);
 
       // Proud Descriptive Subtitle
@@ -361,14 +422,11 @@ export default function NameDetail() {
       const originLabel = origin;
       let compositeLabel = "";
       if (lng === "tr") {
-        if (isUnisex) compositeLabel = `Unisex ${originLabel} İsim`;
-        else compositeLabel = `${genderText} ${originLabel} İsmi`;
+        compositeLabel = `${genderText} ${originLabel} İsmi`;
       } else if (lng === "en") {
-        if (isUnisex) compositeLabel = `Unisex ${originLabel} Name`;
-        else compositeLabel = `${originLabel} ${genderText} Name`;
+        compositeLabel = `${originLabel} ${genderText} Name`;
       } else if (lng === "de") {
-        if (isUnisex) compositeLabel = `Unisex ${originLabel} Name`;
-        else compositeLabel = `${originLabel} ${genderText}name`;
+        compositeLabel = `${originLabel} ${genderText}name`;
       } else {
         compositeLabel = `${genderText} · ${originLabel}`;
       }
@@ -568,107 +626,114 @@ export default function NameDetail() {
         <span>›</span>
         {getGenderPath(nameItem.gender) ? (
           <Link to={generatePath(lng, "category", getGenderPath(nameItem.gender))} style={{ color: "var(--accent)" }}>
-            {isUnisex ? t("gender_unisex", "Unisex") : (isFemale ? t("nav_girls") : t("nav_boys"))}
+            {isFemale ? t("nav_girls") : t("nav_boys")}
           </Link>
         ) : (
           <span style={{ color: "var(--text-muted)" }}>
-            {t("gender_unisex", "Unisex")}
+            {isFemale ? t("nav_girls") : t("nav_boys")}
           </span>
         )}
         <span>›</span>
         <span style={{ color: genderColor, fontWeight: 700 }}>{nameItem.name} {t("name_breadcrumb_suffix")}</span>
       </nav>
 
-      {/* Hero Section */}
+      {/* Hero Section — kompakt, balonsuz */}
       <motion.section
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
+        transition={{ duration: 0.45, ease: "easeOut" }}
         style={{
-          background: `linear-gradient(135deg, ${genderColor}05, ${genderColor}10)`,
+          background: `linear-gradient(135deg, ${genderColor}06, ${genderColor}12)`,
           borderRadius: "var(--r-xl)",
-          padding: "clamp(2rem, 8vw, 4rem) 2rem",
-          marginBottom: "3rem",
+          padding: "1.5rem 1rem",
+          marginBottom: "2rem",
           textAlign: "center",
-          border: `1px solid ${genderColor}20`,
-          position: "relative",
-          overflow: "hidden"
+          border: `1px solid ${genderColor}22`,
         }}
       >
-        <div style={{
-          position: "absolute",
-          top: "-10%",
-          right: "-5%",
-          fontSize: "12rem",
+        {/* İsim başlığı — Tek H1, SEO dostu tam başlık */}
+        <h1 style={{
+          fontSize: "clamp(2rem, 7vw, 3.5rem)",
           fontWeight: 900,
-          opacity: 0.03,
           color: genderColor,
-          pointerEvents: "none",
+          marginBottom: "0.25rem",
+          letterSpacing: "-0.04em",
+          lineHeight: 1.1,
           fontFamily: "var(--font-display)"
         }}>
-          {nameItem.letter || nameItem.name.charAt(0)}
-        </div>
+          {lng === "tr"
+            ? `${nameItem.name} İsminin Anlamı, Kökeni ve Analizi`
+            : lng === "en"
+            ? `${nameItem.name} – Kurdish Name Meaning, Origin & Analysis`
+            : lng === "de"
+            ? `${nameItem.name} – Kurdischer Name: Bedeutung, Herkunft & Analyse`
+            : `${nameItem.name} – معنى الاسم الكردي وأصله وتحليله`}
+        </h1>
 
-        <div style={{ position: "relative", zIndex: 1 }}>
-          <motion.div
-            initial={{ scale: 0.9 }}
-            animate={{ scale: 1 }}
-            transition={{ type: "spring", stiffness: 100 }}
+        {/* Fonetik okunuş — serif italik */}
+        <p style={{
+          fontFamily: "Georgia, 'Times New Roman', serif",
+          fontStyle: "italic",
+          fontSize: "0.9rem",
+          color: "var(--text-faint)",
+          marginBottom: "0.875rem",
+          letterSpacing: "0.01em"
+        }}>
+          {lng === "tr" ? "Telaffuz:" : lng === "de" ? "Aussprache:" : lng === "ar" ? "النطق:" : "Pronunciation:"}{" "}
+          <span style={{ color: genderColor, fontWeight: 600 }}>{pronunciationStr}</span>
+        </p>
+
+        {/* Badge satırı: cinsiyet + köken + lehçe */}
+        <div style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "0.5rem",
+          flexWrap: "wrap"
+        }}>
+          {/* Cinsiyet badge */}
+          <span
+            className={isFemale ? "badge-female" : "badge-male"}
             style={{
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-              width: "80px",
-              height: "80px",
-              borderRadius: "50%",
-              background: `${genderColor}15`,
-              color: genderColor,
-              marginBottom: "1.5rem",
-              fontSize: "2rem",
-              fontWeight: 800
+              padding: "0.3rem 0.875rem",
+              borderRadius: "100px",
+              background: `${genderColor}18`,
+              fontSize: "0.78rem",
+              fontWeight: 700,
+              letterSpacing: "0.02em"
             }}
           >
-            {nameItem.letter || nameItem.name.charAt(0)}
-          </motion.div>
+            {genderText}
+          </span>
 
-          <h1 style={{
-            fontSize: "clamp(2.5rem, 8vw, 4.5rem)",
-            fontWeight: 900,
-            color: genderColor,
-            marginBottom: "0.5rem",
-            letterSpacing: "-0.04em",
-            fontFamily: "var(--font-display)"
+          {/* Köken badge */}
+          <span style={{
+            padding: "0.3rem 0.875rem",
+            borderRadius: "100px",
+            background: "var(--surface-2)",
+            color: "var(--text-muted)",
+            fontSize: "0.78rem",
+            fontWeight: 600,
+            border: "1px solid var(--border-dim)"
           }}>
-            {nameItem.name}
-          </h1>
+            {origin}
+          </span>
 
-          <div style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "1rem",
-            flexWrap: "wrap"
-          }}>
-            <span className={isUnisex ? "badge-unisex" : (isFemale ? "badge-female" : "badge-male")} style={{
-              padding: "0.5rem 1.25rem",
-              borderRadius: "100px",
-              background: `${genderColor}15`,
-              fontSize: "0.875rem",
-              fontWeight: 700
-            }}>
-              {genderText}
-            </span>
+          {/* Lehçe badge — varsa */}
+          {dialectInfo && (
             <span style={{
-              padding: "0.5rem 1.25rem",
+              padding: "0.3rem 0.875rem",
               borderRadius: "100px",
-              background: "var(--surface-2)",
-              color: "var(--text-muted)",
-              fontSize: "0.875rem",
-              fontWeight: 600
+              background: dialectInfo.color,
+              color: "#fff",
+              fontSize: "0.78rem",
+              fontWeight: 700,
+              letterSpacing: "0.01em",
+              boxShadow: `0 1px 6px ${dialectInfo.color}50`
             }}>
-              {origin}
+              {dialectInfo.label[lng as keyof typeof dialectInfo.label] || dialectInfo.label.en}
             </span>
-          </div>
+          )}
         </div>
       </motion.section>
 
@@ -682,12 +747,13 @@ export default function NameDetail() {
             transition={{ delay: 0.2 }}
             style={{
               background: "var(--surface)",
-              padding: "2.5rem",
+              padding: "1.5rem",
               borderRadius: "var(--r-lg)",
               border: "1px solid var(--border)",
-              boxShadow: "0 10px 30px -10px rgba(0,0,0,0.05)"
+              boxShadow: "0 6px 20px -8px rgba(0,0,0,0.06)"
             }}
           >
+            {/* H2: Ana anlam bölümü */}
             <h2 style={{
               fontSize: "1.5rem",
               fontWeight: 800,
@@ -765,9 +831,8 @@ export default function NameDetail() {
             </div>
           </motion.section>
 
-          {/* Ad Slot */}
-          <Suspense fallback={<div style={{ height: '90px', margin: "2rem 0" }} />}>
-            <div style={{ margin: "2.5rem 0" }}>
+          <Suspense fallback={<div style={{ height: '120px', margin: "1.5rem 0" }} />}>
+            <div style={{ margin: "1.5rem 0" }}>
               <AdSlot slot="name_detail_after_meaning" format="horizontal" />
             </div>
           </Suspense>
@@ -781,10 +846,6 @@ export default function NameDetail() {
             <div style={{ padding: "1.5rem", background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--r-md)" }}>
               <h4 style={{ fontSize: "0.75rem", textTransform: "uppercase", color: "var(--text-faint)", marginBottom: "0.5rem", fontWeight: 700 }}>{t("detail_origin")}</h4>
               <p style={{ fontWeight: 700 }}>{origin}</p>
-            </div>
-            <div style={{ padding: "1.5rem", background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--r-md)" }}>
-              <h4 style={{ fontSize: "0.75rem", textTransform: "uppercase", color: "var(--text-faint)", marginBottom: "0.5rem", fontWeight: 700 }}>{t("detail_letter")}</h4>
-              <p style={{ fontWeight: 700 }}>{nameItem.letter || nameItem.name.charAt(0)}</p>
             </div>
           </div>
         </div>
@@ -803,7 +864,10 @@ export default function NameDetail() {
             border: "1px solid var(--border)",
             marginBottom: "1.5rem"
           }}>
-            <h3 style={{ fontSize: "1rem", fontWeight: 800, marginBottom: "1rem" }}>{t("favorites")}</h3>
+            {/* H3: Sidebar alt bölümü — görsel boyut korundu */}
+            <h3 style={{ fontSize: "1rem", fontWeight: 800, marginBottom: "1rem" }}>
+              {t("favorites", lng === "tr" ? "Favorilerim" : lng === "de" ? "Favoriten" : lng === "ar" ? "المفضلة" : "Favorites")}
+            </h3>
             <button
               onClick={() => toggleFavorite(nameItem)}
               style={{
@@ -833,6 +897,7 @@ export default function NameDetail() {
               borderRadius: "var(--r-lg)", 
               border: "1px solid var(--border)" 
             }}>
+              {/* H3: Sidebar benzer isimler — görsel boyut korundu */}
               <h3 style={{ fontSize: "1rem", fontWeight: 800, marginBottom: "1rem" }}>{t("detail_similar_rich", { name: nameItem.name, genderText: genderText, defaultValue: "Benzer İsimler" })}</h3>
               <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                 {alikeNames.slice(0, 5).map(an => (
@@ -863,11 +928,12 @@ export default function NameDetail() {
 
       <div style={{ maxWidth: "100%" }}>
         {/* AdSlot: Similar Names After */}
-        <Suspense fallback={<div style={{ height: '90px' }} />}>
+        <Suspense fallback={<div style={{ height: '120px' }} />}>
           <AdSlot slot="name_detail_after_similar" format="horizontal" />
         </Suspense>
 
         <section style={{ marginTop: "4rem" }}>
+          {/* H2: Köken bölümü */}
           <h2 style={{ fontSize: "1.75rem", fontWeight: 800, marginBottom: "1.5rem" }}>
             {t("detail_origin_rich", { name: nameItem.name, origin: origin, defaultValue: `${nameItem.name} Kürtçe İsminin Kökeni` })}
           </h2>
@@ -881,6 +947,7 @@ export default function NameDetail() {
         </section>
 
         <section style={{ marginTop: "3rem" }}>
+          {/* H2: Cinsiyet bölümü */}
           <h2 style={{ fontSize: "1.75rem", fontWeight: 800, marginBottom: "1.5rem" }}>
             {t("detail_gender_rich", { name: nameItem.name, genderText: genderText, defaultValue: `${nameItem.name} Kürtçe İsminin Cinsiyeti` })}
           </h2>
@@ -962,6 +1029,7 @@ export default function NameDetail() {
 
           {/* Premium Visual FAQ Accordion Section */}
           <section style={{ marginTop: "2.5rem", marginBottom: "2.5rem" }}>
+            {/* H2: FAQ bölüm başlığı */}
             <h2 className="section-heading" style={{ marginBottom: "1.25rem" }}>
               {t("faq_title", { name: nameItem.name, defaultValue: `${nameItem.name} Kürtçe İsmi Hakkında Sıkça Sorulan Sorular` })}
             </h2>
@@ -993,17 +1061,27 @@ export default function NameDetail() {
                         outline: "none",
                         cursor: "pointer",
                         textAlign: "left",
-                        fontWeight: 600,
-                        fontSize: "0.95rem",
-                        color: "var(--text)",
                         fontFamily: "var(--font-display)"
                       }}
                     >
-                      <span>{faq.question}</span>
+                      {/* H3: Her FAQ sorusu — Featured Snippet için kritik */}
+                      <h3 style={{
+                        fontWeight: 600,
+                        fontSize: "0.95rem",
+                        color: "var(--text)",
+                        margin: 0,
+                        fontFamily: "var(--font-display)",
+                        textAlign: "left",
+                        flex: 1
+                      }}>
+                        {faq.question}
+                      </h3>
                       <span style={{ 
                         transform: isOpen ? "rotate(180deg)" : "rotate(0)", 
                         transition: "transform 200ms",
-                        color: "var(--accent)"
+                        color: "var(--accent)",
+                        flexShrink: 0,
+                        marginLeft: "0.75rem"
                       }}>
                         ▼
                       </span>
@@ -1027,7 +1105,7 @@ export default function NameDetail() {
           </section>
 
           {/* Devasa Paylaşım & İndirme Altyapısı */}
-          <div className="flex flex-col sm:flex-row gap-3 my-8 w-full">
+          <div className="flex flex-col md:flex-row gap-3 my-8 w-full">
             {/* WhatsApp Button */}
             <a
               href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`${t("whatsapp_share_msg", { name: nameItem.name, meaning: meaning })} https://kurdishname.com${generatePath(lng, "name", nameItem.id)}`)}`}
@@ -1042,16 +1120,18 @@ export default function NameDetail() {
                 background: "#25D366",
                 color: "#FFFFFF",
                 borderRadius: "var(--r-lg)",
-                fontSize: "1rem",
+                fontSize: "0.95rem",
                 fontWeight: "700",
                 fontFamily: "var(--font-display)",
                 textAlign: "center",
                 textDecoration: "none",
                 boxShadow: "0 4px 14px rgba(37, 211, 102, 0.25)",
                 transition: "transform 150ms var(--ease-out), background-color 150ms, box-shadow 150ms",
-                boxSizing: "border-box"
+                boxSizing: "border-box",
+                width: "100%",
+                whiteSpace: "nowrap"
               }}
-              className="flex-1 hover:scale-[1.01] hover:bg-[#20ba5a] hover:shadow-[0_6px_20px_rgba(37,211,102,0.35)] active:scale-[0.99]"
+              className="w-full md:w-auto flex-1 hover:scale-[1.01] hover:bg-[#20ba5a] hover:shadow-[0_6px_20px_rgba(37,211,102,0.35)] active:scale-[0.99]"
             >
               <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
                 <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.37 5.005L2 22l5.135-1.346a9.94 9.94 0 004.87 1.27h.005c5.507 0 9.99-4.478 9.99-9.986 0-2.67-1.037-5.18-2.92-7.061A9.925 9.925 0 0012.012 2zm5.72 14.1c-.244.688-1.201 1.25-1.654 1.336-.421.08-.949.124-2.855-.672-2.434-1.014-4-3.48-4.122-3.641-.121-.162-1.008-1.343-1.008-2.56 0-1.218.636-1.815.862-2.057.227-.243.498-.303.664-.303h.473c.152 0 .356-.057.556.425.2.486.688 1.678.749 1.8.06.121.101.263.02.425-.08.162-.121.263-.243.405-.121.141-.256.315-.365.425-.121.121-.248.253-.106.496.142.242.631 1.042 1.353 1.685.93.827 1.71 1.082 1.954 1.204.243.122.384.101.526-.06.141-.162.607-.708.769-.95.162-.243.324-.202.546-.121.222.08 1.413.667 1.655.789.243.121.404.182.464.283.06.101.06.587-.184 1.275z"/>
@@ -1072,15 +1152,17 @@ export default function NameDetail() {
                 color: "var(--text)",
                 border: "1px solid var(--border)",
                 borderRadius: "var(--r-lg)",
-                fontSize: "1rem",
+                fontSize: "0.95rem",
                 fontWeight: "600",
                 fontFamily: "var(--font-display)",
                 textAlign: "center",
                 cursor: "pointer",
                 transition: "transform 150ms var(--ease-out), background-color 150ms, border-color 150ms",
-                boxSizing: "border-box"
+                boxSizing: "border-box",
+                width: "100%",
+                whiteSpace: "nowrap"
               }}
-              className="flex-1 hover:scale-[1.01] hover:bg-neutral-50 dark:hover:bg-neutral-800 active:scale-[0.99]"
+              className="w-full md:w-auto flex-1 hover:scale-[1.01] hover:bg-neutral-50 dark:hover:bg-neutral-800 active:scale-[0.99]"
             >
               <Download size={20} />
               <span>{t("download_card_btn", "İsim Kartını İndir")}</span>

@@ -839,6 +839,120 @@ async function runSSGPrerendering() {
       ensureDirectoryExistence(outPath);
       fs.writeFileSync(outPath, finalHtml, 'utf-8');
     });
+
+    // E. Gender + Letter Categories
+    const genders = [
+      { key: 'girls', segment: routes.girls, label: t('nav_girls', 'Kız İsimleri'), filter: (n: any) => n.gender === 'female' },
+      { key: 'boys', segment: routes.boys, label: t('nav_boys', 'Erkek İsimleri'), filter: (n: any) => n.gender === 'male' }
+    ];
+
+    genders.forEach(g => {
+      alphabet.forEach(letter => {
+        const canonical = `${DOMAIN}/${lang}/${categorySegment}/${g.segment}/${encodeURIComponent(letter)}`;
+        const alternates = LANGUAGES.map(l => ({
+          lang: l,
+          url: `${DOMAIN}/${l}/${routeTranslations[l].category}/${routeTranslations[l][g.key as 'girls'|'boys']}/${encodeURIComponent(letter)}`
+        }));
+
+        const title = `${letter} Harfi ile Başlayan Kürtçe ${g.label}`;
+        const desc = `${letter} harfi ile başlayan tüm Kürtçe ${g.label} listesi, anlamları ve etimolojisi.`;
+
+        const combinedList = allNames.filter(n => g.filter(n) && (n.letter || n.name.charAt(0)).toUpperCase() === letter);
+        combinedList.sort((a, b) => a.name.localeCompare(b.name, 'tr'));
+
+        const listHTML = combinedList.map(n => `
+          <div class="name-list-item">
+            <a href="${generatePath(lang, 'name', n.id)}" class="${n.gender === 'female' ? 'name-link-female' : 'name-link-male'}">${n.name}</a>
+            <span class="name-list-meaning">${getLocalizedMeaning(n, lang)?.slice(0, 48)}...</span>
+          </div>
+        `).join('\n');
+
+        const content = `
+          <h1 class="page-title">${title}</h1>
+          <p style="font-size: 1.05rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 2rem;">${desc}</p>
+          <h2 class="section-heading">${title} (${combinedList.length})</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+            ${listHTML}
+          </div>
+        `;
+
+        const bodyHtml = renderLayout(lang, content, {
+          pageTitle: title,
+          pageDesc: desc,
+          canonicalUrl: canonical,
+          alternates: alternates
+        });
+
+        const finalHtml = replaceHeadMetadata(templateHtml, {
+          title: `${title} | KurdishName`,
+          description: desc,
+          canonical: canonical,
+          lang: lang,
+          alternates: alternates,
+          schemas: []
+        }).replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
+
+        const outPath = path.join(distDir, `${lang}/${categorySegment}/${g.segment}/${encodeURIComponent(letter)}/index.html`);
+        ensureDirectoryExistence(outPath);
+        fs.writeFileSync(outPath, finalHtml, 'utf-8');
+      });
+    });
+
+    // F. Gender + Theme Categories
+    genders.forEach(g => {
+      themeKeys.forEach(themeKey => {
+        const themeSlug = themeSlugs[lang][themeKey];
+        const canonical = `${DOMAIN}/${lang}/${categorySegment}/${g.segment}/${themeSlug}`;
+        const alternates = LANGUAGES.map(l => ({
+          lang: l,
+          url: `${DOMAIN}/${l}/${routeTranslations[l].category}/${routeTranslations[l][g.key as 'girls'|'boys']}/${themeSlugs[l][themeKey]}`
+        }));
+
+        const themeTitle = t(`theme_${themeKey}_title`, `Kürtçe ${themeKey} İsimleri`);
+        const title = `${themeTitle} - ${g.label}`;
+        const desc = `${themeTitle} kategorisindeki en güzel Kürtçe ${g.label} listeleniyor.`;
+
+        const targetTag = themeTags[themeKey];
+        const combinedList = allNames.filter(n => g.filter(n) && n.tags?.includes(targetTag));
+        combinedList.sort((a, b) => a.name.localeCompare(b.name, 'tr'));
+
+        const listHTML = combinedList.map(n => `
+          <div class="name-list-item">
+            <a href="${generatePath(lang, 'name', n.id)}" class="${n.gender === 'female' ? 'name-link-female' : 'name-link-male'}">${n.name}</a>
+            <span class="name-list-meaning">${getLocalizedMeaning(n, lang)?.slice(0, 48)}...</span>
+          </div>
+        `).join('\n');
+
+        const content = `
+          <h1 class="page-title">${title}</h1>
+          <p style="font-size: 1.05rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 2rem;">${desc}</p>
+          <h2 class="section-heading">${title} (${combinedList.length})</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+            ${listHTML}
+          </div>
+        `;
+
+        const bodyHtml = renderLayout(lang, content, {
+          pageTitle: title,
+          pageDesc: desc,
+          canonicalUrl: canonical,
+          alternates: alternates
+        });
+
+        const finalHtml = replaceHeadMetadata(templateHtml, {
+          title: `${title} | KurdishName`,
+          description: desc,
+          canonical: canonical,
+          lang: lang,
+          alternates: alternates,
+          schemas: []
+        }).replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
+
+        const outPath = path.join(distDir, `${lang}/${categorySegment}/${g.segment}/${themeSlug}/index.html`);
+        ensureDirectoryExistence(outPath);
+        fs.writeFileSync(outPath, finalHtml, 'utf-8');
+      });
+    });
   });
 
   // ──── PHASE 4: BLOG REGISTRY & INDIVIDUAL BLOG POSTS ────
@@ -1068,6 +1182,27 @@ async function runSSGPrerendering() {
     return scored;
   }
 
+  // Richness score helper to rank names for static generation prioritization
+  function getNameRichnessScore(n: any): number {
+    let score = 0;
+    if (n.meaning) score += n.meaning.length * 1.5;
+    if (n.meaning_en) score += n.meaning_en.length * 1.0;
+    if (n.meaning_de) score += n.meaning_de.length * 1.0;
+    if (n.meaning_ar) score += n.meaning_ar.length * 1.0;
+    if (n.description) score += n.description.length * 1.0;
+    if (n.tags && n.tags.length > 0) score += n.tags.length * 20;
+    return score;
+  }
+
+  // Pre-calculate and sort names to find the top zengin ones
+  const namesSortedByRichness = [...allNames]
+    .map(n => ({ id: n.id, score: getNameRichnessScore(n) }))
+    .sort((a, b) => b.score - a.score);
+
+  const top3000Tr = new Set(namesSortedByRichness.slice(0, 3000).map(n => n.id));
+  const top1000De = new Set(namesSortedByRichness.slice(0, 1000).map(n => n.id));
+  const top1000Ar = new Set(namesSortedByRichness.slice(0, 1000).map(n => n.id));
+
   // Pre-generate all name details loop
   let counter = 0;
   for (const nameItem of allNames) {
@@ -1078,7 +1213,13 @@ async function runSSGPrerendering() {
     // Get alike names statically
     const alikeNames = getAlikeNamesStatic(nameItem);
 
-    LANGUAGES.filter(lang => lang === 'en').forEach(lang => {
+    LANGUAGES.filter(lang => {
+      if (lang === 'en') return true; // en points to all names
+      if (lang === 'tr' && top3000Tr.has(nameItem.id)) return true;
+      if (lang === 'de' && top1000De.has(nameItem.id)) return true;
+      if (lang === 'ar' && top1000Ar.has(nameItem.id)) return true;
+      return false;
+    }).forEach(lang => {
       const t = (key: string, fallback?: string) => getTranslation(lang, key, fallback);
       const routes = routeTranslations[lang];
       const nameSegment = routes.name;

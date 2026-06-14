@@ -9,11 +9,32 @@ import { NameData } from "../data/names";
 import { generatePath } from "../utils/routes";
 import { getLocalizedMeaning, getLocalizedOrigin } from "../utils/localization";
 import { searchWithFuse } from "../utils/search";
-import { loadNamesForLetter, loadNamesForSearch } from "../utils/nameLoader";
-import { stats, homeGirlNames, homeBoyNames, featuredNames } from "../data/homeStaticData";
+import { loadNamesForLetter, loadNamesForSearch, getLettersForId, loadAllNames, fetchSearchIndex } from "../utils/nameLoader";
+import { stats, featuredNames } from "../data/homeStaticData";
 import { blogPostsRegistry } from "../data/blogPosts";
 import { useFavorites } from "../context/FavoritesContext";
 import PopularTrendsWidget from "../components/PopularTrendsWidget";
+import { truncateMeaning, getWeeklySeed, lcg } from "../utils/nameHelpers";
+
+const POPULAR_HOMEPAGE_IDS = new Set([
+  // Girls
+  "arin", "berfin", "asmin", "rojda", "evin", "delal", "jiyan", "hevi", "zin", "rojin",
+  "ronahi", "binefs", "dicle", "avsin", "berivan", "mizgin", "arjin", "azade", "banu", "bejna",
+  "helin", "nudem", "seve", "dilsan", "heval", "zerya", "ronya", "ruken", "dilara", "pelin",
+  "zelal", "silan", "lorin", "yara", "peyman", "nupel", "jinda", "solin", "dilan", "viyan",
+  "rozerin", "sermin", "medya", "rewsen", "nalin", "roza", "rozin", "dilsoz", "dildar", "hevidar",
+  "nazlican", "ciwana", "narin", "nazan", "dilcan", "gulan", "helin", "dilvan", "nujin", "nuroj",
+  "solen", "rozelin", "berivan", "gulistan", "avesta", "ronida", "pelda", "zilan", "sosin", "rojbin",
+  
+  // Boys
+  "azad", "baran", "dara", "egit", "aram", "armanc", "bawer", "berxwedan", "brusk", "ciwan",
+  "diyar", "mirza", "serhad", "welat", "zinar", "hozan", "ferman", "bager", "berzan", "alan",
+  "serhat", "kawa", "robin", "rezan", "sipan", "rojan", "amed", "agir", "ariyan", "siyar",
+  "demhat", "andok", "saho", "merdan", "dijwar", "ferhat", "kendal", "renas", "serdar", "xebat",
+  "zana", "hemin", "firat", "ciya", "serxwebun", "sherko", "heval", "dilsoz", "dildar", "peyman",
+  "bakur", "bahoz", "ciwan", "serbilind", "zanist", "rasti", "heja", "xorto", "ferzad", "dilshad",
+  "hezkir", "ozan", "mir", "karwan", "sherwan", "rebar", "hemo", "piling", "lewend", "serdar"
+]);
 
 export default function Home() {
   const { t, i18n } = useTranslation();
@@ -24,9 +45,98 @@ export default function Home() {
   const q = new URLSearchParams(location.search).get("q") || "";
   const [localSearch, setLocalSearch] = useState(q);
   const [allNames, setAllNames] = useState<NameData[]>([]);
+  const [allSlimNames, setAllSlimNames] = useState<NameData[]>([]);
   const [isLoading, setIsLoading] = useState(!!q);
+  const [dbNamesMap, setDbNamesMap] = useState<Map<string, NameData>>(new Map());
+  const [weeklyTrends, setWeeklyTrends] = useState<NameData[]>([]);
+  const [weeklyGirls, setWeeklyGirls] = useState<NameData[]>([]);
+  const [weeklyBoys, setWeeklyBoys] = useState<NameData[]>([]);
+
+  // Dynamically load all names and perform deterministic shuffle based on weekly seed
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    let active = true;
+    async function loadData() {
+      try {
+        const slimIndexList = await fetchSearchIndex();
+        if (active) {
+          setAllSlimNames(slimIndexList);
+        }
+
+        const seed = getWeeklySeed();
+        const trendsRng = lcg(seed);
+        const girlsRng = lcg(seed + 1);
+        const boysRng = lcg(seed + 2);
+
+        function seededShuffle<T>(arr: T[], rng: () => number): T[] {
+          const shuffled = [...arr];
+          for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(rng() * (i + 1));
+            const temp = shuffled[i];
+            shuffled[i] = shuffled[j];
+            shuffled[j] = temp;
+          }
+          return shuffled;
+        }
+
+        // Filter for popular pool
+        const popularNames = slimIndexList.filter(n => POPULAR_HOMEPAGE_IDS.has(n.id.toLowerCase()));
+
+        // Shuffle all popular names for trends
+        const shuffledAll = seededShuffle(popularNames, trendsRng);
+        const selectedTrends = shuffledAll.slice(0, 10);
+
+        // Filter and shuffle girls
+        const allGirls = popularNames.filter(n => n.gender === "female");
+        const shuffledGirls = seededShuffle(allGirls, girlsRng);
+        const selectedGirls = shuffledGirls.slice(0, 7);
+
+        // Filter and shuffle boys
+        const allBoys = popularNames.filter(n => n.gender === "male");
+        const shuffledBoys = seededShuffle(allBoys, boysRng);
+        const selectedBoys = shuffledBoys.slice(0, 7);
+
+        if (active) {
+          setWeeklyTrends(selectedTrends);
+          setWeeklyGirls(selectedGirls);
+          setWeeklyBoys(selectedBoys);
+        }
+
+        // Collect all unique first letters from the selected names
+        const selectedLetters = new Set<string>();
+        [...selectedTrends, ...selectedGirls, ...selectedBoys].forEach(item => {
+          if (item && item.letter) {
+            selectedLetters.add(item.letter.trim().toUpperCase());
+          }
+        });
+
+        // Load chunks for these letters asynchronously in the background
+        const lettersToLoad = Array.from(selectedLetters);
+        const chunks = await Promise.all(
+          lettersToLoad.map(letter => loadNamesForLetter(letter))
+        );
+        const loadedNames = chunks.flat();
+
+        const newMap = new Map<string, NameData>();
+        loadedNames.forEach(item => {
+          if (item && item.id) {
+            newMap.set(item.id.toLowerCase(), item);
+          }
+        });
+
+        if (active) {
+          setDbNamesMap(newMap);
+        }
+      } catch (err) {
+        console.error("Failed to load dynamic weekly seed names", err);
+      }
+    }
+    loadData();
+    return () => { active = false; };
+  }, []);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
     let active = true;
     if (!q) {
       setIsLoading(false);
@@ -92,9 +202,11 @@ export default function Home() {
   }, [featuredBoyNames]);
 
   const handleRandom = () => {
-    const combinedList = [...featuredNames, ...homeGirlNames, ...homeBoyNames];
-    const randomItem = combinedList[Math.floor(Math.random() * combinedList.length)];
-    navigate(generatePath(lng, "name", randomItem.id));
+    const listToPick = allSlimNames.length > 0 ? allSlimNames : featuredNames;
+    const randomItem = listToPick[Math.floor(Math.random() * listToPick.length)];
+    if (randomItem) {
+      navigate(generatePath(lng, "name", randomItem.id));
+    }
   };
 
   const totalNames = stats.total;
@@ -425,7 +537,7 @@ export default function Home() {
       )}
 
       {/* ── LIVE WEEKLY POPULAR TRENDS WIDGET ─────────── */}
-      <PopularTrendsWidget />
+      <PopularTrendsWidget dbNamesMap={dbNamesMap} trendsList={weeklyTrends} />
 
 
 
@@ -462,36 +574,50 @@ export default function Home() {
             </Link>
           </h2>
           <div>
-            {homeGirlNames.slice(0, 7).map((item) => (
-              <div
-                key={item.id}
-                className="name-list-item"
-              >
-                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                  <button
-                    onClick={() => toggleFavorite(item)}
-                    style={{
-                      color: isFavorite(item.id) ? "var(--female)" : "var(--text-faint)",
-                      padding: 0,
-                      display: "inline-flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      transition: "transform 150ms",
-                    }}
-                    className="hover:scale-120 active:scale-90"
-                    title={isFavorite(item.id) ? t("favorites_remove") : t("favorites_add")}
-                  >
-                    <Heart size={13} fill={isFavorite(item.id) ? "var(--female)" : "none"} />
-                  </button>
-                  <Link to={generatePath(lng, "name", item.id)} className="name-link-female">
-                    {item.name}
-                  </Link>
-                </div>
-                <span className="name-list-meaning">
-                  {getLocalizedMeaning(item, lng)?.slice(0, 26)}
+            {weeklyGirls.length === 0 ? (
+              <div style={{ padding: "2rem", textAlign: "center" }}>
+                <span className="animate-pulse" style={{ color: "var(--text-muted)", fontSize: "0.875rem" }}>
+                  {t("loading", "Yükleniyor...")}
                 </span>
               </div>
-            ))}
+            ) : (
+              weeklyGirls.map((item) => {
+                const dbItem = dbNamesMap.get(item.id.toLowerCase());
+                const rawMeaning = dbItem ? getLocalizedMeaning(dbItem, lng) : getLocalizedMeaning(item, lng);
+                const localizedMeaning = truncateMeaning(rawMeaning, 60);
+
+                return (
+                  <div
+                    key={item.id}
+                    className="name-list-item"
+                  >
+                    <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                      <button
+                        onClick={() => toggleFavorite(dbItem || item)}
+                        style={{
+                          color: isFavorite(item.id) ? "var(--female)" : "var(--text-faint)",
+                          padding: 0,
+                          display: "inline-flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          transition: "transform 150ms",
+                        }}
+                        className="hover:scale-120 active:scale-90"
+                        title={isFavorite(item.id) ? t("favorites_remove") : t("favorites_add")}
+                      >
+                        <Heart size={13} fill={isFavorite(item.id) ? "var(--female)" : "none"} />
+                      </button>
+                      <Link to={generatePath(lng, "name", item.id)} className="name-link-female">
+                        {item.name}
+                      </Link>
+                    </div>
+                    <span className="name-list-meaning" title={rawMeaning}>
+                      {localizedMeaning}
+                    </span>
+                  </div>
+                );
+              })
+            )}
             
             <Link 
               to={generatePath(lng, "category", "kiz")}
@@ -528,36 +654,50 @@ export default function Home() {
             </Link>
           </h2>
           <div>
-            {homeBoyNames.slice(0, 7).map((item) => (
-              <div
-                key={item.id}
-                className="name-list-item"
-              >
-                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                  <button
-                    onClick={() => toggleFavorite(item)}
-                    style={{
-                      color: isFavorite(item.id) ? "var(--female)" : "var(--text-faint)",
-                      padding: 0,
-                      display: "inline-flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      transition: "transform 150ms",
-                    }}
-                    className="hover:scale-120 active:scale-90"
-                    title={isFavorite(item.id) ? t("favorites_remove") : t("favorites_add")}
-                  >
-                    <Heart size={13} fill={isFavorite(item.id) ? "var(--female)" : "none"} />
-                  </button>
-                  <Link to={generatePath(lng, "name", item.id)} className="name-link-male">
-                    {item.name}
-                  </Link>
-                </div>
-                <span className="name-list-meaning">
-                  {getLocalizedMeaning(item, lng)?.slice(0, 26)}
+            {weeklyBoys.length === 0 ? (
+              <div style={{ padding: "2rem", textAlign: "center" }}>
+                <span className="animate-pulse" style={{ color: "var(--text-muted)", fontSize: "0.875rem" }}>
+                  {t("loading", "Yükleniyor...")}
                 </span>
               </div>
-            ))}
+            ) : (
+              weeklyBoys.map((item) => {
+                const dbItem = dbNamesMap.get(item.id.toLowerCase());
+                const rawMeaning = dbItem ? getLocalizedMeaning(dbItem, lng) : getLocalizedMeaning(item, lng);
+                const localizedMeaning = truncateMeaning(rawMeaning, 60);
+
+                return (
+                  <div
+                    key={item.id}
+                    className="name-list-item"
+                  >
+                    <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                      <button
+                        onClick={() => toggleFavorite(dbItem || item)}
+                        style={{
+                          color: isFavorite(item.id) ? "var(--female)" : "var(--text-faint)",
+                          padding: 0,
+                          display: "inline-flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          transition: "transform 150ms",
+                        }}
+                        className="hover:scale-120 active:scale-90"
+                        title={isFavorite(item.id) ? t("favorites_remove") : t("favorites_add")}
+                      >
+                        <Heart size={13} fill={isFavorite(item.id) ? "var(--female)" : "none"} />
+                      </button>
+                      <Link to={generatePath(lng, "name", item.id)} className="name-link-male">
+                        {item.name}
+                      </Link>
+                    </div>
+                    <span className="name-list-meaning" title={rawMeaning}>
+                      {localizedMeaning}
+                    </span>
+                  </div>
+                );
+              })
+            )}
             
             <Link 
               to={generatePath(lng, "category", "erkek")}

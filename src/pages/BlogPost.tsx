@@ -1220,7 +1220,7 @@ export default function BlogPost() {
           </div>
 
           {/* AdSense: Yazı Başı Reklam - Tüm uzunluklarda gösterilir */}
-          <Suspense fallback={<div style={{ height: '90px' }} />}>
+          <Suspense fallback={<div style={{ height: '120px' }} />}>
             <AdSlot slot="blog_post_top" format="horizontal" />
           </Suspense>
 
@@ -1242,7 +1242,7 @@ export default function BlogPost() {
               {/* AdSense: Yazı Sonu Reklam - Orta ve Uzun Sayfalarda Gösterilir */}
               {(isMedium || isLong) && (
                 <div style={{ marginTop: "2rem" }}>
-                  <Suspense fallback={<div style={{ height: '90px' }} />}>
+                  <Suspense fallback={<div style={{ height: '120px' }} />}>
                     <AdSlot slot="blog_post_bottom" format="auto" />
                   </Suspense>
                 </div>

@@ -3,15 +3,15 @@ import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { Search, RotateCcw, User, Users, Wind, Heart, Sun, Activity, Sparkles, Gem, X } from 'lucide-react';
+import { Search, RotateCcw, User, Sparkles, X, Wind, Heart, Sun, Activity, Gem } from 'lucide-react';
 import { NameData } from '../data/names';
 import { generatePath } from '../utils/routes';
 import { normalizeText } from '../utils/search';
-import { getLocalizedMeaning } from '../utils/localization';
-import { loadNamesForLetter, loadAllNames, fetchSearchIndex } from '../utils/nameLoader';
+import { getLocalizedMeaning, getLocalizedOrigin } from '../utils/localization';
+import { loadNamesForLetter, fetchSearchIndex } from '../utils/nameLoader';
 import { generateContextualHook } from '../utils/seoHook';
 
-type GenderPref = 'female' | 'male' | 'both';
+type GenderPref = 'female' | 'male';
 type ThemePref = 'Cesaret / Güç' | 'Doğa / Yaşam' | 'Sevgi / Güzellik' | 'Işık / Aydınlık' | 'Bilgelik / Akıl' | 'any';
 
 /* ── Reusable style objects ─── */
@@ -28,8 +28,18 @@ const inputStyle: React.CSSProperties = {
   transition: "border-color 150ms",
 };
 
+function getDialect(origin: string | undefined) {
+  if (!origin) return null;
+  const o = origin.toLowerCase();
+  if (o.includes("kurmanci") || o.includes("kurmanc") || o.includes("kurmanji")) return { label: "Kurmancî", color: "#15803d" };
+  if (o.includes("sorani") || o.includes("soranî") || o.includes("sorans")) return { label: "Soranî", color: "#1d4ed8" };
+  if (o.includes("zazaki") || o.includes("zaza") || o.includes("dimli")) return { label: "Zazaki", color: "#7c3aed" };
+  if (o.includes("gorani") || o.includes("goranî") || o.includes("hawrami")) return { label: "Goranî", color: "#c2410c" };
+  return null;
+}
+
 export default function NameFinder() {
-  const [gender, setGender] = useState<GenderPref>('both');
+  const [gender, setGender] = useState<GenderPref>('female');
   const [theme, setTheme] = useState<ThemePref>('any');
   const [startLetter, setStartLetter] = useState<string>('');
   const [hasSearched, setHasSearched] = useState(false);
@@ -42,14 +52,13 @@ export default function NameFinder() {
   const seoHookText = useMemo(() => {
     if (!hasSearched) return "";
     const seed = `finder_${gender}_${theme}_${startLetter}`;
-    const extra = startLetter || (theme !== 'any' ? theme : (gender === 'female' ? 'Kız İsimleri' : gender === 'male' ? 'Erkek İsimleri' : 'İsimler'));
+    const extra = startLetter || (theme !== 'any' ? theme : (gender === 'female' ? 'Kız İsimleri' : 'Erkek İsimleri'));
     return generateContextualHook(seed, 'search', lng, extra);
   }, [hasSearched, gender, theme, startLetter, lng]);
 
   const handleLetterChange = (val: string) => {
     const sanitized = val.replace(/[^a-zA-ZçğıöşüÇĞİÖŞÜêîûêş]/i, '').toUpperCase();
     setStartLetter(sanitized);
-    // Prefetch: kullanıcı harfi yazarken chunk'ı arka planda indir (cache'e alır)
     if (sanitized) {
       loadNamesForLetter(sanitized);
     }
@@ -60,15 +69,8 @@ export default function NameFinder() {
     setIsSearching(true);
     setHasSearched(true);
     try {
-      // Sadece gerekli harfi yükle, yoksa tüm harfleri paralel yükle
-      let loaded: NameData[];
-      if (startLetter) {
-        loaded = await fetchSearchIndex(); // Even if startLetter is provided, index is faster
-      } else {
-        loaded = await fetchSearchIndex();
-      }
+      const loaded = await fetchSearchIndex();
 
-      // localStorage isimlerini de ekle
       const localNamesStr = localStorage.getItem('addedNames');
       const localNames: NameData[] = localNamesStr ? JSON.parse(localNamesStr) : [];
       const combined = [...loaded, ...localNames];
@@ -76,7 +78,8 @@ export default function NameFinder() {
       combined.forEach(item => uniqueMap.set(item.id, item));
       let filtered = Array.from(uniqueMap.values());
 
-      if (gender !== 'both') filtered = filtered.filter(n => n.gender === gender);
+      filtered = filtered.filter(n => n.gender === gender || n.gender === 'unisex'); // Safely include unisex mapped to current gender context
+
       if (startLetter) {
         const nl = normalizeText(startLetter);
         filtered = filtered.filter(n => normalizeText(n.name).startsWith(nl));
@@ -101,9 +104,14 @@ export default function NameFinder() {
   };
 
   const handleReset = () => {
-    setGender('both'); setTheme('any'); setStartLetter('');
+    setGender('female'); setTheme('any'); setStartLetter('');
     setHasSearched(false); setResults([]);
   };
+
+  const genderBtns = [
+    { value: 'female', label: t('girl_names'), icon: User, activeColor: "var(--female)", activeBg: "rgba(225,29,72,0.07)" },
+    { value: 'male',   label: t('boy_names'),  icon: User, activeColor: "var(--male)",   activeBg: "rgba(37,99,235,0.07)" },
+  ] as const;
 
   const themes = [
     { id: 'any',               label: t('theme_mixed'),       icon: Sparkles },
@@ -113,12 +121,6 @@ export default function NameFinder() {
     { id: 'Işık / Aydınlık',  label: t('cat_theme_light'),    icon: Sun },
     { id: 'Bilgelik / Akıl',  label: t('cat_theme_wisdom'),   icon: Gem },
   ];
-
-  const genderBtns = [
-    { value: 'female', label: t('girl_names'), icon: User, activeColor: "var(--female)", activeBg: "rgba(225,29,72,0.07)" },
-    { value: 'male',   label: t('boy_names'),  icon: User, activeColor: "var(--male)",   activeBg: "rgba(37,99,235,0.07)" },
-    { value: 'both',   label: t('gender_both'), icon: Users, activeColor: "var(--text)",  activeBg: "var(--surface-2)" },
-  ] as const;
 
   const chipActive = (isActive: boolean, color?: string, bg?: string): React.CSSProperties => ({
     display: "flex", flexDirection: "column", alignItems: "center", gap: "0.375rem",
@@ -133,7 +135,6 @@ export default function NameFinder() {
     fontSize: "0.8rem",
     fontWeight: 600,
   });
-
 
   return (
     <>
@@ -160,9 +161,8 @@ export default function NameFinder() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.25 }}
-        style={{ maxWidth: "680px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "1.75rem" }}
+        style={{ maxWidth: "600px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "1.5rem" }}
       >
-        {/* Header */}
         <div>
           <h1 className="page-title" style={{ borderBottom: "none", paddingBottom: 0, marginBottom: "0.375rem" }}>
             {t("finder_title")}
@@ -172,21 +172,21 @@ export default function NameFinder() {
           </p>
         </div>
 
-        {/* Filter card */}
-        <div style={{ border: "1px solid var(--border)", borderRadius: "var(--r-xl)", background: "var(--surface)", padding: "1.5rem" }}>
-          <form onSubmit={handleSearch} style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
-
+        {/* Filter Panel */}
+        <div style={{ border: "1px solid var(--border)", borderRadius: "var(--r-xl)", background: "var(--surface)", padding: "1.25rem" }}>
+          <form onSubmit={handleSearch} style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
+            
             {/* Gender */}
             <div>
-              <p style={{ fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--text-muted)", marginBottom: "0.625rem" }}>
+              <p style={{ fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--text-muted)", marginBottom: "0.5rem" }}>
                 {t("finder_step_gender")}
               </p>
-              <div className="gender-grid">
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.5rem" }}>
                 {genderBtns.map(({ value, label, icon: Icon, activeColor, activeBg }) => (
                   <button
                     key={value}
                     type="button"
-                    onClick={() => setGender(value)}
+                    onClick={() => setGender(value as GenderPref)}
                     style={chipActive(gender === value, activeColor, activeBg)}
                   >
                     <Icon size={18} />
@@ -198,20 +198,24 @@ export default function NameFinder() {
 
             {/* Theme */}
             <div>
-              <p style={{ fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--text-muted)", marginBottom: "0.625rem" }}>
-                {t("finder_step_theme")}
+              <p style={{ fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--text-muted)", marginBottom: "0.5rem" }}>
+                {t("finder_step_theme", "Tema")}
               </p>
-              <div className="theme-grid">
+              <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 w-full">
                 {themes.map(th => {
                   const isActive = theme === th.id;
+                  // Kaba ve uzun isimleri temizleyip son derece şık ve kısa hale getirelim
+                  const cleanLabel = th.label.includes(" / ") 
+                    ? th.label.split(" / ")[0] 
+                    : th.label.split(" (")[0];
+
                   return (
                     <button
                       key={th.id}
                       type="button"
                       onClick={() => setTheme(th.id as ThemePref)}
                       style={{
-                        display: "flex", alignItems: "center", gap: "0.5rem",
-                        padding: "0.55rem 0.75rem",
+                        padding: "0.5rem 0.25rem",
                         border: `1px solid ${isActive ? "var(--text)" : "var(--border)"}`,
                         borderRadius: "var(--r-md)",
                         background: isActive ? "var(--text)" : "var(--surface)",
@@ -219,21 +223,28 @@ export default function NameFinder() {
                         cursor: "pointer",
                         transition: "all 150ms",
                         fontFamily: "var(--font-display)",
-                        fontSize: "0.8125rem",
+                        fontSize: "0.75rem",
                         fontWeight: 600,
+                        display: "flex", 
+                        alignItems: "center", 
+                        justifyContent: "center", 
+                        gap: "0.25rem",
+                        width: "100%",
+                        minWidth: 0,
+                        whiteSpace: "nowrap"
                       }}
                     >
-                      <th.icon size={14} />
-                      <span>{th.label}</span>
+                      <th.icon size={13} style={{ flexShrink: 0 }} />
+                      <span style={{ textOverflow: "ellipsis", overflow: "hidden" }}>{cleanLabel}</span>
                     </button>
                   );
                 })}
               </div>
             </div>
 
-            {/* Letter filter */}
+            {/* Letter */}
             <div>
-              <p style={{ fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--text-muted)", marginBottom: "0.625rem" }}>
+              <p style={{ fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--text-muted)", marginBottom: "0.5rem" }}>
                 {t("finder_step_letter")}
               </p>
               <div style={{ position: "relative" }}>
@@ -251,7 +262,7 @@ export default function NameFinder() {
                   <button
                     type="button"
                     onClick={() => setStartLetter('')}
-                    style={{ position: "absolute", right: "0.625rem", top: "50%", transform: "translateY(-50%)", color: "var(--text-muted)", display: "flex" }}
+                    style={{ position: "absolute", right: "0.625rem", top: "50%", transform: "translateY(-50%)", color: "var(--text-muted)", display: "flex", border: "none", background: "none", cursor: "pointer" }}
                   >
                     <X size={15} />
                   </button>
@@ -260,7 +271,7 @@ export default function NameFinder() {
             </div>
 
             {/* Actions */}
-            <div style={{ display: "flex", gap: "0.625rem" }}>
+            <div style={{ display: "flex", gap: "0.5rem" }}>
               <button
                 type="submit"
                 disabled={isSearching}
@@ -306,49 +317,65 @@ export default function NameFinder() {
               transition={{ duration: 0.25 }}
             >
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.875rem" }}>
-                <h2 className="section-heading" style={{ margin: 0, border: "none" }}>{t("finder_step_results")}</h2>
-                <span style={{ fontSize: "0.78rem", color: "var(--text-muted)", background: "var(--surface-2)", border: "1px solid var(--border)", borderRadius: "99px", padding: "0.2rem 0.625rem", fontWeight: 600 }}>
+                <h2 className="section-heading" style={{ margin: 0, border: "none", fontSize: "1.1rem" }}>{t("finder_step_results")}</h2>
+                <span style={{ fontSize: "0.75rem", color: "var(--text-muted)", background: "var(--surface-2)", border: "1px solid var(--border)", borderRadius: "99px", padding: "0.2rem 0.625rem", fontWeight: 600 }}>
                   {results.length} isim
                 </span>
               </div>
 
               {results.length > 0 ? (
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "0.5rem" }}>
-                  {results.map((item, i) => (
-                    <motion.div
-                      key={item.id}
-                      initial={{ opacity: 0, y: 8 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: Math.min(i * 0.025, 0.5), duration: 0.2 }}
-                    >
-                      <Link
-                        to={generatePath(lng, 'name', item.id)}
-                        style={{
-                          display: "block",
-                          padding: "0.875rem 1rem",
-                          border: "1px solid var(--border)",
-                          borderRadius: "var(--r-lg)",
-                          background: "var(--surface)",
-                          textDecoration: "none",
-                          transition: "border-color 150ms",
-                        }}
-                        onMouseEnter={e => (e.currentTarget.style.borderColor = item.gender === 'female' ? 'var(--female)' : 'var(--male)')}
-                        onMouseLeave={e => (e.currentTarget.style.borderColor = 'var(--border)')}
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "0.5rem" }}>
+                  {results.map((item, i) => {
+                    const dialectInfo = getDialect(item.origin);
+                    const localizedOrigin = getLocalizedOrigin(item.origin, t);
+                    const isFemale = item.gender === 'female' || (item.gender === 'unisex' && gender === 'female');
+                    
+                    return (
+                      <motion.div
+                        key={item.id}
+                        initial={{ opacity: 0, y: 8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: Math.min(i * 0.025, 0.5), duration: 0.2 }}
                       >
-                        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.25rem" }}>
-                          <span style={{ fontWeight: 700, fontSize: "1.0625rem", color: item.gender === 'female' ? 'var(--female)' : 'var(--male)' }}>
-                            {item.name}
-                          </span>
-                          <span style={{ fontSize: "0.68rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", color: item.gender === 'female' ? 'var(--female)' : 'var(--male)' }}>
-                            {item.gender === 'female' ? t('gender_female') : t('gender_male')}
-                          </span>
-                        </div>
-                        <p style={{ fontSize: "0.8rem", color: "var(--text-muted)", lineHeight: 1.5, margin: 0, display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
-                          {getLocalizedMeaning(item, lng)}
-                        </p>
-                      </Link>
-                    </motion.div>
-                  ))}
+                        <Link
+                          to={generatePath(lng, 'name', item.id)}
+                          style={{
+                            display: "block",
+                            padding: "1rem",
+                            border: "1px solid var(--border)",
+                            borderRadius: "var(--r-lg)",
+                            background: "var(--surface)",
+                            textDecoration: "none",
+                            transition: "border-color 150ms",
+                          }}
+                          onMouseEnter={e => (e.currentTarget.style.borderColor = isFemale ? 'var(--female)' : 'var(--male)')}
+                          onMouseLeave={e => (e.currentTarget.style.borderColor = 'var(--border)')}
+                        >
+                          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "0.5rem" }}>
+                            <span style={{ fontWeight: 700, fontSize: "1.1rem", color: isFemale ? 'var(--female)' : 'var(--male)' }}>
+                              {item.name}
+                            </span>
+                            <div style={{ display: "flex", alignItems: "center", gap: "0.3rem", flexWrap: "wrap", justifyContent: "flex-end" }}>
+                              <span className={isFemale ? "badge-female" : "badge-male"} style={{ padding: "0.2rem 0.5rem", borderRadius: "100px", fontSize: "0.65rem", fontWeight: 700 }}>
+                                {isFemale ? t('gender_female') : t('gender_male')}
+                              </span>
+                              <span style={{ padding: "0.2rem 0.5rem", borderRadius: "100px", fontSize: "0.65rem", fontWeight: 600, background: "var(--surface-2)", color: "var(--text-muted)", border: "1px solid var(--border-dim)" }}>
+                                {localizedOrigin}
+                              </span>
+                              {dialectInfo && (
+                                <span style={{ padding: "0.2rem 0.5rem", borderRadius: "100px", fontSize: "0.65rem", fontWeight: 700, background: dialectInfo.color, color: "#fff" }}>
+                                  {dialectInfo.label}
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                          <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", lineHeight: 1.5, margin: 0, display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+                            {getLocalizedMeaning(item, lng)}
+                          </p>
+                        </Link>
+                      </motion.div>
+                    );
+                  })}
                 </div>
               ) : (
                 <div className="notice-box" style={{ textAlign: "center", padding: "2rem" }}>

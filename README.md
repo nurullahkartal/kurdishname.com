@@ -2,7 +2,6 @@
 
 Kürtçe kız ve erkek isimlerini anlamları, köken bilgileri ve benzer isim önerileriyle birlikte keşfedebileceğiniz, modern ve performans odaklı bir web uygulaması.
 
-
 ---
 
 ## 🏆 Proje Durumu (6 Mayıs 2026 - Lansman Hazır)

@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
-import { Search, Heart, Menu, X } from "lucide-react";
+import { Search, Heart, Home, Venus, Mars, Sparkles, MoreHorizontal, X, ArrowLeftRight } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
 
 import LanguageSwitcher from "./LanguageSwitcher";
 import ThemeToggle from "./ThemeToggle";
@@ -24,11 +25,22 @@ export default function Layout() {
   const navigate = useNavigate();
   const isRtl = i18n.dir() === "rtl";
   const [searchVal, setSearchVal] = useState("");
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    setIsMobileMenuOpen(false);
+    setIsMenuOpen(false);
   }, [location.pathname, location.search]);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
 
   const baseUrl = "https://kurdishname.com";
   const canonicalUrl = `${baseUrl}${location.pathname === "/" ? `/${lng}` : location.pathname}`;
@@ -47,6 +59,41 @@ export default function Layout() {
     { to: generatePath(lng, "finder"), label: t("nav_finder"), end: false },
     { to: generatePath(lng, "compare"), label: t("nav_compare", "Karşılaştır"), end: false },
     { to: generatePath(lng, "favorites"), label: t("nav_favorites", "Defterim"), end: false, isFav: true },
+  ];
+
+  const categoryTooltips = {
+    tr: {
+      girls: "Kürtçe Kız İsimleri Arşivi",
+      boys: "Kürtçe Erkek İsimleri Arşivi"
+    },
+    en: {
+      girls: "Archive of Kurdish Girl Names",
+      boys: "Archive of Kurdish Boy Names"
+    },
+    de: {
+      girls: "Archiv für kurdische Mädchennamen",
+      boys: "Archiv für kurdische Jungennamen"
+    },
+    ar: {
+      girls: "أرشيف أسماء البنات الكردية",
+      boys: "أرشيف أسماء الأولاد الكردية"
+    }
+  };
+
+  const tooltips = categoryTooltips[lng as keyof typeof categoryTooltips] || categoryTooltips.tr;
+
+  const corporateLinks = [
+    { to: generatePath(lng, "about"), label: t("footer_about", "Hakkımızda") },
+    { to: generatePath(lng, "widget"), label: t("footer_widget", "Widget") },
+    { to: generatePath(lng, "privacy"), label: t("footer_privacy", "Gizlilik Politikası") },
+    { to: generatePath(lng, "terms"), label: t("footer_terms", "Kullanım Koşulları") },
+    { to: generatePath(lng, "contact"), label: t("footer_contact", "İletişim") },
+  ];
+
+  const fullFooterLinks: { to: string; label: string; titleAttr?: string }[] = [
+    { to: generatePath(lng, "category", "kiz"), label: t("nav_girls"), titleAttr: tooltips.girls },
+    { to: generatePath(lng, "category", "erkek"), label: t("nav_boys"), titleAttr: tooltips.boys },
+    ...corporateLinks
   ];
 
   return (
@@ -81,7 +128,7 @@ export default function Layout() {
       </Helmet>
 
       {/* ── HEADER ─────────────────────────────────────── */}
-      <header style={{ borderBottom: "1px solid var(--border)", background: "var(--surface)", position: "sticky", top: 0, zIndex: 50 }}>
+      <header style={{ borderBottom: "1px solid var(--border)", background: "var(--surface)", position: "sticky", top: 0, zIndex: 110 }}>
         <div className="enc-container-wide">
           <div className="enc-header-wrapper">
 
@@ -138,11 +185,41 @@ export default function Layout() {
 
               {/* Mobile Hamburger Button */}
               <button 
-                onClick={() => setIsMobileMenuOpen(true)}
-                className="md:hidden p-1 text-[var(--text)] rounded-md hover:bg-[var(--surface-alt)] transition-colors"
-                aria-label="Menüyü aç"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="md:hidden p-3 -mr-2 relative z-[200] text-[var(--text)] rounded-xl hover:bg-[var(--surface-alt)] transition-colors"
+                aria-label={isMenuOpen ? "Menüyü kapat" : "Menüyü aç"}
               >
-                <Menu size={26} />
+                <div className="relative w-6 h-6 flex items-center justify-center">
+                  <motion.div
+                    animate={isMenuOpen ? "open" : "closed"}
+                    className="relative w-6 h-5 flex flex-col justify-between py-0.5"
+                  >
+                    <motion.span
+                      variants={{
+                        closed: { rotate: 0, y: 0 },
+                        open: { rotate: 45, y: 7.5 }
+                      }}
+                      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                      className="w-6 h-0.5 bg-[var(--text)] rounded-full block"
+                    />
+                    <motion.span
+                      variants={{
+                        closed: { opacity: 1, scale: 1 },
+                        open: { opacity: 0, scale: 0 }
+                      }}
+                      transition={{ duration: 0.15 }}
+                      className="w-6 h-0.5 bg-[var(--text)] rounded-full block"
+                    />
+                    <motion.span
+                      variants={{
+                        closed: { rotate: 0, y: 0 },
+                        open: { rotate: -45, y: -7.5 }
+                      }}
+                      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                      className="w-6 h-0.5 bg-[var(--text)] rounded-full block"
+                    />
+                  </motion.div>
+                </div>
               </button>
             </div>
           </div>
@@ -210,108 +287,157 @@ export default function Layout() {
         <div className="enc-container-wide" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "1rem", fontSize: "0.75rem", color: "var(--text-faint)" }}>
           <span>© {new Date().getFullYear()} KurdishName</span>
           <div style={{ display: "flex", gap: "1.25rem", flexWrap: "wrap", alignItems: "center" }}>
-            {(() => {
-              const categoryTooltips = {
-                tr: {
-                  girls: "Kürtçe Kız İsimleri Arşivi",
-                  boys: "Kürtçe Erkek İsimleri Arşivi"
-                },
-                en: {
-                  girls: "Archive of Kurdish Girl Names",
-                  boys: "Archive of Kurdish Boy Names"
-                },
-                de: {
-                  girls: "Archiv für kurdische Mädchennamen",
-                  boys: "Archiv für kurdische Jungennamen"
-                },
-                ar: {
-                  girls: "أرشيف أسماء البنات الكردية",
-                  boys: "أرشيف أسماء الأولاد الكردية"
-                }
-              };
-
-              const tooltips = categoryTooltips[lng as keyof typeof categoryTooltips] || categoryTooltips.tr;
-
-              const footerLinks = [
-                { to: generatePath(lng, "category", "kiz"), label: t("nav_girls"), titleAttr: tooltips.girls },
-                { to: generatePath(lng, "category", "erkek"), label: t("nav_boys"), titleAttr: tooltips.boys },
-                { to: generatePath(lng, "about"), label: t("footer_about", "Hakkımızda") },
-                { to: generatePath(lng, "widget"), label: t("footer_widget", "Widget") },
-                { to: generatePath(lng, "privacy"), label: t("footer_privacy", "Gizlilik Politikası") },
-                { to: generatePath(lng, "terms"), label: t("footer_terms", "Kullanım Koşulları") },
-                { to: generatePath(lng, "contact"), label: t("footer_contact", "İletişim") },
-              ];
-
-              return footerLinks.map(({ to, label, titleAttr }) => (
-                <NavLink 
-                  key={to} 
-                  to={to} 
-                  title={titleAttr}
-                  style={{ color: "var(--text-faint)", fontSize: "0.75rem", textDecoration: "none", fontWeight: titleAttr ? 600 : 400 }} 
-                  className="hover:text-[var(--text)] transition-colors"
-                >
-                  {label}
-                </NavLink>
-              ));
-            })()}
+            {fullFooterLinks.map(({ to, label, titleAttr }) => (
+              <NavLink 
+                key={to} 
+                to={to} 
+                title={titleAttr}
+                style={{ color: "var(--text-faint)", fontSize: "0.75rem", textDecoration: "none", fontWeight: titleAttr ? 600 : 400 }} 
+                className="hover:text-[var(--text)] transition-colors"
+              >
+                {label}
+              </NavLink>
+            ))}
           </div>
         </div>
       </footer>
 
-      {/* ── MOBILE DRAWER ──────────────────────────────── */}
-      {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-[100] flex" dir={isRtl ? "rtl" : "ltr"}>
-          {/* Backdrop */}
-          <div 
-            className="fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity" 
-            onClick={() => setIsMobileMenuOpen(false)}
-          />
-          {/* Drawer */}
-          <div className={`relative flex w-full max-w-xs flex-col overflow-y-auto bg-[var(--surface)] p-6 shadow-xl z-10 h-full animate-in ${isRtl ? 'slide-in-from-right' : 'slide-in-from-left'} duration-300`}>
-            <div className="flex items-center justify-between mb-8">
-              <div className="flex items-center gap-2">
-                <img src="/logo.webp" width="32" height="32" alt="Logo" className="rounded-md shadow-sm" />
-                <span className="font-serif font-bold text-lg text-[var(--text)] tracking-tight">KurdishName</span>
-              </div>
-              <button 
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="p-2 text-[var(--text-muted)] hover:text-[var(--text)] bg-[var(--surface-alt)] rounded-full transition-colors"
-                aria-label="Kapat"
-              >
-                <X size={20} />
-              </button>
-            </div>
-            
-            <div className="flex flex-col gap-3 mb-8">
-              {navItems.map(({ to, label, isFav, end }) => (
-                <NavLink
-                  key={to}
-                  to={to}
-                  end={end}
-                  className={({ isActive }) => `flex items-center gap-3 px-4 py-3.5 rounded-xl font-semibold transition-colors ${isActive ? 'bg-[var(--accent)] !text-white shadow-md' : 'text-[var(--text)] hover:bg-[var(--surface-alt)]'}`}
-                >
-                  {isFav && <Heart size={18} className={favorites.length > 0 ? "fill-current" : ""} />}
-                  {label}
-                  {isFav && favorites.length > 0 && (
-                    <span className="ml-auto bg-white/20 text-current text-xs px-2.5 py-0.5 rounded-full">{favorites.length}</span>
-                  )}
-                </NavLink>
-              ))}
+      {/* ── TAM EKRAN PREMİUM OPAK CAM MENÜ (Overlay Navigation) ──────────── */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            className="fixed inset-0 z-[150] flex flex-col px-6 pb-8 overflow-y-auto menu-overlay-backdrop backdrop-blur-2xl"
+            dir={isRtl ? "rtl" : "ltr"}
+          >
+            {/* Header spacer to keep alignment perfect */}
+            <div className="flex justify-between items-center h-20 opacity-0 pointer-events-none">
+              {/* Invisible spacer just to match header height */}
             </div>
 
-            <div className="mt-auto border-t border-[var(--border)] pt-6 flex flex-col gap-6">
-              <div className="flex items-center justify-between px-2">
-                <span className="text-sm font-semibold text-[var(--text-muted)] uppercase tracking-wider">{t("theme_select", "Tema")}</span>
-                <ThemeToggle />
+            {/* Links Section in Center */}
+            <motion.div 
+              variants={{
+                open: {
+                  transition: { staggerChildren: 0.08, delayChildren: 0.1 }
+                },
+                closed: {
+                  transition: { staggerChildren: 0.05, staggerDirection: -1 }
+                }
+              }}
+              initial="closed"
+              animate="open"
+              exit="closed"
+              className="flex flex-col items-center justify-center gap-6 my-auto"
+            >
+              {[
+                { to: generatePath(lng, null), label: t("nav_home"), end: true },
+                { to: generatePath(lng, "category", "kiz"), label: t("nav_girls"), end: false },
+                { to: generatePath(lng, "category", "erkek"), label: t("nav_boys"), end: false },
+                { to: generatePath(lng, "finder"), label: t("nav_finder"), end: false },
+              ].map(({ to, label, end }) => (
+                <motion.div
+                  key={to}
+                  variants={{
+                    closed: { opacity: 0, y: 15, scale: 0.96 },
+                    open: { opacity: 1, y: 0, scale: 1 }
+                  }}
+                  transition={{ type: "spring", stiffness: 260, damping: 22 }}
+                >
+                  <NavLink
+                    to={to}
+                    end={end}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={({ isActive }) => `text-2xl font-serif font-black tracking-wide py-2 px-6 rounded-2xl transition-colors block text-center ${
+                      isActive 
+                        ? 'text-white bg-[var(--accent)] dark:bg-indigo-600 shadow-lg shadow-[var(--accent)]/20' 
+                        : 'text-[var(--text)] hover:bg-[var(--surface-alt)]'
+                    }`}
+                  >
+                    {label}
+                  </NavLink>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            {/* Bottom Controls / Tools (Language, Theme, Favorites, Compare) */}
+            <motion.div
+              variants={{
+                closed: { opacity: 0, y: 25 },
+                open: { opacity: 1, y: 0 }
+              }}
+              transition={{ delay: 0.35, type: "spring", stiffness: 200, damping: 20 }}
+              className="mt-auto border-t border-[var(--border-dim)] pt-6 flex flex-col gap-5 max-w-lg mx-auto w-full"
+            >
+              {/* Grid of Tools: Favorites, Compare, Theme */}
+              <div className="grid grid-cols-3 gap-3">
+                {/* Defterim */}
+                <NavLink
+                  to={generatePath(lng, "favorites")}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex flex-col items-center justify-center p-3 rounded-2xl bg-[var(--surface)] border border-[var(--border)] hover:bg-[var(--surface-alt)] transition-colors text-center"
+                >
+                  <Heart
+                    size={22}
+                    className={favorites.length > 0 ? "fill-[var(--female)] text-[var(--female)] animate-pulse" : "text-slate-400"}
+                  />
+                  <span className="font-bold text-[var(--text)] text-xs mt-1.5">{t("nav_favorites", "Defterim")}</span>
+                  <span className="text-[10px] text-[var(--text-muted)] mt-0.5">
+                    {favorites.length} {t("saved_names", "isim")}
+                  </span>
+                </NavLink>
+
+                {/* Karşılaştır */}
+                <NavLink
+                  to={generatePath(lng, "compare")}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex flex-col items-center justify-center p-3 rounded-2xl bg-[var(--surface)] border border-[var(--border)] hover:bg-[var(--surface-alt)] transition-colors text-center"
+                >
+                  <ArrowLeftRight size={22} className="text-slate-400" />
+                  <span className="font-bold text-[var(--text)] text-xs mt-1.5">{t("nav_compare", "Karşılaştır")}</span>
+                  <span className="text-[10px] text-[var(--text-muted)] mt-0.5">
+                    {t("compare_sub", "Kıyasla")}
+                  </span>
+                </NavLink>
+
+                {/* Tema Kontrolü */}
+                <div className="flex flex-col items-center justify-center p-3 rounded-2xl bg-[var(--surface)] border border-[var(--border)] transition-colors text-center">
+                  <ThemeToggle />
+                  <span className="font-bold text-[var(--text)] text-xs mt-1.5">{t("theme_select", "Tema")}</span>
+                  <span className="text-[10px] text-[var(--text-muted)] mt-0.5">{t("theme_change", "Görünüm")}</span>
+                </div>
               </div>
-              <div className="flex items-center justify-between px-2">
-                <span className="text-sm font-semibold text-[var(--text-muted)] uppercase tracking-wider">{t("language_select", "Dil")}</span>
-                <LanguageSwitcher />
+
+              {/* Language Switcher Card */}
+              <div className="p-4 rounded-2xl bg-[var(--surface)] border border-[var(--border)] flex items-center justify-between">
+                <span className="text-xs font-bold text-[var(--text-faint)] uppercase tracking-wider">
+                  {t("language_select", "Dil")} / {t("region_select", "Bölge")}
+                </span>
+                <div onClick={() => setIsMenuOpen(false)}>
+                  <LanguageSwitcher />
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      )}
+
+              {/* Corporate Links */}
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-[var(--text-faint)] justify-center">
+                {corporateLinks.map(({ to, label }) => (
+                  <NavLink
+                    key={to}
+                    to={to}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="hover:text-[var(--text)] transition-colors py-0.5 px-1.5 rounded hover:bg-[var(--surface-alt)]"
+                  >
+                    {label}
+                  </NavLink>
+                ))}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

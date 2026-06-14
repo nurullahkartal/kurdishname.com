@@ -83,7 +83,7 @@ export const getRoutePath = (lang: string, key: RouteKey) => {
   return (currentLangRoutes as any)[key] || (routeTranslations['tr'] as any)[key];
 };
 
-export const generatePath = (lang: string, key: RouteKey | null, param?: string) => {
+export const generatePath = (lang: string, key: RouteKey | null, param?: string, subParam?: string) => {
   if (!key) {
     return `/${lang}${param ? `/${param}` : ''}`;
   }
@@ -102,31 +102,66 @@ export const generatePath = (lang: string, key: RouteKey | null, param?: string)
     }
   }
   
-  return `/${lang}/${segment}${resolvedParam ? `/${resolvedParam}` : ''}`;
+  let path = `/${lang}/${segment}${resolvedParam ? `/${resolvedParam}` : ''}`;
+  if (subParam) {
+    let resolvedSub = subParam;
+    if (subParam in themeSlugs.tr) {
+      const themes = themeSlugs[lang as keyof typeof themeSlugs] || themeSlugs['tr'];
+      resolvedSub = (themes as any)[subParam];
+    }
+    path += `/${resolvedSub}`;
+  }
+  return path;
 };
 
 export const getGenderFromSlug = (lang: string, slug: string | undefined): "female" | "male" | "letter" | null => {
   if (!slug) return null;
   const decodedSlug = decodeURIComponent(slug).toLowerCase();
-  
+
+  // ─ Tüm dillerin kız (female) slug'ları ───────────────────────────────────
+  const FEMALE_SLUGS = new Set([
+    // TR
+    "kiz", "kız", "kız-isimleri", "kız-bebek-isimleri",
+    // EN — doğal İngilizce varyasyonlar
+    "girls", "girl", "female", "woman", "women",
+    "girl-names", "girls-names", "female-names",
+    "baby-girl-names", "feminine",
+    // DE
+    "maedchen", "mädchen", "madchen",
+    "mädchennamen", "maedchennamen",
+    // AR
+    "بنات", "اناث", "مؤنث",
+  ]);
+
+  // ─ Tüm dillerin erkek (male) slug'ları ─────────────────────────────────
+  const MALE_SLUGS = new Set([
+    // TR
+    "erkek", "erkek-isimleri", "erkek-bebek-isimleri",
+    // EN — doğal İngilizce varyasyonlar
+    "boys", "boy", "male", "man", "men",
+    "boy-names", "boys-names", "male-names",
+    "baby-boy-names", "masculine",
+    // DE
+    "jungen", "junge", "männer", "manner",
+    "jungennamen", "männernamen",
+    // AR
+    "ذكور", "ذكر", "مذكر",
+  ]);
+
+  if (FEMALE_SLUGS.has(decodedSlug)) return "female";
+  if (MALE_SLUGS.has(decodedSlug)) return "male";
+
+  // Dinamik routeTranslations listesinden de kontrol et
   for (const [, routes] of Object.entries(routeTranslations)) {
-    if (routes.girls.toLowerCase() === decodedSlug) {
-      return "female";
-    }
-    if (routes.boys.toLowerCase() === decodedSlug) {
-      return "male";
-    }
+    if (routes.girls.toLowerCase() === decodedSlug) return "female";
+    if (routes.boys.toLowerCase() === decodedSlug) return "male";
   }
-  
-  if (slug.length === 1) {
-    return "letter";
-  }
-  
-  if (decodedSlug === "kiz" || decodedSlug === "female") return "female";
-  if (decodedSlug === "erkek" || decodedSlug === "male") return "male";
+
+  if (slug.length === 1) return "letter";
 
   return null;
 };
+
 
 export const getThemeFromSlug = (lang: string, slug: string | undefined): "nature" | "power" | "beauty" | "light" | "wisdom" | null => {
   if (!slug) return null;
@@ -142,7 +177,7 @@ export const getThemeFromSlug = (lang: string, slug: string | undefined): "natur
   
   if (['doga', 'nature', 'natur', 'طبيعة'].includes(decodedSlug)) return 'nature';
   if (['guc', 'power', 'macht', 'قوة'].includes(decodedSlug)) return 'power';
-  if (['guzellik', 'beauty', 'schoenheit', 'جمال'].includes(decodedSlug)) return 'beauty';
+  if (['guzellik', 'beauty', 'schoenheit', 'جمal'].includes(decodedSlug)) return 'beauty';
   if (['isik', 'light', 'licht', 'نور'].includes(decodedSlug)) return 'light';
   if (['bilgelik', 'wisdom', 'weisheit', 'حكمة'].includes(decodedSlug)) return 'wisdom';
   
@@ -179,19 +214,29 @@ export const switchLanguagePath = (currentPath: string, targetLang: string) => {
   let remaining = parts.slice(2).join('/');
   
   if (routeKey === "category" && remaining) {
-    const rawGender = getGenderFromSlug(currentLang, remaining);
+    const remainingParts = remaining.split('/');
+    const firstRemaining = remainingParts[0];
+    const rawGender = getGenderFromSlug(currentLang, firstRemaining);
+    let resolvedFirst = firstRemaining;
     if (rawGender === "female") {
       const targetTranslations = routeTranslations[targetLang as keyof typeof routeTranslations] || routeTranslations['tr'];
-      remaining = targetTranslations.girls;
+      resolvedFirst = targetTranslations.girls;
     } else if (rawGender === "male") {
       const targetTranslations = routeTranslations[targetLang as keyof typeof routeTranslations] || routeTranslations['tr'];
-      remaining = targetTranslations.boys;
-    } else {
-      const rawTheme = getThemeFromSlug(currentLang, remaining);
+      resolvedFirst = targetTranslations.boys;
+    }
+    
+    if (remainingParts.length > 1) {
+      const secondRemaining = remainingParts[1];
+      const rawTheme = getThemeFromSlug(currentLang, secondRemaining);
+      let resolvedSecond = secondRemaining;
       if (rawTheme) {
         const targetThemes = themeSlugs[targetLang as keyof typeof themeSlugs] || themeSlugs['tr'];
-        remaining = (targetThemes as any)[rawTheme];
+        resolvedSecond = (targetThemes as any)[rawTheme];
       }
+      remaining = `${resolvedFirst}/${resolvedSecond}`;
+    } else {
+      remaining = resolvedFirst;
     }
   }
   

@@ -67,17 +67,17 @@ const routeTranslations = {
     boys: 'jungen'
   },
   ar: {
-    category: 'فئة',
-    name: 'اسم',
-    blog: 'مدونة',
-    privacy: 'سياسة-الخصوصية',
-    terms: 'شروط-الاستخدام',
-    cookies: 'سياسة-ملفات-تعريف-الارتباط',
-    contact: 'اتصل-بنا',
-    finder: 'البحث-عن-اسم',
-    about: 'من-نحن',
-    girls: 'بنات',
-    boys: 'ذكور'
+    category: encodeURIComponent('فئة'),
+    name: encodeURIComponent('اسم'),
+    blog: encodeURIComponent('مدونة'),
+    privacy: encodeURIComponent('سياسة-الخصوصية'),
+    terms: encodeURIComponent('شروط-الاستخدام'),
+    cookies: encodeURIComponent('سياسة-ملفات-تعريف-الارتباط'),
+    contact: encodeURIComponent('اتصل-بنا'),
+    finder: encodeURIComponent('البحث-عن-اسم'),
+    about: encodeURIComponent('من-نحن'),
+    girls: encodeURIComponent('بنات'),
+    boys: encodeURIComponent('ذكور')
   },
 } as const;
 
@@ -163,6 +163,8 @@ async function generateSitemaps() {
   }
 
   const allNames: NameData[] = JSON.parse(fs.readFileSync(masterJsonPath, 'utf-8'));
+
+  // All names are indexed in all 4 languages — no filtering, no limits.
   const namesByLetter: Record<string, NameData[]> = {};
 
   allNames.forEach((name) => {
@@ -256,6 +258,59 @@ async function generateSitemaps() {
     staticUrls.push(createUrlEntry(`${DOMAIN}/${lang}/${blogSegment}`, 'daily', 0.9, blogListAlternates));
   });
 
+  // Gender + Letter Categories alternates
+  const alphabet = ['A','B','C','Ç','D','E','Ê','F','G','H','I','Î','J','K','L','M','N','O','P','Q','R','S','Ş','T','U','Û','V','W','X','Y','Z'];
+  const genders = [
+    { key: 'girls' },
+    { key: 'boys' }
+  ];
+
+  genders.forEach(g => {
+    alphabet.forEach(letter => {
+      const alternates = LANGUAGES.map(l => ({
+        lang: l,
+        url: `${DOMAIN}/${l}/${routeTranslations[l].category}/${routeTranslations[l][g.key as 'girls'|'boys']}/${encodeURIComponent(letter)}`
+      }));
+
+      LANGUAGES.forEach(lang => {
+        const categorySegment = routeTranslations[lang].category;
+        const genderSegment = routeTranslations[lang][g.key as 'girls'|'boys'];
+        staticUrls.push(
+          createUrlEntry(
+            `${DOMAIN}/${lang}/${categorySegment}/${genderSegment}/${encodeURIComponent(letter)}`,
+            'weekly',
+            0.7,
+            alternates
+          )
+        );
+      });
+    });
+  });
+
+  // Gender + Theme Categories alternates
+  genders.forEach(g => {
+    themeKeys.forEach(themeKey => {
+      const alternates = LANGUAGES.map(l => ({
+        lang: l,
+        url: `${DOMAIN}/${l}/${routeTranslations[l].category}/${routeTranslations[l][g.key as 'girls'|'boys']}/${themeSlugsLocal[l][themeKey]}`
+      }));
+
+      LANGUAGES.forEach(lang => {
+        const categorySegment = routeTranslations[lang].category;
+        const genderSegment = routeTranslations[lang][g.key as 'girls'|'boys'];
+        const themeSlug = themeSlugsLocal[lang][themeKey];
+        staticUrls.push(
+          createUrlEntry(
+            `${DOMAIN}/${lang}/${categorySegment}/${genderSegment}/${themeSlug}`,
+            'weekly',
+            0.7,
+            alternates
+          )
+        );
+      });
+    });
+  });
+
   const staticXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${staticUrls.join('\n')}
@@ -268,15 +323,20 @@ ${staticUrls.join('\n')}
   const letters = Object.keys(namesByLetter).sort((a, b) => a.localeCompare(b, 'tr'));
   const nameSitemaps: string[] = [];
 
+  // Track real URL counts for accurate reporting
+  let totalNameUrlsGenerated = 0;
+
   for (const letter of letters) {
     const names = namesByLetter[letter];
     const nameUrls: string[] = [];
 
     names.forEach((nameData) => {
       const encodedId = encodeURIComponent(nameData.id);
-      const nameAlternates = LANGUAGES.map(l => ({ 
-        lang: l, 
-        url: `${DOMAIN}/${l}/${routeTranslations[l].name}/${encodedId}` 
+
+      // All 4 languages — no filters, no limits
+      const nameAlternates = LANGUAGES.map(l => ({
+        lang: l,
+        url: `${DOMAIN}/${l}/${routeTranslations[l].name}/${encodedId}`
       }));
 
       LANGUAGES.forEach((lang) => {
@@ -300,6 +360,7 @@ ${nameUrls.join('\n')}
     const filename = `sitemap-names-${getSafeFilenameLetter(letter)}.xml`;
     fs.writeFileSync(path.join(publicDir, filename), nameXml, 'utf-8');
     nameSitemaps.push(filename);
+    totalNameUrlsGenerated += nameUrls.length;
     console.log(`✓ Generated ${filename} with ${nameUrls.length} URLs for letter ${letter}`);
   }
 
@@ -353,12 +414,11 @@ ${indexEntries.join('\n')}
 </sitemapindex>`;
 
   fs.writeFileSync(path.join(publicDir, 'sitemap-index.xml'), indexXml, 'utf-8');
-  fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), indexXml, 'utf-8');
-  console.log(`✓ Generated twin sitemap-index.xml and sitemap.xml files with ${indexEntries.length} sitemap references`);
+  console.log(`✓ Generated sitemap-index.xml file with ${indexEntries.length} sitemap references`);
 
-  // Final summary statistics
-  const totalSitemaps = 1 + nameSitemaps.length + 1; // Index file + Name sitemaps + Blog sitemap
-  const totalUrls = staticUrls.length + allNames.length * LANGUAGES.length + blogPosts.length * LANGUAGES.length;
+  // Final summary statistics (accurate counts based on actual generated URLs)
+  const totalSitemaps = 1 + nameSitemaps.length + 1; // static + name sitemaps + blog
+  const totalUrls = staticUrls.length + totalNameUrlsGenerated + blogUrls.length;
 
   console.log(`\n🎉 Full Multilingual SEO Sitemap Index generated successfully!`);
   console.log(`  Target Domain: ${DOMAIN}`);
@@ -366,8 +426,8 @@ ${indexEntries.join('\n')}
   console.log(`  Total Indexed URLs: ${totalUrls}`);
   console.log(`  Breakdown:`);
   console.log(`    - Static Pages: ${staticUrls.length} URLs`);
-  console.log(`    - Name Pages (All Letters): ${allNames.length * LANGUAGES.length} URLs across ${letters.length} files`);
-  console.log(`    - Blog Pages: ${blogPosts.length * LANGUAGES.length} URLs`);
+  console.log(`    - Name Pages (TR/EN/DE/AR, all ${allNames.length} names): ${totalNameUrlsGenerated} URLs across ${letters.length} letter files`);
+  console.log(`    - Blog Pages: ${blogUrls.length} URLs`);
   console.log(`  Output Location: ${publicDir}`);
 }
 
