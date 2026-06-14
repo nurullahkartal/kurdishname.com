@@ -4601,6 +4601,46 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://kurdishname.com/tr/isim/medyoki</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim/medyoki"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/name/medyoki"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/name/medyoki"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/%D8%A7%D8%B3%D9%85/medyoki"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/isim/medyoki"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/en/name/medyoki</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim/medyoki"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/name/medyoki"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/name/medyoki"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/%D8%A7%D8%B3%D9%85/medyoki"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/isim/medyoki"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/de/name/medyoki</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim/medyoki"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/name/medyoki"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/name/medyoki"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/%D8%A7%D8%B3%D9%85/medyoki"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/isim/medyoki"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/ar/%D8%A7%D8%B3%D9%85/medyoki</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim/medyoki"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/name/medyoki"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/name/medyoki"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/%D8%A7%D8%B3%D9%85/medyoki"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/tr/isim/medyoki"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://kurdishname.com/tr/isim/mefani</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim/mefani"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/name/mefani"/>

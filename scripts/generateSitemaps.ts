@@ -91,6 +91,11 @@ function escapeXml(str: string): string {
     .replace(/'/g, '&apos;');
 }
 
+function isInvalidUrl(u: string): boolean {
+  const decoded = decodeURIComponent(u.toLowerCase());
+  return decoded.split('/').some(s => s === 'yok' || s === 'undefined' || s === 'null');
+}
+
 // Helper to create a single URL entry with hreflang alternate links
 function createUrlEntry(
   loc: string,
@@ -99,16 +104,14 @@ function createUrlEntry(
   alternateLinks?: { lang: string; url: string }[]
 ): string {
   // URL sitemap'e veya SSG klasörüne yazılmadan hemen önce:
-  if (loc.includes('yok') || loc.includes('undefined') || loc.includes('null')) {
+  if (isInvalidUrl(loc)) {
     console.log(`⚠️ Hatalı URL sitemape sızması engellendi: ${loc}`);
     return ''; // Scripti durdur, bu linki üretme!
   }
 
   let alternatesXml = '';
   if (alternateLinks && alternateLinks.length > 0) {
-    const validAlternates = alternateLinks.filter(alt => 
-      !(alt.url.includes('yok') || alt.url.includes('undefined') || alt.url.includes('null'))
-    );
+    const validAlternates = alternateLinks.filter(alt => !isInvalidUrl(alt.url));
 
     alternatesXml = '\n' + validAlternates.map(alt => 
       `    <xhtml:link rel="alternate" hreflang="${alt.lang}" href="${escapeXml(alt.url)}"/>`

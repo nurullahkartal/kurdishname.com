@@ -342,18 +342,7 @@ export default function NameDetail() {
     ]
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  };
+
 
   const handleShare = () => {
     if (typeof window !== "undefined") {
@@ -569,14 +558,10 @@ export default function NameDetail() {
         )}
         <meta property="og:title" content={`${t("seo_name_title", { name: nameItem.name })} | KurdishName`} />
         <meta property="og:description" content={description} />
-        <meta property="og:url" content={`https://kurdishname.com${generatePath(lng, "name", nameItem.id)}`} />
         <meta name="twitter:title" content={`${t("seo_name_title", { name: nameItem.name })} | KurdishName`} />
         <meta name="twitter:description" content={description} />
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({

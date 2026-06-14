@@ -354,8 +354,13 @@ function ensureDirectoryExistence(filePath: string) {
   createdDirs.add(dirname);
 }
 
+function isInvalidUrl(u: string): boolean {
+  const decoded = decodeURIComponent(u.toLowerCase());
+  return decoded.split('/').some(s => s === 'yok' || s === 'undefined' || s === 'null');
+}
+
 function safeWriteFile(outPath: string, content: string, url: string) {
-  if (url.includes('yok') || url.includes('undefined') || url.includes('null')) {
+  if (isInvalidUrl(url)) {
     console.log(`⚠️ Hatalı URL sitemape sızması engellendi: ${url}`);
     return;
   }
@@ -1432,27 +1437,13 @@ async function runSSGPrerendering() {
         }
       });
 
-      // FAQ Page Schema
-      const faqSchema = JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        'mainEntity': faqs.map(f => ({
-          '@type': 'Question',
-          'name': f.question,
-          'acceptedAnswer': {
-            '@type': 'Answer',
-            'text': f.answer
-          }
-        }))
-      });
-
       const finalHtml = replaceHeadMetadata(templateHtml, {
         title: `${t('seo_name_title', { name: nameItem.name })?.replaceAll('{{name}}', nameItem.name)} | KurdishName`,
         description: description,
         canonical: canonical,
         lang: lang,
         alternates: alternates,
-        schemas: [definedTermSchema, faqSchema]
+        schemas: [definedTermSchema]
       }).replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
 
       const outPath = path.join(distDir, `${lang}/${nameSegment}/${encodedId}/index.html`);
