@@ -98,13 +98,23 @@ function createUrlEntry(
   priority: number,
   alternateLinks?: { lang: string; url: string }[]
 ): string {
+  // URL sitemap'e veya SSG klasörüne yazılmadan hemen önce:
+  if (loc.includes('yok') || loc.includes('undefined') || loc.includes('null')) {
+    console.log(`⚠️ Hatalı URL sitemape sızması engellendi: ${loc}`);
+    return ''; // Scripti durdur, bu linki üretme!
+  }
+
   let alternatesXml = '';
   if (alternateLinks && alternateLinks.length > 0) {
-    alternatesXml = '\n' + alternateLinks.map(alt => 
+    const validAlternates = alternateLinks.filter(alt => 
+      !(alt.url.includes('yok') || alt.url.includes('undefined') || alt.url.includes('null'))
+    );
+
+    alternatesXml = '\n' + validAlternates.map(alt => 
       `    <xhtml:link rel="alternate" hreflang="${alt.lang}" href="${escapeXml(alt.url)}"/>`
     ).join('\n');
     // x-default language fallback (points to Kurdish Name default page version, typically English or Turkish)
-    const defaultAlt = alternateLinks.find(a => a.lang === 'tr') || alternateLinks[0];
+    const defaultAlt = validAlternates.find(a => a.lang === 'tr') || validAlternates[0];
     if (defaultAlt) {
       alternatesXml += `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(defaultAlt.url)}"/>`;
     }
@@ -313,7 +323,7 @@ async function generateSitemaps() {
 
   const staticXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${staticUrls.join('\n')}
+${staticUrls.filter(Boolean).join('\n')}
 </urlset>`;
 
   fs.writeFileSync(path.join(publicDir, 'sitemap-static.xml'), staticXml, 'utf-8');
@@ -354,7 +364,7 @@ ${staticUrls.join('\n')}
 
     const nameXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${nameUrls.join('\n')}
+${nameUrls.filter(Boolean).join('\n')}
 </urlset>`;
 
     const filename = `sitemap-names-${getSafeFilenameLetter(letter)}.xml`;
@@ -388,7 +398,7 @@ ${nameUrls.join('\n')}
 
   const blogXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${blogUrls.join('\n')}
+${blogUrls.filter(Boolean).join('\n')}
 </urlset>`;
 
   fs.writeFileSync(path.join(publicDir, 'sitemap-blog.xml'), blogXml, 'utf-8');

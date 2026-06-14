@@ -354,6 +354,15 @@ function ensureDirectoryExistence(filePath: string) {
   createdDirs.add(dirname);
 }
 
+function safeWriteFile(outPath: string, content: string, url: string) {
+  if (url.includes('yok') || url.includes('undefined') || url.includes('null')) {
+    console.log(`⚠️ Hatalı URL sitemape sızması engellendi: ${url}`);
+    return;
+  }
+  ensureDirectoryExistence(outPath);
+  fs.writeFileSync(outPath, content, 'utf-8');
+}
+
 // Pre-render executor
 async function runSSGPrerendering() {
   console.log('💎 Starting Lightning-Fast Premium Statik Site Generation (SSG / Prerendering)...');
@@ -499,8 +508,7 @@ async function runSSGPrerendering() {
     }).replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
 
     const outPath = path.join(distDir, `${lang}/index.html`);
-    ensureDirectoryExistence(outPath);
-    fs.writeFileSync(outPath, finalHtml, 'utf-8');
+    safeWriteFile(outPath, finalHtml, canonical);
   });
 
   // ──── PHASE 2: STATIC UTILITY PAGES (privacy, terms, cookies, contact, finder, about, suggest, compare) ────
@@ -599,8 +607,7 @@ async function runSSGPrerendering() {
       }).replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
 
       const outPath = path.join(distDir, `${lang}/${segment}/index.html`);
-      ensureDirectoryExistence(outPath);
-      fs.writeFileSync(outPath, finalHtml, 'utf-8');
+      safeWriteFile(outPath, finalHtml, canonical);
     });
   });
 
@@ -669,8 +676,7 @@ async function runSSGPrerendering() {
       }).replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
 
       const outPath = path.join(distDir, `${lang}/${categorySegment}/${girlsSegment}/index.html`);
-      ensureDirectoryExistence(outPath);
-      fs.writeFileSync(outPath, finalHtml, 'utf-8');
+      safeWriteFile(outPath, finalHtml, canonical);
     }
 
     // B. Boys Category
@@ -721,8 +727,7 @@ async function runSSGPrerendering() {
       }).replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
 
       const outPath = path.join(distDir, `${lang}/${categorySegment}/${boysSegment}/index.html`);
-      ensureDirectoryExistence(outPath);
-      fs.writeFileSync(outPath, finalHtml, 'utf-8');
+      safeWriteFile(outPath, finalHtml, canonical);
     }
 
     // C. Theme Categories
@@ -777,8 +782,7 @@ async function runSSGPrerendering() {
       }).replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
 
       const outPath = path.join(distDir, `${lang}/${categorySegment}/${themeSlug}/index.html`);
-      ensureDirectoryExistence(outPath);
-      fs.writeFileSync(outPath, finalHtml, 'utf-8');
+      safeWriteFile(outPath, finalHtml, canonical);
     });
 
     // D. Letter-based Categories
@@ -836,8 +840,7 @@ async function runSSGPrerendering() {
       }).replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
 
       const outPath = path.join(distDir, `${lang}/${categorySegment}/${encodeURIComponent(letter)}/index.html`);
-      ensureDirectoryExistence(outPath);
-      fs.writeFileSync(outPath, finalHtml, 'utf-8');
+      safeWriteFile(outPath, finalHtml, canonical);
     });
 
     // E. Gender + Letter Categories
@@ -893,8 +896,7 @@ async function runSSGPrerendering() {
         }).replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
 
         const outPath = path.join(distDir, `${lang}/${categorySegment}/${g.segment}/${encodeURIComponent(letter)}/index.html`);
-        ensureDirectoryExistence(outPath);
-        fs.writeFileSync(outPath, finalHtml, 'utf-8');
+        safeWriteFile(outPath, finalHtml, canonical);
       });
     });
 
@@ -949,8 +951,7 @@ async function runSSGPrerendering() {
         }).replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
 
         const outPath = path.join(distDir, `${lang}/${categorySegment}/${g.segment}/${themeSlug}/index.html`);
-        ensureDirectoryExistence(outPath);
-        fs.writeFileSync(outPath, finalHtml, 'utf-8');
+        safeWriteFile(outPath, finalHtml, canonical);
       });
     });
   });
@@ -1018,8 +1019,7 @@ async function runSSGPrerendering() {
       }).replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
 
       const outPath = path.join(distDir, `${lang}/${blogSegment}/index.html`);
-      ensureDirectoryExistence(outPath);
-      fs.writeFileSync(outPath, finalHtml, 'utf-8');
+      safeWriteFile(outPath, finalHtml, canonical);
     }
 
     // B. Individual Blog Posts
@@ -1129,8 +1129,7 @@ async function runSSGPrerendering() {
       }).replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
 
       const outPath = path.join(distDir, `${lang}/${blogSegment}/${pSlug}/index.html`);
-      ensureDirectoryExistence(outPath);
-      fs.writeFileSync(outPath, finalHtml, 'utf-8');
+      safeWriteFile(outPath, finalHtml, canonical);
     });
   });
 
@@ -1457,8 +1456,7 @@ async function runSSGPrerendering() {
       }).replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
 
       const outPath = path.join(distDir, `${lang}/${nameSegment}/${encodedId}/index.html`);
-      ensureDirectoryExistence(outPath);
-      fs.writeFileSync(outPath, finalHtml, 'utf-8');
+      safeWriteFile(outPath, finalHtml, canonical);
     });
 
     counter++;
