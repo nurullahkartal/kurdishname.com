@@ -7,6 +7,13 @@ import en from './locales/en.json';
 import de from './locales/de.json';
 import ar from './locales/ar.json';
 
+const isBrowser = typeof window !== 'undefined';
+const isProdKurdishName = isBrowser && (
+  window.location.hostname === 'kurdishname.com' || 
+  window.location.hostname === 'www.kurdishname.com'
+);
+const isHomepage = isBrowser && window.location.pathname === '/';
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -23,8 +30,8 @@ i18n
       escapeValue: false, // React protects from XSS
     },
     detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
+      order: isProdKurdishName && isHomepage ? ['localStorage', 'navigator'] : [],
+      caches: isProdKurdishName ? ['localStorage'] : [],
     }
   });
 
