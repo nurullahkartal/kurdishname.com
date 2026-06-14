@@ -14,16 +14,18 @@ try {
   
   // Check if there are any changes to commit
   const status = execSync('git status --porcelain', { encoding: 'utf-8' });
-  if (status.trim() === '') {
-    console.log('No changes to commit. GitHub repository is up to date.');
-    process.exit(0);
+  if (status.trim() !== '') {
+    // Commit and push
+    execSync('git commit -m "deploy: auto-generated build updates"', { stdio: 'inherit' });
+    execSync('git push origin main', { stdio: 'inherit' });
+    console.log('✅ Successfully pushed to GitHub.');
+  } else {
+    console.log('No git changes to commit. GitHub repository is up to date.');
   }
-  
-  // Commit and push
-  execSync('git commit -m "deploy: auto-generated build updates"', { stdio: 'inherit' });
-  execSync('git push origin main', { stdio: 'inherit' });
-  
-  console.log('✅ Successfully pushed to GitHub. Cloudflare Pages deploy triggered!');
+
+  console.log('☁️ Deploying to Cloudflare Pages...');
+  execSync('npx wrangler pages deploy dist --project-name=kurdishname --branch=kurdishname --commit-dirty=true', { stdio: 'inherit' });
+  console.log('✅ Successfully deployed to Cloudflare Pages!');
 } catch (error: any) {
   console.error('❌ Auto-deploy failed:', error.message || error);
   process.exit(1);

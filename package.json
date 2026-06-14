@@ -7,6 +7,7 @@
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "tsx scripts/generateSitemaps.ts && vite build && tsx scripts/generateSSG.ts",
     "postbuild": "tsx scripts/deploy.ts",
+    "deploy": "npx wrangler pages deploy dist --project-name=kurdishname --branch=kurdishname --commit-dirty=true",
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit"
