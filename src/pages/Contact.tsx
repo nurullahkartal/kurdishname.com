@@ -36,20 +36,6 @@ export default function Contact() {
       <Helmet>
         <title>{t('contact_title', 'İletişim')} | KurdishName</title>
         <meta name="description" content={t('contact_seo_desc')} />
-        <link rel="canonical" href={`https://kurdishname.com${generatePath(lng, 'contact')}`} />
-        {langs.map(l => (
-          <link
-            key={l}
-            rel="alternate"
-            hrefLang={l}
-            href={`https://kurdishname.com${generatePath(l, 'contact')}`}
-          />
-        ))}
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={`https://kurdishname.com${generatePath('en', 'contact')}`}
-        />
       </Helmet>
 
       <motion.div

@@ -24,20 +24,6 @@ export default function Terms() {
       <Helmet>
         <title>{t('terms_title', 'Kullanım Koşulları')} | KurdishName</title>
         <meta name="description" content={t('terms_seo_desc')} />
-        <link rel="canonical" href={`https://kurdishname.com${generatePath(lng, 'terms')}`} />
-        {langs.map(l => (
-          <link
-            key={l}
-            rel="alternate"
-            hrefLang={l}
-            href={`https://kurdishname.com${generatePath(l, 'terms')}`}
-          />
-        ))}
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={`https://kurdishname.com${generatePath('en', 'terms')}`}
-        />
       </Helmet>
       <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.22 }}>
         <h1 className="page-title">{t('terms_title', 'Kullanım Koşulları')}</h1>

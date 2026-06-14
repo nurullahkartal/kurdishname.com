@@ -1,3 +1,6 @@
+import { useLocation } from 'react-router-dom';
+import { routeTranslations, switchLanguagePath } from './routes';
+
 export type SeoHookCategory = 'female' | 'male' | 'unisex' | 'search';
 
 export function generateContextualHook(
@@ -112,4 +115,19 @@ export function generateContextualHook(
   const categoryTemplates = selectedLang[category] || selectedLang.search;
   
   return categoryTemplates[tIndex];
+}
+
+export function useCanonicalAndHreflang() {
+  const location = useLocation();
+  const canonicalUrl = `https://kurdishname.com${location.pathname}`;
+  const baseUrl = "https://kurdishname.com";
+
+  const hreflangs = Object.keys(routeTranslations).map((langKey) => ({
+    lang: langKey,
+    href: `${baseUrl}${switchLanguagePath(location.pathname, langKey)}`
+  }));
+
+  const xDefault = `${baseUrl}${switchLanguagePath(location.pathname, "en")}`;
+
+  return { canonicalUrl, hreflangs, xDefault };
 }

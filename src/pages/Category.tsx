@@ -347,21 +347,6 @@ export default function Category() {
         ) : (
           <meta name="robots" content="noindex, follow" />
         )}
-        <link rel="canonical" href={`https://kurdishname.com${location.pathname}`} />
-        {["tr", "en", "de", "ar"].map((lang) => (
-          <link
-            key={lang}
-            rel="alternate"
-            hrefLang={lang}
-            href={`https://kurdishname.com${switchLanguagePath(location.pathname, lang)}`}
-          />
-        ))}
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={`https://kurdishname.com${switchLanguagePath(location.pathname, "en")}`}
-        />
-        <meta property="og:url" content={`https://kurdishname.com${location.pathname}`} />
       </Helmet>
 
       <div style={{ marginBottom: "3rem" }}>

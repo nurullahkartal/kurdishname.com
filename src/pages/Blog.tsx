@@ -14,20 +14,6 @@ export default function Blog() {
       <Helmet>
         <title>{t('blog_title')} | KurdishName</title>
         <meta name="description" content={t('seo_blog_desc')} />
-        <link rel="canonical" href={`https://kurdishname.com${generatePath(lng, 'blog')}`} />
-        {["tr", "en", "de", "ar"].map((lang) => (
-          <link
-            key={lang}
-            rel="alternate"
-            hrefLang={lang}
-            href={`https://kurdishname.com${generatePath(lang, 'blog')}`}
-          />
-        ))}
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={`https://kurdishname.com${generatePath('en', 'blog')}`}
-        />
         <meta property="og:title" content={`${t('blog_title')} | KurdishName`} />
         <meta property="og:description" content={t('seo_blog_desc')} />
         <meta property="og:url" content={`https://kurdishname.com${generatePath(lng, 'blog')}`} />

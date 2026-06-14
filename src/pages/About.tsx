@@ -35,20 +35,6 @@ export default function About() {
       <Helmet>
         <title>{t('about_title', 'Hakkımızda')} | KurdishName</title>
         <meta name="description" content={t('about_seo_desc')} />
-        <link rel="canonical" href={`https://kurdishname.com${generatePath(lng, 'about')}`} />
-        {langs.map(l => (
-          <link
-            key={l}
-            rel="alternate"
-            hrefLang={l}
-            href={`https://kurdishname.com${generatePath(l, 'about')}`}
-          />
-        ))}
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={`https://kurdishname.com${generatePath('en', 'about')}`}
-        />
       </Helmet>
       <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.22 }}>
         <h1 className="page-title">{t('about_title', 'Hakkımızda')}</h1>

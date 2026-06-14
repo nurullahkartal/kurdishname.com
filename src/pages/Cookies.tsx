@@ -26,20 +26,6 @@ export default function Cookies() {
       <Helmet>
         <title>{t('cookies_title', 'Çerez Politikası')} | KurdishName</title>
         <meta name="description" content={t('cookies_seo_desc')} />
-        <link rel="canonical" href={`https://kurdishname.com${generatePath(lng, 'cookies')}`} />
-        {langs.map(l => (
-          <link
-            key={l}
-            rel="alternate"
-            hrefLang={l}
-            href={`https://kurdishname.com${generatePath(l, 'cookies')}`}
-          />
-        ))}
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={`https://kurdishname.com${generatePath('en', 'cookies')}`}
-        />
       </Helmet>
       <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.22 }}>
         <h1 className="page-title">{t('cookies_title', 'Çerez Politikası')}</h1>

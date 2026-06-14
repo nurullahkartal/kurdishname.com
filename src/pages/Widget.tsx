@@ -623,20 +623,6 @@ export default function Widget() {
       <Helmet>
         <title>{activeDict.builderTitle} | KurdishName</title>
         <meta name="description" content={activeDict.builderDesc} />
-        <link rel="canonical" href={`https://kurdishname.com${generatePath(lng, 'widget')}`} />
-        {["tr", "en", "de", "ar"].map((lang) => (
-          <link
-            key={lang}
-            rel="alternate"
-            hrefLang={lang}
-            href={`https://kurdishname.com${generatePath(lang, 'widget')}`}
-          />
-        ))}
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={`https://kurdishname.com${generatePath('en', 'widget')}`}
-        />
       </Helmet>
 
       <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>

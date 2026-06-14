@@ -192,20 +192,6 @@ export default function Compare() {
       <Helmet>
         <title>{t("compare_seo_title")} | KurdishName</title>
         <meta name="description" content={t("compare_seo_desc")} />
-        <link rel="canonical" href={`https://kurdishname.com${generatePath(lng, 'compare')}`} />
-        {["tr", "en", "de", "ar"].map((lang) => (
-          <link
-            key={lang}
-            rel="alternate"
-            hrefLang={lang}
-            href={`https://kurdishname.com${generatePath(lang, 'compare')}`}
-          />
-        ))}
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={`https://kurdishname.com${generatePath('en', 'compare')}`}
-        />
       </Helmet>
 
       <div style={{ maxWidth: "800px", margin: "0 auto", padding: "1rem 0" }}>

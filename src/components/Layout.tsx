@@ -9,6 +9,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import ThemeToggle from "./ThemeToggle";
 import { generatePath, routeTranslations, switchLanguagePath } from "../utils/routes";
 import { useFavorites } from "../context/FavoritesContext";
+import { useCanonicalAndHreflang } from "../utils/seoHook";
 
 export default function Layout() {
   const { t, i18n } = useTranslation();
@@ -43,7 +44,7 @@ export default function Layout() {
   }, [isMenuOpen]);
 
   const baseUrl = "https://kurdishname.com";
-  const canonicalUrl = `${baseUrl}${location.pathname === "/" ? `/${lng}` : location.pathname}`;
+  const { canonicalUrl, hreflangs, xDefault } = useCanonicalAndHreflang();
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -105,12 +106,10 @@ export default function Layout() {
         <meta name="description" content={t("home_description")} />
         <link rel="canonical" href={canonicalUrl} />
         <meta property="og:url" content={canonicalUrl} />
-        {Object.keys(routeTranslations).map((langKey) => (
-          <link key={langKey} rel="alternate" hrefLang={langKey}
-            href={`${baseUrl}${switchLanguagePath(location.pathname, langKey)}`} />
+        {hreflangs.map((item) => (
+          <link key={item.lang} rel="alternate" hrefLang={item.lang} href={item.href} />
         ))}
-        <link rel="alternate" hrefLang="x-default"
-          href={`${baseUrl}${switchLanguagePath(location.pathname, "en")}`} />
+        <link rel="alternate" hrefLang="x-default" href={xDefault} />
 
         {/* Global Social Media Cards */}
         <meta property="og:type" content="website" />

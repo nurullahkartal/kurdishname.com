@@ -350,20 +350,6 @@ export default function Home() {
       <Helmet>
         <title>{t("seo_home_title")}</title>
         <meta name="description" content={t("seo_home_description")} />
-        <link rel="canonical" href={`https://kurdishname.com/${lng}`} />
-        {["tr", "en", "de", "ar"].map((lang) => (
-          <link
-            key={lang}
-            rel="alternate"
-            hrefLang={lang}
-            href={`https://kurdishname.com/${lang}`}
-          />
-        ))}
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href="https://kurdishname.com/en"
-        />
         <meta property="og:title" content={t("seo_home_title")} />
         <meta property="og:description" content={t("seo_home_description")} />
         <meta property="og:url" content={`https://kurdishname.com/${lng}`} />

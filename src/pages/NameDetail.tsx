@@ -567,20 +567,6 @@ export default function NameDetail() {
         ) : (
           <meta name="robots" content="noindex, follow" />
         )}
-        <link rel="canonical" href={`https://kurdishname.com${generatePath(lng, "name", nameItem.id)}`} />
-        {["tr", "en", "de", "ar"].map((lang) => (
-          <link
-            key={lang}
-            rel="alternate"
-            hrefLang={lang}
-            href={`https://kurdishname.com${generatePath(lang, "name", nameItem.id)}`}
-          />
-        ))}
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={`https://kurdishname.com${generatePath("en", "name", nameItem.id)}`}
-        />
         <meta property="og:title" content={`${t("seo_name_title", { name: nameItem.name })} | KurdishName`} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={`https://kurdishname.com${generatePath(lng, "name", nameItem.id)}`} />

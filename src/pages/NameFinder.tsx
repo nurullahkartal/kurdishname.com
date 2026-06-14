@@ -141,20 +141,6 @@ export default function NameFinder() {
       <Helmet>
         <title>{t('finder_title', 'İsim Bulucu')} | KurdishName</title>
         <meta name="description" content={t('finder_seo_desc', 'Kürtçe isim bulmak için akıllı filtreleme aracı. Cinsiyet, tema ve harf kriterlerine göre arama yapın.')} />
-        <link rel="canonical" href={`https://kurdishname.com${generatePath(lng, 'finder')}`} />
-        {["tr", "en", "de", "ar"].map((lang) => (
-          <link
-            key={lang}
-            rel="alternate"
-            hrefLang={lang}
-            href={`https://kurdishname.com${generatePath(lang, 'finder')}`}
-          />
-        ))}
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={`https://kurdishname.com${generatePath('en', 'finder')}`}
-        />
       </Helmet>
 
       <motion.div

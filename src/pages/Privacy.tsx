@@ -35,20 +35,6 @@ export default function Privacy() {
       <Helmet>
         <title>{t('privacy_title', 'Gizlilik Politikası')} | KurdishName</title>
         <meta name="description" content={t('privacy_seo_desc')} />
-        <link rel="canonical" href={`https://kurdishname.com${generatePath(lng, 'privacy')}`} />
-        {langs.map(l => (
-          <link
-            key={l}
-            rel="alternate"
-            hrefLang={l}
-            href={`https://kurdishname.com${generatePath(l, 'privacy')}`}
-          />
-        ))}
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={`https://kurdishname.com${generatePath('en', 'privacy')}`}
-        />
       </Helmet>
       <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.22 }}>
         <h1 className="page-title">{t('privacy_title', 'Gizlilik Politikası')}</h1>

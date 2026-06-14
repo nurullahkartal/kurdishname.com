@@ -51,20 +51,6 @@ export default function Suggest() {
       <Helmet>
         <title>{t("suggest_seo_title")} | KurdishName</title>
         <meta name="description" content={t("suggest_seo_desc")} />
-        <link rel="canonical" href={`https://kurdishname.com${generatePath(lng, 'suggest')}`} />
-        {["tr", "en", "de", "ar"].map((lang) => (
-          <link
-            key={lang}
-            rel="alternate"
-            hrefLang={lang}
-            href={`https://kurdishname.com${generatePath(lang, 'suggest')}`}
-          />
-        ))}
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={`https://kurdishname.com${generatePath('en', 'suggest')}`}
-        />
       </Helmet>
 
       <div style={{ maxWidth: "600px", margin: "0 auto", padding: "1rem 0" }}>
