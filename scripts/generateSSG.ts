@@ -370,10 +370,10 @@ function replaceHeadMetadata(template: string, options: {
   html = html.replace(/<html[^>]*>/i, `<html lang="${options.lang}"${isRtl ? ' dir="rtl"' : ''}>`);
 
   // Replace title
-  html = html.replace(/<title>[^<]*<\/title>/i, `<title>${options.title}</title>`);
+  html = html.replace(/<title>[^<]*<\/title>/i, `<title data-rh="true">${options.title}</title>`);
 
   // Replace description meta
-  html = html.replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i, `<meta name="description" content="${options.description}">`);
+  html = html.replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i, `<meta data-rh="true" name="description" content="${options.description}">`);
 
   // Replace canonical link
   html = html.replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i, `<link rel="canonical" href="${options.canonical}">`);
