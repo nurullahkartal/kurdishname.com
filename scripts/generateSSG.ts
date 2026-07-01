@@ -207,6 +207,57 @@ function simpleMarkdownToHtml(markdown: string): string {
   return formattedParagraphs.join('\n');
 }
 
+function escapeRegExp(string: string): string {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function injectInternalLinks(content: string, allNames: any[], lng: string): string {
+  if (!content || !allNames || allNames.length === 0) return content;
+  const contentWords = new Set(
+    content.toLowerCase().split(/[^a-zA-Z0-9çğîûşêıîöüçğîûşêıİÖÜöüÇĞÎÛŞÊ’]+/).map(w => w.trim()).filter(w => w.length > 1)
+  );
+  const candidateNames = allNames.filter(nameItem => contentWords.has(nameItem.name.toLowerCase()));
+  if (candidateNames.length === 0) return content;
+  candidateNames.sort((a, b) => b.name.length - a.name.length);
+  
+  const placeholders: string[] = [];
+  let processedContent = content;
+  const hidePattern = (regex: RegExp) => {
+    processedContent = processedContent.replace(regex, (match) => {
+      const ph = `___LINK_PH_${placeholders.length}___`;
+      placeholders.push(match);
+      return ph;
+    });
+  };
+  hidePattern(/```[\s\S]*?```/g);
+  hidePattern(/`[^`]+`/g);
+  hidePattern(/!\[[^\]]*\]\([^)]+\)/g);
+  hidePattern(/\[[^\]]+\]\([^)]+\)/g);
+  hidePattern(/^#+\s+.*$/gm);
+
+  const linkedNames = new Set<string>();
+  candidateNames.forEach((nameItem) => {
+    const nameStr = nameItem.name;
+    const nameLower = nameStr.toLowerCase();
+    if (linkedNames.has(nameLower)) return;
+    const escapedName = escapeRegExp(nameStr);
+    const pattern = new RegExp(`(^|[^a-zA-Z0-9çğîûşêıîöüçğîûşêıİÖÜöüÇĞÎÛŞÊ’])(${escapedName})($|’[a-zA-Z0-9çğîûşêıîöüçğîûşêıİÖÜöüÇĞÎÛŞÊ]+|[^a-zA-Z0-9çğîûşêıîöüçğîûşêıİÖÜöüÇĞÎÛŞÊ’])`, "i");
+    let replaced = false;
+    processedContent = processedContent.replace(pattern, (match, prefix, matchedName, suffix) => {
+      if (replaced) return match;
+      replaced = true;
+      linkedNames.add(nameLower);
+      const targetPath = generatePath(lng, "name", nameItem.id);
+      return `${prefix}[${matchedName}](${targetPath})${suffix}`;
+    });
+  });
+
+  for (let i = placeholders.length - 1; i >= 0; i--) {
+    processedContent = processedContent.replace(`___LINK_PH_${i}___`, placeholders[i]);
+  }
+  return processedContent;
+}
+
 // Global layout generator reproducing Layout.tsx aesthetics and theme tokens
 function renderLayout(lang: string, contentHTML: string, options: {
   pageTitle: string;
@@ -1044,7 +1095,9 @@ async function runSSGPrerendering() {
       if (fs.existsSync(contentFilePath)) {
         try {
           const payload = JSON.parse(fs.readFileSync(contentFilePath, 'utf-8'));
-          postContentHtml = simpleMarkdownToHtml(payload.content || payload.contentPayload || '');
+          const rawMarkdown = payload.content || payload.contentPayload || '';
+          const linkedMarkdown = injectInternalLinks(rawMarkdown, allNames, lang);
+          postContentHtml = simpleMarkdownToHtml(linkedMarkdown);
         } catch (e) {
           postContentHtml = `<p style="color: var(--text-muted);">Content is loading dynamically inside client side engine.</p>`;
         }
