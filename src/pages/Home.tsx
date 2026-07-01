@@ -8,7 +8,7 @@ import { Search, Dices, ArrowRight, Heart } from "lucide-react";
 import { NameData } from "../data/names";
 import { generatePath } from "../utils/routes";
 import { getLocalizedMeaning, getLocalizedOrigin } from "../utils/localization";
-import { searchWithFuse } from "../utils/search";
+import { searchWithMiniSearch } from "../utils/search";
 import { loadNamesForLetter, loadNamesForSearch, getLettersForId, loadAllNames, fetchSearchIndex } from "../utils/nameLoader";
 import { stats, featuredNames } from "../data/homeStaticData";
 import { blogPostsRegistry } from "../data/blogPosts";
@@ -178,7 +178,7 @@ export default function Home() {
 
   const searchResults = useMemo(() => {
     if (q.length < 2) return [];
-    return searchWithFuse(allNames, q, lng).slice(0, 60);
+    return searchWithMiniSearch(allNames, q, lng).slice(0, 60);
   }, [q, allNames, lng]);
 
   const featuredGirlNames = useMemo(() => {

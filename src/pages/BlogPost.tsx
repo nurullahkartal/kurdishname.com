@@ -9,7 +9,7 @@ import { getBlogPostsByLang, blogPostsRegistry } from '../data/blogPosts';
 import { loadBlogPostContent, BlogContentPayload } from '../utils/blogLoader';
 import { generatePath } from '../utils/routes';
 import React, { lazy, Suspense } from 'react';
-const AdSlot = lazy(() => import('../components/AdSlot'));
+
 
 interface FAQItem {
   question: string;
@@ -1203,10 +1203,7 @@ export default function BlogPost() {
             <span>{post.date}</span>
           </div>
 
-          {/* AdSense: Yazı Başı Reklam - Tüm uzunluklarda gösterilir */}
-          <Suspense fallback={<div style={{ height: '120px' }} />}>
-            <AdSlot slot="blog_post_top" format="horizontal" />
-          </Suspense>
+
 
           {/* Adaptive Content Area */}
           <div style={{
@@ -1223,29 +1220,10 @@ export default function BlogPost() {
                 <Markdown>{content.replaceAll('\\n', '\n')}</Markdown>
               </div>
 
-              {/* AdSense: Yazı Sonu Reklam - Orta ve Uzun Sayfalarda Gösterilir */}
-              {(isMedium || isLong) && (
-                <div style={{ marginTop: "2rem" }}>
-                  <Suspense fallback={<div style={{ height: '120px' }} />}>
-                    <AdSlot slot="blog_post_bottom" format="auto" />
-                  </Suspense>
-                </div>
-              )}
+
             </div>
 
-            {/* Sidebar Column: Desktop-only, Sadece UZUN yazılarda gösterilir */}
-            {isLong && isDesktop && (
-              <aside style={{
-                width: "280px",
-                flexShrink: 0,
-                position: "sticky",
-                top: "2rem"
-              }}>
-                <Suspense fallback={<div style={{ height: '250px' }} />}>
-                  <AdSlot slot="blog_sidebar_ad" format="vertical" />
-                </Suspense>
-              </aside>
-            )}
+
           </div>
 
           {/* Premium SEO Block */}

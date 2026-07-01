@@ -7,13 +7,13 @@ import { Heart, Sparkles, Shuffle } from "lucide-react";
 import React, { useRef, useCallback } from "react";
 import { NameData } from "../data/names";
 import { generatePath, getGenderFromSlug, getThemeFromSlug, switchLanguagePath } from "../utils/routes";
-import { searchWithFuse } from "../utils/search";
+import { searchWithMiniSearch } from "../utils/search";
 import { getLocalizedMeaning, getLocalizedOrigin } from "../utils/localization";
 import { loadNamesForLetter, loadAllNames } from "../utils/nameLoader";
 import { generateContextualHook, SeoHookCategory } from "../utils/seoHook";
 import { isLetterActive } from "../data/config";
 import { useFavorites } from "../context/FavoritesContext";
-const AdSlot = React.lazy(() => import("../components/AdSlot"));
+
 
 // ── Valid Category and Theme Slugs List ─────────────────────────────────────
 const VALID_SLUGS = new Set([
@@ -197,7 +197,7 @@ export default function Category() {
     }
 
     if (debouncedSearchTerm) {
-      filtered = searchWithFuse(filtered, debouncedSearchTerm, lng);
+      filtered = searchWithMiniSearch(filtered, debouncedSearchTerm, lng);
     } else {
       filtered = filtered.sort((a, b) => a.name.localeCompare(b.name, "tr"));
     }
@@ -472,10 +472,7 @@ export default function Category() {
         );
       })()}
 
-      {/* AdSense: Kategori Başlık Altı Reklamı - Tüm uzunluklarda gösterilir */}
-      <React.Suspense fallback={<div style={{ height: '120px' }} />}>
-        <AdSlot slot="category_header_bottom" />
-      </React.Suspense>
+
 
       {/* Adaptive Layout Container */}
       <div style={{
@@ -540,7 +537,7 @@ export default function Category() {
                   </thead>
                   <tbody>
                     {displayNames.map((item, index) => {
-                      const showAd = (index + 1) % 10 === 0 && index < strictlyFilteredNames.length - 1;
+
                       return (
                         <React.Fragment key={item.id}>
                           <tr key={item.id}>
@@ -575,21 +572,7 @@ export default function Category() {
                               </button>
                             </td>
                           </tr>
-                          {showAd && (
-                            <tr key={`ad-${item.id}`}>
-                              <td colSpan={5} style={{ padding: "0.25rem 0.5rem", background: "var(--surface-alt)" }}>
-                                <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
-                                  <React.Suspense fallback={<div style={{ height: "120px" }} />}>
-                                    <AdSlot 
-                                      slot={`category_list_inline_${index}`} 
-                                      format="horizontal"
-                                      style={{ margin: "0.25rem 0", padding: 0 }}
-                                    />
-                                  </React.Suspense>
-                                </div>
-                              </td>
-                            </tr>
-                          )}
+
                         </React.Fragment>
                       );
                     })}
@@ -659,19 +642,7 @@ export default function Category() {
           )}
         </div>
 
-        {/* Sidebar Column: Desktop-only, Sadece UZUN sayfalarda gösterilir */}
-        {isLong && isDesktop && (
-          <aside style={{
-            width: "280px",
-            flexShrink: 0,
-            position: "sticky",
-            top: "2rem"
-          }}>
-            <React.Suspense fallback={<div style={{ height: '250px' }} />}>
-              <AdSlot slot="category_sidebar_ad" format="vertical" />
-            </React.Suspense>
-          </aside>
-        )}
+
       </div>
 
       {/* SEO Contextual Hook */}
@@ -719,12 +690,7 @@ export default function Category() {
         </div>
       </div>
 
-      {/* AdSense: Kategori Altı Reklamı - Sadece Orta ve Uzun Sayfalarda Gösterilir */}
-      {(isMedium || isLong) && (
-        <React.Suspense fallback={<div style={{ height: '120px' }} />}>
-          <AdSlot slot="category_footer_bottom" />
-        </React.Suspense>
-      )}
+
     </>
   );
 }

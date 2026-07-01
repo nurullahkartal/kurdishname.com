@@ -77,104 +77,148 @@ export const themeSlugs = {
 } as const;
 
 export type RouteKey = keyof typeof routeTranslations['tr'];
+export type LangKey = keyof typeof routeTranslations;
+
+// Pre-compute reverse maps for O(1) ultra-fast lookups
+// e.g. reverseRouteMap['kategori'] = 'category'
+const reverseRouteMap: Record<string, RouteKey> = {};
+const reverseSlugMap: Record<string, string> = {};
+
+Object.entries(routeTranslations).forEach(([lang, translations]) => {
+  Object.entries(translations).forEach(([key, value]) => {
+    reverseRouteMap[value.toLowerCase()] = key as RouteKey;
+  });
+});
+
+Object.entries(themeSlugs).forEach(([lang, themes]) => {
+  Object.entries(themes).forEach(([key, value]) => {
+    reverseSlugMap[value.toLowerCase()] = key;
+  });
+});
 
 export const getRoutePath = (lang: string, key: RouteKey) => {
-  const currentLangRoutes = routeTranslations[lang as keyof typeof routeTranslations] || routeTranslations['tr'];
-  return (currentLangRoutes as any)[key] || (routeTranslations['tr'] as any)[key];
+  const safeLang = (lang in routeTranslations ? lang : 'tr') as LangKey;
+  return routeTranslations[safeLang][key];
 };
 
+/**
+ * Super fast, direct path generation without heavy logic
+ */
 export const generatePath = (lang: string, key: RouteKey | null, param?: string, subParam?: string) => {
-  if (!key) {
-    return `/${lang}${param ? `/${param}` : ''}`;
-  }
-  const segment = getRoutePath(lang, key);
+  const safeLang = (lang in routeTranslations ? lang : 'tr') as LangKey;
+  if (!key) return `/${safeLang}${param ? `/${param}` : ''}`;
   
-  let resolvedParam = param;
-  if (key === "category" && param) {
-    const currentLangRoutes = routeTranslations[lang as keyof typeof routeTranslations] || routeTranslations['tr'];
-    if (param === "kiz") {
-      resolvedParam = currentLangRoutes.girls;
-    } else if (param === "erkek") {
-      resolvedParam = currentLangRoutes.boys;
-    } else if (param in themeSlugs.tr) {
-      const themes = themeSlugs[lang as keyof typeof themeSlugs] || themeSlugs['tr'];
-      resolvedParam = (themes as any)[param];
+  const segment = routeTranslations[safeLang][key];
+  let path = `/${safeLang}/${segment}`;
+  
+  if (param) {
+    // Check if param is a known key (like 'girls' mapped to 'kiz' internally? No, just pass it)
+    // Actually, in the old logic we passed "kiz" and it translated to "girls". 
+    // Now we rely on the component to pass the correct universal key or the translated value directly.
+    // To not break existing `generatePath(lng, "category", "kiz")` calls, we do a quick lookup:
+    let resolvedParam = param;
+    if (key === 'category') {
+       if (param === 'kiz' || param === 'erkek') {
+         resolvedParam = routeTranslations[safeLang][param === 'kiz' ? 'girls' : 'boys'];
+       } else if (param in themeSlugs.tr) {
+         resolvedParam = themeSlugs[safeLang][param as keyof typeof themeSlugs.tr];
+       }
     }
+    path += `/${resolvedParam}`;
   }
-  
-  let path = `/${lang}/${segment}${resolvedParam ? `/${resolvedParam}` : ''}`;
+
   if (subParam) {
     let resolvedSub = subParam;
     if (subParam in themeSlugs.tr) {
-      const themes = themeSlugs[lang as keyof typeof themeSlugs] || themeSlugs['tr'];
-      resolvedSub = (themes as any)[subParam];
+      resolvedSub = themeSlugs[safeLang][subParam as keyof typeof themeSlugs.tr];
     }
     path += `/${resolvedSub}`;
   }
+
   return path;
+};
+
+/**
+ * Very flat, direct language switcher.
+ * Uses O(1) Maps instead of nested loops.
+ */
+export const switchLanguagePath = (currentPath: string, targetLang: string) => {
+  const safeTargetLang = (targetLang in routeTranslations ? targetLang : 'tr') as LangKey;
+  const parts = currentPath.split('/').filter(Boolean);
+  
+  if (parts.length === 0) return `/${safeTargetLang}`;
+  
+  const currentLang = parts[0];
+  if (!(currentLang in routeTranslations)) return `/${safeTargetLang}`;
+  if (parts.length === 1) return `/${safeTargetLang}`;
+  
+  // Translate main segment
+  const currentSegment = decodeURIComponent(parts[1]).toLowerCase();
+  const routeKey = reverseRouteMap[currentSegment];
+  
+  if (!routeKey) {
+    // If not a known route, just replace lang
+    return `/${safeTargetLang}/${parts.slice(1).join('/')}`;
+  }
+  
+  const targetSegment = routeTranslations[safeTargetLang][routeKey];
+  let remaining = parts.slice(2).join('/');
+  
+  if (routeKey === 'category' && remaining) {
+    const remainingParts = remaining.split('/');
+    const firstParam = decodeURIComponent(remainingParts[0]).toLowerCase();
+    
+    // Check if it's a gender param
+    const genderKey = reverseRouteMap[firstParam];
+    let resolvedFirst = firstParam;
+    if (genderKey === 'girls' || genderKey === 'boys') {
+      resolvedFirst = routeTranslations[safeTargetLang][genderKey];
+    } else {
+       // Check if it's a theme param
+       const themeKey = reverseSlugMap[firstParam];
+       if (themeKey) {
+         resolvedFirst = themeSlugs[safeTargetLang][themeKey as keyof typeof themeSlugs.tr];
+       }
+    }
+    
+    // Check second param (subParam)
+    if (remainingParts.length > 1) {
+      const secondParam = decodeURIComponent(remainingParts[1]).toLowerCase();
+      const themeKey = reverseSlugMap[secondParam];
+      const resolvedSecond = themeKey ? themeSlugs[safeTargetLang][themeKey as keyof typeof themeSlugs.tr] : secondParam;
+      remaining = `${resolvedFirst}/${resolvedSecond}`;
+    } else {
+      remaining = resolvedFirst;
+    }
+  }
+  
+  return `/${safeTargetLang}/${targetSegment}${remaining ? `/${remaining}` : ''}`;
 };
 
 export const getGenderFromSlug = (lang: string, slug: string | undefined): "female" | "male" | "letter" | null => {
   if (!slug) return null;
   const decodedSlug = decodeURIComponent(slug).toLowerCase();
-
-  // ─ Tüm dillerin kız (female) slug'ları ───────────────────────────────────
-  const FEMALE_SLUGS = new Set([
-    // TR
-    "kiz", "kız", "kız-isimleri", "kız-bebek-isimleri",
-    // EN — doğal İngilizce varyasyonlar
-    "girls", "girl", "female", "woman", "women",
-    "girl-names", "girls-names", "female-names",
-    "baby-girl-names", "feminine",
-    // DE
-    "maedchen", "mädchen", "madchen",
-    "mädchennamen", "maedchennamen",
-    // AR
-    "بنات", "اناث", "مؤنث",
-  ]);
-
-  // ─ Tüm dillerin erkek (male) slug'ları ─────────────────────────────────
-  const MALE_SLUGS = new Set([
-    // TR
-    "erkek", "erkek-isimleri", "erkek-bebek-isimleri",
-    // EN — doğal İngilizce varyasyonlar
-    "boys", "boy", "male", "man", "men",
-    "boy-names", "boys-names", "male-names",
-    "baby-boy-names", "masculine",
-    // DE
-    "jungen", "junge", "männer", "manner",
-    "jungennamen", "männernamen",
-    // AR
-    "ذكور", "ذكر", "مذكر",
-  ]);
-
-  if (FEMALE_SLUGS.has(decodedSlug)) return "female";
-  if (MALE_SLUGS.has(decodedSlug)) return "male";
-
-  // Dinamik routeTranslations listesinden de kontrol et
-  for (const [, routes] of Object.entries(routeTranslations)) {
-    if (routes.girls.toLowerCase() === decodedSlug) return "female";
-    if (routes.boys.toLowerCase() === decodedSlug) return "male";
-  }
-
+  
+  const mappedKey = reverseRouteMap[decodedSlug];
+  if (mappedKey === 'girls') return 'female';
+  if (mappedKey === 'boys') return 'male';
+  
+  // Legacy backups for direct SEO links
+  if (["kiz", "kız", "girls", "girl", "female", "woman", "women", "maedchen", "mädchen", "بنات", "اناث"].includes(decodedSlug)) return "female";
+  if (["erkek", "boys", "boy", "male", "man", "men", "jungen", "junge", "ذكور", "ذكر"].includes(decodedSlug)) return "male";
+  
   if (slug.length === 1) return "letter";
-
+  
   return null;
 };
-
 
 export const getThemeFromSlug = (lang: string, slug: string | undefined): "nature" | "power" | "beauty" | "light" | "wisdom" | null => {
   if (!slug) return null;
   const decodedSlug = decodeURIComponent(slug).toLowerCase();
+  const themeKey = reverseSlugMap[decodedSlug];
+  if (themeKey) return themeKey as "nature" | "power" | "beauty" | "light" | "wisdom";
   
-  for (const [, themes] of Object.entries(themeSlugs)) {
-    for (const [key, value] of Object.entries(themes)) {
-      if (value.toLowerCase() === decodedSlug) {
-        return key as "nature" | "power" | "beauty" | "light" | "wisdom";
-      }
-    }
-  }
-  
+  // Legacy backups
   if (['doga', 'nature', 'natur', 'طبيعة'].includes(decodedSlug)) return 'nature';
   if (['guc', 'power', 'macht', 'قوة'].includes(decodedSlug)) return 'power';
   if (['guzellik', 'beauty', 'schoenheit', 'جمal'].includes(decodedSlug)) return 'beauty';
@@ -182,63 +226,4 @@ export const getThemeFromSlug = (lang: string, slug: string | undefined): "natur
   if (['bilgelik', 'wisdom', 'weisheit', 'حكمة'].includes(decodedSlug)) return 'wisdom';
   
   return null;
-};
-
-export const switchLanguagePath = (currentPath: string, targetLang: string) => {
-  const parts = currentPath.split('/').filter(Boolean);
-  if (parts.length === 0) return `/${targetLang}`;
-  
-  const currentLang = parts[0];
-  if (!['tr', 'en', 'de', 'ar'].includes(currentLang)) {
-     return `/${targetLang}`;
-  }
-  
-  if (parts.length === 1) return `/${targetLang}`;
-  
-  const currentSegment = decodeURIComponent(parts[1]);
-  const currentTranslations = routeTranslations[currentLang as keyof typeof routeTranslations] || routeTranslations['tr'];
-  
-  let routeKey: RouteKey | null = null;
-  for (const [key, value] of Object.entries(currentTranslations)) {
-    if (value === currentSegment) {
-      routeKey = key as RouteKey;
-      break;
-    }
-  }
-  
-  if (!routeKey) {
-    return `/${targetLang}/${parts.slice(1).join('/')}`;
-  }
-  
-  const targetSegment = getRoutePath(targetLang, routeKey);
-  let remaining = parts.slice(2).join('/');
-  
-  if (routeKey === "category" && remaining) {
-    const remainingParts = remaining.split('/');
-    const firstRemaining = remainingParts[0];
-    const rawGender = getGenderFromSlug(currentLang, firstRemaining);
-    let resolvedFirst = firstRemaining;
-    if (rawGender === "female") {
-      const targetTranslations = routeTranslations[targetLang as keyof typeof routeTranslations] || routeTranslations['tr'];
-      resolvedFirst = targetTranslations.girls;
-    } else if (rawGender === "male") {
-      const targetTranslations = routeTranslations[targetLang as keyof typeof routeTranslations] || routeTranslations['tr'];
-      resolvedFirst = targetTranslations.boys;
-    }
-    
-    if (remainingParts.length > 1) {
-      const secondRemaining = remainingParts[1];
-      const rawTheme = getThemeFromSlug(currentLang, secondRemaining);
-      let resolvedSecond = secondRemaining;
-      if (rawTheme) {
-        const targetThemes = themeSlugs[targetLang as keyof typeof themeSlugs] || themeSlugs['tr'];
-        resolvedSecond = (targetThemes as any)[rawTheme];
-      }
-      remaining = `${resolvedFirst}/${resolvedSecond}`;
-    } else {
-      remaining = resolvedFirst;
-    }
-  }
-  
-  return `/${targetLang}/${targetSegment}${remaining ? `/${remaining}` : ''}`;
 };

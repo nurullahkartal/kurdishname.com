@@ -8,7 +8,7 @@ import { generatePath } from "../utils/routes";
 import { getLocalizedMeaning, getLocalizedOrigin } from "../utils/localization";
 import { fetchSearchIndex, loadNamesForLetter, getLettersForId } from "../utils/nameLoader";
 import { useFavorites } from "../context/FavoritesContext";
-import { searchWithFuse } from "../utils/search";
+import { searchWithMiniSearch } from "../utils/search";
 
 // Helper to determine deterministic stars for popularity
 const getPopularityStars = (name: string): number => {
@@ -100,12 +100,12 @@ export default function Compare() {
   // Dropdown Filtering
   const filteredOptions1 = useMemo(() => {
     if (!debouncedQuery1.trim()) return searchIndex.slice(0, 10);
-    return searchWithFuse(searchIndex, debouncedQuery1, lng).slice(0, 8);
+    return searchWithMiniSearch(searchIndex, debouncedQuery1, lng).slice(0, 8);
   }, [debouncedQuery1, searchIndex, lng]);
 
   const filteredOptions2 = useMemo(() => {
     if (!debouncedQuery2.trim()) return searchIndex.slice(0, 10);
-    return searchWithFuse(searchIndex, debouncedQuery2, lng).slice(0, 8);
+    return searchWithMiniSearch(searchIndex, debouncedQuery2, lng).slice(0, 8);
   }, [debouncedQuery2, searchIndex, lng]);
 
   // Compute Fun Name Harmony Score

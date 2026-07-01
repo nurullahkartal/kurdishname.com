@@ -14,7 +14,7 @@ import { isLetterActive } from "../data/config";
 import React, { lazy, Suspense } from "react";
 import { useFavorites } from "../context/FavoritesContext";
 import { getWikidataSameAs } from "../utils/wikidata";
-const AdSlot = lazy(() => import("../components/AdSlot"));
+
 
 // ── Fonetik okunuş üreteci ────────────────────────────────────────────────────
 function generatePronunciation(name: string): string {
@@ -802,11 +802,7 @@ export default function NameDetail() {
             </div>
           </motion.section>
 
-          <Suspense fallback={<div style={{ height: '120px', margin: "1.5rem 0" }} />}>
-            <div style={{ margin: "1.5rem 0" }}>
-              <AdSlot slot="name_detail_after_meaning" format="horizontal" />
-            </div>
-          </Suspense>
+
 
           {/* Quick Info Grid */}
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "1.5rem", marginBottom: "2.5rem" }}>
@@ -898,10 +894,7 @@ export default function NameDetail() {
       </div>
 
       <div style={{ maxWidth: "100%" }}>
-        {/* AdSlot: Similar Names After */}
-        <Suspense fallback={<div style={{ height: '120px' }} />}>
-          <AdSlot slot="name_detail_after_similar" format="horizontal" />
-        </Suspense>
+
 
         <section style={{ marginTop: "4rem" }}>
           {/* H2: Köken bölümü */}

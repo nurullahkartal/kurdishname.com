@@ -72,35 +72,6 @@ function ProtectionRules() {
   return null;
 }
 
-function AdSenseManager() {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-
-    const parts = location.pathname.split('/').filter(Boolean);
-    // Homepage path is either empty ("/") or just the language code (e.g., "/tr")
-    const isHome = parts.length <= 1;
-
-    let script = document.querySelector('script[src*="adsbygoogle.js"]');
-
-    if (!isHome) {
-      if (!script) {
-        script = document.createElement('script');
-        script.setAttribute('async', '');
-        script.setAttribute('src', 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6367485410843937');
-        script.setAttribute('crossorigin', 'anonymous');
-        document.head.appendChild(script);
-      }
-    } else {
-      if (script) {
-        script.remove();
-      }
-    }
-  }, [location.pathname]);
-
-  return null;
-}
 
 // ─────────────────────────────────────────────────────────────────────────────
 // LEGACY REDIRECT MAP
@@ -244,7 +215,6 @@ export default function App() {
             <CustomContextMenu />
           </Suspense>
           <LanguageSync />
-          <AdSenseManager />
           <Suspense fallback={
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "300px" }}>
               <p style={{ color: "var(--text-muted)", fontFamily: "var(--font-display)", fontSize: "1rem" }}>

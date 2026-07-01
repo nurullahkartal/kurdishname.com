@@ -1,4 +1,4 @@
-import Fuse from 'fuse.js';
+import MiniSearch from 'minisearch';
 import { NameData } from '../data/names';
 
 /**
@@ -45,13 +45,12 @@ export function fuzzyMatch(target: string, query: string): boolean {
 }
 
 /**
- * Perform highly optimized Fuse.js Fuzzy Search on name entities.
- * Includes 70% weighting for name, 30% for meaning (fully localized).
- * threshold: 0.4 handles 30-40% typos, and results are returned by relevance score.
+ * Perform highly optimized MiniSearch on name entities.
+ * Includes boosted weighting for name, secondary for meaning.
  */
-export function searchWithFuse(list: NameData[], query: string, lng: string): NameData[] {
+export function searchWithMiniSearch(list: NameData[], query: string, lng: string): NameData[] {
   const cleanQuery = query.trim();
-  if (!cleanQuery) return [];
+  if (!cleanQuery || !list || list.length === 0) return [];
 
   const normalizedQuery = normalizeText(cleanQuery);
 
@@ -62,29 +61,27 @@ export function searchWithFuse(list: NameData[], query: string, lng: string): Na
     lng === 'ar' ? 'meaning_ar' : 
     'meaning';
 
-  // Configure weights: Name (70%) and Meaning (30%)
-  const options = {
-    keys: [
-      { name: 'name', weight: 0.7 },
-      { name: meaningKey, weight: 0.3 }
-    ],
-    threshold: 0.4,
-    includeScore: true,
-    // Custom getter to normalize data fields so typing "sh" matches "ş" or "î" matches "i"
-    getFn: (obj: any, path: string | string[]) => {
-      const key = Array.isArray(path) ? path[0] : path;
-      const value = obj[key];
-      if (typeof value === 'string') {
-        return normalizeText(value);
-      }
-      return value;
+  // Instantiate MiniSearch
+  const miniSearch = new MiniSearch<NameData>({
+    fields: ['name', meaningKey], // Fields to index
+    idField: 'id',
+    extractField: (document, fieldName) => {
+      // Normalize fields during indexing so "sh" matches "ş" etc.
+      const value = document[fieldName as keyof NameData];
+      return typeof value === 'string' ? normalizeText(value) : (value as any);
+    },
+    searchOptions: {
+      boost: { name: 2 }, // Name matches are 2x more important than meaning matches
+      fuzzy: 0.2, // Handle typos
+      prefix: true // Prefix search for as-you-type experience
     }
-  };
+  });
 
-  const fuse = new Fuse(list, options);
-  const searchResults = fuse.search(normalizedQuery);
+  miniSearch.addAll(list);
 
-  // Return NameData objects sorted by relevance (highest score first)
-  return searchResults.map(res => res.item);
+  const searchResults = miniSearch.search(normalizedQuery);
+
+  // Map back to original NameData objects
+  const idMap = new Map(list.map(item => [item.id, item]));
+  return searchResults.map(res => idMap.get(res.id)).filter(Boolean) as NameData[];
 }
-
