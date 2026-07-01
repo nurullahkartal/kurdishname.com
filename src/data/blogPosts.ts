@@ -11,6 +11,93 @@ export interface BlogPostMeta {
 
 export const blogPostsRegistry: BlogPostMeta[] = [
   {
+    "id": "modern-ve-populer-kurtce-isimler-ve-anlamlari",
+    "date": "2026-07-01",
+    "author": "KurdishName Editorial",
+    "slugs": {
+      "tr": "modern-ve-populer-kurtce-isimler-ve-anlamlari",
+      "en": "modern-and-popular-kurdish-names-and-meanings",
+      "de": "moderne-und-beliebte-kurdische-namen-und-bedeutungen",
+      "ar": "اسماء-كردية-حديثة-وشعبية-ومعانيها"
+    },
+    "tags": {
+      "tr": ["Kürtçe İsimler", "Kürtçe Kız İsimleri", "Kürtçe Erkek İsimleri", "Modern İsimler"],
+      "en": ["Kurdish Names", "Kurdish Girl Names", "Kurdish Boy Names", "Modern Names"],
+      "de": ["Kurdische Namen", "Kurdische Mädchennamen", "Kurdische Jungennamen", "Moderne Namen"],
+      "ar": ["أسماء كردية", "أسماء بنات كردية", "أسماء أولاد كردية", "أسماء حديثة"]
+    },
+    "titles": {
+      "tr": "Modern ve Popüler Kürtçe İsimler ve Anlamları (Güncel Rehber)",
+      "en": "Modern and Popular Kurdish Names and Meanings (Current Guide)",
+      "de": "Moderne und beliebte kurdische Namen und Bedeutungen (Aktueller Leitfaden)",
+      "ar": "أسماء كردية حديثة وشعبية ومعانيها (دليل محدث)"
+    },
+    "descriptions": {
+      "tr": "Kürtçe isimler, kürtçe kız isimleri ve erkek isimleri arayanlar için modern, duyulmamış ve en popüler isim seçenekleri. Anlamları ve kökenleriyle tam liste.",
+      "en": "Modern, unique, and the most popular Kurdish name options for those looking for Kurdish names, girl names, and boy names. Full list with meanings and origins.",
+      "de": "Moderne, seltene und die beliebtesten kurdischen Namensoptionen für alle, die nach kurdischen Namen, Mädchennamen und Jungennamen suchen.",
+      "ar": "خيارات أسماء كردية حديثة ونادرة وأكثرها شعبية للباحثين عن أسماء بنات وأولاد."
+    }
+  },
+  {
+    "id": "kurtce-isim-soru-cevap-rehberi-ava-ardil-ajwan-anlami",
+    "date": "2026-07-01",
+    "author": "KurdishName Editorial",
+    "slugs": {
+      "tr": "kurtce-isim-soru-cevap-rehberi-ava-ardil-ajwan-anlami",
+      "en": "kurdish-names-q-a-guide-ava-ardil-ajwan-meaning",
+      "de": "kurdische-namen-faq-ava-ardil-ajwan-bedeutung",
+      "ar": "دليل-الاسئلة-والاجوبة-للاسماء-الكردية-افا-ارديل"
+    },
+    "tags": {
+      "tr": ["Ava İsmi Kürtçe Mi", "Ardil Anlamı", "Kürtçe İsimler", "Soru Cevap"],
+      "en": ["Ava Name Kurdish", "Ardil Meaning", "Kurdish Names", "Q&A"],
+      "de": ["Ist Ava Kurdisch", "Ardil Bedeutung", "Kurdische Namen", "FAQ"],
+      "ar": ["هل اسم افا كردي", "معنى ارديل", "أسماء كردية", "سؤال وجواب"]
+    },
+    "titles": {
+      "tr": "Kürtçe İsim Soru-Cevap Rehberi: Ava, Ardil, Ajwan ve Daha Fazlası",
+      "en": "Kurdish Names Q&A Guide: Ava, Ardil, Ajwan and More",
+      "de": "Kurdische Namen FAQ Leitfaden: Ava, Ardil, Ajwan und mehr",
+      "ar": "دليل الأسئلة والأجوبة للأسماء الكردية: آفا، أرديل، أجوان والمزيد"
+    },
+    "descriptions": {
+      "tr": "Ava ismi Kürtçe mi? Ardil ne demek? Bejna ve Berxo ne anlama gelir? En çok merak edilen Kürtçe isimlerin anlamlarını ve kökenlerini cevaplıyoruz.",
+      "en": "Is Ava a Kurdish name? What does Ardil mean? What do Bejna and Berxo mean? We answer the meanings and origins of the most curious Kurdish names.",
+      "de": "Ist Ava ein kurdischer Name? Was bedeutet Ardil? Was bedeuten Bejna und Berxo? Wir beantworten die Bedeutungen und Ursprünge der neugierigsten kurdischen Namen.",
+      "ar": "هل آفا اسم كردي؟ ماذا يعني أرديل؟ ما معنى بجنا وبرخو؟ نجيب على معاني وأصول الأسماء الكردية الأكثر فضولاً."
+    }
+  },
+  {
+    "id": "kurtce-isimlerin-tarihi-ve-bahoz-isminin-anlami",
+    "date": "2026-07-01",
+    "author": "KurdishName Editorial",
+    "slugs": {
+      "tr": "kurtce-isimlerin-tarihi-ve-bahoz-isminin-anlami",
+      "en": "history-of-kurdish-names-and-meaning-of-bahoz",
+      "de": "geschichte-kurdischer-namen-und-bedeutung-von-bahoz",
+      "ar": "تاريخ-الاسماء-الكردية-ومعنى-اسم-باهوز"
+    },
+    "tags": {
+      "tr": ["Bahoz Ne Demek", "Tarihi İsimler", "Kürtçe İsimler", "Bahoz İsmi Yasak Mı"],
+      "en": ["Bahoz Meaning", "Historical Names", "Kurdish Names", "Is Bahoz Banned"],
+      "de": ["Bahoz Bedeutung", "Historische Namen", "Kurdische Namen", "Ist Bahoz Verboten"],
+      "ar": ["معنى باهوز", "أسماء تاريخية", "أسماء كردية", "هل باهوز ممنوع"]
+    },
+    "titles": {
+      "tr": "Kürtçe İsimlerin Tarihi ve Bahoz İsminin Anlamı",
+      "en": "History of Kurdish Names and Meaning of Bahoz",
+      "de": "Geschichte der kurdischen Namen und Bedeutung von Bahoz",
+      "ar": "تاريخ الأسماء الكردية ومعنى اسم باهوز"
+    },
+    "descriptions": {
+      "tr": "Tarihsel Kürt isimleri, Bahoz ne demek, Bahoz isminin anlamı nedir ve bu isim yasak mı? Tüm hukuki ve tarihi gerçekler.",
+      "en": "Historical Kurdish names, what Bahoz means, what is the meaning of the name Bahoz, and is this name banned? All legal and historical facts.",
+      "de": "Historische kurdische Namen, was Bahoz bedeutet, was die Bedeutung des Namens Bahoz ist und ist dieser Name verboten? Alle rechtlichen und historischen Fakten.",
+      "ar": "الأسماء الكردية التاريخية، ماذا يعني باهوز، ما معنى اسم باهوز، وهل هذا الاسم ممنوع؟ جميع الحقائق القانونية والتاريخية."
+    }
+  },
+  {
     "id": "en-cok-tercih-edilen-100-kurtce-erkek-ismi-2026",
     "date": "2026-05-13",
     "author": "KurdishName Editorial",
