@@ -1181,10 +1181,21 @@ export default function BlogPost() {
         <meta name="twitter:title" content={`${title} | KurdishName`} />
         <meta name="twitter:description" content={desc} />
         <script type="application/ld+json">
-          {JSON.stringify(articleSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              (function() {
+                const s = { ...articleSchema };
+                delete s['@context'];
+                return s;
+              })(),
+              (function() {
+                const s = { ...faqSchema };
+                delete s['@context'];
+                return s;
+              })()
+            ]
+          })}
         </script>
       </Helmet>
 

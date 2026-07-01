@@ -358,34 +358,35 @@ export default function Home() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "WebSite",
-            "url": "https://kurdishname.com/",
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": `https://kurdishname.com/${lng}?q={search_term_string}`
+            "@graph": [
+              {
+                "@type": "WebSite",
+                "url": "https://kurdishname.com/",
+                "potentialAction": {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": `https://kurdishname.com/${lng}?q={search_term_string}`
+                  },
+                  "query-input": "required name=search_term_string"
+                }
               },
-              "query-input": "required name=search_term_string"
-            }
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Dataset",
-            "name": "KurdishName Database",
-            "description": t("seo_home_description"),
-            "url": `https://kurdishname.com/${lng}`,
-            "keywords": "Kürtçe isimler, Kurdish names, kurdische namen, الأسماء الكردية",
-            "creator": {
-              "@type": "Organization",
-              "name": "KurdishName",
-              "url": "https://kurdishname.com"
-            },
-            "license": `https://kurdishname.com/${lng === 'tr' ? 'tr/kullanim-kosullari' : 'en/terms-of-use'}`,
-            "isAccessibleForFree": true,
-            "size": `${totalNames.toLocaleString()} names`
+              {
+                "@type": "Dataset",
+                "name": "KurdishName Database",
+                "description": t("seo_home_description"),
+                "url": `https://kurdishname.com/${lng}`,
+                "keywords": "Kürtçe isimler, Kurdish names, kurdische namen, الأسماء الكردية",
+                "creator": {
+                  "@type": "Organization",
+                  "name": "KurdishName",
+                  "url": "https://kurdishname.com"
+                },
+                "license": `https://kurdishname.com/${lng === 'tr' ? 'tr/kullanim-kosullari' : 'en/terms-of-use'}`,
+                "isAccessibleForFree": true,
+                "size": `${totalNames.toLocaleString()} names`
+              }
+            ]
           })}
         </script>
       </Helmet>

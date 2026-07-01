@@ -561,30 +561,36 @@ export default function NameDetail() {
         <meta name="twitter:title" content={`${t("seo_name_title", { name: nameItem.name })} | KurdishName`} />
         <meta name="twitter:description" content={description} />
         <script type="application/ld+json">
-          {JSON.stringify(schemaData)}
-        </script>
-        <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            "@graph": [
+              (function() {
+                const s = { ...schemaData };
+                delete s['@context'];
+                return s;
+              })(),
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "KurdishName",
-                "item": `https://kurdishname.com/${lng}`
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": genderText,
-                "item": `https://kurdishname.com${getGenderPath(nameItem.gender) ? generatePath(lng, "category", getGenderPath(nameItem.gender)) : generatePath(lng, null)}`
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": nameItem.name,
-                "item": `https://kurdishname.com${generatePath(lng, "name", nameItem.id)}`
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "KurdishName",
+                    "item": `https://kurdishname.com/${lng}`
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": genderText,
+                    "item": `https://kurdishname.com${getGenderPath(nameItem.gender) ? generatePath(lng, "category", getGenderPath(nameItem.gender)) : generatePath(lng, null)}`
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": nameItem.name,
+                    "item": `https://kurdishname.com${generatePath(lng, "name", nameItem.id)}`
+                  }
+                ]
               }
             ]
           })}

@@ -367,7 +367,7 @@ function replaceHeadMetadata(template: string, options: {
   let html = template;
 
   // Replace <html> tag
-  html = html.replace(/<html[^>]*>/i, `<html lang="${options.lang}" dir="${isRtl ? 'rtl' : 'ltr'}">`);
+  html = html.replace(/<html[^>]*>/i, `<html lang="${options.lang}"${isRtl ? ' dir="rtl"' : ''}>`);
 
   // Replace title
   html = html.replace(/<title>[^<]*<\/title>/i, `<title>${options.title}</title>`);
@@ -381,12 +381,22 @@ function replaceHeadMetadata(template: string, options: {
   // Injects alternates
   const alternatesHtml = options.alternates.map(alt =>
     `<link rel="alternate" hreflang="${alt.lang}" href="${alt.url}" />`
-  ).join('\n') + `\n<link rel="alternate" hreflang="x-default" href="${options.alternates.find(a => a.lang === 'en')?.url || options.alternates[0].url}" />`;
+  ).join('\n') + `\n<link rel="alternate" hreflang="x-default" href="https://kurdishname.com/" />`;
 
-  // Injects JSON-LD
-  const schemasHtml = options.schemas.map(schema =>
-    `<script type="application/ld+json">\n${schema}\n</script>`
-  ).join('\n');
+  // Injects JSON-LD using @graph for consolidation
+  let schemasHtml = '';
+  if (options.schemas && options.schemas.length > 0) {
+    const parsedSchemas = options.schemas.map(s => {
+      const obj = JSON.parse(s);
+      delete obj['@context'];
+      return obj;
+    });
+    const graphSchema = {
+      '@context': 'https://schema.org',
+      '@graph': parsedSchemas
+    };
+    schemasHtml = `<script type="application/ld+json">\n${JSON.stringify(graphSchema)}\n</script>`;
+  }
 
   const headInject = `${alternatesHtml}\n${schemasHtml}\n</head>`;
   html = html.replace(/<\/head>/i, headInject);
@@ -1124,10 +1134,10 @@ async function runSSGPrerendering() {
         <div style="background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.25rem; margin: 2rem 0; display: flex; align-items: flex-start; gap: 0.875rem;">
           <span style="font-size: 1.25rem;">🔗</span>
           <p style="font-size: 0.9rem; margin: 0; color: var(--text-muted); line-height: 1.6;">
-            Discover all meanings, origins, and etymology indexes inside our comprehensive list of 
+            ${t('blog_silo_prefix', 'Discover all meanings, origins, and etymology indexes inside our comprehensive list of ')}
             <a href="${generatePath(lang, 'category', targetCat)}" style="color: var(--accent); font-weight: 700; text-decoration: underline;">
               ${targetCatName}
-            </a>. Comparison modules and advanced finder tools are synchronized.
+            </a>${t('blog_silo_suffix', '. Comparison modules and advanced finder tools are synchronized.')}
           </p>
         </div>
       `;
@@ -1349,39 +1359,15 @@ async function runSSGPrerendering() {
       ` : '';
 
       // Link Silo Card
-      const linkSiloData: Record<string, { prefix: string, anchor: string, suffix: string }> = {
-        tr: {
-          prefix: "Bebeğiniz için anlamlı bir ad arıyorsanız, daha fazla ",
-          anchor: isFemale ? "Kürtçe Kız İsimleri" : "Kürtçe Erkek İsimleri",
-          suffix: " rehberimizi keşfedin, köken ve telaffuz analizlerini yan yana karşılaştırın."
-        },
-        en: {
-          prefix: "If you are looking for a meaningful name for your baby, discover more ",
-          anchor: isFemale ? "Kurdish Girl Names" : "Kurdish Boy Names",
-          suffix: " in our comprehensive directory, comparing origins and definitions side-by-side."
-        },
-        de: {
-          prefix: "Wenn Sie nach einem bedeutungsvollen Namen für Ihr Baby suchen, entdecken Sie weitere ",
-          anchor: isFemale ? "Kurdische Mädchennamen" : "Kurdische Jungennamen",
-          suffix: " in unserem umfassenden Ratgeber, und vergleichen Sie Herkunft und Bedeutung."
-        },
-        ar: {
-          prefix: "إذا كنت تبحث عن اسم مميز لمولودك الجديد، فاكتشف المزيد من ",
-          anchor: isFemale ? "أسماء البنات الكردية" : "أسماء الأولاد الكردية",
-          suffix: " عبر دليلنا الشامل المخصص للمقارنة وتحليل الأصول اللغوية."
-        }
-      };
-
-      const silo = linkSiloData[lang as keyof typeof linkSiloData] || linkSiloData.tr;
       const linkSiloCardHTML = `
         <div style="background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.25rem; margin-top: 2rem; margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 0.875rem;">
           <span style="font-size: 1.25rem;">🔗</span>
           <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); margin: 0;">
-            ${silo.prefix}
+            ${t('name_silo_prefix', 'Bebeğiniz için anlamlı bir ad arıyorsanız, daha fazla ')}
             <a href="${generatePath(lang, 'category', targetGenderSegment)}" style="color: ${genderColor}; font-weight: 700; text-decoration: underline;">
-              ${silo.anchor}
+              ${isFemale ? t('nav_girls') : t('nav_boys')}
             </a>
-            ${silo.suffix}
+            ${t('name_silo_suffix', ' rehberimizi keşfedin, köken ve telaffuz analizlerini yan yana karşılaştırın.')}
           </p>
         </div>
       `;

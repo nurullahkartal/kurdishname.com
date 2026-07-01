@@ -127,7 +127,7 @@ export function useCanonicalAndHreflang() {
     href: `${baseUrl}${switchLanguagePath(location.pathname, langKey)}`
   }));
 
-  const xDefault = `${baseUrl}${switchLanguagePath(location.pathname, "en")}`;
+  const xDefault = `${baseUrl}/`;
 
   return { canonicalUrl, hreflangs, xDefault };
 }

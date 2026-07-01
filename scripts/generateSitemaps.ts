@@ -116,11 +116,8 @@ function createUrlEntry(
     alternatesXml = '\n' + validAlternates.map(alt => 
       `    <xhtml:link rel="alternate" hreflang="${alt.lang}" href="${escapeXml(alt.url)}"/>`
     ).join('\n');
-    // x-default language fallback (points to Kurdish Name default page version, typically English or Turkish)
-    const defaultAlt = validAlternates.find(a => a.lang === 'tr') || validAlternates[0];
-    if (defaultAlt) {
-      alternatesXml += `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(defaultAlt.url)}"/>`;
-    }
+    // x-default language fallback (points to the absolute root domain as requested)
+    alternatesXml += `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${DOMAIN}/"/>`;
   }
 
   return `  <url>
