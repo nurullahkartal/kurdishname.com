@@ -21,7 +21,6 @@ const Terms = lazy(() => import('./pages/Terms'));
 const Cookies = lazy(() => import('./pages/Cookies'));
 const Contact = lazy(() => import('./pages/Contact'));
 const About = lazy(() => import('./pages/About'));
-const Widget = lazy(() => import('./pages/Widget'));
 const Suggest = lazy(() => import('./pages/Suggest'));
 const Admin = lazy(() => import('./pages/Admin'));
 const Compare = lazy(() => import('./pages/Compare'));
@@ -247,7 +246,6 @@ export default function App() {
                     <Route path={`${routes.cookies}`} element={<Cookies />} />
                     <Route path={`${routes.contact}`} element={<Contact />} />
                     <Route path={`${routes.about}`} element={<About />} />
-                    <Route path={`${routes.widget}`} element={<Widget />} />
                     <Route path={`${routes.suggest}`} element={<Suggest />} />
                     <Route path={`${routes.compare}`} element={<Compare />} />
                     <Route path="admin" element={<Admin />} />

@@ -84,7 +84,6 @@ export default function Layout() {
 
   const corporateLinks = [
     { to: generatePath(lng, "about"), label: t("footer_about", "Hakkımızda") },
-    { to: generatePath(lng, "widget"), label: t("footer_widget", "Widget") },
     { to: generatePath(lng, "privacy"), label: t("footer_privacy", "Gizlilik Politikası") },
     { to: generatePath(lng, "terms"), label: t("footer_terms", "Kullanım Koşulları") },
     { to: generatePath(lng, "contact"), label: t("footer_contact", "İletişim") },
