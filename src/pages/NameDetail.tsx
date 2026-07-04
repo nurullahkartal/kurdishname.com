@@ -564,10 +564,23 @@ export default function NameDetail() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@graph": [
+              {
+                "@type": "WebSite",
+                "name": "KurdishName",
+                "url": "https://kurdishname.com",
+                "description": "Dünyanın en kapsamlı 4 dilli Kürtçe isim rehberi.",
+                "inLanguage": ["tr", "en", "de", "ar"]
+              },
+              {
+                "@type": "Organization",
+                "name": "KurdishName Database",
+                "url": "https://kurdishname.com",
+                "logo": "https://kurdishname.com/logo.png"
+              },
               (function() {
                 const s = { ...schemaData };
                 delete s['@context'];
-                return s;
+                return s['@graph'][0];
               })(),
               {
                 "@type": "BreadcrumbList",

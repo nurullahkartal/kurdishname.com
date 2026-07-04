@@ -2,6 +2,15 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { blogPostsRegistry } from '../src/data/blogPosts.js';
+import React from 'react';
+import { renderToString } from 'react-dom/server';
+
+// Dynamic import or require fallback for react-helmet-async
+import * as reactHelmetAsync from 'react-helmet-async';
+const HelmetProvider = (reactHelmetAsync as any).HelmetProvider || (reactHelmetAsync as any).default?.HelmetProvider;
+const Helmet = (reactHelmetAsync as any).Helmet || (reactHelmetAsync as any).default?.Helmet;
+const HelmetData = (reactHelmetAsync as any).HelmetData || (reactHelmetAsync as any).default?.HelmetData;
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -369,37 +378,67 @@ function replaceHeadMetadata(template: string, options: {
   // Replace <html> tag
   html = html.replace(/<html[^>]*>/i, `<html lang="${options.lang}"${isRtl ? ' dir="rtl"' : ''}>`);
 
-  // Replace title
-  html = html.replace(/<title>[^<]*<\/title>/i, `<title data-rh="true">${options.title}</title>`);
-
-  // Replace description meta
-  html = html.replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i, `<meta data-rh="true" name="description" content="${options.description}">`);
-
-  // Replace canonical link
-  html = html.replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i, `<link rel="canonical" href="${options.canonical}">`);
-
-  // Injects alternates
-  const alternatesHtml = options.alternates.map(alt =>
-    `<link rel="alternate" hreflang="${alt.lang}" href="${alt.url}" />`
-  ).join('\n') + `\n<link rel="alternate" hreflang="x-default" href="https://kurdishname.com/" />`;
-
-  // Injects JSON-LD using @graph for consolidation
-  let schemasHtml = '';
+  // Parse provided schemas for @graph
+  let parsedSchemas: any[] = [];
   if (options.schemas && options.schemas.length > 0) {
-    const parsedSchemas = options.schemas.map(s => {
+    parsedSchemas = options.schemas.map(s => {
       const obj = JSON.parse(s);
       delete obj['@context'];
       return obj;
     });
-    const graphSchema = {
-      '@context': 'https://schema.org',
-      '@graph': parsedSchemas
-    };
-    schemasHtml = `<script type="application/ld+json">\n${JSON.stringify(graphSchema)}\n</script>`;
   }
 
-  const headInject = `${alternatesHtml}\n${schemasHtml}\n</head>`;
-  html = html.replace(/<\/head>/i, headInject);
+  // Inject Global Schemas (WebSite and Organization)
+  parsedSchemas.push(
+    {
+      "@type": "WebSite",
+      "name": "KurdishName",
+      "url": "https://kurdishname.com",
+      "description": "Dünyanın en kapsamlı 4 dilli Kürtçe isim rehberi.",
+      "inLanguage": ["tr", "en", "de", "ar"]
+    },
+    {
+      "@type": "Organization",
+      "name": "KurdishName Database",
+      "url": "https://kurdishname.com",
+      "logo": "https://kurdishname.com/logo.png"
+    }
+  );
+
+  const graphSchema = {
+    '@context': 'https://schema.org',
+    '@graph': parsedSchemas
+  };
+
+  const helmetData = new HelmetData({});
+  
+  const app = React.createElement(
+    HelmetProvider,
+    { context: helmetData.context },
+    React.createElement(
+      Helmet,
+      null,
+      React.createElement('title', null, options.title),
+      React.createElement('meta', { name: 'description', content: options.description }),
+      React.createElement('link', { rel: 'canonical', href: options.canonical }),
+      options.alternates.map(alt => React.createElement('link', { key: alt.lang, rel: 'alternate', hrefLang: alt.lang, href: alt.url })),
+      React.createElement('link', { rel: 'alternate', hrefLang: 'x-default', href: 'https://kurdishname.com/' }),
+      React.createElement('script', { type: 'application/ld+json' }, JSON.stringify(graphSchema))
+    )
+  );
+
+  renderToString(app);
+  
+  const { helmet } = helmetData.context;
+  
+  const headInject = `
+    ${helmet.title.toString()}
+    ${helmet.meta.toString()}
+    ${helmet.link.toString()}
+    ${helmet.script.toString()}
+  </head>`;
+  
+  html = html.replace(/<!-- HEAD_TAGS -->/i, headInject);
 
   return html;
 }
