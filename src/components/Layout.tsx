@@ -310,7 +310,6 @@ export default function Layout() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
             className="fixed inset-0 z-[150] flex flex-col px-6 pb-8 overflow-y-auto menu-overlay-backdrop backdrop-blur-2xl"
-            dir={isRtl ? "rtl" : "ltr"}
           >
             {/* Header spacer to keep alignment perfect */}
             <div className="flex justify-between items-center h-20 opacity-0 pointer-events-none">

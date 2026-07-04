@@ -17,7 +17,7 @@ i18n
       de: { translation: de },
       ar: { translation: ar },
     },
-    fallbackLng: 'tr',
+    fallbackLng: ['tr', 'en'],
     supportedLngs: ['tr', 'en', 'de', 'ar'],
     interpolation: {
       escapeValue: false, // React protects from XSS

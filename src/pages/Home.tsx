@@ -410,6 +410,9 @@ export default function Home() {
           alignItems: "center"
         }}
       >
+        <div style={{ background: "var(--accent-dim)", color: "var(--accent)", padding: "0.5rem 1.25rem", borderRadius: "100px", fontSize: "0.75rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.1em", display: "inline-block", marginBottom: "1.5rem" }}>
+          {t("home_badge", "2026 Modern Kurdish Names")}
+        </div>
         <h1 style={{
           fontFamily: "var(--font-display)",
           fontSize: "clamp(1.5rem, 6vw, 3.5rem)",
