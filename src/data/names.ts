@@ -10,6 +10,16 @@ export interface NameData {
   meaning_ar?: string;
   origin?: string;
   tags?: string[];
+  etymology_tr?: string;
+  etymology_en?: string;
+  etymology_de?: string;
+  etymology_ar?: string;
+  spellings?: {
+    latin?: string;
+    arabic?: string;
+    cyrillic?: string;
+  };
+  famousPeople?: string[];
 }
 
 export const namesData: NameData[] = [];

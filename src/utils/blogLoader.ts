@@ -8,6 +8,13 @@ export interface BlogContentPayload {
   title: string;
   desc: string;
   content: string;
+  author?: {
+    name: string;
+    url?: string;
+  };
+  dateModified?: string;
+  isListicle?: boolean;
+  listicleNames?: string[];
 }
 
 export async function loadBlogPostContent(

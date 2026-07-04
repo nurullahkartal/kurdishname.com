@@ -13,7 +13,11 @@ export const routeTranslations = {
     girls: 'kiz',
     boys: 'erkek',
     suggest: 'isim-oner',
-    compare: 'karsilastir'
+    compare: 'karsilastir',
+    alphabet: 'alfabe',
+    mythology: 'mitoloji',
+    tribes: 'boylar',
+    surnames: 'soyadlari'
   },
   en: {
     category: 'category',
@@ -29,7 +33,11 @@ export const routeTranslations = {
     girls: 'girls',
     boys: 'boys',
     suggest: 'suggest-name',
-    compare: 'compare'
+    compare: 'compare',
+    alphabet: 'alphabet',
+    mythology: 'mythology',
+    tribes: 'tribes',
+    surnames: 'surnames'
   },
   de: {
     category: 'kategorie',
@@ -45,7 +53,11 @@ export const routeTranslations = {
     girls: 'maedchen',
     boys: 'jungen',
     suggest: 'name-vorschlagen',
-    compare: 'vergleichen'
+    compare: 'vergleichen',
+    alphabet: 'alphabet',
+    mythology: 'mythologie',
+    tribes: 'staemme',
+    surnames: 'nachnamen'
   },
   ar: {
     category: 'فئة',
@@ -61,7 +73,11 @@ export const routeTranslations = {
     girls: 'بنات',
     boys: 'ذكور',
     suggest: 'اقتراح-اسم',
-    compare: 'مقارنة'
+    compare: 'مقارنة',
+    alphabet: 'الابجدية',
+    mythology: 'ميثولوجيا',
+    tribes: 'عشائر',
+    surnames: 'القاب'
   }
 } as const;
 

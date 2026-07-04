@@ -1149,7 +1149,8 @@ export default function BlogPost() {
       "logo": {
         "@type": "ImageObject",
         "url": "https://kurdishname.com/logo.webp"
-      }
+      },
+      "dateModified": loadedPost?.dateModified || "2026-07-04T12:00:00Z"
     }
   };
 
@@ -1204,7 +1205,18 @@ export default function BlogPost() {
                 const s = { ...faqSchema };
                 delete s['@context'];
                 return s;
-              })()
+              })(),
+              ...(loadedPost?.isListicle && loadedPost.listicleNames ? [
+                {
+                  "@type": "ItemList",
+                  "name": title,
+                  "itemListElement": loadedPost.listicleNames.map((name, i) => ({
+                    "@type": "ListItem",
+                    "position": i + 1,
+                    "url": `https://kurdishname.com${generatePath(lng, 'name', name.toLowerCase())}`
+                  }))
+                }
+              ] : [])
             ]
           })}
         </script>
@@ -1220,9 +1232,16 @@ export default function BlogPost() {
             {title}
           </h1>
           
-          <div className="flex items-center gap-4 text-sm opacity-70 mb-8 pb-8 border-b border-[var(--border)]">
-            <span>{post.author}</span>
-            <span>{post.date}</span>
+          <div className="flex flex-col gap-2 text-sm opacity-70 mb-8 pb-8 border-b border-[var(--border)]">
+            <div className="flex items-center gap-4">
+              <span>✍️ Editör: {loadedPost?.author?.name || post.author}</span>
+              <span>🗓️ Yayımlanma: {post.date}</span>
+            </div>
+            {loadedPost?.dateModified && (
+              <div className="flex items-center gap-4">
+                <span>🔄 Son Güncelleme: {new Date(loadedPost.dateModified).toLocaleDateString(lng === 'tr' ? 'tr-TR' : 'en-US')}</span>
+              </div>
+            )}
           </div>
 
 
@@ -1242,6 +1261,30 @@ export default function BlogPost() {
                 <Markdown>{content.replaceAll('\\n', '\n')}</Markdown>
               </div>
 
+              {/* LISTICLE RENDERER */}
+              {loadedPost?.isListicle && loadedPost.listicleNames && (
+                <div className="mt-12 flex flex-col gap-6">
+                  {loadedPost.listicleNames.map((listName, idx) => {
+                    const matched = allNames.find(n => n.id.toLowerCase() === listName.toLowerCase());
+                    if (!matched) return null;
+                    return (
+                      <div key={idx} className="bg-[var(--surface-alt)] p-6 rounded-2xl border border-[var(--border)]">
+                        <div className="flex items-center gap-4 mb-3">
+                          <span className="text-2xl font-black text-[var(--accent)] opacity-50">#{idx + 1}</span>
+                          <h3 className="text-2xl font-bold m-0">{matched.name}</h3>
+                          {matched.gender === 'female' ? <span className="px-2 py-1 bg-[var(--female)] text-white text-xs rounded-full">Kız</span> : <span className="px-2 py-1 bg-[var(--male)] text-white text-xs rounded-full">Erkek</span>}
+                        </div>
+                        <p className="text-[var(--text)] opacity-90 text-lg">{lng === 'en' ? matched.meaning_en || matched.meaning : matched.meaning}</p>
+                        <div className="mt-4">
+                          <Link to={generatePath(lng, 'name', matched.id)} className="text-[var(--accent)] hover:underline font-medium text-sm">
+                            Detaylı İncele &rarr;
+                          </Link>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
 
             </div>
 
