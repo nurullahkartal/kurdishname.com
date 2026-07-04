@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /NKadmin/
 
-Sitemap: https://kurdishname.com/sitemap-index.xml
+Sitemap: https://kurdishname.com/sitemap.xml

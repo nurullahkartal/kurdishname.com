@@ -404,7 +404,7 @@ ${blogUrls.filter(Boolean).join('\n')}
   fs.writeFileSync(path.join(publicDir, 'sitemap-blog.xml'), blogXml, 'utf-8');
   console.log(`✓ Generated sitemap-blog.xml with ${blogUrls.length} URLs`);
 
-  // 6. Generate the Master Sitemap Index (sitemap-index.xml)
+  // 6. Generate the Master Sitemap Index (sitemap.xml)
   const indexEntries: string[] = [];
 
   // Index reference to static sitemap
@@ -423,8 +423,8 @@ ${blogUrls.filter(Boolean).join('\n')}
 ${indexEntries.join('\n')}
 </sitemapindex>`;
 
-  fs.writeFileSync(path.join(publicDir, 'sitemap-index.xml'), indexXml, 'utf-8');
-  console.log(`✓ Generated sitemap-index.xml file with ${indexEntries.length} sitemap references`);
+  fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), indexXml, 'utf-8');
+  console.log(`✓ Generated sitemap.xml file with ${indexEntries.length} sitemap references`);
 
   // Final summary statistics (accurate counts based on actual generated URLs)
   const totalSitemaps = 1 + nameSitemaps.length + 1; // static + name sitemaps + blog
