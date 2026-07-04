@@ -98,7 +98,7 @@ export default function Layout() {
   ];
 
   return (
-    <div style={{ background: "var(--bg)", color: "var(--text)", minHeight: "100vh" }} dir={isRtl ? "rtl" : "ltr"}>
+    <div style={{ background: "var(--bg)", color: "var(--text)", minHeight: "100vh" }} dir={isRtl ? "rtl" : undefined}>
       <Helmet htmlAttributes={{ lang: lng }}>
         <title>{t("site_title", "KurdishName")}</title>
         <meta name="author" content="KurdishName" />
