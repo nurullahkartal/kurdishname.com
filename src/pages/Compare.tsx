@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import { Scale, RefreshCw, ChevronRight, Check } from "lucide-react";
@@ -37,8 +37,7 @@ export default function Compare() {
   const [isDropdown1Open, setIsDropdown1Open] = useState(false);
   const [isDropdown2Open, setIsDropdown2Open] = useState(false);
 
-  const [isLoading1, setIsLoading1] = useState(false);
-  const [isLoading2, setIsLoading2] = useState(false);
+
 
   // Load Search Index for Autocompletes
   useEffect(() => {
@@ -53,14 +52,12 @@ export default function Compare() {
       setFullName1(null);
       return;
     }
-    setIsLoading1(true);
     const letters = getLettersForId(selectedId1);
     Promise.all(letters.map(l => loadNamesForLetter(l)))
       .then(chunks => {
         const found = chunks.flat().find(n => n.id.toLowerCase() === selectedId1.toLowerCase());
         setFullName1(found || null);
-      })
-      .finally(() => setIsLoading1(false));
+      });
   }, [selectedId1]);
 
   // Fetch Full Details for Name 2 when ID changes
@@ -69,14 +66,12 @@ export default function Compare() {
       setFullName2(null);
       return;
     }
-    setIsLoading2(true);
     const letters = getLettersForId(selectedId2);
     Promise.all(letters.map(l => loadNamesForLetter(l)))
       .then(chunks => {
         const found = chunks.flat().find(n => n.id.toLowerCase() === selectedId2.toLowerCase());
         setFullName2(found || null);
-      })
-      .finally(() => setIsLoading2(false));
+      });
   }, [selectedId2]);
 
   // Debounce query inputs to prevent main-thread stuttering on keystrokes

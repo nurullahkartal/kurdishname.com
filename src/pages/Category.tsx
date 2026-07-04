@@ -1,12 +1,12 @@
 import { useState, useMemo, useEffect } from "react";
-import { useParams, Link, useLocation, Navigate } from "react-router-dom";
+import { useParams, Link, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { Heart, Sparkles, Shuffle } from "lucide-react";
 // Optimized: native hardware-accelerated CSS animations utilized
-import React, { useRef, useCallback } from "react";
+import { useRef, useCallback } from "react";
 import { NameData } from "../data/names";
-import { generatePath, getGenderFromSlug, getThemeFromSlug, switchLanguagePath } from "../utils/routes";
+import { generatePath, getGenderFromSlug, getThemeFromSlug } from "../utils/routes";
 import { searchWithMiniSearch } from "../utils/search";
 import { getLocalizedMeaning, getLocalizedOrigin } from "../utils/localization";
 import { loadNamesForLetter, loadAllNames } from "../utils/nameLoader";
@@ -61,7 +61,7 @@ export default function Category() {
   const [isLoading, setIsLoading] = useState(true);
   const { t, i18n } = useTranslation();
   const { isFavorite, toggleFavorite } = useFavorites();
-  const location = useLocation();
+
   const lng = i18n.language || "tr";
 
   // URL'den gelen categorySlug parametresinin geçerliliğini kontrol et
@@ -95,7 +95,7 @@ export default function Category() {
     return newArr;
   };
 
-  const alphabet = ["A","B","C","Ç","D","E","Ê","F","G","H","I","Î","J","K","L","M","N","O","P","Q","R","S","Ş","T","U","Û","V","W","X","Y","Z"];
+
 
   useEffect(() => {
     let active = true;
@@ -219,8 +219,6 @@ export default function Category() {
 
   // Content-length based adaptive ad system
   const count = filteredNames.length;
-  const isShort = count < 100;
-  const isMedium = count >= 100 && count < 300;
   const isLong = count >= 300;
 
   const [isDesktop, setIsDesktop] = useState(typeof window !== "undefined" ? window.innerWidth >= 1024 : true);
@@ -536,11 +534,10 @@ export default function Category() {
                     </tr>
                   </thead>
                   <tbody>
-                    {displayNames.map((item, index) => {
+                    {displayNames.map((item) => {
 
                       return (
-                        <React.Fragment key={item.id}>
-                          <tr key={item.id}>
+                        <tr key={item.id}>
                             <td>
                               <Link
                                 to={generatePath(lng, "name", item.id)}
@@ -572,8 +569,6 @@ export default function Category() {
                               </button>
                             </td>
                           </tr>
-
-                        </React.Fragment>
                       );
                     })}
                   </tbody>
@@ -594,7 +589,7 @@ export default function Category() {
           ) : (
             /* ── ALPHABETICAL LIST for letter categories ─── */
             <div>
-              {Object.keys(grouped).sort((a, b) => a.localeCompare(b, 'tr')).map((letter, groupIdx) => (
+              {Object.keys(grouped).sort((a, b) => a.localeCompare(b, 'tr')).map((letter) => (
                 <section
                   key={letter}
                   style={{ marginBottom: "1.5rem" }}

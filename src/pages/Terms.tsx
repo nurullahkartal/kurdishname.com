@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
-import { generatePath } from '../utils/routes';
+
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -15,10 +15,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 }
 
 export default function Terms() {
-  const { t, i18n } = useTranslation();
-  const lng = i18n.language || 'tr';
-  const langs = ['tr', 'en', 'de', 'ar'] as const;
-
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>

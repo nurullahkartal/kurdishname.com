@@ -84,13 +84,13 @@ export type LangKey = keyof typeof routeTranslations;
 const reverseRouteMap: Record<string, RouteKey> = {};
 const reverseSlugMap: Record<string, string> = {};
 
-Object.entries(routeTranslations).forEach(([lang, translations]) => {
+Object.values(routeTranslations).forEach((translations) => {
   Object.entries(translations).forEach(([key, value]) => {
     reverseRouteMap[value.toLowerCase()] = key as RouteKey;
   });
 });
 
-Object.entries(themeSlugs).forEach(([lang, themes]) => {
+Object.values(themeSlugs).forEach((themes) => {
   Object.entries(themes).forEach(([key, value]) => {
     reverseSlugMap[value.toLowerCase()] = key;
   });
@@ -195,7 +195,7 @@ export const switchLanguagePath = (currentPath: string, targetLang: string) => {
   return `/${safeTargetLang}/${targetSegment}${remaining ? `/${remaining}` : ''}`;
 };
 
-export const getGenderFromSlug = (lang: string, slug: string | undefined): "female" | "male" | "letter" | null => {
+export const getGenderFromSlug = (_lang: string, slug: string | undefined): "female" | "male" | "letter" | null => {
   if (!slug) return null;
   const decodedSlug = decodeURIComponent(slug).toLowerCase();
   
@@ -212,7 +212,7 @@ export const getGenderFromSlug = (lang: string, slug: string | undefined): "fema
   return null;
 };
 
-export const getThemeFromSlug = (lang: string, slug: string | undefined): "nature" | "power" | "beauty" | "light" | "wisdom" | null => {
+export const getThemeFromSlug = (_lang: string, slug: string | undefined): "nature" | "power" | "beauty" | "light" | "wisdom" | null => {
   if (!slug) return null;
   const decodedSlug = decodeURIComponent(slug).toLowerCase();
   const themeKey = reverseSlugMap[decodedSlug];

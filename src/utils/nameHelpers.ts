@@ -1,4 +1,3 @@
-import { NameData } from "../data/names";
 
 export const getGenderClass = (gender: "male" | "female" | "unisex", prefix: string) => {
   return `${prefix}-${gender}`;

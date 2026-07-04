@@ -9,7 +9,7 @@ import { NameData } from "../data/names";
 import { generatePath } from "../utils/routes";
 import { getLocalizedMeaning, getLocalizedOrigin } from "../utils/localization";
 import { searchWithMiniSearch } from "../utils/search";
-import { loadNamesForLetter, loadNamesForSearch, getLettersForId, loadAllNames, fetchSearchIndex } from "../utils/nameLoader";
+import { loadNamesForLetter, loadNamesForSearch, fetchSearchIndex } from "../utils/nameLoader";
 import { stats, featuredNames } from "../data/homeStaticData";
 import { blogPostsRegistry } from "../data/blogPosts";
 import { useFavorites } from "../context/FavoritesContext";

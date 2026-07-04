@@ -2,7 +2,6 @@ import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { generatePath } from '../utils/routes';
 
 const inputStyle: React.CSSProperties = {
   width: "100%",
@@ -18,9 +17,7 @@ const inputStyle: React.CSSProperties = {
 };
 
 export default function Contact() {
-  const { t, i18n } = useTranslation();
-  const lng = i18n.language || 'tr';
-  const langs = ['tr', 'en', 'de', 'ar'] as const;
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState<null | 'success'>(null);
 

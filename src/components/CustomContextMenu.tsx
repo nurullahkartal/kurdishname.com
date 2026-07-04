@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import { useState, useEffect } from "react";
 import { Share2, Copy, Home } from 'lucide-react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 export default function CustomContextMenu() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
   const navigate = useNavigate();
-  const location = useLocation();
   const { i18n } = useTranslation();
 
   useEffect(() => {

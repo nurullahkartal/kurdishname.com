@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
-import { Search, Heart, Home, Venus, Mars, Sparkles, MoreHorizontal, X, ArrowLeftRight } from "lucide-react";
+import { Search, Heart, ArrowLeftRight } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
 import LanguageSwitcher from "./LanguageSwitcher";
 import ThemeToggle from "./ThemeToggle";
-import { generatePath, routeTranslations, switchLanguagePath } from "../utils/routes";
+import { generatePath } from "../utils/routes";
 import { useFavorites } from "../context/FavoritesContext";
 import { useCanonicalAndHreflang } from "../utils/seoHook";
 
@@ -24,7 +24,6 @@ export default function Layout() {
   }, [lng]);
   const location = useLocation();
   const navigate = useNavigate();
-  const isRtl = i18n.dir() === "rtl";
   const [searchVal, setSearchVal] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

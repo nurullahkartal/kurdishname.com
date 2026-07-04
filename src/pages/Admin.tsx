@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import { Download, Trash2, Clipboard, Sparkles, Check, Mail, Calendar, UserCheck, Share2, FileText, MessageSquare } from "lucide-react";
-import { useTranslation } from "react-i18next";
+import { Download, Trash2, Clipboard, Sparkles, Check, Mail, Calendar, UserCheck, Share2 } from "lucide-react";
 
 interface SuggestedName {
   id: string;
@@ -14,10 +13,8 @@ interface SuggestedName {
 }
 
 export default function Admin() {
-  const { t } = useTranslation();
   const [suggestions, setSuggestions] = useState<SuggestedName[]>([]);
   const [copiedId, setCopiedId] = useState<string | null>(null);
-  const [isCopiedAll, setIsCopiedAll] = useState(false);
 
   // Copy state for viral marketing elements
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
@@ -115,8 +112,6 @@ export default function Admin() {
     }
     
     navigator.clipboard.writeText(emails);
-    setIsCopiedAll(true);
-    setTimeout(() => setIsCopiedAll(false), 2000);
     alert("Bülten izinli e-postalar panoya kopyalandı!");
   };
 

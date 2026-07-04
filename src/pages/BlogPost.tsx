@@ -5,10 +5,10 @@ import { useTranslation } from 'react-i18next';
 import { useState, useEffect, useMemo } from 'react';
 import { loadAllNames } from '../utils/nameLoader';
 import { injectInternalLinks } from '../utils/internalLinking';
-import { getBlogPostsByLang, blogPostsRegistry } from '../data/blogPosts';
+import { getBlogPostsByLang } from '../data/blogPosts';
 import { loadBlogPostContent, BlogContentPayload } from '../utils/blogLoader';
 import { generatePath } from '../utils/routes';
-import React, { lazy, Suspense } from 'react';
+
 
 
 interface FAQItem {
@@ -1056,7 +1056,7 @@ export default function BlogPost() {
   
   const posts = getBlogPostsByLang(lng);
   const post = posts.find(p => p.slug === slug);
-  const masterPost = blogPostsRegistry.find(p => p.id === post?.id);
+
 
   const [loadedPost, setLoadedPost] = useState<BlogContentPayload | null>(null);
   const [loading, setLoading] = useState(true);
@@ -1127,8 +1127,6 @@ export default function BlogPost() {
   const desc = loadedPost?.desc || post.desc;
 
   const contentLength = content.length;
-  const isShort = contentLength < 1500;
-  const isMedium = contentLength >= 1500 && contentLength < 3500;
   const isLong = contentLength >= 3500;
 
   const articleSchema = {

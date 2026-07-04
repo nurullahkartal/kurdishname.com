@@ -11,35 +11,13 @@ import { getLocalizedMeaning, getLocalizedOrigin } from "../utils/localization";
 import { generateDynamicFaqs } from "../utils/faqGenerator";
 import { loadNamesForLetter, getLettersForId } from "../utils/nameLoader";
 import { isLetterActive } from "../data/config";
-import React, { lazy, Suspense } from "react";
 import { useFavorites } from "../context/FavoritesContext";
 import { getWikidataSameAs } from "../utils/wikidata";
 
 
 // ── Fonetik okunuş üreteci ────────────────────────────────────────────────────
 function generatePronunciation(name: string): string {
-  const rules: [RegExp, string][] = [
-    [/ê/gi,  "ay"],
-    [/î/gi,  "ee"],
-    [/û/gi,  "oo"],
-    [/ş/gi,  "sh"],
-    [/ç/gi,  "ch"],
-    [/x/gi,  "kh"],
-    [/q/gi,  "q"],
-    [/w/gi,  "w"],
-    [/v/gi,  "v"],
-    [/j/gi,  "zh"],
-    [/z/gi,  "z"],
-    [/r/gi,  "r"],
-    // sesli uzatma: tek 'a' -> 'aa' (sözcük başında veya ortasında)
-    [/\ba/g, "aa"],
-    [/a(?=[^aeiouêîûAEIOUÊÎÛ])/g, "aa"],
-    [/e/gi,  "eh"],
-    [/i/gi,  "ih"],
-    [/u/gi,  "u"],
-    [/o/gi,  "o"],
-    [/y/gi,  "y"],
-  ];
+
 
   // Heceye böl ve her hece için kural uygula
   let phonetic = name;
