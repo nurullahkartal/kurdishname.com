@@ -13,6 +13,7 @@ import { loadNamesForLetter, getLettersForId } from "../utils/nameLoader";
 import { isLetterActive } from "../data/config";
 import { useFavorites } from "../context/FavoritesContext";
 import { getWikidataSameAs } from "../utils/wikidata";
+import { BUILD_MODE } from "../core/config/buildMode";
 
 
 // ── Fonetik okunuş üreteci ────────────────────────────────────────────────────
@@ -109,6 +110,7 @@ export default function NameDetail() {
   const [isLoading, setIsLoading] = useState(true);
   const [wikidataSameAs, setWikidataSameAs] = useState<string[]>([]);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+  const [seoScore, setSeoScore] = useState<number | null>(null);
 
   useEffect(() => {
     let active = true;
@@ -132,25 +134,52 @@ export default function NameDetail() {
         
         const safeId = id?.trim().toLowerCase();
         const found = allLoaded.find(n => n.id.toLowerCase() === safeId);
+        
+        let seoData: any = null;
+        let linkData: any = null;
+
+        if (found && BUILD_MODE === "graph") {
+          try {
+            const [seoRes, linkRes] = await Promise.all([
+              fetch("/data/seo_scores.json"),
+              fetch("/data/link_map.json")
+            ]);
+            if (seoRes.ok) seoData = await seoRes.json();
+            if (linkRes.ok) linkData = await linkRes.json();
+          } catch (e) {
+            console.warn("Graph data failed to load", e);
+          }
+        }
+
         if (active) {
           setNameItem(found || null);
           if (found) {
-            // Find alike names
-            const alike = allLoaded
-              .filter((n) => n.gender === found.gender && n.id.toLowerCase() !== safeId)
-              .map((n) => {
-                let score = 0;
-                if (n.letter === found.letter) score += 10;
-                if (n.origin === found.origin) score += 20;
-                if (n.tags && found.tags) {
-                  const shared = n.tags.filter(tag => found.tags?.includes(tag));
-                  score += shared.length * 5;
-                }
-                return { ...n, score };
-              })
-              .sort((a, b) => b.score - a.score || Math.random() - 0.5)
-              .slice(0, 8);
-            setAlikeNames(alike);
+            if (seoData && seoData[found.id]) {
+              setSeoScore(seoData[found.id]);
+            }
+
+            if (linkData && linkData[found.id]) {
+              const semanticIds = linkData[found.id];
+              const alike = semanticIds.map((sid: string) => allLoaded.find(n => n.id === sid)).filter(Boolean);
+              setAlikeNames(alike.slice(0, 8));
+            } else {
+              // Find alike names fallback
+              const alike = allLoaded
+                .filter((n) => n.gender === found.gender && n.id.toLowerCase() !== safeId)
+                .map((n) => {
+                  let score = 0;
+                  if (n.letter === found.letter) score += 10;
+                  if (n.origin === found.origin) score += 20;
+                  if (n.tags && found.tags) {
+                    const shared = n.tags.filter(tag => found.tags?.includes(tag));
+                    score += shared.length * 5;
+                  }
+                  return { ...n, score };
+                })
+                .sort((a, b) => b.score - a.score || Math.random() - 0.5)
+                .slice(0, 8);
+              setAlikeNames(alike);
+            }
           }
         }
       } catch (err) {
@@ -751,6 +780,21 @@ export default function NameDetail() {
               {dialectInfo.label[lng as keyof typeof dialectInfo.label] || dialectInfo.label.en}
             </span>
           )}
+
+          {/* SEO Score Badge */}
+          {seoScore !== null && (
+            <span style={{
+              padding: "0.3rem 0.875rem",
+              borderRadius: "100px",
+              background: "var(--text)",
+              color: "var(--bg)",
+              fontSize: "0.78rem",
+              fontWeight: 800,
+              boxShadow: "0 2px 8px rgba(0,0,0,0.15)"
+            }}>
+              ⭐ SEO Puanı: {seoScore}/100
+            </span>
+          )}
         </div>
       </motion.section>
 
@@ -1036,7 +1080,15 @@ export default function NameDetail() {
               border: "1px solid var(--border)" 
             }}>
               {/* H3: Sidebar benzer isimler — görsel boyut korundu */}
-              <h3 style={{ fontSize: "1rem", fontWeight: 800, marginBottom: "1rem" }}>{t("detail_similar_rich", { name: nameItem.name, genderText: genderText, defaultValue: "Benzer İsimler" })}</h3>
+              <h3 style={{ fontSize: "1rem", fontWeight: 800, marginBottom: "1rem", display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                {BUILD_MODE === "graph" ? (
+                  <>
+                    <span>🧠</span> {t("detail_semantic_links", "Semantik Bağlantılar")}
+                  </>
+                ) : (
+                  t("detail_similar_rich", { name: nameItem.name, genderText: genderText, defaultValue: "Benzer İsimler" })
+                )}
+              </h3>
               <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                 {alikeNames.slice(0, 5).map(an => (
                   <Link

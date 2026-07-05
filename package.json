@@ -5,12 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "tsx scripts/generateSitemaps.ts && vite build && tsx scripts/generateSSG.ts",
+    "build": "vite build && tsx scripts/build.ts",
     "postbuild": "tsx scripts/deploy.ts",
     "deploy": "npx wrangler pages deploy dist --project-name=kurdishname --branch=kurdishname --commit-dirty=true",
     "preview": "vite preview",
     "clean": "rm -rf dist",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "build:legacy": "vite build && tsx scripts/generateSSG.ts",
+    "build:safe": "vite build && tsx scripts/buildAll.ts && tsx scripts/validateBuild.ts"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.14",
