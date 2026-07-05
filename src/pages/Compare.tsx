@@ -9,7 +9,8 @@ import { getLocalizedMeaning, getLocalizedOrigin } from "../utils/localization";
 import { fetchSearchIndex, loadNamesForLetter, getLettersForId } from "../utils/nameLoader";
 import { useFavorites } from "../context/FavoritesContext";
 import { searchWithMiniSearch } from "../utils/search";
-
+import { compareNames } from "../core/compare/compareEngine";
+import { trackCompareEvent } from "../core/compare/logger";
 // Helper to determine deterministic stars for popularity
 const getPopularityStars = (name: string): number => {
   let hash = 0;
@@ -107,44 +108,16 @@ export default function Compare() {
   const harmonyResult = useMemo(() => {
     if (!fullName1 || !fullName2) return null;
     
-    const n1 = fullName1.name.toLowerCase();
-    const n2 = fullName2.name.toLowerCase();
-
-    let score = 50; // default base
-
-    // Vowel matches
-    const vowels = ['a', 'e', 'i', 'î', 'o', 'u', 'û', 'ê'];
-    const vowels1 = [...n1].filter(char => vowels.includes(char));
-    const vowels2 = [...n2].filter(char => vowels.includes(char));
-    
-    const sharedVowels = vowels1.filter(v => vowels2.includes(v));
-    score += sharedVowels.length * 8;
-
-    // Length difference
-    const lenDiff = Math.abs(n1.length - n2.length);
-    if (lenDiff === 0) score += 15;
-    else if (lenDiff === 1) score += 10;
-    else if (lenDiff === 2) score += 5;
-
-    // Ending letters match
-    if (n1.slice(-1) === n2.slice(-1)) score += 15;
-    // Starting letters match
-    if (n1.charAt(0) === n2.charAt(0)) score += 10;
-
-    const finalScore = Math.min(Math.max(score, 30), 98); // Lock between 30% and 98% for playful authenticity
-    
-    let label = t("harmony_good", "Güzel Uyum");
-    let color = "#10b981"; // green
-    if (finalScore >= 85) {
-      label = t("harmony_perfect", "Kusursuz Uyum!");
-      color = "#f59e0b"; // golden
-    } else if (finalScore < 60) {
-      label = t("harmony_neutral", "Uyumlu Yapıda");
-      color = "var(--text-muted)";
-    }
-
-    return { score: finalScore, label, color };
+    const result = compareNames(fullName1, fullName2, t);
+    return result;
   }, [fullName1, fullName2, t]);
+
+  // Track event whenever harmonyResult changes to a valid score
+  useEffect(() => {
+    if (harmonyResult && fullName1 && fullName2) {
+      trackCompareEvent(fullName1.id, fullName2.id, harmonyResult.score);
+    }
+  }, [harmonyResult, fullName1, fullName2]);
 
   // Quick select from favorites
   const handleSelectFromFavorites = (id: string) => {
@@ -510,6 +483,32 @@ export default function Compare() {
                     transition: "width 500ms ease-out"
                   }} />
                 </div>
+
+                {/* Explanations (AI Insights) */}
+                {harmonyResult.explanations && harmonyResult.explanations.length > 0 && (
+                  <div style={{ marginTop: "1.5rem", textAlign: "left", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+                    <div style={{ fontSize: "0.75rem", fontWeight: 700, color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.25rem" }}>
+                      Analiz Özeti
+                    </div>
+                    {harmonyResult.explanations.map((exp, idx) => (
+                      <div key={idx} style={{
+                        display: "flex", alignItems: "center", gap: "0.5rem", fontSize: "0.8125rem", color: "var(--text)",
+                        background: exp.type === 'positive' ? 'rgba(16, 185, 129, 0.05)' : exp.type === 'negative' ? 'rgba(239, 68, 68, 0.05)' : 'rgba(156, 163, 175, 0.05)',
+                        padding: "0.5rem 0.75rem",
+                        borderRadius: "0.5rem",
+                        border: `1px solid ${exp.type === 'positive' ? 'rgba(16, 185, 129, 0.1)' : exp.type === 'negative' ? 'rgba(239, 68, 68, 0.1)' : 'rgba(156, 163, 175, 0.1)'}`
+                      }}>
+                        <span style={{ 
+                          color: exp.type === 'positive' ? '#10b981' : exp.type === 'negative' ? '#ef4444' : '#9ca3af',
+                          fontWeight: 900
+                        }}>
+                          {exp.type === 'positive' ? '✓' : exp.type === 'negative' ? '✕' : '•'}
+                        </span>
+                        <span>{exp.text}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             )}
 
