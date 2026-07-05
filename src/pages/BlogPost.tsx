@@ -1268,10 +1268,12 @@ export default function BlogPost() {
                     const matched = allNames.find(n => n.id.toLowerCase() === listName.toLowerCase());
                     if (!matched) return null;
                     return (
-                      <div key={idx} className="bg-[var(--surface-alt)] p-6 rounded-2xl border border-[var(--border)]">
+                      <div key={idx} className="bg-[var(--surface-alt)] p-6 rounded-2xl border border-[var(--border)] transition-transform hover:-translate-y-1 hover:shadow-lg">
                         <div className="flex items-center gap-4 mb-3">
                           <span className="text-2xl font-black text-[var(--accent)] opacity-50">#{idx + 1}</span>
-                          <h3 className="text-2xl font-bold m-0">{matched.name}</h3>
+                          <Link to={generatePath(lng, 'name', matched.id)} className="text-[var(--text)] hover:text-[var(--accent)] transition-colors no-underline">
+                            <h3 className="text-2xl font-bold m-0">{matched.name}</h3>
+                          </Link>
                           {matched.gender === 'female' ? <span className="px-2 py-1 bg-[var(--female)] text-white text-xs rounded-full">Kız</span> : <span className="px-2 py-1 bg-[var(--male)] text-white text-xs rounded-full">Erkek</span>}
                         </div>
                         <p className="text-[var(--text)] opacity-90 text-lg">{lng === 'en' ? matched.meaning_en || matched.meaning : matched.meaning}</p>
