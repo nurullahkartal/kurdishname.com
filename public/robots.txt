@@ -1,5 +1,62 @@
+# KurdishName — robots.txt
+# https://kurdishname.com
+
 User-agent: *
 Allow: /
 Disallow: /NKadmin/
 
+# ── AI & LLM Crawlers ─────────────────────────────────────────────────────────
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Google Gemini / Extended
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Meta / Llama
+User-agent: FacebookBot
+Allow: /
+
+# Apple
+User-agent: Applebot-Extended
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Common search bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# ── Sitemaps ──────────────────────────────────────────────────────────────────
 Sitemap: https://kurdishname.com/sitemap.xml
+Sitemap: https://kurdishname.com/sitemap-blog.xml
+Sitemap: https://kurdishname.com/sitemap-static.xml

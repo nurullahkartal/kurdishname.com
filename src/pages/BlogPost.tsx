@@ -1139,18 +1139,21 @@ export default function BlogPost() {
     "headline": title,
     "description": desc,
     "datePublished": post.date,
+    "dateModified": loadedPost?.dateModified || "2026-07-04T12:00:00Z",
     "author": {
-      "@type": "Person",
-      "name": post.author || "KurdishName Team"
+      "@type": "Organization",
+      "@id": "https://kurdishname.com/#editorial-board",
+      "name": "KurdishName Editorial Board",
+      "url": "https://kurdishname.com/en/editorial-board"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "KurdishName",
+      "@id": "https://kurdishname.com/#editorial-board",
+      "name": "KurdishName Editorial Board",
       "logo": {
         "@type": "ImageObject",
         "url": "https://kurdishname.com/logo.webp"
-      },
-      "dateModified": loadedPost?.dateModified || "2026-07-04T12:00:00Z"
+      }
     }
   };
 
@@ -1192,9 +1195,11 @@ export default function BlogPost() {
               },
               {
                 "@type": "Organization",
-                "name": "KurdishName Database",
+                "@id": "https://kurdishname.com/#editorial-board",
+                "name": "KurdishName Editorial Board",
                 "url": "https://kurdishname.com",
-                "logo": "https://kurdishname.com/logo.png"
+                "logo": "https://kurdishname.com/logo.webp",
+                "sameAs": ["https://kurdishname.com/en/editorial-board"]
               },
               (function() {
                 const s = { ...articleSchema };
@@ -1234,12 +1239,19 @@ export default function BlogPost() {
           
           <div className="flex flex-col gap-2 text-sm opacity-70 mb-8 pb-8 border-b border-[var(--border)]">
             <div className="flex items-center gap-4">
-              <span>✍️ Editör: {loadedPost?.author?.name || post.author}</span>
-              <span>🗓️ Yayımlanma: {post.date}</span>
+              <span>✍️ {lng === 'ar' ? 'المحرر:' : lng === 'de' ? 'Redaktion:' : lng === 'tr' ? 'Editör:' : 'Editor:'}{' '}
+                <Link
+                  to={generatePath(lng, 'editorial')}
+                  style={{ color: 'var(--accent)', textDecoration: 'underline', fontWeight: 600 }}
+                >
+                  KurdishName Editorial Board
+                </Link>
+              </span>
+              <span>🗓️ {post.date}</span>
             </div>
             {loadedPost?.dateModified && (
               <div className="flex items-center gap-4">
-                <span>🔄 Son Güncelleme: {new Date(loadedPost.dateModified).toLocaleDateString(lng === 'tr' ? 'tr-TR' : 'en-US')}</span>
+                <span>🔄 {lng === 'ar' ? 'آخر تحديث:' : lng === 'de' ? 'Letzte Aktualisierung:' : lng === 'tr' ? 'Son Güncelleme:' : 'Last Updated:'} {new Date(loadedPost.dateModified).toLocaleDateString(lng === 'tr' ? 'tr-TR' : lng === 'ar' ? 'ar-SA' : lng === 'de' ? 'de-DE' : 'en-US')}</span>
               </div>
             )}
           </div>
@@ -1293,6 +1305,31 @@ export default function BlogPost() {
 
           </div>
 
+          {/* Summary Block — Bu Sayfada Öğrendikleriniz */}
+          {faqItems.length > 0 && (
+            <section style={{
+              marginTop: "2.5rem",
+              background: "var(--surface)",
+              border: "1px solid var(--border)",
+              borderLeft: "4px solid var(--accent)",
+              borderRadius: "var(--r-lg)",
+              padding: "1.5rem 2rem"
+            }}>
+              <h2 style={{ fontSize: "1.1rem", fontWeight: 800, marginBottom: "1rem", color: "var(--text)", display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                <span>📋</span>
+                {lng === 'ar' ? 'ما تعلمته في هذه الصفحة' : lng === 'de' ? 'Was Sie auf dieser Seite gelernt haben' : lng === 'tr' ? 'Bu Sayfada Öğrendikleriniz' : 'What You Learned on This Page'}
+              </h2>
+              <ul style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: "0.6rem" }}>
+                {faqItems.slice(0, 4).map((item, i) => (
+                  <li key={i} style={{ display: "flex", gap: "0.5rem", fontSize: "0.9rem", color: "var(--text-muted)", lineHeight: 1.6 }}>
+                    <span style={{ flexShrink: 0, color: "var(--accent)", fontWeight: 700 }}>✓</span>
+                    <span><strong style={{ color: "var(--text)" }}>{item.question}</strong> — {item.answer.length > 120 ? item.answer.slice(0, 120) + "…" : item.answer}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           {/* Premium SEO Block */}
           <section className="mt-16 content-card bg-gradient-to-br from-[var(--surface-alt)] to-[var(--surface)] border border-[var(--border)] p-8 sm:p-12 rounded-3xl shadow-lg relative overflow-hidden select-text">
             <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--accent)]/5 rounded-full blur-3xl pointer-events-none"></div>
@@ -1307,6 +1344,16 @@ export default function BlogPost() {
               <p>
                 Doğru adı seçme sürecinde ailelere rehberlik eden platformumuz, binlerce yıllık etimolojik kökleri inceleyerek en güncel isim veritabanını bir araya getirmektedir. Aradığınız ismin anlamını, kökenini ve kültürel bağlarını saniyeler içinde keşfetmenizi sağlayan gelişmiş <Link to={generatePath(lng, 'finder')} className="font-bold hover:text-[var(--accent)] transition-colors text-[var(--accent)]">{t("seo_link_name_finder")}</Link> aracımız sayesinde, harf, cinsiyet ve tema filtrelemeleriyle aradığınız mükemmel seçeneğe kolayca ulaşabilirsiniz. Kürt edebiyatının en seçkin divan motiflerinden, bilge Dengbêj stranlarından ve Mezopotamya’nın yüce dağlarından ilham alan bu **kürtçe kelimeler ve anlamları**, sadece birer isim olmanın ötesinde çocuklarınıza geleceğe gururla taşıyacakları kültürel birer miras sunmaktadır.
               </p>
+            </div>
+            {/* Editorial Board footer link */}
+            <div style={{ marginTop: "1.5rem", paddingTop: "1rem", borderTop: "1px solid var(--border)", fontSize: "0.8rem", color: "var(--text-faint)", display: "flex", gap: "0.5rem", alignItems: "center" }}>
+              <span>✍️ {lng === 'ar' ? 'المحرر:' : lng === 'de' ? 'Redaktion:' : lng === 'tr' ? 'İçerik Editörü:' : 'Content Editor:'}</span>
+              <Link
+                to={generatePath(lng, 'editorial')}
+                style={{ color: "var(--accent)", textDecoration: "underline", fontWeight: 600 }}
+              >
+                KurdishName Editorial Board
+              </Link>
             </div>
           </section>
 

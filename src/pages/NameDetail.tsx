@@ -303,21 +303,57 @@ export default function NameDetail() {
         },
         "inDefinedTermSet": {
           "@type": "DefinedTermSet",
-          "name": "KurdishName Dictionary",
+          "name": "KurdishName Comprehensive Dictionary",
           "description": "Comprehensive dictionary of Kurdish personal names with etymology, gender, and dialect information.",
           "url": "https://kurdishname.com",
           "inLanguage": "ku"
+        },
+        "author": {
+          "@type": "Organization",
+          "@id": "https://kurdishname.com/#editorial-board",
+          "name": "KurdishName Editorial Board",
+          "url": "https://kurdishname.com/en/editorial-board"
+        },
+        "reviewedBy": {
+          "@type": "Organization",
+          "@id": "https://kurdishname.com/#editorial-board",
+          "name": "KurdishName Editorial Board",
+          "url": "https://kurdishname.com/en/editorial-board"
         },
         "additionalProperty": [
           { "@type": "PropertyValue", "name": "gender", "value": nameItem.gender },
           { "@type": "PropertyValue", "name": "origin", "value": nameItem.origin || "Kurdish" },
           { "@type": "PropertyValue", "name": "pronunciation", "value": pronunciationStr },
           ...(dialectInfo ? [{ "@type": "PropertyValue", "name": "dialect", "value": dialectInfo.label["en"] }] : []),
+          ...(nameItem.spellings?.latin ? [{ "@type": "PropertyValue", "name": "spellingLatin", "value": nameItem.spellings.latin }] : []),
+          ...(nameItem.spellings?.arabic ? [{ "@type": "PropertyValue", "name": "spellingArabic", "value": nameItem.spellings.arabic }] : []),
           ...(nameItem.tags ? [{ "@type": "PropertyValue", "name": "themes", "value": nameItem.tags.join(", ") }] : [])
         ],
         ...(wikidataSameAs.length > 0 ? { "sameAs": wikidataSameAs } : {})
       }
     ]
+  };
+
+  // Dataset şeması — tüm sözlüğü temsil eder (bir kez, DefinedTerm ile birlikte enjekte edilir)
+  const datasetSchema = {
+    "@type": "Dataset",
+    "name": "KurdishName Comprehensive Name Dictionary",
+    "description": "A multilingual database of 41,000+ Kurdish personal names including meaning, origin, dialect, pronunciation, and spelling variations in Kurmanji, Sorani, and Zazaki.",
+    "url": "https://kurdishname.com",
+    "creator": {
+      "@type": "Organization",
+      "@id": "https://kurdishname.com/#editorial-board",
+      "name": "KurdishName Editorial Board"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "KurdishName",
+      "url": "https://kurdishname.com"
+    },
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "inLanguage": ["ku", "tr", "en", "de", "ar"],
+    "keywords": "Kurdish names, Kurdish linguistics, Kurdish onomastics, Kurmanji, Sorani, Zazaki",
+    "dateModified": "2026-07-04"
   };
 
 
@@ -551,15 +587,18 @@ export default function NameDetail() {
               },
               {
                 "@type": "Organization",
-                "name": "KurdishName Database",
+                "@id": "https://kurdishname.com/#editorial-board",
+                "name": "KurdishName Editorial Board",
                 "url": "https://kurdishname.com",
-                "logo": "https://kurdishname.com/logo.png"
+                "logo": "https://kurdishname.com/logo.webp",
+                "sameAs": ["https://kurdishname.com/en/editorial-board"]
               },
               (function() {
                 const s = { ...schemaData };
                 delete s['@context'];
                 return s['@graph'][0];
               })(),
+              datasetSchema,
               {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
@@ -587,8 +626,10 @@ export default function NameDetail() {
                 "@type": "ProfilePage",
                 "dateModified": "2026-07-04T12:00:00Z",
                 "author": {
-                  "@type": "Person",
-                  "name": "KurdishName Editorial Team"
+                  "@type": "Organization",
+                  "@id": "https://kurdishname.com/#editorial-board",
+                  "name": "KurdishName Editorial Board",
+                  "url": "https://kurdishname.com/en/editorial-board"
                 }
               }
             ]
@@ -712,6 +753,91 @@ export default function NameDetail() {
           )}
         </div>
       </motion.section>
+
+      {/* ── AI-Dostu Key-Value Ham Veri Bloğu ─────────────────────────────────────
+           Bu blok; LLM'ler, AI crawler'ları ve arama motorları için optimize edilmiştir.
+           Paragraf yerine temiz etiket:değer formatı kullanılır.
+      ────────────────────────────────────────────────────────────────────────── */}
+      <section
+        aria-label={lng === "ar" ? "بيانات الاسم المنظمة" : lng === "de" ? "Strukturierte Namensdaten" : lng === "tr" ? "İsim Yapılandırılmış Veri" : "Structured Name Data"}
+        style={{
+          background: "var(--surface)",
+          border: "1px solid var(--border)",
+          borderRadius: "var(--r-md)",
+          padding: "1.25rem 1.5rem",
+          marginBottom: "2rem",
+          fontSize: "0.875rem"
+        }}
+      >
+        <h2 style={{
+          fontSize: "0.7rem",
+          textTransform: "uppercase",
+          letterSpacing: "0.1em",
+          color: "var(--text-faint)",
+          fontWeight: 700,
+          marginBottom: "1rem"
+        }}>
+          {lng === "ar" ? "📊 بيانات الاسم — نظرة سريعة" : lng === "de" ? "📊 Namensdaten — Kurzübersicht" : lng === "tr" ? "📊 İsim Verileri — Hızlı Bakış" : "📊 Name Data — Quick Reference"}
+        </h2>
+        <dl style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
+          gap: "0.5rem 2rem",
+          margin: 0
+        }}>
+          {[
+            {
+              label: lng === "ar" ? "الاسم / Name" : lng === "de" ? "Name / İsim" : lng === "tr" ? "İsim / Name" : "Name / İsim",
+              value: nameItem.name
+            },
+            {
+              label: lng === "ar" ? "النطق / Pronunciation" : lng === "de" ? "Aussprache / Telaffuz" : lng === "tr" ? "Telaffuz / Pronunciation" : "Pronunciation / Telaffuz",
+              value: pronunciationStr
+            },
+            {
+              label: lng === "ar" ? "المعنى / Meaning" : lng === "de" ? "Bedeutung / Anlam" : lng === "tr" ? "Anlam / Meaning" : "Meaning / Anlam",
+              value: meaning || "—"
+            },
+            {
+              label: lng === "ar" ? "الأصل / Origin" : lng === "de" ? "Herkunft / Köken" : lng === "tr" ? "Köken / Origin" : "Origin / Köken",
+              value: origin || "—"
+            },
+            ...(dialectInfo ? [{
+              label: lng === "ar" ? "اللهجة / Dialect" : lng === "de" ? "Dialekt / Lehçe" : lng === "tr" ? "Lehçe / Dialect" : "Dialect / Lehçe",
+              value: dialectInfo.label[lng as keyof typeof dialectInfo.label] || dialectInfo.label.en
+            }] : []),
+            {
+              label: lng === "ar" ? "النوع / Gender" : lng === "de" ? "Geschlecht / Cinsiyet" : lng === "tr" ? "Cinsiyet / Gender" : "Gender / Cinsiyet",
+              value: genderText
+            },
+            ...(nameItem.spellings ? [{
+              label: lng === "ar" ? "التهجئة / Variations" : lng === "de" ? "Schreibweise / Varyasyonlar" : lng === "tr" ? "Varyasyonlar / Variations" : "Variations / Varyasyonlar",
+              value: [
+                nameItem.spellings.latin,
+                nameItem.spellings.arabic,
+                nameItem.spellings.cyrillic
+              ].filter(Boolean).join(" · ") || "—"
+            }] : []),
+            {
+              label: lng === "ar" ? "المصادر / Sources" : lng === "de" ? "Quellen / Kaynaklar" : lng === "tr" ? "Kaynaklar / Sources" : "Sources / Kaynaklar",
+              value: "Ferhenga Kurmancî · Kurdipedia · KDI Archives"
+            },
+            {
+              label: lng === "ar" ? "آخر تحديث / Last Updated" : lng === "de" ? "Letzte Aktualisierung" : lng === "tr" ? "Son Güncelleme / Last Updated" : "Last Updated / Son Güncelleme",
+              value: new Date("2026-07-04").toLocaleDateString(lng === 'ar' ? 'ar-SA' : lng === 'de' ? 'de-DE' : lng === 'tr' ? 'tr-TR' : 'en-US')
+            }
+          ].map((row, i) => (
+            <div key={i} style={{ display: "flex", flexDirection: "column", gap: "0.15rem", paddingBottom: "0.5rem", borderBottom: "1px solid var(--border-dim)" }}>
+              <dt style={{ fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase", color: "var(--text-faint)", letterSpacing: "0.06em" }}>
+                {row.label}
+              </dt>
+              <dd style={{ margin: 0, fontWeight: 600, color: "var(--text)", fontSize: "0.875rem" }}>
+                {row.value}
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </section>
 
       <div className="name-detail-grid">
         
@@ -1197,20 +1323,51 @@ export default function NameDetail() {
             )}
           </div>
           
-          {/* EEAT Signals */}
+          {/* EEAT Signals + Editorial Board */}
           <div style={{ marginTop: "2rem", paddingTop: "1.5rem", borderTop: "1px solid var(--border)", fontSize: "0.85rem", color: "var(--text-faint)", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-              <span style={{ fontWeight: 600 }}>✍️ İçerik Editörü:</span>
-              <span>KurdishName Editorial Team</span>
+              <span style={{ fontWeight: 600 }}>✍️ {lng === "ar" ? "المحرر:" : lng === "de" ? "Redaktion:" : lng === "tr" ? "İçerik Editörü:" : "Content Editor:"}</span>
+              <Link
+                to={generatePath(lng, "editorial")}
+                style={{ color: "var(--accent)", textDecoration: "underline", fontWeight: 600 }}
+              >
+                KurdishName Editorial Board
+              </Link>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-              <span style={{ fontWeight: 600 }}>🔄 Son Güncelleme:</span>
-              <span>{new Date("2026-07-04").toLocaleDateString(lng === 'tr' ? 'tr-TR' : 'en-US')}</span>
+              <span style={{ fontWeight: 600 }}>🔄 {lng === "ar" ? "آخر تحديث:" : lng === "de" ? "Letzte Aktualisierung:" : lng === "tr" ? "Son Güncelleme:" : "Last Updated:"}</span>
+              <span>{new Date("2026-07-04").toLocaleDateString(lng === 'tr' ? 'tr-TR' : lng === 'ar' ? 'ar-SA' : lng === 'de' ? 'de-DE' : 'en-US')}</span>
             </div>
             <div style={{ display: "flex", alignItems: "flex-start", gap: "0.5rem", marginTop: "0.5rem" }}>
-              <span style={{ fontWeight: 600 }}>📚 Kaynakça:</span>
-              <span style={{ lineHeight: 1.5 }}>Bu sayfadaki isim anlamları, Mezopotamya mitolojisi kayıtları, Kürtçe sözlükler (Zana Farqînî, vb.) ve bağımsız dilbilimcilerin araştırmalarından derlenmiştir.</span>
+              <span style={{ fontWeight: 600 }}>📚 {lng === "ar" ? "المصادر:" : lng === "de" ? "Quellen:" : lng === "tr" ? "Kaynakça:" : "Sources:"}</span>
+              <span style={{ lineHeight: 1.5 }}>
+                {lng === "ar"
+                  ? "استُند في هذه الصفحة إلى Ferhenga Kurmancî وأرشيفات Kurdipedia ومنشورات معهد اللغة الكردية."
+                  : lng === "de"
+                  ? "Diese Seite stützt sich auf Ferhenga Kurmancî, Kurdipedia-Archive und KDI-Publikationen."
+                  : lng === "tr"
+                  ? "Bu sayfadaki veriler Ferhenga Kurmancî, Kurdipedia arşivleri ve KDI yayınlarından derlenmektedir."
+                  : "This page draws from Ferhenga Kurmancî, Kurdipedia archives, and Kurdish Language Institute publications."}
+              </span>
             </div>
+
+            {/* Citation Format Bloğu */}
+            <details style={{ marginTop: "1rem", borderTop: "1px solid var(--border-dim)", paddingTop: "1rem" }}>
+              <summary style={{ cursor: "pointer", fontWeight: 700, color: "var(--text-muted)", fontSize: "0.8rem", letterSpacing: "0.04em" }}>
+                📖 {lng === "ar" ? "كيفية الاستشهاد بهذه الصفحة (APA · MLA · Chicago)" : lng === "de" ? "Wie zitiert man diese Seite? (APA · MLA · Chicago)" : lng === "tr" ? "Bu Sayfayı Nasıl Kaynak Gösterirsiniz? (APA · MLA · Chicago)" : "How to Cite This Page (APA · MLA · Chicago)"}
+              </summary>
+              <div style={{ marginTop: "0.75rem", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+                <div style={{ background: "var(--surface-2)", padding: "0.75rem", borderRadius: "6px", fontFamily: "monospace", fontSize: "0.78rem", lineHeight: 1.6, userSelect: "all" }}>
+                  <strong>APA:</strong> KurdishName Editorial Board. (2026). <em>{nameItem.name}</em>. KurdishName. https://kurdishname.com{generatePath(lng, "name", nameItem.id)}
+                </div>
+                <div style={{ background: "var(--surface-2)", padding: "0.75rem", borderRadius: "6px", fontFamily: "monospace", fontSize: "0.78rem", lineHeight: 1.6, userSelect: "all" }}>
+                  <strong>MLA:</strong> KurdishName Editorial Board. "{nameItem.name}." <em>KurdishName</em>, 2026, kurdishname.com{generatePath(lng, "name", nameItem.id)}.
+                </div>
+                <div style={{ background: "var(--surface-2)", padding: "0.75rem", borderRadius: "6px", fontFamily: "monospace", fontSize: "0.78rem", lineHeight: 1.6, userSelect: "all" }}>
+                  <strong>Chicago:</strong> KurdishName Editorial Board. "{nameItem.name}." KurdishName. Accessed July 2026. https://kurdishname.com{generatePath(lng, "name", nameItem.id)}.
+                </div>
+              </div>
+            </details>
           </div>
       </div>
     </>

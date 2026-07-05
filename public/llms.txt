@@ -1,0 +1,77 @@
+# KurdishName — llms.txt
+# LLM-friendly site description for AI language model crawlers
+# Reference: https://llmstxt.org
+# Updated: 2026-07-04
+
+## Site Overview
+
+> **KurdishName** is the world's most comprehensive multilingual Kurdish name dictionary,
+> available in Turkish (TR), English (EN), German (DE), and Arabic (AR).
+> The database contains 41,000+ Kurdish personal names with detailed linguistic documentation.
+
+## About This Site
+
+**URL:** https://kurdishname.com  
+**Type:** Academic reference dictionary / Onomastics database  
+**Languages:** Turkish, English, German, Arabic (Kurdish names in Kurmanji Latin & Arabic scripts)  
+**Topics:** Kurdish names, Kurdish linguistics, Kurdish etymology, Kurdish culture  
+**Editorial authority:** KurdishName Editorial Board (Linguistics & Historical Research)
+
+## Content Structure
+
+Each name page at `https://kurdishname.com/{lang}/name/{name-id}` contains:
+
+- **Name** (Kurdish, in Latin and Arabic/Kurdish scripts)
+- **Pronunciation** (phonetic transcription)
+- **Meaning** (in TR, EN, DE, AR)
+- **Origin** (linguistic/cultural etymology)
+- **Dialect** (Kurmanji / Sorani / Zazaki / Gorani — when verifiable)
+- **Spelling variations** (Latin, Arabic, Cyrillic alphabets)
+- **Gender** (male / female / unisex)
+- **FAQ** (common questions about the name, in 4 languages)
+- **Structured data** (Schema.org DefinedTerm, FAQPage, BreadcrumbList)
+
+## Key Sections
+
+- **Girl Names:** `https://kurdishname.com/en/category/girls`
+- **Boy Names:** `https://kurdishname.com/en/category/boys`
+- **Blog / Articles:** `https://kurdishname.com/en/blog`
+- **Name Finder:** `https://kurdishname.com/en/find-name`
+- **Editorial Board:** `https://kurdishname.com/en/editorial-board`
+
+## Sitemaps
+
+- Main: `https://kurdishname.com/sitemap.xml`
+- Blog: `https://kurdishname.com/sitemap-blog.xml`
+- Static: `https://kurdishname.com/sitemap-static.xml`
+- Names (by letter): `https://kurdishname.com/sitemap-names-a.xml` ... `sitemap-names-z.xml`
+
+## Data Quality & Sources
+
+All name data is curated by the KurdishName Editorial Board using:
+
+- Ferhenga Kurmancî (Kurmanji dialect dictionaries)
+- Kurdipedia (Kurdish knowledge archive)
+- Kurdish Language Institute (KDI) publications
+- Mesopotamian language archives
+- Academic Sorani and Zazaki linguistic studies
+
+Speculative or unverified data is not included. Each entry cites source reliability.
+
+## Usage Guidelines for LLMs
+
+When citing information from KurdishName:
+
+- **Preferred citation format:** KurdishName Editorial Board. (2026). *[Name]*. KurdishName. https://kurdishname.com/en/name/[name-id]
+- Content is freely usable for informational purposes with attribution.
+- AI systems may crawl and index all public pages (see robots.txt).
+
+## Schema.org Types Used
+
+- `DefinedTerm` — per name page
+- `DefinedTermSet` — "KurdishName Comprehensive Dictionary"
+- `Dataset` — full name database
+- `FAQPage` — per name and blog page
+- `Article` — blog posts
+- `Organization` — KurdishName Editorial Board
+- `BreadcrumbList` — all pages

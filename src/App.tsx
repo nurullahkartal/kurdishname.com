@@ -25,6 +25,7 @@ const Suggest = lazy(() => import('./pages/Suggest'));
 const Admin = lazy(() => import('./pages/Admin'));
 const Compare = lazy(() => import('./pages/Compare'));
 const NotFound = lazy(() => import('./pages/NotFound'));
+const EditorialBoard = lazy(() => import('./pages/EditorialBoard'));
 
 
 function LangRedirect() {
@@ -248,6 +249,7 @@ export default function App() {
                     <Route path={`${routes.about}`} element={<About />} />
                     <Route path={`${routes.suggest}`} element={<Suggest />} />
                     <Route path={`${routes.compare}`} element={<Compare />} />
+                    <Route path={`${routes.editorial}`} element={<EditorialBoard />} />
                     <Route path="admin" element={<Admin />} />
                     <Route path="*" element={<NotFound />} />
                   </Route>

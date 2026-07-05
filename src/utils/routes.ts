@@ -17,7 +17,8 @@ export const routeTranslations = {
     alphabet: 'alfabe',
     mythology: 'mitoloji',
     tribes: 'boylar',
-    surnames: 'soyadlari'
+    surnames: 'soyadlari',
+    editorial: 'editoryal-kurul'
   },
   en: {
     category: 'category',
@@ -37,7 +38,8 @@ export const routeTranslations = {
     alphabet: 'alphabet',
     mythology: 'mythology',
     tribes: 'tribes',
-    surnames: 'surnames'
+    surnames: 'surnames',
+    editorial: 'editorial-board'
   },
   de: {
     category: 'kategorie',
@@ -57,7 +59,8 @@ export const routeTranslations = {
     alphabet: 'alphabet',
     mythology: 'mythologie',
     tribes: 'staemme',
-    surnames: 'nachnamen'
+    surnames: 'nachnamen',
+    editorial: 'redaktionsrat'
   },
   ar: {
     category: 'فئة',
@@ -77,7 +80,8 @@ export const routeTranslations = {
     alphabet: 'الابجدية',
     mythology: 'ميثولوجيا',
     tribes: 'عشائر',
-    surnames: 'القاب'
+    surnames: 'القاب',
+    editorial: 'مجلس-التحرير'
   }
 } as const;
 
