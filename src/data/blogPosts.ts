@@ -11,6 +11,35 @@ export interface BlogPostMeta {
 
 export const blogPostsRegistry: BlogPostMeta[] = [
   {
+    "id": "kurt-kulturunde-isimlerin-onemi-ve-etimolojisi",
+    "date": "2026-07-05",
+    "author": "KurdishName Editorial",
+    "slugs": {
+      "tr": "kurt-kulturunde-isimlerin-onemi-ve-etimolojisi",
+      "en": "the-importance-and-etymology-of-names-in-kurdish-culture",
+      "de": "die-bedeutung-und-etymologie-von-namen-in-der-kurdischen-kultur",
+      "ar": "اهمية-الاسماء-واصلها-اللغوي-في-الثقافة-الكردية"
+    },
+    "tags": {
+      "tr": ["Kültür", "Etimoloji", "Kürtçe İsimler", "Tarih", "Kürt Kültürü"],
+      "en": ["Culture", "Etymology", "Kurdish Names", "History", "Kurdish Culture"],
+      "de": ["Kultur", "Etymologie", "Kurdische Namen", "Geschichte", "Kurdische Kultur"],
+      "ar": ["ثقافة", "علم الاشتقاق", "أسماء كردية", "تاريخ", "ثقافة كردية"]
+    },
+    "titles": {
+      "tr": "Kürt Kültüründe İsimlerin Önemi ve Etimolojisi",
+      "en": "The Importance and Etymology of Names in Kurdish Culture",
+      "de": "Die Bedeutung und Etymologie von Namen in der kurdischen Kultur",
+      "ar": "أهمية الأسماء وأصلها اللغوي في الثقافة الكردية"
+    },
+    "descriptions": {
+      "tr": "İsimlerin Kürt tarihindeki ve kültüründeki yeri, anlamları, kökenleri ve etimolojik derinlikleri.",
+      "en": "The place, meanings, origins, and etymological depths of names in Kurdish history and culture.",
+      "de": "Der Platz, die Bedeutungen, die Ursprünge und die etymologischen Tiefen von Namen in der kurdischen Geschichte und Kultur.",
+      "ar": "مكانة الأسماء في التاريخ والثقافة الكردية، معانيها، أصولها، وأعماقها اللغوية."
+    }
+  },
+  {
     "id": "kurtce-sifali-bitki-isimleri-ve-anlamlari",
     "date": "2026-07-05",
     "author": "KurdishName Editorial",
