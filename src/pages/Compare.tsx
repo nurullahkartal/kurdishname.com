@@ -484,31 +484,6 @@ export default function Compare() {
                   }} />
                 </div>
 
-                {/* Explanations (AI Insights) */}
-                {harmonyResult.explanations && harmonyResult.explanations.length > 0 && (
-                  <div style={{ marginTop: "1.5rem", textAlign: "left", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-                    <div style={{ fontSize: "0.75rem", fontWeight: 700, color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.25rem" }}>
-                      Analiz Özeti
-                    </div>
-                    {harmonyResult.explanations.map((exp, idx) => (
-                      <div key={idx} style={{
-                        display: "flex", alignItems: "center", gap: "0.5rem", fontSize: "0.8125rem", color: "var(--text)",
-                        background: exp.type === 'positive' ? 'rgba(16, 185, 129, 0.05)' : exp.type === 'negative' ? 'rgba(239, 68, 68, 0.05)' : 'rgba(156, 163, 175, 0.05)',
-                        padding: "0.5rem 0.75rem",
-                        borderRadius: "0.5rem",
-                        border: `1px solid ${exp.type === 'positive' ? 'rgba(16, 185, 129, 0.1)' : exp.type === 'negative' ? 'rgba(239, 68, 68, 0.1)' : 'rgba(156, 163, 175, 0.1)'}`
-                      }}>
-                        <span style={{ 
-                          color: exp.type === 'positive' ? '#10b981' : exp.type === 'negative' ? '#ef4444' : '#9ca3af',
-                          fontWeight: 900
-                        }}>
-                          {exp.type === 'positive' ? '✓' : exp.type === 'negative' ? '✕' : '•'}
-                        </span>
-                        <span>{exp.text}</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
               </div>
             )}
 
