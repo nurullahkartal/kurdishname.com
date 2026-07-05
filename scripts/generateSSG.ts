@@ -602,6 +602,12 @@ async function runSSGPrerendering() {
 
     const outPath = path.join(distDir, `${lang}/index.html`);
     safeWriteFile(outPath, finalHtml, canonical);
+    
+    // ROOT DOMAIN SEO FIX: Write TR home page to the absolute root to fix empty tags
+    if (lang === 'tr') {
+      const rootPath = path.join(distDir, 'index.html');
+      safeWriteFile(rootPath, finalHtml, canonical);
+    }
   });
 
   // ──── PHASE 2: STATIC UTILITY PAGES (privacy, terms, cookies, contact, finder, about, suggest, compare) ────

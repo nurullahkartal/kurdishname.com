@@ -11,6 +11,93 @@ export interface BlogPostMeta {
 
 export const blogPostsRegistry: BlogPostMeta[] = [
   {
+    "id": "kurtce-sifali-bitki-isimleri-ve-anlamlari",
+    "date": "2026-07-05",
+    "author": "KurdishName Editorial",
+    "slugs": {
+      "tr": "kurtce-sifali-bitki-isimleri-ve-anlamlari",
+      "en": "kurdish-medicinal-plant-names-and-meanings",
+      "de": "kurdische-heilpflanzennamen-und-bedeutungen",
+      "ar": "اسماء-النباتات-الطبية-الكردية-ومعانيها"
+    },
+    "tags": {
+      "tr": ["Şifalı Bitkiler", "Kürtçe İsimler", "Kız İsimleri", "Erkek İsimleri", "Doğa"],
+      "en": ["Medicinal Plants", "Kurdish Names", "Girl Names", "Boy Names", "Nature"],
+      "de": ["Heilpflanzen", "Kurdische Namen", "Mädchennamen", "Jungennamen", "Natur"],
+      "ar": ["النباتات الطبية", "أسماء كردية", "أسماء بنات", "أسماء أولاد", "طبيعة"]
+    },
+    "titles": {
+      "tr": "Kürtçe Şifalı Bitki İsimleri ve Anlamları",
+      "en": "Kurdish Medicinal Plant Names and Meanings",
+      "de": "Kurdische Heilpflanzennamen und ihre Bedeutungen",
+      "ar": "أسماء النباتات الطبية الكردية ومعانيها"
+    },
+    "descriptions": {
+      "tr": "Mezopotamya doğasının şifalı bitkilerinden ilham alan Kürtçe isimler ve derin anlamları.",
+      "en": "Kurdish names inspired by the medicinal plants of Mesopotamian nature and their deep meanings.",
+      "de": "Kurdische Namen, die von den Heilpflanzen der mesopotamischen Natur inspiriert sind, und ihre tiefen Bedeutungen.",
+      "ar": "أسماء كردية مستوحاة من النباتات الطبية في طبيعة بلاد ما بين النهرين ومعانيها العميقة."
+    }
+  },
+  {
+    "id": "duyulmamis-modern-kurtce-erkek-isimleri-2026",
+    "date": "2026-07-05",
+    "author": "KurdishName Editorial",
+    "slugs": {
+      "tr": "duyulmamis-modern-kurtce-erkek-isimleri-2026",
+      "en": "unique-modern-kurdish-boy-names-2026",
+      "de": "einzigartige-moderne-kurdische-jungennamen-2026",
+      "ar": "اسماء-ذكور-كردية-حديثة-ونادرة-2026"
+    },
+    "tags": {
+      "tr": ["Modern İsimler", "Kürtçe Erkek İsimleri", "Nadir İsimler", "2026 İsimleri"],
+      "en": ["Modern Names", "Kurdish Boy Names", "Rare Names", "2026 Names"],
+      "de": ["Moderne Namen", "Kurdische Jungennamen", "Seltene Namen", "Namen 2026"],
+      "ar": ["أسماء حديثة", "أسماء ذكور كردية", "أسماء نادرة", "أسماء 2026"]
+    },
+    "titles": {
+      "tr": "Duyulmamış Modern Kürtçe Erkek İsimleri (2026 Koleksiyonu)",
+      "en": "Unique Modern Kurdish Boy Names (2026 Collection)",
+      "de": "Einzigartige moderne kurdische Jungennamen (Kollektion 2026)",
+      "ar": "أسماء ذكور كردية حديثة ونادرة (مجموعة 2026)"
+    },
+    "descriptions": {
+      "tr": "2026 yılının en nadir, duyulmamış ve modern Kürtçe erkek bebek isimleri.",
+      "en": "The rarest, unheard, and modern Kurdish baby boy names of 2026.",
+      "de": "Die seltensten, unerhörtesten und modernsten kurdischen Baby-Jungennamen des Jahres 2026.",
+      "ar": "أندر وأحدث أسماء الأطفال الذكور الكردية لعام 2026."
+    }
+  },
+  {
+    "id": "kurtce-isimler-anlamlari-ve-kullanim-alanlari",
+    "date": "2026-07-05",
+    "author": "KurdishName Editorial",
+    "slugs": {
+      "tr": "kurtce-isimler-anlamlari-ve-kullanim-alanlari",
+      "en": "kurdish-names-meanings-and-usage-areas",
+      "de": "kurdische-namen-bedeutungen-und-verwendungsbereiche",
+      "ar": "اسماء-كردية-معانيها-ومجالات-استخدامها"
+    },
+    "tags": {
+      "tr": ["Kürtçe İsimler", "Kürtçe Kız İsimleri", "Kürtçe Erkek İsimleri", "Kültürel Miras"],
+      "en": ["Kurdish Names", "Kurdish Girl Names", "Kurdish Boy Names", "Cultural Heritage"],
+      "de": ["Kurdische Namen", "Kurdische Mädchennamen", "Kurdische Jungennamen", "Kulturelles Erbe"],
+      "ar": ["أسماء كردية", "أسماء بنات كردية", "أسماء أولاد كردية", "التراث الثقافي"]
+    },
+    "titles": {
+      "tr": "Kürtçe İsimler: Anlamları ve Kullanım Alanları",
+      "en": "Kurdish Names: Meanings and Usage Areas",
+      "de": "Kurdische Namen: Bedeutungen und Verwendungsbereiche",
+      "ar": "الأسماء الكردية: معانيها ومجالات استخدامها"
+    },
+    "descriptions": {
+      "tr": "Kürtçe isimlerin tarihçesi, kökenleri, anlamları ve popüler Kürtçe kız ile erkek isimleri hakkında kapsamlı bir inceleme.",
+      "en": "A comprehensive review of the history, origins, meanings, and popular Kurdish girl and boy names.",
+      "de": "Ein umfassender Überblick über die Geschichte, Herkunft, Bedeutungen und beliebten kurdischen Mädchen- und Jungennamen.",
+      "ar": "مراجعة شاملة لتاريخ وأصول ومعاني الأسماء الكردية للفتيات والفتيان بالإضافة إلى أشهرها."
+    }
+  },
+  {
     "id": "modern-ve-populer-kurtce-isimler-ve-anlamlari",
     "date": "2026-07-01",
     "author": "KurdishName Editorial",
