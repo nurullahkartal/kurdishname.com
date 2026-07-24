@@ -218,7 +218,7 @@ export default function Layout() {
       </header>
 
       {/* ── PAGE CONTENT ───────────────────────────────── */}
-      <main className="enc-container pb-[2rem]" style={{ paddingTop: "1.75rem" }}>
+      <main id="main-content" className="enc-container pb-[2rem]" style={{ paddingTop: "1.75rem" }}>
         <div key={location.pathname} className="page-fade-in">
           <Outlet />
         </div>

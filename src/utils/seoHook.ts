@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { routeTranslations, switchLanguagePath } from './routes';
 
@@ -130,4 +131,51 @@ export function useCanonicalAndHreflang() {
   const xDefault = `${baseUrl}/`;
 
   return { canonicalUrl, hreflangs, xDefault };
+}
+
+export function useSEO({ title, description, canonical, ogImage }: { 
+  title: string; 
+  description: string; 
+  canonical?: string;
+  ogImage?: string;
+}) {
+  useEffect(() => {
+    // Title
+    document.title = title;
+
+    // Meta Description
+    let metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute('content', description);
+    } else {
+      metaDesc = document.createElement('meta');
+      metaDesc.setAttribute('name', 'description');
+      metaDesc.setAttribute('content', description);
+      document.head.appendChild(metaDesc);
+    }
+
+    // Canonical
+    const currentUrl = canonical || window.location.href.split('?')[0];
+    let linkCanonical = document.querySelector('link[rel="canonical"]');
+    if (linkCanonical) {
+      linkCanonical.setAttribute('href', currentUrl);
+    } else {
+      linkCanonical = document.createElement('link');
+      linkCanonical.setAttribute('rel', 'canonical');
+      linkCanonical.setAttribute('href', currentUrl);
+      document.head.appendChild(linkCanonical);
+    }
+
+    // OG Title & Description
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', title);
+
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute('content', description);
+
+    if (ogImage) {
+      const ogImg = document.querySelector('meta[property="og:image"]');
+      if (ogImg) ogImg.setAttribute('content', ogImage);
+    }
+  }, [title, description, canonical, ogImage]);
 }
