@@ -1562,6 +1562,22 @@ export const names: NameData[] = [
     "description": "Lewanî; renkli anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
   },
   {
+    "id": "lewend",
+    "name": "Lewend",
+    "gender": "male",
+    "letter": "L",
+    "meaning": "Lewend; yiğit, kahraman ve cesur; savaşçı ruhu ve asalet taşıyan sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir.",
+    "meaning_en": "Lewend; a noble person endowed with brave, heroic, and courageous; carrying a warrior spirit and nobility, possessing brave courage and unwavering determination, representing the symbol of strength and leadership.",
+    "meaning_de": "Lewend; eine edle Persönlichkeit, die mit tapfer, heldenhaft und mutig; einen Kriegergeist und Adel tragend ausgestattet ist, tapferen Mut und unerschütterliche Entschlossenheit besitzt und das Symbol für Stärke und Führung darstellt.",
+    "meaning_ar": "Lewend؛ شخصية نبيلة تتحلى بـ شجاع، بطولي ومقدام؛ يحمل روح المحارب والنبل، تمتلك شجاعة مقدامة وعزيمة لا تلين، وتمثل رمز القوة والقيادة.",
+    "origin": "Kurdish",
+    "tags": [
+      "Cesaret / Güç",
+      "Kürtçe İsim"
+    ],
+    "description": "Lewend; yiğit, kahraman ve cesur; savaşçı ruhu ve asalet taşıyan sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir."
+  },
+  {
     "id": "lexmani",
     "name": "Lexmanî",
     "gender": "male",
@@ -2355,6 +2371,22 @@ export const names: NameData[] = [
     "meaning_en": "Lorîmerd; a noble person endowed with brave man of lullaby, possessing brave courage and unwavering determination, representing the symbol of strength and leadership.",
     "meaning_de": "Lorîmerd; eine edle Persönlichkeit, die mit tapferer Mann des/der Wiegenlied ausgestattet ist, tapferen Mut und unerschütterliche Entschlossenheit besitzt und das Symbol für Stärke und Führung darstellt.",
     "meaning_ar": "Lorîmerd؛ شخصية نبيلة تتحلى بـ بطل أغنية المهد، تمتلك شجاعة مقدامة وعزيمة لا تلين، وتمثل رمز القوة والقيادة."
+  },
+  {
+    "id": "lorin",
+    "name": "Lorîn",
+    "gender": "female",
+    "letter": "L",
+    "meaning": "Lorîn; ninni, ezgi; annelerin sevgiyle fısıldadığı melodik nakarat gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
+    "meaning_en": "Lorîn; clear, fresh, and vibrant like lullaby, soothing melody sung with love; a noble person who embodies the purest and most graceful whispers of nature.",
+    "meaning_de": "Lorîn; rein, frisch und lebendig wie Wiegenlied, beruhigende Melodie voller Liebe; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
+    "meaning_ar": "Lorîn؛ نقي وعذب وحيوي مثل لوري، الأنشودة العذبة التي تهدهد بها الأمهات أطفالهن؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا.",
+    "origin": "Kurdish",
+    "tags": [
+      "Edebi / Sanatsal",
+      "Kürtçe İsim"
+    ],
+    "description": "Lorîn; ninni, ezgi; annelerin sevgiyle fısıldadığı melodik nakarat gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
   },
   {
     "id": "lorin2",

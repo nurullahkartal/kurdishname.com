@@ -3153,6 +3153,22 @@ export const names: NameData[] = [
     "description": "Serbest; özgür, hür, bağımsız, hiç kimseye boyun eğmeyen sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir."
   },
   {
+    "id": "serbilind",
+    "name": "Serbilind",
+    "gender": "male",
+    "letter": "S",
+    "meaning": "Serbilind; ser bilind, gururlu ve onurlu; başı dik, asil duruşuyla tanınan sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir.",
+    "meaning_en": "Serbilind; a noble person endowed with proud and honorable; known for an upright head and noble stance, possessing brave courage and unwavering determination, representing the symbol of strength and leadership.",
+    "meaning_de": "Serbilind; eine edle Persönlichkeit, die mit stolz und ehrenhaft; bekannt für aufrechten Kopf und edle Haltung ausgestattet ist, tapferen Mut und unerschütterliche Entschlossenheit besitzt und das Symbol für Stärke und Führung darstellt.",
+    "meaning_ar": "Serbilind؛ شخصية نبيلة تتحلى بـ فخور وكريم؛ يشتهر برأس مرفوع وموقف نبيل، تمتلك شجاعة مقدامة وعزيمة لا تلين، وتمثل رمز القوة والقيادة.",
+    "origin": "Kurdish",
+    "tags": [
+      "Cesaret / Güç",
+      "Kürtçe İsim"
+    ],
+    "description": "Serbilind; ser bilind, gururlu ve onurlu; başı dik, asil duruşuyla tanınan sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir."
+  },
+  {
     "id": "serbilindbar",
     "name": "Serbilindbar",
     "gender": "male",
@@ -4696,6 +4712,22 @@ export const names: NameData[] = [
       "Kürtçe İsim"
     ],
     "description": "Serwazî; askerlik anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+  },
+  {
+    "id": "serxwebun",
+    "name": "Serxwebûn",
+    "gender": "unisex",
+    "letter": "S",
+    "meaning": "Serxwebûn; bağımsızlık, özgürlük ve hürriyet; halkın kendi kaderini tayin etme arzusunun simgesi sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir.",
+    "meaning_en": "Serxwebûn; a noble person endowed with independence, freedom, and liberty; a symbol of the people's desire for self-determination, possessing brave courage and unwavering determination, representing the symbol of strength and leadership.",
+    "meaning_de": "Serxwebûn; eine edle Persönlichkeit, die mit Unabhängigkeit, Freiheit und Befreiung; ein Symbol des Volkeswillens zur Selbstbestimmung ausgestattet ist, tapferen Mut und unerschütterliche Entschlossenheit besitzt und das Symbol für Stärke und Führung darstellt.",
+    "meaning_ar": "Serxwebûn؛ شخصية نبيلة تتحلى بـ استقلال، حرية وتحرر؛ رمز إرادة الشعب في تقرير مصيره، تمتلك شجاعة مقدامة وعزيمة لا تلين، وتمثل رمز القوة والقيادة.",
+    "origin": "Kurdish",
+    "tags": [
+      "Cesaret / Güç",
+      "Kürtçe İsim"
+    ],
+    "description": "Serxwebûn; bağımsızlık, özgürlük ve hürriyet; halkın kendi kaderini tayin etme arzusunun simgesi sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir."
   },
   {
     "id": "serxwebuni",

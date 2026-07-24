@@ -3693,6 +3693,22 @@ export const names: NameData[] = [
     "description": "Xort; genç, yiğit, delikanlı, zinde ve güçlü kimse sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir."
   },
   {
+    "id": "xorto",
+    "name": "Xorto",
+    "gender": "male",
+    "letter": "X",
+    "meaning": "Xorto; genç, yiğit delikanlı; dinamik, güçlü ve enerji dolu bir ruh sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir.",
+    "meaning_en": "Xorto; a noble person endowed with young, brave lad; a dynamic, strong, and energetic spirit, possessing brave courage and unwavering determination, representing the symbol of strength and leadership.",
+    "meaning_de": "Xorto; eine edle Persönlichkeit, die mit junger, tapferer Bursche; ein dynamischer, starker und energiegeladener Geist ausgestattet ist, tapferen Mut und unerschütterliche Entschlossenheit besitzt und das Symbol für Stärke und Führung darstellt.",
+    "meaning_ar": "Xorto؛ شخصية نبيلة تتحلى بـ شاب، فتى شجاع؛ روح ديناميكية وقوية ومليئة بالحيوية، تمتلك شجاعة مقدامة وعزيمة لا تلين، وتمثل رمز القوة والقيادة.",
+    "origin": "Kurdish",
+    "tags": [
+      "Doğa / Yaşam",
+      "Kürtçe İsim"
+    ],
+    "description": "Xorto; genç, yiğit delikanlı; dinamik, güçlü ve enerji dolu bir ruh sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir."
+  },
+  {
     "id": "xosdembar",
     "name": "Xoşdembar",
     "gender": "male",

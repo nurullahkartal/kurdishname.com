@@ -107,6 +107,22 @@ export const names: NameData[] = [
     "meaning_ar": "Oskar؛ نقي وعذب وحيوي مثل mızrak; aynı zamanda karakterli duruşu ve kararlılığı temsil eden bir varyanttır؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
   },
   {
+    "id": "ozan",
+    "name": "Ozan",
+    "gender": "male",
+    "letter": "O",
+    "meaning": "Ozan; ozan, aşık ve halk ozanı; halkın sesini sanata dönüştüren bilge şair anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
+    "meaning_en": "Ozan; a person who places the meaning of bard, minstrel, and folk poet; a wise poet who transforms the people's voice into art and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+    "meaning_de": "Ozan; eine Persönlichkeit, die die Bedeutung von Barde, Sänger und Volksdichter; ein weiser Dichter, der die Stimme des Volkes in Kunst verwandelt und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+    "meaning_ar": "Ozan؛ شخص يضع معنى أشعار، مغني شعبي وشاعر؛ شاعر حكيم يحوّل صوت الشعب إلى فن والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+    "origin": "Kurdish",
+    "tags": [
+      "Edebi / Sanatsal",
+      "Kürtçe İsim"
+    ],
+    "description": "Ozan; ozan, aşık ve halk ozanı; halkın sesini sanata dönüştüren bilge şair anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+  },
+  {
     "id": "ozmanc",
     "name": "Ozmanc",
     "gender": "male",

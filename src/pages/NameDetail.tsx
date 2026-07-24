@@ -781,20 +781,6 @@ export default function NameDetail() {
             </span>
           )}
 
-          {/* SEO Score Badge */}
-          {seoScore !== null && (
-            <span style={{
-              padding: "0.3rem 0.875rem",
-              borderRadius: "100px",
-              background: "var(--text)",
-              color: "var(--bg)",
-              fontSize: "0.78rem",
-              fontWeight: 800,
-              boxShadow: "0 2px 8px rgba(0,0,0,0.15)"
-            }}>
-              ⭐ SEO Puanı: {seoScore}/100
-            </span>
-          )}
         </div>
       </motion.section>
 

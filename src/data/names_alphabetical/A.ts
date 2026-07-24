@@ -3934,6 +3934,22 @@ export const names: NameData[] = [
     "description": "Ando; sözünde duran yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir."
   },
   {
+    "id": "andok",
+    "name": "Andok",
+    "gender": "male",
+    "letter": "A",
+    "meaning": "Andok; kadim ve köklü bir mirası temsil eden, asil duruşuyla tanınan anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
+    "meaning_en": "Andok; a person who places the meaning of representing an ancient and deeply rooted heritage, known for a noble stance and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+    "meaning_de": "Andok; eine Persönlichkeit, die die Bedeutung von eine alte und tief verwurzelte Herkunft verkörpernd, bekannt für edle Haltung und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+    "meaning_ar": "Andok؛ شخص يضع معنى تمثل موروثًا قديمًا وعميق الجذور، وتشتهر بموقفها النبيل والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+    "origin": "Kurdish",
+    "tags": [
+      "Klasik İsimler",
+      "Kürtçe İsim"
+    ],
+    "description": "Andok; kadim ve köklü bir mirası temsil eden, asil duruşuyla tanınan anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+  },
+  {
     "id": "andoz",
     "name": "Andoz",
     "gender": "male",
@@ -12273,6 +12289,22 @@ export const names: NameData[] = [
       "Kürtçe İsim"
     ],
     "description": "Avende; akışkan, su gibi gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
+  },
+  {
+    "id": "avesta",
+    "name": "Avesta",
+    "gender": "female",
+    "letter": "A",
+    "meaning": "Avesta; Zerdüştlük inancının kutsal kitabı; bilgelik, aydınlık ve sarsılmaz ruhani değerlerin anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
+    "meaning_en": "Avesta; a person who places the meaning of the sacred scripture of Zoroastrianism; a symbol of wisdom, light, and unwavering spiritual values and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+    "meaning_de": "Avesta; eine Persönlichkeit, die die Bedeutung von die heilige Schrift des Zoroastrismus; ein Symbol für Weisheit, Licht und unerschütterliche geistige Werte und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+    "meaning_ar": "Avesta؛ شخص يضع معنى الكتاب المقدس للزرادشتية؛ رمز الحكمة والنور والقيم الروحية الراسخة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+    "origin": "Kurdish",
+    "tags": [
+      "Manevi / Ruhani",
+      "Kürtçe İsim"
+    ],
+    "description": "Avesta; Zerdüştlük inancının kutsal kitabı; bilgelik, aydınlık ve sarsılmaz ruhani değerlerin anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
   },
   {
     "id": "avgani",

@@ -1,3 +1,6 @@
 name = "kurdishname"
 pages_build_output_dir = "dist"
 compatibility_date = "2024-03-01"
+[[kv_namespaces]]
+binding = "TRACKER_DATA"
+id = "dc3de71b7c654613b47981830a29a086"

@@ -767,6 +767,21 @@ export const names: NameData[] = [
     "meaning_ar": "Razyana؛ نقي وعذب وحيوي مثل rezene çiçeği; zarafeti ve doğanın huzur veren kokusunu temsil eder؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
   },
   {
+    "id": "rebar",
+    "name": "Rebar",
+    "gender": "male",
+    "letter": "R",
+    "meaning": "Rebar; geçimlik sağlayan, besleyen ve koruyan; ailesine ve yakınlarına destek olan anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
+    "meaning_en": "Rebar; a person who places the meaning of provider, sustainer, and protector; supporting family and loved ones and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+    "meaning_de": "Rebar; eine Persönlichkeit, die die Bedeutung von Versorger, Ernährer und Beschützer; unterstützt Familie und Angehörige und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+    "meaning_ar": "Rebar؛ شخص يضع معنى معيل، راعٍ وحامٍ؛ يدعم العائلة والأحباء والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+    "origin": "Kurdish",
+    "tags": [
+      "Kürtçe İsim"
+    ],
+    "description": "Rebar; geçimlik sağlayan, besleyen ve koruyan; ailesine ve yakınlarına destek olan anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+  },
+  {
     "id": "rebaz",
     "name": "Rêbaz",
     "gender": "male",
@@ -8829,6 +8844,22 @@ export const names: NameData[] = [
     "meaning_en": "Rozerînzîn; a brilliant person who illuminates their surroundings like life of golden day, yellow sun, possessing an eternal radiance that scatters all darkness with noble light.",
     "meaning_de": "Rozerînzîn; eine strahlende Persönlichkeit, die ihre Umgebung wie leben des/der goldener Tag erhellt und einen ewigen Glanz besitzt, der jede Dunkelheit mit edlem Licht vertreibt.",
     "meaning_ar": "Rozerînzîn؛ شخصية مشرقة تضيء ما حولها مثل حياة شمس ذهبية، تمتلك بريقًا أبديًا يبدد كل ظلام بنورها النبيل."
+  },
+  {
+    "id": "rozin",
+    "name": "Rozîn",
+    "gender": "female",
+    "letter": "R",
+    "meaning": "Rozîn; gün, güneş ve aydınlık; hayatın kaynağı olan ışık gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
+    "meaning_en": "Rozîn; clear, fresh, and vibrant like day, sun, and light; the source of life; a noble person who embodies the purest and most graceful whispers of nature.",
+    "meaning_de": "Rozîn; rein, frisch und lebendig wie Tag, Sonne und Licht; die Quelle des Lebens; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
+    "meaning_ar": "Rozîn؛ نقي وعذب وحيوي مثل يوم، شمس ونور؛ مصدر الحياة؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا.",
+    "origin": "Kurdish",
+    "tags": [
+      "Işık / Aydınlık",
+      "Kürtçe İsim"
+    ],
+    "description": "Rozîn; gün, güneş ve aydınlık; hayatın kaynağı olan ışık gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
   },
   {
     "id": "rubar",

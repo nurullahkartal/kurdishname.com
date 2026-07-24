@@ -2117,6 +2117,22 @@ export const names: NameData[] = [
     "meaning_ar": "Nazamerd؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ بطل مدللة، وتتميز بوقارها ورقّتها."
   },
   {
+    "id": "nazan",
+    "name": "Nazan",
+    "gender": "female",
+    "letter": "N",
+    "meaning": "Nazan; nazlı, cilveli ve zarif; incelik ve cazibesiyle dikkat çeken dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir.",
+    "meaning_en": "Nazan; a very special and precious person who radiates love and beauty with a heart full of coquettish, graceful, and elegant; attracting attention with delicacy and charm, noble stance, and elegance.",
+    "meaning_de": "Nazan; eine ganz besondere und kostbare Persönlichkeit, die Liebe und Schönheit mit einem Herzen voller kokett, anmutig und elegant; zieht mit Feinheit und Charme die Aufmerksamkeit auf sich, edler Haltung und Eleganz ausstrahlt.",
+    "meaning_ar": "Nazan؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ دلّالة، رشيقة وأنيقة؛ تلفت الانتباه برقة وجاذبية، وتتميز بوقارها ورقّتها.",
+    "origin": "Kurdish",
+    "tags": [
+      "Sevgi / Güzellik",
+      "Kürtçe İsim"
+    ],
+    "description": "Nazan; nazlı, cilveli ve zarif; incelik ve cazibesiyle dikkat çeken dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
+  },
+  {
     "id": "nazanaz",
     "name": "Nazanaz",
     "gender": "female",
@@ -2415,6 +2431,22 @@ export const names: NameData[] = [
       "Kürtçe İsim"
     ],
     "description": "Nazînî; nazlı dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
+  },
+  {
+    "id": "nazlican",
+    "name": "Nazlican",
+    "gender": "female",
+    "letter": "N",
+    "meaning": "Nazlican; nazlı can, sevgili ruh; hem nazlı hem de cana yakın, sıcak kalpli dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir.",
+    "meaning_en": "Nazlican; a very special and precious person who radiates love and beauty with a heart full of coquettish soul, dear spirit; both playful and warm-hearted, noble stance, and elegance.",
+    "meaning_de": "Nazlican; eine ganz besondere und kostbare Persönlichkeit, die Liebe und Schönheit mit einem Herzen voller kokette Seele, liebevoller Geist; sowohl verspielt als auch warmherzig, edler Haltung und Eleganz ausstrahlt.",
+    "meaning_ar": "Nazlican؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ روح دلّعة، نفس عزيزة؛ دلّعة ودافئة القلب، وتتميز بوقارها ورقّتها.",
+    "origin": "Kurdish",
+    "tags": [
+      "Sevgi / Güzellik",
+      "Kürtçe İsim"
+    ],
+    "description": "Nazlican; nazlı can, sevgili ruh; hem nazlı hem de cana yakın, sıcak kalpli dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
   },
   {
     "id": "nazmani",

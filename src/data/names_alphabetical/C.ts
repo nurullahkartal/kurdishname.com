@@ -4458,6 +4458,22 @@ export const names: NameData[] = [
     "meaning_ar": "Ciwan؛ شخصية مشرقة تضيء ما حولها مثل genç, taze, dinamik ve yakışıklı olan kimsedir، تمتلك بريقًا أبديًا يبدد كل ظلام بنورها النبيل."
   },
   {
+    "id": "ciwana",
+    "name": "Ciwana",
+    "gender": "female",
+    "letter": "C",
+    "meaning": "Ciwana; genç, taze, dinamik ve zarif; hayat dolu bir duruşu temsil eden dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir.",
+    "meaning_en": "Ciwana; a very special and precious person who radiates love and beauty with a heart full of young, fresh, dynamic, and graceful; representing a vibrant and lively spirit, noble stance, and elegance.",
+    "meaning_de": "Ciwana; eine ganz besondere und kostbare Persönlichkeit, die Liebe und Schönheit mit einem Herzen voller jung, frisch, dynamisch und anmutig; eine lebendige und strahlende Persönlichkeit verkörpernd, edler Haltung und Eleganz ausstrahlt.",
+    "meaning_ar": "Ciwana؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ شابة، عذبة، ديناميكية وأنيقة؛ تمثل روحًا حيوية ومشرقة، وتتميز بوقارها ورقّتها.",
+    "origin": "Kurdish",
+    "tags": [
+      "Sevgi / Güzellik",
+      "Kürtçe İsim"
+    ],
+    "description": "Ciwana; genç, taze, dinamik ve zarif; hayat dolu bir duruşu temsil eden dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
+  },
+  {
     "id": "ciwani",
     "name": "Ciwanî",
     "gender": "female",

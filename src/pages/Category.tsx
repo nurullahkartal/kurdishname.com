@@ -7,7 +7,7 @@ import { Heart, Sparkles, Shuffle } from "lucide-react";
 import { useRef, useCallback } from "react";
 import { NameData } from "../data/names";
 import { generatePath, getGenderFromSlug, getThemeFromSlug } from "../utils/routes";
-import { searchWithMiniSearch } from "../utils/search";
+import { searchFullNames } from "../utils/search";
 import { getLocalizedMeaning, getLocalizedOrigin } from "../utils/localization";
 import { loadNamesForLetter, loadAllNames } from "../utils/nameLoader";
 import { generateContextualHook, SeoHookCategory } from "../utils/seoHook";
@@ -197,7 +197,7 @@ export default function Category() {
     }
 
     if (debouncedSearchTerm) {
-      filtered = searchWithMiniSearch(filtered, debouncedSearchTerm, lng);
+      filtered = searchFullNames(filtered, debouncedSearchTerm);
     } else {
       filtered = filtered.sort((a, b) => a.name.localeCompare(b.name, "tr"));
     }
@@ -391,33 +391,38 @@ export default function Category() {
       </div>
  
       {/* Semantic LSI Content Hub Introduction Block */}
-      {isGenderCategory && (
-        <div style={{
-          background: "var(--surface)",
-          borderLeft: `4px solid ${genderColor}`,
-          borderRadius: "12px",
-          padding: "1.25rem 1.5rem",
-          marginBottom: "1.5rem",
-          boxShadow: "0 1px 3px rgba(0,0,0,0.05)",
-          border: "1px solid var(--border)",
-          borderLeftWidth: "4px"
-        }}>
-          {((genderCategory === "female" ? t("cat_intro_kiz") : t("cat_intro_erkek")) || "").split("\n\n").map((para, idx) => (
-            <p 
-              key={idx} 
-              style={{ 
-                fontSize: "0.935rem", 
-                lineHeight: 1.8, 
-                color: "var(--text-muted)", 
-                marginBottom: idx === 1 ? 0 : "1rem",
-                textAlign: "justify"
-              }}
-            >
-              {para}
-            </p>
-          ))}
-        </div>
-      )}
+      {isGenderCategory && (() => {
+        const introText = genderCategory === "female" ? t("cat_intro_kiz", "") : t("cat_intro_erkek", "");
+        if (!introText || introText === "cat_intro_kiz" || introText === "cat_intro_erkek") return null;
+        
+        return (
+          <div style={{
+            background: "var(--surface)",
+            borderLeft: `4px solid ${genderColor}`,
+            borderRadius: "12px",
+            padding: "1.25rem 1.5rem",
+            marginBottom: "1.5rem",
+            boxShadow: "0 1px 3px rgba(0,0,0,0.05)",
+            border: "1px solid var(--border)",
+            borderLeftWidth: "4px"
+          }}>
+            {introText.split("\n\n").map((para, idx) => (
+              <p 
+                key={idx} 
+                style={{ 
+                  fontSize: "0.935rem", 
+                  lineHeight: 1.8, 
+                  color: "var(--text-muted)", 
+                  marginBottom: idx === 1 ? 0 : "1rem",
+                  textAlign: "justify"
+                }}
+              >
+                {para}
+              </p>
+            ))}
+          </div>
+        );
+      })()}
 
       {/* SEO Intro Block for Theme Categories */}
       {themeCategory && ["nature", "power", "beauty", "light"].includes(themeCategory) && (() => {

@@ -5433,6 +5433,22 @@ export const names: NameData[] = [
     "description": "Gulazer; sarı gül gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
   },
   {
+    "id": "gulbahar",
+    "name": "Gulbahar",
+    "gender": "female",
+    "letter": "G",
+    "meaning": "Gulbahar; ilkbaharda açan en renkli asil gül; sonsuz neşe ve canlanma kaynağı gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
+    "meaning_en": "Gulbahar; clear, fresh, and vibrant like the most colorful noble rose blooming in spring; a source of endless joy and renewal; a noble person who embodies the purest and most graceful whispers of nature.",
+    "meaning_de": "Gulbahar; rein, frisch und lebendig wie die farbenprächtigste edle Rose, die im Frühling blüht; eine Quelle endloser Freude und Erneuerung; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
+    "meaning_ar": "Gulbahar؛ نقي وعذب وحيوي مثل أجمل وردة نبيلة تتفتح في الربيع؛ مصدر بهجة لا ينتهي وتجدد؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا.",
+    "origin": "Kurdish",
+    "tags": [
+      "Doğa / Yaşam",
+      "Kürtçe İsim"
+    ],
+    "description": "Gulbahar; ilkbaharda açan en renkli asil gül; sonsuz neşe ve canlanma kaynağı gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
+  },
+  {
     "id": "gulban",
     "name": "Gulban",
     "gender": "female",
@@ -5776,6 +5792,22 @@ export const names: NameData[] = [
       "Kürtçe İsim"
     ],
     "description": "Gulîok; küçük dal anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+  },
+  {
+    "id": "gulistan",
+    "name": "Gulîstan",
+    "gender": "female",
+    "letter": "G",
+    "meaning": "Gulîstan; gül bahçesi gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
+    "meaning_en": "Gulîstan; clear, fresh, and vibrant like rose garden; a noble person who embodies the purest and most graceful whispers of nature.",
+    "meaning_de": "Gulîstan; rein, frisch und lebendig wie Rosengarten; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
+    "meaning_ar": "Gulîstan؛ نقي وعذب وحيوي مثل بستان الورد؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا.",
+    "origin": "Kurdish",
+    "tags": [
+      "Doğa / Yaşam",
+      "Kürtçe İsim"
+    ],
+    "description": "Gulîstan; gül bahçesi gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
   },
   {
     "id": "gulivan",

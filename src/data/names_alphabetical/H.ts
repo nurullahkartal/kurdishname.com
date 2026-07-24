@@ -4127,6 +4127,21 @@ export const names: NameData[] = [
     "meaning_ar": "Hêminzîn؛ شخص يضع معنى حياة هادئ والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً."
   },
   {
+    "id": "hemo",
+    "name": "Hemo",
+    "gender": "male",
+    "letter": "H",
+    "meaning": "Hemo; sakin, huzurlu ve güven veren; dinginliğiyle tanınan sevgi dolu bir ruh anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
+    "meaning_en": "Hemo; a person who places the meaning of calm, peaceful, and trustworthy; a loving soul known for serenity and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+    "meaning_de": "Hemo; eine Persönlichkeit, die die Bedeutung von ruhig, friedlich und vertrauenswürdig; eine liebevolle Seele, bekannt für Gelassenheit und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+    "meaning_ar": "Hemo؛ شخص يضع معنى هادئ، مطمئن وموثوق؛ روح محبة تشتهر بالسكينة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+    "origin": "Kurdish",
+    "tags": [
+      "Kürtçe İsim"
+    ],
+    "description": "Hemo; sakin, huzurlu ve güven veren; dinginliğiyle tanınan sevgi dolu bir ruh anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+  },
+  {
     "id": "hemozi",
     "name": "Hemozî",
     "gender": "male",
@@ -8520,6 +8535,22 @@ export const names: NameData[] = [
       "Kürtçe İsim"
     ],
     "description": "Hezkî; sevilen anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+  },
+  {
+    "id": "hezkir",
+    "name": "Hezkir",
+    "gender": "male",
+    "letter": "H",
+    "meaning": "Hezkir; seven, sevgi dolu ve bağlı; gönülden bağ kuran sadık bir ruh dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir.",
+    "meaning_en": "Hezkir; a very special and precious person who radiates love and beauty with a heart full of loving, affectionate, and devoted; a faithful soul who connects from the heart, noble stance, and elegance.",
+    "meaning_de": "Hezkir; eine ganz besondere und kostbare Persönlichkeit, die Liebe und Schönheit mit einem Herzen voller liebend, zärtlich und hingebungsvoll; eine treue Seele, die von Herzen verbindet, edler Haltung und Eleganz ausstrahlt.",
+    "meaning_ar": "Hezkir؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ محب، عاطفي ومخلص؛ روح وفية تتصل من القلب، وتتميز بوقارها ورقّتها.",
+    "origin": "Kurdish",
+    "tags": [
+      "Sevgi / Güzellik",
+      "Kürtçe İsim"
+    ],
+    "description": "Hezkir; seven, sevgi dolu ve bağlı; gönülden bağ kuran sadık bir ruh dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
   },
   {
     "id": "hezmani",

@@ -6276,6 +6276,22 @@ export const names: NameData[] = [
     "description": "Dilar; gönül süsü anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
   },
   {
+    "id": "dilara",
+    "name": "Dilara",
+    "gender": "female",
+    "letter": "D",
+    "meaning": "Dilara; gönül süsü, sevgili ve çok değerli; nazlı zarafetiyle etrafına sevgi saçan dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir.",
+    "meaning_en": "Dilara; a very special and precious person who radiates love and beauty with a heart full of heart ornament, beloved and precious; radiating love with coquettish grace, noble stance, and elegance.",
+    "meaning_de": "Dilara; eine ganz besondere und kostbare Persönlichkeit, die Liebe und Schönheit mit einem Herzen voller Herzschmuck, geliebt und kostbar; strahlt Liebe mit koketter Anmut aus, edler Haltung und Eleganz ausstrahlt.",
+    "meaning_ar": "Dilara؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ زينة القلب، محبوبة وثمينة؛ تشع حبًا بأناقة دلّالة، وتتميز بوقارها ورقّتها.",
+    "origin": "Kurdish",
+    "tags": [
+      "Sevgi / Güzellik",
+      "Kürtçe İsim"
+    ],
+    "description": "Dilara; gönül süsü, sevgili ve çok değerli; nazlı zarafetiyle etrafına sevgi saçan dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
+  },
+  {
     "id": "dilaram",
     "name": "Dilaram",
     "gender": "female",
@@ -10447,6 +10463,22 @@ export const names: NameData[] = [
     "description": "Dilsaî; saf gönüllü anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
   },
   {
+    "id": "dilsan",
+    "name": "Dilsan",
+    "gender": "female",
+    "letter": "D",
+    "meaning": "Dilsan; huzurlu gönül, sakin ve dingin kalp; iç huzuruyla etrafına sükunet yayan dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir.",
+    "meaning_en": "Dilsan; a very special and precious person who radiates love and beauty with a heart full of peaceful heart, calm and serene soul; spreading tranquility with inner peace, noble stance, and elegance.",
+    "meaning_de": "Dilsan; eine ganz besondere und kostbare Persönlichkeit, die Liebe und Schönheit mit einem Herzen voller friedvolles Herz, ruhige und gelassene Seele; verbreitet Ruhe durch innere Gelassenheit, edler Haltung und Eleganz ausstrahlt.",
+    "meaning_ar": "Dilsan؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ قلب مطمئن، روح هادئة وسكينة؛ تنشر السكينة بسلامها الداخلي، وتتميز بوقارها ورقّتها.",
+    "origin": "Kurdish",
+    "tags": [
+      "Sevgi / Güzellik",
+      "Kürtçe İsim"
+    ],
+    "description": "Dilsan; huzurlu gönül, sakin ve dingin kalp; iç huzuruyla etrafına sükunet yayan dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
+  },
+  {
     "id": "dilsat",
     "name": "Dilsat",
     "gender": "male",
@@ -10567,6 +10599,22 @@ export const names: NameData[] = [
     "description": "Dilşewat; gönlü yanık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
   },
   {
+    "id": "dilshad",
+    "name": "Dilshad",
+    "gender": "female",
+    "letter": "D",
+    "meaning": "Dilshad; mutlu gönül, neşeli kalp; sevinci ve coşkuyu etrafına yayan dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir.",
+    "meaning_en": "Dilshad; a very special and precious person who radiates love and beauty with a heart full of happy heart, joyful soul; spreading cheerfulness and enthusiasm, noble stance, and elegance.",
+    "meaning_de": "Dilshad; eine ganz besondere und kostbare Persönlichkeit, die Liebe und Schönheit mit einem Herzen voller fröhliches Herz, heitere Seele; verbreitet Freude und Lebensfreude, edler Haltung und Eleganz ausstrahlt.",
+    "meaning_ar": "Dilshad؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ قلب سعيد، روح مبهجة؛ تنشر البهجة والحيوية، وتتميز بوقارها ورقّتها.",
+    "origin": "Kurdish",
+    "tags": [
+      "Sevgi / Güzellik",
+      "Kürtçe İsim"
+    ],
+    "description": "Dilshad; mutlu gönül, neşeli kalp; sevinci ve coşkuyu etrafına yayan dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
+  },
+  {
     "id": "dilsin",
     "name": "Dilşin",
     "gender": "female",
@@ -10625,6 +10673,21 @@ export const names: NameData[] = [
       "Kürtçe İsim"
     ],
     "description": "Dilşoxî; gönül güzelliği dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
+  },
+  {
+    "id": "dilsoz",
+    "name": "Dilsoz",
+    "gender": "unisex",
+    "letter": "D",
+    "meaning": "Dilsoz; sözünde duran, vefalı ve sadık gönül; güvenin ve bağlılığın anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
+    "meaning_en": "Dilsoz; a person who places the meaning of true to one's word, loyal and faithful heart; a symbol of trust and devotion and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+    "meaning_de": "Dilsoz; eine Persönlichkeit, die die Bedeutung von worteheilig, treues und loyal ergebenes Herz; ein Symbol für Vertrauen und Hingabe und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+    "meaning_ar": "Dilsoz؛ شخص يضع معنى وفي بالوعد، قلب مخلص ووفي؛ رمز الثقة والإخلاص والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+    "origin": "Kurdish",
+    "tags": [
+      "Kürtçe İsim"
+    ],
+    "description": "Dilsoz; sözünde duran, vefalı ve sadık gönül; güvenin ve bağlılığın anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
   },
   {
     "id": "dilsozbar",
@@ -11060,6 +11123,22 @@ export const names: NameData[] = [
       "Kürtçe İsim"
     ],
     "description": "Diltavî; işıklı gönül anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+  },
+  {
+    "id": "dilvan",
+    "name": "Dilvan",
+    "gender": "male",
+    "letter": "D",
+    "meaning": "Dilvan; gönül bilen, aşık ve sevgi dolu; kalbin derinliklerini anlayan dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir.",
+    "meaning_en": "Dilvan; a very special and precious person who radiates love and beauty with a heart full of heart-knowing, loving and affectionate; one who understands the depths of the heart, noble stance, and elegance.",
+    "meaning_de": "Dilvan; eine ganz besondere und kostbare Persönlichkeit, die Liebe und Schönheit mit einem Herzen voller herzenskundig, liebevoll und zärtlich; einer, der die Tiefen des Herzens versteht, edler Haltung und Eleganz ausstrahlt.",
+    "meaning_ar": "Dilvan؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ عارف بالقلب، عاشق ومحب؛ يفهم أعماق القلب، وتتميز بوقارها ورقّتها.",
+    "origin": "Kurdish",
+    "tags": [
+      "Sevgi / Güzellik",
+      "Kürtçe İsim"
+    ],
+    "description": "Dilvan; gönül bilen, aşık ve sevgi dolu; kalbin derinliklerini anlayan dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
   },
   {
     "id": "dilvin",

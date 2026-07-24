@@ -26,6 +26,7 @@ const Admin = lazy(() => import('./pages/Admin'));
 const Compare = lazy(() => import('./pages/Compare'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const EditorialBoard = lazy(() => import('./pages/EditorialBoard'));
+const InstagramTracker = lazy(() => import('./pages/InstagramTracker'));
 
 
 function LangRedirect() {
@@ -259,6 +260,11 @@ export default function App() {
               {/* Global Admin Panel Shortcut */}
               <Route path="/admin" element={<Layout />}>
                 <Route index element={<Admin />} />
+              </Route>
+
+              {/* Instagram Tracker */}
+              <Route path="/instagram" element={<Layout />}>
+                <Route index element={<InstagramTracker />} />
               </Route>
 
               <Route path="*" element={<LangRedirect />} />

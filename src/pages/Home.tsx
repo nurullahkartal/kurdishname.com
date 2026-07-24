@@ -8,8 +8,8 @@ import { Search, Dices, ArrowRight, Heart } from "lucide-react";
 import { NameData } from "../data/names";
 import { generatePath } from "../utils/routes";
 import { getLocalizedMeaning, getLocalizedOrigin } from "../utils/localization";
-import { searchWithMiniSearch } from "../utils/search";
-import { loadNamesForLetter, loadNamesForSearch, fetchSearchIndex } from "../utils/nameLoader";
+import { performFastSearch, SearchIndexBucket, flattenSearchIndex } from "../utils/search";
+import { loadNamesForLetter, fetchSearchIndex } from "../utils/nameLoader";
 import { stats, featuredNames } from "../data/homeStaticData";
 import { blogPostsRegistry } from "../data/blogPosts";
 import { useFavorites } from "../context/FavoritesContext";
@@ -44,9 +44,9 @@ export default function Home() {
   const navigate = useNavigate();
   const q = new URLSearchParams(location.search).get("q") || "";
   const [localSearch, setLocalSearch] = useState(q);
-  const [allNames, setAllNames] = useState<NameData[]>([]);
   const [allSlimNames, setAllSlimNames] = useState<NameData[]>([]);
-  const [isLoading, setIsLoading] = useState(!!q);
+  const [searchIndexMap, setSearchIndexMap] = useState<SearchIndexBucket | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
   const [dbNamesMap, setDbNamesMap] = useState<Map<string, NameData>>(new Map());
   const [weeklyTrends, setWeeklyTrends] = useState<NameData[]>([]);
   const [weeklyGirls, setWeeklyGirls] = useState<NameData[]>([]);
@@ -58,8 +58,16 @@ export default function Home() {
     let active = true;
     async function loadData() {
       try {
-        const slimIndexList = await fetchSearchIndex();
+        const index = await fetchSearchIndex();
+        const slimIndexList = flattenSearchIndex(index).map(item => ({
+          id: item.id,
+          name: item.n,
+          gender: (item.g === "f" ? "female" : item.g === "u" ? "unisex" : "male") as NameData["gender"],
+          letter: item.n.charAt(0).toUpperCase(),
+          meaning: "",
+        }));
         if (active) {
+          setSearchIndexMap(index);
           setAllSlimNames(slimIndexList);
         }
 
@@ -129,6 +137,8 @@ export default function Home() {
         }
       } catch (err) {
         console.error("Failed to load dynamic weekly seed names", err);
+      } finally {
+        if (active) setIsLoading(false);
       }
     }
     loadData();
@@ -136,37 +146,23 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
+    if (!q || q.length < 2 || !searchIndexMap) return;
     let active = true;
-    if (!q) {
-      setIsLoading(false);
-      return;
-    }
-
-    async function load() {
-      setIsLoading(true);
-      try {
-        const loaded = await loadNamesForSearch(q);
-        if (active) {
-          const localNamesStr = localStorage.getItem('addedNames');
-          const localNames: NameData[] = localNamesStr ? JSON.parse(localNamesStr) : [];
-          const combined = [...loaded, ...localNames];
-          
-          const uniqueMap = new Map();
-          combined.forEach(item => uniqueMap.set(item.id, item));
-          setAllNames(Array.from(uniqueMap.values()));
-        }
-      } catch (err) {
-        console.error("Failed to load names inside Home", err);
-      } finally {
-        if (active) {
-          setIsLoading(false);
-        }
-      }
-    }
-    load();
+    const hits = performFastSearch(searchIndexMap, q).slice(0, 60);
+    const letters = new Set(hits.map(h => h.n.charAt(0).toUpperCase()));
+    Promise.all([...letters].map(letter => loadNamesForLetter(letter))).then(chunks => {
+      if (!active) return;
+      const loaded = chunks.flat();
+      setDbNamesMap(prev => {
+        const next = new Map(prev);
+        loaded.forEach(item => {
+          if (item?.id) next.set(item.id.toLowerCase(), item);
+        });
+        return next;
+      });
+    });
     return () => { active = false; };
-  }, [q]);
+  }, [q, searchIndexMap]);
 
   const handleSearchChange = (val: string) => {
     setLocalSearch(val);
@@ -177,9 +173,21 @@ export default function Home() {
   };
 
   const searchResults = useMemo(() => {
-    if (q.length < 2) return [];
-    return searchWithMiniSearch(allNames, q, lng).slice(0, 60);
-  }, [q, allNames, lng]);
+    if (q.length < 2 || !searchIndexMap) return [];
+    const localNamesStr = typeof window !== "undefined" ? localStorage.getItem("addedNames") : null;
+    const localNames: NameData[] = localNamesStr ? JSON.parse(localNamesStr) : [];
+    const hits = performFastSearch(searchIndexMap, q);
+    const merged = [...hits.map(h => dbNamesMap.get(h.id.toLowerCase()) || {
+      id: h.id,
+      name: h.n,
+      gender: (h.g === "f" ? "female" : h.g === "u" ? "unisex" : "male") as NameData["gender"],
+      letter: h.n.charAt(0).toUpperCase(),
+      meaning: "",
+    }), ...localNames.filter(n => n.name.toLowerCase().includes(q.toLowerCase()))];
+    const uniqueMap = new Map<string, NameData>();
+    merged.forEach(item => uniqueMap.set(item.id, item));
+    return Array.from(uniqueMap.values()).slice(0, 60);
+  }, [q, searchIndexMap, dbNamesMap]);
 
   const featuredGirlNames = useMemo(() => {
     return featuredNames.filter(n => n.gender === "female");

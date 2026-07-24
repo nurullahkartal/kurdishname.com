@@ -51,6 +51,16 @@ export function getWeeklySeed(): number {
 }
 
 /**
+ * Calculates a unique seed for the current day.
+ * Changes precisely at 00:00 every day.
+ * Format: YYYYMMDD
+ */
+export function getDailySeed(): number {
+  const now = new Date();
+  return now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
+}
+
+/**
  * A simple seeded random number generator (Linear Congruential Generator).
  * Returns a function that produces deterministic pseudo-random numbers between 0 and 1.
  */

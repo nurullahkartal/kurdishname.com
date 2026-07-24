@@ -8,7 +8,7 @@ import { generatePath } from "../utils/routes";
 import { getLocalizedMeaning, getLocalizedOrigin } from "../utils/localization";
 import { fetchSearchIndex, loadNamesForLetter, getLettersForId } from "../utils/nameLoader";
 import { useFavorites } from "../context/FavoritesContext";
-import { searchWithMiniSearch } from "../utils/search";
+import { performFastSearch, SearchIndexBucket, flattenSearchIndex } from "../utils/search";
 import { compareNames } from "../core/compare/compareEngine";
 import { trackCompareEvent } from "../core/compare/logger";
 // Helper to determine deterministic stars for popularity
@@ -25,7 +25,7 @@ export default function Compare() {
   const lng = i18n.language || "tr";
   const { favorites } = useFavorites();
 
-  const [searchIndex, setSearchIndex] = useState<NameData[]>([]);
+  const [searchIndex, setSearchIndex] = useState<SearchIndexBucket | null>(null);
   const [selectedId1, setSelectedId1] = useState<string>("");
   const [selectedId2, setSelectedId2] = useState<string>("");
 
@@ -95,14 +95,16 @@ export default function Compare() {
 
   // Dropdown Filtering
   const filteredOptions1 = useMemo(() => {
-    if (!debouncedQuery1.trim()) return searchIndex.slice(0, 10);
-    return searchWithMiniSearch(searchIndex, debouncedQuery1, lng).slice(0, 8);
-  }, [debouncedQuery1, searchIndex, lng]);
+    if (!searchIndex) return [];
+    if (!debouncedQuery1.trim()) return [];
+    return performFastSearch(searchIndex, debouncedQuery1).slice(0, 8);
+  }, [debouncedQuery1, searchIndex]);
 
   const filteredOptions2 = useMemo(() => {
-    if (!debouncedQuery2.trim()) return searchIndex.slice(0, 10);
-    return searchWithMiniSearch(searchIndex, debouncedQuery2, lng).slice(0, 8);
-  }, [debouncedQuery2, searchIndex, lng]);
+    if (!searchIndex) return [];
+    if (!debouncedQuery2.trim()) return [];
+    return performFastSearch(searchIndex, debouncedQuery2).slice(0, 8);
+  }, [debouncedQuery2, searchIndex]);
 
   // Compute Fun Name Harmony Score
   const harmonyResult = useMemo(() => {
@@ -121,19 +123,20 @@ export default function Compare() {
 
   // Quick select from favorites
   const handleSelectFromFavorites = (id: string) => {
+    const flatIndex = flattenSearchIndex(searchIndex);
     if (!selectedId1) {
       setSelectedId1(id);
-      const nameObj = searchIndex.find(n => n.id === id);
-      if (nameObj) setQuery1(nameObj.name);
+      const nameObj = flatIndex.find(n => n.id === id);
+      if (nameObj) setQuery1(nameObj.n);
     } else if (!selectedId2 && selectedId1 !== id) {
       setSelectedId2(id);
-      const nameObj = searchIndex.find(n => n.id === id);
-      if (nameObj) setQuery2(nameObj.name);
+      const nameObj = flatIndex.find(n => n.id === id);
+      if (nameObj) setQuery2(nameObj.n);
     } else {
       // Overwrite first slot if both filled
       setSelectedId1(id);
-      const nameObj = searchIndex.find(n => n.id === id);
-      if (nameObj) setQuery1(nameObj.name);
+      const nameObj = flatIndex.find(n => n.id === id);
+      if (nameObj) setQuery1(nameObj.n);
     }
   };
 
@@ -296,35 +299,21 @@ export default function Compare() {
                 maxHeight: "220px",
                 overflowY: "auto"
               }}>
-                {filteredOptions1.map(item => (
-                  <button
-                    key={item.id}
+                {filteredOptions1.map(option => (
+                  <li
+                    key={option.id}
+                    className="autocomplete-item"
                     onClick={() => {
-                      setSelectedId1(item.id);
-                      setQuery1(item.name);
+                      setSelectedId1(option.id);
+                      setQuery1(option.n);
                       setIsDropdown1Open(false);
                     }}
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      width: "100%",
-                      padding: "0.6rem 1rem",
-                      background: "none",
-                      border: "none",
-                      textAlign: "left",
-                      cursor: "pointer",
-                      fontSize: "0.8125rem",
-                      color: "var(--text)",
-                      fontWeight: 600
-                    }}
-                    className="hover:bg-[var(--surface-alt)]"
                   >
-                    <span>{item.name}</span>
-                    <span style={{ fontSize: "0.6875rem", color: item.gender === "female" ? "var(--female)" : "var(--male)", fontWeight: 700 }}>
-                      {item.gender === "female" ? t("gender_female", "Kız") : t("gender_male", "Erkek")}
+                    <span className="font-semibold">{option.n}</span>
+                    <span className="text-sm opacity-75 ml-2">
+                      {option.g === "female" || option.g === "f" ? "👧" : "👦"}
                     </span>
-                  </button>
+                  </li>
                 ))}
               </div>
             )}
@@ -394,35 +383,21 @@ export default function Compare() {
                 maxHeight: "220px",
                 overflowY: "auto"
               }}>
-                {filteredOptions2.map(item => (
-                  <button
-                    key={item.id}
+                {filteredOptions2.map(option => (
+                  <li
+                    key={option.id}
+                    className="autocomplete-item"
                     onClick={() => {
-                      setSelectedId2(item.id);
-                      setQuery2(item.name);
+                      setSelectedId2(option.id);
+                      setQuery2(option.n);
                       setIsDropdown2Open(false);
                     }}
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      width: "100%",
-                      padding: "0.6rem 1rem",
-                      background: "none",
-                      border: "none",
-                      textAlign: "left",
-                      cursor: "pointer",
-                      fontSize: "0.8125rem",
-                      color: "var(--text)",
-                      fontWeight: 600
-                    }}
-                    className="hover:bg-[var(--surface-alt)]"
                   >
-                    <span>{item.name}</span>
-                    <span style={{ fontSize: "0.6875rem", color: item.gender === "female" ? "var(--female)" : "var(--male)", fontWeight: 700 }}>
-                      {item.gender === "female" ? t("gender_female", "Kız") : t("gender_male", "Erkek")}
+                    <span className="font-semibold">{option.n}</span>
+                    <span className="text-sm opacity-75 ml-2">
+                      {option.g === "female" || option.g === "f" ? "👧" : "👦"}
                     </span>
-                  </button>
+                  </li>
                 ))}
               </div>
             )}

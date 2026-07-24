@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build && tsx scripts/build.ts",
-    "postbuild": "tsx scripts/deploy.ts",
+    "build": "cross-env SKIP_PWA=true vite build && tsx scripts/build.ts",
+    "build:prod": "vite build && tsx scripts/build.ts",
     "deploy": "npx wrangler pages deploy dist --project-name=kurdishname --branch=kurdishname --commit-dirty=true",
     "preview": "vite preview",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist .cache",
     "lint": "tsc --noEmit",
     "build:legacy": "vite build && tsx scripts/generateSSG.ts",
     "build:safe": "vite build && tsx scripts/buildAll.ts && tsx scripts/validateBuild.ts"
@@ -20,7 +20,6 @@
     "i18next": "^26.0.8",
     "i18next-browser-languagedetector": "^8.2.1",
     "lucide-react": "^0.546.0",
-    "minisearch": "^7.2.0",
     "motion": "^12.38.0",
     "puppeteer": "^25.0.4",
     "react": "^19.0.1",
@@ -32,8 +31,9 @@
     "vite": "^6.2.3"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
+    "@types/node": "^22.20.0",
     "autoprefixer": "^10.4.21",
+    "cross-env": "^10.1.0",
     "tailwindcss": "^4.1.14",
     "tsx": "^4.7.0",
     "typescript": "~5.8.2",

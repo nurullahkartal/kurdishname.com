@@ -87,26 +87,32 @@ export async function loadAllNames(): Promise<NameData[]> {
   return results.flat();
 }
 
-let searchIndexCache: NameData[] | null = null;
-export async function fetchSearchIndex(): Promise<NameData[]> {
+let searchIndexCache: Record<string, any[]> | null = null;
+export async function fetchSearchIndex(): Promise<Record<string, any[]>> {
   if (searchIndexCache) return searchIndexCache;
-  if (typeof window === "undefined") return [];
+  if (typeof window === "undefined") return {};
   try {
-    const res = await fetch('/search_index.json');
+    // 1. Fetch manifest with cache buster
+    const manifestRes = await fetch(`/data/search_manifest.json?v=${Date.now()}`);
+    const manifest = await manifestRes.json();
+
+    // 2. Fetch the perfectly cacheable hashed index
+    const res = await fetch(`/data/${manifest.searchIndex}`);
     searchIndexCache = await res.json();
-    return searchIndexCache || [];
+    return searchIndexCache || {};
   } catch (err) {
     console.error('Failed to load search index:', err);
-    return [];
+    return {};
   }
 }
 
-export async function loadNamesForSearch(q: string): Promise<NameData[]> {
+export async function loadNamesForSearch(q: string): Promise<any[]> {
   const cleanQ = q.trim();
   if (!cleanQ) return [];
   
-  // Zayıf İndeks (Slim Index) kullanılıyor.
-  return await fetchSearchIndex();
+  // This is no longer used for slim index directly since the UI must call performFastSearch
+  // But we return empty array here to avoid breaking type signatures if it's used elsewhere
+  return [];
 }
 
 export function getLettersForId(id: string): string[] {

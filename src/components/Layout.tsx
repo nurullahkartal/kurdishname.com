@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
-import { Search, Heart, ArrowLeftRight } from "lucide-react";
+import { Search, Heart, ArrowLeftRight, Instagram, Mail } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -25,22 +25,6 @@ export default function Layout() {
   const location = useLocation();
   const navigate = useNavigate();
   const [searchVal, setSearchVal] = useState("");
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  useEffect(() => {
-    setIsMenuOpen(false);
-  }, [location.pathname, location.search]);
-
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isMenuOpen]);
 
   const baseUrl = "https://kurdishname.com";
   const { canonicalUrl, hreflangs, xDefault } = useCanonicalAndHreflang();
@@ -171,58 +155,18 @@ export default function Layout() {
               </div>
             </form>
  
-            {/* Header Controls (Theme, Lang, Hamburger) */}
+            {/* Header Controls (Theme, Lang) */}
             <div className="enc-header-controls">
-              {/* Desktop Only Controls */}
-              <div className="hidden md:flex items-center">
+              <div className="flex items-center">
                 <ThemeToggle />
                 <span style={{ width: "1px", height: "14px", backgroundColor: "var(--border)", margin: "0 0.4rem" }} />
                 <LanguageSwitcher />
               </div>
-
-              {/* Mobile Hamburger Button */}
-              <button 
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="md:hidden p-3 -mr-2 relative z-[200] text-[var(--text)] rounded-xl hover:bg-[var(--surface-alt)] transition-colors"
-                aria-label={isMenuOpen ? "Menüyü kapat" : "Menüyü aç"}
-              >
-                <div className="relative w-6 h-6 flex items-center justify-center">
-                  <motion.div
-                    animate={isMenuOpen ? "open" : "closed"}
-                    className="relative w-6 h-5 flex flex-col justify-between py-0.5"
-                  >
-                    <motion.span
-                      variants={{
-                        closed: { rotate: 0, y: 0 },
-                        open: { rotate: 45, y: 7.5 }
-                      }}
-                      transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                      className="w-6 h-0.5 bg-[var(--text)] rounded-full block"
-                    />
-                    <motion.span
-                      variants={{
-                        closed: { opacity: 1, scale: 1 },
-                        open: { opacity: 0, scale: 0 }
-                      }}
-                      transition={{ duration: 0.15 }}
-                      className="w-6 h-0.5 bg-[var(--text)] rounded-full block"
-                    />
-                    <motion.span
-                      variants={{
-                        closed: { rotate: 0, y: 0 },
-                        open: { rotate: -45, y: -7.5 }
-                      }}
-                      transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                      className="w-6 h-0.5 bg-[var(--text)] rounded-full block"
-                    />
-                  </motion.div>
-                </div>
-              </button>
             </div>
           </div>
  
-          {/* Nav tabs - hide on mobile, show in drawer instead */}
-          <nav className="hidden md:flex" style={{ gap: 0, borderTop: "1px solid var(--border-dim)", overflowX: "auto" }} aria-label={t("aria_nav_label")}>
+          {/* Nav tabs */}
+          <nav className="flex" style={{ gap: 0, borderTop: "1px solid var(--border-dim)", overflowX: "auto", scrollbarWidth: "none", msOverflowStyle: "none" }} aria-label={t("aria_nav_label")}>
             {navItems.map(({ to, label, end, isFav }) => (
               <NavLink
                 key={to}
@@ -274,166 +218,52 @@ export default function Layout() {
       </header>
 
       {/* ── PAGE CONTENT ───────────────────────────────── */}
-      <main className="enc-container" style={{ paddingTop: "1.75rem", paddingBottom: "4rem" }}>
+      <main className="enc-container pb-[2rem]" style={{ paddingTop: "1.75rem" }}>
         <div key={location.pathname} className="page-fade-in">
           <Outlet />
         </div>
       </main>
 
        <footer style={{ borderTop: "1px solid var(--border)", padding: "1.25rem 0" }}>
-        <div className="enc-container-wide" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "1rem", fontSize: "0.75rem", color: "var(--text-faint)" }}>
-          <span>© {new Date().getFullYear()} KurdishName</span>
-          <div style={{ display: "flex", gap: "1.25rem", flexWrap: "wrap", alignItems: "center" }}>
-            {fullFooterLinks.map(({ to, label, titleAttr }) => (
-              <NavLink 
-                key={to} 
-                to={to} 
-                title={titleAttr}
-                style={{ color: "var(--text-faint)", fontSize: "0.75rem", textDecoration: "none", fontWeight: titleAttr ? 600 : 400 }} 
-                className="hover:text-[var(--text)] transition-colors"
-              >
-                {label}
-              </NavLink>
-            ))}
+        <div className="enc-container-wide" style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "1rem", fontSize: "0.75rem", color: "var(--text-faint)" }}>
+            <span>© {new Date().getFullYear()} KurdishName</span>
+            <div style={{ display: "flex", gap: "1.25rem", flexWrap: "wrap", alignItems: "center" }}>
+              {fullFooterLinks.map(({ to, label, titleAttr }) => (
+                <NavLink 
+                  key={to} 
+                  to={to} 
+                  title={titleAttr}
+                  style={{ color: "var(--text-faint)", fontSize: "0.75rem", textDecoration: "none", fontWeight: titleAttr ? 600 : 400 }} 
+                  className="hover:text-[var(--text)] transition-colors"
+                >
+                  {label}
+                </NavLink>
+              ))}
+            </div>
+          </div>
+          <div style={{ display: "flex", justifyContent: "center", gap: "2rem", flexWrap: "wrap", marginTop: "1rem" }}>
+            <a href="mailto:kurdishname.com@gmail.com" style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "var(--text)", textDecoration: "none", fontWeight: 600, fontSize: "0.9rem" }} className="hover:text-[var(--female)] transition-colors">
+              <Mail size={22} color="var(--text-muted)" />
+              <span>kurdishname.com@gmail.com</span>
+            </a>
+            <a href="https://instagram.com/kurdishnamecom" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "var(--text)", textDecoration: "none", fontWeight: 600, fontSize: "0.9rem" }} className="hover:text-[var(--female)] transition-colors">
+              <Instagram size={22} color="#E1306C" />
+              <span>@kurdishnamecom</span>
+            </a>
+            <a href="https://instagram.com/naven.kurdi" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "var(--text)", textDecoration: "none", fontWeight: 600, fontSize: "0.9rem" }} className="hover:text-[var(--female)] transition-colors">
+              <Instagram size={22} color="#E1306C" />
+              <span>@naven.kurdi</span>
+            </a>
+            <a href="https://tiktok.com/@kurdishname.com" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "var(--text)", textDecoration: "none", fontWeight: 600, fontSize: "0.9rem" }} className="hover:text-[var(--female)] transition-colors">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.525.02c1.31-.02 2.61-.01 3.91.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.95v7.4c0 1.97-.78 3.86-2.17 5.25-1.39 1.39-3.28 2.17-5.25 2.17-1.97 0-3.86-.78-5.25-2.17-1.39-1.39-2.17-3.28-2.17-5.25 0-1.97.78-3.86 2.17-5.25 1.39-1.39 3.28-2.17 5.25-2.17.65 0 1.3.11 1.91.31v4.02c-.59-.16-1.22-.2-1.84-.11-.63.09-1.22.37-1.69.83-.47.45-.81 1.05-.96 1.68-.15.63-.1 1.29.13 1.88.24.59.67 1.09 1.22 1.42.55.33 1.19.46 1.83.39.63-.07 1.23-.33 1.71-.75.48-.42.82-.99.96-1.62.15-.65.17-1.33.06-1.99V0h4.22z"/>
+              </svg>
+              <span>@kurdishname.com</span>
+            </a>
           </div>
         </div>
       </footer>
-
-      {/* ── TAM EKRAN PREMİUM OPAK CAM MENÜ (Overlay Navigation) ──────────── */}
-      <AnimatePresence>
-        {isMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.25 }}
-            className="fixed inset-0 z-[150] flex flex-col px-6 pb-8 overflow-y-auto menu-overlay-backdrop backdrop-blur-2xl"
-          >
-            {/* Header spacer to keep alignment perfect */}
-            <div className="flex justify-between items-center h-20 opacity-0 pointer-events-none">
-              {/* Invisible spacer just to match header height */}
-            </div>
-
-            {/* Links Section in Center */}
-            <motion.div 
-              variants={{
-                open: {
-                  transition: { staggerChildren: 0.08, delayChildren: 0.1 }
-                },
-                closed: {
-                  transition: { staggerChildren: 0.05, staggerDirection: -1 }
-                }
-              }}
-              initial="closed"
-              animate="open"
-              exit="closed"
-              className="flex flex-col items-center justify-center gap-6 my-auto"
-            >
-              {[
-                { to: generatePath(lng, null), label: t("nav_home"), end: true },
-                { to: generatePath(lng, "category", "kiz"), label: t("nav_girls"), end: false },
-                { to: generatePath(lng, "category", "erkek"), label: t("nav_boys"), end: false },
-                { to: generatePath(lng, "finder"), label: t("nav_finder"), end: false },
-              ].map(({ to, label, end }) => (
-                <motion.div
-                  key={to}
-                  variants={{
-                    closed: { opacity: 0, y: 15, scale: 0.96 },
-                    open: { opacity: 1, y: 0, scale: 1 }
-                  }}
-                  transition={{ type: "spring", stiffness: 260, damping: 22 }}
-                >
-                  <NavLink
-                    to={to}
-                    end={end}
-                    onClick={() => setIsMenuOpen(false)}
-                    className={({ isActive }) => `text-2xl font-serif font-black tracking-wide py-2 px-6 rounded-2xl transition-colors block text-center ${
-                      isActive 
-                        ? 'text-white bg-[var(--accent)] dark:bg-indigo-600 shadow-lg shadow-[var(--accent)]/20' 
-                        : 'text-[var(--text)] hover:bg-[var(--surface-alt)]'
-                    }`}
-                  >
-                    {label}
-                  </NavLink>
-                </motion.div>
-              ))}
-            </motion.div>
-
-            {/* Bottom Controls / Tools (Language, Theme, Favorites, Compare) */}
-            <motion.div
-              variants={{
-                closed: { opacity: 0, y: 25 },
-                open: { opacity: 1, y: 0 }
-              }}
-              transition={{ delay: 0.35, type: "spring", stiffness: 200, damping: 20 }}
-              className="mt-auto border-t border-[var(--border-dim)] pt-6 flex flex-col gap-5 max-w-lg mx-auto w-full"
-            >
-              {/* Grid of Tools: Favorites, Compare, Theme */}
-              <div className="grid grid-cols-3 gap-3">
-                {/* Defterim */}
-                <NavLink
-                  to={generatePath(lng, "favorites")}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="flex flex-col items-center justify-center p-3 rounded-2xl bg-[var(--surface)] border border-[var(--border)] hover:bg-[var(--surface-alt)] transition-colors text-center"
-                >
-                  <Heart
-                    size={22}
-                    className={favorites.length > 0 ? "fill-[var(--female)] text-[var(--female)] animate-pulse" : "text-slate-400"}
-                  />
-                  <span className="font-bold text-[var(--text)] text-xs mt-1.5">{t("nav_favorites", "Defterim")}</span>
-                  <span className="text-[10px] text-[var(--text-muted)] mt-0.5">
-                    {favorites.length} {t("saved_names", "isim")}
-                  </span>
-                </NavLink>
-
-                {/* Karşılaştır */}
-                <NavLink
-                  to={generatePath(lng, "compare")}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="flex flex-col items-center justify-center p-3 rounded-2xl bg-[var(--surface)] border border-[var(--border)] hover:bg-[var(--surface-alt)] transition-colors text-center"
-                >
-                  <ArrowLeftRight size={22} className="text-slate-400" />
-                  <span className="font-bold text-[var(--text)] text-xs mt-1.5">{t("nav_compare", "Karşılaştır")}</span>
-                  <span className="text-[10px] text-[var(--text-muted)] mt-0.5">
-                    {t("compare_sub", "Kıyasla")}
-                  </span>
-                </NavLink>
-
-                {/* Tema Kontrolü */}
-                <div className="flex flex-col items-center justify-center p-3 rounded-2xl bg-[var(--surface)] border border-[var(--border)] transition-colors text-center">
-                  <ThemeToggle />
-                  <span className="font-bold text-[var(--text)] text-xs mt-1.5">{t("theme_select", "Tema")}</span>
-                  <span className="text-[10px] text-[var(--text-muted)] mt-0.5">{t("theme_change", "Görünüm")}</span>
-                </div>
-              </div>
-
-              {/* Language Switcher Card */}
-              <div className="p-4 rounded-2xl bg-[var(--surface)] border border-[var(--border)] flex items-center justify-between">
-                <span className="text-xs font-bold text-[var(--text-faint)] uppercase tracking-wider">
-                  {t("language_select", "Dil")} / {t("region_select", "Bölge")}
-                </span>
-                <div onClick={() => setIsMenuOpen(false)}>
-                  <LanguageSwitcher />
-                </div>
-              </div>
-
-              {/* Corporate Links */}
-              <div className="flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-[var(--text-faint)] justify-center">
-                {corporateLinks.map(({ to, label }) => (
-                  <NavLink
-                    key={to}
-                    to={to}
-                    onClick={() => setIsMenuOpen(false)}
-                    className="hover:text-[var(--text)] transition-colors py-0.5 px-1.5 rounded hover:bg-[var(--surface-alt)]"
-                  >
-                    {label}
-                  </NavLink>
-                ))}
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </div>
   );
 }

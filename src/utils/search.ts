@@ -1,5 +1,29 @@
-import MiniSearch from 'minisearch';
-import { NameData } from '../data/names';
+/**
+ * Scale-Safe Fast Search Engine (O(1) Bucket Lookup)
+ * Removes MiniSearch entirely for a deterministic, graph-boosted, diacritic-safe prefix search.
+ */
+
+export type SearchIndexItem = {
+  id: string;
+  n: string; // Original Name
+  nn: string; // Normalized Name
+  g: string; // Gender ('f' | 'm')
+  s: number; // SEO/Graph score
+};
+
+export type SearchIndexBucket = Record<string, SearchIndexItem[]>;
+
+/**
+ * Flattens the bucketed search index into a single array for components that need the entire list
+ */
+export function flattenSearchIndex(index: SearchIndexBucket | null): SearchIndexItem[] {
+  if (!index) return [];
+  const result: SearchIndexItem[] = [];
+  for (const bucket of Object.values(index)) {
+    result.push(...bucket);
+  }
+  return result;
+}
 
 /**
  * Kurdish & Turkish Character Normalizer
@@ -20,68 +44,84 @@ export function normalizeText(text: string): string {
     .replaceAll('ı', 'i')
     .replaceAll('ö', 'o')
     .replaceAll('ü', 'u')
-    .replaceAll('ê', 'e') // double check for edge cases
-    .replaceAll('ç', 'c')
     .trim();
 }
 
 /**
- * Checks if search query matches the target string using normalized comparison.
- * Supports partial matches and simplified characters.
- * (Left as fallback for non-fuzzy simple lookups)
+ * Performs ultra-fast bucketed search using the precomputed index.
  */
-export function fuzzyMatch(target: string, query: string): boolean {
-  if (!query) return true;
-  const normalizedTarget = normalizeText(target);
-  const normalizedQuery = normalizeText(query);
-  
-  // Direct inclusion
-  if (normalizedTarget.includes(normalizedQuery)) return true;
-  
-  // Check if query is start of target
-  if (normalizedTarget.startsWith(normalizedQuery)) return true;
+export function performFastSearch(index: SearchIndexBucket, query: string): SearchIndexItem[] {
+  const cleanQuery = query.trim();
+  if (!cleanQuery || !index) return [];
 
-  return false;
+  const nQuery = normalizeText(cleanQuery);
+  if (!nQuery) return [];
+
+  let candidates: SearchIndexItem[] = [];
+
+  if (nQuery.length === 1) {
+    // 1-letter search: collect all buckets starting with that letter
+    for (const key of Object.keys(index)) {
+      if (key.startsWith(nQuery)) {
+        candidates.push(...index[key]);
+      }
+    }
+  } else {
+    // 2+ letters search: instantly grab the bucket
+    const prefix = nQuery.substring(0, 2);
+    candidates = index[prefix] || [];
+  }
+
+  // Score and filter candidates
+  const scoredItems = candidates.map(item => {
+    let matchScore = 0;
+
+    if (item.nn === nQuery) {
+      matchScore = 1000; // Exact match
+    } else if (item.nn.startsWith(nQuery)) {
+      matchScore = 500; // Prefix match
+    } else if (item.nn.includes(nQuery)) {
+      matchScore = 100; // Fuzzy includes
+    }
+
+    if (matchScore > 0) {
+      // Add the Graph/SEO boost to rank popular items higher
+      return { item, score: matchScore + item.s };
+    }
+    return null;
+  }).filter(Boolean) as { item: SearchIndexItem, score: number }[];
+
+  // Sort by final score descending
+  scoredItems.sort((a, b) => b.score - a.score);
+
+  return scoredItems.map(i => i.item).slice(0, 60);
 }
 
 /**
- * Perform highly optimized MiniSearch on name entities.
- * Includes boosted weighting for name, secondary for meaning.
+ * Fallback search for client-side filtering of full NameData arrays
+ * (e.g. Category pages where we already have the full list loaded)
  */
-export function searchWithMiniSearch(list: NameData[], query: string, lng: string): NameData[] {
+export function searchFullNames(list: any[], query: string): any[] {
   const cleanQuery = query.trim();
-  if (!cleanQuery || !list || list.length === 0) return [];
+  if (!cleanQuery || !list || list.length === 0) return list;
 
-  const normalizedQuery = normalizeText(cleanQuery);
+  const nQuery = normalizeText(cleanQuery);
+  if (!nQuery) return list;
 
-  // Map active language to corresponding translation field
-  const meaningKey = 
-    lng === 'en' ? 'meaning_en' : 
-    lng === 'de' ? 'meaning_de' : 
-    lng === 'ar' ? 'meaning_ar' : 
-    'meaning';
+  const scoredItems = list.map(item => {
+    let matchScore = 0;
+    const nn = normalizeText(item.name || "");
 
-  // Instantiate MiniSearch
-  const miniSearch = new MiniSearch<NameData>({
-    fields: ['name', meaningKey], // Fields to index
-    idField: 'id',
-    extractField: (document, fieldName) => {
-      // Normalize fields during indexing so "sh" matches "ş" etc.
-      const value = document[fieldName as keyof NameData];
-      return typeof value === 'string' ? normalizeText(value) : (value as any);
-    },
-    searchOptions: {
-      boost: { name: 2 }, // Name matches are 2x more important than meaning matches
-      fuzzy: 0.2, // Handle typos
-      prefix: true // Prefix search for as-you-type experience
+    if (nn === nQuery) matchScore = 1000;
+    else if (nn.startsWith(nQuery)) matchScore = 500;
+    else if (nn.includes(nQuery)) matchScore = 100;
+
+    if (matchScore > 0) {
+      return { item, score: matchScore };
     }
-  });
+    return null;
+  }).filter(Boolean) as { item: any, score: number }[];
 
-  miniSearch.addAll(list);
-
-  const searchResults = miniSearch.search(normalizedQuery);
-
-  // Map back to original NameData objects
-  const idMap = new Map(list.map(item => [item.id, item]));
-  return searchResults.map(res => idMap.get(res.id)).filter(Boolean) as NameData[];
+  scoredItems.sort((a, b) => b.score - a.score);
+  return scoredItems.map(i => i.item);
 }

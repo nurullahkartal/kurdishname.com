@@ -932,6 +932,21 @@ export const names: NameData[] = [
     "description": "Ferhadî; ferhat anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
   },
   {
+    "id": "ferhat",
+    "name": "Ferhat",
+    "gender": "male",
+    "letter": "F",
+    "meaning": "Ferhat; sevinç, mutluluk ve umut; hayat dolu neşeli bir ruh taşıyan anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
+    "meaning_en": "Ferhat; a person who places the meaning of joy, happiness, and hope; carrying a lively and cheerful spirit and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+    "meaning_de": "Ferhat; eine Persönlichkeit, die die Bedeutung von Freude, Glück und Hoffnung; eine lebendige und fröhliche Seele tragend und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+    "meaning_ar": "Ferhat؛ شخص يضع معنى فرح، سعادة وأمل؛ يحمل روحًا حية ومبهجة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+    "origin": "Kurdish",
+    "tags": [
+      "Kürtçe İsim"
+    ],
+    "description": "Ferhat; sevinç, mutluluk ve umut; hayat dolu neşeli bir ruh taşıyan anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+  },
+  {
     "id": "ferhen",
     "name": "Ferhen",
     "gender": "male",
@@ -1125,6 +1140,22 @@ export const names: NameData[] = [
     "meaning_en": "Feryad; a person who places the meaning of cry, call for help, voice of appeal and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
     "meaning_de": "Feryad; eine Persönlichkeit, die die Bedeutung von schrei, Hilferuf, Stimme des Appells und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
     "meaning_ar": "Feryad؛ شخص يضع معنى صرخة، نداء استغاثة، صوت النداء العالي والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً."
+  },
+  {
+    "id": "ferzad",
+    "name": "Ferzad",
+    "gender": "male",
+    "letter": "F",
+    "meaning": "Ferzad; şan ve ihtişamla doğmuş, asil soydan gelen; onurlu bir mirasın temsilcisi sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir.",
+    "meaning_en": "Ferzad; a noble person endowed with born with glory and splendor, of noble lineage; a representative of an honorable heritage, possessing brave courage and unwavering determination, representing the symbol of strength and leadership.",
+    "meaning_de": "Ferzad; eine edle Persönlichkeit, die mit mit Ruhm und Pracht geboren, edler Abstammung; ein Vertreter eines ehrenvollen Erbes ausgestattet ist, tapferen Mut und unerschütterliche Entschlossenheit besitzt und das Symbol für Stärke und Führung darstellt.",
+    "meaning_ar": "Ferzad؛ شخصية نبيلة تتحلى بـ ولد بمجد وعظمة، من نسب نبيل؛ ممثل موروث شريف، تمتلك شجاعة مقدامة وعزيمة لا تلين، وتمثل رمز القوة والقيادة.",
+    "origin": "Kurdish",
+    "tags": [
+      "Cesaret / Güç",
+      "Kürtçe İsim"
+    ],
+    "description": "Ferzad; şan ve ihtişamla doğmuş, asil soydan gelen; onurlu bir mirasın temsilcisi sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir."
   },
   {
     "id": "ferzadi",

@@ -587,6 +587,22 @@ export const names: NameData[] = [
     "meaning_ar": "Zanîn؛ شخصية مرموقة تبلغ ذرى الحكمة من خلال متعلقة بـ حكيم، شبيهة بـ حكيم، وترشد المجتمع بفكرها العميق وكلماتها المستنيرة."
   },
   {
+    "id": "zanist",
+    "name": "Zanist",
+    "gender": "female",
+    "letter": "Z",
+    "meaning": "Zanist; bilgi, ilim ve bilgelik; öğrenmeye ve aydınlanmaya açık bir zihin anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
+    "meaning_en": "Zanist; a person who places the meaning of knowledge, science, and wisdom; a mind open to learning and enlightenment and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+    "meaning_de": "Zanist; eine Persönlichkeit, die die Bedeutung von Wissen, Wissenschaft und Weisheit; ein Geist, der offen ist für Lernen und Erleuchtung und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+    "meaning_ar": "Zanist؛ شخص يضع معنى معرفة، علم وحكمة؛ عقل منفتح على التعلم والاستنارة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+    "origin": "Kurdish",
+    "tags": [
+      "Bilgelik / Akıl",
+      "Kürtçe İsim"
+    ],
+    "description": "Zanist; bilgi, ilim ve bilgelik; öğrenmeye ve aydınlanmaya açık bir zihin anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+  },
+  {
     "id": "zanmani",
     "name": "Zanmanî",
     "gender": "male",

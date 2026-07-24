@@ -19,7 +19,7 @@ const BLACKLIST = new Set([
   // 3. Persian Loanwords & Crossover Names
   'azad', 'bahar', 'baran', 'can', 'dara', 'delal', 'ferhat', 'lale', 'nergis', 'nevruz', 
   'peri', 'ruya', 'sadi', 'serap', 'sahin', 'sirin', 'yasemin', 'zehra', 'naz', 'banu', 
-  'dilara', 'gulbahar', 'gulistan', 'pervin', 'rusen', 'simge', 'reyhan', 'cihan', 'rehan', 
+  'gulbahar', 'pervin', 'rusen', 'simge', 'reyhan', 'cihan', 'rehan', 
   'rihan', 'rusen', 'sahan', 'sahin', 'sirin', 'sah_in', 'sirin', 'sirine', 'cano', 'nazli',
 
   // 4. Turkish & Mongolian Loanwords / Crossovers

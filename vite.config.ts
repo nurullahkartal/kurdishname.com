@@ -10,13 +10,14 @@ export default defineConfig(() => {
       react(), 
       tailwindcss(),
       VitePWA({
+        disable: process.env.SKIP_PWA === 'true',
         registerType: 'autoUpdate',
         includeAssets: ['favicon-16x16.png', 'favicon-32x32.png', 'apple-touch-icon.png', 'logo.webp', 'theme-init.js'],
         manifest: {
           name: 'KurdishName',
           short_name: 'KurdishName',
           description: 'Dünyanın en kapsamlı Kürtçe isim arşivi ve platformu.',
-          start_url: '/en',
+          start_url: '/tr',
           display: 'standalone',
           background_color: '#0F172A',
           theme_color: '#0F172A',

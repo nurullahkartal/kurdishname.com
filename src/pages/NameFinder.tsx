@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { Search, RotateCcw, User, Sparkles, X, Wind, Heart, Sun, Activity, Gem } from 'lucide-react';
 import { NameData } from '../data/names';
 import { generatePath } from '../utils/routes';
-import { normalizeText } from '../utils/search';
+import { normalizeText, flattenSearchIndex } from '../utils/search';
 import { getLocalizedMeaning, getLocalizedOrigin } from '../utils/localization';
 import { loadNamesForLetter, fetchSearchIndex } from '../utils/nameLoader';
 import { generateContextualHook } from '../utils/seoHook';
@@ -70,10 +70,19 @@ export default function NameFinder() {
     setHasSearched(true);
     try {
       const loaded = await fetchSearchIndex();
+      const flatLoaded = flattenSearchIndex(loaded).map(item => ({
+        id: item.id,
+        name: item.n,
+        gender: item.g === 'f' || item.g === 'female' ? 'female' : 'male',
+        letter: item.n.charAt(0).toUpperCase(),
+        meaning: '',
+        origin: '',
+        theme: ''
+      })) as NameData[];
 
       const localNamesStr = localStorage.getItem('addedNames');
       const localNames: NameData[] = localNamesStr ? JSON.parse(localNamesStr) : [];
-      const combined = [...loaded, ...localNames];
+      const combined = [...flatLoaded, ...localNames];
       const uniqueMap = new Map<string, NameData>();
       combined.forEach(item => uniqueMap.set(item.id, item));
       let filtered = Array.from(uniqueMap.values());
