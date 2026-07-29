@@ -318,10 +318,10 @@ function renderLayout(lang: string, contentHTML: string, options: {
                 </div>
               </a>
             </div>
-            <form action="${generatePath(lang, null)}" class="enc-header-search-form">
+            <form action="${generatePath(lang, null)}" role="search" aria-label="Kürtçe İsim Arama ve Filtreleme Formu" class="enc-header-search-form">
               <div class="enc-search-bar">
-                <input type="text" name="q" placeholder="${t('search_placeholder', 'İsim ara...')}" autocomplete="off" aria-label="${t('search_placeholder')}" />
-                <button type="submit" aria-label="Search"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+                <input id="search-input" type="text" name="q" placeholder="${t('search_placeholder', 'İsim ara...')}" autocomplete="off" aria-label="Kürtçe İsim Ara" />
+                <button type="submit" aria-label="Ara"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
               </div>
             </form>
             <div class="enc-header-controls">
@@ -340,7 +340,7 @@ function renderLayout(lang: string, contentHTML: string, options: {
         </div>
       </header>
 
-      <main class="enc-container" style="padding-top: 1.75rem; padding-bottom: 4rem;">
+      <main class="enc-container min-h-[70vh]" style="padding-top: 1.75rem; padding-bottom: 4rem;">
         <div class="page-fade-in">
           ${contentHTML}
         </div>

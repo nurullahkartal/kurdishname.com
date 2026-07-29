@@ -139,17 +139,19 @@ export default function Layout() {
             </div>
 
             {/* Header search */}
-            <form onSubmit={handleSearch} className={`enc-header-search-form ${location.pathname === '/' || location.pathname === `/${lng}` ? 'hidden md:block' : ''}`}>
+            <form onSubmit={handleSearch} role="search" aria-label="Kürtçe İsim Arama ve Filtreleme Formu" className={`enc-header-search-form ${location.pathname === '/' || location.pathname === `/${lng}` ? 'hidden md:block' : ''}`}>
               <div className="enc-search-bar">
                 <input
+                  id="search-input"
+                  name="q"
                   type="text"
                   value={searchVal}
                   onChange={e => setSearchVal(e.target.value)}
                   placeholder={t("search_placeholder", "İsim ara...")}
                   autoComplete="off"
-                  aria-label={t("aria_search_label")}
+                  aria-label="Kürtçe İsim Ara"
                 />
-                <button type="submit" aria-label={t("aria_search_button")}>
+                <button type="submit" aria-label={t("aria_search_button", "Ara")}>
                   <Search size={16} />
                 </button>
               </div>
@@ -218,7 +220,7 @@ export default function Layout() {
       </header>
 
       {/* ── PAGE CONTENT ───────────────────────────────── */}
-      <main id="main-content" className="enc-container pb-[2rem]" style={{ paddingTop: "1.75rem" }}>
+      <main id="main-content" className="enc-container pb-[2rem] min-h-[70vh]" style={{ paddingTop: "1.75rem" }}>
         <div key={location.pathname} className="page-fade-in">
           <Outlet />
         </div>

@@ -1,0 +1,21 @@
+{
+  "routes": [
+    {
+      "routePath": "/api/tracker",
+      "mountPath": "/api",
+      "method": "GET",
+      "module": [
+        "api/tracker.ts:onRequestGet"
+      ]
+    },
+    {
+      "routePath": "/api/tracker",
+      "mountPath": "/api",
+      "method": "POST",
+      "module": [
+        "api/tracker.ts:onRequestPost"
+      ]
+    }
+  ],
+  "baseURL": "/"
+}

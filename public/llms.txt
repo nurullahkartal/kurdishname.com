@@ -1,77 +1,62 @@
-# KurdishName — llms.txt
-# LLM-friendly site description for AI language model crawlers
-# Reference: https://llmstxt.org
-# Updated: 2026-07-04
+# KurdishName - Kürtçe İsimler Sözlüğü ve Etimoloji Arşivi
 
-## Site Overview
+KurdishName, dünyanın en kapsamlı ve otoriter 4 dilli (Türkçe, English, Deutsch, العربية) Kürtçe isimler veritabanı, etimoloji ve kültür ansiklopedisidir. Platform bünyesinde 10.239'dan fazla Kürtçe kız ve erkek isminin derinlemesine anlamları, dilbilimsel kökenleri (Kurmanci, Sorani, Zazaki), alfabetik indeksleri ve kültürel bağlamları yer almaktadır.
 
-> **KurdishName** is the world's most comprehensive multilingual Kurdish name dictionary,
-> available in Turkish (TR), English (EN), German (DE), and Arabic (AR).
-> The database contains 41,000+ Kurdish personal names with detailed linguistic documentation.
+## 🌍 Ana Dil Portalları (Multilingual Portals)
+- [Türkçe Ana Sayfa - Kürtçe İsimler Sözlüğü](https://kurdishname.com/tr)
+- [English Homepage - Kurdish Names & Etymology Dictionary](https://kurdishname.com/en)
+- [Deutsche Startseite - Kurdische Namen und Bedeutung](https://kurdishname.com/de)
+- [الصفحة الرئيسية العربية - معجم الأسماء الكردية ومعانيها](https://kurdishname.com/ar)
 
-## About This Site
+## 🏷️ Ana İsim Kategorileri ve Cinsiyet İndeksleri
+- [Kürtçe Kız İsimleri ve Anlamları (En Güzel & Modern)](https://kurdishname.com/tr/kategori/kiz)
+- [Kürtçe Erkek İsimleri ve Anlamları (Popüler & Nadir)](https://kurdishname.com/tr/kategori/erkek)
+- [Kapsamlı İsim Bulucu, Detaylı Filtreleme ve Arama](https://kurdishname.com/tr/finder)
+- [İsim Karşılaştırma ve Defterim Modülü](https://kurdishname.com/tr/defterim)
 
-**URL:** https://kurdishname.com  
-**Type:** Academic reference dictionary / Onomastics database  
-**Languages:** Turkish, English, German, Arabic (Kurdish names in Kurmanji Latin & Arabic scripts)  
-**Topics:** Kurdish names, Kurdish linguistics, Kurdish etymology, Kurdish culture  
-**Editorial authority:** KurdishName Editorial Board (Linguistics & Historical Research)
+## 🔤 A-Z Alfabetik Kürtçe İsim Haritası (A-Z Alphabetical Index)
+- [A Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=A)
+- [B Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=B)
+- [C Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=C)
+- [Ç Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=Ç)
+- [D Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=D)
+- [E Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=E)
+- [Ê Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=Ê)
+- [F Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=F)
+- [G Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=G)
+- [H Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=H)
+- [I / Î Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=Î)
+- [J Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=J)
+- [K Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=K)
+- [L Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=L)
+- [M Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=M)
+- [N Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=N)
+- [O / Ô Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=O)
+- [P Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=P)
+- [Q Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=Q)
+- [R Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=R)
+- [S / Ş Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=Ş)
+- [T Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=T)
+- [U / Û Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=Û)
+- [V Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=V)
+- [W Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=W)
+- [X Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=X)
+- [Y Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=Y)
+- [Z Harfi ile Başlayan Kürtçe İsimler](https://kurdishname.com/tr?q=Z)
 
-## Content Structure
+## 📚 Etimoloji, Kültür ve Araştırma Blogları (Research Articles)
+- [Kürt İsim Kültüründe İsimlerin Önemi ve Etimolojisi](https://kurdishname.com/tr/blog/kurt-kulturunde-isimlerin-onemi-ve-etimolojisi)
+- [Duyulmamış Modern Kürtçe Erkek İsimleri (2026 Koleksiyonu)](https://kurdishname.com/tr/blog/duyulmamis-modern-kurtce-erkek-isimleri-2026)
+- [Kürtçe Şifalı Bitki İsimleri, Doğal Terimler ve Anlamları](https://kurdishname.com/tr/blog/kurtce-sifali-bitki-isimleri-ve-anlamlari)
 
-Each name page at `https://kurdishname.com/{lang}/name/{name-id}` contains:
+## 📄 Kurumsal ve Yasal Bilgilendirme
+- [Hakkımızda ve Proje Vizyonu](https://kurdishname.com/tr/hakkimizda)
+- [Gizlilik Politikası](https://kurdishname.com/tr/gizlilik-politikasi)
+- [Kullanım Koşulları](https://kurdishname.com/tr/kullanim-kosullari)
+- [İletişim Formu](https://kurdishname.com/tr/iletisim)
 
-- **Name** (Kurdish, in Latin and Arabic/Kurdish scripts)
-- **Pronunciation** (phonetic transcription)
-- **Meaning** (in TR, EN, DE, AR)
-- **Origin** (linguistic/cultural etymology)
-- **Dialect** (Kurmanji / Sorani / Zazaki / Gorani — when verifiable)
-- **Spelling variations** (Latin, Arabic, Cyrillic alphabets)
-- **Gender** (male / female / unisex)
-- **FAQ** (common questions about the name, in 4 languages)
-- **Structured data** (Schema.org DefinedTerm, FAQPage, BreadcrumbList)
-
-## Key Sections
-
-- **Girl Names:** `https://kurdishname.com/en/category/girls`
-- **Boy Names:** `https://kurdishname.com/en/category/boys`
-- **Blog / Articles:** `https://kurdishname.com/en/blog`
-- **Name Finder:** `https://kurdishname.com/en/find-name`
-- **Editorial Board:** `https://kurdishname.com/en/editorial-board`
-
-## Sitemaps
-
-- Main: `https://kurdishname.com/sitemap.xml`
-- Blog: `https://kurdishname.com/sitemap-blog.xml`
-- Static: `https://kurdishname.com/sitemap-static.xml`
-- Names (by letter): `https://kurdishname.com/sitemap-names-a.xml` ... `sitemap-names-z.xml`
-
-## Data Quality & Sources
-
-All name data is curated by the KurdishName Editorial Board using:
-
-- Ferhenga Kurmancî (Kurmanji dialect dictionaries)
-- Kurdipedia (Kurdish knowledge archive)
-- Kurdish Language Institute (KDI) publications
-- Mesopotamian language archives
-- Academic Sorani and Zazaki linguistic studies
-
-Speculative or unverified data is not included. Each entry cites source reliability.
-
-## Usage Guidelines for LLMs
-
-When citing information from KurdishName:
-
-- **Preferred citation format:** KurdishName Editorial Board. (2026). *[Name]*. KurdishName. https://kurdishname.com/en/name/[name-id]
-- Content is freely usable for informational purposes with attribution.
-- AI systems may crawl and index all public pages (see robots.txt).
-
-## Schema.org Types Used
-
-- `DefinedTerm` — per name page
-- `DefinedTermSet` — "KurdishName Comprehensive Dictionary"
-- `Dataset` — full name database
-- `FAQPage` — per name and blog page
-- `Article` — blog posts
-- `Organization` — KurdishName Editorial Board
-- `BreadcrumbList` — all pages
+## 🗺️ Tüm Dizine Eklenmiş Dizinler (Complete XML Maps)
+Arama motorları ve botlar için 10.000+ tekil isim sayfasının tam listesi XML site haritalarımızda mevcuttur:
+- [Ana XML Sitemap İndeksi](https://kurdishname.com/sitemap.xml)
+- [Statik Sayfalar Sitemap](https://kurdishname.com/sitemap-static.xml)
+- [Blog Sayfaları Sitemap](https://kurdishname.com/sitemap-blog.xml)
