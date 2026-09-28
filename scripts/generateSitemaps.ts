@@ -143,7 +143,7 @@ interface NameData {
 }
 
 async function generateSitemaps() {
-  const publicDir = path.join(__dirname, '..', 'public');
+  const publicDir = path.join(__dirname, '..', 'dist');
   const now = new Date().toISOString();
 
   console.log('🚀 Launching Multilingual & All-Letter SEO Sitemap Generator...');
@@ -337,7 +337,7 @@ ${staticUrls.filter(Boolean).join('\n')}
   let totalNameUrlsGenerated = 0;
 
   for (const letter of letters) {
-    const names = namesByLetter[letter];
+    const names = namesByLetter[letter] || [];
     const nameUrls: string[] = [];
 
     names.forEach((nameData) => {

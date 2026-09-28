@@ -370,6 +370,15 @@ function replaceHeadMetadata(template: string, options: {
   const isRtl = options.lang === 'ar';
   let html = template;
 
+  // Remove static fallback tags to prevent SEO conflicts
+  html = html.replace(/<title>.*?<\/title>/is, '');
+  html = html.replace(/<meta name="description"[^>]*>/is, '');
+  html = html.replace(/<link rel="canonical"[^>]*>/is, '');
+  html = html.replace(/<!-- Statik Hreflang Etiketleri -->.*?<!-- Fallback Title & Description -->/is, '');
+  html = html.replace(/<link rel="alternate"[^>]*>/gi, '');
+  html = html.replace(/<meta property="og:(title|description|url)"[^>]*>/gi, '');
+  html = html.replace(/<meta name="twitter:(title|description)"[^>]*>/gi, '');
+
   // Replace <html> tag
   html = html.replace(/<html[^>]*>/i, `<html lang="${options.lang}"${isRtl ? ' dir="rtl"' : ''}>`);
 
@@ -405,11 +414,17 @@ function replaceHeadMetadata(template: string, options: {
     '@graph': parsedSchemas
   };
 
-  // Helmet Context Adapter: Mocks the exact API expected from react-helmet-async's context
-  // This bypasses the React 19 Dual-Package Hazard while ensuring 100% hydration compatibility.
+  // Helmet Context Adapter
   const helmet = {
     title: { toString: () => `<title data-rh="true">${options.title}</title>` },
-    meta: { toString: () => `<meta data-rh="true" name="description" content="${options.description}"/>` },
+    meta: { toString: () => `
+      <meta data-rh="true" name="description" content="${options.description}"/>
+      <meta data-rh="true" property="og:title" content="${options.title}"/>
+      <meta data-rh="true" property="og:description" content="${options.description}"/>
+      <meta data-rh="true" property="og:url" content="${options.canonical}"/>
+      <meta data-rh="true" name="twitter:title" content="${options.title}"/>
+      <meta data-rh="true" name="twitter:description" content="${options.description}"/>
+    `.trim() },
     link: { toString: () => {
       const alternatesStr = options.alternates.map(alt => 
         `<link data-rh="true" rel="alternate" hrefLang="${alt.lang}" href="${alt.url}"/>`
@@ -427,6 +442,9 @@ function replaceHeadMetadata(template: string, options: {
   `;
   
   html = html.replace(/<!-- HEAD_TAGS -->/i, headInject);
+
+  // Remove static schema to avoid duplicates (the static script tag has no data-rh)
+  html = html.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/i, '');
 
   return html;
 }
