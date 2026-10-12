@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-12T19:39:42.788Z",
+  "generatedAt": "2026-10-12T21:12:10.787Z",
   "totalLetters": 29,
-  "totalNames": 10238,
-  "totalBytes": 9320148,
+  "totalNames": 10237,
+  "totalBytes": 9319259,
   "letters": [
     {
       "letter": "A",
@@ -20,24 +20,14 @@
       "bytes": 330120
     },
     {
-      "letter": "Ç",
-      "count": 106,
-      "bytes": 95411
-    },
-    {
       "letter": "D",
-      "count": 914,
-      "bytes": 830836
+      "count": 913,
+      "bytes": 829947
     },
     {
       "letter": "E",
       "count": 407,
       "bytes": 360556
-    },
-    {
-      "letter": "Ê",
-      "count": 2,
-      "bytes": 1744
     },
     {
       "letter": "F",
@@ -53,11 +43,6 @@
       "letter": "H",
       "count": 758,
       "bytes": 690106
-    },
-    {
-      "letter": "Î",
-      "count": 2,
-      "bytes": 1817
     },
     {
       "letter": "J",
@@ -110,11 +95,6 @@
       "bytes": 402998
     },
     {
-      "letter": "Ş",
-      "count": 508,
-      "bytes": 457771
-    },
-    {
       "letter": "T",
       "count": 282,
       "bytes": 259062
@@ -148,6 +128,26 @@
       "letter": "Z",
       "count": 459,
       "bytes": 416112
+    },
+    {
+      "letter": "Ç",
+      "count": 106,
+      "bytes": 95411
+    },
+    {
+      "letter": "Ê",
+      "count": 2,
+      "bytes": 1744
+    },
+    {
+      "letter": "Î",
+      "count": 2,
+      "bytes": 1817
+    },
+    {
+      "letter": "Ş",
+      "count": 508,
+      "bytes": 457771
     }
   ]
 }

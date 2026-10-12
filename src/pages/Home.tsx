@@ -364,15 +364,7 @@ export default function Home() {
                 "name": "KurdishName",
                 "url": "https://kurdishname.com",
                 "description": "Dünyanın en kapsamlı 4 dilli Kürtçe isim rehberi.",
-                "inLanguage": ["tr", "en", "de", "ar"],
-                "potentialAction": {
-                  "@type": "SearchAction",
-                  "target": {
-                    "@type": "EntryPoint",
-                    "urlTemplate": `https://kurdishname.com/${lng}?q={search_term_string}`
-                  },
-                  "query-input": "required name=search_term_string"
-                }
+                "inLanguage": ["tr", "en", "de", "ar"]
               },
               {
                 "@type": "Organization",

@@ -23,7 +23,7 @@ export default function Favorites() {
       <Helmet>
         <title>{t('favorites_title', 'İsim Defterim')} | KurdishName</title>
         <meta name="description" content={t('favorites_seo_desc')} />
-        <meta name="robots" content="noindex, nofollow" />
+        <meta name="robots" content="noindex, follow" />
       </Helmet>
 
       <div style={{ maxWidth: '800px', margin: '0 auto' }}>

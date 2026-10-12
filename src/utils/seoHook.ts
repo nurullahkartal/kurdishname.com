@@ -155,12 +155,13 @@ export function generateContextualHook(
 
 export function useCanonicalAndHreflang() {
   const location = useLocation();
-  const canonicalUrl = `https://kurdishname.com${location.pathname}`;
+  const cleanPath = location.pathname.length > 1 ? location.pathname.replace(/\/$/, '') : location.pathname;
+  const canonicalUrl = `https://kurdishname.com${cleanPath}`;
   const baseUrl = "https://kurdishname.com";
 
   const hreflangs = Object.keys(routeTranslations).map((langKey) => ({
     lang: langKey,
-    href: `${baseUrl}${switchLanguagePath(location.pathname, langKey)}`
+    href: `${baseUrl}${switchLanguagePath(cleanPath, langKey)}`.replace(/\/$/, '')
   }));
 
   const xDefault = `${baseUrl}/`;

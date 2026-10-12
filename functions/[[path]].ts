@@ -96,6 +96,14 @@ export const onRequest: PagesFunction<Env> = async (context) => {
     return await context.next();
   }
 
+  // 1b. Query parameter cleanup: remove literal template placeholders (Soft 404 fix)
+  if (url.search.includes('{search_term_string}') || url.search.includes('%7Bsearch_term_string%7D')) {
+    const cleanUrl = new URL(context.request.url);
+    cleanUrl.search = '';
+    cleanUrl.pathname = cleanUrl.pathname.length > 1 ? cleanUrl.pathname.replace(/\/$/, '') : cleanUrl.pathname;
+    return Response.redirect(cleanUrl.toString(), 301);
+  }
+
   // 2. Trailing slash 301 Permanent Redirect (e.g. /tr/ -> /tr, /en/ -> /en, /tr/isim/bahoz/ -> /tr/isim/bahoz)
   if (path !== '/' && path.endsWith('/')) {
     const cleanUrl = new URL(context.request.url);
@@ -109,6 +117,33 @@ export const onRequest: PagesFunction<Env> = async (context) => {
     return Response.redirect(`${DOMAIN}/tr/isim/${slug}`, 301);
   }
 
+  // 3b. /widget endpoints (removed legacy feature) -> 410 Gone with noindex, follow (Soft 404 fix)
+  if (path === '/widget' || path.endsWith('/widget') || path.includes('/widget/')) {
+    return new Response(
+      `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, follow" /><title>410 Gone</title></head><body style="font-family:sans-serif;text-align:center;padding:50px"><h1>410 Gone</h1><p>Widget feature is no longer available.</p><a href="/">← Return to Homepage</a></body></html>`,
+      {
+        status: 410,
+        headers: {
+          'Content-Type': 'text/html; charset=utf-8',
+          'X-Robots-Tag': 'noindex, follow',
+          'Cache-Control': 'public, max-age=86400'
+        }
+      }
+    );
+  }
+
+  // 3c. Unlocalized /favorites URLs -> 301 Permanent Redirect to localized favorites route
+  if (path.match(/^\/(tr|en|de|ar)\/favorites$/i) || path === '/favorites') {
+    const targetMap: Record<string, string> = {
+      tr: '/tr/favorilerim',
+      en: '/en/my-favorites',
+      de: '/de/meine-favoriten',
+      ar: '/ar/%D9%85%D9%81%D8%B6%D9%84%D8%AA%D9%8A'
+    };
+    const targetLang = path.startsWith('/en') ? 'en' : (path.startsWith('/de') ? 'de' : (path.startsWith('/ar') ? 'ar' : 'tr'));
+    return Response.redirect(`${DOMAIN}${targetMap[targetLang] || '/tr/favorilerim'}`, 301);
+  }
+
   // 4. Dynamic Name Detail SSR via Cloudflare KV
   // Matches: /tr/isim/{slug}, /en/name/{slug}, /de/name/{slug}, /ar/اسم/{slug}
   const nameMatch = path.match(/^\/(tr|en|de|ar)\/(isim|name|%D8%A7%D8%B3%D9%85|اسم)\/([^/]+)$/);
@@ -118,8 +153,44 @@ export const onRequest: PagesFunction<Env> = async (context) => {
   }
 
   // 5. Pre-rendered static pages & SPA fallback
-  return await context.next();
+  const response = await context.next();
+
+  // Attach X-Robots-Tag: noindex, follow to internal search results or user favorite pages
+  if (url.searchParams.has('q') || path.includes('favori') || path.includes('favorite') || path.includes('%D9%85%D9%81%D8%B6%D9%84%D8%AA%D9%8A')) {
+    const newHeaders = new Headers(response.headers);
+    newHeaders.set('X-Robots-Tag', 'noindex, follow');
+    return new Response(response.body, {
+      status: response.status,
+      statusText: response.statusText,
+      headers: newHeaders
+    });
+  }
+
+  return response;
 };
+
+/**
+ * Farklı yazım/encoding varyasyonlarını tek bir "canonical" forma indirger.
+ * afrinî, afrini, afrinÎ, afrin → afrin
+ * serko_3, serko-2, serko → serko
+ */
+function normalizeSlug(slug: string): string {
+  return slug
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")   // combining diacritics
+    .replace(/î/g, "i")
+    .replace(/ê/g, "e")
+    .replace(/û/g, "u")
+    .replace(/ş/g, "s")
+    .replace(/ç/g, "c")
+    .replace(/ğ/g, "g")
+    .replace(/ı/g, "i")
+    .replace(/ö/g, "o")
+    .replace(/ü/g, "u")
+    .replace(/[-_]\d+$/, "")            // _2, _3, -2 suffix'lerini sil
+    .replace(/[^a-z0-9\u0600-\u06FF]/g, ""); // alfanümerik & arapça dışını sil
+}
 
 async function renderNamePage(
   context: EventContext<Env, any, any>,
@@ -149,20 +220,90 @@ async function renderNamePage(
   }
 
   if (!nameData) {
+    // Fallback 1: Normalize edilmiş slug ile ara
+    const normalized = normalizeSlug(decodedSlug);
+    if (normalized !== decodedSlug && normalized.length > 0) {
+      const altRaw = await kvGetSafe(kv, `name:${lang}:${normalized}`, 500, 1)
+        || await kvGetSafe(kv, `name:${normalized}`, 500, 1);
+      if (altRaw) {
+        try {
+          const alt = JSON.parse(altRaw);
+          const canonicalSlug = alt.id || normalized;
+          return Response.redirect(
+            `${DOMAIN}/${lang}/${typeSegment}/${encodeURIComponent(canonicalSlug)}`,
+            301
+          );
+        } catch (_) {}
+      }
+    }
+
+    // Fallback 1b: Sondaki 'i' ekini silip dene (nisba eki varyasyonu: afrini -> afrin)
+    const noTrailingI = normalized.replace(/i$/, "");
+    if (noTrailingI !== normalized && noTrailingI.length > 2) {
+      const altRaw2 = await kvGetSafe(kv, `name:${lang}:${noTrailingI}`, 500, 1)
+        || await kvGetSafe(kv, `name:${noTrailingI}`, 500, 1);
+      if (altRaw2) {
+        try {
+          const alt2 = JSON.parse(altRaw2);
+          const canonicalSlug2 = alt2.id || noTrailingI;
+          return Response.redirect(
+            `${DOMAIN}/${lang}/${typeSegment}/${encodeURIComponent(canonicalSlug2)}`,
+            301
+          );
+        } catch (_) {}
+      }
+    }
+
+    // Fallback 2: Sondaki _2, _3, -2, -3 suffix'lerini sil ve dene
+    const suffixStripped = decodedSlug.replace(/[-_]\d+$/, "");
+    if (suffixStripped !== decodedSlug && suffixStripped.length > 0) {
+      const baseRaw = await kvGetSafe(kv, `name:${lang}:${suffixStripped}`, 500, 1)
+        || await kvGetSafe(kv, `name:${suffixStripped}`, 500, 1);
+      if (baseRaw) {
+        try {
+          const base = JSON.parse(baseRaw);
+          const canonicalSlug = base.id || suffixStripped;
+          return Response.redirect(
+            `${DOMAIN}/${lang}/${typeSegment}/${encodeURIComponent(canonicalSlug)}`,
+            301
+          );
+        } catch (_) {
+          return Response.redirect(
+            `${DOMAIN}/${lang}/${typeSegment}/${encodeURIComponent(suffixStripped)}`,
+            301
+          );
+        }
+      }
+    }
+
+    // Fallback 3: Kalıcı olarak silinmiş / bulunamayan içerik için 410 Gone dön (Google hızlı siler)
     const s = ssrStrings(lang);
-    const isRtl404 = lang === 'ar';
-    const notFoundHtml = `<!doctype html>
-<html lang="${lang}" dir="${isRtl404 ? 'rtl' : 'ltr'}">
+    const isRtl = lang === 'ar';
+    const goneTitle = lang === 'tr' ? '410 Gone — İsim Mevcut Değil' :
+                      lang === 'de' ? '410 Gone — Name nicht mehr verfügbar' :
+                      lang === 'ar' ? '410 Gone — هذا الاسم لم يعد متوفراً' :
+                      '410 Gone — Name No Longer Available';
+    const goneHeading = lang === 'tr' ? 'Bu isim artık mevcut değil' :
+                        lang === 'de' ? 'Dieser Name ist nicht mehr verfügbar' :
+                        lang === 'ar' ? 'هذا الاسم لم يعد متوفراً' :
+                        'This name is no longer available';
+    const goneBody = lang === 'tr' ? 'Aradığınız isim arşivimizden kalıcı olarak kaldırılmıştır veya güncellenmiştir.' :
+                     lang === 'de' ? 'Der gesuchte Name wurde dauerhaft aus unserem Verzeichnis entfernt.' :
+                     lang === 'ar' ? 'تمت إزالة هذا الاسم بشكل دائم من دليلنا.' :
+                     'The requested name has been permanently removed from our directory.';
+
+    const goneHtml = `<!doctype html>
+<html lang="${lang}" dir="${isRtl ? 'rtl' : 'ltr'}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, follow" />
-    <title>${s.notFoundTitle} — KurdishName</title>
+    <title>${goneTitle} — KurdishName</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <style>
       body{margin:0;background:#0b0f19;color:#f9fafb;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center;padding:2rem}
       .box{max-width:480px}
-      h1{font-size:4rem;margin:0;color:#4f46e5}
+      h1{font-size:3.5rem;margin:0;color:#ef4444}
       h2{font-size:1.25rem;margin:.5rem 0 1rem}
       p{color:#9ca3af;line-height:1.6}
       a{display:inline-block;margin-top:1.5rem;padding:.75rem 1.5rem;background:#4f46e5;color:#fff;text-decoration:none;border-radius:.5rem;font-weight:700}
@@ -170,18 +311,19 @@ async function renderNamePage(
   </head>
   <body>
     <div class="box">
-      <h1>404</h1>
-      <h2>${s.notFoundTitle}</h2>
-      <p>${s.notFoundBody}</p>
+      <h1>410</h1>
+      <h2>${goneHeading}</h2>
+      <p>${goneBody}</p>
       <a href="/${lang}">← ${s.home}</a>
     </div>
   </body>
 </html>`;
-    return new Response(notFoundHtml, {
-      status: 404,
+
+    return new Response(goneHtml, {
+      status: 410,
       headers: {
         'Content-Type': 'text/html; charset=utf-8',
-        'Cache-Control': 'public, max-age=300',
+        'Cache-Control': 'public, max-age=3600',
         'X-Robots-Tag': 'noindex, follow'
       }
     });
@@ -220,7 +362,7 @@ async function renderNamePage(
   else if (lang === 'de') desc = `Was bedeutet ${name} auf Kurdisch? Bedeutung, Herkunft, Aussprache und ähnliche Vornamen entdecken. Umfassendes Namenslexikon.`;
   else if (lang === 'ar') desc = `تعرف على معنى اسم ${name} باللغة الكردية، أصله، نطقه، وتفاصيل استخدامه في الثقافة الكردية.`;
 
-  const canonicalUrl = `${DOMAIN}/${lang}/${typeSegment}/${encodeURIComponent(decodedSlug)}`;
+  const canonicalUrl = `${DOMAIN}/${lang}/${typeSegment}/${encodeURIComponent(decodedSlug)}`.replace(/\/$/, "");
 
   // Hreflang alternates
   const alternates = [
@@ -392,14 +534,27 @@ async function renderNamePage(
           </div>
         </article>
 
-        <!-- Internal Silo Navigation Link -->
-        <div class="card" style="display:flex; align-items:center; gap:0.75rem;">
-          <span style="font-size:1.5rem;">🔗</span>
-          <p style="margin:0; font-size:0.9375rem; color:var(--text-muted);">
-            ${ssrStrings(lang).discoverPrefix}
-            <a href="/${lang}/kategori/${targetCategorySegment}" class="silo-link">${ssrStrings(lang).categoryLabel} ${genderText}</a>
-            ${ssrStrings(lang).discoverSuffix}
-          </p>
+        <!-- Internal Silo Navigation Link & Category Exploration -->
+        <div class="card" style="display:flex; flex-direction:column; gap:1rem;">
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <span style="font-size:1.5rem;">🔗</span>
+            <p style="margin:0; font-size:0.9375rem; color:var(--text-muted);">
+              ${ssrStrings(lang).discoverPrefix}
+              <a href="/${lang}/kategori/${targetCategorySegment}" class="silo-link">${ssrStrings(lang).categoryLabel} ${genderText}</a>
+              ${ssrStrings(lang).discoverSuffix}
+            </p>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:0.5rem; pt:0.5rem; border-top:1px solid var(--surface-2); padding-top:0.75rem;">
+            <a href="/${lang}/kategori/${targetCategorySegment}/${encodeURIComponent((name[0] || 'A').toUpperCase())}" style="font-size:0.8125rem; color:var(--accent); text-decoration:none; padding:0.35rem 0.75rem; background:var(--surface-2); border-radius:0.375rem; border:1px solid var(--border);">
+              🔤 ${ssrStrings(lang).categoryLabel} ${genderText} (${(name[0] || 'A').toUpperCase()})
+            </a>
+            <a href="/${lang}/kategori/${isFemale ? (routeSegments[lang]?.boys || 'erkek') : (routeSegments[lang]?.girls || 'kiz')}" style="font-size:0.8125rem; color:var(--text-muted); text-decoration:none; padding:0.35rem 0.75rem; background:var(--surface-2); border-radius:0.375rem; border:1px solid var(--border);">
+              👥 ${isFemale ? ssrStrings(lang).boys : ssrStrings(lang).girls}
+            </a>
+            <a href="/${lang}/blog/${isFemale ? (lang === 'tr' ? 'kuranda-gecen-kurtce-kiz-isimleri-ve-anlamlari' : lang === 'en' ? 'kurdish-islamic-girl-names-and-quranic-analysis' : lang === 'de' ? 'kurdische-islamische-maedchennamen-bedeutung' : 'اسماء-بنات-كردية-اسلامية-ومعانيها') : (lang === 'tr' ? 'eski-ve-tarihi-kurt-erkek-isimleri-ve-kokenleri' : lang === 'en' ? 'ancient-and-historical-kurdish-boy-names' : lang === 'de' ? 'alte-und-historische-kurdische-jungennamen' : 'اسماء-ذكور-كردية-قديمة-وتاريخية')}" style="font-size:0.8125rem; color:#10b981; text-decoration:none; padding:0.35rem 0.75rem; background:var(--surface-2); border-radius:0.375rem; border:1px solid var(--border);">
+              📖 ${lang === 'tr' ? 'İsim Kültürü ve Anlam Rehberi' : lang === 'en' ? 'Cultural Heritage & Naming Guide' : lang === 'de' ? 'Namensratgeber & Kultur' : 'دليل التسمية والثقافة الكردية'}
+            </a>
+          </div>
         </div>
 
         <!-- Localized FAQ Section -->
