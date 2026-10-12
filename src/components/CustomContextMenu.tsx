@@ -7,7 +7,7 @@ export default function CustomContextMenu() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
   const navigate = useNavigate();
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const handleContextMenu = (e: MouseEvent) => {
@@ -46,7 +46,7 @@ export default function CustomContextMenu() {
 
   const handleShare = () => {
     const url = window.location.href;
-    const text = "Bu siteye bir göz at!";
+    const text = t('ctx_share_text');
     window.open(`https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`, '_blank');
     setIsVisible(false);
   };
@@ -92,7 +92,7 @@ export default function CustomContextMenu() {
         className="w-full flex items-center gap-3 px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-200 transition-colors"
       >
         <Share2 size={16} />
-        <span>İsmi Paylaş</span>
+        <span>{t('ctx_share')}</span>
       </button>
       <button
         onClick={handleCopy}
@@ -107,7 +107,7 @@ export default function CustomContextMenu() {
         className="w-full flex items-center gap-3 px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-200 transition-colors"
       >
         <Copy size={16} />
-        <span>Kopyala</span>
+        <span>{t('ctx_copy')}</span>
       </button>
       <div className="h-px bg-gray-200 dark:bg-gray-700 my-1"></div>
       <button
@@ -123,7 +123,7 @@ export default function CustomContextMenu() {
         className="w-full flex items-center gap-3 px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-200 transition-colors"
       >
         <Home size={16} />
-        <span>Ana Sayfaya Dön</span>
+        <span>{t('ctx_home')}</span>
       </button>
     </div>
   );
