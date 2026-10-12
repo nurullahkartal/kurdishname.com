@@ -5,12 +5,80 @@
 // 3. Dynamic Name SSR with Cloudflare KV (NAMES_KV)
 // 4. Fallback to pre-rendered static pages & SPA
 
+import { MAIN_SCRIPT_TAG, MAIN_STYLE_TAG } from './_assetManifest';
+
 interface Env {
   NAMES_KV: KVNamespace;
   ASSETS?: { fetch: (request: Request) => Promise<Response> };
 }
 
 const DOMAIN = 'https://kurdishname.com';
+
+// SSR tarafı i18n — React tarafına bağımlı olmadan çalışır
+const SSR_STRINGS: Record<string, {
+  home: string; girls: string; boys: string; faqHeading: string;
+  meaningHeading: (n: string) => string;
+  discoverPrefix: string; discoverSuffix: string;
+  footerText: string; notFoundTitle: string; notFoundBody: string;
+  categoryLabel: string;
+}> = {
+  tr: {
+    home: 'Anasayfa',
+    girls: 'Kız İsimleri',
+    boys: 'Erkek İsimleri',
+    faqHeading: 'Sıkça Sorulan Sorular',
+    meaningHeading: (n) => `${n} İsminin Anlamı`,
+    discoverPrefix: 'Daha fazla isim keşfetmek için kapsamlı',
+    discoverSuffix: "'ni inceleyebilirsiniz.",
+    footerText: 'Dünyanın en kapsamlı Kürtçe isim ansiklopedisi.',
+    notFoundTitle: 'İsim Bulunamadı',
+    notFoundBody: 'Aradığınız isim bulunamadı veya henüz veritabanımıza eklenmedi.',
+    categoryLabel: 'Kürtçe'
+  },
+  en: {
+    home: 'Home',
+    girls: 'Girl Names',
+    boys: 'Boy Names',
+    faqHeading: 'Frequently Asked Questions',
+    meaningHeading: (n) => `Meaning of the Name ${n}`,
+    discoverPrefix: 'To discover more names, explore our comprehensive',
+    discoverSuffix: 'guide.',
+    footerText: "The world's most comprehensive Kurdish name encyclopedia.",
+    notFoundTitle: 'Name Not Found',
+    notFoundBody: 'The name you are looking for was not found or has not been added to our database yet.',
+    categoryLabel: 'Kurdish'
+  },
+  de: {
+    home: 'Startseite',
+    girls: 'Mädchennamen',
+    boys: 'Jungennamen',
+    faqHeading: 'Häufig gestellte Fragen',
+    meaningHeading: (n) => `Bedeutung des Namens ${n}`,
+    discoverPrefix: 'Um weitere Namen zu entdecken, besuchen Sie unseren umfassenden',
+    discoverSuffix: 'Ratgeber.',
+    footerText: 'Die umfassendste Enzyklopädie kurdischer Namen der Welt.',
+    notFoundTitle: 'Name nicht gefunden',
+    notFoundBody: 'Der gesuchte Name wurde nicht gefunden oder ist noch nicht in unserer Datenbank.',
+    categoryLabel: 'Kurdische'
+  },
+  ar: {
+    home: 'الرئيسية',
+    girls: 'أسماء البنات',
+    boys: 'أسماء الأولاد',
+    faqHeading: 'الأسئلة الشائعة',
+    meaningHeading: (n) => `معنى اسم ${n}`,
+    discoverPrefix: 'لاكتشاف المزيد من الأسماء، تصفح',
+    discoverSuffix: 'الشامل.',
+    footerText: 'الموسوعة الأكثر شمولاً للأسماء الكردية في العالم.',
+    notFoundTitle: 'الاسم غير موجود',
+    notFoundBody: 'الاسم الذي تبحث عنه غير موجود أو لم يُضف بعد إلى قاعدة بياناتنا.',
+    categoryLabel: 'الكردية'
+  }
+};
+
+function ssrStrings(lang: string) {
+  return SSR_STRINGS[lang] || SSR_STRINGS.tr;
+}
 
 const routeSegments: Record<string, { name: string; girls: string; boys: string }> = {
   tr: { name: 'isim', girls: 'kiz', boys: 'erkek' },
@@ -63,28 +131,60 @@ async function renderNamePage(
   const kv = context.env.NAMES_KV;
 
   let nameData: any = null;
-  if (kv) {
-    // 1. Try language-specific key
-    let raw = await kv.get(`name:${lang}:${decodedSlug}`);
-    if (!raw) {
-      // 2. Fallback to generic name:{slug}
-      raw = await kv.get(`name:${decodedSlug}`);
-    }
-    if (raw) {
-      try {
-        nameData = JSON.parse(raw);
-      } catch (_) {}
+
+  // 1. Deneme: dile özel anahtar (timeout + retry korumalı)
+  let raw = await kvGetSafe(kv, `name:${lang}:${decodedSlug}`, 500, 1);
+
+  // 2. Fallback: dil-bağımsız anahtar
+  if (!raw) {
+    raw = await kvGetSafe(kv, `name:${decodedSlug}`, 500, 1);
+  }
+
+  if (raw) {
+    try {
+      nameData = JSON.parse(raw);
+    } catch (parseErr) {
+      console.error(`[KV] JSON parse failed for slug=${decodedSlug}`, parseErr);
     }
   }
 
   if (!nameData) {
-    return new Response(
-      `<!DOCTYPE html><html lang="${lang}"><head><meta charset="UTF-8"><title>404 - Not Found</title></head><body><h1>404 Not Found</h1><p>Aradığınız isim bulunamadı.</p></body></html>`,
-      {
-        status: 404,
-        headers: { 'Content-Type': 'text/html; charset=utf-8' }
+    const s = ssrStrings(lang);
+    const isRtl404 = lang === 'ar';
+    const notFoundHtml = `<!doctype html>
+<html lang="${lang}" dir="${isRtl404 ? 'rtl' : 'ltr'}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, follow" />
+    <title>${s.notFoundTitle} — KurdishName</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <style>
+      body{margin:0;background:#0b0f19;color:#f9fafb;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center;padding:2rem}
+      .box{max-width:480px}
+      h1{font-size:4rem;margin:0;color:#4f46e5}
+      h2{font-size:1.25rem;margin:.5rem 0 1rem}
+      p{color:#9ca3af;line-height:1.6}
+      a{display:inline-block;margin-top:1.5rem;padding:.75rem 1.5rem;background:#4f46e5;color:#fff;text-decoration:none;border-radius:.5rem;font-weight:700}
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>404</h1>
+      <h2>${s.notFoundTitle}</h2>
+      <p>${s.notFoundBody}</p>
+      <a href="/${lang}">← ${s.home}</a>
+    </div>
+  </body>
+</html>`;
+    return new Response(notFoundHtml, {
+      status: 404,
+      headers: {
+        'Content-Type': 'text/html; charset=utf-8',
+        'Cache-Control': 'public, max-age=300',
+        'X-Robots-Tag': 'noindex, follow'
       }
-    );
+    });
   }
 
   // Localized Fields
@@ -217,6 +317,8 @@ async function renderNamePage(
     <script type="application/ld+json">${JSON.stringify(definedTermJsonLd)}</script>
     <script type="application/ld+json">${JSON.stringify(faqJsonLd)}</script>
 
+    ${MAIN_STYLE_TAG}
+    
     <!-- Critical CSS for Instant SSR Layout (0 CLS) -->
     <style>
       :root {
@@ -250,9 +352,9 @@ async function renderNamePage(
           <span>KurdishName</span>
         </a>
         <nav style="display:flex; gap:1rem; font-size:0.875rem;">
-          <a href="/${lang}" style="color:var(--text-muted); text-decoration:none;">Anasayfa</a>
-          <a href="/${lang}/${routeSegments[lang]?.girls ? 'kategori' : 'category'}/${routeSegments[lang]?.girls || 'kiz'}" style="color:#f43f5e; text-decoration:none; font-weight:600;">Kız İsimleri</a>
-          <a href="/${lang}/${routeSegments[lang]?.boys ? 'kategori' : 'category'}/${routeSegments[lang]?.boys || 'erkek'}" style="color:#3b82f6; text-decoration:none; font-weight:600;">Erkek İsimleri</a>
+          <a href="/${lang}" style="color:var(--text-muted); text-decoration:none;">${ssrStrings(lang).home}</a>
+          <a href="/${lang}/kategori/${routeSegments[lang]?.girls || 'kiz'}" style="color:#f43f5e; text-decoration:none; font-weight:600;">${ssrStrings(lang).girls}</a>
+          <a href="/${lang}/kategori/${routeSegments[lang]?.boys || 'erkek'}" style="color:#3b82f6; text-decoration:none; font-weight:600;">${ssrStrings(lang).boys}</a>
         </nav>
       </header>
 
@@ -260,7 +362,7 @@ async function renderNamePage(
         <!-- Breadcrumb -->
         <nav style="font-size:0.8125rem; color:var(--text-muted); margin-bottom:1.5rem;">
           <a href="/${lang}" style="color:var(--accent); text-decoration:none;">KurdishName</a> &gt;
-          <a href="/${lang}/kategori/${targetCategorySegment}" style="color:var(--accent); text-decoration:none;">${genderText}</a> &gt;
+          <a href="/${lang}/kategori/${targetCategorySegment}" style="color:var(--accent); text-decoration:none;">${genderText}</a> &rsaquo;
           <span style="color:#fff; font-weight:700;">${name}</span>
         </nav>
 
@@ -282,7 +384,7 @@ async function renderNamePage(
         <!-- Meaning Section -->
         <article class="card">
           <h2 style="font-size:1.25rem; font-weight:800; margin-top:0; margin-bottom:1rem; color:#fff;">
-            ${name} İsminin Anlamı
+            ${escapeHtml(ssrStrings(lang).meaningHeading(name))}
           </h2>
           <p class="meaning-text">${escapeHtml(meaning)}</p>
           <div style="margin-top:1.5rem; padding:1rem; background:var(--surface-2); border-left:4px solid ${genderColor}; border-radius:0.375rem;">
@@ -294,15 +396,16 @@ async function renderNamePage(
         <div class="card" style="display:flex; align-items:center; gap:0.75rem;">
           <span style="font-size:1.5rem;">🔗</span>
           <p style="margin:0; font-size:0.9375rem; color:var(--text-muted);">
-            Daha fazla isim keşfetmek için kapsamlı 
-            <a href="/${lang}/kategori/${targetCategorySegment}" class="silo-link">Kürtçe ${genderText} İsimleri Rehberi</a>'ni inceleyebilirsiniz.
+            ${ssrStrings(lang).discoverPrefix}
+            <a href="/${lang}/kategori/${targetCategorySegment}" class="silo-link">${ssrStrings(lang).categoryLabel} ${genderText}</a>
+            ${ssrStrings(lang).discoverSuffix}
           </p>
         </div>
 
         <!-- Localized FAQ Section -->
         <section class="card">
           <h2 style="font-size:1.25rem; font-weight:800; margin-top:0; margin-bottom:1.25rem; color:#fff;">
-            Sıkça Sorulan Sorular
+            ${ssrStrings(lang).faqHeading}
           </h2>
           ${faqData.map(f => `
             <div class="faq-item">
@@ -314,12 +417,12 @@ async function renderNamePage(
       </main>
 
       <footer style="border-top:1px solid var(--border); padding:2rem 1rem; text-align:center; font-size:0.8125rem; color:var(--text-muted);">
-        <p>&copy; ${new Date().getFullYear()} KurdishName. Dünyanın en kapsamlı Kürtçe isim ansiklopedisi.</p>
+        <p>&copy; ${new Date().getFullYear()} KurdishName. ${ssrStrings(lang).footerText}</p>
       </footer>
     </div>
 
-    <!-- Client Hydration Bundle -->
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Client Hydration Bundle (injected from dist/index.html at build time) -->
+    ${MAIN_SCRIPT_TAG}
   </body>
 </html>`;
 
@@ -327,7 +430,7 @@ async function renderNamePage(
     status: 200,
     headers: {
       'Content-Type': 'text/html; charset=utf-8',
-      'Cache-Control': 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400',
+      'Cache-Control': 'public, max-age=3600, s-maxage=604800, stale-while-revalidate=86400',
       'X-Edge-Rendered': 'Cloudflare-Functions-SSR-KV'
     }
   });
@@ -341,4 +444,46 @@ function escapeHtml(str: string): string {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
+}
+
+// ============================================================
+// KV Dayanıklılık Katmanı — timeout + retry + graceful fallback
+// ============================================================
+
+/**
+ * Promise'e üst sınır koyar. Süre aşılırsa fallback döner.
+ * Cloudflare 30s sonra 522 döner; biz 500ms'de pes edip fallback'e düşeriz.
+ */
+function withTimeout<T>(promise: Promise<T>, ms: number, fallback: T): Promise<T> {
+  return Promise.race([
+    promise,
+    new Promise<T>((resolve) => setTimeout(() => resolve(fallback), ms))
+  ]);
+}
+
+/**
+ * KV okumasını timeout + tek retry (exponential backoff) ile sarar.
+ * Transient network hataları ve yavaş KV node'ları yutulur.
+ */
+async function kvGetSafe(
+  kv: KVNamespace | undefined,
+  key: string,
+  timeoutMs = 500,
+  retries = 1
+): Promise<string | null> {
+  if (!kv) return null;
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const result = await withTimeout(kv.get(key), timeoutMs, null);
+      return result;
+    } catch (err) {
+      if (attempt === retries) {
+        console.error(`[KV] get failed after ${retries + 1} attempts: ${key}`, err);
+        return null;
+      }
+      // 50ms → 100ms backoff
+      await new Promise((r) => setTimeout(r, 50 * Math.pow(2, attempt)));
+    }
+  }
+  return null;
 }

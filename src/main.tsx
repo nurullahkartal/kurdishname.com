@@ -1,26 +1,22 @@
 import { StrictMode } from 'react';
-import { createRoot, hydrateRoot } from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import App from './App';
 import './i18n';
 import './index.css';
 import { registerSW } from 'virtual:pwa-register';
 
 // Auto-register service worker for PWA support
-registerSW({ immediate: true });
+// Wrapped in try/catch so a failed SW registration never blocks the React app.
+try {
+  registerSW({ immediate: true });
+} catch (err) {
+  console.warn('[SW] Service worker registration skipped:', err);
+}
 
 const rootElement = document.getElementById('root')!;
-if (rootElement && rootElement.hasChildNodes()) {
-  hydrateRoot(
-    rootElement,
-    <StrictMode>
-      <App />
-    </StrictMode>
-  );
-} else {
-  createRoot(rootElement).render(
-    <StrictMode>
-      <App />
-    </StrictMode>
-  );
-}
+createRoot(rootElement).render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
 
