@@ -1,0 +1,513 @@
+{
+  "title": "100 historische kurdische Herrscher- und Dynastienamen",
+  "description": "100 historische kurdische Herrscher- und Dynastienamen listesi.",
+  "names": [
+    {
+      "name": "Bedirxan",
+      "id": "bedirxan",
+      "meaning": "Mond-Khan, heller Anführer wie ein Vollmond und adelige Person."
+    },
+    {
+      "name": "Selahaddin",
+      "id": "selahaddin",
+      "meaning": "Rechtschaffenheit des Glaubens, Saladin."
+    },
+    {
+      "name": "Mervan",
+      "id": "mervan",
+      "meaning": "..."
+    },
+    {
+      "name": "Şerefxan",
+      "id": "serefxan",
+      "meaning": "Der berühmte Fürst von Bitlis, Autor der Sharafname."
+    },
+    {
+      "name": "Deysem",
+      "id": "deysem",
+      "meaning": "Historischer kurdischer Herrscher und Feldherr."
+    },
+    {
+      "name": "Qazi",
+      "id": "qazi",
+      "meaning": "Richter, Führer, gewidmet dem Präsidenten Qazi Muhammed."
+    },
+    {
+      "name": "Simko",
+      "id": "simko_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Barzanî",
+      "id": "barzani",
+      "meaning": "Zur Barzan-Linie gehörend, assoziiert mit Führung."
+    },
+    {
+      "name": "Said",
+      "id": "said",
+      "meaning": "Glücklich, erfolgreich und der historische Führer."
+    },
+    {
+      "name": "Rıza",
+      "id": "riza",
+      "meaning": "Zustimmung, Würde und der historische Führer von Dersim."
+    },
+    {
+      "name": "Eyyub",
+      "id": "eyyub",
+      "meaning": "Geduld, edler Widerstand und die Linie der Ayyubiden-Dynastie."
+    },
+    {
+      "name": "Zend",
+      "id": "zend",
+      "meaning": "Kommentar des heiligen Buches Avesta."
+    },
+    {
+      "name": "Ardelan",
+      "id": "ardelan",
+      "meaning": "Berühmtes kurdisches Erdelan-Emirat und Dynastie."
+    },
+    {
+      "name": "Baban",
+      "id": "baban",
+      "meaning": "Der Name eines tief verwurzelten und historischen kurdischen Fürstentums."
+    },
+    {
+      "name": "Soran",
+      "id": "soran_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Behdîn",
+      "id": "behdin_2",
+      "meaning": "Vom Behdinan-Emirat, eine Person mit edlen und reinen Überzeugungen."
+    },
+    {
+      "name": "Cizîrî",
+      "id": "ciziri",
+      "meaning": "Aus Cizre."
+    },
+    {
+      "name": "Mîr",
+      "id": "mir",
+      "meaning": "..."
+    },
+    {
+      "name": "Xan",
+      "id": "xan",
+      "meaning": "Khan, souveräner Herrscher, Häuptling."
+    },
+    {
+      "name": "Key",
+      "id": "key",
+      "meaning": "König, Monarch, edler Herrscher in alten kurdischen Dialekten."
+    },
+    {
+      "name": "Keyhusrev",
+      "id": "keyhusrev",
+      "meaning": "Großer Herrscher, gerechter und majestätischer Kaiser."
+    },
+    {
+      "name": "Dara",
+      "id": "dara",
+      "meaning": "..."
+    },
+    {
+      "name": "Cemşîd",
+      "id": "cemsid",
+      "meaning": "..."
+    },
+    {
+      "name": "Hoşeng",
+      "id": "hoseng",
+      "meaning": "Weise, intelligent, vernünftig; mythologischer König."
+    },
+    {
+      "name": "Feryad",
+      "id": "feryad",
+      "meaning": "Schrei, Hilferuf, Stimme des Appells."
+    },
+    {
+      "name": "Nizameddin",
+      "id": "nizameddin",
+      "meaning": "Ordnung des Glaubens, Gelehrter."
+    },
+    {
+      "name": "İmad",
+      "id": "imad",
+      "meaning": "Der historische Gründer der Amadiya-Festung."
+    },
+    {
+      "name": "Zekî",
+      "id": "zeki",
+      "meaning": "Intelligent, strategisch klug und historischer Intellektueller."
+    },
+    {
+      "name": "Cemîl",
+      "id": "cemil_2",
+      "meaning": "Göttliche Schönheit, schön an Charakter."
+    },
+    {
+      "name": "Ekrem",
+      "id": "ekrem",
+      "meaning": "Äußerst großzügig und der historische Intellektuelle."
+    },
+    {
+      "name": "Qedrî",
+      "id": "qedri",
+      "meaning": "Kostbar, wertvoll, respektiert."
+    },
+    {
+      "name": "Mele",
+      "id": "mele",
+      "meaning": "Gelehrter, Lehrer der spirituellen Weisheit."
+    },
+    {
+      "name": "Şêx",
+      "id": "sex",
+      "meaning": "Scheich, spiritueller Führer, respektierter Gelehrter."
+    },
+    {
+      "name": "Mehmûd",
+      "id": "mehmud",
+      "meaning": "Gelobt, und der historische König Mahmud Barzanji."
+    },
+    {
+      "name": "Emin",
+      "id": "emin",
+      "meaning": "Vertrauenswürdig, treu und der historische Intellektuelle."
+    },
+    {
+      "name": "Sureyya",
+      "id": "sureyya",
+      "meaning": "Der Plejaden-Sternhaufen, strahlendes Gestirn."
+    },
+    {
+      "name": "Celadet",
+      "id": "celadet",
+      "meaning": "Tapferkeit."
+    },
+    {
+      "name": "Kamuran",
+      "id": "kamuran",
+      "meaning": "Jemand, der seine Wünsche erfüllt hat, wohlhabend und glücklich."
+    },
+    {
+      "name": "Rewşen",
+      "id": "rewsen",
+      "meaning": "Jemand, der helle, strahlende, klare Weisheit mit einem offenen Geist repräsentiert."
+    },
+    {
+      "name": "Osman",
+      "id": "osman",
+      "meaning": "Der historische edle Pascha, Symbol für Gerechtigkeit."
+    },
+    {
+      "name": "Ali",
+      "id": "ali",
+      "meaning": "Erhaben, hochrangig und der historische Führer."
+    },
+    {
+      "name": "Zerîfe",
+      "id": "zerife",
+      "meaning": "Anmutig und tapfer, gewidmet der historischen Führerin Zarife Hanim."
+    },
+    {
+      "name": "Leyla",
+      "id": "leyla",
+      "meaning": "Nacht, gefeiert zu Ehren der legendären Heldin Leyla Qasim."
+    },
+    {
+      "name": "Mesture",
+      "id": "mesture",
+      "meaning": "Die historische erste Historikerin und Dichterin Mesture Erdelan."
+    },
+    {
+      "name": "Ehmed",
+      "id": "ehmed",
+      "meaning": "Viel gelobt, und der große Philosoph Ehmede Chani."
+    },
+    {
+      "name": "Mela",
+      "id": "mela",
+      "meaning": "Der respektierte Sufi-Gelehrte, unsterblich durch Melaye Ciziri."
+    },
+    {
+      "name": "Feqî",
+      "id": "feqi",
+      "meaning": "Schüler des Wissens, Gelehrter (bezogen auf Feqîyê Teyran)."
+    },
+    {
+      "name": "Nalî",
+      "id": "nali",
+      "meaning": "Der Vater der kurdischen Poesie, der berühmte Dichter Nali."
+    },
+    {
+      "name": "Hejar",
+      "id": "hejar",
+      "meaning": "Arm, aber reich im Herzen; bescheidene und zurückhaltende Person."
+    },
+    {
+      "name": "Hêmin",
+      "id": "hemin",
+      "meaning": "..."
+    },
+    {
+      "name": "Şêrko",
+      "id": "serko_3",
+      "meaning": "..."
+    },
+    {
+      "name": "Cegerxwîn",
+      "id": "cegerxwin",
+      "meaning": "..."
+    },
+    {
+      "name": "Qanî",
+      "id": "qani",
+      "meaning": "Der patriotische Dichter Qani."
+    },
+    {
+      "name": "Gorani",
+      "id": "gorani",
+      "meaning": "Gorani-Dialekt."
+    },
+    {
+      "name": "Tevfîq",
+      "id": "tevfiq",
+      "meaning": "Erfolg, göttliche Hilfe und der historische Pionier Piramerd."
+    },
+    {
+      "name": "Musa",
+      "id": "musa",
+      "meaning": "Der historische intellektuelle Pionier der Medien, Musa Anter."
+    },
+    {
+      "name": "Mazlum",
+      "id": "mazlum",
+      "meaning": "..."
+    },
+    {
+      "name": "Kemal",
+      "id": "kemal",
+      "meaning": "Vollkommenheit, und der historische Revolutionär."
+    },
+    {
+      "name": "Xayrî",
+      "id": "xayri",
+      "meaning": "Gütig, wohltätig und der historische selbstlose Kämpfer."
+    },
+    {
+      "name": "Sakine",
+      "id": "sakine",
+      "meaning": "Ruhe, unerschütterliche Entschlossenheit und die Pionierin."
+    },
+    {
+      "name": "Arîn",
+      "id": "arin",
+      "meaning": "Aus Feuer bestehend, energisch und hell."
+    },
+    {
+      "name": "Viyan",
+      "id": "viyan_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Zîlan",
+      "id": "zilan",
+      "meaning": "..."
+    },
+    {
+      "name": "Agît",
+      "id": "agit",
+      "meaning": "Tapfer."
+    },
+    {
+      "name": "Egîd",
+      "id": "egid",
+      "meaning": "Tapfere, mutige, Heldin und großartige Person, die für ihre Männlichkeit/Tugend bekannt ist."
+    },
+    {
+      "name": "Mezdek",
+      "id": "mezdek",
+      "meaning": "Der antike Philosoph für Gleichheit und soziales Leben."
+    },
+    {
+      "name": "Babek",
+      "id": "babek",
+      "meaning": "Der historische widerstandsfähige Krieger gegen Ungerechtigkeit."
+    },
+    {
+      "name": "Ebu-l Fida",
+      "id": "ebul_fida",
+      "meaning": "Berühmter kurdischer Historiker des 14. Jahrhunderts."
+    },
+    {
+      "name": "Sohrâverdî",
+      "id": "sohraverdi",
+      "meaning": "Der geniale Gründer der Ischraqi-Philosophie, der Lichttheoretiker."
+    },
+    {
+      "name": "Dînawerî",
+      "id": "dinaweri",
+      "meaning": "Der legendäre Universalgelehrte der Botanik und Astronomie."
+    },
+    {
+      "name": "Cahîz",
+      "id": "cahiz",
+      "meaning": "Scharfsinnig, berühmter antiker Gelehrter."
+    },
+    {
+      "name": "İbn-i Hallikan",
+      "id": "ibni_hallikan",
+      "meaning": "Der historische oberste Biograf und Historiker."
+    },
+    {
+      "name": "Ziryar",
+      "id": "ziryar",
+      "meaning": "Der legendäre Meistermusiker der andalusischen Musik (Ziryab)."
+    },
+    {
+      "name": "Zerdeşt",
+      "id": "zerdest_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Manî",
+      "id": "mani",
+      "meaning": "Der antike mesopotamische Prophet des Lichts und der Kunst."
+    },
+    {
+      "name": "Mezdak",
+      "id": "mezdak",
+      "meaning": "Der antike Philosoph für frühe soziale Gerechtigkeit."
+    },
+    {
+      "name": "Heftad",
+      "id": "heftad",
+      "meaning": "Die Versammlung der Siebzig, Symbol für Einheit."
+    },
+    {
+      "name": "Senger",
+      "id": "senger",
+      "meaning": "Schützengraben, Festung, Verteidigungsposten."
+    },
+    {
+      "name": "Şêrwan",
+      "id": "serwan_3",
+      "meaning": "..."
+    },
+    {
+      "name": "Mîrxan",
+      "id": "mirxan",
+      "meaning": "Fürst der Khane, majestätischer Anführer."
+    },
+    {
+      "name": "Serdar",
+      "id": "serdar_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Şaho",
+      "id": "saho_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Zorab",
+      "id": "zorab_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Rustem",
+      "id": "rustem",
+      "meaning": "Rostam, legendärer mythologischer Held von großer Stärke und Tapferkeit."
+    },
+    {
+      "name": "Siyamend",
+      "id": "siyamend",
+      "meaning": "Der majestätische Berg, der Schatten spendet; legendärer Held."
+    },
+    {
+      "name": "Cembelî",
+      "id": "cembeli",
+      "meaning": "Berühmter kurdischer Epenheld (Cembelî, Sohn des Hakkari-Fürsten)."
+    },
+    {
+      "name": "Binevş",
+      "id": "binevs",
+      "meaning": "Veilchenblume, Symbol für zarte Schönheit und Duft."
+    },
+    {
+      "name": "Besê",
+      "id": "bese",
+      "meaning": "Jemand, der den Wald, das dichte Waldgebiet und das Herz der Natur repräsentiert."
+    },
+    {
+      "name": "Xecê",
+      "id": "xece",
+      "meaning": "..."
+    },
+    {
+      "name": "Zîn",
+      "id": "zin_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Mem",
+      "id": "mem",
+      "meaning": "..."
+    },
+    {
+      "name": "Kawa",
+      "id": "kawa",
+      "meaning": "..."
+    },
+    {
+      "name": "Dehak",
+      "id": "dehak",
+      "meaning": "Der legendäre historische Herrscher im Schmied-Kawa Epos."
+    },
+    {
+      "name": "Ferhad",
+      "id": "ferhad",
+      "meaning": "Verständnisvolle, tapfere Person, die große Schwierigkeiten überwindet."
+    },
+    {
+      "name": "Şîrîn",
+      "id": "sirin",
+      "meaning": "Vom Milch, süß, Löwe, wie Milch, süß, Löwe."
+    },
+    {
+      "name": "Ardelan",
+      "id": "ardelan",
+      "meaning": "Berühmtes kurdisches Erdelan-Emirat und Dynastie."
+    },
+    {
+      "name": "Botan",
+      "id": "botan",
+      "meaning": "Der Name der historischen Region Botan; repräsentiert Mut und tief verwurzeltes Erbe."
+    },
+    {
+      "name": "Mervanî",
+      "id": "mervani",
+      "meaning": "Marwanidisch."
+    },
+    {
+      "name": "Eyyubî",
+      "id": "eyyubi",
+      "meaning": "Zur glorreichen Ayyubiden-Dynastie gehörend."
+    },
+    {
+      "name": "Zendî",
+      "id": "zendii",
+      "meaning": "Zendi."
+    }
+  ],
+  "content": "## Liste der Namen und Bedeutungen\n\n1. **[Bedirxan](/de/name/bedirxan)**: Mond-Khan, heller Anführer wie ein Vollmond und adelige Person.\n2. **Selahaddin**: Rechtschaffenheit des Glaubens, Saladin.\n3. **[Mervan](/de/name/mervan)**: ...\n4. **Şerefxan**: Der berühmte Fürst von Bitlis, Autor der Sharafname.\n5. **[Deysem](/de/name/deysem)**: Historischer kurdischer Herrscher und Feldherr.\n6. **Qazi**: Richter, Führer, gewidmet dem Präsidenten Qazi Muhammed.\n7. **Simko**: ...\n8. **Barzanî**: Zur Barzan-Linie gehörend, assoziiert mit Führung.\n9. **Said**: Glücklich, erfolgreich und der historische Führer.\n10. **Rıza**: Zustimmung, Würde und der historische Führer von Dersim.\n11. **Eyyub**: Geduld, edler Widerstand und die Linie der Ayyubiden-Dynastie.\n12. **[Zend](/de/name/zend)**: Kommentar des heiligen Buches Avesta.\n13. **[Ardelan](/de/name/ardelan)**: Berühmtes kurdisches Erdelan-Emirat und Dynastie.\n14. **[Baban](/de/name/baban)**: Der Name eines tief verwurzelten und historischen kurdischen Fürstentums.\n15. **Soran**: ...\n16. **Behdîn**: Vom Behdinan-Emirat, eine Person mit edlen und reinen Überzeugungen.\n17. **[Cizîrî](/de/name/ciziri)**: Aus Cizre.\n18. **[Mîr](/de/name/mir)**: ...\n19. **Xan**: Khan, souveräner Herrscher, Häuptling.\n20. **Key**: König, Monarch, edler Herrscher in alten kurdischen Dialekten.\n21. **[Keyhusrev](/de/name/keyhusrev)**: Großer Herrscher, gerechter und majestätischer Kaiser.\n22. **[Dara](/de/name/dara)**: ...\n23. **[Cemşîd](/de/name/cemsid)**: ...\n24. **[Hoşeng](/de/name/hoseng)**: Weise, intelligent, vernünftig; mythologischer König.\n25. **[Feryad](/de/name/feryad)**: Schrei, Hilferuf, Stimme des Appells.\n26. **Nizameddin**: Ordnung des Glaubens, Gelehrter.\n27. **İmad**: Der historische Gründer der Amadiya-Festung.\n28. **Zekî**: Intelligent, strategisch klug und historischer Intellektueller.\n29. **Cemîl**: Göttliche Schönheit, schön an Charakter.\n30. **Ekrem**: Äußerst großzügig und der historische Intellektuelle.\n31. **Qedrî**: Kostbar, wertvoll, respektiert.\n32. **[Mele](/de/name/mele)**: Gelehrter, Lehrer der spirituellen Weisheit.\n33. **Şêx**: Scheich, spiritueller Führer, respektierter Gelehrter.\n34. **Mehmûd**: Gelobt, und der historische König Mahmud Barzanji.\n35. **Emin**: Vertrauenswürdig, treu und der historische Intellektuelle.\n36. **Sureyya**: Der Plejaden-Sternhaufen, strahlendes Gestirn.\n37. **[Celadet](/de/name/celadet)**: Tapferkeit.\n38. **Kamuran**: Jemand, der seine Wünsche erfüllt hat, wohlhabend und glücklich.\n39. **[Rewşen](/de/name/rewsen)**: Jemand, der helle, strahlende, klare Weisheit mit einem offenen Geist repräsentiert.\n40. **Osman**: Der historische edle Pascha, Symbol für Gerechtigkeit.\n41. **Ali**: Erhaben, hochrangig und der historische Führer.\n42. **Zerîfe**: Anmutig und tapfer, gewidmet der historischen Führerin Zarife Hanim.\n43. **Leyla**: Nacht, gefeiert zu Ehren der legendären Heldin Leyla Qasim.\n44. **Mesture**: Die historische erste Historikerin und Dichterin Mesture Erdelan.\n45. **Ehmed**: Viel gelobt, und der große Philosoph Ehmede Chani.\n46. **Mela**: Der respektierte Sufi-Gelehrte, unsterblich durch Melaye Ciziri.\n47. **[Feqî](/de/name/feqi)**: Schüler des Wissens, Gelehrter (bezogen auf Feqîyê Teyran).\n48. **Nalî**: Der Vater der kurdischen Poesie, der berühmte Dichter Nali.\n49. **[Hejar](/de/name/hejar)**: Arm, aber reich im Herzen; bescheidene und zurückhaltende Person.\n50. **[Hêmin](/de/name/hemin)**: ...\n51. **Şêrko**: ...\n52. **[Cegerxwîn](/de/name/cegerxwin)**: ...\n53. **Qanî**: Der patriotische Dichter Qani.\n54. **[Gorani](/de/name/gorani)**: Gorani-Dialekt.\n55. **Tevfîq**: Erfolg, göttliche Hilfe und der historische Pionier Piramerd.\n56. **Musa**: Der historische intellektuelle Pionier der Medien, Musa Anter.\n57. **[Mazlum](/de/name/mazlum)**: ...\n58. **Kemal**: Vollkommenheit, und der historische Revolutionär.\n59. **Xayrî**: Gütig, wohltätig und der historische selbstlose Kämpfer.\n60. **Sakine**: Ruhe, unerschütterliche Entschlossenheit und die Pionierin.\n61. **[Arîn](/de/name/arin)**: Aus Feuer bestehend, energisch und hell.\n62. **Viyan**: ...\n63. **[Zîlan](/de/name/zilan)**: ...\n64. **Agît**: Tapfer.\n65. **[Egîd](/de/name/egid)**: Tapfere, mutige, Heldin und großartige Person, die für ihre Männlichkeit/Tugend bekannt ist.\n66. **Mezdek**: Der antike Philosoph für Gleichheit und soziales Leben.\n67. **Babek**: Der historische widerstandsfähige Krieger gegen Ungerechtigkeit.\n68. **Ebu-l Fida**: Berühmter kurdischer Historiker des 14. Jahrhunderts.\n69. **Sohrâverdî**: Der geniale Gründer der Ischraqi-Philosophie, der Lichttheoretiker.\n70. **Dînawerî**: Der legendäre Universalgelehrte der Botanik und Astronomie.\n71. **Cahîz**: Scharfsinnig, berühmter antiker Gelehrter.\n72. **İbn-i Hallikan**: Der historische oberste Biograf und Historiker.\n73. **Ziryar**: Der legendäre Meistermusiker der andalusischen Musik (Ziryab).\n74. **Zerdeşt**: ...\n75. **Manî**: Der antike mesopotamische Prophet des Lichts und der Kunst.\n76. **Mezdak**: Der antike Philosoph für frühe soziale Gerechtigkeit.\n77. **Heftad**: Die Versammlung der Siebzig, Symbol für Einheit.\n78. **[Senger](/de/name/senger)**: Schützengraben, Festung, Verteidigungsposten.\n79. **Şêrwan**: ...\n80. **[Mîrxan](/de/name/mirxan)**: Fürst der Khane, majestätischer Anführer.\n81. **Serdar**: ...\n82. **Şaho**: ...\n83. **Zorab**: ...\n84. **Rustem**: Rostam, legendärer mythologischer Held von großer Stärke und Tapferkeit.\n85. **[Siyamend](/de/name/siyamend)**: Der majestätische Berg, der Schatten spendet; legendärer Held.\n86. **[Cembelî](/de/name/cembeli)**: Berühmter kurdischer Epenheld (Cembelî, Sohn des Hakkari-Fürsten).\n87. **[Binevş](/de/name/binevs)**: Veilchenblume, Symbol für zarte Schönheit und Duft.\n88. **Besê**: Jemand, der den Wald, das dichte Waldgebiet und das Herz der Natur repräsentiert.\n89. **[Xecê](/de/name/xece)**: ...\n90. **Zîn**: ...\n91. **[Mem](/de/name/mem)**: ...\n92. **[Kawa](/de/name/kawa)**: ...\n93. **Dehak**: Der legendäre historische Herrscher im Schmied-Kawa Epos.\n94. **[Ferhad](/de/name/ferhad)**: Verständnisvolle, tapfere Person, die große Schwierigkeiten überwindet.\n95. **Şîrîn**: Vom Milch, süß, Löwe, wie Milch, süß, Löwe.\n96. **[Ardelan](/de/name/ardelan)**: Berühmtes kurdisches Erdelan-Emirat und Dynastie.\n97. **[Botan](/de/name/botan)**: Der Name der historischen Region Botan; repräsentiert Mut und tief verwurzeltes Erbe.\n98. **[Mervanî](/de/name/mervani)**: Marwanidisch.\n99. **Eyyubî**: Zur glorreichen Ayyubiden-Dynastie gehörend.\n100. **[Zendî](/de/name/zendii)**: Zendi.\n\n\n\n## Namensursprung\n\nDie Ursprünge kurdischer Jungennamen sind geprägt von der jahrtausendealten Nomaden- und Kriegergeschichte des kurdischen Volkes, seinen geografischen Kämpfen und den edlen Epen Mesopotamiens. Aus den alten Wurzeln der iranischen Sprachgruppe stammend, leiten sich diese Namen meist von Wörtern ab, die erhabene Naturphänomene, Kraft, Mut und Weisheit darstellen. Die maskuline phonetische Struktur und stimmliche Betonung des Kurdischen verleihen Jungennamen eine charakteristische Kraft und einen würdevollen Ton. Diese Namen bewahren das Gedenken an historische Führer und symbolisieren gleichzeitig eine edle Haltung für die Zukunft.\n\n## Kulturelle Bedeutung\n\nIn der kurdischen Sozialstruktur werden Jungennamen gewählt, um universelle Tugenden wie Ehrlichkeit, Mut, Großzügigkeit und Schutzbereitschaft zu verherrlichen. Namen wie „Agît“ (tapfer) oder „Serhat“ (Grenzeheld) symbolisieren die Verantwortung des Einzelnen gegenüber der Gesellschaft und seiner Heimat. Gleichzeitig sind auch Namen wie „Baran“ (Regen), die die Fülle und Kraft der Natur repräsentieren, weit verbreitet. Bei der Wahl eines Jungennamens ist es der größte Wunsch, dass das Kind mit seinem Namen aufwächst und sein Charakter durch die Würde und Stärke geformt wird, die sein Name in sich trägt.\n\n## Häufig gestellte Fragen (FAQ)\n\n### Was ist die Bedeutung historischer kurdischer Herrschernamen?\n\nEs sind edle, stolze Namen, die Führungsanspruch vermitteln und aus historischen Dynastien wie den Ayyubiden, Marwaniden und Zand stammen.",
+  "faqs": [
+    {
+      "question": "Was ist die Bedeutung historischer kurdischer Herrschernamen?",
+      "answer": "Es sind edle, stolze Namen, die Führungsanspruch vermitteln und aus historischen Dynastien wie den Ayyubiden, Marwaniden und Zand stammen."
+    }
+  ]
+}

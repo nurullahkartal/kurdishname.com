@@ -1,0 +1,508 @@
+{
+  "title": "100 Kürtçe Çiçek ve Bitki İsmi",
+  "description": "100 Kürtçe Çiçek ve Bitki İsmi listesi.",
+  "names": [
+    {
+      "name": "Berfîn",
+      "id": "berfin",
+      "meaning": "Kardan olan, kardelen çiçeği ve saflığın sembolüdür."
+    },
+    {
+      "name": "Sosin",
+      "id": "sosin",
+      "meaning": "Sümbül, kır çiçeği."
+    },
+    {
+      "name": "Nergiz",
+      "id": "nergiz",
+      "meaning": "Nergis çiçeği; baharın müjdeleyicisi ve doğanın en güzel kokusunu temsil eder."
+    },
+    {
+      "name": "Şîlan",
+      "id": "silan_2",
+      "meaning": "Yaban gülü, kuşburnu; doğanın vahşi ama şifalı ve zarif yanını temsil eder."
+    },
+    {
+      "name": "Beybûn",
+      "id": "beybun",
+      "meaning": "Beyaz papatya, baharın en zarif çiçeği."
+    },
+    {
+      "name": "Rihan",
+      "id": "rihan_2",
+      "meaning": "Fesleğen bitkisi; kokusuyla ferahlık veren ve doğanın saflığını temsil eden kimsedir."
+    },
+    {
+      "name": "Pelîn",
+      "id": "pelin",
+      "meaning": "Yapraklar."
+    },
+    {
+      "name": "Nûpel",
+      "id": "nupel",
+      "meaning": "Yeni yaprak, yeni umut."
+    },
+    {
+      "name": "Pelda",
+      "id": "pelda",
+      "meaning": "Yaprak verdi, yeşillendi."
+    },
+    {
+      "name": "Darîn",
+      "id": "darin",
+      "meaning": "Hükümdar, ağaç gibi, hükümdar, ağaçe dair."
+    },
+    {
+      "name": "Mazî",
+      "id": "mazi",
+      "meaning": "Meşe palamudu; sağlamlık, uzun ömür ve köklülük simgesi."
+    },
+    {
+      "name": "Darçîn",
+      "id": "darcin",
+      "meaning": "Tarçın, tatlı baharat."
+    },
+    {
+      "name": "Henar",
+      "id": "henar",
+      "meaning": "Nar meyvesi, bereket ve güzellik sembolü."
+    },
+    {
+      "name": "Sêvê",
+      "id": "seve",
+      "meaning": "Elma gibi kırmızı, al yanaklı, asil taze kız."
+    },
+    {
+      "name": "Mêw",
+      "id": "mew",
+      "meaning": "Asma dalı, üzüm asması, verimlilik."
+    },
+    {
+      "name": "Kulîlk",
+      "id": "kulilk",
+      "meaning": "Çiçek, kır çiçeği, tomurcuk."
+    },
+    {
+      "name": "Heşîn",
+      "id": "hesin",
+      "meaning": "Yeşillik, taze çimenler, doğanın yeşermesi."
+    },
+    {
+      "name": "Sperî",
+      "id": "speri",
+      "meaning": "Sarp dağ eteklerinde açan çok özel ve narin bir kır çiçeği."
+    },
+    {
+      "name": "Gezîz",
+      "id": "geziz",
+      "meaning": "Geziz; baharda açan narin ve renkli bir Mezopotamya kır çiçeği."
+    },
+    {
+      "name": "Gulan",
+      "id": "gulan",
+      "meaning": "Mayıs ayı, güllerin açtığı dönem."
+    },
+    {
+      "name": "Nîsan",
+      "id": "nisan_2",
+      "meaning": "İlkbahar mevsiminin ikinci ayı, taze çiçeklerin açtığı bereketli dönem."
+    },
+    {
+      "name": "Adar",
+      "id": "adar",
+      "meaning": "Mart ayı, ateş."
+    },
+    {
+      "name": "Newroz",
+      "id": "newroz",
+      "meaning": "Baharın gelişi, yeni doğuş, yeniden diriliş ateşi."
+    },
+    {
+      "name": "Bihar",
+      "id": "bihar",
+      "meaning": "İlkbahar mevsimi, doğanın uyanışı, neşe."
+    },
+    {
+      "name": "Pizdane",
+      "id": "pizdane",
+      "meaning": "Tomurcuk, taze filiz, baharın habercisi."
+    },
+    {
+      "name": "Şax",
+      "id": "sax",
+      "meaning": "Dal, ağaç kolu, doğanın uzantısı."
+    },
+    {
+      "name": "Dara",
+      "id": "dara",
+      "meaning": "Hükümdar, bey; ağaçlık yer."
+    },
+    {
+      "name": "Nudar",
+      "id": "nudar",
+      "meaning": "Taze ağaç, yeni filizlenen fidan; canlığı ve gençliği temsil eder."
+    },
+    {
+      "name": "Gule",
+      "id": "gule",
+      "meaning": "Gül; zarafetin, sevginin ve doğanın en zarif çiçeğinin adıdır."
+    },
+    {
+      "name": "Gulê",
+      "id": "gule",
+      "meaning": "Gül; zarafetin, sevginin ve doğanın en zarif çiçeğinin adıdır."
+    },
+    {
+      "name": "Gulistan",
+      "id": "gulistan",
+      "meaning": "Gül bahçesi."
+    },
+    {
+      "name": "Gulbahar",
+      "id": "gulbahar",
+      "meaning": "Gulbahar; ilkbaharda açan en renkli asil gül, sonsuz neşe ve canlanma kaynağı."
+    },
+    {
+      "name": "Gulnaze",
+      "id": "gulnaze",
+      "meaning": "Gulnaze; narin kokulu yapraklı, rüzgarda nazlı sallanan zarif gül çiçeği."
+    },
+    {
+      "name": "Guldane",
+      "id": "guldane",
+      "meaning": "Guldane; biricik gül tanesi, eşsiz ve nadide kılınmış asil sevgili."
+    },
+    {
+      "name": "Gulsevin",
+      "id": "gulsevin",
+      "meaning": "Gulsevin; sevilerek yeşeren muazzam gül, neşe ve saadet saçan çiçek."
+    },
+    {
+      "name": "Gulperî",
+      "id": "gulperi",
+      "meaning": "Gül perisi."
+    },
+    {
+      "name": "Gulav",
+      "id": "gulav",
+      "meaning": "Gulav; taze gül suyu, ruha ferahlık veren, asil ve çok güzel kokulu esans."
+    },
+    {
+      "name": "Gula",
+      "id": "gula",
+      "meaning": "Gül bahçesi."
+    },
+    {
+      "name": "Xunav",
+      "id": "xunav",
+      "meaning": "Çiy damlası, şafak vaktinde yapraklar üstündeki nem."
+    },
+    {
+      "name": "Hevîn",
+      "id": "hevin",
+      "meaning": "Umut, ümit gibi, umut, ümite dair."
+    },
+    {
+      "name": "Zozan",
+      "id": "zozan_2",
+      "meaning": "Yayla, yüksek dağ otlağı; serinliği, ferahlığı ve doğanın en saf halini temsil eder."
+    },
+    {
+      "name": "Asmîn",
+      "id": "asmin",
+      "meaning": "Dağ çiçeği, taze dağ kekiği."
+    },
+    {
+      "name": "Bayan",
+      "id": "bayan",
+      "meaning": "Bayan; ilkbahar uyanışında dağ yamaçlarında açan narin ve renkli kır çiçeği."
+    },
+    {
+      "name": "Çimen",
+      "id": "cimen",
+      "meaning": "Yeşil alan, çayır ve doğanın taze yeşilliğini temsil eden kimsedir."
+    },
+    {
+      "name": "Giya",
+      "id": "giya",
+      "meaning": "Giya; taze yeşillik, ulu dağ otu, doğanın canlandığını gösteren yeşil örtü."
+    },
+    {
+      "name": "Rezan",
+      "id": "rezan",
+      "meaning": "Öncü, yol gösteren, rehber ve toplumu aydınlatan bilgeliğe sahip kimsedir."
+    },
+    {
+      "name": "Rez",
+      "id": "rez",
+      "meaning": "Sıra, düzen; aynı zamanda toplum içinde gösterilen derin hürmet ve saygıyı temsil eder."
+    },
+    {
+      "name": "Baxçe",
+      "id": "baxce",
+      "meaning": "Baxçe; özenle bakılan ulu çiçek bahçesi, rengarenk huzur ve saadet köşesi."
+    },
+    {
+      "name": "Şîtil",
+      "id": "sitil",
+      "meaning": "Şîtil; yeni dikilmiş taze fidan, ulu büyüme ve sürekli yenilenme umudu."
+    },
+    {
+      "name": "Kem",
+      "id": "kem_2",
+      "meaning": "Kem; taze açan gonca gül tomurcuğu, taze gençlik ve mutlak saflık sembolü."
+    },
+    {
+      "name": "Pelşîn",
+      "id": "pelsin",
+      "meaning": "Yeşil yaprak, bahar yansıması."
+    },
+    {
+      "name": "Pelzer",
+      "id": "pelzer",
+      "meaning": "Pelzer; sonbaharın asil sarı yaprağı, hüzünlü ve son derece edebi güzellik."
+    },
+    {
+      "name": "Pelsor",
+      "id": "pelsor",
+      "meaning": "Pelsor; nar kırmızısı asil yaprak, canlılık ve ateşli doğal güzellik."
+    },
+    {
+      "name": "Tirêj",
+      "id": "tirej_2",
+      "meaning": "Işın, güneş ışığı; karanlığı delen ilk ışık hüzmesini ve umudu temsil eder."
+    },
+    {
+      "name": "Xunavî",
+      "id": "xunavi",
+      "meaning": "Xunavî; sabahın taze çiy damlalarıyla ıslanmış, nemli ve tertemiz çiçek yaprağı."
+    },
+    {
+      "name": "Nermîn",
+      "id": "nermin",
+      "meaning": "Yumuşak, nazik, şefkatli ve huyu güzel olan kimsedir."
+    },
+    {
+      "name": "Sosinî",
+      "id": "sosini",
+      "meaning": "Sosinî; mor susam çiçeğine ait olan, onun asil mor rengini taşıyan."
+    },
+    {
+      "name": "Nergizî",
+      "id": "nergizi",
+      "meaning": "Nergis gibi."
+    },
+    {
+      "name": "Beybûnî",
+      "id": "beybuni",
+      "meaning": "Beybûnî; ak papatya kokulu, tertemiz, saf, yumuşak tenli asil bebek."
+    },
+    {
+      "name": "Henarî",
+      "id": "henari",
+      "meaning": "Henarî; içi kırmızı nar taneleri gibi gür dolu, bereketli ve al yanaklı tatlı bebek."
+    },
+    {
+      "name": "Sêvîn",
+      "id": "sevin",
+      "meaning": "Gece otlaması, gece manzarası."
+    },
+    {
+      "name": "Daristan",
+      "id": "daristan",
+      "meaning": "Daristan; ulu orman, derin yeşillik, oksijen, huzur ve muazzam hayat kaynağı."
+    },
+    {
+      "name": "Mêrg",
+      "id": "merg",
+      "meaning": "Mêrg; yemyeşil sulak ulu çayır, doğanın dinlendirici gür yeşillik alanı."
+    },
+    {
+      "name": "Newal",
+      "id": "newal",
+      "meaning": "Newal; dere yatağı, içinden tatlı su süzülen vadi."
+    },
+    {
+      "name": "Kendal",
+      "id": "kendal",
+      "meaning": "Bayır, uçuruma yakın yer, dağ yamacı."
+    },
+    {
+      "name": "Havin",
+      "id": "havin_2",
+      "meaning": "Yaz mevsimi; sıcaklık, bereket ve doğanın en canlı dönemini temsil eder."
+    },
+    {
+      "name": "Payiz",
+      "id": "payiz",
+      "meaning": "Sonbahar mevsimi, rüzgarlı ve romantik dönem."
+    },
+    {
+      "name": "Zivistan",
+      "id": "zivistan",
+      "meaning": "Kış mevsimi, beyaz ve sessiz örtü dönemi."
+    },
+    {
+      "name": "Cihan",
+      "id": "cihan",
+      "meaning": "Dünya, evren, kainat ve her şeyi kapsayan büyük varlık demektir."
+    },
+    {
+      "name": "Amara",
+      "id": "amara",
+      "meaning": "Yaşayan, ölümsüz, baki kalan."
+    },
+    {
+      "name": "Adarî",
+      "id": "adari",
+      "meaning": "Adarî; mart ayına ait olan, ilkbaharın ulu uyanışıyla doğan asil çocuk."
+    },
+    {
+      "name": "Nûda",
+      "id": "nuda",
+      "meaning": "Yeni doğan, tomurcuk, taze ve hayat dolu başlangıç."
+    },
+    {
+      "name": "Jînda",
+      "id": "jinda",
+      "meaning": "Yaşam veren, hayat dolu ve girdiği ortama neşe katan kimsedir."
+    },
+    {
+      "name": "Berav",
+      "id": "berav",
+      "meaning": "Su kenarı, göl ve nehir kıyısı."
+    },
+    {
+      "name": "Sitav",
+      "id": "sitav",
+      "meaning": "Güneş gören taraf, güneşe dönük sıcak yamaç."
+    },
+    {
+      "name": "Ava",
+      "id": "ava",
+      "meaning": "Su; bayındır."
+    },
+    {
+      "name": "Rojîn",
+      "id": "rojin_3",
+      "meaning": "Güneş ışığı, güneşe ait; parlaklığı ve sıcaklığıyla etrafını ısıtan kimsedir."
+    },
+    {
+      "name": "Şevîn",
+      "id": "sevin",
+      "meaning": "Gece otlaması, gece manzarası."
+    },
+    {
+      "name": "Hîvron",
+      "id": "hivron",
+      "meaning": "Aydınlık ay."
+    },
+    {
+      "name": "Stêrk",
+      "id": "sterk",
+      "meaning": "Yıldız, parlaklık."
+    },
+    {
+      "name": "Tara",
+      "id": "tara_2",
+      "meaning": "Gelin duvağı; aynı zamanda gökyüzündeki parlak bir yıldızı ve aydınlığı temsil eder."
+    },
+    {
+      "name": "Pîroz",
+      "id": "piroz_2",
+      "meaning": "Kutsal, mübarek, şanslı ve tebrik edilen."
+    },
+    {
+      "name": "Xerzî",
+      "id": "xerzi",
+      "meaning": "Garzan (Xerzan) bölgesine ait olan, o yörenin asil insanı."
+    },
+    {
+      "name": "Botanî",
+      "id": "botani",
+      "meaning": "Botanlı."
+    },
+    {
+      "name": "Soranî",
+      "id": "sorani",
+      "meaning": "Soranî; Erbil ve Süleymaniye çevresinde konuşulan zengin edebi Kürtçe lehçesi ve bölgesi."
+    },
+    {
+      "name": "Badînî",
+      "id": "badini",
+      "meaning": "İnançlı."
+    },
+    {
+      "name": "Lolanî",
+      "id": "lolani",
+      "meaning": "Aşiretli."
+    },
+    {
+      "name": "Cizîrî",
+      "id": "ciziri",
+      "meaning": "Cizreli."
+    },
+    {
+      "name": "Merdînî",
+      "id": "merdin",
+      "meaning": "Merdîn; taş evleri, tarihi dokusu ve hoşgörüsüyle ünlü asil Mardin şehri."
+    },
+    {
+      "name": "Amedî",
+      "id": "amed",
+      "meaning": "Diyarbakır'ın tarihi ve kültürel adıdır."
+    },
+    {
+      "name": "Dersimî",
+      "id": "dersim",
+      "meaning": "Gümüş kapı; Kürdistan'da kadim ve baş eğmez bir bölgenin adıdır."
+    },
+    {
+      "name": "Zapî",
+      "id": "zap",
+      "meaning": "Zap suyu, coşkulu akıntı, hırçın ve temiz nehir."
+    },
+    {
+      "name": "Dijlê",
+      "id": "dijle",
+      "meaning": "Dicle nehri."
+    },
+    {
+      "name": "Firatî",
+      "id": "firat",
+      "meaning": "Fırat nehri."
+    },
+    {
+      "name": "Arasî",
+      "id": "aras",
+      "meaning": "Aras nehri, kavuşma."
+    },
+    {
+      "name": "Zagrosî",
+      "id": "zagros",
+      "meaning": "..."
+    },
+    {
+      "name": "Gabarî",
+      "id": "gabar",
+      "meaning": "Görkemli, ulu ve sarsılmaz dağ."
+    },
+    {
+      "name": "Cudî",
+      "id": "cudii",
+      "meaning": "Cudi dağı."
+    },
+    {
+      "name": "Sîpanî",
+      "id": "sipan",
+      "meaning": "Süphan dağı, yüksek zirve."
+    }
+  ],
+  "content": "## İsim Listesi ve Anlamları\n\n1. **[Berfîn](/tr/isim/berfin)**: Kardan olan, kardelen çiçeği ve saflığın sembolüdür.\n2. **[Sosin](/tr/isim/sosin)**: Sümbül, kır çiçeği.\n3. **[Nergiz](/tr/isim/nergiz)**: Nergis çiçeği; baharın müjdeleyicisi ve doğanın en güzel kokusunu temsil eder.\n4. **Şîlan**: Yaban gülü, kuşburnu; doğanın vahşi ama şifalı ve zarif yanını temsil eder.\n5. **[Beybûn](/tr/isim/beybun)**: Beyaz papatya, baharın en zarif çiçeği.\n6. **Rihan**: Fesleğen bitkisi; kokusuyla ferahlık veren ve doğanın saflığını temsil eden kimsedir.\n7. **[Pelîn](/tr/isim/pelin)**: Yapraklar.\n8. **[Nûpel](/tr/isim/nupel)**: Yeni yaprak, yeni umut.\n9. **[Pelda](/tr/isim/pelda)**: Yaprak verdi, yeşillendi.\n10. **[Darîn](/tr/isim/darin)**: Hükümdar, ağaç gibi, hükümdar, ağaçe dair.\n11. **[Mazî](/tr/isim/mazi)**: Meşe palamudu; sağlamlık, uzun ömür ve köklülük simgesi.\n12. **[Darçîn](/tr/isim/darcin)**: Tarçın, tatlı baharat.\n13. **[Henar](/tr/isim/henar)**: Nar meyvesi, bereket ve güzellik sembolü.\n14. **[Sêvê](/tr/isim/seve)**: Elma gibi kırmızı, al yanaklı, asil taze kız.\n15. **[Mêw](/tr/isim/mew)**: Asma dalı, üzüm asması, verimlilik.\n16. **[Kulîlk](/tr/isim/kulilk)**: Çiçek, kır çiçeği, tomurcuk.\n17. **[Heşîn](/tr/isim/hesin)**: Yeşillik, taze çimenler, doğanın yeşermesi.\n18. **[Sperî](/tr/isim/speri)**: Sarp dağ eteklerinde açan çok özel ve narin bir kır çiçeği.\n19. **[Gezîz](/tr/isim/geziz)**: Geziz; baharda açan narin ve renkli bir Mezopotamya kır çiçeği.\n20. **[Gulan](/tr/isim/gulan)**: Mayıs ayı, güllerin açtığı dönem.\n21. **Nîsan**: İlkbahar mevsiminin ikinci ayı, taze çiçeklerin açtığı bereketli dönem.\n22. **[Adar](/tr/isim/adar)**: Mart ayı, ateş.\n23. **[Newroz](/tr/isim/newroz)**: Baharın gelişi, yeni doğuş, yeniden diriliş ateşi.\n24. **[Bihar](/tr/isim/bihar)**: İlkbahar mevsimi, doğanın uyanışı, neşe.\n25. **[Pizdane](/tr/isim/pizdane)**: Tomurcuk, taze filiz, baharın habercisi.\n26. **[Şax](/tr/isim/sax)**: Dal, ağaç kolu, doğanın uzantısı.\n27. **[Dara](/tr/isim/dara)**: Hükümdar, bey; ağaçlık yer.\n28. **[Nudar](/tr/isim/nudar)**: Taze ağaç, yeni filizlenen fidan; canlığı ve gençliği temsil eder.\n29. **[Gule](/tr/isim/gule)**: Gül; zarafetin, sevginin ve doğanın en zarif çiçeğinin adıdır.\n30. **[Gulê](/tr/isim/gule)**: Gül; zarafetin, sevginin ve doğanın en zarif çiçeğinin adıdır.\n31. **Gulistan**: Gül bahçesi.\n32. **Gulbahar**: Gulbahar; ilkbaharda açan en renkli asil gül, sonsuz neşe ve canlanma kaynağı.\n33. **[Gulnaze](/tr/isim/gulnaze)**: Gulnaze; narin kokulu yapraklı, rüzgarda nazlı sallanan zarif gül çiçeği.\n34. **Guldane**: Guldane; biricik gül tanesi, eşsiz ve nadide kılınmış asil sevgili.\n35. **Gulsevin**: Gulsevin; sevilerek yeşeren muazzam gül, neşe ve saadet saçan çiçek.\n36. **[Gulperî](/tr/isim/gulperi)**: Gül perisi.\n37. **[Gulav](/tr/isim/gulav)**: Gulav; taze gül suyu, ruha ferahlık veren, asil ve çok güzel kokulu esans.\n38. **[Gula](/tr/isim/gula)**: Gül bahçesi.\n39. **[Xunav](/tr/isim/xunav)**: Çiy damlası, şafak vaktinde yapraklar üstündeki nem.\n40. **[Hevîn](/tr/isim/hevin)**: Umut, ümit gibi, umut, ümite dair.\n41. **Zozan**: Yayla, yüksek dağ otlağı; serinliği, ferahlığı ve doğanın en saf halini temsil eder.\n42. **[Asmîn](/tr/isim/asmin)**: Dağ çiçeği, taze dağ kekiği.\n43. **[Bayan](/tr/isim/bayan)**: Bayan; ilkbahar uyanışında dağ yamaçlarında açan narin ve renkli kır çiçeği.\n44. **[Çimen](/tr/isim/cimen)**: Yeşil alan, çayır ve doğanın taze yeşilliğini temsil eden kimsedir.\n45. **[Giya](/tr/isim/giya)**: Giya; taze yeşillik, ulu dağ otu, doğanın canlandığını gösteren yeşil örtü.\n46. **[Rezan](/tr/isim/rezan)**: Öncü, yol gösteren, rehber ve toplumu aydınlatan bilgeliğe sahip kimsedir.\n47. **[Rez](/tr/isim/rez)**: Sıra, düzen; aynı zamanda toplum içinde gösterilen derin hürmet ve saygıyı temsil eder.\n48. **Baxçe**: Baxçe; özenle bakılan ulu çiçek bahçesi, rengarenk huzur ve saadet köşesi.\n49. **[Şîtil](/tr/isim/sitil)**: Şîtil; yeni dikilmiş taze fidan, ulu büyüme ve sürekli yenilenme umudu.\n50. **Kem**: Kem; taze açan gonca gül tomurcuğu, taze gençlik ve mutlak saflık sembolü.\n51. **[Pelşîn](/tr/isim/pelsin)**: Yeşil yaprak, bahar yansıması.\n52. **[Pelzer](/tr/isim/pelzer)**: Pelzer; sonbaharın asil sarı yaprağı, hüzünlü ve son derece edebi güzellik.\n53. **[Pelsor](/tr/isim/pelsor)**: Pelsor; nar kırmızısı asil yaprak, canlılık ve ateşli doğal güzellik.\n54. **Tirêj**: Işın, güneş ışığı; karanlığı delen ilk ışık hüzmesini ve umudu temsil eder.\n55. **[Xunavî](/tr/isim/xunavi)**: Xunavî; sabahın taze çiy damlalarıyla ıslanmış, nemli ve tertemiz çiçek yaprağı.\n56. **[Nermîn](/tr/isim/nermin)**: Yumuşak, nazik, şefkatli ve huyu güzel olan kimsedir.\n57. **[Sosinî](/tr/isim/sosini)**: Sosinî; mor susam çiçeğine ait olan, onun asil mor rengini taşıyan.\n58. **[Nergizî](/tr/isim/nergizi)**: Nergis gibi.\n59. **[Beybûnî](/tr/isim/beybuni)**: Beybûnî; ak papatya kokulu, tertemiz, saf, yumuşak tenli asil bebek.\n60. **[Henarî](/tr/isim/henari)**: Henarî; içi kırmızı nar taneleri gibi gür dolu, bereketli ve al yanaklı tatlı bebek.\n61. **[Sêvîn](/tr/isim/sevin)**: Gece otlaması, gece manzarası.\n62. **[Daristan](/tr/isim/daristan)**: Daristan; ulu orman, derin yeşillik, oksijen, huzur ve muazzam hayat kaynağı.\n63. **[Mêrg](/tr/isim/merg)**: Mêrg; yemyeşil sulak ulu çayır, doğanın dinlendirici gür yeşillik alanı.\n64. **[Newal](/tr/isim/newal)**: Newal; dere yatağı, içinden tatlı su süzülen vadi.\n65. **[Kendal](/tr/isim/kendal)**: Bayır, uçuruma yakın yer, dağ yamacı.\n66. **Havin**: Yaz mevsimi; sıcaklık, bereket ve doğanın en canlı dönemini temsil eder.\n67. **[Payiz](/tr/isim/payiz)**: Sonbahar mevsimi, rüzgarlı ve romantik dönem.\n68. **[Zivistan](/tr/isim/zivistan)**: Kış mevsimi, beyaz ve sessiz örtü dönemi.\n69. **Cihan**: Dünya, evren, kainat ve her şeyi kapsayan büyük varlık demektir.\n70. **[Amara](/tr/isim/amara)**: Yaşayan, ölümsüz, baki kalan.\n71. **[Adarî](/tr/isim/adari)**: Adarî; mart ayına ait olan, ilkbaharın ulu uyanışıyla doğan asil çocuk.\n72. **[Nûda](/tr/isim/nuda)**: Yeni doğan, tomurcuk, taze ve hayat dolu başlangıç.\n73. **[Jînda](/tr/isim/jinda)**: Yaşam veren, hayat dolu ve girdiği ortama neşe katan kimsedir.\n74. **[Berav](/tr/isim/berav)**: Su kenarı, göl ve nehir kıyısı.\n75. **[Sitav](/tr/isim/sitav)**: Güneş gören taraf, güneşe dönük sıcak yamaç.\n76. **[Ava](/tr/isim/ava)**: Su; bayındır.\n77. **Rojîn**: Güneş ışığı, güneşe ait; parlaklığı ve sıcaklığıyla etrafını ısıtan kimsedir.\n78. **[Şevîn](/tr/isim/sevin)**: Gece otlaması, gece manzarası.\n79. **[Hîvron](/tr/isim/hivron)**: Aydınlık ay.\n80. **[Stêrk](/tr/isim/sterk)**: Yıldız, parlaklık.\n81. **Tara**: Gelin duvağı; aynı zamanda gökyüzündeki parlak bir yıldızı ve aydınlığı temsil eder.\n82. **Pîroz**: Kutsal, mübarek, şanslı ve tebrik edilen.\n83. **Xerzî**: Garzan (Xerzan) bölgesine ait olan, o yörenin asil insanı.\n84. **[Botanî](/tr/isim/botani)**: Botanlı.\n85. **Soranî**: Soranî; Erbil ve Süleymaniye çevresinde konuşulan zengin edebi Kürtçe lehçesi ve bölgesi.\n86. **[Badînî](/tr/isim/badini)**: İnançlı.\n87. **[Lolanî](/tr/isim/lolani)**: Aşiretli.\n88. **[Cizîrî](/tr/isim/ciziri)**: Cizreli.\n89. **Merdînî**: Merdîn; taş evleri, tarihi dokusu ve hoşgörüsüyle ünlü asil Mardin şehri.\n90. **[Amedî](/tr/isim/amed)**: Diyarbakır'ın tarihi ve kültürel adıdır.\n91. **[Dersimî](/tr/isim/dersim)**: Gümüş kapı; Kürdistan'da kadim ve baş eğmez bir bölgenin adıdır.\n92. **[Zapî](/tr/isim/zap)**: Zap suyu, coşkulu akıntı, hırçın ve temiz nehir.\n93. **[Dijlê](/tr/isim/dijle)**: Dicle nehri.\n94. **[Firatî](/tr/isim/firat)**: Fırat nehri.\n95. **[Arasî](/tr/isim/aras)**: Aras nehri, kavuşma.\n96. **[Zagrosî](/tr/isim/zagros)**: ...\n97. **[Gabarî](/tr/isim/gabar)**: Görkemli, ulu ve sarsılmaz dağ.\n98. **[Cudî](/tr/isim/cudii)**: Cudi dağı.\n99. **[Sîpanî](/tr/isim/sipan)**: Süphan dağı, yüksek zirve.\n\n\n\n## İsim Kökenleri\n\nKürtçe kız isimlerinin kökenleri, Hint-Avrupa dil ailesinin İrani grubuna dahil olan Kürt dilinin zengin tarihi katmanlarına dayanır. Bu isimlerin birçoğu antik Avesta metinlerinden, Med uygarlığının dil kalıntılarından ve klasik Kürt edebiyatından süzülerek günümüze ulaşmıştır. Fonetik yapıları itibarıyla son derece melodik ve yumuşak tınılara sahip olan bu isimler, genellikle doğanın canlanışını, göksel cisimleri ve asil duyguları temsil eder. Kürtçe dil bilgisindeki dişil takılar ve kelime köklerinin estetik uyumu, kız isimlerine eşsiz bir zarafet ve akıcılık kazandırır.\n\n## Kültürel Önem\n\nKürt kültüründe kadın, yaşamın, bereketin ve toplumsal direncin en önemli simgesidir. Bu durum, kız çocuklarına verilen isimlerde de kendini açıkça gösterir. 'Jiyan' (yaşam) veya 'Hevîn' (umut) gibi isimler, kadının toplumdaki kurucu ve birleştirici rolünü yüceltir. Ayrıca Mezopotamya'nın bereketli toprakları, ulu dağları ve kır çiçekleri, kız isimlerinin en büyük ilham kaynağıdır. Kız isimleri seçilirken, çocuğun ailesine uğur, bereket ve aydınlık getirmesi temenni edilir; bu nedenle ışık, güneş ve bahar temalı isimler tarih boyunca her zaman el üstünde tutulmuştur.\n\n## Sık Sorulan Sorular (FAQ)\n\n### Kürtçe çiçek isimlerinin fonetik özelliği nedir?\n\nBahar uyanışını, narin kır çiçeklerini ve Mezopotamya florasını yansıtan son derece yumuşak ve melodik tınılara sahiptirler.",
+  "faqs": [
+    {
+      "question": "Kürtçe çiçek isimlerinin fonetik özelliği nedir?",
+      "answer": "Bahar uyanışını, narin kır çiçeklerini ve Mezopotamya florasını yansıtan son derece yumuşak ve melodik tınılara sahiptirler."
+    }
+  ]
+}

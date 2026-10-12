@@ -1,0 +1,513 @@
+{
+  "title": "100 Kürtçe Ruhani ve Kutsal İsim",
+  "description": "100 Kürtçe Ruhani ve Kutsal İsim listesi.",
+  "names": [
+    {
+      "name": "Pîroz",
+      "id": "piroz_2",
+      "meaning": "Kutsal, mübarek, şanslı ve tebrik edilen."
+    },
+    {
+      "name": "Avesta",
+      "id": "avesta",
+      "meaning": "Zerdüştlük inancının kutsal kitabı; temel kural, sarsılmaz bilge metin."
+    },
+    {
+      "name": "Zerdüşt",
+      "id": "zerdest",
+      "meaning": "..."
+    },
+    {
+      "name": "Ahura",
+      "id": "ahura",
+      "meaning": "Işık ve iyilik tanrısı (Zerdüştlük inancından)."
+    },
+    {
+      "name": "Mazda",
+      "id": "mazda",
+      "meaning": "Bilge, her şeyi bilen yaratıcı güç (Ahura Mazda)."
+    },
+    {
+      "name": "Yezdan",
+      "id": "yezdan",
+      "meaning": "Allah, Tanrı, ulu yaratıcı."
+    },
+    {
+      "name": "Melak",
+      "id": "melak",
+      "meaning": "Melak; masumiyet timsali melek, nur yüzlü koruyucu ve sevecen kız."
+    },
+    {
+      "name": "Pîr",
+      "id": "pir",
+      "meaning": "Bilge, pir, yaşlı önder ve manevi mürşid."
+    },
+    {
+      "name": "Seyid",
+      "id": "seyid",
+      "meaning": "Efendi, lider, peygamber soyu."
+    },
+    {
+      "name": "Şêx",
+      "id": "sex",
+      "meaning": "Şêx; büyük ilim, tasavvuf ve maneviyat önderi, ulu hoca ve rehber."
+    },
+    {
+      "name": "Mubarek",
+      "id": "mubarek",
+      "meaning": "Mubarek; bereketli, kutlu, son derece uğurlu ve şans getiren asil insan."
+    },
+    {
+      "name": "Kutsal",
+      "id": "kutsal",
+      "meaning": "Kutsal; manevi değeri çok yüksek, aziz kılınmış, dokunulmaz kutsal varlık."
+    },
+    {
+      "name": "Dua",
+      "id": "dua",
+      "meaning": "Dua; içten yakarış, yüce Allah'a sığınma ve ruhsal mutlak arınma."
+    },
+    {
+      "name": "Nîyaz",
+      "id": "niyaz",
+      "meaning": "İstek, yakarış, samimi dilek ve manevi bir yönelişi temsil eden kimsedir."
+    },
+    {
+      "name": "Hevi",
+      "id": "hevi",
+      "meaning": "Umut, beklenti."
+    },
+    {
+      "name": "Baver",
+      "id": "baver",
+      "meaning": "İnanan, güvenilir ve sadık kişidir."
+    },
+    {
+      "name": "Zana",
+      "id": "zana_2",
+      "meaning": "Bilge, alim, bilen; zekası ve ilmiyle topluma yön veren kimsedir."
+    },
+    {
+      "name": "Zanyar",
+      "id": "zanyar_2",
+      "meaning": "Bilim insanı, araştırmacı; bilgi peşinde koşan ve hakikati arayan kimsedir."
+    },
+    {
+      "name": "Hêmin",
+      "id": "hemin",
+      "meaning": "Sakin, huzurlu, güven veren ve ağırbaşlılığıyla tanınan kimsedir."
+    },
+    {
+      "name": "Zelal",
+      "id": "zelal",
+      "meaning": "Berrak, temiz, şeffaf, duru."
+    },
+    {
+      "name": "Paqîz",
+      "id": "paqiz",
+      "meaning": "Paqîz; tertemiz, arınmış, kirden, kötülükten ve günahtan uzak duru kadın."
+    },
+    {
+      "name": "Xasî",
+      "id": "xasi",
+      "meaning": "Xasî; saf, katkısız, halis ve samimi niyetli, seçkin insan."
+    },
+    {
+      "name": "Sema",
+      "id": "sema",
+      "meaning": "Gökyüzü; dans."
+    },
+    {
+      "name": "Hîvda",
+      "id": "hivda",
+      "meaning": "Ay doğdu, aydan gelen."
+    },
+    {
+      "name": "Rozerîn",
+      "id": "rozerin_2",
+      "meaning": "Altın güneş; güneşin en parlak ve kıymetli anını temsil eden asil kimsedir."
+    },
+    {
+      "name": "Tavîn",
+      "id": "tavin",
+      "meaning": "Güneş ışığı gibi, güneş ışığıe dair."
+    },
+    {
+      "name": "Aştî",
+      "id": "asti",
+      "meaning": "Barış, sükunet, huzur."
+    },
+    {
+      "name": "Viyan",
+      "id": "viyan_2",
+      "meaning": "İrade, istek, arzu; kararlı duruşu ve sarsılmaz azmi temsil eder."
+    },
+    {
+      "name": "Jîyan",
+      "id": "jiyan",
+      "meaning": "Yaşam, hayat ve var olmanın getirdiği tüm güzellikleri temsil eden kimsedir."
+    },
+    {
+      "name": "Nûda",
+      "id": "nuda",
+      "meaning": "Yeni doğan, tomurcuk, taze ve hayat dolu başlangıç."
+    },
+    {
+      "name": "Amara",
+      "id": "amara",
+      "meaning": "Yaşayan, ölümsüz, baki kalan."
+    },
+    {
+      "name": "Zend",
+      "id": "zend",
+      "meaning": "Zerdüşt'ün kutsal kitabı Avesta'nın şerhi ve yorumu."
+    },
+    {
+      "name": "Aram",
+      "id": "aram",
+      "meaning": "Huzurlu, sakin ve dingin yaşam."
+    },
+    {
+      "name": "Hêja",
+      "id": "heja",
+      "meaning": "Değerli, kıymetli, saygıdeğer ve toplumda önemli bir yeri olan kimsedir."
+    },
+    {
+      "name": "Peyman",
+      "id": "peyman",
+      "meaning": "Söz, yemin, antlaşma ve verilen sözün kutsallığını temsil eden kimsedir."
+    },
+    {
+      "name": "Ferman",
+      "id": "ferman",
+      "meaning": "Buyruk, emir."
+    },
+    {
+      "name": "Rahmet",
+      "id": "rahmet",
+      "meaning": "Rahmet; yüce şefkat, merhamet ve ilahi lütuf."
+    },
+    {
+      "name": "Aziz",
+      "id": "aziz",
+      "meaning": "Çok değerli, sevilip sayılan, yüce dost."
+    },
+    {
+      "name": "Rezzan",
+      "id": "rezzan",
+      "meaning": "Rezzan; ağırbaşlı, vakur, ciddi ve son derece saygın kişilik."
+    },
+    {
+      "name": "Bextiyar",
+      "id": "bextiyar",
+      "meaning": "Mutlu, talihli, bahtlı ve her daim neşeli kimsedir."
+    },
+    {
+      "name": "Nasır",
+      "id": "nasir",
+      "meaning": "Yardım eden, koruyan, muzaffer kılan."
+    },
+    {
+      "name": "Qadir",
+      "id": "qadir",
+      "meaning": "Qadir; kudretli, güçlü, her şeye gücü yeten ve muktedir asil lider."
+    },
+    {
+      "name": "Kerim",
+      "id": "kerim",
+      "meaning": "Kerim; son derece cömert, ulu, asil ve eliaçık insan."
+    },
+    {
+      "name": "Rahim",
+      "id": "rahim",
+      "meaning": "Rahim; esirgeyen, koruyan, sonsuz merhamet ve şefkat sahibi."
+    },
+    {
+      "name": "Latîf",
+      "id": "latif",
+      "meaning": "Latîf; nazik, lütfeden, kibar, yumuşak huylu ve çok sevecen asil insan."
+    },
+    {
+      "name": "Vat",
+      "id": "vat",
+      "meaning": "Söz, kelam, konuşma gücü (Eski Kürtçe kökenli)."
+    },
+    {
+      "name": "Deng",
+      "id": "deng",
+      "meaning": "Ses, seda, haykırış, topluma seslenen güçlü nefes."
+    },
+    {
+      "name": "Ronahî",
+      "id": "ronahi_2",
+      "meaning": "Aydınlık, ışık, parıltı ve her türlü karanlığı aydınlatan derin bilgeliği temsil eder."
+    },
+    {
+      "name": "Şewq",
+      "id": "sewq",
+      "meaning": "Şewq; parlak ışık, parıltı, neşe ve coşkulu aydınlık."
+    },
+    {
+      "name": "Zerdeştî",
+      "id": "zerdest",
+      "meaning": "..."
+    },
+    {
+      "name": "Yarsan",
+      "id": "yarsan",
+      "meaning": "Yarsan; kadim Kürt inancı olan Yar Dostları ulu öğretisinin asil üyesi."
+    },
+    {
+      "name": "Ezidî",
+      "id": "ezidi",
+      "meaning": "Ezidî; güneşi ve nuru kutsal sayan kadim şanlı Ezidi inancına mensup asil kişi."
+    },
+    {
+      "name": "Elewî",
+      "id": "elewi",
+      "meaning": "Elewî; hoşgörü, insani sevgi ve adalet temelli asil Alevi inancına bağlı olan kişi."
+    },
+    {
+      "name": "Misilman",
+      "id": "misilman",
+      "meaning": "Misilman; barışı, adaleti ve mutlak teslimiyeti seçen asil Müslüman inanç sahibi."
+    },
+    {
+      "name": "Dindar",
+      "id": "dindar",
+      "meaning": "Dini bütün."
+    },
+    {
+      "name": "Sofî",
+      "id": "sofi",
+      "meaning": "Sofî; nefis terbiyesi ve manevi arınmayla meşgul olan asil sufi, dürüst ve temiz insan."
+    },
+    {
+      "name": "Derviş",
+      "id": "dervis",
+      "meaning": "Derviş; dünyevi geçici zenginliklerden vazgeçip hakikat yoluna giren ulu bilge."
+    },
+    {
+      "name": "Abid",
+      "id": "abid",
+      "meaning": "Abid; ibadetine son derece bağlı, dürüst, ahlaklı ve ilkeli yaşam süren insan."
+    },
+    {
+      "name": "Zahid",
+      "id": "zahid",
+      "meaning": "Zahid; kötülükten ve haramdan titizlikle sakınan, takva sahibi onurlu dindar."
+    },
+    {
+      "name": "Salih",
+      "id": "salih",
+      "meaning": "Salih; iyi huylu, dürüst, erdemli ve topluma büyük fayda sağlayan asil insan."
+    },
+    {
+      "name": "Mumin",
+      "id": "mumin",
+      "meaning": "Mumin; kalpten inanıp güven veren, barışçıl ve son derece saygın insan."
+    },
+    {
+      "name": "Muhlis",
+      "id": "muhlis",
+      "meaning": "Muhlis; samimi, her işi sadece sevgi, dürüstlük ve rıza için yapan halis kişi."
+    },
+    {
+      "name": "Siddîq",
+      "id": "siddiq",
+      "meaning": "Siddîq; sözünün ulu eri, sarsılmaz derecede dürüst, sadık ve dosdoğru."
+    },
+    {
+      "name": "Sebûr",
+      "id": "sebur",
+      "meaning": "Sebûr; çok sabırlı, zorluklara ve haksızlıklara şikayet etmeden katlanan ulu bilge."
+    },
+    {
+      "name": "Şakir",
+      "id": "sakir",
+      "meaning": "Şakir; elindekiyle yetinip şükreden, kanaatkar, güler yüzlü ve asil insan."
+    },
+    {
+      "name": "Hamid",
+      "id": "hamid",
+      "meaning": "Hamid; her daim övgüye layık işler yapan, şükreden çok dürüst asil kişi."
+    },
+    {
+      "name": "Munir",
+      "id": "munir",
+      "meaning": "Munir; çevresini ulu nuruyla aydınlatan, yol gösteren parlak zekalı rehber."
+    },
+    {
+      "name": "Nurî",
+      "id": "nuri",
+      "meaning": "Aydınlık, parlaklık, Nuri Dersimi (aydın ve yazar) atıflı."
+    },
+    {
+      "name": "Sirrî",
+      "id": "sirri",
+      "meaning": "Sirrî; derin sırlar taşıyan, sessiz, felsefi ve çok asil mizaçlı şahsiyet."
+    },
+    {
+      "name": "Cemîl",
+      "id": "cemil_2",
+      "meaning": "Cemîl; ilahi yüce güzelliği simgeleyen, ahlakı ve yüzü son derece güzel insan."
+    },
+    {
+      "name": "Celîl",
+      "id": "celil",
+      "meaning": "Celîl; heybetli, azametli, vakar sahibi ve büyük saygı uyandıran asil önder."
+    },
+    {
+      "name": "Cebbar",
+      "id": "cebbar",
+      "meaning": "Cebbar; çok güçlü, sarsılmaz kudretli, haksızlığa karşı dimdik duran yiğit."
+    },
+    {
+      "name": "Settar",
+      "id": "settar",
+      "meaning": "Settar; kusurları, hataları örten, bağışlayıcı, hoşgörülü ve bilge şahsiyet."
+    },
+    {
+      "name": "Gaffar",
+      "id": "gaffar",
+      "meaning": "Gaffar; günahları ve hataları çok affeden, engin merhetli ve geniş yürekli insan."
+    },
+    {
+      "name": "Şerif",
+      "id": "serif",
+      "meaning": "Seçkin, asil, kutsal ve şerefli soydan gelen."
+    },
+    {
+      "name": "Necef",
+      "id": "necef",
+      "meaning": "Necef; yüksek, manevi değeri son derece yüksek olan tarihi kutsal şehir adı."
+    },
+    {
+      "name": "Kerbela",
+      "id": "kerbela",
+      "meaning": "Kerbela; mutlak fedakarlığı ve haksızlığa asil direnişi simgeleyen kutsal yer ismi."
+    },
+    {
+      "name": "Mekke",
+      "id": "mekke",
+      "meaning": "Mekke; emin kılınmış, manevi olarak en ulu ve kutsal şehir, sığınak ve birleştirici merkez."
+    },
+    {
+      "name": "Medîne",
+      "id": "medine",
+      "meaning": "Medîne; nurlu şehir, hoşgörülü, her darda kalana kucak açan kutsal ve asil yer."
+    },
+    {
+      "name": "Kudüs",
+      "id": "kudus",
+      "meaning": "Kudüs; barışın, birliğin ve mukaddesatın sarsılmaz simgesi kadim kutsal ulu kent."
+    },
+    {
+      "name": "İhsan",
+      "id": "ihsan",
+      "meaning": "İhsan; iyilik etme, karşılıksız cömertçe ikram etme ve engin hoşgörü sahibi."
+    },
+    {
+      "name": "İrfan",
+      "id": "irfan",
+      "meaning": "İrfan; derin ulu bilgelik, sezgisel hakikat bilgisi, kültürel zenginlik."
+    },
+    {
+      "name": "Vicdan",
+      "id": "vicdan",
+      "meaning": "Vicdan; insanın içindeki asil adalet terazisi, her zaman iyiyi seçen gür ses."
+    },
+    {
+      "name": "Adalet",
+      "id": "adalet",
+      "meaning": "Adalet; hakkı tam sahibine teslim etme, sarsılmaz asil hukuk terazisi."
+    },
+    {
+      "name": "İnsaf",
+      "id": "insaf",
+      "meaning": "İnsaf; engin merhametle yaklaşma, adil, vicdanlı ve anlayışlı davranma."
+    },
+    {
+      "name": "Vefa",
+      "id": "vefa",
+      "meaning": "Vefa; dostluğa sarsılmaz sadakat, verilen sözde durma ve iyilikleri unutmama."
+    },
+    {
+      "name": "Sadaqat",
+      "id": "sadaqat",
+      "meaning": "Sadaqat; sarsılmaz sadakat, mutlak doğruluk, dürüstlük ve sadık yoldaşlık."
+    },
+    {
+      "name": "Emanet",
+      "id": "emanet",
+      "meaning": "Emanet; göz gibi titizlikle korunan ulu kutsal değer, mutlak güvenilirlik."
+    },
+    {
+      "name": "Cömert",
+      "id": "comert",
+      "meaning": "Cömert; eliaçık, paylaşımcı, mütavazı ve asil kişilik."
+    },
+    {
+      "name": "Mert",
+      "id": "mert",
+      "meaning": "Yiğit, sözünün eri, güvenilir ve cesur erkek."
+    },
+    {
+      "name": "Can",
+      "id": "can",
+      "meaning": "Ruh, hayat, sevgili."
+    },
+    {
+      "name": "Revan",
+      "id": "revan",
+      "meaning": "Kervan yolcusu, yürüyen, akıcı ve hareketli olan."
+    },
+    {
+      "name": "Melekî",
+      "id": "meleki",
+      "meaning": "Melekî; meleksi, günahsız, tertemiz, uysal ve çok narin mizaçlı."
+    },
+    {
+      "name": "Perî",
+      "id": "peri",
+      "meaning": "Perî; olağanüstü güzelliği ve iyiliği simgeleyen masalsı varlık, peri kızı."
+    },
+    {
+      "name": "Hûrî",
+      "id": "huri",
+      "meaning": "Hûrî; cennet güzeli nurlu kız, pürüzsüz duru güzellik ve saflık."
+    },
+    {
+      "name": "Cennet",
+      "id": "cennet",
+      "meaning": "Cennet; sonsuz huzur ve saadet bahçesi, en ulu manevi güzellikler diyarı."
+    },
+    {
+      "name": "Firdews",
+      "id": "firdews",
+      "meaning": "Firdews; cennetin en yüksek, en yemyeşil ulu bahçesi."
+    },
+    {
+      "name": "Kevser",
+      "id": "kevser",
+      "meaning": "Kevser; cennetteki kutsal gür akarsu ve pınar; bolluk, bereket ve şifa kaynağı."
+    },
+    {
+      "name": "Ridvan",
+      "id": "ridvan",
+      "meaning": "Ridvan; rıza sahibi cennet bekçisi, uysal, nurlu ve koruyucu melek."
+    },
+    {
+      "name": "Malik",
+      "id": "malik",
+      "meaning": "Malik; her şeye sahip olan, düzeni kuran güçlü ve saygın asil lider."
+    }
+  ],
+  "content": "## İsim Listesi ve Anlamları\n\n1. **Pîroz**: Kutsal, mübarek, şanslı ve tebrik edilen.\n2. **Avesta**: Zerdüştlük inancının kutsal kitabı; temel kural, sarsılmaz bilge metin.\n3. **[Zerdüşt](/tr/isim/zerdest)**: ...\n4. **Ahura**: Işık ve iyilik tanrısı (Zerdüştlük inancından).\n5. **Mazda**: Bilge, her şeyi bilen yaratıcı güç (Ahura Mazda).\n6. **[Yezdan](/tr/isim/yezdan)**: Allah, Tanrı, ulu yaratıcı.\n7. **Melak**: Melak; masumiyet timsali melek, nur yüzlü koruyucu ve sevecen kız.\n8. **[Pîr](/tr/isim/pir)**: Bilge, pir, yaşlı önder ve manevi mürşid.\n9. **Seyid**: Efendi, lider, peygamber soyu.\n10. **Şêx**: Şêx; büyük ilim, tasavvuf ve maneviyat önderi, ulu hoca ve rehber.\n11. **Mubarek**: Mubarek; bereketli, kutlu, son derece uğurlu ve şans getiren asil insan.\n12. **Kutsal**: Kutsal; manevi değeri çok yüksek, aziz kılınmış, dokunulmaz kutsal varlık.\n13. **Dua**: Dua; içten yakarış, yüce Allah'a sığınma ve ruhsal mutlak arınma.\n14. **[Nîyaz](/tr/isim/niyaz)**: İstek, yakarış, samimi dilek ve manevi bir yönelişi temsil eden kimsedir.\n15. **[Hevi](/tr/isim/hevi)**: Umut, beklenti.\n16. **[Baver](/tr/isim/baver)**: İnanan, güvenilir ve sadık kişidir.\n17. **Zana**: Bilge, alim, bilen; zekası ve ilmiyle topluma yön veren kimsedir.\n18. **Zanyar**: Bilim insanı, araştırmacı; bilgi peşinde koşan ve hakikati arayan kimsedir.\n19. **[Hêmin](/tr/isim/hemin)**: Sakin, huzurlu, güven veren ve ağırbaşlılığıyla tanınan kimsedir.\n20. **[Zelal](/tr/isim/zelal)**: Berrak, temiz, şeffaf, duru.\n21. **[Paqîz](/tr/isim/paqiz)**: Paqîz; tertemiz, arınmış, kirden, kötülükten ve günahtan uzak duru kadın.\n22. **Xasî**: Xasî; saf, katkısız, halis ve samimi niyetli, seçkin insan.\n23. **[Sema](/tr/isim/sema)**: Gökyüzü; dans.\n24. **[Hîvda](/tr/isim/hivda)**: Ay doğdu, aydan gelen.\n25. **Rozerîn**: Altın güneş; güneşin en parlak ve kıymetli anını temsil eden asil kimsedir.\n26. **[Tavîn](/tr/isim/tavin)**: Güneş ışığı gibi, güneş ışığıe dair.\n27. **[Aştî](/tr/isim/asti)**: Barış, sükunet, huzur.\n28. **Viyan**: İrade, istek, arzu; kararlı duruşu ve sarsılmaz azmi temsil eder.\n29. **[Jîyan](/tr/isim/jiyan)**: Yaşam, hayat ve var olmanın getirdiği tüm güzellikleri temsil eden kimsedir.\n30. **[Nûda](/tr/isim/nuda)**: Yeni doğan, tomurcuk, taze ve hayat dolu başlangıç.\n31. **[Amara](/tr/isim/amara)**: Yaşayan, ölümsüz, baki kalan.\n32. **[Zend](/tr/isim/zend)**: Zerdüşt'ün kutsal kitabı Avesta'nın şerhi ve yorumu.\n33. **[Aram](/tr/isim/aram)**: Huzurlu, sakin ve dingin yaşam.\n34. **[Hêja](/tr/isim/heja)**: Değerli, kıymetli, saygıdeğer ve toplumda önemli bir yeri olan kimsedir.\n35. **[Peyman](/tr/isim/peyman)**: Söz, yemin, antlaşma ve verilen sözün kutsallığını temsil eden kimsedir.\n36. **[Ferman](/tr/isim/ferman)**: Buyruk, emir.\n37. **Rahmet**: Rahmet; yüce şefkat, merhamet ve ilahi lütuf.\n38. **Aziz**: Çok değerli, sevilip sayılan, yüce dost.\n39. **Rezzan**: Rezzan; ağırbaşlı, vakur, ciddi ve son derece saygın kişilik.\n40. **[Bextiyar](/tr/isim/bextiyar)**: Mutlu, talihli, bahtlı ve her daim neşeli kimsedir.\n41. **Nasır**: Yardım eden, koruyan, muzaffer kılan.\n42. **Qadir**: Qadir; kudretli, güçlü, her şeye gücü yeten ve muktedir asil lider.\n43. **Kerim**: Kerim; son derece cömert, ulu, asil ve eliaçık insan.\n44. **Rahim**: Rahim; esirgeyen, koruyan, sonsuz merhamet ve şefkat sahibi.\n45. **Latîf**: Latîf; nazik, lütfeden, kibar, yumuşak huylu ve çok sevecen asil insan.\n46. **[Vat](/tr/isim/vat)**: Söz, kelam, konuşma gücü (Eski Kürtçe kökenli).\n47. **[Deng](/tr/isim/deng)**: Ses, seda, haykırış, topluma seslenen güçlü nefes.\n48. **Ronahî**: Aydınlık, ışık, parıltı ve her türlü karanlığı aydınlatan derin bilgeliği temsil eder.\n49. **Şewq**: Şewq; parlak ışık, parıltı, neşe ve coşkulu aydınlık.\n50. **[Zerdeştî](/tr/isim/zerdest)**: ...\n51. **Yarsan**: Yarsan; kadim Kürt inancı olan Yar Dostları ulu öğretisinin asil üyesi.\n52. **Ezidî**: Ezidî; güneşi ve nuru kutsal sayan kadim şanlı Ezidi inancına mensup asil kişi.\n53. **Elewî**: Elewî; hoşgörü, insani sevgi ve adalet temelli asil Alevi inancına bağlı olan kişi.\n54. **Misilman**: Misilman; barışı, adaleti ve mutlak teslimiyeti seçen asil Müslüman inanç sahibi.\n55. **[Dindar](/tr/isim/dindar)**: Dini bütün.\n56. **Sofî**: Sofî; nefis terbiyesi ve manevi arınmayla meşgul olan asil sufi, dürüst ve temiz insan.\n57. **Derviş**: Derviş; dünyevi geçici zenginliklerden vazgeçip hakikat yoluna giren ulu bilge.\n58. **Abid**: Abid; ibadetine son derece bağlı, dürüst, ahlaklı ve ilkeli yaşam süren insan.\n59. **Zahid**: Zahid; kötülükten ve haramdan titizlikle sakınan, takva sahibi onurlu dindar.\n60. **Salih**: Salih; iyi huylu, dürüst, erdemli ve topluma büyük fayda sağlayan asil insan.\n61. **Mumin**: Mumin; kalpten inanıp güven veren, barışçıl ve son derece saygın insan.\n62. **Muhlis**: Muhlis; samimi, her işi sadece sevgi, dürüstlük ve rıza için yapan halis kişi.\n63. **Siddîq**: Siddîq; sözünün ulu eri, sarsılmaz derecede dürüst, sadık ve dosdoğru.\n64. **Sebûr**: Sebûr; çok sabırlı, zorluklara ve haksızlıklara şikayet etmeden katlanan ulu bilge.\n65. **Şakir**: Şakir; elindekiyle yetinip şükreden, kanaatkar, güler yüzlü ve asil insan.\n66. **Hamid**: Hamid; her daim övgüye layık işler yapan, şükreden çok dürüst asil kişi.\n67. **Munir**: Munir; çevresini ulu nuruyla aydınlatan, yol gösteren parlak zekalı rehber.\n68. **Nurî**: Aydınlık, parlaklık, Nuri Dersimi (aydın ve yazar) atıflı.\n69. **Sirrî**: Sirrî; derin sırlar taşıyan, sessiz, felsefi ve çok asil mizaçlı şahsiyet.\n70. **Cemîl**: Cemîl; ilahi yüce güzelliği simgeleyen, ahlakı ve yüzü son derece güzel insan.\n71. **Celîl**: Celîl; heybetli, azametli, vakar sahibi ve büyük saygı uyandıran asil önder.\n72. **Cebbar**: Cebbar; çok güçlü, sarsılmaz kudretli, haksızlığa karşı dimdik duran yiğit.\n73. **Settar**: Settar; kusurları, hataları örten, bağışlayıcı, hoşgörülü ve bilge şahsiyet.\n74. **Gaffar**: Gaffar; günahları ve hataları çok affeden, engin merhetli ve geniş yürekli insan.\n75. **Şerif**: Seçkin, asil, kutsal ve şerefli soydan gelen.\n76. **Necef**: Necef; yüksek, manevi değeri son derece yüksek olan tarihi kutsal şehir adı.\n77. **Kerbela**: Kerbela; mutlak fedakarlığı ve haksızlığa asil direnişi simgeleyen kutsal yer ismi.\n78. **Mekke**: Mekke; emin kılınmış, manevi olarak en ulu ve kutsal şehir, sığınak ve birleştirici merkez.\n79. **Medîne**: Medîne; nurlu şehir, hoşgörülü, her darda kalana kucak açan kutsal ve asil yer.\n80. **Kudüs**: Kudüs; barışın, birliğin ve mukaddesatın sarsılmaz simgesi kadim kutsal ulu kent.\n81. **İhsan**: İhsan; iyilik etme, karşılıksız cömertçe ikram etme ve engin hoşgörü sahibi.\n82. **İrfan**: İrfan; derin ulu bilgelik, sezgisel hakikat bilgisi, kültürel zenginlik.\n83. **Vicdan**: Vicdan; insanın içindeki asil adalet terazisi, her zaman iyiyi seçen gür ses.\n84. **Adalet**: Adalet; hakkı tam sahibine teslim etme, sarsılmaz asil hukuk terazisi.\n85. **İnsaf**: İnsaf; engin merhametle yaklaşma, adil, vicdanlı ve anlayışlı davranma.\n86. **Vefa**: Vefa; dostluğa sarsılmaz sadakat, verilen sözde durma ve iyilikleri unutmama.\n87. **Sadaqat**: Sadaqat; sarsılmaz sadakat, mutlak doğruluk, dürüstlük ve sadık yoldaşlık.\n88. **Emanet**: Emanet; göz gibi titizlikle korunan ulu kutsal değer, mutlak güvenilirlik.\n89. **Cömert**: Cömert; eliaçık, paylaşımcı, mütavazı ve asil kişilik.\n90. **Mert**: Yiğit, sözünün eri, güvenilir ve cesur erkek.\n91. **Can**: Ruh, hayat, sevgili.\n92. **[Revan](/tr/isim/revan)**: Kervan yolcusu, yürüyen, akıcı ve hareketli olan.\n93. **Melekî**: Melekî; meleksi, günahsız, tertemiz, uysal ve çok narin mizaçlı.\n94. **Perî**: Perî; olağanüstü güzelliği ve iyiliği simgeleyen masalsı varlık, peri kızı.\n95. **Hûrî**: Hûrî; cennet güzeli nurlu kız, pürüzsüz duru güzellik ve saflık.\n96. **Cennet**: Cennet; sonsuz huzur ve saadet bahçesi, en ulu manevi güzellikler diyarı.\n97. **Firdews**: Firdews; cennetin en yüksek, en yemyeşil ulu bahçesi.\n98. **Kevser**: Kevser; cennetteki kutsal gür akarsu ve pınar; bolluk, bereket ve şifa kaynağı.\n99. **Ridvan**: Ridvan; rıza sahibi cennet bekçisi, uysal, nurlu ve koruyucu melek.\n100. **Malik**: Malik; her şeye sahip olan, düzeni kuran güçlü ve saygın asil lider.\n\n\n\n## İsim Kökenleri\n\nErdem, maneviyat ve sanatsal içerikli Kürtçe isimlerin kökenleri, klasik Kürt edebiyatının zengin divan şairlerine (Feqîyê Teyran, Melayê Cizîrî), geleneksel Dengbêj stranlarının derin felsefesine ve kadim insani değerlere dayanır. Şiir (Helbest), ezgi (Lorin, Ninni), inanç ve dürüstlük gibi estetik kavramları simgeleyen bu isimler, Kürtçenin edebi gelişim sürecinde kelimelerin en zarif anlamlarının seçilip adlandırılmasıyla ortaya çıkmıştır.\n\n## Kültürel Önem\n\nBu kategorideki isimler, toplumsal ahlakı, sanata duyulan derin tutkuyu ve manevi arınmışlığı yüceltir. Bebeğine bu isimleri veren aileler, çocuklarının hayatı boyunca estetik bir bakış açısına, yüksek ahlaki değerlere ve sanatsal bir duyarlılığa sahip olmasını arzularlar. 'Helbest' şiirsel bir duyarlılığı simgelerken, erdem temalı isimler topluma faydalı, bilge ve asil bir birey yetiştirme arzusunu ifade eder. Bu isimler hem kulağa son derece zarif gelir hem de taşıdığı anlamlarla ruhu dinlendirir.\n\n## Sık Sorulan Sorular (FAQ)\n\n### Manevi ve kutsal Kürtçe isimler hangi temaları içerir?\n\nKadim inançlardan gelen duaları, kutsal duaları, ruhani huzuru, dinginliği ve yüce manevi arınmışlığı kapsar.",
+  "faqs": [
+    {
+      "question": "Manevi ve kutsal Kürtçe isimler hangi temaları içerir?",
+      "answer": "Kadim inançlardan gelen duaları, kutsal duaları, ruhani huzuru, dinginliği ve yüce manevi arınmışlığı kapsar."
+    }
+  ]
+}

@@ -1,0 +1,513 @@
+{
+  "title": "100 kurdische Folklore- und Epos-Charakternamen",
+  "description": "100 kurdische Folklore- und Epos-Charakternamen listesi.",
+  "names": [
+    {
+      "name": "Mem",
+      "id": "mem",
+      "meaning": "..."
+    },
+    {
+      "name": "Zîn",
+      "id": "zin_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Xecê",
+      "id": "xece",
+      "meaning": "..."
+    },
+    {
+      "name": "Siyamend",
+      "id": "siyamend",
+      "meaning": "Der majestätische Berg, der Schatten spendet; legendärer Held."
+    },
+    {
+      "name": "Ferhad",
+      "id": "ferhad",
+      "meaning": "Verständnisvolle, tapfere Person, die große Schwierigkeiten überwindet."
+    },
+    {
+      "name": "Şîrîn",
+      "id": "sirin",
+      "meaning": "Vom Milch, süß, Löwe, wie Milch, süß, Löwe."
+    },
+    {
+      "name": "Cembelî",
+      "id": "cembeli",
+      "meaning": "Berühmter kurdischer Epenheld (Cembelî, Sohn des Hakkari-Fürsten)."
+    },
+    {
+      "name": "Binevş",
+      "id": "binevs",
+      "meaning": "Veilchenblume, Symbol für zarte Schönheit und Duft."
+    },
+    {
+      "name": "Derwêş",
+      "id": "derwes",
+      "meaning": "..."
+    },
+    {
+      "name": "Edûlê",
+      "id": "edule",
+      "meaning": "Die edle und treue Heldin der epischen Saga von Derwese Evdi."
+    },
+    {
+      "name": "Beko",
+      "id": "beko",
+      "meaning": "Die historische Prüfungsfigur im Mem u Zin Epos."
+    },
+    {
+      "name": "Kawa",
+      "id": "kawa",
+      "meaning": "..."
+    },
+    {
+      "name": "Dehak",
+      "id": "dehak",
+      "meaning": "Der legendäre historische Herrscher im Schmied-Kawa Epos."
+    },
+    {
+      "name": "Rustem",
+      "id": "rustem",
+      "meaning": "Rostam, legendärer mythologischer Held von großer Stärke und Tapferkeit."
+    },
+    {
+      "name": "Sohrâb",
+      "id": "sohrab",
+      "meaning": "Der heroische edle Kriegersohn von Rustem in den Epen."
+    },
+    {
+      "name": "Zal",
+      "id": "zal_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Siyaveş",
+      "id": "siyaves",
+      "meaning": "Der mythische Prinz, der Reinheit und Gerechtigkeit symbolisiert."
+    },
+    {
+      "name": "Teyran",
+      "id": "teyran",
+      "meaning": "Von Vögeln, ein freier Geist, der die Vögelsprache versteht."
+    },
+    {
+      "name": "Cano",
+      "id": "cano",
+      "meaning": "Mein Lieber."
+    },
+    {
+      "name": "Memo",
+      "id": "memo",
+      "meaning": "Die liebevolle und beliebte Kurzform von Mem."
+    },
+    {
+      "name": "Zîno",
+      "id": "zino",
+      "meaning": "Die liebevolle und zärtliche Kurzform von Zin."
+    },
+    {
+      "name": "Fatê",
+      "id": "fate",
+      "meaning": "..."
+    },
+    {
+      "name": "Besê",
+      "id": "bese",
+      "meaning": "Jemand, der den Wald, das dichte Waldgebiet und das Herz der Natur repräsentiert."
+    },
+    {
+      "name": "Zelal",
+      "id": "zelal",
+      "meaning": "..."
+    },
+    {
+      "name": "Egîd",
+      "id": "egid",
+      "meaning": "Tapfere, mutige, Heldin und großartige Person, die für ihre Männlichkeit/Tugend bekannt ist."
+    },
+    {
+      "name": "Hejar",
+      "id": "hejar",
+      "meaning": "Arm, aber reich im Herzen; bescheidene und zurückhaltende Person."
+    },
+    {
+      "name": "Zana",
+      "id": "zana_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Şerwan",
+      "id": "serwan_3",
+      "meaning": "..."
+    },
+    {
+      "name": "Pîroz",
+      "id": "piroz_2",
+      "meaning": "Heilig, gesegnet und beglückwünscht."
+    },
+    {
+      "name": "Rênas",
+      "id": "renas",
+      "meaning": "Jemand, der den Weg kennt, ein Führer, Berater und die Weisheit besitzt, die zur Wahrheit führt."
+    },
+    {
+      "name": "Baver",
+      "id": "baver",
+      "meaning": "Gläubige, zuverlässige und loyale Person."
+    },
+    {
+      "name": "Heval",
+      "id": "heval",
+      "meaning": "..."
+    },
+    {
+      "name": "Azad",
+      "id": "azad",
+      "meaning": "..."
+    },
+    {
+      "name": "Viyan",
+      "id": "viyan_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Zerya",
+      "id": "zerya",
+      "meaning": "..."
+    },
+    {
+      "name": "Şahmaran",
+      "id": "sahmaran",
+      "meaning": "Die legendäre Schlangenkönigin, Symbol für Heilung und Weisheit."
+    },
+    {
+      "name": "Simur",
+      "id": "simur",
+      "meaning": "Der legendäre Simurgh-Phönix, Symbol für Wiedergeburt und Weisheit."
+    },
+    {
+      "name": "Homa",
+      "id": "homa",
+      "meaning": "Phönix, legendärer Vogel des Glücks."
+    },
+    {
+      "name": "Keskosor",
+      "id": "keskosor",
+      "meaning": "Regenbogen, wörtlich grün und rot, Symbol der Naturschönheit."
+    },
+    {
+      "name": "Teyrê Sîmurg",
+      "id": "teyre_simurg",
+      "meaning": "Der legendäre weise Vogel Simurgh, der aus seiner Asche aufersteht."
+    },
+    {
+      "name": "Dara",
+      "id": "dara",
+      "meaning": "..."
+    },
+    {
+      "name": "Key",
+      "id": "key",
+      "meaning": "König, Monarch, edler Herrscher in alten kurdischen Dialekten."
+    },
+    {
+      "name": "Baban",
+      "id": "baban",
+      "meaning": "Der Name eines tief verwurzelten und historischen kurdischen Fürstentums."
+    },
+    {
+      "name": "Mervan",
+      "id": "mervan",
+      "meaning": "..."
+    },
+    {
+      "name": "Eyyub",
+      "id": "eyyub",
+      "meaning": "Geduld, edler Widerstand und die Linie der Ayyubiden-Dynastie."
+    },
+    {
+      "name": "Mîrxan",
+      "id": "mirxan",
+      "meaning": "Fürst der Khane, majestätischer Anführer."
+    },
+    {
+      "name": "Şaho",
+      "id": "saho_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Gabar",
+      "id": "gabar",
+      "meaning": "Majestätischer, mächtiger und beständiger Berg."
+    },
+    {
+      "name": "Bahoz",
+      "id": "bahoz",
+      "meaning": "Sturm, Hurrikan und die kraftvolle Dynamik der Natur."
+    },
+    {
+      "name": "Brûsk",
+      "id": "brusk_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Tavîn",
+      "id": "tavin",
+      "meaning": "Vom Sonnenlicht, wie Sonnenlicht."
+    },
+    {
+      "name": "Hîvda",
+      "id": "hivda",
+      "meaning": "..."
+    },
+    {
+      "name": "Rozerîn",
+      "id": "rozerin_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Berfîn",
+      "id": "berfin",
+      "meaning": "Aus Schnee bestehend, Schneeglöckchen und Symbol der Reinheit."
+    },
+    {
+      "name": "Asmîn",
+      "id": "asmin",
+      "meaning": "..."
+    },
+    {
+      "name": "Şîlan",
+      "id": "silan_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Xezal",
+      "id": "xezal_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Kejal",
+      "id": "kejal",
+      "meaning": "..."
+    },
+    {
+      "name": "Nazê",
+      "id": "naze",
+      "meaning": "..."
+    },
+    {
+      "name": "Rındê",
+      "id": "rinde_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Xatûn",
+      "id": "xatun",
+      "meaning": "Dame, edle, angesehene und erhabene Frau."
+    },
+    {
+      "name": "Kezî",
+      "id": "kezi",
+      "meaning": "Haarzopf, geflochtenes Haar."
+    },
+    {
+      "name": "Lorîn",
+      "id": "lorin2",
+      "meaning": "..."
+    },
+    {
+      "name": "Mizgîn",
+      "id": "mizgin",
+      "meaning": "..."
+    },
+    {
+      "name": "Nalin",
+      "id": "nalin",
+      "meaning": "..."
+    },
+    {
+      "name": "Xemgîn",
+      "id": "xemgin",
+      "meaning": "Traurig, kummervoll, einfühlsame Person."
+    },
+    {
+      "name": "Dilşad",
+      "id": "dilsad",
+      "meaning": "..."
+    },
+    {
+      "name": "Evin",
+      "id": "evin",
+      "meaning": "Bedeutet Liebe, Zuneigung, Gespräch und große Verbundenheit, die von Herzen kommt."
+    },
+    {
+      "name": "Yekbûn",
+      "id": "yekbun",
+      "meaning": "Einheit, eins sein, Integration und Harmonie."
+    },
+    {
+      "name": "Peyman",
+      "id": "peyman",
+      "meaning": "..."
+    },
+    {
+      "name": "Vartin",
+      "id": "vartin",
+      "meaning": "Frühlingsregen, frischer Regen, der den Boden belebt."
+    },
+    {
+      "name": "Zerdüşt",
+      "id": "zerdest",
+      "meaning": "..."
+    },
+    {
+      "name": "Zend",
+      "id": "zend",
+      "meaning": "Kommentar des heiligen Buches Avesta."
+    },
+    {
+      "name": "Avesta",
+      "id": "avesta",
+      "meaning": "Die heiligen Schriften des antiken Zoroastrismus, Leitgesetz."
+    },
+    {
+      "name": "Pîr",
+      "id": "pir",
+      "meaning": "Weiser Ältester, spiritueller Führer, Meister."
+    },
+    {
+      "name": "Seyid",
+      "id": "seyid",
+      "meaning": "..."
+    },
+    {
+      "name": "Şêrko",
+      "id": "serko_3",
+      "meaning": "..."
+    },
+    {
+      "name": "Memoş",
+      "id": "memos",
+      "meaning": "Die süße liebevolle Kurzform von Mem für Babys."
+    },
+    {
+      "name": "Gulê",
+      "id": "gule",
+      "meaning": "Rose; der Name für Eleganz, Liebe und die eleganteste Blume der Natur."
+    },
+    {
+      "name": "Sêvê",
+      "id": "seve",
+      "meaning": "Wie ein Apfel, rotbäckiges, edles frisches Mädchen."
+    },
+    {
+      "name": "Hesen",
+      "id": "hesen",
+      "meaning": "Gut, schön, traditionelle Schreibweise von Hasan."
+    },
+    {
+      "name": "Huseyn",
+      "id": "huseyn",
+      "meaning": "Der Schöne, Tugendhafte und Edle (klassische Schreibweise)."
+    },
+    {
+      "name": "Eli",
+      "id": "eli",
+      "meaning": "Hoch, edel, erhabener Führer (klassisches Format)."
+    },
+    {
+      "name": "Mele",
+      "id": "mele",
+      "meaning": "Gelehrter, Lehrer der spirituellen Weisheit."
+    },
+    {
+      "name": "Feqî",
+      "id": "feqi",
+      "meaning": "Schüler des Wissens, Gelehrter (bezogen auf Feqîyê Teyran)."
+    },
+    {
+      "name": "Çoban",
+      "id": "coban",
+      "meaning": "Hirte, Schivan, Hüter der Natur und der Volksmusik."
+    },
+    {
+      "name": "Goran",
+      "id": "goran",
+      "meaning": "Der Name eines alten kurdischen Stammes; auch Veränderung und Transformation repräsentierend."
+    },
+    {
+      "name": "Koçer",
+      "id": "kocer",
+      "meaning": "..."
+    },
+    {
+      "name": "Bêrîvan",
+      "id": "berivan",
+      "meaning": "Milchmädchen, Schafmelkerin und Symbol des Berglebens."
+    },
+    {
+      "name": "Semyan",
+      "id": "semyan",
+      "meaning": "Die Säule des Hauses, Beschützer und Oberhaupt der Familie."
+    },
+    {
+      "name": "Niştiman",
+      "id": "nistiman",
+      "meaning": "..."
+    },
+    {
+      "name": "Reşo",
+      "id": "reso",
+      "meaning": "Dunkelhaariger Mann; jemand, der eine tapfere, charismatische und traditionelle Kraft repräsentiert."
+    },
+    {
+      "name": "Zîrek",
+      "id": "zirek",
+      "meaning": "..."
+    },
+    {
+      "name": "Çalak",
+      "id": "calak",
+      "meaning": "..."
+    },
+    {
+      "name": "Merdan",
+      "id": "merdan",
+      "meaning": "Tapfere."
+    },
+    {
+      "name": "Polat",
+      "id": "polat",
+      "meaning": "..."
+    },
+    {
+      "name": "Senger",
+      "id": "senger",
+      "meaning": "Schützengraben, Festung, Verteidigungsposten."
+    },
+    {
+      "name": "Teyr",
+      "id": "teyr",
+      "meaning": "Vogel, Adler, Greifvogel."
+    },
+    {
+      "name": "Baz",
+      "id": "baz",
+      "meaning": "Falke, Raubtier und freies Naturwesen."
+    },
+    {
+      "name": "Hêmin",
+      "id": "hemin",
+      "meaning": "..."
+    }
+  ],
+  "content": "## Liste der Namen und Bedeutungen\n\n1. **[Mem](/de/name/mem)**: ...\n2. **Zîn**: ...\n3. **[Xecê](/de/name/xece)**: ...\n4. **[Siyamend](/de/name/siyamend)**: Der majestätische Berg, der Schatten spendet; legendärer Held.\n5. **[Ferhad](/de/name/ferhad)**: Verständnisvolle, tapfere Person, die große Schwierigkeiten überwindet.\n6. **Şîrîn**: Vom Milch, süß, Löwe, wie Milch, süß, Löwe.\n7. **[Cembelî](/de/name/cembeli)**: Berühmter kurdischer Epenheld (Cembelî, Sohn des Hakkari-Fürsten).\n8. **[Binevş](/de/name/binevs)**: Veilchenblume, Symbol für zarte Schönheit und Duft.\n9. **Derwêş**: ...\n10. **Edûlê**: Die edle und treue Heldin der epischen Saga von Derwese Evdi.\n11. **Beko**: Die historische Prüfungsfigur im Mem u Zin Epos.\n12. **[Kawa](/de/name/kawa)**: ...\n13. **Dehak**: Der legendäre historische Herrscher im Schmied-Kawa Epos.\n14. **Rustem**: Rostam, legendärer mythologischer Held von großer Stärke und Tapferkeit.\n15. **Sohrâb**: Der heroische edle Kriegersohn von Rustem in den Epen.\n16. **Zal**: ...\n17. **Siyaveş**: Der mythische Prinz, der Reinheit und Gerechtigkeit symbolisiert.\n18. **[Teyran](/de/name/teyran)**: Von Vögeln, ein freier Geist, der die Vögelsprache versteht.\n19. **Cano**: Mein Lieber.\n20. **[Memo](/de/name/memo)**: Die liebevolle und beliebte Kurzform von Mem.\n21. **[Zîno](/de/name/zino)**: Die liebevolle und zärtliche Kurzform von Zin.\n22. **[Fatê](/de/name/fate)**: ...\n23. **Besê**: Jemand, der den Wald, das dichte Waldgebiet und das Herz der Natur repräsentiert.\n24. **[Zelal](/de/name/zelal)**: ...\n25. **[Egîd](/de/name/egid)**: Tapfere, mutige, Heldin und großartige Person, die für ihre Männlichkeit/Tugend bekannt ist.\n26. **[Hejar](/de/name/hejar)**: Arm, aber reich im Herzen; bescheidene und zurückhaltende Person.\n27. **Zana**: ...\n28. **Şerwan**: ...\n29. **Pîroz**: Heilig, gesegnet und beglückwünscht.\n30. **[Rênas](/de/name/renas)**: Jemand, der den Weg kennt, ein Führer, Berater und die Weisheit besitzt, die zur Wahrheit führt.\n31. **[Baver](/de/name/baver)**: Gläubige, zuverlässige und loyale Person.\n32. **[Heval](/de/name/heval)**: ...\n33. **[Azad](/de/name/azad)**: ...\n34. **Viyan**: ...\n35. **[Zerya](/de/name/zerya)**: ...\n36. **Şahmaran**: Die legendäre Schlangenkönigin, Symbol für Heilung und Weisheit.\n37. **[Simur](/de/name/simur)**: Der legendäre Simurgh-Phönix, Symbol für Wiedergeburt und Weisheit.\n38. **Homa**: Phönix, legendärer Vogel des Glücks.\n39. **[Keskosor](/de/name/keskosor)**: Regenbogen, wörtlich grün und rot, Symbol der Naturschönheit.\n40. **Teyrê Sîmurg**: Der legendäre weise Vogel Simurgh, der aus seiner Asche aufersteht.\n41. **[Dara](/de/name/dara)**: ...\n42. **Key**: König, Monarch, edler Herrscher in alten kurdischen Dialekten.\n43. **[Baban](/de/name/baban)**: Der Name eines tief verwurzelten und historischen kurdischen Fürstentums.\n44. **[Mervan](/de/name/mervan)**: ...\n45. **Eyyub**: Geduld, edler Widerstand und die Linie der Ayyubiden-Dynastie.\n46. **[Mîrxan](/de/name/mirxan)**: Fürst der Khane, majestätischer Anführer.\n47. **Şaho**: ...\n48. **[Gabar](/de/name/gabar)**: Majestätischer, mächtiger und beständiger Berg.\n49. **[Bahoz](/de/name/bahoz)**: Sturm, Hurrikan und die kraftvolle Dynamik der Natur.\n50. **Brûsk**: ...\n51. **[Tavîn](/de/name/tavin)**: Vom Sonnenlicht, wie Sonnenlicht.\n52. **[Hîvda](/de/name/hivda)**: ...\n53. **Rozerîn**: ...\n54. **[Berfîn](/de/name/berfin)**: Aus Schnee bestehend, Schneeglöckchen und Symbol der Reinheit.\n55. **[Asmîn](/de/name/asmin)**: ...\n56. **Şîlan**: ...\n57. **Xezal**: ...\n58. **[Kejal](/de/name/kejal)**: ...\n59. **[Nazê](/de/name/naze)**: ...\n60. **Rındê**: ...\n61. **[Xatûn](/de/name/xatun)**: Dame, edle, angesehene und erhabene Frau.\n62. **[Kezî](/de/name/kezi)**: Haarzopf, geflochtenes Haar.\n63. **[Lorîn](/de/name/lorin2)**: ...\n64. **[Mizgîn](/de/name/mizgin)**: ...\n65. **[Nalin](/de/name/nalin)**: ...\n66. **[Xemgîn](/de/name/xemgin)**: Traurig, kummervoll, einfühlsame Person.\n67. **[Dilşad](/de/name/dilsad)**: ...\n68. **[Evin](/de/name/evin)**: Bedeutet Liebe, Zuneigung, Gespräch und große Verbundenheit, die von Herzen kommt.\n69. **[Yekbûn](/de/name/yekbun)**: Einheit, eins sein, Integration und Harmonie.\n70. **[Peyman](/de/name/peyman)**: ...\n71. **[Vartin](/de/name/vartin)**: Frühlingsregen, frischer Regen, der den Boden belebt.\n72. **[Zerdüşt](/de/name/zerdest)**: ...\n73. **[Zend](/de/name/zend)**: Kommentar des heiligen Buches Avesta.\n74. **Avesta**: Die heiligen Schriften des antiken Zoroastrismus, Leitgesetz.\n75. **[Pîr](/de/name/pir)**: Weiser Ältester, spiritueller Führer, Meister.\n76. **Seyid**: ...\n77. **Şêrko**: ...\n78. **[Memoş](/de/name/memos)**: Die süße liebevolle Kurzform von Mem für Babys.\n79. **[Gulê](/de/name/gule)**: Rose; der Name für Eleganz, Liebe und die eleganteste Blume der Natur.\n80. **[Sêvê](/de/name/seve)**: Wie ein Apfel, rotbäckiges, edles frisches Mädchen.\n81. **Hesen**: Gut, schön, traditionelle Schreibweise von Hasan.\n82. **Huseyn**: Der Schöne, Tugendhafte und Edle (klassische Schreibweise).\n83. **Eli**: Hoch, edel, erhabener Führer (klassisches Format).\n84. **[Mele](/de/name/mele)**: Gelehrter, Lehrer der spirituellen Weisheit.\n85. **[Feqî](/de/name/feqi)**: Schüler des Wissens, Gelehrter (bezogen auf Feqîyê Teyran).\n86. **[Çoban](/de/name/coban)**: Hirte, Schivan, Hüter der Natur und der Volksmusik.\n87. **[Goran](/de/name/goran)**: Der Name eines alten kurdischen Stammes; auch Veränderung und Transformation repräsentierend.\n88. **[Koçer](/de/name/kocer)**: ...\n89. **[Bêrîvan](/de/name/berivan)**: Milchmädchen, Schafmelkerin und Symbol des Berglebens.\n90. **[Semyan](/de/name/semyan)**: Die Säule des Hauses, Beschützer und Oberhaupt der Familie.\n91. **[Niştiman](/de/name/nistiman)**: ...\n92. **[Reşo](/de/name/reso)**: Dunkelhaariger Mann; jemand, der eine tapfere, charismatische und traditionelle Kraft repräsentiert.\n93. **[Zîrek](/de/name/zirek)**: ...\n94. **[Çalak](/de/name/calak)**: ...\n95. **[Merdan](/de/name/merdan)**: Tapfere.\n96. **[Polat](/de/name/polat)**: ...\n97. **[Senger](/de/name/senger)**: Schützengraben, Festung, Verteidigungsposten.\n98. **[Teyr](/de/name/teyr)**: Vogel, Adler, Greifvogel.\n99. **[Baz](/de/name/baz)**: Falke, Raubtier und freies Naturwesen.\n100. **[Hêmin](/de/name/hemin)**: ...\n\n\n\n## Namensursprung\n\nDie Ursprünge kurdischer mythologischer und epischer Namen basieren auf den alten Ländern Mesopotamiens, der Wiege der Menschheitsgeschichte und Zivilisation, und alten Glaubenssystemen. Diese Namen haben die Gegenwart erreicht, indem sie durch die heiligen Texte der zoroastrischen Philosophie, unsterbliche Heldenepen wie Kawa der Schmied und Shahmaran sowie tief verwurzelte mesopotamische Mythen gefiltert wurden. Aus linguistischer Sicht besitzt jeder mythologische Name reiche etymologische Strukturen, die tiefe philosophische Kämpfe, den Kampf zwischen Gut und Böse und das Streben nach Freiheit an seiner Wurzel enthalten.\n\n## Kulturelle Bedeutung\n\nMythologische Namen haben einen äußerst kritischen Platz im kurdischen kulturellen Gedächtnis und der Identität. Diese Namen sind nicht nur gewöhnliche Wörter, sondern lebendige Symbole einer jahrtausendealten ehrenvollen Widerstandskraft, Weisheit und gesellschaftlichen Erweckung. Familien, die ihren Kindern einen mythologischen Namen geben, schenken ihnen nicht nur einen Namen, sondern auch einen zu respektierenden Charakter und ein tief verwurzeltes historisches Bewusstsein. Während der Name „Kawa“ Freiheit und Arbeit repräsentiert, symbolisiert der Name „Shahmaran“ Heilung und alte Weisheit. Daher bewahren mythologische Namen in jeder Epoche ihre Würde und Popularität.\n\n## Häufig gestellte Fragen (FAQ)\n\n### Woher stammen folkloristische kurdische Namen?\n\nDiese Namen stammen aus traditionellen Dengbêj-Liedern, mündlichen Märchen und unsterblichen Volksepen wie Mem u Zin.",
+  "faqs": [
+    {
+      "question": "Woher stammen folkloristische kurdische Namen?",
+      "answer": "Diese Namen stammen aus traditionellen Dengbêj-Liedern, mündlichen Märchen und unsterblichen Volksepen wie Mem u Zin."
+    }
+  ]
+}

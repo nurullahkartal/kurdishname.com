@@ -1,0 +1,17 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+scratch/
+service_account.json
+gsc_export/
+gsc_reports/
+names_master.json.bak
+*.xlsx
+*.csv
+.wrangler/
+.scannerwork/

@@ -1,0 +1,513 @@
+{
+  "title": "100 Kürtçe Erdem ve Karakter İsmi (Virtue Names)",
+  "description": "100 Kürtçe Erdem ve Karakter İsmi (Virtue Names) listesi.",
+  "names": [
+    {
+      "name": "Zana",
+      "id": "zana_2",
+      "meaning": "Bilge, alim, bilen; zekası ve ilmiyle topluma yön veren kimsedir."
+    },
+    {
+      "name": "Zanyar",
+      "id": "zanyar_2",
+      "meaning": "Bilim insanı, araştırmacı; bilgi peşinde koşan ve hakikati arayan kimsedir."
+    },
+    {
+      "name": "Zîrek",
+      "id": "zirek",
+      "meaning": "Zeki, yetenekli, akıllı."
+    },
+    {
+      "name": "Hêmin",
+      "id": "hemin",
+      "meaning": "Sakin, huzurlu, güven veren ve ağırbaşlılığıyla tanınan kimsedir."
+    },
+    {
+      "name": "Hêvî",
+      "id": "hevi",
+      "meaning": "Umut, beklenti."
+    },
+    {
+      "name": "Baver",
+      "id": "baver",
+      "meaning": "İnanan, güvenilir ve sadık kişidir."
+    },
+    {
+      "name": "Azad",
+      "id": "azad",
+      "meaning": "Özgür, hür, kimseye bağımlı olmayan."
+    },
+    {
+      "name": "Rastî",
+      "id": "rasti",
+      "meaning": "Gerçek, doğruluk, dürüstlük ve haktan ayrılmayan karakteri temsil eder."
+    },
+    {
+      "name": "Merdan",
+      "id": "merdan",
+      "meaning": "Mertler."
+    },
+    {
+      "name": "Agît",
+      "id": "agit",
+      "meaning": "Yiğit."
+    },
+    {
+      "name": "Egîd",
+      "id": "egid",
+      "meaning": "Yiğit, cesur, kahraman ve mertliğiyle tanınan ulu kimsedir."
+    },
+    {
+      "name": "Qehreman",
+      "id": "qehreman",
+      "meaning": "Kahraman."
+    },
+    {
+      "name": "Viyan",
+      "id": "viyan_2",
+      "meaning": "İrade, istek, arzu; kararlı duruşu ve sarsılmaz azmi temsil eder."
+    },
+    {
+      "name": "Aştî",
+      "id": "asti",
+      "meaning": "Barış, sükunet, huzur."
+    },
+    {
+      "name": "Heval",
+      "id": "heval",
+      "meaning": "Arkadaş, dost."
+    },
+    {
+      "name": "Dilpak",
+      "id": "dilpak",
+      "meaning": "Temiz kalpli."
+    },
+    {
+      "name": "Dilşad",
+      "id": "dilsad",
+      "meaning": "Gönlü şen, mutlu."
+    },
+    {
+      "name": "Dilovan",
+      "id": "dilovan",
+      "meaning": "Sevecen, merhametli, yufka yürekli."
+    },
+    {
+      "name": "Bêkes",
+      "id": "bekes",
+      "meaning": "Kimsesiz, yegane, tek başına ve hür kimsedir."
+    },
+    {
+      "name": "Hejar",
+      "id": "hejar",
+      "meaning": "Yoksul ama gönlü zengin; gariban ve alçakgönüllü olan kimsedir."
+    },
+    {
+      "name": "Hêja",
+      "id": "heja",
+      "meaning": "Değerli, kıymetli, saygıdeğer ve toplumda önemli bir yeri olan kimsedir."
+    },
+    {
+      "name": "Hirmid",
+      "id": "hirmid",
+      "meaning": "Hirmid; saygı, yüce edep, toplumsal zarafet ve yüksek ahlaki terbiye."
+    },
+    {
+      "name": "Canyar",
+      "id": "canyar",
+      "meaning": "Can dostu."
+    },
+    {
+      "name": "Yamyar",
+      "id": "yamyar",
+      "meaning": "Yamyar; darda kalana koşan, sevgi dolu cömert ve yardımsever dost."
+    },
+    {
+      "name": "Peyman",
+      "id": "peyman",
+      "meaning": "Söz, yemin, antlaşma ve verilen sözün kutsallığını temsil eden kimsedir."
+    },
+    {
+      "name": "Armanc",
+      "id": "armanc",
+      "meaning": "Hedef, amaç."
+    },
+    {
+      "name": "Raman",
+      "id": "raman",
+      "meaning": "Düşünce, fikir, derin kavrayış ve zihinsel olgunluğu temsil eden kimsedir."
+    },
+    {
+      "name": "Rênas",
+      "id": "renas",
+      "meaning": "Yol bilen, rehber, kılavuz ve hakikate ulaştıran bilgeliğe sahip kimsedir."
+    },
+    {
+      "name": "Rêber",
+      "id": "reber2",
+      "meaning": "Rehber, lider."
+    },
+    {
+      "name": "Pêşeng",
+      "id": "peseng",
+      "meaning": "Önder, rehber, yol gösteren ve topluma liderlik eden vizyoner kimsedir."
+    },
+    {
+      "name": "Pêşewa",
+      "id": "pesewa",
+      "meaning": "Önder, lider, kılavuz (Pêşewa Qazî Mihemmed atıflı)."
+    },
+    {
+      "name": "Zelal",
+      "id": "zelal",
+      "meaning": "Berrak, temiz, şeffaf, duru."
+    },
+    {
+      "name": "Paqîz",
+      "id": "paqiz",
+      "meaning": "Paqîz; tertemiz, arınmış, kirden, kötülükten ve günahtan uzak duru kadın."
+    },
+    {
+      "name": "Gewr",
+      "id": "gewr",
+      "meaning": "Gri, kır saç rengi, asalet ve olgunluk simgesi."
+    },
+    {
+      "name": "Serdar",
+      "id": "serdar_2",
+      "meaning": "Komutan, önder, lider; topluluğun başında olan ve stratejik akla sahip olan kimsedir."
+    },
+    {
+      "name": "Serbest",
+      "id": "serbest",
+      "meaning": "Özgür, hür, bağımsız, hiç kimseye boyun eğmeyen."
+    },
+    {
+      "name": "Serfiraz",
+      "id": "serfiraz",
+      "meaning": "Başı dik, daima gururlu."
+    },
+    {
+      "name": "Sermend",
+      "id": "sermend",
+      "meaning": "Sermend; zengin gönüllü, her zaman asil ve cömert davranan asil insan."
+    },
+    {
+      "name": "Zanyar",
+      "id": "zanyar_2",
+      "meaning": "Bilim insanı, araştırmacı; bilgi peşinde koşan ve hakikati arayan kimsedir."
+    },
+    {
+      "name": "Bextiyar",
+      "id": "bextiyar",
+      "meaning": "Mutlu, talihli, bahtlı ve her daim neşeli kimsedir."
+    },
+    {
+      "name": "Kamuran",
+      "id": "kamuran",
+      "meaning": "Kamuran; arzusuna, hayaline ve emeline ulaşmış, mutlu ve kutlu bahtiyar kişi."
+    },
+    {
+      "name": "Şiyar",
+      "id": "siyar_2",
+      "meaning": "Uyanık, bilinçli, farkındalığı yüksek; her daim tetikte ve zeki olan kimsedir."
+    },
+    {
+      "name": "Bîrhat",
+      "id": "birhat",
+      "meaning": "Anı, hatıra."
+    },
+    {
+      "name": "Vartin",
+      "id": "vartin",
+      "meaning": "Bahar yağmuru, toprağa can veren taze yağış."
+    },
+    {
+      "name": "Hevdem",
+      "id": "hevdem",
+      "meaning": "Aynı dönemin insanı."
+    },
+    {
+      "name": "Yekta",
+      "id": "yekta",
+      "meaning": "Tek, eşsiz, biricik."
+    },
+    {
+      "name": "Yekbûn",
+      "id": "yekbun",
+      "meaning": "Birlik, tek olmak, bütünleşme ve uyum."
+    },
+    {
+      "name": "Tevger",
+      "id": "tevger",
+      "meaning": "Tevger; hareketli, son derece dinamik, toplumsal uyanışı temsil eden aktif duruş."
+    },
+    {
+      "name": "Xebat",
+      "id": "xebat_2",
+      "meaning": "Çalışma, mücadele, emek; bir amaç uğruna gösterilen büyük gayreti temsil eder."
+    },
+    {
+      "name": "Berxwedan",
+      "id": "berxwedan",
+      "meaning": "Direniş, mücadele ve haksızlığa karşı durma gücüdür."
+    },
+    {
+      "name": "Serhildan",
+      "id": "serhildan",
+      "meaning": "Başkaldırı, haksızlığa karşı direniş, onurlu duruş."
+    },
+    {
+      "name": "Raperîn",
+      "id": "raperin",
+      "meaning": "Ayaklanma, uyanış, toplumsal diriliş ve özgürlük mücadelesini temsil eder."
+    },
+    {
+      "name": "Rızgar",
+      "id": "rizgar",
+      "meaning": "Kurtuluş, özgürlük, bağımsızlık ve hürriyetine kavuşmuş olan kimsedir."
+    },
+    {
+      "name": "Serkeftin",
+      "id": "serkeftin",
+      "meaning": "Başarı, zafer."
+    },
+    {
+      "name": "Şoreş",
+      "id": "sores_2",
+      "meaning": "Devrim; büyük değişimlerin, yenilenmenin ve toplumsal dönüşümün sarsılmaz simgesidir."
+    },
+    {
+      "name": "Pîroz",
+      "id": "piroz_2",
+      "meaning": "Kutsal, mübarek, şanslı ve tebrik edilen."
+    },
+    {
+      "name": "Mubarek",
+      "id": "mubarek",
+      "meaning": "Mubarek; bereketli, kutlu, son derece uğurlu ve şans getiren asil insan."
+    },
+    {
+      "name": "Şefîq",
+      "id": "sefiq",
+      "meaning": "Şefîq; şefkatli, son derece merhametli ve sevgi dolu asil yürek."
+    },
+    {
+      "name": "Latîf",
+      "id": "latif",
+      "meaning": "Latîf; nazik, lütfeden, kibar, yumuşak huylu ve çok sevecen asil insan."
+    },
+    {
+      "name": "Nazenîn",
+      "id": "nazenin",
+      "meaning": "Nazenîn; son derece narin, çıtkırıldım, ince mizaçlı ve zarif asil kız."
+    },
+    {
+      "name": "Şermîn",
+      "id": "sermin_2",
+      "meaning": "Utangaç, mahcup, edep sahibi; zarafeti ve tevazusuyla tanınan kimsedir."
+    },
+    {
+      "name": "Xasî",
+      "id": "xasi",
+      "meaning": "Xasî; saf, katkısız, halis ve samimi niyetli, seçkin insan."
+    },
+    {
+      "name": "Amade",
+      "id": "amade",
+      "meaning": "Hazır, mevcut."
+    },
+    {
+      "name": "Bîner",
+      "id": "biner",
+      "meaning": "Gözlemci, bakan, inceleyen ve dikkatli olan kimsedir."
+    },
+    {
+      "name": "Bîrker",
+      "id": "birker",
+      "meaning": "Bîrker; keskin zekalı, düşünen, her şeyi hatırlayan bilge şahsiyet."
+    },
+    {
+      "name": "Danyar",
+      "id": "danyar",
+      "meaning": "Bilge, alim, bilgi sahibi ve akıllıca hareket eden kimsedir."
+    },
+    {
+      "name": "Dadwar",
+      "id": "dadwar",
+      "meaning": "Dadwar; adalet dağıtan hakim, haklının ve mazlumun sarsılmaz koruyucusu."
+    },
+    {
+      "name": "Zordar",
+      "id": "zordar",
+      "meaning": "Zordar; güçlü, bükülmez, zorluklara göğüs geren yiğit ve muktedir."
+    },
+    {
+      "name": "Zal",
+      "id": "zal_2",
+      "meaning": "Ak saçlı bilge; mitolojik bir kahraman olup üstün gücü ve tecrübeyi temsil eder."
+    },
+    {
+      "name": "Polat",
+      "id": "polat",
+      "meaning": "Çelik, güçlü, dayanıklı."
+    },
+    {
+      "name": "Senger",
+      "id": "senger",
+      "meaning": "Mevzi, sığınak, kale, siper, savunma hattı."
+    },
+    {
+      "name": "Çalak",
+      "id": "calak",
+      "meaning": "Aktif, çevik, becerikli ve her işe hızla koşan kimsedir."
+    },
+    {
+      "name": "Lezgîn",
+      "id": "lezgin",
+      "meaning": "Lezgîn; hızlı, çevik, fırtına gibi esen kararlı ve atik savaşçı."
+    },
+    {
+      "name": "Hêvîdar",
+      "id": "hevidar",
+      "meaning": "Umutlu."
+    },
+    {
+      "name": "Ronî",
+      "id": "roni_2",
+      "meaning": "Işık, aydınlık, görme yetisi ve feraset sahibi olan kimsedir."
+    },
+    {
+      "name": "Rewşen",
+      "id": "rewsen",
+      "meaning": "Aydınlık, parlak, berrak ve zihni açık olan bilgeliği temsil eden kimsedir."
+    },
+    {
+      "name": "Zahîr",
+      "id": "zahir",
+      "meaning": "Zahîr; açıkta olan, belirgin, içi dışı bir, net ve çok dürüst lider."
+    },
+    {
+      "name": "Batin",
+      "id": "batin",
+      "meaning": "Batin; derin, içsel, ruhsal bilgeliğe ve derin kavrayışa sahip arif."
+    },
+    {
+      "name": "Saman",
+      "id": "saman",
+      "meaning": "Servet, zenginlik, refah, maddi ve manevi bolluk."
+    },
+    {
+      "name": "Mîr",
+      "id": "mir",
+      "meaning": "Bey, prens, lider."
+    },
+    {
+      "name": "Xanî",
+      "id": "xani",
+      "meaning": "Evli, haneli, Ehmedê Xanî (ünlü filozof ve yazar) atıflı hürmet ismi."
+    },
+    {
+      "name": "Hoşeng",
+      "id": "hoseng",
+      "meaning": "Akıllı, zeki, uslu kimse; aynı zamanda mitolojik bir Kürt kralı."
+    },
+    {
+      "name": "Zêmar",
+      "id": "zemar",
+      "meaning": "Zêmar; duygu yüklü ağıt yakan, hassas ve derin kalpli ulu şair."
+    },
+    {
+      "name": "Xemgîn",
+      "id": "xemgin",
+      "meaning": "Hüzünlü, kederli, derin hisleri olan duyarlı kimse."
+    },
+    {
+      "name": "Nalîn",
+      "id": "nalin",
+      "meaning": "İnleyiş, derin duyguların ifadesi ve ruhun nazik çığlığı demektir."
+    },
+    {
+      "name": "Ahîn",
+      "id": "ahin",
+      "meaning": "Özlem, hasret ve derin duygu."
+    },
+    {
+      "name": "Jîr",
+      "id": "jir",
+      "meaning": "Zeki, akıllı."
+    },
+    {
+      "name": "Geşo",
+      "id": "geso",
+      "meaning": "Neşeli kişi."
+    },
+    {
+      "name": "Kenan",
+      "id": "kenan",
+      "meaning": "Kenan; gözleri sevgiyle gülen, neşe saçan ve çevresine pozitif enerji veren asil kişi."
+    },
+    {
+      "name": "Şahîn",
+      "id": "sahin",
+      "meaning": "Şah, kral gibi, şah, krale dair."
+    },
+    {
+      "name": "Teyr",
+      "id": "teyr",
+      "meaning": "Kuş, kartal, yırtıcı kuş; yükseklerde uçan, özgür ruhlu ve keskin bakışlı kimse."
+    },
+    {
+      "name": "Baz",
+      "id": "baz",
+      "meaning": "Şahin kuşu, yırtıcı ve özgür doğa canlısıdır."
+    },
+    {
+      "name": "Yar",
+      "id": "yar",
+      "meaning": "Dost, sevgili, can yoldaşı, gönül verilen kimse."
+    },
+    {
+      "name": "Dost",
+      "id": "dost",
+      "meaning": "Dost; vefalı arkadaş, can yoldaşı, sarsılmaz sırdaş ve asil yoldaş."
+    },
+    {
+      "name": "Semyan",
+      "id": "semyan",
+      "meaning": "Semyan; ocağın sarsılmaz direği, ailenin koruyucusu ve reisliğini simgeleyen onurlu isim."
+    },
+    {
+      "name": "Nudar",
+      "id": "nudar",
+      "meaning": "Taze ağaç, yeni filizlenen fidan; canlığı ve gençliği temsil eder."
+    },
+    {
+      "name": "Nûjen",
+      "id": "nujen",
+      "meaning": "Modern."
+    },
+    {
+      "name": "Serfiraz",
+      "id": "serfiraz",
+      "meaning": "Başı dik, daima gururlu."
+    },
+    {
+      "name": "Beşîr",
+      "id": "besir",
+      "meaning": "Müjdeci, müjde getiren, güler yüzlü kimse."
+    },
+    {
+      "name": "Nezîr",
+      "id": "nezir",
+      "meaning": "Nezîr; kendini kutsal ulu bir amaca adamış, adak ve söz sahibi şahsiyet."
+    }
+  ],
+  "content": "## İsim Listesi ve Anlamları\n\n1. **Zana**: Bilge, alim, bilen; zekası ve ilmiyle topluma yön veren kimsedir.\n2. **Zanyar**: Bilim insanı, araştırmacı; bilgi peşinde koşan ve hakikati arayan kimsedir.\n3. **[Zîrek](/tr/isim/zirek)**: Zeki, yetenekli, akıllı.\n4. **[Hêmin](/tr/isim/hemin)**: Sakin, huzurlu, güven veren ve ağırbaşlılığıyla tanınan kimsedir.\n5. **[Hêvî](/tr/isim/hevi)**: Umut, beklenti.\n6. **[Baver](/tr/isim/baver)**: İnanan, güvenilir ve sadık kişidir.\n7. **[Azad](/tr/isim/azad)**: Özgür, hür, kimseye bağımlı olmayan.\n8. **[Rastî](/tr/isim/rasti)**: Gerçek, doğruluk, dürüstlük ve haktan ayrılmayan karakteri temsil eder.\n9. **[Merdan](/tr/isim/merdan)**: Mertler.\n10. **Agît**: Yiğit.\n11. **[Egîd](/tr/isim/egid)**: Yiğit, cesur, kahraman ve mertliğiyle tanınan ulu kimsedir.\n12. **[Qehreman](/tr/isim/qehreman)**: Kahraman.\n13. **Viyan**: İrade, istek, arzu; kararlı duruşu ve sarsılmaz azmi temsil eder.\n14. **[Aştî](/tr/isim/asti)**: Barış, sükunet, huzur.\n15. **[Heval](/tr/isim/heval)**: Arkadaş, dost.\n16. **[Dilpak](/tr/isim/dilpak)**: Temiz kalpli.\n17. **[Dilşad](/tr/isim/dilsad)**: Gönlü şen, mutlu.\n18. **[Dilovan](/tr/isim/dilovan)**: Sevecen, merhametli, yufka yürekli.\n19. **[Bêkes](/tr/isim/bekes)**: Kimsesiz, yegane, tek başına ve hür kimsedir.\n20. **[Hejar](/tr/isim/hejar)**: Yoksul ama gönlü zengin; gariban ve alçakgönüllü olan kimsedir.\n21. **[Hêja](/tr/isim/heja)**: Değerli, kıymetli, saygıdeğer ve toplumda önemli bir yeri olan kimsedir.\n22. **[Hirmid](/tr/isim/hirmid)**: Hirmid; saygı, yüce edep, toplumsal zarafet ve yüksek ahlaki terbiye.\n23. **[Canyar](/tr/isim/canyar)**: Can dostu.\n24. **[Yamyar](/tr/isim/yamyar)**: Yamyar; darda kalana koşan, sevgi dolu cömert ve yardımsever dost.\n25. **[Peyman](/tr/isim/peyman)**: Söz, yemin, antlaşma ve verilen sözün kutsallığını temsil eden kimsedir.\n26. **[Armanc](/tr/isim/armanc)**: Hedef, amaç.\n27. **[Raman](/tr/isim/raman)**: Düşünce, fikir, derin kavrayış ve zihinsel olgunluğu temsil eden kimsedir.\n28. **[Rênas](/tr/isim/renas)**: Yol bilen, rehber, kılavuz ve hakikate ulaştıran bilgeliğe sahip kimsedir.\n29. **[Rêber](/tr/isim/reber2)**: Rehber, lider.\n30. **[Pêşeng](/tr/isim/peseng)**: Önder, rehber, yol gösteren ve topluma liderlik eden vizyoner kimsedir.\n31. **[Pêşewa](/tr/isim/pesewa)**: Önder, lider, kılavuz (Pêşewa Qazî Mihemmed atıflı).\n32. **[Zelal](/tr/isim/zelal)**: Berrak, temiz, şeffaf, duru.\n33. **[Paqîz](/tr/isim/paqiz)**: Paqîz; tertemiz, arınmış, kirden, kötülükten ve günahtan uzak duru kadın.\n34. **[Gewr](/tr/isim/gewr)**: Gri, kır saç rengi, asalet ve olgunluk simgesi.\n35. **Serdar**: Komutan, önder, lider; topluluğun başında olan ve stratejik akla sahip olan kimsedir.\n36. **[Serbest](/tr/isim/serbest)**: Özgür, hür, bağımsız, hiç kimseye boyun eğmeyen.\n37. **[Serfiraz](/tr/isim/serfiraz)**: Başı dik, daima gururlu.\n38. **[Sermend](/tr/isim/sermend)**: Sermend; zengin gönüllü, her zaman asil ve cömert davranan asil insan.\n39. **Zanyar**: Bilim insanı, araştırmacı; bilgi peşinde koşan ve hakikati arayan kimsedir.\n40. **[Bextiyar](/tr/isim/bextiyar)**: Mutlu, talihli, bahtlı ve her daim neşeli kimsedir.\n41. **Kamuran**: Kamuran; arzusuna, hayaline ve emeline ulaşmış, mutlu ve kutlu bahtiyar kişi.\n42. **Şiyar**: Uyanık, bilinçli, farkındalığı yüksek; her daim tetikte ve zeki olan kimsedir.\n43. **[Bîrhat](/tr/isim/birhat)**: Anı, hatıra.\n44. **[Vartin](/tr/isim/vartin)**: Bahar yağmuru, toprağa can veren taze yağış.\n45. **[Hevdem](/tr/isim/hevdem)**: Aynı dönemin insanı.\n46. **[Yekta](/tr/isim/yekta)**: Tek, eşsiz, biricik.\n47. **[Yekbûn](/tr/isim/yekbun)**: Birlik, tek olmak, bütünleşme ve uyum.\n48. **[Tevger](/tr/isim/tevger)**: Tevger; hareketli, son derece dinamik, toplumsal uyanışı temsil eden aktif duruş.\n49. **Xebat**: Çalışma, mücadele, emek; bir amaç uğruna gösterilen büyük gayreti temsil eder.\n50. **[Berxwedan](/tr/isim/berxwedan)**: Direniş, mücadele ve haksızlığa karşı durma gücüdür.\n51. **[Serhildan](/tr/isim/serhildan)**: Başkaldırı, haksızlığa karşı direniş, onurlu duruş.\n52. **[Raperîn](/tr/isim/raperin)**: Ayaklanma, uyanış, toplumsal diriliş ve özgürlük mücadelesini temsil eder.\n53. **[Rızgar](/tr/isim/rizgar)**: Kurtuluş, özgürlük, bağımsızlık ve hürriyetine kavuşmuş olan kimsedir.\n54. **[Serkeftin](/tr/isim/serkeftin)**: Başarı, zafer.\n55. **Şoreş**: Devrim; büyük değişimlerin, yenilenmenin ve toplumsal dönüşümün sarsılmaz simgesidir.\n56. **Pîroz**: Kutsal, mübarek, şanslı ve tebrik edilen.\n57. **Mubarek**: Mubarek; bereketli, kutlu, son derece uğurlu ve şans getiren asil insan.\n58. **Şefîq**: Şefîq; şefkatli, son derece merhametli ve sevgi dolu asil yürek.\n59. **Latîf**: Latîf; nazik, lütfeden, kibar, yumuşak huylu ve çok sevecen asil insan.\n60. **Nazenîn**: Nazenîn; son derece narin, çıtkırıldım, ince mizaçlı ve zarif asil kız.\n61. **Şermîn**: Utangaç, mahcup, edep sahibi; zarafeti ve tevazusuyla tanınan kimsedir.\n62. **Xasî**: Xasî; saf, katkısız, halis ve samimi niyetli, seçkin insan.\n63. **[Amade](/tr/isim/amade)**: Hazır, mevcut.\n64. **[Bîner](/tr/isim/biner)**: Gözlemci, bakan, inceleyen ve dikkatli olan kimsedir.\n65. **[Bîrker](/tr/isim/birker)**: Bîrker; keskin zekalı, düşünen, her şeyi hatırlayan bilge şahsiyet.\n66. **[Danyar](/tr/isim/danyar)**: Bilge, alim, bilgi sahibi ve akıllıca hareket eden kimsedir.\n67. **[Dadwar](/tr/isim/dadwar)**: Dadwar; adalet dağıtan hakim, haklının ve mazlumun sarsılmaz koruyucusu.\n68. **[Zordar](/tr/isim/zordar)**: Zordar; güçlü, bükülmez, zorluklara göğüs geren yiğit ve muktedir.\n69. **Zal**: Ak saçlı bilge; mitolojik bir kahraman olup üstün gücü ve tecrübeyi temsil eder.\n70. **[Polat](/tr/isim/polat)**: Çelik, güçlü, dayanıklı.\n71. **[Senger](/tr/isim/senger)**: Mevzi, sığınak, kale, siper, savunma hattı.\n72. **[Çalak](/tr/isim/calak)**: Aktif, çevik, becerikli ve her işe hızla koşan kimsedir.\n73. **[Lezgîn](/tr/isim/lezgin)**: Lezgîn; hızlı, çevik, fırtına gibi esen kararlı ve atik savaşçı.\n74. **[Hêvîdar](/tr/isim/hevidar)**: Umutlu.\n75. **Ronî**: Işık, aydınlık, görme yetisi ve feraset sahibi olan kimsedir.\n76. **[Rewşen](/tr/isim/rewsen)**: Aydınlık, parlak, berrak ve zihni açık olan bilgeliği temsil eden kimsedir.\n77. **Zahîr**: Zahîr; açıkta olan, belirgin, içi dışı bir, net ve çok dürüst lider.\n78. **Batin**: Batin; derin, içsel, ruhsal bilgeliğe ve derin kavrayışa sahip arif.\n79. **[Saman](/tr/isim/saman)**: Servet, zenginlik, refah, maddi ve manevi bolluk.\n80. **[Mîr](/tr/isim/mir)**: Bey, prens, lider.\n81. **Xanî**: Evli, haneli, Ehmedê Xanî (ünlü filozof ve yazar) atıflı hürmet ismi.\n82. **[Hoşeng](/tr/isim/hoseng)**: Akıllı, zeki, uslu kimse; aynı zamanda mitolojik bir Kürt kralı.\n83. **[Zêmar](/tr/isim/zemar)**: Zêmar; duygu yüklü ağıt yakan, hassas ve derin kalpli ulu şair.\n84. **[Xemgîn](/tr/isim/xemgin)**: Hüzünlü, kederli, derin hisleri olan duyarlı kimse.\n85. **[Nalîn](/tr/isim/nalin)**: İnleyiş, derin duyguların ifadesi ve ruhun nazik çığlığı demektir.\n86. **[Ahîn](/tr/isim/ahin)**: Özlem, hasret ve derin duygu.\n87. **[Jîr](/tr/isim/jir)**: Zeki, akıllı.\n88. **[Geşo](/tr/isim/geso)**: Neşeli kişi.\n89. **Kenan**: Kenan; gözleri sevgiyle gülen, neşe saçan ve çevresine pozitif enerji veren asil kişi.\n90. **Şahîn**: Şah, kral gibi, şah, krale dair.\n91. **[Teyr](/tr/isim/teyr)**: Kuş, kartal, yırtıcı kuş; yükseklerde uçan, özgür ruhlu ve keskin bakışlı kimse.\n92. **[Baz](/tr/isim/baz)**: Şahin kuşu, yırtıcı ve özgür doğa canlısıdır.\n93. **[Yar](/tr/isim/yar)**: Dost, sevgili, can yoldaşı, gönül verilen kimse.\n94. **Dost**: Dost; vefalı arkadaş, can yoldaşı, sarsılmaz sırdaş ve asil yoldaş.\n95. **[Semyan](/tr/isim/semyan)**: Semyan; ocağın sarsılmaz direği, ailenin koruyucusu ve reisliğini simgeleyen onurlu isim.\n96. **[Nudar](/tr/isim/nudar)**: Taze ağaç, yeni filizlenen fidan; canlığı ve gençliği temsil eder.\n97. **[Nûjen](/tr/isim/nujen)**: Modern.\n98. **[Serfiraz](/tr/isim/serfiraz)**: Başı dik, daima gururlu.\n99. **[Beşîr](/tr/isim/besir)**: Müjdeci, müjde getiren, güler yüzlü kimse.\n100. **Nezîr**: Nezîr; kendini kutsal ulu bir amaca adamış, adak ve söz sahibi şahsiyet.\n\n\n\n## İsim Kökenleri\n\nErdem, maneviyat ve sanatsal içerikli Kürtçe isimlerin kökenleri, klasik Kürt edebiyatının zengin divan şairlerine (Feqîyê Teyran, Melayê Cizîrî), geleneksel Dengbêj stranlarının derin felsefesine ve kadim insani değerlere dayanır. Şiir (Helbest), ezgi (Lorin, Ninni), inanç ve dürüstlük gibi estetik kavramları simgeleyen bu isimler, Kürtçenin edebi gelişim sürecinde kelimelerin en zarif anlamlarının seçilip adlandırılmasıyla ortaya çıkmıştır.\n\n## Kültürel Önem\n\nBu kategorideki isimler, toplumsal ahlakı, sanata duyulan derin tutkuyu ve manevi arınmışlığı yüceltir. Bebeğine bu isimleri veren aileler, çocuklarının hayatı boyunca estetik bir bakış açısına, yüksek ahlaki değerlere ve sanatsal bir duyarlılığa sahip olmasını arzularlar. 'Helbest' şiirsel bir duyarlılığı simgelerken, erdem temalı isimler topluma faydalı, bilge ve asil bir birey yetiştirme arzusunu ifade eder. Bu isimler hem kulağa son derece zarif gelir hem de taşıdığı anlamlarla ruhu dinlendirir.\n\n## Sık Sorulan Sorular (FAQ)\n\n### Erdem temalı Kürtçe isimler neyi temsil eder?\n\nBu isimler dürüstlük, cesaret, cömertlik, sadakat ve güzel ahlak gibi evrensel insani değerleri yüceltir.",
+  "faqs": [
+    {
+      "question": "Erdem temalı Kürtçe isimler neyi temsil eder?",
+      "answer": "Bu isimler dürüstlük, cesaret, cömertlik, sadakat ve güzel ahlak gibi evrensel insani değerleri yüceltir."
+    }
+  ]
+}

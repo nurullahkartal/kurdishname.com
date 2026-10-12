@@ -1,0 +1,513 @@
+{
+  "title": "100 Regional and Geographical Kurdish Names (City, Mountain, River)",
+  "description": "100 Regional and Geographical Kurdish Names (City, Mountain, River) listesi.",
+  "names": [
+    {
+      "name": "Botan",
+      "id": "botan",
+      "meaning": "The name of the historical Botan region; representing courage and deep-rooted heritage."
+    },
+    {
+      "name": "Dersim",
+      "id": "dersim",
+      "meaning": "Silver gate; the name of an ancient and indomitable region in Kurdistan."
+    },
+    {
+      "name": "Behdinan",
+      "id": "behdinan",
+      "meaning": "The historic Behdinan region, spanning Hakkari and Duhok."
+    },
+    {
+      "name": "Soran",
+      "id": "soran_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Amed",
+      "id": "amed",
+      "meaning": "The historical and cultural name of Diyarbakır."
+    },
+    {
+      "name": "Cudî",
+      "id": "cudii",
+      "meaning": "Mount Cudi."
+    },
+    {
+      "name": "Sîpan",
+      "id": "sipan",
+      "meaning": "..."
+    },
+    {
+      "name": "Munzur",
+      "id": "munzur",
+      "meaning": "The legendary clean river and sacred mountain range in Dersim."
+    },
+    {
+      "name": "Zagros",
+      "id": "zagros_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Gabar",
+      "id": "gabar",
+      "meaning": "Majestic, roaring and resilient mountain."
+    },
+    {
+      "name": "Zap",
+      "id": "zap",
+      "meaning": "Zap river, roaring and pristine wild water flow."
+    },
+    {
+      "name": "Fırat",
+      "id": "firat",
+      "meaning": "Euphrates."
+    },
+    {
+      "name": "Dicle",
+      "id": "dicle2",
+      "meaning": "..."
+    },
+    {
+      "name": "Aras",
+      "id": "aras",
+      "meaning": "..."
+    },
+    {
+      "name": "Zîlan",
+      "id": "zilan",
+      "meaning": "..."
+    },
+    {
+      "name": "Erdelan",
+      "id": "erdelan",
+      "meaning": "The name of an ancient emirate that ruled in Kurdistan and that noble dynasty."
+    },
+    {
+      "name": "Mukrî",
+      "id": "mukri",
+      "meaning": "The historic Mukri dynasty and dialect of Mahabad region."
+    },
+    {
+      "name": "Lolan",
+      "id": "lolan",
+      "meaning": "Famous, noble, and ancient Kurdish tribe."
+    },
+    {
+      "name": "Barzan",
+      "id": "barzan",
+      "meaning": "The beautiful river-side region of Barzan in Kurdistan."
+    },
+    {
+      "name": "Hevler",
+      "id": "hevler",
+      "meaning": "The historical Kurdish name for the ancient city of Erbil."
+    },
+    {
+      "name": "Qamişlo",
+      "id": "qamislo",
+      "meaning": "The prominent city of Qamishli in Rojava region."
+    },
+    {
+      "name": "Kobanê",
+      "id": "kobane",
+      "meaning": "The legendary resilient city of Kobani in Rojava."
+    },
+    {
+      "name": "Efrîn",
+      "id": "efrin",
+      "meaning": "..."
+    },
+    {
+      "name": "Cizîr",
+      "id": "cizir",
+      "meaning": "Historic city of Cizre, ancient center of science."
+    },
+    {
+      "name": "Nusaybin",
+      "id": "nusaybin",
+      "meaning": "The ancient Mesopotamian city of Nisibis (Nusaybin)."
+    },
+    {
+      "name": "Palo",
+      "id": "palo",
+      "meaning": "Historic fortress city, seat of Kurdish rulers."
+    },
+    {
+      "name": "Varto",
+      "id": "varto",
+      "meaning": "Historically rich region of Varto."
+    },
+    {
+      "name": "Xelat",
+      "id": "xelat",
+      "meaning": "..."
+    },
+    {
+      "name": "Merdîn",
+      "id": "merdin",
+      "meaning": "The glorious stone city of Mardin, famous for tolerance."
+    },
+    {
+      "name": "Colemêrg",
+      "id": "colemerg",
+      "meaning": "The ancient Kurdish name for the mountain city of Hakkari."
+    },
+    {
+      "name": "Şirnex",
+      "id": "sirnex",
+      "meaning": "The original Kurdish name of Sirnak, host to Noah's Ark legends."
+    },
+    {
+      "name": "Duhok",
+      "id": "duhok",
+      "meaning": "The beautiful city of Duhok, the pearl of Behdinan."
+    },
+    {
+      "name": "Zaxo",
+      "id": "zaxo",
+      "meaning": "The historic city of Zakho with its legendary ancient bridges."
+    },
+    {
+      "name": "Helebçe",
+      "id": "helebce",
+      "meaning": "The historic city of Halabja, symbol of resilience and dignity."
+    },
+    {
+      "name": "Kerkûk",
+      "id": "kerkuk",
+      "meaning": "The ancient multilingual and rich city of Kirkuk."
+    },
+    {
+      "name": "Mahabad",
+      "id": "mahabad",
+      "meaning": "The historic republic capital city of Mahabad."
+    },
+    {
+      "name": "Sîne",
+      "id": "sine_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Ranya",
+      "id": "ranya",
+      "meaning": "The historic town of Ranya, symbol of freedom movements."
+    },
+    {
+      "name": "Soranî",
+      "id": "sorani",
+      "meaning": "The rich literary Sorani dialect and geographic area."
+    },
+    {
+      "name": "Kurmancî",
+      "id": "kurmanci",
+      "meaning": "Kurmanji."
+    },
+    {
+      "name": "Luristan",
+      "id": "luristan",
+      "meaning": "The majestic mountainous Luristan province."
+    },
+    {
+      "name": "Germîyan",
+      "id": "germiyan",
+      "meaning": "The historic warm southern region of Garmian."
+    },
+    {
+      "name": "Berwarî",
+      "id": "berwari",
+      "meaning": "Sloping."
+    },
+    {
+      "name": "Gever",
+      "id": "gever",
+      "meaning": "The ancient mountainous valley of Gever (Yuksekova)."
+    },
+    {
+      "name": "Şemzînan",
+      "id": "semzinan",
+      "meaning": "The beautiful green border region of Semzinan (Semdinli)."
+    },
+    {
+      "name": "Elbak",
+      "id": "elbak",
+      "meaning": "The historic high region and fortress of Elbak (Baskale)."
+    },
+    {
+      "name": "Xakurke",
+      "id": "xakurke",
+      "meaning": "The rugged green valley of Xakurke."
+    },
+    {
+      "name": "Qendîl",
+      "id": "qendil",
+      "meaning": "Lantern, lamp, and light."
+    },
+    {
+      "name": "Agirî",
+      "id": "agiri",
+      "meaning": "..."
+    },
+    {
+      "name": "Nemrût",
+      "id": "nemrut",
+      "meaning": "The volcanic crater mountain Nemrut, throne of kings."
+    },
+    {
+      "name": "Sînem",
+      "id": "sinem",
+      "meaning": "My bosom, my soul, the beloved in my heart."
+    },
+    {
+      "name": "Dilovan",
+      "id": "dilovan",
+      "meaning": "..."
+    },
+    {
+      "name": "Şingal",
+      "id": "singal",
+      "meaning": "The sacred mount and city of Sinjar."
+    },
+    {
+      "name": "Laleş",
+      "id": "lales",
+      "meaning": "..."
+    },
+    {
+      "name": "Serhat",
+      "id": "serhat_3",
+      "meaning": "..."
+    },
+    {
+      "name": "Garzan",
+      "id": "garzan",
+      "meaning": "..."
+    },
+    {
+      "name": "Hevsel",
+      "id": "hevsel",
+      "meaning": "The fertile historic gardens of Hevsel by the Tigris."
+    },
+    {
+      "name": "Zê",
+      "id": "ze",
+      "meaning": "River branch, flowing water, source of life."
+    },
+    {
+      "name": "Şat",
+      "id": "sat",
+      "meaning": "Large river, rushing powerful waterstream."
+    },
+    {
+      "name": "Deşt",
+      "id": "dest",
+      "meaning": "Valley, plain, vast fertile green lands."
+    },
+    {
+      "name": "Zevî",
+      "id": "zevi",
+      "meaning": "Cultivated land, fertile green field."
+    },
+    {
+      "name": "Kendal",
+      "id": "kendal",
+      "meaning": "..."
+    },
+    {
+      "name": "Çal",
+      "id": "cal",
+      "meaning": "Deep gorge, sheltered mountain pass."
+    },
+    {
+      "name": "Newal",
+      "id": "newal",
+      "meaning": "Stream bed, clean valley with running waters."
+    },
+    {
+      "name": "Gelî",
+      "id": "gelii",
+      "meaning": "Of the valley."
+    },
+    {
+      "name": "Zinar",
+      "id": "zinar_2",
+      "meaning": "..."
+    },
+    {
+      "name": "War",
+      "id": "war",
+      "meaning": "Land, homeland, ancestral camp."
+    },
+    {
+      "name": "Bax",
+      "id": "bax",
+      "meaning": "Garden, lush orchard, green oasis."
+    },
+    {
+      "name": "Gund",
+      "id": "gund",
+      "meaning": "Village, cradle of traditional local life."
+    },
+    {
+      "name": "Şar",
+      "id": "sar",
+      "meaning": "City, center of civilization and culture."
+    },
+    {
+      "name": "Welat",
+      "id": "welat",
+      "meaning": "..."
+    },
+    {
+      "name": "Nîştîman",
+      "id": "nistiman",
+      "meaning": "..."
+    },
+    {
+      "name": "Niwar",
+      "id": "niwar",
+      "meaning": "New homeland, fresh place."
+    },
+    {
+      "name": "Bane",
+      "id": "bane",
+      "meaning": "Scream, call, and echoing sound."
+    },
+    {
+      "name": "Serban",
+      "id": "serban",
+      "meaning": "Rooftop terrace, high elevated place under stars."
+    },
+    {
+      "name": "Koz",
+      "id": "koz",
+      "meaning": "Wind-sheltered cozy area, safe home haven."
+    },
+    {
+      "name": "Zozan",
+      "id": "zozan_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Soran",
+      "id": "soran_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Badîn",
+      "id": "badin",
+      "meaning": "Wind of faith and spiritual power."
+    },
+    {
+      "name": "Hekar",
+      "id": "hekar",
+      "meaning": "From Hakkari, the historic Hakkar Emirate."
+    },
+    {
+      "name": "Cizîrî",
+      "id": "ciziri",
+      "meaning": "From Cizre."
+    },
+    {
+      "name": "Şirwan",
+      "id": "sirwan_2",
+      "meaning": "..."
+    },
+    {
+      "name": "Eruh",
+      "id": "eruh",
+      "meaning": "The historic district and castle of Eruh."
+    },
+    {
+      "name": "Pirsus",
+      "id": "pirsus",
+      "meaning": "The ancient fertile plain of Pirsus (Suruc)."
+    },
+    {
+      "name": "Serekanî",
+      "id": "serekani",
+      "meaning": "Head of the spring, clean water fountains."
+    },
+    {
+      "name": "Derik",
+      "id": "derik",
+      "meaning": "The historic olive-rich district of Derik in Mardin."
+    },
+    {
+      "name": "Midîyad",
+      "id": "midiyad",
+      "meaning": "The gorgeous silversmith and stone mansion town of Midyat."
+    },
+    {
+      "name": "Kerboran",
+      "id": "kerboran",
+      "meaning": "The rugged historic mountain town of Kerboran (Dargecit)."
+    },
+    {
+      "name": "Hezex",
+      "id": "hezex",
+      "meaning": "The historic multicultural town of Hezex (Idil)."
+    },
+    {
+      "name": "Silopi",
+      "id": "silopi",
+      "meaning": "The flat border district of Silopi under Mount Cudi."
+    },
+    {
+      "name": "Licê",
+      "id": "lice",
+      "meaning": "The historic mountain-side district of Lice."
+    },
+    {
+      "name": "Farqîn",
+      "id": "farqin",
+      "meaning": "The ancient fortified royal town of Farqin (Silvan)."
+    },
+    {
+      "name": "Bismîl",
+      "id": "bismil",
+      "meaning": "The fertile river-side farming plain of Bismil."
+    },
+    {
+      "name": "Çinar",
+      "id": "cinar",
+      "meaning": "..."
+    },
+    {
+      "name": "Hênê",
+      "id": "hene",
+      "meaning": "The water-rich green historic town of Hani."
+    },
+    {
+      "name": "Pîran",
+      "id": "piran",
+      "meaning": "..."
+    },
+    {
+      "name": "Erxenî",
+      "id": "erxeni",
+      "meaning": "The ancient copper-rich district of Ergani."
+    },
+    {
+      "name": "Pasûr",
+      "id": "pasur",
+      "meaning": "The rugged silk-producing high district of Kulp (Pasur)."
+    },
+    {
+      "name": "Sûr",
+      "id": "sur",
+      "meaning": "The historic walled heart of Diyarbakir, the ancient Sur."
+    },
+    {
+      "name": "Bağlar",
+      "id": "baglar",
+      "meaning": "The famous grape-vineyard rich district of Diyarbakir."
+    }
+  ],
+  "content": "## List of Names and Meanings\n\n1. **[Botan](/en/name/botan)**: The name of the historical Botan region; representing courage and deep-rooted heritage.\n2. **[Dersim](/en/name/dersim)**: Silver gate; the name of an ancient and indomitable region in Kurdistan.\n3. **Behdinan**: The historic Behdinan region, spanning Hakkari and Duhok.\n4. **Soran**: ...\n5. **[Amed](/en/name/amed)**: The historical and cultural name of Diyarbakır.\n6. **[Cudî](/en/name/cudii)**: Mount Cudi.\n7. **[Sîpan](/en/name/sipan)**: ...\n8. **Munzur**: The legendary clean river and sacred mountain range in Dersim.\n9. **Zagros**: ...\n10. **[Gabar](/en/name/gabar)**: Majestic, roaring and resilient mountain.\n11. **[Zap](/en/name/zap)**: Zap river, roaring and pristine wild water flow.\n12. **[Fırat](/en/name/firat)**: Euphrates.\n13. **Dicle**: ...\n14. **[Aras](/en/name/aras)**: ...\n15. **[Zîlan](/en/name/zilan)**: ...\n16. **[Erdelan](/en/name/erdelan)**: The name of an ancient emirate that ruled in Kurdistan and that noble dynasty.\n17. **Mukrî**: The historic Mukri dynasty and dialect of Mahabad region.\n18. **[Lolan](/en/name/lolan)**: Famous, noble, and ancient Kurdish tribe.\n19. **Barzan**: The beautiful river-side region of Barzan in Kurdistan.\n20. **Hevler**: The historical Kurdish name for the ancient city of Erbil.\n21. **Qamişlo**: The prominent city of Qamishli in Rojava region.\n22. **Kobanê**: The legendary resilient city of Kobani in Rojava.\n23. **[Efrîn](/en/name/efrin)**: ...\n24. **[Cizîr](/en/name/cizir)**: Historic city of Cizre, ancient center of science.\n25. **Nusaybin**: The ancient Mesopotamian city of Nisibis (Nusaybin).\n26. **[Palo](/en/name/palo)**: Historic fortress city, seat of Kurdish rulers.\n27. **[Varto](/en/name/varto)**: Historically rich region of Varto.\n28. **[Xelat](/en/name/xelat)**: ...\n29. **Merdîn**: The glorious stone city of Mardin, famous for tolerance.\n30. **Colemêrg**: The ancient Kurdish name for the mountain city of Hakkari.\n31. **Şirnex**: The original Kurdish name of Sirnak, host to Noah's Ark legends.\n32. **Duhok**: The beautiful city of Duhok, the pearl of Behdinan.\n33. **Zaxo**: The historic city of Zakho with its legendary ancient bridges.\n34. **Helebçe**: The historic city of Halabja, symbol of resilience and dignity.\n35. **Kerkûk**: The ancient multilingual and rich city of Kirkuk.\n36. **Mahabad**: The historic republic capital city of Mahabad.\n37. **Sîne**: ...\n38. **Ranya**: The historic town of Ranya, symbol of freedom movements.\n39. **Soranî**: The rich literary Sorani dialect and geographic area.\n40. **[Kurmancî](/en/name/kurmanci)**: Kurmanji.\n41. **Luristan**: The majestic mountainous Luristan province.\n42. **Germîyan**: The historic warm southern region of Garmian.\n43. **[Berwarî](/en/name/berwari)**: Sloping.\n44. **Gever**: The ancient mountainous valley of Gever (Yuksekova).\n45. **Şemzînan**: The beautiful green border region of Semzinan (Semdinli).\n46. **Elbak**: The historic high region and fortress of Elbak (Baskale).\n47. **Xakurke**: The rugged green valley of Xakurke.\n48. **[Qendîl](/en/name/qendil)**: Lantern, lamp, and light.\n49. **[Agirî](/en/name/agiri)**: ...\n50. **Nemrût**: The volcanic crater mountain Nemrut, throne of kings.\n51. **[Sînem](/en/name/sinem)**: My bosom, my soul, the beloved in my heart.\n52. **[Dilovan](/en/name/dilovan)**: ...\n53. **Şingal**: The sacred mount and city of Sinjar.\n54. **[Laleş](/en/name/lales)**: ...\n55. **Serhat**: ...\n56. **[Garzan](/en/name/garzan)**: ...\n57. **Hevsel**: The fertile historic gardens of Hevsel by the Tigris.\n58. **[Zê](/en/name/ze)**: River branch, flowing water, source of life.\n59. **[Şat](/en/name/sat)**: Large river, rushing powerful waterstream.\n60. **[Deşt](/en/name/dest)**: Valley, plain, vast fertile green lands.\n61. **[Zevî](/en/name/zevi)**: Cultivated land, fertile green field.\n62. **[Kendal](/en/name/kendal)**: ...\n63. **[Çal](/en/name/cal)**: Deep gorge, sheltered mountain pass.\n64. **[Newal](/en/name/newal)**: Stream bed, clean valley with running waters.\n65. **[Gelî](/en/name/gelii)**: Of the valley.\n66. **Zinar**: ...\n67. **[War](/en/name/war)**: Land, homeland, ancestral camp.\n68. **[Bax](/en/name/bax)**: Garden, lush orchard, green oasis.\n69. **[Gund](/en/name/gund)**: Village, cradle of traditional local life.\n70. **[Şar](/en/name/sar)**: City, center of civilization and culture.\n71. **[Welat](/en/name/welat)**: ...\n72. **[Nîştîman](/en/name/nistiman)**: ...\n73. **[Niwar](/en/name/niwar)**: New homeland, fresh place.\n74. **[Bane](/en/name/bane)**: Scream, call, and echoing sound.\n75. **[Serban](/en/name/serban)**: Rooftop terrace, high elevated place under stars.\n76. **[Koz](/en/name/koz)**: Wind-sheltered cozy area, safe home haven.\n77. **Zozan**: ...\n78. **Soran**: ...\n79. **[Badîn](/en/name/badin)**: Wind of faith and spiritual power.\n80. **[Hekar](/en/name/hekar)**: From Hakkari, the historic Hakkar Emirate.\n81. **[Cizîrî](/en/name/ciziri)**: From Cizre.\n82. **Şirwan**: ...\n83. **Eruh**: The historic district and castle of Eruh.\n84. **Pirsus**: The ancient fertile plain of Pirsus (Suruc).\n85. **Serekanî**: Head of the spring, clean water fountains.\n86. **Derik**: The historic olive-rich district of Derik in Mardin.\n87. **Midîyad**: The gorgeous silversmith and stone mansion town of Midyat.\n88. **Kerboran**: The rugged historic mountain town of Kerboran (Dargecit).\n89. **Hezex**: The historic multicultural town of Hezex (Idil).\n90. **Silopi**: The flat border district of Silopi under Mount Cudi.\n91. **Licê**: The historic mountain-side district of Lice.\n92. **Farqîn**: The ancient fortified royal town of Farqin (Silvan).\n93. **Bismîl**: The fertile river-side farming plain of Bismil.\n94. **[Çinar](/en/name/cinar)**: ...\n95. **Hênê**: The water-rich green historic town of Hani.\n96. **[Pîran](/en/name/piran)**: ...\n97. **Erxenî**: The ancient copper-rich district of Ergani.\n98. **Pasûr**: The rugged silk-producing high district of Kulp (Pasur).\n99. **Sûr**: The historic walled heart of Diyarbakir, the ancient Sur.\n100. **Bağlar**: The famous grape-vineyard rich district of Diyarbakir.\n\n\n\n## Name Origins\n\nThe origins of Kurdish nature and geography names are based on the pastoral lifestyle that the Kurdish people have maintained throughout history on the slopes of the Zagros and Munzur mountains, and on the banks of the Tigris and Euphrates rivers. Possessing a deep respect for every element of nature, the Kurds reflected this vitality in their language and names. The most grand states of nature, such as rain (Baran), wind (Bager), lightning (Brûsk), and rivers, have turned into noble and majestic baby names through the rich geographical vocabulary of Kurdish.\n\n## Cultural Significance\n\nIn Kurdish culture, nature is not just a physical environment, but an expression of freedom, resilience, and life itself. Therefore, nature names symbolize that the child's character should be unwavering like a mountain, enthusiastic like a river, and delicate and fresh like spring flowers. When choosing nature-themed names, it is wished that the child will carry the harmony with the universe and the infinite abundance and energy offered by nature throughout their life. These names represent both gratitude towards nature and ensure cultural continuity.\n\n## Frequently Asked Questions (FAQ)\n\n### What do regional Kurdish names signify?\n\nThese names are inspired by majestic mountains, wild rivers, and ancient towns of the Kurdish homeland (such as Botan, Munzur, and Dersim).",
+  "faqs": [
+    {
+      "question": "What do regional Kurdish names signify?",
+      "answer": "These names are inspired by majestic mountains, wild rivers, and ancient towns of the Kurdish homeland (such as Botan, Munzur, and Dersim)."
+    }
+  ]
+}

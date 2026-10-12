@@ -1,0 +1,5782 @@
+[
+  {
+    "id": "bezo_2",
+    "baseId": "bezo",
+    "suffixNum": "2",
+    "name": "Bêzo",
+    "refName": "Bêzo",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "bezo_2"
+    ]
+  },
+  {
+    "id": "binav_2",
+    "baseId": "binav",
+    "suffixNum": "2",
+    "name": "Binav",
+    "refName": "Binav",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "binav_2"
+    ]
+  },
+  {
+    "id": "brusk_2",
+    "baseId": "brusk",
+    "suffixNum": "2",
+    "name": "Brûsk",
+    "refName": "Brûsk",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "brusk_2"
+    ]
+  },
+  {
+    "id": "bese_2",
+    "baseId": "bese",
+    "suffixNum": "2",
+    "name": "Besê",
+    "refName": "Bêşe",
+    "gender": "female",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 2,
+    "allVariationsIds": [
+      "bese",
+      "bese_2"
+    ]
+  },
+  {
+    "id": "behdin_2",
+    "baseId": "behdin",
+    "suffixNum": "2",
+    "name": "Behdîn",
+    "refName": "Behdîn",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "behdin_2"
+    ]
+  },
+  {
+    "id": "cemil_2",
+    "baseId": "cemil",
+    "suffixNum": "2",
+    "name": "Cemîl",
+    "refName": "Cemîl",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 2,
+    "allVariationsIds": [
+      "cemil",
+      "cemil_2"
+    ]
+  },
+  {
+    "id": "delal_2",
+    "baseId": "delal",
+    "suffixNum": "2",
+    "name": "Delal",
+    "refName": "Delal",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "delal_2"
+    ]
+  },
+  {
+    "id": "havin_2",
+    "baseId": "havin",
+    "suffixNum": "2",
+    "name": "Havîn",
+    "refName": "Havîn",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "havin_2"
+    ]
+  },
+  {
+    "id": "hewraz_2",
+    "baseId": "hewraz",
+    "suffixNum": "2",
+    "name": "Hewraz",
+    "refName": "Hewraz",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "hewraz_2"
+    ]
+  },
+  {
+    "id": "hesin_2",
+    "baseId": "hesin",
+    "suffixNum": "2",
+    "name": "Hêşîn",
+    "refName": "Heşîn",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 2,
+    "allVariationsIds": [
+      "hesin",
+      "hesin_2"
+    ]
+  },
+  {
+    "id": "kem_2",
+    "baseId": "kem",
+    "suffixNum": "2",
+    "name": "Kem",
+    "refName": "Kem",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "kem_2"
+    ]
+  },
+  {
+    "id": "memlan_2",
+    "baseId": "memlan",
+    "suffixNum": "2",
+    "name": "Memlan",
+    "refName": "Memlan",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "memlan_2"
+    ]
+  },
+  {
+    "id": "mira_3",
+    "baseId": "mira",
+    "suffixNum": "3",
+    "name": "Mira",
+    "refName": "Mira",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "mira_3"
+    ]
+  },
+  {
+    "id": "nisan_2",
+    "baseId": "nisan",
+    "suffixNum": "2",
+    "name": "Nisan",
+    "refName": "Nisan",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "nisan_2"
+    ]
+  },
+  {
+    "id": "nuroj_2",
+    "baseId": "nuroj",
+    "suffixNum": "2",
+    "name": "Nûroj",
+    "refName": "Nûroj",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "nuroj_2"
+    ]
+  },
+  {
+    "id": "piroz_2",
+    "baseId": "piroz",
+    "suffixNum": "2",
+    "name": "Pîroz",
+    "refName": "Pîroz",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "piroz_2"
+    ]
+  },
+  {
+    "id": "rewan_2",
+    "baseId": "rewan",
+    "suffixNum": "2",
+    "name": "Rêwan",
+    "refName": "Rêwan",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rewan_2"
+    ]
+  },
+  {
+    "id": "rezo_2",
+    "baseId": "rezo",
+    "suffixNum": "2",
+    "name": "Rezo",
+    "refName": "Rezo",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rezo_2"
+    ]
+  },
+  {
+    "id": "rihan_2",
+    "baseId": "rihan",
+    "suffixNum": "2",
+    "name": "Rîhan",
+    "refName": "Rîhan",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rihan_2"
+    ]
+  },
+  {
+    "id": "rinde_2",
+    "baseId": "rinde",
+    "suffixNum": "2",
+    "name": "Rindê",
+    "refName": "Rındê",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 2,
+    "allVariationsIds": [
+      "rinde_2",
+      "rinde"
+    ]
+  },
+  {
+    "id": "robar_2",
+    "baseId": "robar",
+    "suffixNum": "2",
+    "name": "Robar",
+    "refName": "Robar",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "robar_2"
+    ]
+  },
+  {
+    "id": "robin_2",
+    "baseId": "robin",
+    "suffixNum": "2",
+    "name": "Robîn",
+    "refName": "Robîn",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "robin_2"
+    ]
+  },
+  {
+    "id": "roda_2",
+    "baseId": "roda",
+    "suffixNum": "2",
+    "name": "Roda",
+    "refName": "Roda",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "roda_2"
+    ]
+  },
+  {
+    "id": "roj_2",
+    "baseId": "roj",
+    "suffixNum": "2",
+    "name": "Roj",
+    "refName": "Roj",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "roj_2"
+    ]
+  },
+  {
+    "id": "rojan_2",
+    "baseId": "rojan",
+    "suffixNum": "2",
+    "name": "Rojan",
+    "refName": "Rojan",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rojan_2"
+    ]
+  },
+  {
+    "id": "rojat_2",
+    "baseId": "rojat",
+    "suffixNum": "2",
+    "name": "Rojat",
+    "refName": "Rojat",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rojat_2"
+    ]
+  },
+  {
+    "id": "rojbin_2",
+    "baseId": "rojbin",
+    "suffixNum": "2",
+    "name": "Rojbîn",
+    "refName": "Rojbîn",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rojbin_2"
+    ]
+  },
+  {
+    "id": "rojda_2",
+    "baseId": "rojda",
+    "suffixNum": "2",
+    "name": "Rojda",
+    "refName": "Rojda",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 2,
+    "allVariationsIds": [
+      "rojda_2",
+      "rojda"
+    ]
+  },
+  {
+    "id": "rojdar_2",
+    "baseId": "rojdar",
+    "suffixNum": "2",
+    "name": "Rojdar",
+    "refName": "Rojdar",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rojdar_2"
+    ]
+  },
+  {
+    "id": "rojder_2",
+    "baseId": "rojder",
+    "suffixNum": "2",
+    "name": "Rojder",
+    "refName": "Rojder",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rojder_2"
+    ]
+  },
+  {
+    "id": "roje_2",
+    "baseId": "roje",
+    "suffixNum": "2",
+    "name": "Rojê",
+    "refName": "Rojê",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "roje_2"
+    ]
+  },
+  {
+    "id": "rojen_2",
+    "baseId": "rojen",
+    "suffixNum": "2",
+    "name": "Rojen",
+    "refName": "Rojen",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rojen_2"
+    ]
+  },
+  {
+    "id": "rojgar_2",
+    "baseId": "rojgar",
+    "suffixNum": "2",
+    "name": "Rojgar",
+    "refName": "Rojgar",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rojgar_2"
+    ]
+  },
+  {
+    "id": "rojgul_2",
+    "baseId": "rojgul",
+    "suffixNum": "2",
+    "name": "Rojgul",
+    "refName": "Rojgul",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rojgul_2"
+    ]
+  },
+  {
+    "id": "rojhat_2",
+    "baseId": "rojhat",
+    "suffixNum": "2",
+    "name": "Rojhat",
+    "refName": "Rojhat",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 2,
+    "allVariationsIds": [
+      "rojhat_2",
+      "rojhat"
+    ]
+  },
+  {
+    "id": "rojhelat_2",
+    "baseId": "rojhelat",
+    "suffixNum": "2",
+    "name": "Rojhelat",
+    "refName": "Rojhelat",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rojhelat_2"
+    ]
+  },
+  {
+    "id": "rojin_3",
+    "baseId": "rojin",
+    "suffixNum": "3",
+    "name": "Rojîn",
+    "refName": "Rojîn",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rojin_3"
+    ]
+  },
+  {
+    "id": "rojko_2",
+    "baseId": "rojko",
+    "suffixNum": "2",
+    "name": "Rojko",
+    "refName": "Rojko",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rojko_2"
+    ]
+  },
+  {
+    "id": "rojma_2",
+    "baseId": "rojma",
+    "suffixNum": "2",
+    "name": "Rojma",
+    "refName": "Rojma",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rojma_2"
+    ]
+  },
+  {
+    "id": "rojna_2",
+    "baseId": "rojna",
+    "suffixNum": "2",
+    "name": "Rojna",
+    "refName": "Rojna",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rojna_2"
+    ]
+  },
+  {
+    "id": "rojwan_2",
+    "baseId": "rojwan",
+    "suffixNum": "2",
+    "name": "Rojwan",
+    "refName": "Rojwan",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rojwan_2"
+    ]
+  },
+  {
+    "id": "rojyar_2",
+    "baseId": "rojyar",
+    "suffixNum": "2",
+    "name": "Rojyar",
+    "refName": "Rojyar",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rojyar_2"
+    ]
+  },
+  {
+    "id": "rokar_2",
+    "baseId": "rokar",
+    "suffixNum": "2",
+    "name": "Rokar",
+    "refName": "Rokar",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rokar_2"
+    ]
+  },
+  {
+    "id": "roleda_2",
+    "baseId": "roleda",
+    "suffixNum": "2",
+    "name": "Rolêda",
+    "refName": "Rolêda",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "roleda_2"
+    ]
+  },
+  {
+    "id": "rolez_2",
+    "baseId": "rolez",
+    "suffixNum": "2",
+    "name": "Rolez",
+    "refName": "Rolez",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rolez_2"
+    ]
+  },
+  {
+    "id": "rona_2",
+    "baseId": "rona",
+    "suffixNum": "2",
+    "name": "Rona",
+    "refName": "Rona",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rona_2"
+    ]
+  },
+  {
+    "id": "ronahi_2",
+    "baseId": "ronahi",
+    "suffixNum": "2",
+    "name": "Ronahî",
+    "refName": "Ronahî",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "ronahi_2"
+    ]
+  },
+  {
+    "id": "ronak_2",
+    "baseId": "ronak",
+    "suffixNum": "2",
+    "name": "Ronak",
+    "refName": "Ronak",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "ronak_2"
+    ]
+  },
+  {
+    "id": "ronas_2",
+    "baseId": "ronas",
+    "suffixNum": "2",
+    "name": "Ronas",
+    "refName": "Ronas",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "ronas_2"
+    ]
+  },
+  {
+    "id": "ronav_2",
+    "baseId": "ronav",
+    "suffixNum": "2",
+    "name": "Ronav",
+    "refName": "Ronav",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "ronav_2"
+    ]
+  },
+  {
+    "id": "rondik_2",
+    "baseId": "rondik",
+    "suffixNum": "2",
+    "name": "Rondik",
+    "refName": "Rondik",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rondik_2"
+    ]
+  },
+  {
+    "id": "roni_2",
+    "baseId": "roni",
+    "suffixNum": "2",
+    "name": "Ronî",
+    "refName": "Ronî",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "roni_2"
+    ]
+  },
+  {
+    "id": "ronida_2",
+    "baseId": "ronida",
+    "suffixNum": "2",
+    "name": "Ronîda",
+    "refName": "Ronîda",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "ronida_2"
+    ]
+  },
+  {
+    "id": "ronya_2",
+    "baseId": "ronya",
+    "suffixNum": "2",
+    "name": "Ronya",
+    "refName": "Ronya",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "ronya_2"
+    ]
+  },
+  {
+    "id": "rosin_2",
+    "baseId": "rosin",
+    "suffixNum": "2",
+    "name": "Roşîn",
+    "refName": "Roşîn",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rosin_2"
+    ]
+  },
+  {
+    "id": "rosna_2",
+    "baseId": "rosna",
+    "suffixNum": "2",
+    "name": "Roşna",
+    "refName": "Roşna",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rosna_2"
+    ]
+  },
+  {
+    "id": "roz_3",
+    "baseId": "roz",
+    "suffixNum": "3",
+    "name": "Roz",
+    "refName": "Roz",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "roz_3"
+    ]
+  },
+  {
+    "id": "roza_3",
+    "baseId": "roza",
+    "suffixNum": "3",
+    "name": "Roza",
+    "refName": "Roza",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "roza_3"
+    ]
+  },
+  {
+    "id": "roze_3",
+    "baseId": "roze",
+    "suffixNum": "3",
+    "name": "Rozê",
+    "refName": "Rozê",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "roze_3"
+    ]
+  },
+  {
+    "id": "rozelin_2",
+    "baseId": "rozelin",
+    "suffixNum": "2",
+    "name": "Rozelîn",
+    "refName": "Rozelîn",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rozelin_2"
+    ]
+  },
+  {
+    "id": "rozerin_2",
+    "baseId": "rozerin",
+    "suffixNum": "2",
+    "name": "Rozerîn",
+    "refName": "Rozerîn",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rozerin_2"
+    ]
+  },
+  {
+    "id": "rubar_3",
+    "baseId": "rubar",
+    "suffixNum": "3",
+    "name": "Rûbar",
+    "refName": "Rûbar",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rubar_3"
+    ]
+  },
+  {
+    "id": "ruha_2",
+    "baseId": "ruha",
+    "suffixNum": "2",
+    "name": "Ruha",
+    "refName": "Ruha",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "ruha_2"
+    ]
+  },
+  {
+    "id": "ruken_2",
+    "baseId": "ruken",
+    "suffixNum": "2",
+    "name": "Rûken",
+    "refName": "Rûken",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "ruken_2"
+    ]
+  },
+  {
+    "id": "runa_2",
+    "baseId": "runa",
+    "suffixNum": "2",
+    "name": "Rûna",
+    "refName": "Rûna",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "runa_2"
+    ]
+  },
+  {
+    "id": "runak_2",
+    "baseId": "runak",
+    "suffixNum": "2",
+    "name": "Rûnak",
+    "refName": "Rûnak",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "runak_2"
+    ]
+  },
+  {
+    "id": "rundik_3",
+    "baseId": "rundik",
+    "suffixNum": "3",
+    "name": "Rûndik",
+    "refName": "Rûndik",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rundik_3"
+    ]
+  },
+  {
+    "id": "runi_3",
+    "baseId": "runi",
+    "suffixNum": "3",
+    "name": "Rûnî",
+    "refName": "Rûnî",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "runi_3"
+    ]
+  },
+  {
+    "id": "ruse_2",
+    "baseId": "ruse",
+    "suffixNum": "2",
+    "name": "Ruşe",
+    "refName": "Ruşe",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "ruse_2"
+    ]
+  },
+  {
+    "id": "rusen_2",
+    "baseId": "rusen",
+    "suffixNum": "2",
+    "name": "Rûşen",
+    "refName": "Rûşen",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "rusen_2"
+    ]
+  },
+  {
+    "id": "ruxsar_2",
+    "baseId": "ruxsar",
+    "suffixNum": "2",
+    "name": "Ruxsar",
+    "refName": "Ruxsar",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "ruxsar_2"
+    ]
+  },
+  {
+    "id": "sakar_2",
+    "baseId": "sakar",
+    "suffixNum": "2",
+    "name": "Sakar",
+    "refName": "Sakar",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sakar_2"
+    ]
+  },
+  {
+    "id": "sako_2",
+    "baseId": "sako",
+    "suffixNum": "2",
+    "name": "Sako",
+    "refName": "Sako",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sako_2"
+    ]
+  },
+  {
+    "id": "samal_2",
+    "baseId": "samal",
+    "suffixNum": "2",
+    "name": "Samal",
+    "refName": "Samal",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "samal_2"
+    ]
+  },
+  {
+    "id": "samrend_2",
+    "baseId": "samrend",
+    "suffixNum": "2",
+    "name": "Samrend",
+    "refName": "Samrend",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "samrend_2"
+    ]
+  },
+  {
+    "id": "saro_2",
+    "baseId": "saro",
+    "suffixNum": "2",
+    "name": "Saro",
+    "refName": "Saro",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "saro_2"
+    ]
+  },
+  {
+    "id": "saz_2",
+    "baseId": "saz",
+    "suffixNum": "2",
+    "name": "Saz",
+    "refName": "Saz",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "saz_2"
+    ]
+  },
+  {
+    "id": "sazan_2",
+    "baseId": "sazan",
+    "suffixNum": "2",
+    "name": "Sazan",
+    "refName": "Sazan",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sazan_2"
+    ]
+  },
+  {
+    "id": "sengaw_2",
+    "baseId": "sengaw",
+    "suffixNum": "2",
+    "name": "Sengaw",
+    "refName": "Sengaw",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sengaw_2"
+    ]
+  },
+  {
+    "id": "serdar_2",
+    "baseId": "serdar",
+    "suffixNum": "2",
+    "name": "Serdar",
+    "refName": "Serdar",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "serdar_2"
+    ]
+  },
+  {
+    "id": "seyran_2",
+    "baseId": "seyran",
+    "suffixNum": "2",
+    "name": "Seyran",
+    "refName": "Seyran",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "seyran_2"
+    ]
+  },
+  {
+    "id": "simko_2",
+    "baseId": "simko",
+    "suffixNum": "2",
+    "name": "Simko",
+    "refName": "Simko",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "simko_2"
+    ]
+  },
+  {
+    "id": "sirwan_2",
+    "baseId": "sirwan",
+    "suffixNum": "2",
+    "name": "Sîrwan",
+    "refName": "Sîrwan",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sirwan_2"
+    ]
+  },
+  {
+    "id": "sirwe_2",
+    "baseId": "sirwe",
+    "suffixNum": "2",
+    "name": "Sirwe",
+    "refName": "Sirwe",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sirwe_2"
+    ]
+  },
+  {
+    "id": "situn_2",
+    "baseId": "situn",
+    "suffixNum": "2",
+    "name": "Sitûn",
+    "refName": "Sitûn",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "situn_2"
+    ]
+  },
+  {
+    "id": "siwar_2",
+    "baseId": "siwar",
+    "suffixNum": "2",
+    "name": "Siwar",
+    "refName": "Siwar",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "siwar_2"
+    ]
+  },
+  {
+    "id": "skala_2",
+    "baseId": "skala",
+    "suffixNum": "2",
+    "name": "Skala",
+    "refName": "Skala",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "skala_2"
+    ]
+  },
+  {
+    "id": "sokar_3",
+    "baseId": "sokar",
+    "suffixNum": "3",
+    "name": "Sokar",
+    "refName": "Sokar",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sokar_3"
+    ]
+  },
+  {
+    "id": "soran_2",
+    "baseId": "soran",
+    "suffixNum": "2",
+    "name": "Soran",
+    "refName": "Soran",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "soran_2"
+    ]
+  },
+  {
+    "id": "sozan_2",
+    "baseId": "sozan",
+    "suffixNum": "2",
+    "name": "Sozan",
+    "refName": "Sozan",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sozan_2"
+    ]
+  },
+  {
+    "id": "srust_2",
+    "baseId": "srust",
+    "suffixNum": "2",
+    "name": "Srûşt",
+    "refName": "Srûşt",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "srust_2"
+    ]
+  },
+  {
+    "id": "stran_2",
+    "baseId": "stran",
+    "suffixNum": "2",
+    "name": "Stran",
+    "refName": "Stran",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "stran_2"
+    ]
+  },
+  {
+    "id": "saho_2",
+    "baseId": "saho",
+    "suffixNum": "2",
+    "name": "Şaho",
+    "refName": "Şaho",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "saho_2"
+    ]
+  },
+  {
+    "id": "sehrivan_2",
+    "baseId": "sehrivan",
+    "suffixNum": "2",
+    "name": "Şehrivan",
+    "refName": "Şehrivan",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sehrivan_2"
+    ]
+  },
+  {
+    "id": "semal_3",
+    "baseId": "semal",
+    "suffixNum": "3",
+    "name": "Şemal",
+    "refName": "Şemal",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "semal_3"
+    ]
+  },
+  {
+    "id": "semam_2",
+    "baseId": "semam",
+    "suffixNum": "2",
+    "name": "Şemam",
+    "refName": "Şemam",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "semam_2"
+    ]
+  },
+  {
+    "id": "semzin_2",
+    "baseId": "semzin",
+    "suffixNum": "2",
+    "name": "Şemzîn",
+    "refName": "Şemzîn",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "semzin_2"
+    ]
+  },
+  {
+    "id": "sepol_2",
+    "baseId": "sepol",
+    "suffixNum": "2",
+    "name": "Şepol",
+    "refName": "Şepol",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sepol_2"
+    ]
+  },
+  {
+    "id": "ser_2",
+    "baseId": "ser",
+    "suffixNum": "2",
+    "name": "Şêr",
+    "refName": "Şêr",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "ser_2"
+    ]
+  },
+  {
+    "id": "sere_2",
+    "baseId": "sere",
+    "suffixNum": "2",
+    "name": "Şêrê",
+    "refName": "Şêrê",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sere_2"
+    ]
+  },
+  {
+    "id": "sergel_2",
+    "baseId": "sergel",
+    "suffixNum": "2",
+    "name": "Şêrgel",
+    "refName": "Şêrgel",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sergel_2"
+    ]
+  },
+  {
+    "id": "serhat_3",
+    "baseId": "serhat",
+    "suffixNum": "3",
+    "name": "Şêrhat",
+    "refName": "Şêrhat",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "serhat_3"
+    ]
+  },
+  {
+    "id": "serin_3",
+    "baseId": "serin",
+    "suffixNum": "3",
+    "name": "Şêrîn",
+    "refName": "Şêrîn",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "serin_3"
+    ]
+  },
+  {
+    "id": "serko_3",
+    "baseId": "serko",
+    "suffixNum": "3",
+    "name": "Şêrko",
+    "refName": "Şêrko",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "serko_3"
+    ]
+  },
+  {
+    "id": "sermin_2",
+    "baseId": "sermin",
+    "suffixNum": "2",
+    "name": "Şermîn",
+    "refName": "Şermîn",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sermin_2"
+    ]
+  },
+  {
+    "id": "sero_3",
+    "baseId": "sero",
+    "suffixNum": "3",
+    "name": "Şêro",
+    "refName": "Şêro",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sero_3"
+    ]
+  },
+  {
+    "id": "serwan_3",
+    "baseId": "serwan",
+    "suffixNum": "3",
+    "name": "Şêrwan",
+    "refName": "Şêrwan",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "serwan_3"
+    ]
+  },
+  {
+    "id": "serzad_2",
+    "baseId": "serzad",
+    "suffixNum": "2",
+    "name": "Şêrzad",
+    "refName": "Şêrzad",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "serzad_2"
+    ]
+  },
+  {
+    "id": "silan_2",
+    "baseId": "silan",
+    "suffixNum": "2",
+    "name": "Şîlan",
+    "refName": "Şîlan",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "silan_2"
+    ]
+  },
+  {
+    "id": "sine_2",
+    "baseId": "sine",
+    "suffixNum": "2",
+    "name": "Şine",
+    "refName": "Sîne",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 2,
+    "allVariationsIds": [
+      "sine_2",
+      "sine"
+    ]
+  },
+  {
+    "id": "sino_2",
+    "baseId": "sino",
+    "suffixNum": "2",
+    "name": "Şîno",
+    "refName": "Şîno",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sino_2"
+    ]
+  },
+  {
+    "id": "sivan_2",
+    "baseId": "sivan",
+    "suffixNum": "2",
+    "name": "Şivan",
+    "refName": "Şivan",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sivan_2"
+    ]
+  },
+  {
+    "id": "siyar_2",
+    "baseId": "siyar",
+    "suffixNum": "2",
+    "name": "Şiyar",
+    "refName": "Şiyar",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "siyar_2"
+    ]
+  },
+  {
+    "id": "sores_2",
+    "baseId": "sores",
+    "suffixNum": "2",
+    "name": "Şoreş",
+    "refName": "Şoreş",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sores_2"
+    ]
+  },
+  {
+    "id": "soxan_2",
+    "baseId": "soxan",
+    "suffixNum": "2",
+    "name": "Şoxan",
+    "refName": "Şoxan",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "soxan_2"
+    ]
+  },
+  {
+    "id": "tanya_2",
+    "baseId": "tanya",
+    "suffixNum": "2",
+    "name": "Tanya",
+    "refName": "Tanya",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "tanya_2"
+    ]
+  },
+  {
+    "id": "tara_2",
+    "baseId": "tara",
+    "suffixNum": "2",
+    "name": "Tara",
+    "refName": "Tara",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "tara_2"
+    ]
+  },
+  {
+    "id": "telar_2",
+    "baseId": "telar",
+    "suffixNum": "2",
+    "name": "Telar",
+    "refName": "Telar",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "telar_2"
+    ]
+  },
+  {
+    "id": "tirej_2",
+    "baseId": "tirej",
+    "suffixNum": "2",
+    "name": "Tîrêj",
+    "refName": "Tîrêj",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "tirej_2"
+    ]
+  },
+  {
+    "id": "tiroj_2",
+    "baseId": "tiroj",
+    "suffixNum": "2",
+    "name": "Tîroj",
+    "refName": "Tîroj",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "tiroj_2"
+    ]
+  },
+  {
+    "id": "tolhildan_2",
+    "baseId": "tolhildan",
+    "suffixNum": "2",
+    "name": "Tolhildan",
+    "refName": "Tolhildan",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "tolhildan_2"
+    ]
+  },
+  {
+    "id": "trife_2",
+    "baseId": "trife",
+    "suffixNum": "2",
+    "name": "Trîfe",
+    "refName": "Trîfe",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "trife_2"
+    ]
+  },
+  {
+    "id": "vejin_2",
+    "baseId": "vejin",
+    "suffixNum": "2",
+    "name": "Vejîn",
+    "refName": "Vejîn",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "vejin_2"
+    ]
+  },
+  {
+    "id": "vinda_2",
+    "baseId": "vinda",
+    "suffixNum": "2",
+    "name": "Vînda",
+    "refName": "Vînda",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "vinda_2"
+    ]
+  },
+  {
+    "id": "viyan_2",
+    "baseId": "viyan",
+    "suffixNum": "2",
+    "name": "Viyan",
+    "refName": "Viyan",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "viyan_2"
+    ]
+  },
+  {
+    "id": "wala_2",
+    "baseId": "wala",
+    "suffixNum": "2",
+    "name": "WALA",
+    "refName": "WALA",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "wala_2"
+    ]
+  },
+  {
+    "id": "wane_2",
+    "baseId": "wane",
+    "suffixNum": "2",
+    "name": "Wane",
+    "refName": "Wane",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "wane_2"
+    ]
+  },
+  {
+    "id": "wirya_2",
+    "baseId": "wirya",
+    "suffixNum": "2",
+    "name": "Wirya",
+    "refName": "Wirya",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "wirya_2"
+    ]
+  },
+  {
+    "id": "xebat_2",
+    "baseId": "xebat",
+    "suffixNum": "2",
+    "name": "Xebat",
+    "refName": "Xebat",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "xebat_2"
+    ]
+  },
+  {
+    "id": "xezal_2",
+    "baseId": "xezal",
+    "suffixNum": "2",
+    "name": "Xezal",
+    "refName": "Xezal",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "xezal_2"
+    ]
+  },
+  {
+    "id": "xezem_2",
+    "baseId": "xezem",
+    "suffixNum": "2",
+    "name": "Xezêm",
+    "refName": "Xezêm",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "xezem_2"
+    ]
+  },
+  {
+    "id": "xonas_2",
+    "baseId": "xonas",
+    "suffixNum": "2",
+    "name": "Xonas",
+    "refName": "Xonas",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "xonas_2"
+    ]
+  },
+  {
+    "id": "xonaw_2",
+    "baseId": "xonaw",
+    "suffixNum": "2",
+    "name": "Xonaw",
+    "refName": "Xonaw",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "xonaw_2"
+    ]
+  },
+  {
+    "id": "xozge_2",
+    "baseId": "xozge",
+    "suffixNum": "2",
+    "name": "Xozge",
+    "refName": "Xozge",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "xozge_2"
+    ]
+  },
+  {
+    "id": "xwededa_2",
+    "baseId": "xwededa",
+    "suffixNum": "2",
+    "name": "Xwedêda",
+    "refName": "Xwedêda",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "xwededa_2"
+    ]
+  },
+  {
+    "id": "yadigar_2",
+    "baseId": "yadigar",
+    "suffixNum": "2",
+    "name": "Yadîgar",
+    "refName": "Yadîgar",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "yadigar_2"
+    ]
+  },
+  {
+    "id": "yara_2",
+    "baseId": "yara",
+    "suffixNum": "2",
+    "name": "Yara",
+    "refName": "Yara",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "yara_2"
+    ]
+  },
+  {
+    "id": "yarin_2",
+    "baseId": "yarin",
+    "suffixNum": "2",
+    "name": "Yarîn",
+    "refName": "Yarîn",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "yarin_2"
+    ]
+  },
+  {
+    "id": "yezda_2",
+    "baseId": "yezda",
+    "suffixNum": "2",
+    "name": "Yezda",
+    "refName": "Yezda",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "yezda_2"
+    ]
+  },
+  {
+    "id": "zagros_2",
+    "baseId": "zagros",
+    "suffixNum": "2",
+    "name": "Zagros",
+    "refName": "Zagros",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "zagros_2"
+    ]
+  },
+  {
+    "id": "zal_2",
+    "baseId": "zal",
+    "suffixNum": "2",
+    "name": "Zal",
+    "refName": "Zal",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "zal_2"
+    ]
+  },
+  {
+    "id": "zalin_2",
+    "baseId": "zalin",
+    "suffixNum": "2",
+    "name": "Zalîn",
+    "refName": "Zalîn",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "zalin_2"
+    ]
+  },
+  {
+    "id": "zana_2",
+    "baseId": "zana",
+    "suffixNum": "2",
+    "name": "Zana",
+    "refName": "Zana",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "zana_2"
+    ]
+  },
+  {
+    "id": "zanyar_2",
+    "baseId": "zanyar",
+    "suffixNum": "2",
+    "name": "Zanyar",
+    "refName": "Zanyar",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "zanyar_2"
+    ]
+  },
+  {
+    "id": "zayele_2",
+    "baseId": "zayele",
+    "suffixNum": "2",
+    "name": "Zayele",
+    "refName": "Zayele",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "zayele_2"
+    ]
+  },
+  {
+    "id": "zaza_2",
+    "baseId": "zaza",
+    "suffixNum": "2",
+    "name": "Zaza",
+    "refName": "Zaza",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "zaza_2"
+    ]
+  },
+  {
+    "id": "zebar_2",
+    "baseId": "zebar",
+    "suffixNum": "2",
+    "name": "Zêbar",
+    "refName": "Zêbar",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "zebar_2"
+    ]
+  },
+  {
+    "id": "zerdest_2",
+    "baseId": "zerdest",
+    "suffixNum": "2",
+    "name": "Zerdeşt",
+    "refName": "Zerdeşt",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "zerdest_2"
+    ]
+  },
+  {
+    "id": "zimnako_2",
+    "baseId": "zimnako",
+    "suffixNum": "2",
+    "name": "Zimnako",
+    "refName": "Zimnako",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "zimnako_2"
+    ]
+  },
+  {
+    "id": "zin_2",
+    "baseId": "zin",
+    "suffixNum": "2",
+    "name": "Zîn",
+    "refName": "Zîn",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 2,
+    "allVariationsIds": [
+      "zin_2",
+      "zin"
+    ]
+  },
+  {
+    "id": "zinar_2",
+    "baseId": "zinar",
+    "suffixNum": "2",
+    "name": "Zinar",
+    "refName": "Zinar",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "zinar_2"
+    ]
+  },
+  {
+    "id": "ziryan_2",
+    "baseId": "ziryan",
+    "suffixNum": "2",
+    "name": "Ziryan",
+    "refName": "Ziryan",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "ziryan_2"
+    ]
+  },
+  {
+    "id": "zorab_2",
+    "baseId": "zorab",
+    "suffixNum": "2",
+    "name": "Zorab",
+    "refName": "Zorab",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "zorab_2"
+    ]
+  },
+  {
+    "id": "zoran_2",
+    "baseId": "zoran",
+    "suffixNum": "2",
+    "name": "Zoran",
+    "refName": "Zoran",
+    "gender": "male",
+    "refGender": "male",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "zoran_2"
+    ]
+  },
+  {
+    "id": "zozan_2",
+    "baseId": "zozan",
+    "suffixNum": "2",
+    "name": "Zozan",
+    "refName": "Zozan",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "zozan_2"
+    ]
+  },
+  {
+    "id": "sin_3",
+    "baseId": "sin",
+    "suffixNum": "3",
+    "name": "Şîn",
+    "refName": "Şîn",
+    "gender": "female",
+    "refGender": "female",
+    "refMeanings": {},
+    "meaningDiffs": {
+      "tr": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "en": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "de": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      },
+      "ar": {
+        "ref": "",
+        "current": "",
+        "isDifferent": false
+      }
+    },
+    "hasMeaningDiff": false,
+    "variationsCount": 1,
+    "allVariationsIds": [
+      "sin_3"
+    ]
+  }
+]
