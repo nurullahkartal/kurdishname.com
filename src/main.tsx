@@ -6,12 +6,17 @@ import './index.css';
 import { registerSW } from 'virtual:pwa-register';
 
 // Auto-register service worker for PWA support
-registerSW({ immediate: true });
+// Wrapped in try/catch so a failed SW registration never blocks the React app.
+try {
+  registerSW({ immediate: true });
+} catch (err) {
+  console.warn('[SW] Service worker registration skipped:', err);
+}
 
-
-
-createRoot(document.getElementById('root')!).render(
+const rootElement = document.getElementById('root')!;
+createRoot(rootElement).render(
   <StrictMode>
     <App />
   </StrictMode>
 );
+

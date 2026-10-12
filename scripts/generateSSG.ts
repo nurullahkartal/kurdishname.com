@@ -467,6 +467,8 @@ function isInvalidUrl(u: string): boolean {
   return decoded.split('/').some(s => s === 'yok' || s === 'undefined' || s === 'null');
 }
 
+const distDir = path.join(__dirname, '../dist');
+
 function safeWriteFile(outPath: string, content: string, url: string) {
   if (isInvalidUrl(url)) {
     console.log(`⚠️ Hatalı URL sitemape sızması engellendi: ${url}`);
@@ -474,6 +476,20 @@ function safeWriteFile(outPath: string, content: string, url: string) {
   }
   ensureDirectoryExistence(outPath);
   fs.writeFileSync(outPath, content, 'utf-8');
+
+  // Cloudflare Pages Clean URLs Optimization:
+  // Write both /path/index.html AND /path.html.
+  // /path.html enables Cloudflare Pages to serve clean non-trailing-slash URLs directly with 200 OK
+  // without triggering a 308 redirect loop with our trailing-slash canonicalizer!
+  const normalizedOut = outPath.replace(/\\/g, '/');
+  if (normalizedOut.endsWith('/index.html')) {
+    const parentDir = path.dirname(outPath);
+    if (path.resolve(parentDir) !== path.resolve(distDir)) {
+      const cleanHtmlPath = `${parentDir}.html`;
+      ensureDirectoryExistence(cleanHtmlPath);
+      fs.writeFileSync(cleanHtmlPath, content, 'utf-8');
+    }
+  }
 }
 
 // Pre-render executor
@@ -481,7 +497,6 @@ async function runSSGPrerendering() {
   console.log('💎 Starting Lightning-Fast Premium Statik Site Generation (SSG / Prerendering)...');
   const start = Date.now();
 
-  const distDir = path.join(__dirname, '../dist');
   const templatePath = path.join(distDir, 'index.html');
 
   if (!fs.existsSync(templatePath)) {
@@ -623,10 +638,14 @@ async function runSSGPrerendering() {
     const outPath = path.join(distDir, `${lang}/index.html`);
     safeWriteFile(outPath, finalHtml, canonical);
     
-    // ROOT DOMAIN SEO FIX: Write TR home page to the absolute root to fix empty tags
+    // ROOT DOMAIN SEO FIX: Write TR home page to the absolute root with root canonical
     if (lang === 'tr') {
       const rootPath = path.join(distDir, 'index.html');
-      safeWriteFile(rootPath, finalHtml, canonical);
+      const rootHtml = finalHtml.replace(
+        '<link data-rh="true" rel="canonical" href="https://kurdishname.com/tr"/>',
+        '<link data-rh="true" rel="canonical" href="https://kurdishname.com/"/>'
+      );
+      safeWriteFile(rootPath, rootHtml, `${DOMAIN}/`);
     }
   });
 
@@ -1254,308 +1273,16 @@ async function runSSGPrerendering() {
     });
   });
 
-  // ──── PHASE 5: DYNAMIC NAME DETAIL PAGES (40,956 pages) ────
-  console.log('⌛ Pre-rendering Name Details (40k+ pages)... This runs in seconds!');
-  const nameDetailStart = Date.now();
-
-  // Create an in-memory index by gender and letter to speed up Similar Names search
-  const namesByGenderAndLetter: Record<string, Record<string, any[]>> = {
-    female: {},
-    male: {},
-    unisex: {}
-  };
-
-  allNames.forEach(n => {
-    const gen = n.gender || 'female';
-    const letter = (n.letter || 'A').toUpperCase().trim();
-    if (!namesByGenderAndLetter[gen]) {
-      namesByGenderAndLetter[gen] = {};
-    }
-    if (!namesByGenderAndLetter[gen][letter]) {
-      namesByGenderAndLetter[gen][letter] = [];
-    }
-    namesByGenderAndLetter[gen][letter].push(n);
-  });
-
-  // Helper to find alike names statically in O(1) matching NameDetail.tsx score logic
-  function getAlikeNamesStatic(found: any): any[] {
-    const gen = found.gender || 'female';
-    const letter = (found.letter || 'A').toUpperCase().trim();
-    const candidatePool = namesByGenderAndLetter[gen][letter] || [];
-    
-    // Sort and calculate score matching exactly NameDetail.tsx scoring rules
-    const scored = candidatePool
-      .filter(n => n.id !== found.id)
-      .map(n => {
-        let score = 0;
-        if (n.letter === found.letter) score += 10;
-        if (n.origin === found.origin) score += 20;
-        if (n.tags && found.tags) {
-          const shared = n.tags.filter((t: string) => found.tags?.includes(t));
-          score += shared.length * 5;
-        }
-        return { ...n, score };
-      })
-      .sort((a, b) => b.score - a.score)
-      .slice(0, 8);
-
-    return scored;
-  }
-
-  // Richness score helper to rank names for static generation prioritization
-  function getNameRichnessScore(n: any): number {
-    let score = 0;
-    if (n.meaning) score += n.meaning.length * 1.5;
-    if (n.meaning_en) score += n.meaning_en.length * 1.0;
-    if (n.meaning_de) score += n.meaning_de.length * 1.0;
-    if (n.meaning_ar) score += n.meaning_ar.length * 1.0;
-    if (n.description) score += n.description.length * 1.0;
-    if (n.tags && n.tags.length > 0) score += n.tags.length * 20;
-    return score;
-  }
-
-  // Pre-calculate and sort names to find the top zengin ones
-  const namesSortedByRichness = [...allNames]
-    .map(n => ({ id: n.id, score: getNameRichnessScore(n) }))
-    .sort((a, b) => b.score - a.score);
-
-  const top3000Tr = new Set(namesSortedByRichness.slice(0, 3000).map(n => n.id));
-  const top1000De = new Set(namesSortedByRichness.slice(0, 1000).map(n => n.id));
-  const top1000Ar = new Set(namesSortedByRichness.slice(0, 1000).map(n => n.id));
-
-  // Pre-generate all name details loop
-  let counter = 0;
-  for (const nameItem of allNames) {
-    const encodedId = encodeURIComponent(nameItem.id);
-    const isFemale = nameItem.gender === 'female';
-    const isUnisex = nameItem.gender === 'unisex';
-
-    // Get alike names statically
-    const alikeNames = getAlikeNamesStatic(nameItem);
-
-    LANGUAGES.filter(lang => {
-      if (lang === 'en') return true; // en points to all names
-      if (lang === 'tr' && top3000Tr.has(nameItem.id)) return true;
-      if (lang === 'de' && top1000De.has(nameItem.id)) return true;
-      if (lang === 'ar' && top1000Ar.has(nameItem.id)) return true;
-      return false;
-    }).forEach(lang => {
-      const t = (key: string, fallback?: string) => getTranslation(lang, key, fallback);
-      const routes = routeTranslations[lang];
-      const nameSegment = routes.name;
-      const canonical = `${DOMAIN}/${lang}/${nameSegment}/${encodedId}`;
-
-      const alternates = LANGUAGES.map(l => ({
-        lang: l,
-        url: `${DOMAIN}/${l}/${routeTranslations[l].name}/${encodedId}`
-      }));
-
-      // Gather translation fields
-      const meaning = getLocalizedMeaning(nameItem, lang);
-      const origin = getLocalizedOrigin(nameItem.origin, lang);
-      const genderText = isUnisex ? t('gender_unisex', 'Unisex') : (isFemale ? t('gender_female', 'Kız') : t('gender_male', 'Erkek'));
-      const genderColor = isUnisex ? 'var(--accent)' : (isFemale ? 'var(--female)' : 'var(--male)');
-
-      const description = buildMetaDescription(lang, nameItem.name, genderText, origin, meaning);
-
-      // Render Breadcrumbs
-      const targetGenderSegment = isFemale ? 'kiz' : 'erkek';
-      const breadcrumbHTML = `
-        <nav style="font-size: 0.75rem; color: var(--text-faint); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.3rem;">
-          <a href="${generatePath(lang, null)}" style="color: var(--accent); text-decoration: none;">KurdishName</a>
-          <span>›</span>
-          <a href="${generatePath(lang, 'category', targetGenderSegment)}" style="color: var(--accent); text-decoration: none;">
-            ${isUnisex ? t('gender_unisex', 'Unisex') : (isFemale ? t('nav_girls') : t('nav_boys'))}
-          </a>
-          <span>›</span>
-          <span style="color: ${genderColor}; font-weight: 700;">${nameItem.name}</span>
-        </nav>
-      `;
-
-      // Render Hero Section
-      const heroHTML = `
-        <section style="background: linear-gradient(135deg, ${genderColor}05, ${genderColor}10); border: 1px solid ${genderColor}20; border-radius: var(--r-xl); padding: clamp(2rem, 8vw, 4rem) 2rem; margin-bottom: 3rem; text-align: center; position: relative; overflow: hidden;">
-          <div style="position: absolute; top: -10%; right: -5%; font-size: 12rem; font-weight: 900; opacity: 0.03; color: ${genderColor}; pointer-events: none;">
-            ${nameItem.letter || nameItem.name.charAt(0)}
-          </div>
-          <div style="position: relative; z-index: 1;">
-            <div style="display: inline-flex; align-items: center; justify-content: center; width: 80px; height: 80px; border-radius: 50%; background: ${genderColor}15; color: ${genderColor}; margin-bottom: 1.5rem; font-size: 2rem; font-weight: 800;">
-              ${nameItem.letter || nameItem.name.charAt(0)}
-            </div>
-            <h1 style="font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 900; color: ${genderColor}; margin-bottom: 0.5rem; letter-spacing: -0.04em;">
-              ${nameItem.name}
-            </h1>
-            <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-              <span class="${isUnisex ? 'badge-unisex' : (isFemale ? 'badge-female' : 'badge-male')}" style="padding: 0.5rem 1.25rem; border-radius: 100px; background: ${genderColor}15; font-size: 0.875rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">
-                ${genderText}
-              </span>
-              <span style="padding: 0.5rem 1.25rem; border-radius: 100px; background: var(--surface-2); color: var(--text-muted); font-size: 0.875rem; font-weight: 600;">
-                ${origin}
-              </span>
-            </div>
-          </div>
-        </section>
-      `;
-
-      // Render Alike names sidebar list for crawlability
-      const alikeHTML = alikeNames.length > 0 ? `
-        <div style="background: var(--surface); padding: 1.5rem; border-radius: var(--r-lg); border: 1px solid var(--border);">
-          <h3 style="font-size: 1rem; font-weight: 800; margin-bottom: 1rem;">${t('detail_similar_rich', 'Benzer İsimler')?.replaceAll('{{name}}', nameItem.name).replaceAll('{{genderText}}', genderText)}</h3>
-          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-            ${alikeNames.slice(0, 5).map(an => `
-              <a href="${generatePath(lang, 'name', an.id)}" style="display: block; padding: 0.75rem; border-radius: var(--r-sm); background: var(--bg); text-decoration: none; color: var(--text); font-size: 0.875rem; font-weight: 600; border: 1px solid var(--border-dim);">
-                ${an.name}
-              </a>
-            `).join('\n')}
-          </div>
-        </div>
-      ` : '';
-
-      // Link Silo Card
-      const linkSiloCardHTML = `
-        <div style="background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.25rem; margin-top: 2rem; margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 0.875rem;">
-          <span style="font-size: 1.25rem;">🔗</span>
-          <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); margin: 0;">
-            ${t('name_silo_prefix', 'Bebeğiniz için anlamlı bir ad arıyorsanız, daha fazla ')}
-            <a href="${generatePath(lang, 'category', targetGenderSegment)}" style="color: ${genderColor}; font-weight: 700; text-decoration: underline;">
-              ${isFemale ? t('nav_girls') : t('nav_boys')}
-            </a>
-            ${t('name_silo_suffix', ' rehberimizi keşfedin, köken ve telaffuz analizlerini yan yana karşılaştırın.')}
-          </p>
-        </div>
-      `;
-
-      // Render FAQs
-      const faqs = [
-        {
-          question: lang === 'tr' ? `${nameItem.name} isminin anlamı nedir?` : `What is the meaning of the name ${nameItem.name}?`,
-          answer: lang === 'tr' ? `${nameItem.name} ismi; ${origin} kökenli bir isim olup, şu anlama gelmektedir: ${meaning}` : `The name ${nameItem.name} is of ${origin} origin and is defined as: ${meaning}`
-        },
-        {
-          question: lang === 'tr' ? `${nameItem.name} isminin kökeni nedir?` : `What is the origin of the name ${nameItem.name}?`,
-          answer: lang === 'tr' ? `${nameItem.name} isminin kökeni ${origin} kökenlidir ve geleneksel Kürt kültürü ile derin bağlara sahiptir.` : `The name ${nameItem.name} originates from ${origin} cultural and historical roots.`
-        }
-      ];
-
-      const faqsHTML = faqs.map((faq, index) => `
-        <div style="background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 0.75rem;">
-          <div style="width: 100%; padding: 1.125rem 1.5rem; display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 0.95rem; color: var(--text);">
-            <span>${faq.question}</span>
-          </div>
-          <div style="padding: 0.875rem 1.5rem 1.25rem; font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); border-top: 1px solid var(--border);">
-            ${faq.answer}
-          </div>
-        </div>
-      `).join('\n');
-
-      const nameContent = `
-        ${breadcrumbHTML}
-        ${heroHTML}
-
-        <div style="display: grid; grid-template-columns: 1fr 300px; gap: 2.5rem; align-items: flex-start;">
-          <!-- Main details block -->
-          <div style="min-width: 0;">
-            <section style="background: var(--surface); padding: 2.5rem; border-radius: var(--r-lg); border: 1px solid var(--border); box-shadow: 0 10px 30px -10px rgba(0,0,0,0.05); margin-bottom: 2rem;">
-              <h2 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1.5rem; color: var(--text);">
-                ${nameItem.name} ${t('detail_meaning', 'İsminin Anlamı')}
-              </h2>
-              <p style="font-size: 1.25rem; line-height: 1.7; color: var(--text); margin-bottom: 2rem; font-weight: 500;">
-                ${meaning}
-              </p>
-              <div style="padding: 1.5rem; background: var(--bg); border-radius: var(--r-md); border-left: 4px solid ${genderColor};">
-                <p style="font-size: 0.9375rem; color: var(--text-muted); line-height: 1.6; margin: 0;">
-                  ${description}
-                </p>
-              </div>
-            </section>
-
-            <!-- Quick info tags -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem;">
-              <div style="padding: 1.5rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-md);">
-                <h4 style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-faint); margin-bottom: 0.5rem; font-weight: 700;">${t('detail_gender')}</h4>
-                <p style="font-weight: 700; color: ${genderColor};">${genderText}</p>
-              </div>
-              <div style="padding: 1.5rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-md);">
-                <h4 style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-faint); margin-bottom: 0.5rem; font-weight: 700;">${t('detail_origin')}</h4>
-                <p style="font-weight: 700;">${origin}</p>
-              </div>
-              <div style="padding: 1.5rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-md);">
-                <h4 style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-faint); margin-bottom: 0.5rem; font-weight: 700;">${t('detail_letter')}</h4>
-                <p style="font-weight: 700;">${nameItem.letter || nameItem.name.charAt(0)}</p>
-              </div>
-            </div>
-
-            <!-- Silo Link Card -->
-            ${linkSiloCardHTML}
-
-            <!-- FAQ Section -->
-            <section style="margin-top: 3rem;">
-              <h2 class="section-heading" style="margin-bottom: 1.25rem;">
-                ${t('faq_title', 'Sıkça Sorulan Sorular')?.replace('{{name}}', nameItem.name)}
-              </h2>
-              ${faqsHTML}
-            </section>
-          </div>
-
-          <!-- Sidebar section -->
-          <aside style="position: sticky; top: 2rem;">
-            ${alikeHTML}
-          </aside>
-        </div>
-      `;
-
-      const bodyHtml = renderLayout(lang, nameContent, {
-        pageTitle: nameItem.name,
-        pageDesc: description,
-        canonicalUrl: canonical,
-        alternates: alternates
-      });
-
-      // DefinedTerm Schema
-      const definedTermSchema = JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'DefinedTerm',
-        'name': nameItem.name,
-        'description': description,
-        'inLanguage': 'ku',
-        'termCode': nameItem.id.toString(),
-        'url': canonical,
-        'mainEntityOfPage': canonical,
-        'inDefinedTermSet': {
-          '@type': 'DefinedTermSet',
-          'name': 'KurdishName Dictionary',
-          'description': 'Comprehensive dictionary of Kurdish names, meanings, and origins.',
-          'url': 'https://kurdishname.com'
-        }
-      });
-
-      const finalHtml = replaceHeadMetadata(templateHtml, {
-        title: `${t('seo_name_title', { name: nameItem.name })?.replaceAll('{{name}}', nameItem.name)} | KurdishName`,
-        description: description,
-        canonical: canonical,
-        lang: lang,
-        alternates: alternates,
-        schemas: [definedTermSchema]
-      }).replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
-
-      const outPath = path.join(distDir, `${lang}/${nameSegment}/${encodedId}/index.html`);
-      safeWriteFile(outPath, finalHtml, canonical);
-    });
-
-    counter++;
-    if (counter % 2000 === 0) {
-      console.log(`  ✓ Pre-rendered ${counter}/${allNames.length} names...`);
-    }
-  }
+  // ──── PHASE 5: DYNAMIC SSR WITH CLOUDFLARE KV (Static generation eliminated) ────
+  console.log('⚡ Dynamic Names SSR mode active: Name detail pages will be rendered on-demand by Cloudflare Functions SSR + KV.');
 
   const end = Date.now();
-  const nameDetailEnd = Date.now();
   console.log(`\n🎉 SSG Prerendering Completed successfully in ${((end - start) / 1000).toFixed(1)} seconds!`);
   console.log(`  - Homepages Pre-rendered: 4 pages`);
   console.log(`  - Static Pages Pre-rendered: ${staticKeys.length * LANGUAGES.length} pages`);
   console.log(`  - Categories & Themes Pre-rendered: ${28} pages`);
   console.log(`  - Blog Listings & Posts Pre-rendered: ${(1 + blogPosts.length) * LANGUAGES.length} pages`);
-  console.log(`  - Dynamic Names Pre-rendered: ${allNames.length * LANGUAGES.filter(lang => lang === 'en').length} pages (took ${((nameDetailEnd - nameDetailStart) / 1000).toFixed(1)} seconds)`);
+  console.log(`  - Dynamic Names: 40,880 URLs served on-demand via Cloudflare Functions SSR!`);
 }
 
 runSSGPrerendering().catch((error) => {

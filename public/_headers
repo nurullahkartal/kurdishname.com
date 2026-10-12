@@ -28,3 +28,8 @@
 /assets/*
   Access-Control-Allow-Origin: https://kurdishname.com
   Cross-Origin-Resource-Policy: same-origin
+
+/data/names/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  Content-Type: application/json; charset=utf-8
+

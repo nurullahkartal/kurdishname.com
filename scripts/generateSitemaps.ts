@@ -92,8 +92,35 @@ function escapeXml(str: string): string {
 }
 
 function isInvalidUrl(u: string): boolean {
-  const decoded = decodeURIComponent(u.toLowerCase());
-  return decoded.split('/').some(s => s === 'yok' || s === 'undefined' || s === 'null');
+  // 1. Tip ve uzunluk koruması
+  if (!u || typeof u !== 'string') return true;
+  if (u.length > 2048) return true;
+
+  // 2. Malformed percent-encoding'i güvenli yakala
+  // (decodeURIComponent bazen "%GG" gibi bozuk string'lerde throw eder)
+  let decoded: string;
+  try {
+    decoded = decodeURIComponent(u).toLowerCase();
+  } catch {
+    return true;
+  }
+
+  // 3. Mutlaka tam URL olmalı (http:// veya https://)
+  if (!decoded.startsWith('https://') && !decoded.startsWith('http://')) return true;
+
+  // 4. Placeholder segmentler (eski kontrol)
+  const segments = decoded.split('/');
+  if (segments.some(s => s === 'yok' || s === 'undefined' || s === 'null')) return true;
+
+  // 5. Path içinde çift slash (protokol hariç)
+  const path = decoded.replace(/^https?:\/\//, '');
+  if (path.includes('//')) return true;
+
+  // 6. Decode sonrası boşluk veya kesinlikle geçersiz karakterler
+  // (raw space, açı parantezi, tırnak, brace, pipe, ters slash)
+  if (/[\s<>"'{}|\\^`]/.test(decoded)) return true;
+
+  return false;
 }
 
 // Helper to create a single URL entry with hreflang alternate links

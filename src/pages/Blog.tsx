@@ -56,21 +56,23 @@ export default function Blog() {
         </div>
 
         {/* Premium SEO Block */}
-        <section className="mt-16 content-card bg-gradient-to-br from-[var(--surface-alt)] to-[var(--surface)] border border-[var(--border)] p-8 sm:p-12 rounded-3xl shadow-lg relative overflow-hidden select-text">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--accent)]/5 rounded-full blur-3xl pointer-events-none"></div>
-          <h2 className="text-2xl font-serif font-black mb-6 tracking-tight flex items-center gap-3 select-none">
-            <span className="w-8 h-[2px] bg-[var(--accent)]"></span>
-            Kürtçe İsim Kültürü ve Edebiyatı Rehberi
-          </h2>
-          <div className="prose-premium text-sm opacity-95 leading-relaxed space-y-6 text-[var(--text)]">
-            <p>
-              Mezopotamya'nın kadim dillerinden biri olan Kürtçe, bünyesinde barındırdığı zengin fonetik yapı ve edebi derinlikle anne ve baba adaylarına eşsiz bir isim hazinesi sunmaktadır. Bebeğiniz için en anlamlı adımı atarken araştırılan <Link to={generatePath(lng, 'category', 'kiz')} className="font-bold hover:text-[var(--accent)] transition-colors text-[var(--accent)]">kürtçe kız isimleri</Link>, <Link to={generatePath(lng, 'category', 'kiz')} className="font-bold hover:text-[var(--accent)] transition-colors text-[var(--accent)]">kürtçe kız adları</Link> ve <Link to={generatePath(lng, 'category', 'kiz')} className="font-bold hover:text-[var(--accent)] transition-colors text-[var(--accent)]">kürtçe isimler kız</Link> kategorileri, doğadan, asil destanlardan ve köklü Mezopotamya kültüründen süzülen naif kelimelerle şekillenmektedir. Aynı şekilde güç, cesaret ve bilgeliği simgeleyen <Link to={generatePath(lng, 'category', 'erkek')} className="font-bold hover:text-[var(--accent)] transition-colors text-[var(--accent)]">kürtçe erkek isimleri</Link> ve <Link to={generatePath(lng, 'category', 'kiz')} className="font-bold hover:text-[var(--accent)] transition-colors text-[var(--accent)]">kürtçe bebek isimleri</Link> de melodik tınılarıyla çocuklarınızın karakterine bir ömür boyu asalet katacak niteliktedir. Günümüzde geleneksel bağları koparmadan modern dünya dillerine de uyum sağlayan <Link to={generatePath(lng, 'category', 'kiz')} className="font-bold hover:text-[var(--accent)] transition-colors text-[var(--accent)]">kürtçe modern isimler</Link>, hem telaffuz kolaylığı hem de estetik derinliğiyle son yılların en çok tercih edilen trendleri arasında yer almaktadır.
-            </p>
-            <p>
-              Doğru adı seçme sürecinde ailelere rehberlik eden platformumuz, binlerce yıllık etimolojik kökleri inceleyerek en güncel isim veritabanını bir araya getirmektedir. Aradığınız ismin anlamını, kökenini ve kültürel bağlarını saniyeler içinde keşfetmenizi sağlayan gelişmiş <Link to={generatePath(lng, 'finder')} className="font-bold hover:text-[var(--accent)] transition-colors text-[var(--accent)]">kürtçe isim bulucu</Link> aracımız sayesinde, harf, cinsiyet ve tema filtrelemeleriyle aradığınız mükemmel seçeneğe kolayca ulaşabilirsiniz. Kürt edebiyatının en seçkin divan motiflerinden, bilge Dengbêj stranlarından ve Mezopotamya’nın yüce dağlarından ilham alan bu **kürtçe kelimeler ve anlamları**, sadece birer isim olmanın ötesinde çocuklarınıza geleceğe gururla taşıyacakları kültürel birer miras sunmaktadır.
-            </p>
-          </div>
-        </section>
+        {lng === 'tr' && (
+          <section className="mt-16 content-card bg-gradient-to-br from-[var(--surface-alt)] to-[var(--surface)] border border-[var(--border)] p-8 sm:p-12 rounded-3xl shadow-lg relative overflow-hidden select-text">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--accent)]/5 rounded-full blur-3xl pointer-events-none"></div>
+            <h2 className="text-2xl font-serif font-black mb-6 tracking-tight flex items-center gap-3 select-none">
+              <span className="w-8 h-[2px] bg-[var(--accent)]"></span>
+              Kürtçe İsim Kültürü ve Edebiyatı Rehberi
+            </h2>
+            <div className="prose-premium text-sm opacity-95 leading-relaxed space-y-6 text-[var(--text)]">
+              <p>
+                Mezopotamya'nın kadim dillerinden biri olan Kürtçe, bünyesinde barındırdığı zengin fonetik yapı ve edebi derinlikle anne ve baba adaylarına eşsiz bir isim hazinesi sunmaktadır. Bebeğiniz için en anlamlı adımı atarken araştırılan <Link to={generatePath(lng, 'category', 'kiz')} className="font-bold hover:text-[var(--accent)] transition-colors text-[var(--accent)]">kürtçe kız isimleri</Link>, <Link to={generatePath(lng, 'category', 'kiz')} className="font-bold hover:text-[var(--accent)] transition-colors text-[var(--accent)]">kürtçe kız adları</Link> ve <Link to={generatePath(lng, 'category', 'kiz')} className="font-bold hover:text-[var(--accent)] transition-colors text-[var(--accent)]">kürtçe isimler kız</Link> kategorileri, doğadan, asil destanlardan ve köklü Mezopotamya kültüründen süzülen naif kelimelerle şekillenmektedir. Aynı şekilde güç, cesaret ve bilgeliği simgeleyen <Link to={generatePath(lng, 'category', 'erkek')} className="font-bold hover:text-[var(--accent)] transition-colors text-[var(--accent)]">kürtçe erkek isimleri</Link> ve <Link to={generatePath(lng, 'category', 'kiz')} className="font-bold hover:text-[var(--accent)] transition-colors text-[var(--accent)]">kürtçe bebek isimleri</Link> de melodik tınılarıyla çocuklarınızın karakterine bir ömür boyu asalet katacak niteliktedir. Günümüzde geleneksel bağları koparmadan modern dünya dillerine de uyum sağlayan <Link to={generatePath(lng, 'category', 'kiz')} className="font-bold hover:text-[var(--accent)] transition-colors text-[var(--accent)]">kürtçe modern isimler</Link>, hem telaffuz kolaylığı hem de estetik derinliğiyle son yılların en çok tercih edilen trendleri arasında yer almaktadır.
+              </p>
+              <p>
+                Doğru adı seçme sürecinde ailelere rehberlik eden platformumuz, binlerce yıllık etimolojik kökleri inceleyerek en güncel isim veritabanını bir araya getirmektedir. Aradığınız ismin anlamını, kökenini ve kültürel bağlarını saniyeler içinde keşfetmenizi sağlayan gelişmiş <Link to={generatePath(lng, 'finder')} className="font-bold hover:text-[var(--accent)] transition-colors text-[var(--accent)]">kürtçe isim bulucu</Link> aracımız sayesinde, harf, cinsiyet ve tema filtrelemeleriyle aradığınız mükemmel seçeneğe kolayca ulaşabilirsiniz. Kürt edebiyatının en seçkin divan motiflerinden, bilge Dengbêj stranlarından ve Mezopotamya’nın yüce dağlarından ilham alan bu **kürtçe kelimeler ve anlamları**, sadece birer isim olmanın ötesinde çocuklarınıza geleceğe gururla taşıyacakları kültürel birer miras sunmaktadır.
+              </p>
+            </div>
+          </section>
+        )}
       </main>
     </>
   );

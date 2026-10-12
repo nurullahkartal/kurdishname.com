@@ -18,6 +18,90 @@ interface FAQItem {
 
 function getFAQForPost(postId: string, lng: string): FAQItem[] {
   const faqs: Record<string, Record<string, FAQItem[]>> = {
+    "kuranda-gecen-kurtce-kiz-isimleri": {
+      tr: [
+        {
+          question: "Kur'an-ı Kerim'de Kürtçe kız isimleri geçer mi?",
+          answer: "Kur'an-ı Kerim Arapça vahyedildiği için metninde doğrudan saf Kürtçe kökenli isimler yer almaz. Ancak İslam dini isimlerin Kur'an'da geçmesini şart koşmaz; anlamı güzel, ahlaki ve hayırlı olan tüm Kürtçe isimlerin konulması caiz ve güzeldir."
+        },
+        {
+          question: "İslami hassasiyete ve Kürt kültürüne uygun en popüler kız isimleri hangileridir?",
+          answer: "Rojda (gündoğumu), Ronahî (ışık, nur), Dilşad (huzurlu gönül), Evîn (sevgi) ve Hêvî (umut) gibi anlamı asil ve aydınlık olan isimler hem dini fıtrata hem de zengin Kürt kültürüne tam uyum sağlar."
+        }
+      ],
+      en: [
+        {
+          question: "Are there Kurdish girl names mentioned in the Quran?",
+          answer: "Because the Quran was revealed in Arabic, no purely Kurdish names appear directly in the text. However, Islamic tradition does not require a name to be in the Quran; any name with an honorable, pure, and positive meaning is permissible and respected."
+        },
+        {
+          question: "Which Kurdish girl names are most compatible with Islamic values?",
+          answer: "Names such as Rojda (sunrise), Ronahi (light, illumination), Dilshad (joyful heart), Evin (love, compassion), and Hevi (hope) convey beautiful virtues that fully align with Islamic principles."
+        }
+      ],
+      de: [
+        {
+          question: "Gibt es kurdische Mädchennamen im Koran?",
+          answer: "Da der Koran auf Arabisch offenbart wurde, kommen rein kurdische Namen darin nicht vor. Im Islam ist es jedoch keine Pflicht, einen koranischen Namen zu wählen; jeder Name mit einer reinen und edlen Bedeutung ist vollkommen erlaubt."
+        },
+        {
+          question: "Welche kurdischen Mädchennamen harmonieren am besten mit islamischen Werten?",
+          answer: "Namen wie Rojda (Sonnenaufgang), Ronahi (Licht), Dilshad (frohes Herz), Evin (Liebe) und Hevi (Hoffnung) besitzen erhabene Bedeutungen im Einklang mit spirituellen Werten."
+        }
+      ],
+      ar: [
+        {
+          question: "هل وردت أسماء بنات كردية في القرآن الكريم؟",
+          answer: "نزل القرآن الكريم باللغة العربية، لذا لا توجد فيه أسماء ذات أصل كردي خالص. ومع ذلك، لا تشترط الشريعة ورود الاسم في القرآن، بل يجوز استحسان أي اسم ذي معنى نبيل وطيب."
+        },
+        {
+          question: "ما هي أجمل الأسماء الكردية المتوافقة مع القيم الإسلامية؟",
+          answer: "أسماء مثل روجدا (الضياء)، روناهي (النور)، دلشاد (القلب المنشرح)، إيفين (المحبة)، وهيفي (الأمل والرجاء) تحمل أسمى المعاني الأخلاقية والجمالية."
+        }
+      ]
+    },
+    "eski-ve-tarihi-kurt-erkek-isimleri": {
+      tr: [
+        {
+          question: "Tarihi ve mitolojik Kürtçe erkek isimleri hangileridir?",
+          answer: "Kawa (Demirci Kawa efsanesi), Ferhad (sabır ve vefa mimarı), Serhad (hudut boyu bekçisi), Berxwedan (direniş) ve Mîran (beyler, liderler) tarihten günümüze uzanan en köklü Kürt erkek isimlerindendir."
+        },
+        {
+          question: "Eski Kürt erkek isimleri ne tür temalardan beslenir?",
+          answer: "Bu isimler genellikle Newroz mitolojisinden, Mezopotamya doğa güçlerinden (fırtına, dağ zirveleri, yağmur) ve tarihsel Kürt beyliklerindeki kahramanlık anlatılarından beslenir."
+        }
+      ],
+      en: [
+        {
+          question: "Which are the most prominent historical and mythological Kurdish boy names?",
+          answer: "Kawa (the legendary blacksmith), Ferhad (symbol of perseverance), Serhad (border protector), Berxwedan (resistance), and Miran (noble princes) are among the most revered historical Kurdish names."
+        },
+        {
+          question: "What themes inspire ancient Kurdish boy names?",
+          answer: "They are primarily inspired by Newroz liberation legends, majestic Mesopotamian natural forces (blizzards, rivers, storms), and chivalric epics of historical principalities."
+        }
+      ],
+      de: [
+        {
+          question: "Welche sind die bekanntesten historischen und mythologischen kurdischen Jungennamen?",
+          answer: "Kawa (der legendäre Schmied), Ferhad (Symbol für Treue und Ausdauer), Serhad (Grenzwächter), Berxwedan (Widerstand) und Miran (Fürsten) gehören zu den traditionsreichsten Vornamen."
+        },
+        {
+          question: "Aus welchen Quellen schöpfen traditionelle kurdische Namen ihre Inspiration?",
+          answer: "Sie schöpfen ihre Kraft vor allem aus der Newroz-Mythologie, den Naturgewalten des Zagros-Gebirges und heroischen Volksüberlieferungen."
+        }
+      ],
+      ar: [
+        {
+          question: "ما هي أشهر أسماء الذكور الكردية التاريخية والأسطورية؟",
+          answer: "تعد أسماء كاوا (البطل الأسطوري)، فرهاد (رمز الوفاء والصبر)، سرهاد (حامي الحدود)، برخودان (المقاومة والكرامة)، وميران (الأمراء النبلاء) من أعرق الأسماء الكردية التاريخية."
+        },
+        {
+          question: "ما هي الروافد التي تستمد منها أسماء الأولاد الكردية القديمة معانيها؟",
+          answer: "تستمد قوتها من ملاحم نوروز التحررية، قوى الطبيعة الجبلية الشامخة في زاغروس، وسير الفروسية في الإمارات التاريخية."
+        }
+      ]
+    },
     "en-cok-tercih-edilen-100-kurtce-erkek-ismi-2026": {
       tr: [
         {

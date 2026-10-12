@@ -7,7 +7,7 @@ export function trackCompareEvent(name1Id: string, name2Id: string, score: numbe
   // In a real production system, this would send an event to a backend or analytics service.
   // For now, we simulate logging to localStorage or console for local testing.
   if (typeof window !== 'undefined') {
-    console.log(`[CompareEngine] Logged comparison: ${name1Id} vs ${name2Id} (Score: ${score})`);
+    if (import.meta.env.DEV) console.log(`[CompareEngine] Logged comparison: ${name1Id} vs ${name2Id} (Score: ${score})`);
     
     // Simulate log accumulation
     try {

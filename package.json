@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build && tsx scripts/build.ts",
+    "build": "tsx scripts/generateNamesJson.ts && vite build && tsx scripts/generateAssetManifest.ts && tsx scripts/build.ts",
     "deploy": "npx wrangler pages deploy dist --project-name=kurdishname --branch=kurdishname --commit-dirty=true",
     "preview": "vite preview",
     "clean": "rm -rf dist",
@@ -27,8 +27,8 @@
     "react-helmet-async": "^3.0.0",
     "react-i18next": "^17.0.6",
     "react-markdown": "^10.1.0",
-    "react-router-dom": "^7.14.2",
-    "vite": "^6.2.3"
+    "react-router-dom": "^7.18.2",
+    "vite": "^6.4.3"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
@@ -36,7 +36,7 @@
     "tailwindcss": "^4.1.14",
     "tsx": "^4.7.0",
     "typescript": "~5.8.2",
-    "vite": "^6.2.3",
+    "vite": "^6.4.3",
     "vite-plugin-pwa": "^1.3.0"
   }
 }
