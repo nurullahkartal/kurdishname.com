@@ -28,7 +28,7 @@ export const onRequest: PagesFunction<Env> = async (context) => {
     return await context.next();
   }
 
-  // 2. Trailing slash 301 Permanent Redirect (e.g. /tr/ -> /tr, /en/ -> /en)
+  // 2. Trailing slash 301 Permanent Redirect (e.g. /tr/ -> /tr, /en/ -> /en, /tr/isim/bahoz/ -> /tr/isim/bahoz)
   if (path !== '/' && path.endsWith('/')) {
     const cleanUrl = new URL(context.request.url);
     cleanUrl.pathname = path.slice(0, -1);

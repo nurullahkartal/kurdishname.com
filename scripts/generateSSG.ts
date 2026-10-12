@@ -467,6 +467,8 @@ function isInvalidUrl(u: string): boolean {
   return decoded.split('/').some(s => s === 'yok' || s === 'undefined' || s === 'null');
 }
 
+const distDir = path.join(__dirname, '../dist');
+
 function safeWriteFile(outPath: string, content: string, url: string) {
   if (isInvalidUrl(url)) {
     console.log(`⚠️ Hatalı URL sitemape sızması engellendi: ${url}`);
@@ -474,6 +476,20 @@ function safeWriteFile(outPath: string, content: string, url: string) {
   }
   ensureDirectoryExistence(outPath);
   fs.writeFileSync(outPath, content, 'utf-8');
+
+  // Cloudflare Pages Clean URLs Optimization:
+  // Write both /path/index.html AND /path.html.
+  // /path.html enables Cloudflare Pages to serve clean non-trailing-slash URLs directly with 200 OK
+  // without triggering a 308 redirect loop with our trailing-slash canonicalizer!
+  const normalizedOut = outPath.replace(/\\/g, '/');
+  if (normalizedOut.endsWith('/index.html')) {
+    const parentDir = path.dirname(outPath);
+    if (path.resolve(parentDir) !== path.resolve(distDir)) {
+      const cleanHtmlPath = `${parentDir}.html`;
+      ensureDirectoryExistence(cleanHtmlPath);
+      fs.writeFileSync(cleanHtmlPath, content, 'utf-8');
+    }
+  }
 }
 
 // Pre-render executor
@@ -481,7 +497,6 @@ async function runSSGPrerendering() {
   console.log('💎 Starting Lightning-Fast Premium Statik Site Generation (SSG / Prerendering)...');
   const start = Date.now();
 
-  const distDir = path.join(__dirname, '../dist');
   const templatePath = path.join(distDir, 'index.html');
 
   if (!fs.existsSync(templatePath)) {

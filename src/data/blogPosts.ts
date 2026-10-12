@@ -11,6 +11,64 @@ export interface BlogPostMeta {
 
 export const blogPostsRegistry: BlogPostMeta[] = [
   {
+    "id": "kuranda-gecen-kurtce-kiz-isimleri",
+    "date": "2026-10-12",
+    "author": "KurdishName Editorial",
+    "slugs": {
+      "tr": "kuranda-gecen-kurtce-kiz-isimleri-ve-anlamlari",
+      "en": "kurdish-islamic-girl-names-and-quranic-analysis",
+      "de": "kurdische-islamische-maedchennamen-bedeutung",
+      "ar": "اسماء-بنات-كردية-اسلامية-ومعانيها"
+    },
+    "tags": {
+      "tr": ["Kur'an", "Kız İsimleri", "Kürtçe İsimler", "İslami İsimler", "Dini İsimler"],
+      "en": ["Quran", "Girl Names", "Kurdish Names", "Islamic Names", "Spiritual Names"],
+      "de": ["Koran", "Mädchennamen", "Kurdische Namen", "Islamische Namen", "Spirituelle Namen"],
+      "ar": ["القرآن", "أسماء بنات", "أسماء كردية", "أسماء إسلامية", "أسماء دينية"]
+    },
+    "titles": {
+      "tr": "Kur'an'da Geçen Kürtçe Kız İsimleri Var Mı? (Detaylı Analiz & İslami Kürt İsimleri)",
+      "en": "Are There Kurdish Girl Names in the Quran? (Linguistic Analysis & Islamic Kurdish Names)",
+      "de": "Gibt es kurdische Mädchennamen im Koran? (Linguistische Analyse & Islamische kurdische Namen)",
+      "ar": "هل توجد أسماء بنات كردية في القرآن الكريم؟ (تحليل لغوي وأسماء كردية إسلامية)"
+    },
+    "descriptions": {
+      "tr": "Kur'an'da Kürtçe kız ismi geçer mi sorusunun dilbilimsel cevabı, İslam fıtratına uygun en güzel Kürtçe kız isimleri ve anlamları rehberi.",
+      "en": "Linguistic analysis of whether Kurdish girl names appear in the Quran, plus the most meaningful Islamic and culturally compatible Kurdish names.",
+      "de": "Linguistische Analyse kurdischer Mädchennamen im Koran sowie die schönsten islamisch konformen kurdischen Vornamen mit Bedeutung.",
+      "ar": "تحليل لغوي حول وجود أسماء كردية في القرآن الكريم، مع دليل لأجمل أسماء البنات الكردية المتوافقة مع القيم الإسلامية ومعانيها."
+    }
+  },
+  {
+    "id": "eski-ve-tarihi-kurt-erkek-isimleri",
+    "date": "2026-10-12",
+    "author": "KurdishName Editorial",
+    "slugs": {
+      "tr": "eski-ve-tarihi-kurt-erkek-isimleri-ve-kokenleri",
+      "en": "ancient-and-historical-kurdish-boy-names",
+      "de": "alte-und-historische-kurdische-jungennamen",
+      "ar": "اسماء-ذكور-كردية-قديمة-وتاريخية"
+    },
+    "tags": {
+      "tr": ["Tarihi İsimler", "Erkek İsimleri", "Eski İsimler", "Mitoloji", "Kawa"],
+      "en": ["Historical Names", "Boy Names", "Ancient Names", "Mythology", "Kawa"],
+      "de": ["Historische Namen", "Jungennamen", "Alte Namen", "Mythologie", "Kawa"],
+      "ar": ["أسماء تاريخية", "أسماء أولاد", "أسماء قديمة", "أساطير", "كاوا"]
+    },
+    "titles": {
+      "tr": "Eski ve Tarihi Kürt Erkek İsimleri: Mitolojik ve Tarihsel Kökenler",
+      "en": "Ancient and Historical Kurdish Boy Names: Mythological & Epic Origins",
+      "de": "Alte und historische kurdische Jungennamen: Mythologie und Wurzeln",
+      "ar": "أسماء ذكور كردية قديمة وتاريخية: أصول أسطورية وملحمية عريقة"
+    },
+    "descriptions": {
+      "tr": "Tarihten ve Mezopotamya mitolojisinden süzülen en eski Kürtçe erkek isimleri, kökenleri ve taşıdıkları destansı anlamlar rehberi.",
+      "en": "A comprehensive guide to ancient Kurdish boy names rooted in history, Mesopotamian mythology, and legendary epic folklore.",
+      "de": "Ein Leitfaden zu traditionellen kurdischen Jungennamen aus der Geschichte Mesopotamiens und ihren tiefen mythologischen Bedeutungen.",
+      "ar": "دليل شامل لأعرق أسماء الأولاد الكردية المستمدة من التاريخ، أساطير بلاد ما بين النهرين، والملاحم الكردية الخالدة."
+    }
+  },
+  {
     "id": "kurt-kulturunde-isimlerin-onemi-ve-etimolojisi",
     "date": "2026-07-05",
     "author": "KurdishName Editorial",
