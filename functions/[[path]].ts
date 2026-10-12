@@ -192,6 +192,78 @@ function normalizeSlug(slug: string): string {
     .replace(/[^a-z0-9\u0600-\u06FF]/g, ""); // alfanümerik & arapça dışını sil
 }
 
+const LETTER_CACHE = new Map<string, Map<string, any>>();
+
+const BASE_TO_LETTERS: Record<string, string[]> = {
+  C: ['C', 'Ç'],
+  E: ['E', 'Ê'],
+  I: ['I', 'Î'],
+  S: ['S', 'Ş'],
+  U: ['U', 'Û']
+};
+
+async function lookupNameFromAssetsOrKV(
+  context: EventContext<Env, any, any>,
+  lang: string,
+  slug: string
+): Promise<any | null> {
+  if (!slug || !/^[a-z0-9_-]+$/.test(slug)) {
+    // Non-ASCII slug: check KV directly if available
+    const raw = await kvGetSafe(context.env.NAMES_KV, `name:${lang}:${slug}`, 500, 1)
+      || await kvGetSafe(context.env.NAMES_KV, `name:${slug}`, 500, 1);
+    if (raw) {
+      try { return JSON.parse(raw); } catch (_) {}
+    }
+    return null;
+  }
+
+  const firstChar = slug.charAt(0).toUpperCase();
+  const candidateLetters = BASE_TO_LETTERS[firstChar] || [firstChar];
+
+  if (context.env.ASSETS) {
+    let assetsLoaded = false;
+    for (const letter of candidateLetters) {
+      let map = LETTER_CACHE.get(letter);
+      if (!map) {
+        try {
+          const assetUrl = new URL(`/data/names/${encodeURIComponent(letter)}.json`, context.request.url);
+          const res = await context.env.ASSETS.fetch(new Request(assetUrl.toString()));
+          if (res.ok) {
+            const arr: any[] = await res.json();
+            map = new Map<string, any>();
+            for (const item of arr) {
+              if (item && item.id) {
+                map.set(String(item.id).toLowerCase(), item);
+              }
+            }
+            LETTER_CACHE.set(letter, map);
+          }
+        } catch (err) {
+          console.error(`[ASSETS] Failed to load ${letter}.json`, err);
+        }
+      }
+      if (map) {
+        assetsLoaded = true;
+        const found = map.get(slug);
+        if (found) return found;
+      }
+    }
+    // If ASSETS loaded the authoritative letter JSONs and the slug isn't in them, it does not exist
+    if (assetsLoaded) {
+      return null;
+    }
+  }
+
+  // Fallback to KV if ASSETS binding is not present
+  const kv = context.env.NAMES_KV;
+  const raw = await kvGetSafe(kv, `name:${lang}:${slug}`, 500, 1)
+    || await kvGetSafe(kv, `name:${slug}`, 500, 1);
+  if (raw) {
+    try { return JSON.parse(raw); } catch (_) {}
+  }
+  return null;
+}
+
 async function renderNamePage(
   context: EventContext<Env, any, any>,
   lang: string,
@@ -199,80 +271,47 @@ async function renderNamePage(
   rawSlug: string
 ): Promise<Response> {
   const decodedSlug = decodeURIComponent(rawSlug).trim().toLowerCase();
-  const kv = context.env.NAMES_KV;
 
-  let nameData: any = null;
-
-  // 1. Deneme: dile özel anahtar (timeout + retry korumalı)
-  let raw = await kvGetSafe(kv, `name:${lang}:${decodedSlug}`, 500, 1);
-
-  // 2. Fallback: dil-bağımsız anahtar
-  if (!raw) {
-    raw = await kvGetSafe(kv, `name:${decodedSlug}`, 500, 1);
-  }
-
-  if (raw) {
-    try {
-      nameData = JSON.parse(raw);
-    } catch (parseErr) {
-      console.error(`[KV] JSON parse failed for slug=${decodedSlug}`, parseErr);
-    }
-  }
+  // 1. Direct lookup from static CDN JSON (or KV fallback)
+  let nameData: any = await lookupNameFromAssetsOrKV(context, lang, decodedSlug);
 
   if (!nameData) {
     // Fallback 1: Normalize edilmiş slug ile ara
     const normalized = normalizeSlug(decodedSlug);
     if (normalized !== decodedSlug && normalized.length > 0) {
-      const altRaw = await kvGetSafe(kv, `name:${lang}:${normalized}`, 500, 1)
-        || await kvGetSafe(kv, `name:${normalized}`, 500, 1);
-      if (altRaw) {
-        try {
-          const alt = JSON.parse(altRaw);
-          const canonicalSlug = alt.id || normalized;
-          return Response.redirect(
-            `${DOMAIN}/${lang}/${typeSegment}/${encodeURIComponent(canonicalSlug)}`,
-            301
-          );
-        } catch (_) {}
+      const alt = await lookupNameFromAssetsOrKV(context, lang, normalized);
+      if (alt) {
+        const canonicalSlug = alt.id || normalized;
+        return Response.redirect(
+          `${DOMAIN}/${lang}/${typeSegment}/${encodeURIComponent(canonicalSlug)}`,
+          301
+        );
       }
     }
 
     // Fallback 1b: Sondaki 'i' ekini silip dene (nisba eki varyasyonu: afrini -> afrin)
     const noTrailingI = normalized.replace(/i$/, "");
     if (noTrailingI !== normalized && noTrailingI.length > 2) {
-      const altRaw2 = await kvGetSafe(kv, `name:${lang}:${noTrailingI}`, 500, 1)
-        || await kvGetSafe(kv, `name:${noTrailingI}`, 500, 1);
-      if (altRaw2) {
-        try {
-          const alt2 = JSON.parse(altRaw2);
-          const canonicalSlug2 = alt2.id || noTrailingI;
-          return Response.redirect(
-            `${DOMAIN}/${lang}/${typeSegment}/${encodeURIComponent(canonicalSlug2)}`,
-            301
-          );
-        } catch (_) {}
+      const alt2 = await lookupNameFromAssetsOrKV(context, lang, noTrailingI);
+      if (alt2) {
+        const canonicalSlug2 = alt2.id || noTrailingI;
+        return Response.redirect(
+          `${DOMAIN}/${lang}/${typeSegment}/${encodeURIComponent(canonicalSlug2)}`,
+          301
+        );
       }
     }
 
     // Fallback 2: Sondaki _2, _3, -2, -3 suffix'lerini sil ve dene
     const suffixStripped = decodedSlug.replace(/[-_]\d+$/, "");
     if (suffixStripped !== decodedSlug && suffixStripped.length > 0) {
-      const baseRaw = await kvGetSafe(kv, `name:${lang}:${suffixStripped}`, 500, 1)
-        || await kvGetSafe(kv, `name:${suffixStripped}`, 500, 1);
-      if (baseRaw) {
-        try {
-          const base = JSON.parse(baseRaw);
-          const canonicalSlug = base.id || suffixStripped;
-          return Response.redirect(
-            `${DOMAIN}/${lang}/${typeSegment}/${encodeURIComponent(canonicalSlug)}`,
-            301
-          );
-        } catch (_) {
-          return Response.redirect(
-            `${DOMAIN}/${lang}/${typeSegment}/${encodeURIComponent(suffixStripped)}`,
-            301
-          );
-        }
+      const base = await lookupNameFromAssetsOrKV(context, lang, suffixStripped);
+      if (base) {
+        const canonicalSlug = base.id || suffixStripped;
+        return Response.redirect(
+          `${DOMAIN}/${lang}/${typeSegment}/${encodeURIComponent(canonicalSlug)}`,
+          301
+        );
       }
     }
 
