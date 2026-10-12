@@ -1,153 +1,153 @@
 {
-  "generatedAt": "2026-10-12T21:12:10.787Z",
+  "generatedAt": "2026-10-12T22:18:46.886060+00:00",
   "totalLetters": 29,
-  "totalNames": 10237,
-  "totalBytes": 9319259,
+  "totalNames": 10233,
+  "totalBytes": 10487215,
   "letters": [
     {
       "letter": "A",
       "count": 1080,
-      "bytes": 943690
+      "bytes": 1060471
     },
     {
       "letter": "B",
-      "count": 1063,
-      "bytes": 989500
+      "count": 1062,
+      "bytes": 1107534
     },
     {
       "letter": "C",
-      "count": 375,
-      "bytes": 330120
-    },
-    {
-      "letter": "D",
-      "count": 913,
-      "bytes": 829947
-    },
-    {
-      "letter": "E",
-      "count": 407,
-      "bytes": 360556
-    },
-    {
-      "letter": "F",
-      "count": 187,
-      "bytes": 168623
-    },
-    {
-      "letter": "G",
-      "count": 448,
-      "bytes": 391720
-    },
-    {
-      "letter": "H",
-      "count": 758,
-      "bytes": 690106
-    },
-    {
-      "letter": "J",
-      "count": 120,
-      "bytes": 108322
-    },
-    {
-      "letter": "K",
-      "count": 435,
-      "bytes": 395623
-    },
-    {
-      "letter": "L",
-      "count": 205,
-      "bytes": 187283
-    },
-    {
-      "letter": "M",
-      "count": 465,
-      "bytes": 421571
-    },
-    {
-      "letter": "N",
-      "count": 482,
-      "bytes": 442159
-    },
-    {
-      "letter": "O",
-      "count": 8,
-      "bytes": 7827
-    },
-    {
-      "letter": "P",
-      "count": 388,
-      "bytes": 348551
-    },
-    {
-      "letter": "Q",
-      "count": 12,
-      "bytes": 10843
-    },
-    {
-      "letter": "R",
-      "count": 639,
-      "bytes": 627180
-    },
-    {
-      "letter": "S",
-      "count": 424,
-      "bytes": 402998
-    },
-    {
-      "letter": "T",
-      "count": 282,
-      "bytes": 259062
-    },
-    {
-      "letter": "U",
-      "count": 3,
-      "bytes": 2963
-    },
-    {
-      "letter": "V",
-      "count": 65,
-      "bytes": 59243
-    },
-    {
-      "letter": "W",
-      "count": 34,
-      "bytes": 32335
-    },
-    {
-      "letter": "X",
-      "count": 321,
-      "bytes": 294155
-    },
-    {
-      "letter": "Y",
-      "count": 46,
-      "bytes": 42027
-    },
-    {
-      "letter": "Z",
-      "count": 459,
-      "bytes": 416112
+      "count": 376,
+      "bytes": 371972
     },
     {
       "letter": "Ç",
       "count": 106,
-      "bytes": 95411
+      "bytes": 107400
+    },
+    {
+      "letter": "D",
+      "count": 914,
+      "bytes": 933394
+    },
+    {
+      "letter": "E",
+      "count": 407,
+      "bytes": 406122
     },
     {
       "letter": "Ê",
       "count": 2,
-      "bytes": 1744
+      "bytes": 1970
+    },
+    {
+      "letter": "F",
+      "count": 186,
+      "bytes": 188103
+    },
+    {
+      "letter": "G",
+      "count": 445,
+      "bytes": 437460
+    },
+    {
+      "letter": "H",
+      "count": 757,
+      "bytes": 775460
     },
     {
       "letter": "Î",
       "count": 2,
-      "bytes": 1817
+      "bytes": 2069
+    },
+    {
+      "letter": "J",
+      "count": 120,
+      "bytes": 122395
+    },
+    {
+      "letter": "K",
+      "count": 430,
+      "bytes": 439508
+    },
+    {
+      "letter": "L",
+      "count": 205,
+      "bytes": 211204
+    },
+    {
+      "letter": "M",
+      "count": 463,
+      "bytes": 473191
+    },
+    {
+      "letter": "N",
+      "count": 481,
+      "bytes": 498842
+    },
+    {
+      "letter": "O",
+      "count": 8,
+      "bytes": 8815
+    },
+    {
+      "letter": "P",
+      "count": 387,
+      "bytes": 391449
+    },
+    {
+      "letter": "Q",
+      "count": 12,
+      "bytes": 12186
+    },
+    {
+      "letter": "R",
+      "count": 647,
+      "bytes": 719726
+    },
+    {
+      "letter": "S",
+      "count": 424,
+      "bytes": 453080
     },
     {
       "letter": "Ş",
-      "count": 508,
-      "bytes": 457771
+      "count": 509,
+      "bytes": 520379
+    },
+    {
+      "letter": "T",
+      "count": 282,
+      "bytes": 292986
+    },
+    {
+      "letter": "U",
+      "count": 3,
+      "bytes": 3332
+    },
+    {
+      "letter": "V",
+      "count": 65,
+      "bytes": 66736
+    },
+    {
+      "letter": "W",
+      "count": 34,
+      "bytes": 36125
+    },
+    {
+      "letter": "X",
+      "count": 320,
+      "bytes": 329467
+    },
+    {
+      "letter": "Y",
+      "count": 46,
+      "bytes": 47485
+    },
+    {
+      "letter": "Z",
+      "count": 460,
+      "bytes": 468354
     }
   ]
 }

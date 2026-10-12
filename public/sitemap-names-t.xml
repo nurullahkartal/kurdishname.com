@@ -481,46 +481,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kurdishname.com/tr/isim/tarani</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim/tarani"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/name/tarani"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/name/tarani"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/%D8%A7%D8%B3%D9%85/tarani"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kurdishname.com/en/name/tarani</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim/tarani"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/name/tarani"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/name/tarani"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/%D8%A7%D8%B3%D9%85/tarani"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kurdishname.com/de/name/tarani</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim/tarani"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/name/tarani"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/name/tarani"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/%D8%A7%D8%B3%D9%85/tarani"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://kurdishname.com/ar/%D8%A7%D8%B3%D9%85/tarani</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim/tarani"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/name/tarani"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/name/tarani"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/%D8%A7%D8%B3%D9%85/tarani"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://kurdishname.com/tr/isim/tara</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim/tara"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/name/tara"/>
@@ -556,6 +516,46 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/name/tara"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/name/tara"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/%D8%A7%D8%B3%D9%85/tara"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/tr/isim/tarani</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim/tarani"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/name/tarani"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/name/tarani"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/%D8%A7%D8%B3%D9%85/tarani"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/en/name/tarani</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim/tarani"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/name/tarani"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/name/tarani"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/%D8%A7%D8%B3%D9%85/tarani"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/de/name/tarani</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim/tarani"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/name/tarani"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/name/tarani"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/%D8%A7%D8%B3%D9%85/tarani"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kurdishname.com/ar/%D8%A7%D8%B3%D9%85/tarani</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://kurdishname.com/tr/isim/tarani"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kurdishname.com/en/name/tarani"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kurdishname.com/de/name/tarani"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://kurdishname.com/ar/%D8%A7%D8%B3%D9%85/tarani"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kurdishname.com/"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
