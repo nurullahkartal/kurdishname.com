@@ -15,3 +15,17 @@ names_master.json.bak
 *.csv
 .wrangler/
 .scannerwork/
+
+# Build-time generated manifests (regenerated on every build)
+# functions/_assetManifest.ts intentionally NOT ignored — kept in repo as placeholder
+
+# Audit / diagnostic reports
+audit_reports/
+audit_*.json
+tsc_errors.txt
+audit.txt
+outdated.txt
+
+# Python cache
+__pycache__/
+*.pyc

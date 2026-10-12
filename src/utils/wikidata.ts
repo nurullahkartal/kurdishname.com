@@ -50,14 +50,14 @@ export function extractMeaningKeywords(text: string): string[] {
  * Searches Wikidata for a single query term.
  * Uses wbsearchentities with CORS support.
  */
-async function searchWikidata(query: string, lang: string = "tr"): Promise<string | null> {
+async function searchWikidata(query: string, lang: string = "tr", signal?: AbortSignal): Promise<string | null> {
   const cleanQuery = query.trim();
   if (!cleanQuery) return null;
   
   const url = `https://www.wikidata.org/w/api.php?action=wbsearchentities&search=${encodeURIComponent(cleanQuery)}&language=${lang}&format=json&limit=1&origin=*`;
   
   try {
-    const response = await fetch(url);
+    const response = await fetch(url, { signal });
     if (!response.ok) return null;
     const data = await response.json();
     if (data && data.search && data.search.length > 0) {
@@ -65,6 +65,8 @@ async function searchWikidata(query: string, lang: string = "tr"): Promise<strin
       return `https://www.wikidata.org/wiki/${entity.id}`;
     }
   } catch (error) {
+    // AbortError'ları sessizce yut — kullanıcı sayfadan ayrıldı, hata değil
+    if ((error as Error).name === 'AbortError') return null;
     console.warn(`Wikidata search failed for query: "${cleanQuery}"`, error);
   }
   return null;
@@ -74,7 +76,13 @@ async function searchWikidata(query: string, lang: string = "tr"): Promise<strin
  * Fetches Wikidata sameAs URLs for a name and its meaning/origin keywords.
  * Includes LocalStorage and In-Memory caching.
  */
-export async function getWikidataSameAs(name: string, meaning: string, origin: string, lang: string = "tr"): Promise<string[]> {
+export async function getWikidataSameAs(
+  name: string,
+  meaning: string,
+  origin: string,
+  lang: string = "tr",
+  signal?: AbortSignal
+): Promise<string[]> {
   const cacheKey = `${name.toLowerCase()}_${lang}`;
   
   // 1. Check in-memory cache
@@ -115,17 +123,21 @@ export async function getWikidataSameAs(name: string, meaning: string, origin: s
   const urls: string[] = [];
   const searchPromises = uniqueTerms.map(async (term) => {
     // Attempt language-specific search
-    let url = await searchWikidata(term, lang);
+    let url = await searchWikidata(term, lang, signal);
     
-    // Fallback to English if Turkish returned nothing and language is different
+    // Fallback to English if nothing found and language is different
     if (!url && lang !== "en") {
-      url = await searchWikidata(term, "en");
+      url = await searchWikidata(term, "en", signal);
     }
     
     return url;
   });
   
   const results = await Promise.all(searchPromises);
+
+  // Aborted during the search → don't cache partial/empty results
+  if (signal?.aborted) return [];
+
   results.forEach((url) => {
     if (url && !urls.includes(url)) {
       urls.push(url);

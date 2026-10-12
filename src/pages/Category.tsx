@@ -9,7 +9,7 @@ import { NameData } from "../data/names";
 import { generatePath, getGenderFromSlug, getThemeFromSlug } from "../utils/routes";
 import { searchWithMiniSearch } from "../utils/search";
 import { getLocalizedMeaning, getLocalizedOrigin } from "../utils/localization";
-import { loadNamesForLetter, loadAllNames } from "../utils/nameLoader";
+import { loadNamesForLetter, loadAllNames, availableLetters } from "../utils/nameLoader";
 import { generateContextualHook, SeoHookCategory } from "../utils/seoHook";
 import { isLetterActive } from "../data/config";
 import { useFavorites } from "../context/FavoritesContext";
@@ -85,6 +85,7 @@ export default function Category() {
   const [shuffledNames, setShuffledNames] = useState<NameData[]>([]);
   const [visibleCount, setVisibleCount] = useState(30);
   const observerRef = useRef<IntersectionObserver | null>(null);
+  const [loadingLetter, setLoadingLetter] = useState<string | null>(null);
 
   const shuffleArray = (array: NameData[]) => {
     const newArr = [...array];
@@ -103,12 +104,17 @@ export default function Category() {
       setIsLoading(true);
       try {
         let loaded: NameData[] = [];
-        if (genderCategory === "female" || genderCategory === "male" || themeCategory) {
-          loaded = await loadAllNames();
-        } else if (type && type.length === 1) {
+        if (type && type.length === 1) {
+          // Tek harf kategorisi: sadece o harfi yükle (hızlı)
           loaded = await loadNamesForLetter(type);
         } else {
-          loaded = await loadAllNames();
+          // Cinsiyet/tema kategorisi: hız için ilk açılışta 4 popüler harf yükle
+          // (diğer harfler kullanıcı isterse Part 2'de on-demand inecek)
+          const INITIAL_LETTERS = ["A", "B", "K", "S"];
+          const chunks = await Promise.all(
+            INITIAL_LETTERS.map((l) => loadNamesForLetter(l))
+          );
+          loaded = chunks.flat();
         }
 
         if (active) {
@@ -142,13 +148,64 @@ export default function Category() {
   }, [type, genderCategory, themeCategory]);
 
 
-  const handleSearchChange = (val: string) => {
+  // Harfe tıklanınca: yüklü değilse o harfi indir, sonra göster
+  const handleLetterClick = useCallback(async (letter: string) => {
+    if (letter === "RANDOM") {
+      setSelectedLetter("RANDOM");
+      setVisibleCount(30);
+      return;
+    }
+
+    // Bu harf zaten yüklü mü?
+    const isLetterLoaded = names.some(
+      (n) => n.name.charAt(0).toUpperCase() === letter
+    );
+
+    if (!isLetterLoaded) {
+      setLoadingLetter(letter);
+      try {
+        const chunk = await loadNamesForLetter(letter);
+        if (chunk.length > 0) {
+          setNames((prev) => {
+            const existingIds = new Set(prev.map((n) => n.id));
+            const newOnes = chunk.filter((n) => !existingIds.has(n.id));
+            return [...prev, ...newOnes];
+          });
+        }
+      } catch (err) {
+        console.error("Failed to load letter:", letter, err);
+      } finally {
+        setLoadingLetter(null);
+      }
+    }
+
+    setSelectedLetter(letter);
+    setVisibleCount(30);
+  }, [names]);
+
+  const handleSearchChange = useCallback(async (val: string) => {
     setSearchTerm(val);
     if (val && val.length >= 1) {
       const firstLetter = val.charAt(0).toUpperCase();
-      loadNamesForLetter(firstLetter); // Prefetch
+      const isLetterLoaded = names.some(
+        (n) => n.name.charAt(0).toUpperCase() === firstLetter
+      );
+      if (!isLetterLoaded) {
+        try {
+          const chunk = await loadNamesForLetter(firstLetter);
+          if (chunk.length > 0) {
+            setNames((prev) => {
+              const existingIds = new Set(prev.map((n) => n.id));
+              const newOnes = chunk.filter((n) => !existingIds.has(n.id));
+              return [...prev, ...newOnes];
+            });
+          }
+        } catch (err) {
+          console.error("Search prefetch failed:", err);
+        }
+      }
     }
-  };
+  }, [names]);
 
   useEffect(() => {
     const handler = setTimeout(() => {
@@ -251,9 +308,10 @@ export default function Category() {
     return generateContextualHook(hookSeed, cat, lng, extra);
   }, [type, selectedLetter, searchTerm, lng, genderCategory]);
 
+  // Tüm alfabeyi göster (yüklü olmayanlar basılınca indirilecek)
   const sortedAvailableLetters = useMemo(() => {
-    return Array.from(availableLettersSet).sort((a, b) => a.localeCompare(b, 'tr'));
-  }, [availableLettersSet]);
+    return [...availableLetters].sort((a, b) => a.localeCompare(b, 'tr'));
+  }, []);
 
   const isCategoryActive = useMemo(() => {
     if (!type) return true;
@@ -503,17 +561,16 @@ export default function Category() {
 
                 {sortedAvailableLetters.map(letter => {
                   const isActive = selectedLetter === letter;
+                  const isThisLoading = loadingLetter === letter;
                   return (
                     <button 
                       key={letter} 
-                      onClick={() => {
-                        setSelectedLetter(letter);
-                        setVisibleCount(30);
-                      }}
+                      onClick={() => handleLetterClick(letter)}
                       className={isActive ? "active" : ""}
+                      disabled={isThisLoading}
                       title={`${letter} harfli isimleri göster`}
                     >
-                      {letter}
+                      {isThisLoading ? "…" : letter}
                     </button>
                   );
                 })}

@@ -201,19 +201,27 @@ export default function NameDetail() {
 
   useEffect(() => {
     if (!nameItem) return;
-    let active = true;
+    const controller = new AbortController();
     async function fetchWikidata() {
       try {
-        const links = await getWikidataSameAs(nameItem.name, meaning, translatedOrigin, lng);
-        if (active) {
+        const links = await getWikidataSameAs(
+          nameItem.name,
+          meaning,
+          translatedOrigin,
+          lng,
+          controller.signal
+        );
+        if (!controller.signal.aborted) {
           setWikidataSameAs(links);
         }
       } catch (err) {
-        console.warn("Wikidata fetch failed", err);
+        if ((err as Error).name !== 'AbortError') {
+          console.warn("Wikidata fetch failed", err);
+        }
       }
     }
     fetchWikidata();
-    return () => { active = false; };
+    return () => controller.abort();
   }, [nameItem, meaning, translatedOrigin, lng]);
 
   const genderTextForFaq = useMemo(() => {
@@ -981,15 +989,15 @@ export default function NameDetail() {
             {nameItem.spellings && (
               <div style={{ padding: "1.5rem", background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--r-md)", gridColumn: "1 / -1", display: "flex", flexWrap: "wrap", gap: "2rem" }}>
                 <div style={{ flex: 1, minWidth: "150px" }}>
-                  <h4 style={{ fontSize: "0.75rem", textTransform: "uppercase", color: "var(--text-faint)", marginBottom: "0.5rem", fontWeight: 700 }}>Arap Alfabesi (Sorani/Kurmanji)</h4>
+                  <h4 style={{ fontSize: "0.75rem", textTransform: "uppercase", color: "var(--text-faint)", marginBottom: "0.5rem", fontWeight: 700 }}>{t('spelling_arabic')}</h4>
                   <p style={{ fontWeight: 700, fontSize: "1.2rem" }} className="kurdish-arabic-text">{nameItem.spellings.arabic || "-"}</p>
                 </div>
                 <div style={{ flex: 1, minWidth: "150px" }}>
-                  <h4 style={{ fontSize: "0.75rem", textTransform: "uppercase", color: "var(--text-faint)", marginBottom: "0.5rem", fontWeight: 700 }}>Latin Alfabesi</h4>
+                  <h4 style={{ fontSize: "0.75rem", textTransform: "uppercase", color: "var(--text-faint)", marginBottom: "0.5rem", fontWeight: 700 }}>{t('spelling_latin')}</h4>
                   <p style={{ fontWeight: 700, fontSize: "1.2rem" }}>{nameItem.spellings.latin || nameItem.name}</p>
                 </div>
                 <div style={{ flex: 1, minWidth: "150px" }}>
-                  <h4 style={{ fontSize: "0.75rem", textTransform: "uppercase", color: "var(--text-faint)", marginBottom: "0.5rem", fontWeight: 700 }}>Kiril Alfabesi</h4>
+                  <h4 style={{ fontSize: "0.75rem", textTransform: "uppercase", color: "var(--text-faint)", marginBottom: "0.5rem", fontWeight: 700 }}>{t('spelling_cyrillic')}</h4>
                   <p style={{ fontWeight: 700, fontSize: "1.2rem" }}>{nameItem.spellings.cyrillic || "-"}</p>
                 </div>
               </div>
@@ -998,7 +1006,7 @@ export default function NameDetail() {
             {/* Bento: Etymology */}
             {nameItem[`etymology_${lng as 'tr'|'en'|'de'|'ar'}`] && (
               <div style={{ padding: "1.5rem", background: "var(--surface-alt)", border: "1px solid var(--border)", borderRadius: "var(--r-md)", gridColumn: "1 / -1" }}>
-                <h4 style={{ fontSize: "0.85rem", textTransform: "uppercase", color: "var(--accent)", marginBottom: "0.75rem", fontWeight: 800 }}>Etimoloji ve Kültürel Kökler</h4>
+                <h4 style={{ fontSize: "0.85rem", textTransform: "uppercase", color: "var(--accent)", marginBottom: "0.75rem", fontWeight: 800 }}>{t('spelling_etymology')}</h4>
                 <p style={{ fontWeight: 500, lineHeight: 1.6, color: "var(--text)", fontSize: "0.95rem" }}>
                   {nameItem[`etymology_${lng as 'tr'|'en'|'de'|'ar'}`]}
                 </p>

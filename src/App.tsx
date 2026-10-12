@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { useEffect, lazy, Suspense } from 'react';
@@ -52,23 +52,6 @@ function LanguageSync() {
     }
   }, [location.pathname, i18n]);
 
-  return null;
-}
-
-function ProtectionRules() {
-  useEffect(() => {
-    const handleCopy = (e: ClipboardEvent) => {
-      const selection = window.getSelection();
-      if (!selection || selection.isCollapsed) return;
-      const originalText = selection.toString();
-      if (originalText.length === 0) return;
-      const attribution = `\n\nKaynak: KurdishName — https://kurdishname.com`;
-      e.clipboardData?.setData('text/plain', originalText + attribution);
-      e.preventDefault();
-    };
-    document.addEventListener('copy', handleCopy);
-    return () => document.removeEventListener('copy', handleCopy);
-  }, []);
   return null;
 }
 
@@ -203,6 +186,41 @@ const LEGACY_REDIRECTS: { from: string; to: string }[] = [
   { from: '/ar/kategorie/erkek',   to: '/ar/فئة/ذكور'    },
 ];
 
+const LEGACY_MAP = new Map(LEGACY_REDIRECTS.map(({ from, to }) => [from, to]));
+
+function LegacyRedirectWatcher() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const target = LEGACY_MAP.get(location.pathname);
+    if (target) {
+      navigate(target, { replace: true });
+    }
+  }, [location.pathname, navigate]);
+
+  return null;
+}
+
+function LegacyRedirectHandler() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const target = LEGACY_MAP.get(location.pathname);
+    if (target) {
+      navigate(target, { replace: true });
+    }
+  }, [location.pathname, navigate]);
+
+  const target = LEGACY_MAP.get(location.pathname);
+  if (target) {
+    return <Navigate to={target} replace />;
+  }
+
+  return <LangRedirect />;
+}
+
 export default function App() {
   const languages = ['tr', 'en', 'de', 'ar'] as const;
 
@@ -210,11 +228,11 @@ export default function App() {
     <BrowserRouter>
       <FavoritesProvider>
         <HelmetProvider>
-          <ProtectionRules />
           <Suspense fallback={null}>
             <CustomContextMenu />
           </Suspense>
           <LanguageSync />
+          <LegacyRedirectWatcher />
           <Suspense fallback={
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "300px" }}>
               <p style={{ color: "var(--text-muted)", fontFamily: "var(--font-display)", fontSize: "1rem" }}>
@@ -225,10 +243,8 @@ export default function App() {
             <Routes>
               <Route path="/" element={<LangRedirect />} />
 
-              {/* ── Statik Legacy Redirects: adres çubuğunu anında doğru URL'e değiştirir ── */}
-              {LEGACY_REDIRECTS.map(({ from, to }) => (
-                <Route key={from} path={from} element={<Navigate to={to} replace />} />
-              ))}
+              {/* ── Tek handler: 94 route taraması yerine O(1) Map lookup ── */}
+              <Route path="*" element={<LegacyRedirectHandler />} />
 
               {languages.map(lang => {
                 const routes = routeTranslations[lang];
