@@ -1,3 +1,7 @@
 name = "kurdishname"
 pages_build_output_dir = "dist"
 compatibility_date = "2024-03-01"
+
+[[kv_namespaces]]
+binding = "NAMES_KV"
+id = "e86e9add2478440eb284907f1281875a"
