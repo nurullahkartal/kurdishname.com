@@ -2,6 +2,6 @@
   "/_not-found/page": "/_not-found",
   "/page": "/",
   "/[locale]/page": "/[locale]",
-  "/[locale]/[section]/[slug]/page": "/[locale]/[section]/[slug]",
-  "/[locale]/[section]/page": "/[locale]/[section]"
+  "/[locale]/[section]/page": "/[locale]/[section]",
+  "/[locale]/[section]/[slug]/page": "/[locale]/[section]/[slug]"
 }

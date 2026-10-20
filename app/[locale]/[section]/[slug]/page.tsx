@@ -174,7 +174,7 @@ export function generateStaticParams() {
 
     // 2. Category Routes (29 active letters with count > 0 + 5 themes + 2 genders)
     for (const { letter } of activeLetters) {
-      params.push({ locale, section: categorySection, slug: letter });
+      params.push({ locale, section: categorySection, slug: letter.toLowerCase() });
     }
     params.push({ locale, section: categorySection, slug: routeTranslations[locale].girls });
     params.push({ locale, section: categorySection, slug: routeTranslations[locale].boys });
@@ -256,7 +256,7 @@ export async function generateMetadata({
     if (isLetterValid && upperLetter) {
       title = `${t('cat_title_letter', { letter: upperLetter })} | KurdishName`;
       description = t('cat_desc_letter', { letter: upperLetter });
-      slugByLocale = upperLetter;
+      slugByLocale = upperLetter.toLowerCase();
     } else if (genderCategory === 'female') {
       title = `${t('cat_title_kiz')} | KurdishName`;
       description = t('cat_desc_kiz');

@@ -154,7 +154,9 @@ export const generatePath = (
   if (param) {
     let resolvedParam = param;
     if (key === 'category') {
-      if (param === 'kiz' || param === 'girls' || param === 'maedchen' || param === 'بنات') {
+      if (param.length === 1) {
+        resolvedParam = param.toLowerCase();
+      } else if (param === 'kiz' || param === 'girls' || param === 'maedchen' || param === 'بنات') {
         resolvedParam = routeTranslations[safeLang].girls;
       } else if (param === 'erkek' || param === 'boys' || param === 'jungen' || param === 'ذكور') {
         resolvedParam = routeTranslations[safeLang].boys;
@@ -177,6 +179,13 @@ export const generatePath = (
 
   return path;
 };
+
+export function getAllCategorySlugs(locale: LangKey, activeLetters: string[]): string[] {
+  const letters = activeLetters.map((l) => l.toLowerCase());
+  const genders = [routeTranslations[locale].girls, routeTranslations[locale].boys];
+  const themes = Object.values(themeSlugs[locale]);
+  return [...letters, ...genders, ...themes];
+}
 
 export const switchLanguagePath = (currentPath: string, targetLang: string): string => {
   const safeTargetLang: LangKey = isValidLocale(targetLang) ? targetLang : defaultLocale;
@@ -204,7 +213,7 @@ export const switchLanguagePath = (currentPath: string, targetLang: string): str
     const firstParam = rawFirst.toLowerCase();
 
     const genderKey = reverseRouteMap[firstParam];
-    let resolvedFirst = rawFirst.length === 1 ? rawFirst.toUpperCase() : firstParam;
+    let resolvedFirst = rawFirst.length === 1 ? rawFirst.toLowerCase() : firstParam;
     if (genderKey === 'girls' || genderKey === 'boys') {
       resolvedFirst = routeTranslations[safeTargetLang][genderKey];
     } else {

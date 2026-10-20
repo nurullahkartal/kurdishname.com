@@ -1,23 +1,25 @@
 node_modules/
-build/
+.next/
+out/
 dist/
+build/
 coverage/
-.DS_Store
-*.log
+*.tsbuildinfo
+names_master.json.bak
+names_master.json.bak-*
 .env*
 !.env.example
+.env*.local
+.DS_Store
+*.log
 scratch/
 service_account.json
 gsc_export/
 gsc_reports/
-names_master.json.bak
 *.xlsx
 *.csv
 .wrangler/
 .scannerwork/
-
-# Build-time generated manifests (regenerated on every build)
-# functions/_assetManifest.ts intentionally NOT ignored — kept in repo as placeholder
 
 # Audit / diagnostic reports
 audit_reports/
