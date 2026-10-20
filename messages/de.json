@@ -349,5 +349,11 @@
   "blog_silo_prefix": "Entdecken Sie alle Bedeutungen, Herkünfte und etymologischen Indizes in unserer umfassenden Liste von ",
   "blog_silo_suffix": ". Vergleichsmodule und fortschrittliche Suchwerkzeuge sind integriert.",
   "name_silo_prefix": "Wenn Sie nach einem bedeutungsvollen Namen für Ihr Baby suchen, entdecken Sie weitere ",
-  "name_silo_suffix": " in unserem umfassenden Ratgeber, und vergleichen Sie Herkunft und Bedeutung."
+  "name_silo_suffix": " in unserem umfassenden Ratgeber, und vergleichen Sie Herkunft und Bedeutung.",
+  "alphabet_title": "Alphabet",
+  "search_btn_label": "Search",
+  "home_btn_random": "Random Name",
+  "no_results_title": "No Results",
+  "no_results_desc": "Try a different search",
+  "favorites_browse_btn": "Browse Names"
 }

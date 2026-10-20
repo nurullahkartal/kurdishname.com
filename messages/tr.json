@@ -349,5 +349,11 @@
   "blog_silo_prefix": "Tüm anlamları, kökenleri ve etimoloji indeksini kapsamlı ",
   "blog_silo_suffix": " rehberimizde keşfedin. Karşılaştırma modülleri ve gelişmiş isim bulucu araçları entegre edilmiştir.",
   "name_silo_prefix": "Bebeğiniz için anlamlı bir ad arıyorsanız, daha fazla ",
-  "name_silo_suffix": " rehberimizi keşfedin, köken ve telaffuz analizlerini yan yana karşılaştırın."
+  "name_silo_suffix": " rehberimizi keşfedin, köken ve telaffuz analizlerini yan yana karşılaştırın.",
+  "alphabet_title": "Alfabe",
+  "search_btn_label": "Ara",
+  "home_btn_random": "Rastgele İsim",
+  "no_results_title": "Sonuç Yok",
+  "no_results_desc": "Farklı bir arama deneyin",
+  "favorites_browse_btn": "İsimlere Göz At"
 }

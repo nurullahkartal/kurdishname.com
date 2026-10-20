@@ -1,8 +1,8 @@
 "use client";
 
 import { usePathname, useRouter } from 'next/navigation';
-import { switchLanguagePath, Locale } from '@/lib/routes-config';
-import { blogPostsRegistry } from '@/lib/blog-registry';
+import { switchLanguagePath, routeTranslations, isValidLocale, Locale } from '@/lib/routes-config';
+import { getBlogPostBySlug } from '@/lib/blog-registry';
 
 export default function LanguageSwitcher({ currentLocale }: { currentLocale: Locale }) {
   const pathname = usePathname() || `/${currentLocale}`;
@@ -15,22 +15,22 @@ export default function LanguageSwitcher({ currentLocale }: { currentLocale: Loc
     { code: 'ar', label: 'AR' },
   ];
 
-  const resolveTargetPath = (targetCode: Locale): string => {
-    const parts = pathname.split('/').filter(Boolean);
-    if (parts.length >= 3) {
-      const seg = decodeURIComponent(parts[1]).toLowerCase();
-      const slug = decodeURIComponent(parts[2]).toLowerCase();
-      if (seg === 'blog' || seg === 'مدونة') {
-        const matchedBlog = blogPostsRegistry.find(
-          (p) => p.slugs[currentLocale]?.toLowerCase() === slug || p.id.toLowerCase() === slug
-        );
-        if (matchedBlog) {
-          const targetBlogSegment = targetCode === 'ar' ? 'مدونة' : 'blog';
-          return `/${targetCode}/${targetBlogSegment}/${matchedBlog.slugs[targetCode]}`;
-        }
+  const resolveTargetPath = (targetLang: Locale): string => {
+    const pathParts = pathname.split('/').filter(Boolean);
+    const currentLocalePart = pathParts[0] && isValidLocale(pathParts[0]) ? pathParts[0] : currentLocale;
+    const currentSegment = pathParts[1] ? decodeURIComponent(pathParts[1]) : '';
+    const blogSegment = routeTranslations[currentLocalePart].blog;
+
+    if (currentSegment === blogSegment && pathParts[2]) {
+      const currentSlug = pathParts[2];
+      const post = getBlogPostBySlug(currentLocalePart, currentSlug);
+      if (post && post.slugs[targetLang]) {
+        const targetBlogSeg = routeTranslations[targetLang].blog;
+        return `/${targetLang}/${targetBlogSeg}/${post.slugs[targetLang]}`;
       }
     }
-    return switchLanguagePath(pathname, targetCode);
+
+    return switchLanguagePath(pathname, targetLang);
   };
 
   const changeLang = (code: Locale) => {

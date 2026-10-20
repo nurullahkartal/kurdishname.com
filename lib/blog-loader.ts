@@ -72,7 +72,17 @@ export function getBlogPostFaqs(postId: string, locale: string): BlogFaqItem[] {
   const faqs = ensureFaqsLoaded();
   const cleanId = postId.toLowerCase();
   const activeLng = ['tr', 'en', 'de', 'ar'].includes(locale) ? locale : 'tr';
-  return faqs[cleanId]?.[activeLng] || faqs['girls-names-list']?.[activeLng] || [];
+  const entry = faqs[cleanId] || faqs['girls-names-list'];
+  const rawList = (entry?.[activeLng] || entry?.['en'] || entry?.['tr'] || []) as Array<{
+    question?: string;
+    answer?: string;
+    q?: string;
+    a?: string;
+  }>;
+  return rawList.map((item) => ({
+    question: item.question || item.q || '',
+    answer: item.answer || item.a || '',
+  }));
 }
 
 function escapeRegExp(str: string): string {
