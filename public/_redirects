@@ -1,23 +1,32 @@
-# ============================================================
-# Cloudflare Pages Redirects & Canonical Routing
-# ============================================================
+# Root redirect
+/                        /tr                        302
 
-# 1. Trailing slash 301 Permanent Redirect
-/*/ /:splat 301
+# Legacy Turkish category redirects
+/tr/kategori/girls       /tr/kategori/kiz           301
+/tr/kategori/girl        /tr/kategori/kiz           301
+/tr/kategori/female      /tr/kategori/kiz           301
+/tr/kategori/boys        /tr/kategori/erkek         301
+/tr/kategori/boy         /tr/kategori/erkek         301
+/tr/kategori/male        /tr/kategori/erkek         301
+/tr/category/kiz         /tr/kategori/kiz           301
+/tr/category/erkek       /tr/kategori/erkek         301
+/tr/category/girls       /tr/kategori/kiz           301
+/tr/category/boys        /tr/kategori/erkek         301
 
-# 2. Canonical Domain Normalization (WWW -> Non-WWW)
-https://www.kurdishname.com/* https://kurdishname.com/:splat 301
+# Legacy English category redirects
+/en/category/erkek       /en/category/boys          301
+/en/category/kiz         /en/category/girls         301
+/en/kategori/kiz         /en/category/girls         301
+/en/kategori/erkek       /en/category/boys          301
 
-# 3. Legacy Directory Redirects
-/names/* /tr/isim/:splat 301
+# Legacy German category redirects
+/de/kategorie/erkek      /de/kategorie/jungen       301
+/de/kategorie/kiz        /de/kategorie/maedchen     301
+/de/category/boys        /de/kategorie/jungen       301
+/de/category/girls       /de/kategorie/maedchen     301
 
-# 4. Known Legacy Disambiguation Redirects
-/tr/isim/bese /tr/isim/bese-erkek 301
-/en/name/bese /en/name/bese-erkek 301
-/de/name/bese /de/name/bese-erkek 301
-
-# 5. Static AI Manifest
-/ai-catalog.json /ai-catalog.json 200
-
-# 6. SPA Fallback (Client-side routing)
-/* /index.html 200
+# Legacy Arabic category redirects
+/ar/فئة/erkek            /ar/فئة/ذكور               301
+/ar/فئة/kiz              /ar/فئة/بنات               301
+/ar/category/kiz         /ar/فئة/بنات               301
+/ar/category/erkek       /ar/فئة/ذكور               301
