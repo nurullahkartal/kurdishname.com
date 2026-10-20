@@ -26,8 +26,11 @@ const languageLabels: Record<string, string> = {
 };
 
 export default function RootPage() {
+  const redirectScript = `(function(){try{var l=(navigator.language||navigator.userLanguage||'').toLowerCase();if(l.indexOf('tr')===0){window.location.replace('/tr');}else if(l.indexOf('en')===0){window.location.replace('/en');}else if(l.indexOf('de')===0){window.location.replace('/de');}else if(l.indexOf('ar')===0){window.location.replace('/ar');}else{window.location.replace('/en');}}catch(e){}})();`;
+
   return (
     <main className="max-w-3xl mx-auto px-4 py-16 text-center">
+      <script dangerouslySetInnerHTML={{ __html: redirectScript }} />
       <h1 className="text-4xl font-bold mb-4">KurdishName</h1>
       <p className="text-lg opacity-80 mb-8">
         10,233+ Kurdish Baby Names, Meanings, Origins &amp; Etymology Encyclopedia

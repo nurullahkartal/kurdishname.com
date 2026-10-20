@@ -8,7 +8,7 @@
     "prebuild": "tsx scripts/build-names-data.ts && tsx scripts/build-search-index.ts && tsx scripts/build-sitemaps.ts",
     "build": "next build",
     "build:verify": "tsx scripts/build-names-data.ts && tsx scripts/build-search-index.ts && tsx scripts/build-sitemaps.ts && node -e \"require('child_process').execSync('npx next build', {stdio:'inherit', env:{...process.env, SSG_BUILD_GROUP:'verify'}})\"",
-    "build:all": "tsx scripts/build-names-data.ts && tsx scripts/build-search-index.ts && tsx scripts/build-sitemaps.ts && node -e \"require('child_process').execSync('npx next build', {stdio:'inherit', env:{...process.env, SSG_BUILD_GROUP:'all'}})\"",
+    "build:all": "cross-env NODE_OPTIONS=--max-old-space-size=8192 SSG_BUILD_GROUP=all next build",
     "start": "next start",
     "lint": "tsc --noEmit"
   },
@@ -28,6 +28,7 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "autoprefixer": "^10.4.21",
+    "cross-env": "^10.1.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.14",
     "tsx": "^4.21.0",
