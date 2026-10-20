@@ -5,7 +5,7 @@ import { SITE_URL, supportedLanguages } from '@/lib/routes-config';
 export const metadata: Metadata = {
   title: 'KurdishName — En Kapsamlı Kürtçe İsimler Arşivi & Sözlüğü',
   description:
-    '10.233+ Kürtçe kız ve erkek bebek ismi, anlamları, etimolojik kökenleri ve telaffuz rehberi.',
+    '4.700+ Kürtçe kız ve erkek bebek ismi, anlamları, etimolojik kökenleri ve telaffuz rehberi.',
   alternates: {
     canonical: SITE_URL,
     languages: {
@@ -33,7 +33,7 @@ export default function RootPage() {
       <script dangerouslySetInnerHTML={{ __html: redirectScript }} />
       <h1 className="text-4xl font-bold mb-4">KurdishName</h1>
       <p className="text-lg opacity-80 mb-8">
-        10,233+ Kurdish Baby Names, Meanings, Origins &amp; Etymology Encyclopedia
+        4,709+ Kurdish Baby Names, Meanings, Origins &amp; Etymology Encyclopedia
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {supportedLanguages.map((lang) => (

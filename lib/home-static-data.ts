@@ -1,9 +1,9 @@
 import { NameData } from './names-data';
 
 export const stats = {
-  total: 10233,
-  female: 5225,
-  male: 4981,
+  total: 4709,
+  female: 2568,
+  male: 2117,
 };
 
 // 20 selected premium female names inspired by our high-traffic blog posts

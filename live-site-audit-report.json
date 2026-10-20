@@ -1,0 +1,64 @@
+{
+  "stats": {
+    "total": 19584,
+    "ok": 19579,
+    "redirect": 0,
+    "notFound": 2,
+    "serverError": 1,
+    "timeout": 2,
+    "error": 0,
+    "soft404": 0,
+    "missingTitle": 0,
+    "missingCanonical": 3,
+    "missingRobots": 1,
+    "missingHreflang": 3
+  },
+  "issues": [
+    {
+      "url": "https://kurdishname.com/ar/مدونة/دليل-الا��ماء-الكردية-بحرف-r",
+      "status": 404,
+      "duration": 130,
+      "hasTitle": true,
+      "hasCanonical": false,
+      "hasRobots": true,
+      "hasHreflang": false,
+      "isSoft404": false,
+      "contentType": "text/html; charset=utf-8",
+      "size": 9470
+    },
+    {
+      "url": "https://kurdishname.com/de/name/binyati",
+      "status": 502,
+      "duration": 71,
+      "hasTitle": true,
+      "hasCanonical": false,
+      "hasRobots": false,
+      "hasHreflang": false,
+      "isSoft404": false,
+      "contentType": "text/html",
+      "size": 155
+    },
+    {
+      "url": "https://kurdishname.com/en/name/kavvani",
+      "status": "TIMEOUT",
+      "duration": 15000
+    },
+    {
+      "url": "https://kurdishname.com/ar/��سم/neciri",
+      "status": 404,
+      "duration": 117,
+      "hasTitle": true,
+      "hasCanonical": false,
+      "hasRobots": true,
+      "hasHreflang": false,
+      "isSoft404": false,
+      "contentType": "text/html; charset=utf-8",
+      "size": 9470
+    },
+    {
+      "url": "https://kurdishname.com/ar/اسم/piran",
+      "status": "TIMEOUT",
+      "duration": 15000
+    }
+  ]
+}

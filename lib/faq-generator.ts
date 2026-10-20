@@ -356,7 +356,7 @@ export function generateDynamicFaqs(
       },
       {
         question: `${name} ismi ${genderAdj} ismi mi?`,
-        answer: `Evet, ${name} ismi geleneksel olarak ${genderText} ${genderAdj} ismi olarak kullanılmaktadır. Bu kullanım Kürtçe isim geleneğiyle tamamen uyumludur.`,
+        answer: `Evet, ${name} ismi geleneksel olarak ${genderAdj} ismi olarak kullanılmaktadır. Bu kullanım Kürtçe isim geleneğiyle tamamen uyumludur.`,
       },
       {
         question: `${name} ismi Kuran'da geçiyor mu, caiz midir?`,

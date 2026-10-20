@@ -1,58 +1,58 @@
 {
-  "generatedAt": "2026-10-20T15:17:36.363Z",
+  "generatedAt": "2026-10-20T17:33:42.168Z",
   "totalLetters": 31,
-  "totalNames": 10233,
-  "totalBytes": 11656001,
+  "totalNames": 4709,
+  "totalBytes": 4776127,
   "letters": [
     {
       "letter": "A",
-      "count": 1080,
-      "bytes": 1183689
+      "count": 572,
+      "bytes": 548086
     },
     {
       "letter": "B",
-      "count": 1062,
-      "bytes": 1228709
+      "count": 533,
+      "bytes": 564938
     },
     {
       "letter": "C",
-      "count": 369,
-      "bytes": 407416
+      "count": 240,
+      "bytes": 231107
     },
     {
       "letter": "Ç",
-      "count": 113,
-      "bytes": 127052
+      "count": 43,
+      "bytes": 45560
     },
     {
       "letter": "D",
-      "count": 914,
-      "bytes": 1037714
+      "count": 351,
+      "bytes": 349825
     },
     {
       "letter": "E",
-      "count": 403,
-      "bytes": 447397
+      "count": 200,
+      "bytes": 194805
     },
     {
       "letter": "Ê",
       "count": 6,
-      "bytes": 7446
+      "bytes": 6794
     },
     {
       "letter": "F",
-      "count": 186,
-      "bytes": 209359
+      "count": 103,
+      "bytes": 101949
     },
     {
       "letter": "G",
-      "count": 445,
-      "bytes": 488260
+      "count": 301,
+      "bytes": 292563
     },
     {
       "letter": "H",
-      "count": 757,
-      "bytes": 861810
+      "count": 327,
+      "bytes": 327344
     },
     {
       "letter": "I",
@@ -62,72 +62,72 @@
     {
       "letter": "Î",
       "count": 2,
-      "bytes": 2348
+      "bytes": 2099
     },
     {
       "letter": "J",
-      "count": 120,
-      "bytes": 136127
+      "count": 82,
+      "bytes": 82560
     },
     {
       "letter": "K",
-      "count": 430,
-      "bytes": 488598
+      "count": 230,
+      "bytes": 233702
     },
     {
       "letter": "L",
-      "count": 205,
-      "bytes": 234626
+      "count": 116,
+      "bytes": 117900
     },
     {
       "letter": "M",
-      "count": 463,
-      "bytes": 526034
+      "count": 280,
+      "bytes": 281438
     },
     {
       "letter": "N",
-      "count": 481,
-      "bytes": 553746
+      "count": 222,
+      "bytes": 223821
     },
     {
       "letter": "O",
       "count": 8,
-      "bytes": 9777
+      "bytes": 8865
     },
     {
       "letter": "P",
-      "count": 387,
-      "bytes": 435655
+      "count": 233,
+      "bytes": 232644
     },
     {
       "letter": "Q",
       "count": 12,
-      "bytes": 13605
+      "bytes": 12219
     },
     {
       "letter": "R",
-      "count": 647,
-      "bytes": 793698
+      "count": 203,
+      "bytes": 242986
     },
     {
       "letter": "S",
-      "count": 397,
-      "bytes": 464417
+      "count": 124,
+      "bytes": 133797
     },
     {
       "letter": "Ş",
-      "count": 536,
-      "bytes": 615590
+      "count": 127,
+      "bytes": 133734
     },
     {
       "letter": "T",
-      "count": 282,
-      "bytes": 325195
+      "count": 95,
+      "bytes": 96246
     },
     {
       "letter": "U",
       "count": 3,
-      "bytes": 3724
+      "bytes": 3394
     },
     {
       "letter": "Û",
@@ -136,28 +136,28 @@
     },
     {
       "letter": "V",
-      "count": 65,
-      "bytes": 74206
+      "count": 41,
+      "bytes": 42277
     },
     {
       "letter": "W",
-      "count": 34,
-      "bytes": 40052
+      "count": 10,
+      "bytes": 11295
     },
     {
       "letter": "X",
-      "count": 320,
-      "bytes": 366017
+      "count": 114,
+      "bytes": 115793
     },
     {
       "letter": "Y",
-      "count": 46,
-      "bytes": 52780
+      "count": 36,
+      "bytes": 37561
     },
     {
       "letter": "Z",
-      "count": 460,
-      "bytes": 520855
+      "count": 95,
+      "bytes": 100726
     }
   ]
 }

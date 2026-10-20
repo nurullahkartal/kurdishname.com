@@ -382,8 +382,10 @@ img, svg { display: block; }
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
   border-radius: var(--r-sm);
   color: var(--text-muted);
   border: 1px solid var(--border);
@@ -409,8 +411,10 @@ img, svg { display: block; }
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   color: var(--text-muted);
   background: var(--surface);
   border: 1px solid var(--border);
@@ -859,7 +863,8 @@ img, svg { display: block; }
   background-repeat: no-repeat;
   background-position: right 0.4rem center;
   background-size: 0.75rem;
-  min-height: 32px;
+  min-height: 44px;
+  min-width: 44px;
   transition: border-color var(--duration);
 }
 
@@ -1076,3 +1081,49 @@ img, svg { display: block; }
 /* Fix 7: Touch targets (mobile) */
 footer a, button, .name-list-item a { min-height: 44px; min-width: 44px; padding: 0.5rem; display: inline-flex; align-items: center; justify-content: center; }
 
+
+
+/* Touch Target Accessibility Fixes (44px) */
+.alpha-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.5rem;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all var(--duration) var(--ease-out);
+}
+
+.alpha-btn:hover {
+  background: var(--text);
+  color: var(--surface);
+  border-color: var(--text);
+  transform: translateY(-1px);
+}
+
+.lang-switch-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.4rem 0.6rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.875rem;
+  transition: opacity var(--duration);
+}
+
+.lang-switch-btn:hover {
+  opacity: 0.8;
+}

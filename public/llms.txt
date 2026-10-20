@@ -1,6 +1,6 @@
 # KurdishName
 
-> 10.000+ Kürtçe isim anlamları ve kökenleri.
+> 4.700+ Kürtçe isim anlamları ve kökenleri.
 
 ## Ana Sayfalar
 - [Kürtçe Kız İsimleri](https://kurdishname.com/tr/kategori/kiz)
