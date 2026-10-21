@@ -27,7 +27,7 @@ type TrackerDatabase = Record<string, ItemTracker>;
 const STORAGE_KEY = 'kurdishname_social_tracker_db';
 const AUTH_KEY = 'kurdishname_admin_pin_unlocked';
 const PIN_HASH_KEY = 'kurdishname_admin_custom_pin';
-const DEFAULT_PIN = '4709';
+const DEFAULT_PIN = '47';
 
 export default function SocialTrackerClient() {
   const [isUnlocked, setIsUnlocked] = useState<boolean>(false);
@@ -108,7 +108,7 @@ export default function SocialTrackerClient() {
       sessionStorage.setItem(AUTH_KEY, 'true');
       setPinError('');
     } else {
-      setPinError('Hatalı PIN! (Varsayılan PIN: 4709)');
+      setPinError('Hatalı PIN Kodu!');
     }
   };
 
@@ -119,8 +119,8 @@ export default function SocialTrackerClient() {
 
   const handleChangePin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (newPinInput.length < 4) {
-      alert('PIN en az 4 karakter olmalıdır.');
+    if (newPinInput.length < 2) {
+      alert('PIN en az 2 karakter olmalıdır.');
       return;
     }
     localStorage.setItem(PIN_HASH_KEY, newPinInput);
@@ -430,7 +430,8 @@ export default function SocialTrackerClient() {
           <form onSubmit={handlePinSubmit}>
             <input
               type="password"
-              placeholder="PIN Kodu (Varsayılan: 4709)"
+              placeholder="PIN Kodu Girin"
+              maxLength={12}
               value={pinInput}
               onChange={(e) => setPinInput(e.target.value)}
               style={{
