@@ -108,71 +108,28 @@ export default async function LocaleHomePage({
       />
 
       {/* Hero Section */}
-      <section
-        style={{
-          textAlign: 'center',
-          padding: '2rem 1.25rem',
-          borderRadius: 'var(--r-xl)',
-          background: 'var(--surface)',
-          border: '1px solid var(--border)',
-        }}
-      >
-        <h1
-          style={{
-            fontFamily: 'var(--font-display)',
-            fontSize: 'clamp(1.75rem, 4vw, 2.5rem)',
-            fontWeight: 800,
-            color: 'var(--text)',
-            marginBottom: '0.5rem',
-          }}
-        >
+      <section className="text-center p-4 sm:p-8 rounded-[var(--r-xl)] bg-[var(--surface)] border border-[var(--border)]">
+        <h1 className="font-[var(--font-display)] text-xl sm:text-2xl md:text-4xl font-extrabold text-[var(--text)] leading-tight mb-2">
           {t('site_title')}
         </h1>
-        <p
-          style={{
-            fontSize: '0.95rem',
-            color: 'var(--text-muted)',
-            maxWidth: '640px',
-            margin: '0 auto',
-            lineHeight: 1.6,
-          }}
-        >
+        <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-xl mx-auto my-2 leading-relaxed">
           {t('home_description')}
         </p>
 
         {/* Stats Badges */}
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            gap: '0.75rem',
-            flexWrap: 'wrap',
-            marginTop: '1rem',
-          }}
-        >
-          <span
-            style={{
-              padding: '0.3rem 0.75rem',
-              borderRadius: '999px',
-              background: 'var(--surface-2)',
-              border: '1px solid var(--border)',
-              fontSize: '0.8rem',
-              fontWeight: 700,
-            }}
-          >
+        <div className="flex justify-center items-center gap-2 flex-wrap my-2.5">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 text-xs rounded-full bg-[var(--surface-2)] border border-[var(--border)] font-bold text-[var(--text)]">
             {stats.total.toLocaleString()} {t('names_found_count')}
           </span>
           <Link
             href={generatePath(locale, 'category', 'kiz')}
-            className="badge-female"
-            style={{ textDecoration: 'none', padding: '0.3rem 0.75rem', fontSize: '0.8rem' }}
+            className="badge-female inline-flex items-center gap-1.5 px-3 py-1 text-xs rounded-full no-underline font-semibold"
           >
             {stats.female.toLocaleString()} {t('girl_names')}
           </Link>
           <Link
             href={generatePath(locale, 'category', 'erkek')}
-            className="badge-male"
-            style={{ textDecoration: 'none', padding: '0.3rem 0.75rem', fontSize: '0.8rem' }}
+            className="badge-male inline-flex items-center gap-1.5 px-3 py-1 text-xs rounded-full no-underline font-semibold"
           >
             {stats.male.toLocaleString()} {t('boy_names')}
           </Link>
@@ -192,12 +149,12 @@ export default async function LocaleHomePage({
       {/* Alphabet Index (29 Active Letters including Ç, Ê, Î, Ş) */}
       <section>
         <h2 className="section-heading">{t('alphabet_title')}</h2>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.45rem' }}>
+        <div className="flex items-center gap-2 overflow-x-auto whitespace-nowrap scrollbar-none touch-pan-x py-1.5 px-0.5 sm:flex-wrap">
           {activeLetters.map(({ letter, count }) => (
             <Link
               key={letter}
               href={generatePath(locale, 'category', letter)}
-              className="alpha-btn"
+              className="alpha-btn shrink-0"
               title={`${letter} (${count})`}
             >
               {letter}

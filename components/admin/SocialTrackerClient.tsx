@@ -44,7 +44,7 @@ export default function SocialTrackerClient() {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedLetter, setSelectedLetter] = useState<string>('ALL');
   const [selectedGender, setSelectedGender] = useState<string>('ALL');
-  const [statusFilter, setStatusFilter] = useState<string>('ALL'); // ALL, NOT_SHARED, SHARED_ANY, ALL_COMPLETED, IG_ONLY, TT_ONLY, YT_ONLY
+  const [statusFilter, setStatusFilter] = useState<string>('ALL');
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [pageSize, setPageSize] = useState<number>(50);
 
@@ -157,7 +157,6 @@ export default function SocialTrackerClient() {
 
   const changeDate = (id: string, platform: 'instagram' | 'tiktok' | 'youtube', dateStr: string) => {
     const current = trackerDb[id] || {};
-    const platformData = current[platform] || { shared: false, date: '' };
 
     const updated: TrackerDatabase = {
       ...trackerDb,
@@ -406,68 +405,35 @@ export default function SocialTrackerClient() {
     return Array.from(set).sort();
   }, [names]);
 
+  // PIN Login Screen
   if (!isUnlocked) {
     return (
-      <div style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem' }}>
-        <div
-          style={{
-            maxWidth: '420px',
-            width: '100%',
-            background: 'var(--surface)',
-            border: '1px solid var(--border)',
-            borderRadius: 'var(--r-xl)',
-            padding: '2rem',
-            boxShadow: '0 10px 25px rgba(0,0,0,0.2)',
-            textAlign: 'center',
-          }}
-        >
-          <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🔒</div>
-          <h1 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '0.5rem' }}>Sosyal Medya Takip Paneli</h1>
-          <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
-            Bu ekran yetkili yönetici girişi gerektirir. Devam etmek için PIN kodunuzu girin.
+      <div className="min-h-[85vh] flex items-center justify-center p-4">
+        <div className="w-full max-w-sm bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 sm:p-8 shadow-2xl text-center">
+          <div className="text-4xl sm:text-5xl mb-3">🔒</div>
+          <h1 className="text-xl sm:text-2xl font-black mb-2 text-[var(--text)]">Sosyal Medya Takip Paneli</h1>
+          <p className="text-xs sm:text-sm text-[var(--text-muted)] mb-6">
+            Yönetici paneline erişmek için PIN kodunuzu girin.
           </p>
 
-          <form onSubmit={handlePinSubmit}>
+          <form onSubmit={handlePinSubmit} className="space-y-4">
             <input
               type="password"
               placeholder="PIN Kodu Girin"
               maxLength={12}
               value={pinInput}
               onChange={(e) => setPinInput(e.target.value)}
-              style={{
-                width: '100%',
-                padding: '0.75rem 1rem',
-                fontSize: '1.1rem',
-                textAlign: 'center',
-                letterSpacing: '0.2em',
-                borderRadius: 'var(--r-md)',
-                border: '1px solid var(--border)',
-                background: 'var(--surface-alt)',
-                color: 'var(--text)',
-                marginBottom: '1rem',
-              }}
+              className="w-full py-3 px-4 text-center text-xl tracking-widest font-mono rounded-xl border border-[var(--border)] bg-[var(--surface-alt)] text-[var(--text)] focus:outline-none focus:border-[var(--accent)]"
               autoFocus
             />
 
             {pinError && (
-              <div style={{ color: '#ef4444', fontSize: '0.85rem', marginBottom: '1rem', fontWeight: 600 }}>
-                {pinError}
-              </div>
+              <div className="text-red-500 text-xs sm:text-sm font-semibold">{pinError}</div>
             )}
 
             <button
               type="submit"
-              style={{
-                width: '100%',
-                padding: '0.85rem',
-                fontSize: '1rem',
-                fontWeight: 700,
-                background: 'var(--accent)',
-                color: '#fff',
-                border: 'none',
-                borderRadius: 'var(--r-md)',
-                cursor: 'pointer',
-              }}
+              className="w-full py-3 px-4 text-sm sm:text-base font-bold bg-[var(--accent)] text-white rounded-xl shadow-md hover:opacity-95 transition-all cursor-pointer"
             >
               Giriş Yap
             </button>
@@ -478,123 +444,61 @@ export default function SocialTrackerClient() {
   }
 
   return (
-    <div style={{ maxWidth: '1440px', margin: '0 auto', padding: '1.5rem 1rem' }}>
+    <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 py-4 sm:py-8">
       {/* Toast Notification */}
       {toastMsg && (
-        <div
-          style={{
-            position: 'fixed',
-            bottom: '2rem',
-            right: '2rem',
-            background: 'var(--text)',
-            color: 'var(--bg)',
-            padding: '0.75rem 1.5rem',
-            borderRadius: 'var(--r-lg)',
-            boxShadow: '0 8px 20px rgba(0,0,0,0.25)',
-            fontWeight: 700,
-            zIndex: 9999,
-            transition: 'all 0.3s ease',
-          }}
-        >
+        <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-[var(--text)] text-[var(--bg)] px-4 py-2.5 rounded-xl shadow-2xl font-bold text-xs sm:text-sm z-50 animate-bounce">
           {toastMsg}
         </div>
       )}
 
-      {/* Header bar */}
-      <div
-        style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          gap: '1rem',
-          marginBottom: '1.5rem',
-          paddingBottom: '1rem',
-          borderBottom: '1px solid var(--border)',
-        }}
-      >
+      {/* Top Header & Actions Bar */}
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 sm:pb-6 border-b border-[var(--border)] mb-5">
         <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <span style={{ fontSize: '1.75rem' }}>📊</span>
-            <h1 style={{ fontSize: '1.65rem', fontWeight: 900, margin: 0 }}>
+          <div className="flex items-center gap-2">
+            <span className="text-2xl sm:text-3xl">📊</span>
+            <h1 className="text-xl sm:text-2xl lg:text-3xl font-black text-[var(--text)]">
               Sosyal Medya Paylaşım Takip Paneli
             </h1>
           </div>
-          <p style={{ margin: '0.25rem 0 0 0', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-            4.709 Kürtçe ismin Instagram, TikTok ve YouTube paylaşım durumunu Excel gibi takip edin ve yönetin.
+          <p className="text-xs sm:text-sm text-[var(--text-muted)] mt-1">
+            4.709 Kürtçe ismin Instagram, TikTok ve YouTube paylaşım durumunu mobil ve masaüstünden yönetin.
           </p>
         </div>
 
-        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
+        {/* Action Buttons */}
+        <div className="flex flex-wrap items-center gap-2">
           <button
             onClick={exportToCsv}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.35rem',
-              padding: '0.5rem 0.85rem',
-              borderRadius: 'var(--r-md)',
-              border: '1px solid #10b981',
-              background: 'rgba(16, 185, 129, 0.1)',
-              color: '#10b981',
-              fontWeight: 700,
-              cursor: 'pointer',
-              fontSize: '0.85rem',
-            }}
+            className="flex-1 sm:flex-none flex items-center justify-center gap-1.5 py-2 px-3 sm:px-4 rounded-xl border border-emerald-500 bg-emerald-500/10 text-emerald-500 font-bold text-xs sm:text-sm hover:bg-emerald-500/20 transition-colors cursor-pointer"
           >
-            📥 Excel (CSV) İndir
+            📥 Excel (CSV)
           </button>
 
           <button
             onClick={exportJsonBackup}
-            style={{
-              padding: '0.5rem 0.85rem',
-              borderRadius: 'var(--r-md)',
-              border: '1px solid var(--border)',
-              background: 'var(--surface-alt)',
-              color: 'var(--text)',
-              fontWeight: 600,
-              cursor: 'pointer',
-              fontSize: '0.85rem',
-            }}
+            className="flex items-center justify-center py-2 px-3 rounded-xl border border-[var(--border)] bg-[var(--surface-alt)] text-[var(--text)] font-semibold text-xs sm:text-sm hover:border-[var(--text-muted)] transition-colors cursor-pointer"
           >
-            💾 JSON Yedekle
+            💾 Yedekle
           </button>
 
           <button
             onClick={() => fileInputRef.current?.click()}
-            style={{
-              padding: '0.5rem 0.85rem',
-              borderRadius: 'var(--r-md)',
-              border: '1px solid var(--border)',
-              background: 'var(--surface-alt)',
-              color: 'var(--text)',
-              fontWeight: 600,
-              cursor: 'pointer',
-              fontSize: '0.85rem',
-            }}
+            className="flex items-center justify-center py-2 px-3 rounded-xl border border-[var(--border)] bg-[var(--surface-alt)] text-[var(--text)] font-semibold text-xs sm:text-sm hover:border-[var(--text-muted)] transition-colors cursor-pointer"
           >
-            📤 Yedeği Yükle
+            📤 Yükle
           </button>
           <input
             ref={fileInputRef}
             type="file"
             accept=".json"
-            style={{ display: 'none' }}
+            className="hidden"
             onChange={handleImportJson}
           />
 
           <button
             onClick={() => setChangePinOpen(!changePinOpen)}
-            style={{
-              padding: '0.5rem 0.75rem',
-              borderRadius: 'var(--r-md)',
-              border: '1px solid var(--border)',
-              background: 'var(--surface-alt)',
-              color: 'var(--text)',
-              cursor: 'pointer',
-              fontSize: '0.85rem',
-            }}
+            className="py-2 px-2.5 rounded-xl border border-[var(--border)] bg-[var(--surface-alt)] text-[var(--text)] text-xs sm:text-sm hover:border-[var(--text-muted)] transition-colors cursor-pointer"
             title="PIN Değiştir"
           >
             ⚙️ PIN
@@ -602,204 +506,119 @@ export default function SocialTrackerClient() {
 
           <button
             onClick={handleLogout}
-            style={{
-              padding: '0.5rem 0.75rem',
-              borderRadius: 'var(--r-md)',
-              border: '1px solid #ef4444',
-              background: 'rgba(239, 68, 68, 0.1)',
-              color: '#ef4444',
-              cursor: 'pointer',
-              fontSize: '0.85rem',
-              fontWeight: 600,
-            }}
+            className="py-2 px-3 rounded-xl border border-red-500/40 bg-red-500/10 text-red-500 font-bold text-xs sm:text-sm hover:bg-red-500/20 transition-colors cursor-pointer"
           >
-            Çıkış Yap
+            Çıkış
           </button>
         </div>
       </div>
 
-      {/* Change PIN Modal / Drawer */}
+      {/* Change PIN Drawer */}
       {changePinOpen && (
-        <div
-          style={{
-            background: 'var(--surface-alt)',
-            border: '1px solid var(--border)',
-            padding: '1rem',
-            borderRadius: 'var(--r-lg)',
-            marginBottom: '1.5rem',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '1rem',
-            flexWrap: 'wrap',
-          }}
-        >
-          <span style={{ fontWeight: 700, fontSize: '0.9rem' }}>Yeni PIN Belirle:</span>
+        <div className="bg-[var(--surface-alt)] border border-[var(--border)] p-3 sm:p-4 rounded-2xl mb-5 flex flex-wrap items-center gap-3">
+          <span className="font-bold text-xs sm:text-sm text-[var(--text)]">Yeni PIN Belirle:</span>
           <input
             type="text"
-            placeholder="En az 4 haneli yeni PIN"
+            placeholder="Yeni PIN"
             value={newPinInput}
             onChange={(e) => setNewPinInput(e.target.value)}
-            style={{
-              padding: '0.4rem 0.75rem',
-              borderRadius: 'var(--r-md)',
-              border: '1px solid var(--border)',
-              background: 'var(--surface)',
-              color: 'var(--text)',
-              fontSize: '0.9rem',
-            }}
+            className="py-1.5 px-3 rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--text)] text-sm"
           />
           <button
             onClick={handleChangePin}
-            style={{
-              padding: '0.45rem 1rem',
-              background: 'var(--accent)',
-              color: '#fff',
-              border: 'none',
-              borderRadius: 'var(--r-md)',
-              fontWeight: 700,
-              cursor: 'pointer',
-            }}
+            className="py-1.5 px-3.5 bg-[var(--accent)] text-white text-xs sm:text-sm font-bold rounded-lg cursor-pointer"
           >
             Kaydet
           </button>
           <button
             onClick={() => setChangePinOpen(false)}
-            style={{
-              padding: '0.45rem 0.75rem',
-              background: 'transparent',
-              border: '1px solid var(--border)',
-              borderRadius: 'var(--r-md)',
-              cursor: 'pointer',
-              color: 'var(--text-muted)',
-            }}
+            className="py-1.5 px-3 border border-[var(--border)] text-[var(--text-muted)] text-xs sm:text-sm rounded-lg cursor-pointer"
           >
             İptal
           </button>
         </div>
       )}
 
-      {/* Metrics Cards */}
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-          gap: '1rem',
-          marginBottom: '1.5rem',
-        }}
-      >
-        <div
-          style={{
-            background: 'var(--surface)',
-            border: '1px solid var(--border)',
-            borderRadius: 'var(--r-lg)',
-            padding: '1rem',
-          }}
-        >
-          <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-muted)' }}>TOPLAM İSİM</div>
-          <div style={{ fontSize: '1.85rem', fontWeight: 900, color: 'var(--text)' }}>
+      {/* Metrics Cards Grid (Responsive 2 / 3 / 6 cols) */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 sm:gap-3.5 mb-5 sm:mb-6">
+        {/* Total */}
+        <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-3 sm:p-4 flex flex-col justify-between">
+          <span className="text-[10px] sm:text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider">
+            TOPLAM İSİM
+          </span>
+          <span className="text-xl sm:text-2xl lg:text-3xl font-black text-[var(--text)] my-1">
             {stats.total.toLocaleString()}
-          </div>
-          <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Sitedeki aktif isim havuzu</div>
+          </span>
+          <span className="text-[10px] sm:text-xs text-[var(--text-muted)]">Aktif isim arşivi</span>
         </div>
 
-        <div
-          style={{
-            background: 'var(--surface)',
-            border: '1px solid #e1306c',
-            borderRadius: 'var(--r-lg)',
-            padding: '1rem',
-          }}
-        >
-          <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#e1306c' }}>📸 INSTAGRAM</div>
-          <div style={{ fontSize: '1.85rem', fontWeight: 900, color: '#e1306c' }}>
+        {/* Instagram */}
+        <div className="bg-[var(--surface)] border border-[#e1306c]/40 rounded-2xl p-3 sm:p-4 flex flex-col justify-between">
+          <span className="text-[10px] sm:text-xs font-bold text-[#e1306c] uppercase tracking-wider flex items-center gap-1">
+            <span>📸</span> Instagram
+          </span>
+          <span className="text-xl sm:text-2xl lg:text-3xl font-black text-[#e1306c] my-1">
             {stats.igCount.toLocaleString()}
-          </div>
-          <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+          </span>
+          <span className="text-[10px] sm:text-xs text-[var(--text-muted)]">
             %{((stats.igCount / (stats.total || 1)) * 100).toFixed(1)} paylaşıldı
-          </div>
+          </span>
         </div>
 
-        <div
-          style={{
-            background: 'var(--surface)',
-            border: '1px solid #00f2fe',
-            borderRadius: 'var(--r-lg)',
-            padding: '1rem',
-          }}
-        >
-          <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#00f2fe' }}>🎵 TIKTOK</div>
-          <div style={{ fontSize: '1.85rem', fontWeight: 900, color: 'var(--text)' }}>
+        {/* TikTok */}
+        <div className="bg-[var(--surface)] border border-[#00f2fe]/40 rounded-2xl p-3 sm:p-4 flex flex-col justify-between">
+          <span className="text-[10px] sm:text-xs font-bold text-[#00f2fe] uppercase tracking-wider flex items-center gap-1">
+            <span>🎵</span> TikTok
+          </span>
+          <span className="text-xl sm:text-2xl lg:text-3xl font-black text-[var(--text)] my-1">
             {stats.ttCount.toLocaleString()}
-          </div>
-          <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+          </span>
+          <span className="text-[10px] sm:text-xs text-[var(--text-muted)]">
             %{((stats.ttCount / (stats.total || 1)) * 100).toFixed(1)} paylaşıldı
-          </div>
+          </span>
         </div>
 
-        <div
-          style={{
-            background: 'var(--surface)',
-            border: '1px solid #ff0000',
-            borderRadius: 'var(--r-lg)',
-            padding: '1rem',
-          }}
-        >
-          <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#ff0000' }}>🎥 YOUTUBE</div>
-          <div style={{ fontSize: '1.85rem', fontWeight: 900, color: '#ff0000' }}>
+        {/* YouTube */}
+        <div className="bg-[var(--surface)] border border-[#ff0000]/40 rounded-2xl p-3 sm:p-4 flex flex-col justify-between">
+          <span className="text-[10px] sm:text-xs font-bold text-[#ff0000] uppercase tracking-wider flex items-center gap-1">
+            <span>🎥</span> YouTube
+          </span>
+          <span className="text-xl sm:text-2xl lg:text-3xl font-black text-[#ff0000] my-1">
             {stats.ytCount.toLocaleString()}
-          </div>
-          <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+          </span>
+          <span className="text-[10px] sm:text-xs text-[var(--text-muted)]">
             %{((stats.ytCount / (stats.total || 1)) * 100).toFixed(1)} paylaşıldı
-          </div>
+          </span>
         </div>
 
-        <div
-          style={{
-            background: 'var(--surface)',
-            border: '1px solid #10b981',
-            borderRadius: 'var(--r-lg)',
-            padding: '1rem',
-          }}
-        >
-          <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#10b981' }}>✅ 3'Ü DE BİTENLER</div>
-          <div style={{ fontSize: '1.85rem', fontWeight: 900, color: '#10b981' }}>
+        {/* All Done */}
+        <div className="bg-[var(--surface)] border border-emerald-500/40 rounded-2xl p-3 sm:p-4 flex flex-col justify-between">
+          <span className="text-[10px] sm:text-xs font-bold text-emerald-500 uppercase tracking-wider flex items-center gap-1">
+            <span>✅</span> 3&apos;ü Bitenler
+          </span>
+          <span className="text-xl sm:text-2xl lg:text-3xl font-black text-emerald-500 my-1">
             {stats.allCompletedCount.toLocaleString()}
-          </div>
-          <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Tüm platformlarda paylaşıldı</div>
+          </span>
+          <span className="text-[10px] sm:text-xs text-[var(--text-muted)]">Tüm platformlar</span>
         </div>
 
-        <div
-          style={{
-            background: 'var(--surface)',
-            border: '1px solid var(--border)',
-            borderRadius: 'var(--r-lg)',
-            padding: '1rem',
-          }}
-        >
-          <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#eab308' }}>⏳ HİÇ PAYLAŞILMAYAN</div>
-          <div style={{ fontSize: '1.85rem', fontWeight: 900, color: '#eab308' }}>
+        {/* Not Shared */}
+        <div className="bg-[var(--surface)] border border-amber-500/40 rounded-2xl p-3 sm:p-4 flex flex-col justify-between">
+          <span className="text-[10px] sm:text-xs font-bold text-amber-500 uppercase tracking-wider flex items-center gap-1">
+            <span>⏳</span> Bekleyenler
+          </span>
+          <span className="text-xl sm:text-2xl lg:text-3xl font-black text-amber-500 my-1">
             {stats.notSharedCount.toLocaleString()}
-          </div>
-          <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>İçerik bekleyen isimler</div>
+          </span>
+          <span className="text-[10px] sm:text-xs text-[var(--text-muted)]">Hiç paylaşılmayan</span>
         </div>
       </div>
 
-      {/* Filter and Search Toolbar */}
-      <div
-        style={{
-          background: 'var(--surface)',
-          border: '1px solid var(--border)',
-          borderRadius: 'var(--r-xl)',
-          padding: '1.25rem',
-          marginBottom: '1.5rem',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '1rem',
-        }}
-      >
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', alignItems: 'center' }}>
-          {/* Search Box */}
-          <div style={{ flex: '1 1 300px', position: 'relative' }}>
+      {/* Filter and Search Box */}
+      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-3 sm:p-5 mb-5 sm:mb-6 space-y-3 sm:space-y-4">
+        <div className="flex flex-col lg:flex-row gap-2.5 sm:gap-3 items-stretch lg:items-center">
+          {/* Search Input */}
+          <div className="flex-1 relative">
             <input
               type="text"
               placeholder="🔍 İsim veya anlamda ara (Örn: Rojîn, Berfîn, ışık...)"
@@ -808,112 +627,73 @@ export default function SocialTrackerClient() {
                 setSearchQuery(e.target.value);
                 setCurrentPage(1);
               }}
-              style={{
-                width: '100%',
-                padding: '0.65rem 1rem',
-                borderRadius: 'var(--r-md)',
-                border: '1px solid var(--border)',
-                background: 'var(--surface-alt)',
-                color: 'var(--text)',
-                fontSize: '0.9rem',
-              }}
+              className="w-full py-2.5 pl-3.5 pr-8 rounded-xl border border-[var(--border)] bg-[var(--surface-alt)] text-[var(--text)] text-xs sm:text-sm focus:outline-none focus:border-[var(--accent)]"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
-                style={{
-                  position: 'absolute',
-                  right: '0.75rem',
-                  top: '50%',
-                  transform: 'translateY(-50%)',
-                  background: 'none',
-                  border: 'none',
-                  color: 'var(--text-muted)',
-                  cursor: 'pointer',
-                  fontWeight: 700,
-                }}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-[var(--text-muted)] hover:text-[var(--text)] font-bold text-sm cursor-pointer"
               >
                 ✕
               </button>
             )}
           </div>
 
-          {/* Status Select */}
-          <select
-            value={statusFilter}
-            onChange={(e) => {
-              setStatusFilter(e.target.value);
-              setCurrentPage(1);
-            }}
-            style={{
-              padding: '0.65rem 1rem',
-              borderRadius: 'var(--r-md)',
-              border: '1px solid var(--border)',
-              background: 'var(--surface-alt)',
-              color: 'var(--text)',
-              fontSize: '0.875rem',
-              cursor: 'pointer',
-            }}
-          >
-            <option value="ALL">📌 Tüm Paylaşım Durumları</option>
-            <option value="NOT_SHARED">⏳ Henüz Hiç Paylaşılmayanlar</option>
-            <option value="SHARED_ANY">🚀 En Az Birinde Paylaşılanlar</option>
-            <option value="ALL_COMPLETED">✅ 3 Platformda da Bitenler</option>
-            <option value="IG_ONLY">📸 Instagram Paylaşılanlar</option>
-            <option value="TT_ONLY">🎵 TikTok Paylaşılanlar</option>
-            <option value="YT_ONLY">🎥 YouTube Paylaşılanlar</option>
-          </select>
+          {/* Filter Dropdowns Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+            {/* Status */}
+            <select
+              value={statusFilter}
+              onChange={(e) => {
+                setStatusFilter(e.target.value);
+                setCurrentPage(1);
+              }}
+              className="py-2.5 px-3 rounded-xl border border-[var(--border)] bg-[var(--surface-alt)] text-[var(--text)] text-xs sm:text-sm cursor-pointer focus:outline-none focus:border-[var(--accent)]"
+            >
+              <option value="ALL">📌 Tüm Paylaşım Durumları</option>
+              <option value="NOT_SHARED">⏳ Henüz Hiç Paylaşılmayanlar</option>
+              <option value="SHARED_ANY">🚀 En Az Birinde Paylaşılanlar</option>
+              <option value="ALL_COMPLETED">✅ 3 Platformda da Bitenler</option>
+              <option value="IG_ONLY">📸 Instagram Paylaşılanlar</option>
+              <option value="TT_ONLY">🎵 TikTok Paylaşılanlar</option>
+              <option value="YT_ONLY">🎥 YouTube Paylaşılanlar</option>
+            </select>
 
-          {/* Gender Select */}
-          <select
-            value={selectedGender}
-            onChange={(e) => {
-              setSelectedGender(e.target.value);
-              setCurrentPage(1);
-            }}
-            style={{
-              padding: '0.65rem 1rem',
-              borderRadius: 'var(--r-md)',
-              border: '1px solid var(--border)',
-              background: 'var(--surface-alt)',
-              color: 'var(--text)',
-              fontSize: '0.875rem',
-              cursor: 'pointer',
-            }}
-          >
-            <option value="ALL">Tüm Cinsiyetler</option>
-            <option value="female">Kız İsimleri</option>
-            <option value="male">Erkek İsimleri</option>
-            <option value="unisex">Unisex İsimler</option>
-          </select>
+            {/* Gender */}
+            <select
+              value={selectedGender}
+              onChange={(e) => {
+                setSelectedGender(e.target.value);
+                setCurrentPage(1);
+              }}
+              className="py-2.5 px-3 rounded-xl border border-[var(--border)] bg-[var(--surface-alt)] text-[var(--text)] text-xs sm:text-sm cursor-pointer focus:outline-none focus:border-[var(--accent)]"
+            >
+              <option value="ALL">Tüm Cinsiyetler</option>
+              <option value="female">Kız İsimleri</option>
+              <option value="male">Erkek İsimleri</option>
+              <option value="unisex">Unisex İsimler</option>
+            </select>
 
-          {/* Page Size Select */}
-          <select
-            value={pageSize}
-            onChange={(e) => {
-              setPageSize(Number(e.target.value));
-              setCurrentPage(1);
-            }}
-            style={{
-              padding: '0.65rem 0.75rem',
-              borderRadius: 'var(--r-md)',
-              border: '1px solid var(--border)',
-              background: 'var(--surface-alt)',
-              color: 'var(--text)',
-              fontSize: '0.875rem',
-              cursor: 'pointer',
-            }}
-          >
-            <option value={25}>Sayfa başı 25</option>
-            <option value={50}>Sayfa başı 50</option>
-            <option value={100}>Sayfa başı 100</option>
-            <option value={200}>Sayfa başı 200</option>
-          </select>
+            {/* Page Size */}
+            <select
+              value={pageSize}
+              onChange={(e) => {
+                setPageSize(Number(e.target.value));
+                setCurrentPage(1);
+              }}
+              className="py-2.5 px-3 rounded-xl border border-[var(--border)] bg-[var(--surface-alt)] text-[var(--text)] text-xs sm:text-sm cursor-pointer focus:outline-none focus:border-[var(--accent)]"
+            >
+              <option value={25}>Sayfa başı 25</option>
+              <option value={50}>Sayfa başı 50</option>
+              <option value={100}>Sayfa başı 100</option>
+              <option value={200}>Sayfa başı 200</option>
+            </select>
+          </div>
         </div>
 
-        {/* Alphabet Bar */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.25rem', alignItems: 'center' }}>
-          <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-muted)', marginRight: '0.5rem' }}>
+        {/* Alphabet Bar (Horizontally scrollable on mobile) */}
+        <div className="flex items-center gap-1.5 overflow-x-auto whitespace-nowrap py-1 scrollbar-none">
+          <span className="text-[10px] sm:text-xs font-bold text-[var(--text-muted)] mr-1 shrink-0">
             HARFLER:
           </span>
           <button
@@ -921,16 +701,11 @@ export default function SocialTrackerClient() {
               setSelectedLetter('ALL');
               setCurrentPage(1);
             }}
-            style={{
-              padding: '0.2rem 0.5rem',
-              fontSize: '0.75rem',
-              borderRadius: 'var(--r-sm)',
-              border: '1px solid var(--border)',
-              background: selectedLetter === 'ALL' ? 'var(--accent)' : 'var(--surface-alt)',
-              color: selectedLetter === 'ALL' ? '#fff' : 'var(--text)',
-              cursor: 'pointer',
-              fontWeight: 700,
-            }}
+            className={`py-1 px-2.5 text-xs font-bold rounded-lg border border-[var(--border)] transition-colors shrink-0 cursor-pointer ${
+              selectedLetter === 'ALL'
+                ? 'bg-[var(--accent)] text-white'
+                : 'bg-[var(--surface-alt)] text-[var(--text)] hover:border-[var(--text-muted)]'
+            }`}
           >
             TÜMÜ
           </button>
@@ -941,16 +716,11 @@ export default function SocialTrackerClient() {
                 setSelectedLetter(char);
                 setCurrentPage(1);
               }}
-              style={{
-                padding: '0.2rem 0.45rem',
-                fontSize: '0.75rem',
-                borderRadius: 'var(--r-sm)',
-                border: '1px solid var(--border)',
-                background: selectedLetter === char ? 'var(--accent)' : 'var(--surface-alt)',
-                color: selectedLetter === char ? '#fff' : 'var(--text)',
-                cursor: 'pointer',
-                fontWeight: 600,
-              }}
+              className={`py-1 px-2 text-xs font-semibold rounded-lg border border-[var(--border)] transition-colors shrink-0 cursor-pointer ${
+                selectedLetter === char
+                  ? 'bg-[var(--accent)] text-white'
+                  : 'bg-[var(--surface-alt)] text-[var(--text)] hover:border-[var(--text-muted)]'
+              }`}
             >
               {char}
             </button>
@@ -958,112 +728,70 @@ export default function SocialTrackerClient() {
         </div>
       </div>
 
-      {/* Results Header */}
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginBottom: '0.75rem',
-          fontSize: '0.875rem',
-          color: 'var(--text-muted)',
-        }}
-      >
+      {/* Summary info and pagination top */}
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-3 text-xs sm:text-sm text-[var(--text-muted)]">
         <div>
-          Toplam <strong style={{ color: 'var(--text)' }}>{filteredNames.length}</strong> isim bulundu. (Sayfa{' '}
-          {currentPage} / {totalPages})
+          Toplam <strong className="text-[var(--text)] font-black">{filteredNames.length}</strong> isim bulundu.{' '}
+          <span className="text-[11px] sm:text-xs">(Sayfa {currentPage} / {totalPages})</span>
         </div>
 
-        {/* Pagination buttons */}
-        <div style={{ display: 'flex', gap: '0.35rem', alignItems: 'center' }}>
+        {/* Compact pagination buttons */}
+        <div className="flex items-center gap-1.5">
           <button
             disabled={currentPage <= 1}
             onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-            style={{
-              padding: '0.35rem 0.75rem',
-              borderRadius: 'var(--r-sm)',
-              border: '1px solid var(--border)',
-              background: 'var(--surface)',
-              color: 'var(--text)',
-              cursor: currentPage <= 1 ? 'not-allowed' : 'pointer',
-              opacity: currentPage <= 1 ? 0.5 : 1,
-              fontSize: '0.8rem',
-            }}
+            className="py-1 px-2.5 rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--text)] text-xs disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[var(--surface-alt)] cursor-pointer"
           >
             ← Önceki
           </button>
-          <span style={{ fontSize: '0.8rem', padding: '0 0.5rem' }}>
-            {currentPage} / {totalPages}
+          <span className="px-1 text-xs font-bold text-[var(--text)]">
+            {currentPage}/{totalPages}
           </span>
           <button
             disabled={currentPage >= totalPages}
             onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
-            style={{
-              padding: '0.35rem 0.75rem',
-              borderRadius: 'var(--r-sm)',
-              border: '1px solid var(--border)',
-              background: 'var(--surface)',
-              color: 'var(--text)',
-              cursor: currentPage >= totalPages ? 'not-allowed' : 'pointer',
-              opacity: currentPage >= totalPages ? 0.5 : 1,
-              fontSize: '0.8rem',
-            }}
+            className="py-1 px-2.5 rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--text)] text-xs disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[var(--surface-alt)] cursor-pointer"
           >
             Sonraki →
           </button>
         </div>
       </div>
 
-      {/* Table Container */}
-      <div
-        style={{
-          background: 'var(--surface)',
-          border: '1px solid var(--border)',
-          borderRadius: 'var(--r-xl)',
-          overflowX: 'auto',
-          boxShadow: '0 4px 15px rgba(0,0,0,0.05)',
-        }}
-      >
-        <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.875rem' }}>
-          <thead>
-            <tr
-              style={{
-                background: 'var(--surface-alt)',
-                borderBottom: '2px solid var(--border)',
-                color: 'var(--text-muted)',
-                fontSize: '0.75rem',
-                textTransform: 'uppercase',
-                letterSpacing: '0.05em',
-              }}
-            >
-              <th style={{ padding: '0.75rem 1rem', width: '50px' }}>#</th>
-              <th style={{ padding: '0.75rem 1rem', minWidth: '150px' }}>İsim</th>
-              <th style={{ padding: '0.75rem 1rem', width: '90px' }}>Cinsiyet</th>
-              <th style={{ padding: '0.75rem 1rem', minWidth: '220px' }}>Anlam</th>
-              <th style={{ padding: '0.75rem 1rem', minWidth: '190px', borderLeft: '1px solid var(--border)' }}>
+      {/* ========================================================================= */}
+      {/* 1. MASAÜSTÜ GENİŞ EXCEL TABLOSU (hidden on mobile, visible on md and up) */}
+      {/* ========================================================================= */}
+      <div className="hidden md:block bg-[var(--surface)] border border-[var(--border)] rounded-2xl overflow-x-auto shadow-sm">
+        <table className="w-full border-collapse text-left text-sm">
+          <thead className="sticky top-0 z-10 bg-[var(--surface-alt)] shadow-sm">
+            <tr className="border-b-2 border-[var(--border)] text-[var(--text-muted)] text-[11px] uppercase tracking-wider font-bold">
+              <th className="py-3 px-3.5 w-12 text-center">#</th>
+              <th className="py-3 px-4 min-w-[150px]">İsim</th>
+              <th className="py-3 px-3 w-24">Cinsiyet</th>
+              <th className="py-3 px-4 min-w-[220px]">Anlam</th>
+              <th className="py-3 px-4 min-w-[190px] border-l border-[var(--border)] text-[#e1306c]">
                 📸 Instagram
               </th>
-              <th style={{ padding: '0.75rem 1rem', minWidth: '190px', borderLeft: '1px solid var(--border)' }}>
+              <th className="py-3 px-4 min-w-[190px] border-l border-[var(--border)] text-[#00f2fe]">
                 🎵 TikTok
               </th>
-              <th style={{ padding: '0.75rem 1rem', minWidth: '190px', borderLeft: '1px solid var(--border)' }}>
+              <th className="py-3 px-4 min-w-[190px] border-l border-[var(--border)] text-[#ff0000]">
                 🎥 YouTube
               </th>
-              <th style={{ padding: '0.75rem 1rem', width: '120px', textAlign: 'center', borderLeft: '1px solid var(--border)' }}>
+              <th className="py-3 px-3 w-28 text-center border-l border-[var(--border)]">
                 İşlem
               </th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="divide-y divide-[var(--border)]">
             {isLoading ? (
               <tr>
-                <td colSpan={8} style={{ padding: '3rem', textAlign: 'center', color: 'var(--text-muted)' }}>
-                  ⏳ 4.709 Kürtçe isim yükleniyor, lütfen bekleyin...
+                <td colSpan={8} className="py-12 text-center text-[var(--text-muted)]">
+                  ⏳ 4.709 Kürtçe isim yükleniyor...
                 </td>
               </tr>
             ) : paginatedNames.length === 0 ? (
               <tr>
-                <td colSpan={8} style={{ padding: '3rem', textAlign: 'center', color: 'var(--text-muted)' }}>
+                <td colSpan={8} className="py-12 text-center text-[var(--text-muted)]">
                   Arama kriterlerine uygun isim bulunamadı.
                 </td>
               </tr>
@@ -1074,198 +802,116 @@ export default function SocialTrackerClient() {
                 const ig = rec.instagram || { shared: false, date: '' };
                 const tt = rec.tiktok || { shared: false, date: '' };
                 const yt = rec.youtube || { shared: false, date: '' };
-
                 const isAllDone = ig.shared && tt.shared && yt.shared;
 
                 return (
                   <tr
                     key={item.id}
-                    style={{
-                      borderBottom: '1px solid var(--border)',
-                      background: isAllDone
-                        ? 'rgba(16, 185, 129, 0.04)'
-                        : idx % 2 === 0
-                        ? 'transparent'
-                        : 'rgba(255, 255, 255, 0.015)',
-                    }}
+                    className={`transition-colors hover:bg-[var(--surface-alt)]/50 ${
+                      isAllDone ? 'bg-emerald-500/5' : ''
+                    }`}
                   >
-                    {/* Index */}
-                    <td style={{ padding: '0.75rem 1rem', color: 'var(--text-muted)', fontSize: '0.8rem' }}>
+                    <td className="py-3 px-3.5 text-center text-xs text-[var(--text-muted)]">
                       {globalIndex}
                     </td>
 
-                    {/* Name */}
-                    <td style={{ padding: '0.75rem 1rem' }}>
+                    <td className="py-3 px-4">
                       <Link
                         href={`/tr/isim/${item.id}`}
                         target="_blank"
-                        style={{
-                          fontWeight: 800,
-                          fontSize: '1rem',
-                          color: 'var(--text)',
-                          textDecoration: 'none',
-                        }}
+                        className="font-extrabold text-base text-[var(--text)] hover:text-[var(--accent)] transition-colors"
                       >
                         {item.name}
                       </Link>
-                      <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>/{item.id}</div>
+                      <div className="text-[11px] text-[var(--text-muted)]">/{item.id}</div>
                     </td>
 
-                    {/* Gender badge */}
-                    <td style={{ padding: '0.75rem 1rem' }}>
+                    <td className="py-3 px-3">
                       <span
-                        style={{
-                          fontSize: '0.75rem',
-                          padding: '0.2rem 0.5rem',
-                          borderRadius: 'var(--r-sm)',
-                          fontWeight: 700,
-                          background:
-                            item.gender === 'female'
-                              ? 'rgba(244, 114, 182, 0.15)'
-                              : item.gender === 'male'
-                              ? 'rgba(96, 165, 250, 0.15)'
-                              : 'rgba(168, 85, 247, 0.15)',
-                          color:
-                            item.gender === 'female'
-                              ? '#f472b6'
-                              : item.gender === 'male'
-                              ? '#60a5fa'
-                              : '#c084fc',
-                        }}
+                        className={`text-xs px-2 py-0.5 rounded-md font-bold ${
+                          item.gender === 'female'
+                            ? 'bg-pink-500/15 text-pink-500'
+                            : item.gender === 'male'
+                            ? 'bg-blue-500/15 text-blue-500'
+                            : 'bg-purple-500/15 text-purple-500'
+                        }`}
                       >
                         {item.gender === 'female' ? 'Kız' : item.gender === 'male' ? 'Erkek' : 'Unisex'}
                       </span>
                     </td>
 
-                    {/* Meaning */}
-                    <td
-                      style={{
-                        padding: '0.75rem 1rem',
-                        color: 'var(--text-muted)',
-                        fontSize: '0.8rem',
-                        lineHeight: 1.4,
-                        maxWidth: '300px',
-                      }}
-                    >
+                    <td className="py-3 px-4 text-xs text-[var(--text-muted)] max-w-xs leading-relaxed">
                       {item.meaning}
                     </td>
 
-                    {/* Instagram */}
-                    <td style={{ padding: '0.75rem 1rem', borderLeft: '1px solid var(--border)' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    {/* Instagram Desktop */}
+                    <td className="py-3 px-4 border-l border-[var(--border)]">
+                      <div className="flex items-center gap-2">
                         <input
                           type="checkbox"
                           checked={ig.shared}
                           onChange={() => togglePlatform(item.id, 'instagram')}
-                          style={{
-                            width: '18px',
-                            height: '18px',
-                            cursor: 'pointer',
-                            accentColor: '#e1306c',
-                          }}
+                          className="w-5 h-5 rounded cursor-pointer accent-[#e1306c]"
                         />
                         <input
                           type="date"
                           value={ig.date || ''}
                           onChange={(e) => changeDate(item.id, 'instagram', e.target.value)}
-                          style={{
-                            padding: '0.25rem 0.4rem',
-                            fontSize: '0.75rem',
-                            borderRadius: 'var(--r-sm)',
-                            border: '1px solid var(--border)',
-                            background: ig.shared ? 'rgba(225, 48, 108, 0.1)' : 'var(--surface-alt)',
-                            color: 'var(--text)',
-                          }}
+                          className={`text-xs p-1.5 rounded-lg border border-[var(--border)] bg-[var(--surface-alt)] text-[var(--text)] ${
+                            ig.shared ? 'bg-[#e1306c]/10 font-bold' : ''
+                          }`}
                         />
                       </div>
                     </td>
 
-                    {/* TikTok */}
-                    <td style={{ padding: '0.75rem 1rem', borderLeft: '1px solid var(--border)' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    {/* TikTok Desktop */}
+                    <td className="py-3 px-4 border-l border-[var(--border)]">
+                      <div className="flex items-center gap-2">
                         <input
                           type="checkbox"
                           checked={tt.shared}
                           onChange={() => togglePlatform(item.id, 'tiktok')}
-                          style={{
-                            width: '18px',
-                            height: '18px',
-                            cursor: 'pointer',
-                            accentColor: '#00f2fe',
-                          }}
+                          className="w-5 h-5 rounded cursor-pointer accent-[#00f2fe]"
                         />
                         <input
                           type="date"
                           value={tt.date || ''}
                           onChange={(e) => changeDate(item.id, 'tiktok', e.target.value)}
-                          style={{
-                            padding: '0.25rem 0.4rem',
-                            fontSize: '0.75rem',
-                            borderRadius: 'var(--r-sm)',
-                            border: '1px solid var(--border)',
-                            background: tt.shared ? 'rgba(0, 242, 254, 0.1)' : 'var(--surface-alt)',
-                            color: 'var(--text)',
-                          }}
+                          className={`text-xs p-1.5 rounded-lg border border-[var(--border)] bg-[var(--surface-alt)] text-[var(--text)] ${
+                            tt.shared ? 'bg-[#00f2fe]/10 font-bold' : ''
+                          }`}
                         />
                       </div>
                     </td>
 
-                    {/* YouTube */}
-                    <td style={{ padding: '0.75rem 1rem', borderLeft: '1px solid var(--border)' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    {/* YouTube Desktop */}
+                    <td className="py-3 px-4 border-l border-[var(--border)]">
+                      <div className="flex items-center gap-2">
                         <input
                           type="checkbox"
                           checked={yt.shared}
                           onChange={() => togglePlatform(item.id, 'youtube')}
-                          style={{
-                            width: '18px',
-                            height: '18px',
-                            cursor: 'pointer',
-                            accentColor: '#ff0000',
-                          }}
+                          className="w-5 h-5 rounded cursor-pointer accent-[#ff0000]"
                         />
                         <input
                           type="date"
                           value={yt.date || ''}
                           onChange={(e) => changeDate(item.id, 'youtube', e.target.value)}
-                          style={{
-                            padding: '0.25rem 0.4rem',
-                            fontSize: '0.75rem',
-                            borderRadius: 'var(--r-sm)',
-                            border: '1px solid var(--border)',
-                            background: yt.shared ? 'rgba(255, 0, 0, 0.1)' : 'var(--surface-alt)',
-                            color: 'var(--text)',
-                          }}
+                          className={`text-xs p-1.5 rounded-lg border border-[var(--border)] bg-[var(--surface-alt)] text-[var(--text)] ${
+                            yt.shared ? 'bg-[#ff0000]/10 font-bold' : ''
+                          }`}
                         />
                       </div>
                     </td>
 
-                    {/* Actions */}
-                    <td
-                      style={{
-                        padding: '0.75rem 1rem',
-                        textAlign: 'center',
-                        borderLeft: '1px solid var(--border)',
-                      }}
-                    >
+                    {/* Actions Desktop */}
+                    <td className="py-3 px-3 text-center border-l border-[var(--border)]">
                       <button
                         onClick={() => downloadCard(item)}
-                        style={{
-                          padding: '0.35rem 0.65rem',
-                          fontSize: '0.75rem',
-                          fontWeight: 700,
-                          borderRadius: 'var(--r-sm)',
-                          border: '1px solid var(--border)',
-                          background: 'var(--surface-alt)',
-                          color: 'var(--text)',
-                          cursor: 'pointer',
-                          display: 'inline-flex',
-                          alignItems: 'center',
-                          gap: '0.25rem',
-                        }}
-                        title="1080x1080 Kare Kart Görselini İndir"
+                        className="py-1 px-2.5 text-xs font-bold rounded-lg border border-[var(--border)] bg-[var(--surface-alt)] text-[var(--text)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all cursor-pointer inline-flex items-center gap-1"
+                        title="1080x1080 Kart İndir"
                       >
-                        📸 Görsel
+                        <span>📸</span> Görsel
                       </button>
                     </td>
                   </tr>
@@ -1276,90 +922,219 @@ export default function SocialTrackerClient() {
         </table>
       </div>
 
-      {/* Footer Pagination */}
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginTop: '1.25rem',
-          fontSize: '0.875rem',
-          color: 'var(--text-muted)',
-          flexWrap: 'wrap',
-          gap: '1rem',
-        }}
-      >
-        <div>
-          Toplam <strong style={{ color: 'var(--text)' }}>{filteredNames.length}</strong> isimden{' '}
-          {Math.min(filteredNames.length, (currentPage - 1) * pageSize + 1)} -{' '}
-          {Math.min(filteredNames.length, currentPage * pageSize)} arası gösteriliyor.
+      {/* ========================================================================= */}
+      {/* 2. MOBİL DOKUNMATİK KART DÜZENİ (visible on mobile, hidden on md and up) */}
+      {/* ========================================================================= */}
+      <div className="block md:hidden space-y-3">
+        {isLoading ? (
+          <div className="p-8 text-center text-xs text-[var(--text-muted)] bg-[var(--surface)] border border-[var(--border)] rounded-2xl">
+            ⏳ 4.709 Kürtçe isim yükleniyor...
+          </div>
+        ) : paginatedNames.length === 0 ? (
+          <div className="p-8 text-center text-xs text-[var(--text-muted)] bg-[var(--surface)] border border-[var(--border)] rounded-2xl">
+            Arama kriterlerine uygun isim bulunamadı.
+          </div>
+        ) : (
+          paginatedNames.map((item, idx) => {
+            const globalIndex = (currentPage - 1) * pageSize + idx + 1;
+            const rec = trackerDb[item.id] || {};
+            const ig = rec.instagram || { shared: false, date: '' };
+            const tt = rec.tiktok || { shared: false, date: '' };
+            const yt = rec.youtube || { shared: false, date: '' };
+            const isAllDone = ig.shared && tt.shared && yt.shared;
+
+            return (
+              <div
+                key={item.id}
+                className={`bg-[var(--surface)] border rounded-2xl p-3.5 space-y-3 shadow-sm transition-all ${
+                  isAllDone
+                    ? 'border-emerald-500/50 bg-emerald-500/[0.03]'
+                    : 'border-[var(--border)]'
+                }`}
+              >
+                {/* Mobile Card Top Header */}
+                <div className="flex items-start justify-between gap-2">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-mono text-[var(--text-muted)]">#{globalIndex}</span>
+                      <Link
+                        href={`/tr/isim/${item.id}`}
+                        target="_blank"
+                        className="text-lg font-black text-[var(--text)] hover:text-[var(--accent)]"
+                      >
+                        {item.name}
+                      </Link>
+                      <span
+                        className={`text-[10px] px-1.5 py-0.5 rounded font-bold ${
+                          item.gender === 'female'
+                            ? 'bg-pink-500/15 text-pink-500'
+                            : item.gender === 'male'
+                            ? 'bg-blue-500/15 text-blue-500'
+                            : 'bg-purple-500/15 text-purple-500'
+                        }`}
+                      >
+                        {item.gender === 'female' ? 'Kız' : item.gender === 'male' ? 'Erkek' : 'Unisex'}
+                      </span>
+                    </div>
+                    <p className="text-xs text-[var(--text-muted)] mt-1 line-clamp-2 leading-relaxed">
+                      {item.meaning}
+                    </p>
+                  </div>
+
+                  {/* 1080x1080 Card Download Touch Button */}
+                  <button
+                    onClick={() => downloadCard(item)}
+                    className="shrink-0 py-2 px-2.5 rounded-xl border border-[var(--border)] bg-[var(--surface-alt)] text-[var(--text)] text-xs font-bold active:scale-95 transition-transform flex items-center gap-1 cursor-pointer"
+                    title="1080x1080 Görsel İndir"
+                  >
+                    <span>📸</span>
+                    <span className="text-[11px]">İndir</span>
+                  </button>
+                </div>
+
+                {/* Mobile Card Platform Grid (3 Equal Columns with large touch targets) */}
+                <div className="grid grid-cols-3 gap-2 pt-2 border-t border-[var(--border)]">
+                  {/* Instagram Box */}
+                  <div
+                    onClick={() => togglePlatform(item.id, 'instagram')}
+                    className={`flex flex-col items-center justify-center p-2 rounded-xl border text-center transition-colors cursor-pointer select-none ${
+                      ig.shared
+                        ? 'bg-[#e1306c]/15 border-[#e1306c]'
+                        : 'bg-[var(--surface-alt)] border-[var(--border)] opacity-80'
+                    }`}
+                  >
+                    <span className="text-xs font-bold text-[#e1306c] flex items-center gap-1">
+                      📸 IG {ig.shared ? '✓' : ''}
+                    </span>
+                    <input
+                      type="checkbox"
+                      checked={ig.shared}
+                      onChange={() => {}}
+                      className="w-5 h-5 mt-1 accent-[#e1306c] pointer-events-none"
+                    />
+                    <div
+                      className="w-full mt-1.5"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <input
+                        type="date"
+                        value={ig.date || ''}
+                        onChange={(e) => changeDate(item.id, 'instagram', e.target.value)}
+                        className={`w-full text-[10px] p-1 rounded border border-[var(--border)] bg-[var(--surface)] text-[var(--text)] ${
+                          ig.shared ? 'font-bold' : ''
+                        }`}
+                      />
+                    </div>
+                  </div>
+
+                  {/* TikTok Box */}
+                  <div
+                    onClick={() => togglePlatform(item.id, 'tiktok')}
+                    className={`flex flex-col items-center justify-center p-2 rounded-xl border text-center transition-colors cursor-pointer select-none ${
+                      tt.shared
+                        ? 'bg-[#00f2fe]/15 border-[#00f2fe]'
+                        : 'bg-[var(--surface-alt)] border-[var(--border)] opacity-80'
+                    }`}
+                  >
+                    <span className="text-xs font-bold text-[#00f2fe] flex items-center gap-1">
+                      🎵 TT {tt.shared ? '✓' : ''}
+                    </span>
+                    <input
+                      type="checkbox"
+                      checked={tt.shared}
+                      onChange={() => {}}
+                      className="w-5 h-5 mt-1 accent-[#00f2fe] pointer-events-none"
+                    />
+                    <div
+                      className="w-full mt-1.5"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <input
+                        type="date"
+                        value={tt.date || ''}
+                        onChange={(e) => changeDate(item.id, 'tiktok', e.target.value)}
+                        className={`w-full text-[10px] p-1 rounded border border-[var(--border)] bg-[var(--surface)] text-[var(--text)] ${
+                          tt.shared ? 'font-bold' : ''
+                        }`}
+                      />
+                    </div>
+                  </div>
+
+                  {/* YouTube Box */}
+                  <div
+                    onClick={() => togglePlatform(item.id, 'youtube')}
+                    className={`flex flex-col items-center justify-center p-2 rounded-xl border text-center transition-colors cursor-pointer select-none ${
+                      yt.shared
+                        ? 'bg-[#ff0000]/15 border-[#ff0000]'
+                        : 'bg-[var(--surface-alt)] border-[var(--border)] opacity-80'
+                    }`}
+                  >
+                    <span className="text-xs font-bold text-[#ff0000] flex items-center gap-1">
+                      🎥 YT {yt.shared ? '✓' : ''}
+                    </span>
+                    <input
+                      type="checkbox"
+                      checked={yt.shared}
+                      onChange={() => {}}
+                      className="w-5 h-5 mt-1 accent-[#ff0000] pointer-events-none"
+                    />
+                    <div
+                      className="w-full mt-1.5"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <input
+                        type="date"
+                        value={yt.date || ''}
+                        onChange={(e) => changeDate(item.id, 'youtube', e.target.value)}
+                        className={`w-full text-[10px] p-1 rounded border border-[var(--border)] bg-[var(--surface)] text-[var(--text)] ${
+                          yt.shared ? 'font-bold' : ''
+                        }`}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })
+        )}
+      </div>
+
+      {/* Responsive Bottom Pagination */}
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-3 mt-5 pt-3 text-xs sm:text-sm text-[var(--text-muted)]">
+        <div className="text-center sm:text-left text-xs">
+          Gösterilen: <strong className="text-[var(--text)]">{Math.min(filteredNames.length, (currentPage - 1) * pageSize + 1)}</strong> -{' '}
+          <strong className="text-[var(--text)]">{Math.min(filteredNames.length, currentPage * pageSize)}</strong> (Toplam {filteredNames.length})
         </div>
 
-        <div style={{ display: 'flex', gap: '0.35rem', alignItems: 'center' }}>
+        <div className="flex items-center gap-1.5">
           <button
             disabled={currentPage <= 1}
             onClick={() => setCurrentPage(1)}
-            style={{
-              padding: '0.35rem 0.65rem',
-              borderRadius: 'var(--r-sm)',
-              border: '1px solid var(--border)',
-              background: 'var(--surface)',
-              color: 'var(--text)',
-              cursor: currentPage <= 1 ? 'not-allowed' : 'pointer',
-              opacity: currentPage <= 1 ? 0.5 : 1,
-              fontSize: '0.8rem',
-            }}
+            className="py-1.5 px-2.5 rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--text)] text-xs disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[var(--surface-alt)] cursor-pointer"
           >
             « İlk
           </button>
           <button
             disabled={currentPage <= 1}
             onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-            style={{
-              padding: '0.35rem 0.75rem',
-              borderRadius: 'var(--r-sm)',
-              border: '1px solid var(--border)',
-              background: 'var(--surface)',
-              color: 'var(--text)',
-              cursor: currentPage <= 1 ? 'not-allowed' : 'pointer',
-              opacity: currentPage <= 1 ? 0.5 : 1,
-              fontSize: '0.8rem',
-            }}
+            className="py-1.5 px-3 rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--text)] text-xs disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[var(--surface-alt)] cursor-pointer"
           >
             ← Önceki
           </button>
-          <span style={{ fontSize: '0.85rem', fontWeight: 700, padding: '0 0.5rem', color: 'var(--text)' }}>
-            Sayfa {currentPage} / {totalPages}
+          <span className="px-2 text-xs font-bold text-[var(--text)]">
+            {currentPage} / {totalPages}
           </span>
           <button
             disabled={currentPage >= totalPages}
             onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
-            style={{
-              padding: '0.35rem 0.75rem',
-              borderRadius: 'var(--r-sm)',
-              border: '1px solid var(--border)',
-              background: 'var(--surface)',
-              color: 'var(--text)',
-              cursor: currentPage >= totalPages ? 'not-allowed' : 'pointer',
-              opacity: currentPage >= totalPages ? 0.5 : 1,
-              fontSize: '0.8rem',
-            }}
+            className="py-1.5 px-3 rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--text)] text-xs disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[var(--surface-alt)] cursor-pointer"
           >
             Sonraki →
           </button>
           <button
             disabled={currentPage >= totalPages}
             onClick={() => setCurrentPage(totalPages)}
-            style={{
-              padding: '0.35rem 0.65rem',
-              borderRadius: 'var(--r-sm)',
-              border: '1px solid var(--border)',
-              background: 'var(--surface)',
-              color: 'var(--text)',
-              cursor: currentPage >= totalPages ? 'not-allowed' : 'pointer',
-              opacity: currentPage >= totalPages ? 0.5 : 1,
-              fontSize: '0.8rem',
-            }}
+            className="py-1.5 px-2.5 rounded-lg border border-[var(--border)] bg-[var(--surface)] text-[var(--text)] text-xs disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[var(--surface-alt)] cursor-pointer"
           >
             Son »
           </button>

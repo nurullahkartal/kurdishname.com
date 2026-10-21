@@ -411,7 +411,7 @@ export default async function SlugDetailPage({
     };
 
     return (
-      <article style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+      <article className="flex flex-col gap-8 pb-24 md:pb-6">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

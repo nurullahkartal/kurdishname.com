@@ -88,7 +88,7 @@ export default function LazySearchClient({
   };
 
   return (
-    <div style={{ position: "relative", maxWidth: "640px", margin: "1.25rem auto 0 auto" }}>
+    <div style={{ position: "relative", maxWidth: "640px", margin: "0.75rem auto 0 auto" }}>
       <form
         onSubmit={handleSubmit}
         style={{
@@ -101,16 +101,17 @@ export default function LazySearchClient({
         <div
           style={{
             flex: 1,
-            minWidth: "240px",
+            minWidth: "220px",
             display: "flex",
             alignItems: "center",
             border: "1.5px solid var(--border)",
             borderRadius: "0.75rem",
             background: "var(--surface)",
-            padding: "0.25rem 0.5rem 0.25rem 0.875rem",
+            padding: "0.2rem 0.4rem 0.2rem 0.75rem",
+            minHeight: "48px",
           }}
         >
-          <Search size={18} style={{ color: "var(--text-muted)", marginRight: "0.5rem" }} />
+          <Search size={18} style={{ color: "var(--text-muted)", marginRight: "0.5rem", flexShrink: 0 }} />
           <input
             type="text"
             value={query}
@@ -126,11 +127,36 @@ export default function LazySearchClient({
               border: "none",
               background: "transparent",
               color: "var(--text)",
-              fontSize: "0.95rem",
-              padding: "0.55rem 0",
+              fontSize: "16px", // iOS Safari 16px prevents auto-zoom
+              padding: "0.5rem 0",
               outline: "none",
             }}
           />
+          {query.length > 0 && (
+            <button
+              type="button"
+              onClick={() => {
+                setQuery("");
+                setIsOpen(false);
+              }}
+              style={{
+                background: "transparent",
+                border: "none",
+                color: "var(--text-muted)",
+                cursor: "pointer",
+                padding: "0.4rem 0.6rem",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "1rem",
+                fontWeight: 700,
+                lineHeight: 1,
+              }}
+              aria-label="Aramayı temizle"
+            >
+              ✕
+            </button>
+          )}
           <button
             type="submit"
             style={{
@@ -138,10 +164,12 @@ export default function LazySearchClient({
               color: "#fff",
               border: "none",
               borderRadius: "0.5rem",
-              padding: "0.5rem 1rem",
-              fontSize: "0.85rem",
+              padding: "0.6rem 1rem",
+              fontSize: "0.875rem",
               fontWeight: 700,
               cursor: "pointer",
+              minHeight: "40px",
+              flexShrink: 0,
             }}
           >
             {searchBtnLabel}
@@ -155,7 +183,7 @@ export default function LazySearchClient({
             display: "inline-flex",
             alignItems: "center",
             gap: "0.4rem",
-            padding: "0.75rem 1rem",
+            padding: "0.6rem 0.9rem",
             borderRadius: "0.75rem",
             border: "1.5px solid var(--border)",
             background: "var(--surface)",
@@ -163,6 +191,7 @@ export default function LazySearchClient({
             fontSize: "0.85rem",
             fontWeight: 700,
             cursor: "pointer",
+            minHeight: "48px",
           }}
         >
           <Dices size={16} />
@@ -196,19 +225,20 @@ export default function LazySearchClient({
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
-                padding: "0.65rem 1rem",
+                padding: "0.55rem 0.85rem",
+                minHeight: "44px",
                 borderBottom: "1px solid var(--border-dim)",
                 textDecoration: "none",
                 color: "var(--text)",
                 fontWeight: 600,
-                fontSize: "0.9rem",
+                fontSize: "0.925rem",
               }}
-              className="hover:bg-[var(--surface-alt)]"
+              className="hover:bg-[var(--surface-alt)] active:bg-[var(--surface-2)]"
             >
               <span>{item.name}</span>
               <span
                 className={item.gender === "female" ? "badge-female" : "badge-male"}
-                style={{ fontSize: "0.7rem" }}
+                style={{ fontSize: "0.75rem", padding: "0.2rem 0.5rem" }}
               >
                 {item.gender === "female" ? girlLabel : boyLabel}
               </span>

@@ -369,6 +369,56 @@ export default function NameCardShareActions({
           )}
         </button>
       </div>
+
+      {/* 4. Mobile Sticky Bottom Action Bar (visible on mobile, fixed at bottom for easy thumb access) */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 p-2.5 sm:p-3 bg-[var(--surface)]/95 backdrop-blur-md border-t border-[var(--border)] shadow-[0_-4px_20px_rgba(0,0,0,0.1)] block md:hidden">
+        <div className="max-w-md mx-auto flex items-center justify-between gap-2">
+          {/* WhatsApp Mobile */}
+          <a
+            href={whatsappShareUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp'ta Paylaş"
+            className="flex-1 min-h-[46px] px-3 rounded-xl bg-[#25D366] text-white font-bold text-xs inline-flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform no-underline"
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.37 5.005L2 22l5.135-1.346a9.94 9.94 0 004.87 1.27h.005c5.507 0 9.99-4.478 9.99-9.986 0-2.67-1.037-5.18-2.92-7.061A9.925 9.925 0 0012.012 2zm5.72 14.1c-.244.688-1.201 1.25-1.654 1.336-.421.08-.949.124-2.855-.672-2.434-1.014-4-3.48-4.122-3.641-.121-.162-1.008-1.343-1.008-2.56 0-1.218.636-1.815.862-2.057.227-.243.498-.303.664-.303h.473c.152 0 .356-.057.556.425.2.486.688 1.678.749 1.8.06.121.101.263.02.425-.08.162-.121.263-.243.405-.121.141-.256.315-.365.425-.121.121-.248.253-.106.496.142.242.631 1.042 1.353 1.685.93.827 1.71 1.082 1.954 1.204.243.122.384.101.526-.06.141-.162.607-.708.769-.95.162-.243.324-.202.546-.121.222.08 1.413.667 1.655.789.243.121.404.182.464.283.06.101.06.587-.184 1.275z" />
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+
+          {/* Download 1080x1080 Card Mobile */}
+          <button
+            type="button"
+            onClick={handleDownloadCard}
+            disabled={isGenerating}
+            aria-label={labels.downloadCardBtn}
+            className="flex-1 min-h-[46px] px-3 rounded-xl bg-[var(--surface-2)] border border-[var(--border)] text-[var(--text)] font-bold text-xs inline-flex items-center justify-center gap-1.5 active:scale-95 transition-transform cursor-pointer"
+          >
+            <Download size={18} aria-hidden="true" />
+            <span>
+              {isGenerating
+                ? { tr: 'İndiriliyor...', en: 'Downloading...', de: 'Laden...', ar: 'جارٍ التحميل...' }[locale] ||
+                  'İndiriliyor...'
+                : 'Kart İndir'}
+            </span>
+          </button>
+
+          {/* Copy Link Mobile */}
+          <button
+            type="button"
+            onClick={handleCopyLink}
+            className="min-h-[46px] px-3.5 rounded-xl border border-[var(--border)] bg-[var(--surface-2)] text-[var(--text)] text-xs font-semibold inline-flex items-center justify-center gap-1 active:scale-95 transition-transform cursor-pointer"
+            title={labels.copyLinkBtn}
+          >
+            {isCopied ? (
+              <Check size={18} className="text-emerald-500" aria-hidden="true" />
+            ) : (
+              <Copy size={18} aria-hidden="true" />
+            )}
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
