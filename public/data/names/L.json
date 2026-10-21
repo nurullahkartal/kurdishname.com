@@ -1,6 +1,6 @@
 {
   "letter": "L",
-  "count": 116,
+  "count": 117,
   "names": [
     {
       "id": "labani",
@@ -511,6 +511,22 @@
         "Kürtçe İsim"
       ],
       "description": "Lawîdar; genç anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "lawin",
+      "name": "Lawîn",
+      "gender": "unisex",
+      "letter": "L",
+      "meaning": "Lawîn; genç, dinç, delikanlı, hayatın en verimli çağındaki cesaret.",
+      "description": "Lawîn; genç, dinç, delikanlı, hayatın en verimli çağındaki cesaret.",
+      "meaning_en": "Lawîn; youth, vigorous, energetic young person in the prime of life.",
+      "meaning_de": "Lawîn; jugendlich, vital, voller Tatkraft in der Blüte des Lebens.",
+      "meaning_ar": "Lawîn؛ شاب، فتي، يافع مفعم بالعنفوان والحيوية.",
+      "origin": "Kurdish",
+      "tags": [
+        "Güç / Cesaret",
+        "Kürtçe İsim"
+      ]
     },
     {
       "id": "lawine",

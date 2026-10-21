@@ -1,6 +1,6 @@
 {
   "letter": "B",
-  "count": 533,
+  "count": 534,
   "names": [
     {
       "id": "baban",
@@ -1566,6 +1566,21 @@
       "meaning_ar": "Bashat؛ شخص يضع معنى من أتى بخير، وجلب الحظ وكان مفرحاً والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً."
     },
     {
+      "id": "basor",
+      "name": "Basor",
+      "gender": "male",
+      "letter": "B",
+      "meaning": "Basor; kızıl rüzgar ve gün batımı esintisidir.",
+      "origin": "Kurdish",
+      "tags": [
+        "Doğa / Yaşam"
+      ],
+      "description": "Basor; kızıl rüzgar ve gün batımı esintisidir gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
+      "meaning_en": "Basor; clear, fresh, and vibrant like red wind and sunset breeze; a noble person who embodies the purest and most graceful whispers of nature.",
+      "meaning_de": "Basor; rein, frisch und lebendig wie roter Wind und Sonnenuntergangshauch; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
+      "meaning_ar": "Basor؛ نقي وعذب وحيوي مثل رياح حمراء ونسمة غروب الشمس؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
+    },
+    {
       "id": "basin",
       "name": "Başîn",
       "gender": "male",
@@ -1594,21 +1609,6 @@
       "meaning_en": "Başo; a person who places the meaning of good man, honest and virtuous person and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
       "meaning_de": "Başo; eine Persönlichkeit, die die Bedeutung von guter Mann, ehrliche und tugendhafte Person und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
       "meaning_ar": "Başo؛ شخص يضع معنى رجل طيب، شخص صادق وفاضل والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً."
-    },
-    {
-      "id": "basor",
-      "name": "Basor",
-      "gender": "male",
-      "letter": "B",
-      "meaning": "Basor; kızıl rüzgar ve gün batımı esintisidir.",
-      "origin": "Kurdish",
-      "tags": [
-        "Doğa / Yaşam"
-      ],
-      "description": "Basor; kızıl rüzgar ve gün batımı esintisidir gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
-      "meaning_en": "Basor; clear, fresh, and vibrant like red wind and sunset breeze; a noble person who embodies the purest and most graceful whispers of nature.",
-      "meaning_de": "Basor; rein, frisch und lebendig wie roter Wind und Sonnenuntergangshauch; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
-      "meaning_ar": "Basor؛ نقي وعذب وحيوي مثل رياح حمراء ونسمة غروب الشمس؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
     },
     {
       "id": "basuk",
@@ -3532,21 +3532,6 @@
       "meaning_ar": "Benaz؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ شخص مدلل، رقيق، ثمين ونشأ في ظل الحب، وتتميز بوقارها ورقّتها."
     },
     {
-      "id": "benazar",
-      "name": "Benazar",
-      "gender": "female",
-      "letter": "B",
-      "meaning": "Benazar; nazsız.",
-      "meaning_en": "Benazar; a person who places the meaning of without coyness and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Benazar; eine Persönlichkeit, die die Bedeutung von ohne Koketterie und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Benazar؛ شخص يضع معنى بلا دلال والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Benazar; nazsız anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "benazi",
       "name": "Benazî",
       "gender": "female",
@@ -3635,21 +3620,6 @@
         "Kürtçe İsim"
       ],
       "description": "Bendoî; bağlılık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "bendok",
-      "name": "Bendok",
-      "gender": "male",
-      "letter": "B",
-      "meaning": "Bendok; küçük bağ.",
-      "meaning_en": "Bendok; a person who places the meaning of small bond and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Bendok; eine Persönlichkeit, die die Bedeutung von kleine Bindung und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Bendok؛ شخص يضع معنى رابط صغير والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Bendok; küçük bağ anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "benewa",
@@ -4222,6 +4192,22 @@
       "meaning_ar": "Berfhat؛ نقي وعذب وحيوي مثل أتى الثلج، أتت البركة ومن هو مبشر بالشتاء؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
     },
     {
+      "id": "berfin",
+      "name": "Berfîn",
+      "gender": "female",
+      "letter": "B",
+      "meaning": "Berfîn; kardan olan, kardelen çiçeği; kışın ardından gelen baharın müjdecisi ve zarafetin sembolü.",
+      "description": "Berfîn; kardan olan, kardelen çiçeği; kışın ardından gelen baharın müjdecisi ve zarafetin sembolü.",
+      "meaning_en": "Berfîn; snowdrop flower, made of snow; herald of spring following winter and symbol of pure elegance.",
+      "meaning_de": "Berfîn; Schneeglöckchen, aus Schnee gemacht; Frühlingsbote nach dem Winter und Symbol reiner Eleganz.",
+      "meaning_ar": "Berfîn؛ زهرة الثلج، ناصعة كالثلج؛ بشارة الربيع بعد الشتاء ورمز النقاء والأناقة.",
+      "origin": "Kurdish",
+      "tags": [
+        "Çiçek / Doğa",
+        "Popüler"
+      ]
+    },
+    {
       "id": "berfine",
       "name": "Berfînê",
       "gender": "female",
@@ -4415,6 +4401,22 @@
       "meaning_en": "Bêrîtîn; clear, fresh, and vibrant like waterside, spring-head, pure water source; a noble person who embodies the purest and most graceful whispers of nature.",
       "meaning_de": "Bêrîtîn; rein, frisch und lebendig wie wasserufer, Quelle, reine Wasserquelle; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
       "meaning_ar": "Bêrîtîn؛ نقي وعذب وحيوي مثل ضفة الماء، منبع النبع، مصدر مياه نقي صافٍ؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
+    },
+    {
+      "id": "berivan",
+      "name": "Bêrîvan",
+      "gender": "female",
+      "letter": "B",
+      "meaning": "Bêrîvan; süt sağan genç kadın, yayla kızı ve dağların taze çiçeği.",
+      "description": "Bêrîvan; süt sağan genç kadın, yayla kızı ve dağların taze çiçeği.",
+      "meaning_en": "Bêrîvan; milkmaid, shepherdess, symbol of highland meadows and nature freshness.",
+      "meaning_de": "Bêrîvan; Milchmädchen, Almhüterin, Symbol der Hochlandwiesen und Bergnatur.",
+      "meaning_ar": "Bêrîvan؛ فتاة المراعي الجبلية، رمز العفوية وجمال الطبيعة العذراء.",
+      "origin": "Kurdish",
+      "tags": [
+        "Doğa / Yaşam",
+        "Popüler"
+      ]
     },
     {
       "id": "berivani",
@@ -5092,36 +5094,6 @@
       "description": "Berzoî; yüce kişi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "besa",
-      "name": "Bêşa",
-      "gender": "male",
-      "letter": "B",
-      "meaning": "Bêşa; orman, koruluk ve yeşil alanı temsil eden doğa aşığı ve doğa.",
-      "origin": "Kurdish",
-      "tags": [
-        "Doğa / Yaşam"
-      ],
-      "description": "Bêşa; orman, koruluk ve yeşil alanı temsil eden doğa aşığı ve doğa gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
-      "meaning_en": "Bêşa; clear, fresh, and vibrant like nature-lover representing the forest, grove, and green area; a noble person who embodies the purest and most graceful whispers of nature.",
-      "meaning_de": "Bêşa; rein, frisch und lebendig wie naturliebhaber, der den Wald, den Hain und die Grünfläche repräsentiert; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
-      "meaning_ar": "Bêşa؛ نقي وعذب وحيوي مثل محب للطبيعة يمثل الغابة والحرش والمنطقة الخضراء؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
-    },
-    {
-      "id": "besai",
-      "name": "Bêşaî",
-      "gender": "female",
-      "letter": "B",
-      "meaning": "Bêşaî; ormanlık.",
-      "meaning_en": "Bêşaî; clear, fresh, and vibrant like woody; a noble person who embodies the purest and most graceful whispers of nature.",
-      "meaning_de": "Bêşaî; rein, frisch und lebendig wie waldig; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
-      "meaning_ar": "Bêşaî؛ نقي وعذب وحيوي مثل غابية؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Bêşaî; ormanlık gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
-    },
-    {
       "id": "besam",
       "name": "Besam",
       "gender": "male",
@@ -5152,36 +5124,6 @@
       "description": "Besamî; güler yüzlülük gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
     },
     {
-      "id": "bese-erkek",
-      "name": "Bêşe",
-      "gender": "male",
-      "letter": "B",
-      "meaning": "Bêşe; orman, sık ağaçlık ve doğanın kalbini temsil etme.",
-      "origin": "Kurdish",
-      "tags": [
-        "Doğa / Yaşam"
-      ],
-      "description": "Bêşe; orman, sık ağaçlık ve doğanın kalbini temsil etme gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
-      "meaning_en": "Bêşe; clear, fresh, and vibrant like one representing the forest, dense woodland, and the heart of nature; a noble person who embodies the purest and most graceful whispers of nature.",
-      "meaning_de": "Bêşe; rein, frisch und lebendig wie jemand, der den Wald, das dichte Waldgebiet und das Herz der Natur repräsentiert; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
-      "meaning_ar": "Bêşe؛ نقي وعذب وحيوي مثل من يمثل الغابة والأحراش الكثيفة وقلب الطبيعة؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
-    },
-    {
-      "id": "besei",
-      "name": "Bêşeî",
-      "gender": "female",
-      "letter": "B",
-      "meaning": "Bêşeî; aslan yatağı.",
-      "meaning_en": "Bêşeî; a noble person endowed with lion's den, possessing brave courage and unwavering determination, representing the symbol of strength and leadership.",
-      "meaning_de": "Bêşeî; eine edle Persönlichkeit, die mit löwenlager ausgestattet ist, tapferen Mut und unerschütterliche Entschlossenheit besitzt und das Symbol für Stärke und Führung darstellt.",
-      "meaning_ar": "Bêşeî؛ شخصية نبيلة تتحلى بـ عرين، تمتلك شجاعة مقدامة وعزيمة لا تلين، وتمثل رمز القوة والقيادة.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Bêşeî; aslan yatağı sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir."
-    },
-    {
       "id": "beseran",
       "name": "Bêseran",
       "gender": "male",
@@ -5210,36 +5152,6 @@
       "meaning_en": "Bêseranî; a person who places the meaning of one from the Beserani region or from that tribal branch and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
       "meaning_de": "Bêseranî; eine Persönlichkeit, die die Bedeutung von jemand aus der Region Beserani oder aus diesem Stammeszweig und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
       "meaning_ar": "Bêseranî؛ شخص يضع معنى من منطقة بسراني أو من ذلك الفرع القبلي والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً."
-    },
-    {
-      "id": "beshat",
-      "name": "Beşhat",
-      "gender": "male",
-      "letter": "B",
-      "meaning": "Beşhat; iyi pay, kısmet ve talihi açık olan uğurlu olup, getiren, umut dolu.",
-      "origin": "Kurdish",
-      "tags": [
-        "Sevgi / Güzellik"
-      ],
-      "description": "Beşhat; iyi pay, kısmet ve talihi açık olan uğurlu olup, getiren, her kalbe sevinç, huzur ve taze başlangıçlar müjdeleyen, umut dolu asil bir esintidir.",
-      "meaning_en": "Beşhat; a noble whisper of hope, bringing auspicious person with a good share, fortune, and open luck and promising joy, peace, and fresh beginnings to every heart.",
-      "meaning_de": "Beşhat; ein edler Hauch der Hoffnung, der glückverheißende Person mit einem guten Anteil, Schicksal und offenem Glück bringt und jedem Herzen Freude, Frieden und einen Neuanfang verspricht.",
-      "meaning_ar": "Beşhat؛ همسة أمل نبيلة تجلب شخص مبارك ذو نصيب طيب وقدر وحظ سعيد، وتبشر كل قلب بالبهجة والسكينة والبدايات الجديدة المشرقة."
-    },
-    {
-      "id": "besir",
-      "name": "Beşir",
-      "gender": "male",
-      "letter": "B",
-      "meaning": "Beşir; müjdeci, müjde getiren, güler yüzlü kimse.",
-      "meaning_en": "Beşir; clear, fresh, and vibrant like messenger of good news, smiling person; a noble person who embodies the purest and most graceful whispers of nature.",
-      "meaning_de": "Beşir; rein, frisch und lebendig wie überbringer guter Nachrichten, lächelnde Person; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
-      "meaning_ar": "Beşir؛ نقي وعذب وحيوي مثل بشير، حامل البشرى، ذو الوجه البشوش؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Beşir; müjdeci, müjde getiren, güler yüzlü kimse gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
     },
     {
       "id": "bestan",
@@ -5300,6 +5212,112 @@
         "Kürtçe İsim"
       ],
       "description": "Bêstûnî; tarihi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "besa",
+      "name": "Bêşa",
+      "gender": "male",
+      "letter": "B",
+      "meaning": "Bêşa; orman, koruluk ve yeşil alanı temsil eden doğa aşığı ve doğa.",
+      "origin": "Kurdish",
+      "tags": [
+        "Doğa / Yaşam"
+      ],
+      "description": "Bêşa; orman, koruluk ve yeşil alanı temsil eden doğa aşığı ve doğa gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
+      "meaning_en": "Bêşa; clear, fresh, and vibrant like nature-lover representing the forest, grove, and green area; a noble person who embodies the purest and most graceful whispers of nature.",
+      "meaning_de": "Bêşa; rein, frisch und lebendig wie naturliebhaber, der den Wald, den Hain und die Grünfläche repräsentiert; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
+      "meaning_ar": "Bêşa؛ نقي وعذب وحيوي مثل محب للطبيعة يمثل الغابة والحرش والمنطقة الخضراء؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
+    },
+    {
+      "id": "besai",
+      "name": "Bêşaî",
+      "gender": "female",
+      "letter": "B",
+      "meaning": "Bêşaî; ormanlık.",
+      "meaning_en": "Bêşaî; clear, fresh, and vibrant like woody; a noble person who embodies the purest and most graceful whispers of nature.",
+      "meaning_de": "Bêşaî; rein, frisch und lebendig wie waldig; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
+      "meaning_ar": "Bêşaî؛ نقي وعذب وحيوي مثل غابية؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Bêşaî; ormanlık gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
+    },
+    {
+      "id": "besdar",
+      "name": "Beşdar",
+      "gender": "male",
+      "letter": "B",
+      "meaning": "Beşdar; katılımcı, ortak, hayata ve dayanışmaya katkı sunan.",
+      "description": "Beşdar; katılımcı, ortak, hayata ve dayanışmaya katkı sunan.",
+      "meaning_en": "Beşdar; participant, contributor, one who shares in solidarity and life.",
+      "meaning_de": "Beşdar; Teilnehmer, Mitwirkender, einer der Solidarität und Leben teilt.",
+      "meaning_ar": "Beşdar؛ مشارك، مساهم، يعزز التكافل والتعاون في الحياة.",
+      "origin": "Kurdish",
+      "tags": [
+        "Toplum / Birlik",
+        "Kürtçe İsim"
+      ]
+    },
+    {
+      "id": "bese-erkek",
+      "name": "Bêşe",
+      "gender": "male",
+      "letter": "B",
+      "meaning": "Bêşe; orman, sık ağaçlık ve doğanın kalbini temsil etme.",
+      "origin": "Kurdish",
+      "tags": [
+        "Doğa / Yaşam"
+      ],
+      "description": "Bêşe; orman, sık ağaçlık ve doğanın kalbini temsil etme gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
+      "meaning_en": "Bêşe; clear, fresh, and vibrant like one representing the forest, dense woodland, and the heart of nature; a noble person who embodies the purest and most graceful whispers of nature.",
+      "meaning_de": "Bêşe; rein, frisch und lebendig wie jemand, der den Wald, das dichte Waldgebiet und das Herz der Natur repräsentiert; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
+      "meaning_ar": "Bêşe؛ نقي وعذب وحيوي مثل من يمثل الغابة والأحراش الكثيفة وقلب الطبيعة؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
+    },
+    {
+      "id": "besei",
+      "name": "Bêşeî",
+      "gender": "female",
+      "letter": "B",
+      "meaning": "Bêşeî; aslan yatağı.",
+      "meaning_en": "Bêşeî; a noble person endowed with lion's den, possessing brave courage and unwavering determination, representing the symbol of strength and leadership.",
+      "meaning_de": "Bêşeî; eine edle Persönlichkeit, die mit löwenlager ausgestattet ist, tapferen Mut und unerschütterliche Entschlossenheit besitzt und das Symbol für Stärke und Führung darstellt.",
+      "meaning_ar": "Bêşeî؛ شخصية نبيلة تتحلى بـ عرين، تمتلك شجاعة مقدامة وعزيمة لا تلين، وتمثل رمز القوة والقيادة.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Bêşeî; aslan yatağı sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir."
+    },
+    {
+      "id": "beshat",
+      "name": "Beşhat",
+      "gender": "male",
+      "letter": "B",
+      "meaning": "Beşhat; iyi pay, kısmet ve talihi açık olan uğurlu olup, getiren, umut dolu.",
+      "origin": "Kurdish",
+      "tags": [
+        "Sevgi / Güzellik"
+      ],
+      "description": "Beşhat; iyi pay, kısmet ve talihi açık olan uğurlu olup, getiren, her kalbe sevinç, huzur ve taze başlangıçlar müjdeleyen, umut dolu asil bir esintidir.",
+      "meaning_en": "Beşhat; a noble whisper of hope, bringing auspicious person with a good share, fortune, and open luck and promising joy, peace, and fresh beginnings to every heart.",
+      "meaning_de": "Beşhat; ein edler Hauch der Hoffnung, der glückverheißende Person mit einem guten Anteil, Schicksal und offenem Glück bringt und jedem Herzen Freude, Frieden und einen Neuanfang verspricht.",
+      "meaning_ar": "Beşhat؛ همسة أمل نبيلة تجلب شخص مبارك ذو نصيب طيب وقدر وحظ سعيد، وتبشر كل قلب بالبهجة والسكينة والبدايات الجديدة المشرقة."
+    },
+    {
+      "id": "besir",
+      "name": "Beşir",
+      "gender": "male",
+      "letter": "B",
+      "meaning": "Beşir; müjdeci, müjde getiren, güler yüzlü kimse.",
+      "meaning_en": "Beşir; clear, fresh, and vibrant like messenger of good news, smiling person; a noble person who embodies the purest and most graceful whispers of nature.",
+      "meaning_de": "Beşir; rein, frisch und lebendig wie überbringer guter Nachrichten, lächelnde Person; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
+      "meaning_ar": "Beşir؛ نقي وعذب وحيوي مثل بشير، حامل البشرى، ذو الوجه البشوش؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Beşir; müjdeci, müjde getiren, güler yüzlü kimse gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
     },
     {
       "id": "bewari",
@@ -6969,6 +6987,36 @@
       "description": "Birzûî; çeviklik anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
+      "id": "bispor",
+      "name": "Bispor",
+      "gender": "male",
+      "letter": "B",
+      "meaning": "Bispor; uzman, mahir, usta ve kendi alanında derin bilgi sahibi olup.",
+      "origin": "Kurdish",
+      "tags": [
+        "Bilgelik / Akıl"
+      ],
+      "description": "Bispor; uzman, mahir, usta ve kendi alanında derin bilgi sahibi olup, yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir.",
+      "meaning_en": "Bispor; a respected person who reaches the peaks of wisdom through expert, skilled, master, and person with deep knowledge in their field, guiding the society with deep intellect and illuminating words.",
+      "meaning_de": "Bispor; eine angesehene Persönlichkeit, die durch experte, geschickte, Meister und Person mit tiefem Wissen auf ihrem Gebiet die Gipfel der Weisheit erreicht und die Gesellschaft mit tiefem Verstand und erleuchtenden Worten führt.",
+      "meaning_ar": "Bispor؛ شخصية مرموقة تبلغ ذرى الحكمة من خلال خبير، ماهر، سيد وشخص ذو معرفة عميقة في مجاله، وترشد المجتمع بفكرها العميق وكلماتها المستنيرة."
+    },
+    {
+      "id": "bispori",
+      "name": "Bisporî",
+      "gender": "female",
+      "letter": "B",
+      "meaning": "Bisporî; uzmanlık.",
+      "meaning_en": "Bisporî; a person who places the meaning of expertise and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Bisporî; eine Persönlichkeit, die die Bedeutung von expertise und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Bisporî؛ شخص يضع معنى خبرة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Bisporî; uzmanlık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
       "id": "bisar",
       "name": "Bişar",
       "gender": "male",
@@ -7057,36 +7105,6 @@
       "meaning_en": "Bişirîn; clear, fresh, and vibrant like smiling, laughing; a noble person who embodies the purest and most graceful whispers of nature.",
       "meaning_de": "Bişirîn; rein, frisch und lebendig wie lächeln, lachen; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
       "meaning_ar": "Bişirîn؛ نقي وعذب وحيوي مثل يبتسم ويضحك؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
-    },
-    {
-      "id": "bispor",
-      "name": "Bispor",
-      "gender": "male",
-      "letter": "B",
-      "meaning": "Bispor; uzman, mahir, usta ve kendi alanında derin bilgi sahibi olup.",
-      "origin": "Kurdish",
-      "tags": [
-        "Bilgelik / Akıl"
-      ],
-      "description": "Bispor; uzman, mahir, usta ve kendi alanında derin bilgi sahibi olup, yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir.",
-      "meaning_en": "Bispor; a respected person who reaches the peaks of wisdom through expert, skilled, master, and person with deep knowledge in their field, guiding the society with deep intellect and illuminating words.",
-      "meaning_de": "Bispor; eine angesehene Persönlichkeit, die durch experte, geschickte, Meister und Person mit tiefem Wissen auf ihrem Gebiet die Gipfel der Weisheit erreicht und die Gesellschaft mit tiefem Verstand und erleuchtenden Worten führt.",
-      "meaning_ar": "Bispor؛ شخصية مرموقة تبلغ ذرى الحكمة من خلال خبير، ماهر، سيد وشخص ذو معرفة عميقة في مجاله، وترشد المجتمع بفكرها العميق وكلماتها المستنيرة."
-    },
-    {
-      "id": "bispori",
-      "name": "Bisporî",
-      "gender": "female",
-      "letter": "B",
-      "meaning": "Bisporî; uzmanlık.",
-      "meaning_en": "Bisporî; a person who places the meaning of expertise and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Bisporî; eine Persönlichkeit, die die Bedeutung von expertise und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Bisporî؛ شخص يضع معنى خبرة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Bisporî; uzmanlık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "biwej",

@@ -1,6 +1,6 @@
 {
   "letter": "C",
-  "count": 240,
+  "count": 238,
   "names": [
     {
       "id": "caba",
@@ -798,21 +798,6 @@
       "description": "Candost; can dostu dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
     },
     {
-      "id": "candoz",
-      "name": "Candoz",
-      "gender": "male",
-      "letter": "C",
-      "meaning": "Candoz; can arayan.",
-      "meaning_en": "Candoz; a very special and precious person who radiates love and beauty with a heart full of seeking soul, noble stance, and elegance.",
-      "meaning_de": "Candoz; eine ganz besondere und kostbare Persönlichkeit, die Liebe und Schönheit mit einem Herzen voller seelensucher, edler Haltung und Eleganz ausstrahlt.",
-      "meaning_ar": "Candoz؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ باحث عن الروح، وتتميز بوقارها ورقّتها.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Candoz; can arayan dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
-    },
-    {
       "id": "candraz",
       "name": "Candraz",
       "gender": "male",
@@ -1533,6 +1518,21 @@
       "description": "Cansaî; saf can dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
     },
     {
+      "id": "canser",
+      "name": "Canser",
+      "gender": "male",
+      "letter": "C",
+      "meaning": "Canser; can başı.",
+      "meaning_en": "Canser; a very special and precious person who radiates love and beauty with a heart full of head of soul, noble stance, and elegance.",
+      "meaning_de": "Canser; eine ganz besondere und kostbare Persönlichkeit, die Liebe und Schönheit mit einem Herzen voller kopf der Seele, edler Haltung und Eleganz ausstrahlt.",
+      "meaning_ar": "Canser؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ رأس الروح، وتتميز بوقارها ورقّتها.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Canser; can başı dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
+    },
+    {
       "id": "cansaw",
       "name": "Canşaw",
       "gender": "male",
@@ -1561,21 +1561,6 @@
         "Kürtçe İsim"
       ],
       "description": "Canşênî; can şenliği dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
-    },
-    {
-      "id": "canser",
-      "name": "Canser",
-      "gender": "male",
-      "letter": "C",
-      "meaning": "Canser; can başı.",
-      "meaning_en": "Canser; a very special and precious person who radiates love and beauty with a heart full of head of soul, noble stance, and elegance.",
-      "meaning_de": "Canser; eine ganz besondere und kostbare Persönlichkeit, die Liebe und Schönheit mit einem Herzen voller kopf der Seele, edler Haltung und Eleganz ausstrahlt.",
-      "meaning_ar": "Canser؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ رأس الروح، وتتميز بوقارها ورقّتها.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Canser; can başı dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
     },
     {
       "id": "canseri",
@@ -2551,21 +2536,6 @@
         "Kürtçe İsim"
       ],
       "description": "Cengawer; savaşçı, cengaver sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir."
-    },
-    {
-      "id": "cengbaz",
-      "name": "Cengbaz",
-      "gender": "male",
-      "letter": "C",
-      "meaning": "Cengbaz; savaşan.",
-      "meaning_en": "Cengbaz; a person who places the meaning of combative and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Cengbaz; eine Persönlichkeit, die die Bedeutung von kampfeslustig und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Cengbaz؛ شخص يضع معنى محارب والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Cengbaz; savaşan anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "cengdari",

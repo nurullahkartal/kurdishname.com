@@ -1,6 +1,6 @@
 {
   "letter": "H",
-  "count": 327,
+  "count": 330,
   "names": [
     {
       "id": "habuni",
@@ -1053,6 +1053,21 @@
       "description": "Hejarî; yoksulluk gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
     },
     {
+      "id": "hejin",
+      "name": "Hêjîn",
+      "gender": "female",
+      "letter": "H",
+      "meaning": "Hêjîn; değerli, kıymetli, layık ve sevilmeye değer.",
+      "description": "Hêjîn; değerli, kıymetli, layık ve sevilmeye değer.",
+      "meaning_en": "Hêjîn; precious, worthy, valued, and deserving of high esteem.",
+      "meaning_de": "Hêjîn; kostbar, würdig, wertvoll und hochgeschätzt.",
+      "meaning_ar": "Hêjîn؛ ثمينة، جديرة بالاحترام، غالية ومحبوبة.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ]
+    },
+    {
       "id": "hejmari",
       "name": "Hêjmarî",
       "gender": "female",
@@ -1923,21 +1938,6 @@
       "description": "Herêzî; saygı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "heris",
-      "name": "Hêriş",
-      "gender": "male",
-      "letter": "H",
-      "meaning": "Hêriş; atılım, hamle ve engel tanımayan güçlü irade.",
-      "origin": "Kurdish",
-      "tags": [
-        "Cesaret / Güç"
-      ],
-      "description": "Hêriş; atılım, hamle ve engel tanımayan güçlü irade anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
-      "meaning_en": "Hêriş; a person who places the meaning of bold initiative, momentum and unstoppable willpower and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Hêriş; eine Persönlichkeit, die die Bedeutung von kühner Vorstoß, Tatkraft und unaufhaltsame Willenskraft und eine edle Haltung in den Mittelpunkt des Lebens stellt und ein tief verwurzeltes Erbe repräsentiert.",
-      "meaning_ar": "Hêriş؛ شخصية تضع معنى المبادرة الشجاعة والعزيمة القوية التي لا تعرف المستحيل والموقف النبيل في صميم الحياة، وتمثل تاريخًا عريقًا وتراثًا أصيلًا."
-    },
-    {
       "id": "herisi",
       "name": "Herisî",
       "gender": "female",
@@ -1951,6 +1951,21 @@
         "Kürtçe İsim"
       ],
       "description": "Herisî; ezilme anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "heris",
+      "name": "Hêriş",
+      "gender": "male",
+      "letter": "H",
+      "meaning": "Hêriş; atılım, hamle ve engel tanımayan güçlü irade.",
+      "origin": "Kurdish",
+      "tags": [
+        "Cesaret / Güç"
+      ],
+      "description": "Hêriş; atılım, hamle ve engel tanımayan güçlü irade anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
+      "meaning_en": "Hêriş; a person who places the meaning of bold initiative, momentum and unstoppable willpower and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Hêriş; eine Persönlichkeit, die die Bedeutung von kühner Vorstoß, Tatkraft und unaufhaltsame Willenskraft und eine edle Haltung in den Mittelpunkt des Lebens stellt und ein tief verwurzeltes Erbe repräsentiert.",
+      "meaning_ar": "Hêriş؛ شخصية تضع معنى المبادرة الشجاعة والعزيمة القوية التي لا تعرف المستحيل والموقف النبيل في صميم الحياة، وتمثل تاريخًا عريقًا وتراثًا أصيلًا."
     },
     {
       "id": "herman",
@@ -2163,51 +2178,6 @@
       "description": "Hesardî; soğukluk anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "hesari",
-      "name": "Hêşarî",
-      "gender": "female",
-      "letter": "H",
-      "meaning": "Hêşarî; uyanıklık.",
-      "meaning_en": "Hêşarî; a person who places the meaning of wakefulness and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Hêşarî; eine Persönlichkeit, die die Bedeutung von wachsamkeit und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Hêşarî؛ شخص يضع معنى يقظة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Hêşarî; uyanıklık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "hesdari",
-      "name": "Heşdarî",
-      "gender": "female",
-      "letter": "H",
-      "meaning": "Heşdarî; sekizinci.",
-      "meaning_en": "Heşdarî; a person who places the meaning of eighth and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Heşdarî; eine Persönlichkeit, die die Bedeutung von achte und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Heşdarî؛ شخص يضع معنى ثامنة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Heşdarî; sekizinci anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "hesemi",
-      "name": "Heşêmî",
-      "gender": "male",
-      "letter": "H",
-      "meaning": "Heşêmî; haşimî.",
-      "meaning_en": "Heşêmî; a person who places the meaning of hashimi and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Heşêmî; eine Persönlichkeit, die die Bedeutung von haschimite und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Heşêmî؛ شخص يضع معنى هاشمي والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Heşêmî; haşimî anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "heseni",
       "name": "Hesênî",
       "gender": "male",
@@ -2221,36 +2191,6 @@
         "Kürtçe İsim"
       ],
       "description": "Hesênî; hüseyin anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "hesin",
-      "name": "Heşîn",
-      "gender": "female",
-      "letter": "H",
-      "meaning": "Heşîn; yeşillik, taze çimenler, doğanın yeşermesi.",
-      "origin": "Kurdish",
-      "tags": [
-        "Doğa / Yaşam"
-      ],
-      "description": "Heşîn; yeşillik, taze çimenler, doğanın yeşermesi gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
-      "meaning_en": "Heşîn; clear, fresh, and vibrant like greenery, lush green pastures; a noble person who embodies the purest and most graceful whispers of nature.",
-      "meaning_de": "Heşîn; rein, frisch und lebendig wie grün, saftig grüne Weiden; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
-      "meaning_ar": "Heşîn؛ نقي وعذب وحيوي مثل الخضار، الطبيعة الخضراء اليانعة، المروج الخصبة؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
-    },
-    {
-      "id": "hesini",
-      "name": "Heşînî",
-      "gender": "female",
-      "letter": "H",
-      "meaning": "Heşînî; yeşillik.",
-      "meaning_en": "Heşînî; clear, fresh, and vibrant like greenery; a noble person who embodies the purest and most graceful whispers of nature.",
-      "meaning_de": "Heşînî; rein, frisch und lebendig wie grünanlage; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
-      "meaning_ar": "Heşînî؛ نقي وعذب وحيوي مثل خضرة؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Heşînî; yeşillik gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
     },
     {
       "id": "heskini",
@@ -2403,21 +2343,6 @@
       "description": "Hestvanî; duyarlılık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "hesuri",
-      "name": "Heşûrî",
-      "gender": "female",
-      "letter": "H",
-      "meaning": "Heşûrî; toplanma.",
-      "meaning_en": "Heşûrî; a person who places the meaning of gathering and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Heşûrî; eine Persönlichkeit, die die Bedeutung von versammlung und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Heşûrî؛ شخص يضع معنى حشر والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Heşûrî; toplanma anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "hesyari",
       "name": "Hesyarî",
       "gender": "female",
@@ -2431,6 +2356,96 @@
         "Kürtçe İsim"
       ],
       "description": "Hesyarî; uyanıklık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "hesari",
+      "name": "Hêşarî",
+      "gender": "female",
+      "letter": "H",
+      "meaning": "Hêşarî; uyanıklık.",
+      "meaning_en": "Hêşarî; a person who places the meaning of wakefulness and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Hêşarî; eine Persönlichkeit, die die Bedeutung von wachsamkeit und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Hêşarî؛ شخص يضع معنى يقظة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Hêşarî; uyanıklık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "hesdari",
+      "name": "Heşdarî",
+      "gender": "female",
+      "letter": "H",
+      "meaning": "Heşdarî; sekizinci.",
+      "meaning_en": "Heşdarî; a person who places the meaning of eighth and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Heşdarî; eine Persönlichkeit, die die Bedeutung von achte und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Heşdarî؛ شخص يضع معنى ثامنة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Heşdarî; sekizinci anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "hesemi",
+      "name": "Heşêmî",
+      "gender": "male",
+      "letter": "H",
+      "meaning": "Heşêmî; haşimî.",
+      "meaning_en": "Heşêmî; a person who places the meaning of hashimi and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Heşêmî; eine Persönlichkeit, die die Bedeutung von haschimite und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Heşêmî؛ شخص يضع معنى هاشمي والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Heşêmî; haşimî anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "hesin",
+      "name": "Heşîn",
+      "gender": "female",
+      "letter": "H",
+      "meaning": "Heşîn; yeşillik, taze çimenler, doğanın yeşermesi.",
+      "origin": "Kurdish",
+      "tags": [
+        "Doğa / Yaşam"
+      ],
+      "description": "Heşîn; yeşillik, taze çimenler, doğanın yeşermesi gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
+      "meaning_en": "Heşîn; clear, fresh, and vibrant like greenery, lush green pastures; a noble person who embodies the purest and most graceful whispers of nature.",
+      "meaning_de": "Heşîn; rein, frisch und lebendig wie grün, saftig grüne Weiden; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
+      "meaning_ar": "Heşîn؛ نقي وعذب وحيوي مثل الخضار، الطبيعة الخضراء اليانعة، المروج الخصبة؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
+    },
+    {
+      "id": "hesini",
+      "name": "Heşînî",
+      "gender": "female",
+      "letter": "H",
+      "meaning": "Heşînî; yeşillik.",
+      "meaning_en": "Heşînî; clear, fresh, and vibrant like greenery; a noble person who embodies the purest and most graceful whispers of nature.",
+      "meaning_de": "Heşînî; rein, frisch und lebendig wie grünanlage; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
+      "meaning_ar": "Heşînî؛ نقي وعذب وحيوي مثل خضرة؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Heşînî; yeşillik gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
+    },
+    {
+      "id": "hesuri",
+      "name": "Heşûrî",
+      "gender": "female",
+      "letter": "H",
+      "meaning": "Heşûrî; toplanma.",
+      "meaning_en": "Heşûrî; a person who places the meaning of gathering and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Heşûrî; eine Persönlichkeit, die die Bedeutung von versammlung und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Heşûrî؛ شخص يضع معنى حشر والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Heşûrî; toplanma anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "hetani",
@@ -2611,6 +2626,38 @@
       "meaning_en": "Hêvî; a noble whisper of hope, bringing hope, expectation and promising joy, peace, and fresh beginnings to every heart.",
       "meaning_de": "Hêvî; ein edler Hauch der Hoffnung, der Hoffnung, Erwartung bringt und jedem Herzen Freude, Frieden und einen Neuanfang verspricht.",
       "meaning_ar": "Hêvî؛ همسة أمل نبيلة تجلب الأمل والتوقع، وتبشر كل قلب بالبهجة والسكينة والبدايات الجديدة المشرقة."
+    },
+    {
+      "id": "hevidar",
+      "name": "Hêvîdar",
+      "gender": "unisex",
+      "letter": "H",
+      "meaning": "Hêvîdar; umutlu, geleceğe umut ve inançla bakan.",
+      "description": "Hêvîdar; umutlu, geleceğe umut ve inançla bakan.",
+      "meaning_en": "Hêvîdar; hopeful, optimistic, looking to the future with faith.",
+      "meaning_de": "Hêvîdar; hoffnungsvoll, optimistisch, mit Zuversicht in die Zukunft blickend.",
+      "meaning_ar": "Hêvîdar؛ مفعم بالأمل، متفائل، ينظر إلى المستقبل بإيمان ورجاء.",
+      "origin": "Kurdish",
+      "tags": [
+        "Umut / Sevinç",
+        "Popüler"
+      ]
+    },
+    {
+      "id": "hevin",
+      "name": "Hevîn",
+      "gender": "female",
+      "letter": "H",
+      "meaning": "Hevîn; aşk, derin sevgi, gönülden bağlanan muhabbet ve umut.",
+      "description": "Hevîn; aşk, derin sevgi, gönülden bağlanan muhabbet ve umut.",
+      "meaning_en": "Hevîn; love, deep affection, heartfelt attachment, and hope.",
+      "meaning_de": "Hevîn; Liebe, tiefe Zuneigung, herzliche Verbundenheit und Hoffnung.",
+      "meaning_ar": "Hevîn؛ محبة، عشق عميق، مودة قلبية وأمل.",
+      "origin": "Kurdish",
+      "tags": [
+        "Sevgi / Güzellik",
+        "Popüler"
+      ]
     },
     {
       "id": "hevine",
@@ -3888,21 +3935,6 @@
       "description": "Hirçî; ayı gibi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "hirmid",
-      "name": "Hirmid",
-      "gender": "male",
-      "letter": "H",
-      "meaning": "Hirmid; hirmid; saygı, yüce edep, toplumsal zarafet ve yüksek ahlaki terbiye.",
-      "origin": "Kurdish",
-      "tags": [
-        "Nadir / Modern"
-      ],
-      "description": "Hirmid; hirmid; saygı, yüce edep, toplumsal zarafet ve yüksek ahlaki terbiye anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
-      "meaning_en": "Hirmid; a person who places the meaning of respect, deep courtesy, social elegance and high morals and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Hirmid; eine Persönlichkeit, die die Bedeutung von respekt, tiefe Höflichkeit, gesellschaftliche Eleganz und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Hirmid؛ شخص يضع معنى هيرميد، الوقار، الأدب السامي، والأخلاق الرفيعة والتهذيب والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً."
-    },
-    {
       "id": "hirmii",
       "name": "Hirmî",
       "gender": "female",
@@ -3916,6 +3948,21 @@
         "Kürtçe İsim"
       ],
       "description": "Hirmî; armut anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "hirmid",
+      "name": "Hirmid",
+      "gender": "male",
+      "letter": "H",
+      "meaning": "Hirmid; hirmid; saygı, yüce edep, toplumsal zarafet ve yüksek ahlaki terbiye.",
+      "origin": "Kurdish",
+      "tags": [
+        "Nadir / Modern"
+      ],
+      "description": "Hirmid; hirmid; saygı, yüce edep, toplumsal zarafet ve yüksek ahlaki terbiye anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
+      "meaning_en": "Hirmid; a person who places the meaning of respect, deep courtesy, social elegance and high morals and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Hirmid; eine Persönlichkeit, die die Bedeutung von respekt, tiefe Höflichkeit, gesellschaftliche Eleganz und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Hirmid؛ شخص يضع معنى هيرميد، الوقار، الأدب السامي، والأخلاق الرفيعة والتهذيب والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً."
     },
     {
       "id": "hirsii",

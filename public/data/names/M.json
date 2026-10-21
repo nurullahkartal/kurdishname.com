@@ -1,6 +1,6 @@
 {
   "letter": "M",
-  "count": 280,
+  "count": 279,
   "names": [
     {
       "id": "madani",
@@ -93,21 +93,6 @@
       "description": "Mahanî; ayın durumu gibi etrafını aydınlatan, sönmeyen bir parıltıya sahip ve her karanlığı asil bir ışıkla dağıtan parlak bir kimsedir."
     },
     {
-      "id": "mahidar",
-      "name": "Mahîdar",
-      "gender": "male",
-      "letter": "M",
-      "meaning": "Mahîdar; ay sahibi.",
-      "meaning_en": "Mahîdar; a brilliant person who illuminates their surroundings like owner of the moon, possessing an eternal radiance that scatters all darkness with noble light.",
-      "meaning_de": "Mahîdar; eine strahlende Persönlichkeit, die ihre Umgebung wie besitzer des Mondes erhellt und einen ewigen Glanz besitzt, der jede Dunkelheit mit edlem Licht vertreibt.",
-      "meaning_ar": "Mahîdar؛ شخصية مشرقة تضيء ما حولها مثل صاحب قمر، تمتلك بريقًا أبديًا يبدد كل ظلام بنورها النبيل.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Mahîdar; ay sahibi gibi etrafını aydınlatan, sönmeyen bir parıltıya sahip ve her karanlığı asil bir ışıkla dağıtan parlak bir kimsedir."
-    },
-    {
       "id": "mahii",
       "name": "Mahî",
       "gender": "female",
@@ -121,6 +106,21 @@
         "Kürtçe İsim"
       ],
       "description": "Mahî; aya dair anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "mahidar",
+      "name": "Mahîdar",
+      "gender": "male",
+      "letter": "M",
+      "meaning": "Mahîdar; ay sahibi.",
+      "meaning_en": "Mahîdar; a brilliant person who illuminates their surroundings like owner of the moon, possessing an eternal radiance that scatters all darkness with noble light.",
+      "meaning_de": "Mahîdar; eine strahlende Persönlichkeit, die ihre Umgebung wie besitzer des Mondes erhellt und einen ewigen Glanz besitzt, der jede Dunkelheit mit edlem Licht vertreibt.",
+      "meaning_ar": "Mahîdar؛ شخصية مشرقة تضيء ما حولها مثل صاحب قمر، تمتلك بريقًا أبديًا يبدد كل ظلام بنورها النبيل.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Mahîdar; ay sahibi gibi etrafını aydınlatan, sönmeyen bir parıltıya sahip ve her karanlığı asil bir ışıkla dağıtan parlak bir kimsedir."
     },
     {
       "id": "mahiri",
@@ -828,21 +828,6 @@
       "description": "Masanî; balığa dair anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "masati",
-      "name": "Maşatî",
-      "gender": "female",
-      "letter": "M",
-      "meaning": "Maşatî; tarak.",
-      "meaning_en": "Maşatî; a person who places the meaning of comb and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Maşatî; eine Persönlichkeit, die die Bedeutung von kamm und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Maşatî؛ شخص يضع معنى مشط والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Maşatî; tarak anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "masii",
       "name": "Masî",
       "gender": "female",
@@ -901,6 +886,21 @@
         "Kürtçe İsim"
       ],
       "description": "Mastarî; yoğurtluk anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "masati",
+      "name": "Maşatî",
+      "gender": "female",
+      "letter": "M",
+      "meaning": "Maşatî; tarak.",
+      "meaning_en": "Maşatî; a person who places the meaning of comb and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Maşatî; eine Persönlichkeit, die die Bedeutung von kamm und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Maşatî؛ شخص يضع معنى مشط والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Maşatî; tarak anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "matani",
@@ -3499,21 +3499,6 @@
       "description": "Mirî; ölü anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "mirkos",
-      "name": "Mîrkoş",
-      "gender": "male",
-      "letter": "M",
-      "meaning": "Mîrkoş; mücadeleci bey.",
-      "meaning_en": "Mîrkoş; a noble person endowed with struggling lord, possessing brave courage and unwavering determination, representing the symbol of strength and leadership.",
-      "meaning_de": "Mîrkoş; eine edle Persönlichkeit, die mit kämpferischer Herr ausgestattet ist, tapferen Mut und unerschütterliche Entschlossenheit besitzt und das Symbol für Stärke und Führung darstellt.",
-      "meaning_ar": "Mîrkoş؛ شخصية نبيلة تتحلى بـ أمير مناضل، تمتلك شجاعة مقدامة وعزيمة لا تلين، وتمثل رمز القوة والقيادة.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Mîrkoş; mücadeleci bey sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir."
-    },
-    {
       "id": "miroi",
       "name": "Mîroî",
       "gender": "male",
@@ -4114,21 +4099,6 @@
       "description": "Muradî; murat anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "musari",
-      "name": "Mûşarî",
-      "gender": "male",
-      "letter": "M",
-      "meaning": "Mûşarî; muşlu.",
-      "meaning_en": "Mûşarî; a person who places the meaning of from Mus and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Mûşarî; eine Persönlichkeit, die die Bedeutung von aus Mus und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Mûşarî؛ شخص يضع معنى موشي والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Mûşarî; muşlu anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "musavi",
       "name": "Mûsavî",
       "gender": "male",
@@ -4142,6 +4112,21 @@
         "Kürtçe İsim"
       ],
       "description": "Mûsavî; musaî anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "musari",
+      "name": "Mûşarî",
+      "gender": "male",
+      "letter": "M",
+      "meaning": "Mûşarî; muşlu.",
+      "meaning_en": "Mûşarî; a person who places the meaning of from Mus and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Mûşarî; eine Persönlichkeit, die die Bedeutung von aus Mus und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Mûşarî؛ شخص يضع معنى موشي والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Mûşarî; muşlu anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "muxtari",

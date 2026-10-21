@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-10-20T17:33:42.168Z",
+  "generatedAt": "2026-10-21T11:00:47.673Z",
   "totalLetters": 31,
   "totalNames": 4709,
-  "totalBytes": 4776127,
+  "totalBytes": 4767132,
   "letters": [
     {
       "letter": "A",
-      "count": 572,
-      "bytes": 548086
+      "count": 559,
+      "bytes": 533706
     },
     {
       "letter": "B",
-      "count": 533,
-      "bytes": 564938
+      "count": 534,
+      "bytes": 565297
     },
     {
       "letter": "C",
-      "count": 240,
-      "bytes": 231107
+      "count": 238,
+      "bytes": 229202
     },
     {
       "letter": "Ç",
@@ -26,8 +26,8 @@
     },
     {
       "letter": "D",
-      "count": 351,
-      "bytes": 349825
+      "count": 355,
+      "bytes": 352397
     },
     {
       "letter": "E",
@@ -46,13 +46,13 @@
     },
     {
       "letter": "G",
-      "count": 301,
-      "bytes": 292563
+      "count": 300,
+      "bytes": 291312
     },
     {
       "letter": "H",
-      "count": 327,
-      "bytes": 327344
+      "count": 330,
+      "bytes": 329287
     },
     {
       "letter": "I",
@@ -71,23 +71,23 @@
     },
     {
       "letter": "K",
-      "count": 230,
-      "bytes": 233702
+      "count": 231,
+      "bytes": 234324
     },
     {
       "letter": "L",
-      "count": 116,
-      "bytes": 117900
+      "count": 117,
+      "bytes": 118594
     },
     {
       "letter": "M",
-      "count": 280,
-      "bytes": 281438
+      "count": 279,
+      "bytes": 280421
     },
     {
       "letter": "N",
-      "count": 222,
-      "bytes": 223821
+      "count": 226,
+      "bytes": 226359
     },
     {
       "letter": "O",
@@ -96,8 +96,8 @@
     },
     {
       "letter": "P",
-      "count": 233,
-      "bytes": 232644
+      "count": 234,
+      "bytes": 233288
     },
     {
       "letter": "Q",
@@ -106,8 +106,8 @@
     },
     {
       "letter": "R",
-      "count": 203,
-      "bytes": 242986
+      "count": 207,
+      "bytes": 245870
     },
     {
       "letter": "S",
@@ -116,13 +116,13 @@
     },
     {
       "letter": "Ş",
-      "count": 127,
-      "bytes": 133734
+      "count": 128,
+      "bytes": 134431
     },
     {
       "letter": "T",
-      "count": 95,
-      "bytes": 96246
+      "count": 96,
+      "bytes": 96941
     },
     {
       "letter": "U",
@@ -156,8 +156,8 @@
     },
     {
       "letter": "Z",
-      "count": 95,
-      "bytes": 100726
+      "count": 91,
+      "bytes": 96636
     }
   ]
 }

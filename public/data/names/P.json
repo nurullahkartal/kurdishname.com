@@ -1,6 +1,6 @@
 {
   "letter": "P",
-  "count": 233,
+  "count": 234,
   "names": [
     {
       "id": "padari",
@@ -528,21 +528,6 @@
       "description": "Paryarî; pay dostu gibi etrafını aydınlatan, sönmeyen bir parıltıya sahip ve her karanlığı asil bir ışıkla dağıtan parlak bir kimsedir."
     },
     {
-      "id": "pasani",
-      "name": "Paşanî",
-      "gender": "female",
-      "letter": "P",
-      "meaning": "Paşanî; sonralık.",
-      "meaning_en": "Paşanî; a person who places the meaning of posteriority and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Paşanî; eine Persönlichkeit, die die Bedeutung von nachzeitigkeit und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Paşanî؛ شخص يضع معنى بعدية والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Paşanî; sonralık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "pasari",
       "name": "Pasarî",
       "gender": "female",
@@ -571,6 +556,21 @@
         "Kürtçe İsim"
       ],
       "description": "Pasawan; nöbetçi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "pasani",
+      "name": "Paşanî",
+      "gender": "female",
+      "letter": "P",
+      "meaning": "Paşanî; sonralık.",
+      "meaning_en": "Paşanî; a person who places the meaning of posteriority and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Paşanî; eine Persönlichkeit, die die Bedeutung von nachzeitigkeit und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Paşanî؛ شخص يضع معنى بعدية والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Paşanî; sonralık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "patani",
@@ -1008,6 +1008,22 @@
       "description": "Pelhînî; yaprak yolu gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
     },
     {
+      "id": "pelin",
+      "name": "Pelîn",
+      "gender": "female",
+      "letter": "P",
+      "meaning": "Pelîn; taze yaprak, yeşillik, tabiatın saf canlılığı.",
+      "description": "Pelîn; taze yaprak, yeşillik, tabiatın saf canlılığı.",
+      "meaning_en": "Pelîn; fresh leaf, greenery, the pure vitality of nature.",
+      "meaning_de": "Pelîn; frisches Blatt, Grün, die reine Vitalität der Natur.",
+      "meaning_ar": "Pelîn؛ ورقة خضراء نضرة، حيوية الطبيعة النقية.",
+      "origin": "Kurdish",
+      "tags": [
+        "Doğa / Yaşam",
+        "Kürtçe İsim"
+      ]
+    },
+    {
       "id": "peline",
       "name": "Pelînê",
       "gender": "female",
@@ -1068,6 +1084,22 @@
       "description": "Peljînî; yaprak yaşamı gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
     },
     {
+      "id": "pelsor",
+      "name": "Pelsor",
+      "gender": "female",
+      "letter": "P",
+      "meaning": "Pelsor; pelsor; nar kırmızısı soylu yaprak, canlılık ve ateşli doğal güzellik.",
+      "origin": "Kurdish",
+      "tags": [
+        "Doğa İsimleri",
+        "Edebi / Sanatsal"
+      ],
+      "description": "Pelsor; pelsor; nar kırmızısı asil yaprak, canlılık ve ateşli doğal güzellik gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
+      "meaning_en": "Pelsor; clear, fresh, and vibrant like sun-red leaf, representing deep passion and life; a noble person who embodies the purest and most graceful whispers of nature.",
+      "meaning_de": "Pelsor; rein, frisch und lebendig wie sonnenrotes Blatt, Symbol für tiefe Leidenschaft; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
+      "meaning_ar": "Pelsor؛ نقي وعذب وحيوي مثل بيلسور، الورقة الحمراء، ورقة الورد القانية المفعمة بالحيوية؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
+    },
+    {
       "id": "pelsadi",
       "name": "Pelşadî",
       "gender": "female",
@@ -1111,22 +1143,6 @@
       "meaning_en": "Pelşîn; clear, fresh, and vibrant like green leaf, spring reflection; a noble person who embodies the purest and most graceful whispers of nature.",
       "meaning_de": "Pelşîn; rein, frisch und lebendig wie grünes Blatt, Frühlingsreflexion; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
       "meaning_ar": "Pelşîn؛ نقي وعذب وحيوي مثل ورقة خضراء، انعكاس الربيع؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
-    },
-    {
-      "id": "pelsor",
-      "name": "Pelsor",
-      "gender": "female",
-      "letter": "P",
-      "meaning": "Pelsor; pelsor; nar kırmızısı soylu yaprak, canlılık ve ateşli doğal güzellik.",
-      "origin": "Kurdish",
-      "tags": [
-        "Doğa İsimleri",
-        "Edebi / Sanatsal"
-      ],
-      "description": "Pelsor; pelsor; nar kırmızısı asil yaprak, canlılık ve ateşli doğal güzellik gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
-      "meaning_en": "Pelsor; clear, fresh, and vibrant like sun-red leaf, representing deep passion and life; a noble person who embodies the purest and most graceful whispers of nature.",
-      "meaning_de": "Pelsor; rein, frisch und lebendig wie sonnenrotes Blatt, Symbol für tiefe Leidenschaft; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
-      "meaning_ar": "Pelsor؛ نقي وعذب وحيوي مثل بيلسور، الورقة الحمراء، ورقة الورد القانية المفعمة بالحيوية؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
     },
     {
       "id": "pelzer",
@@ -2572,6 +2588,21 @@
       "description": "Pîryarî; bilge dostluğu dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
     },
     {
+      "id": "pispori",
+      "name": "Pîsporî",
+      "gender": "female",
+      "letter": "P",
+      "meaning": "Pîsporî; uzmanlık.",
+      "meaning_en": "Pîsporî; a person who places the meaning of expertise and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Pîsporî; eine Persönlichkeit, die die Bedeutung von expertise und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Pîsporî؛ شخص يضع معنى خبرة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Pîsporî; uzmanlık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
       "id": "pisdari",
       "name": "Pişdarî",
       "gender": "female",
@@ -2645,21 +2676,6 @@
         "Kürtçe İsim"
       ],
       "description": "Pişmanî; pişmanlık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "pispori",
-      "name": "Pîsporî",
-      "gender": "female",
-      "letter": "P",
-      "meaning": "Pîsporî; uzmanlık.",
-      "meaning_en": "Pîsporî; a person who places the meaning of expertise and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Pîsporî; eine Persönlichkeit, die die Bedeutung von expertise und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Pîsporî؛ شخص يضع معنى خبرة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Pîsporî; uzmanlık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "pistari",

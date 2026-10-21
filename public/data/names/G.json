@@ -1,6 +1,6 @@
 {
   "letter": "G",
-  "count": 301,
+  "count": 300,
   "names": [
     {
       "id": "gabani",
@@ -61,21 +61,6 @@
         "Kürtçe İsim"
       ],
       "description": "Gadoî; geleneksel gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
-    },
-    {
-      "id": "gadok",
-      "name": "Gadok",
-      "gender": "male",
-      "letter": "G",
-      "meaning": "Gadok; çoban.",
-      "meaning_en": "Gadok; a person who places the meaning of shepherd and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Gadok; eine Persönlichkeit, die die Bedeutung von hirte und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Gadok؛ شخص يضع معنى راعي والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Gadok; çoban anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "gagerini",
@@ -2404,21 +2389,6 @@
       "description": "Gîhîdar; ulaşmış anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "gilidar",
-      "name": "Gilîdar",
-      "gender": "male",
-      "letter": "G",
-      "meaning": "Gilîdar; dertli.",
-      "meaning_en": "Gilîdar; a person who places the meaning of troubled and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Gilîdar; eine Persönlichkeit, die die Bedeutung von bekümmert und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Gilîdar؛ شخص يضع معنى شاكٍ والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Gilîdar; dertli anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "gilii",
       "name": "Gilî",
       "gender": "female",
@@ -2432,6 +2402,21 @@
         "Kürtçe İsim"
       ],
       "description": "Gilî; şikayet anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "gilidar",
+      "name": "Gilîdar",
+      "gender": "male",
+      "letter": "G",
+      "meaning": "Gilîdar; dertli.",
+      "meaning_en": "Gilîdar; a person who places the meaning of troubled and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Gilîdar; eine Persönlichkeit, die die Bedeutung von bekümmert und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Gilîdar؛ شخص يضع معنى شاكٍ والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Gilîdar; dertli anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "gimii",
@@ -3694,6 +3679,22 @@
       "description": "Gulhat; gül gelen gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
     },
     {
+      "id": "gulin",
+      "name": "Gulîn",
+      "gender": "female",
+      "letter": "G",
+      "meaning": "Gulîn; güle ait, gül gibi taze ve açılmış çiçek güzelliğinde.",
+      "description": "Gulîn; güle ait, gül gibi taze ve açılmış çiçek güzelliğinde.",
+      "meaning_en": "Gulîn; belonging to the rose, fresh and beautiful like a blooming flower.",
+      "meaning_de": "Gulîn; zur Rose gehörend, frisch und schön wie eine blühende Blume.",
+      "meaning_ar": "Gulîn؛ وردية، نضرة وجميلة كزهرة متفتحة.",
+      "origin": "Kurdish",
+      "tags": [
+        "Çiçek / Doğa",
+        "Kürtçe İsim"
+      ]
+    },
+    {
       "id": "gulinan",
       "name": "Gulînan",
       "gender": "female",
@@ -4293,21 +4294,6 @@
         "Kürtçe İsim"
       ],
       "description": "Guran; kurtlar anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "gurbaz",
-      "name": "Gurbaz",
-      "gender": "male",
-      "letter": "G",
-      "meaning": "Gurbaz; sert kurt.",
-      "meaning_en": "Gurbaz; a person who places the meaning of tough wolf and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Gurbaz; eine Persönlichkeit, die die Bedeutung von zäher Wolf und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Gurbaz؛ شخص يضع معنى ذئب جسور والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Gurbaz; sert kurt anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "gurgin",

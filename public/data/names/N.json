@@ -1,6 +1,6 @@
 {
   "letter": "N",
-  "count": 222,
+  "count": 226,
   "names": [
     {
       "id": "nadani",
@@ -48,21 +48,6 @@
       "description": "Nadînî; nida anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "nafidar",
-      "name": "Nafîdar",
-      "gender": "male",
-      "letter": "N",
-      "meaning": "Nafîdar; yararlı.",
-      "meaning_en": "Nafîdar; a person who places the meaning of useful and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Nafîdar; eine Persönlichkeit, die die Bedeutung von nützlich und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Nafîdar؛ شخص يضع معنى نافع والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Nafîdar; yararlı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "nafii",
       "name": "Nafî",
       "gender": "female",
@@ -76,6 +61,21 @@
         "Kürtçe İsim"
       ],
       "description": "Nafî; faydalı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "nafidar",
+      "name": "Nafîdar",
+      "gender": "male",
+      "letter": "N",
+      "meaning": "Nafîdar; yararlı.",
+      "meaning_en": "Nafîdar; a person who places the meaning of useful and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Nafîdar; eine Persönlichkeit, die die Bedeutung von nützlich und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Nafîdar؛ شخص يضع معنى نافع والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Nafîdar; yararlı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "nagerini",
@@ -451,6 +451,22 @@
         "Kürtçe İsim"
       ],
       "description": "Narîdar; nar sahibi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "narin",
+      "name": "Narîn",
+      "gender": "female",
+      "letter": "N",
+      "meaning": "Narîn; narin, kibar, ince yapılı ve zarif duruşlu.",
+      "description": "Narîn; narin, kibar, ince yapılı ve zarif duruşlu.",
+      "meaning_en": "Narîn; delicate, gentle, graceful, and elegant.",
+      "meaning_de": "Narîn; zart, sanft, anmutig und elegant.",
+      "meaning_ar": "Narîn؛ رقيقة، لطيفة، أنيقة وعذبة الحضور.",
+      "origin": "Kurdish",
+      "tags": [
+        "Sevgi / Güzellik",
+        "Popüler"
+      ]
     },
     {
       "id": "narinci",
@@ -1081,6 +1097,22 @@
         "Kürtçe İsim"
       ],
       "description": "Nazatî; naz anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "nazdar",
+      "name": "Nazdar",
+      "gender": "female",
+      "letter": "N",
+      "meaning": "Nazdar; nazlı, sevimli, cana yakın ve zarif güzel.",
+      "description": "Nazdar; nazlı, sevimli, cana yakın ve zarif güzel.",
+      "meaning_en": "Nazdar; coquettish, lovely, charming, and gracefully beautiful.",
+      "meaning_de": "Nazdar; anmutig, reizend, liebenswert und charmant schön.",
+      "meaning_ar": "Nazdar؛ مدللة، محبوبة، لطيفة المعشر وجميلة المحيا.",
+      "origin": "Kurdish",
+      "tags": [
+        "Sevgi / Güzellik",
+        "Kürtçe İsim"
+      ]
     },
     {
       "id": "naze",
@@ -1758,6 +1790,22 @@
       "description": "Nermadar; yumuşak huylu anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
+      "id": "nermin",
+      "name": "Nermîn",
+      "gender": "female",
+      "letter": "N",
+      "meaning": "Nermîn; yumuşak huylu, şefkatli, nazik ve iyi kalpli.",
+      "description": "Nermîn; yumuşak huylu, şefkatli, nazik ve iyi kalpli.",
+      "meaning_en": "Nermîn; soft-hearted, gentle, compassionate, and kind.",
+      "meaning_de": "Nermîn; sanftmütig, mitfühlend, zart und gutherzig.",
+      "meaning_ar": "Nermîn؛ لينة الطبع، عطوفة، رقيقة وطيبة القلب.",
+      "origin": "Kurdish",
+      "tags": [
+        "Sevgi / Güzellik",
+        "Kürtçe İsim"
+      ]
+    },
+    {
       "id": "nermine",
       "name": "Nermînê",
       "gender": "female",
@@ -1773,21 +1821,6 @@
       "description": "Nermînê; yumuşak kız anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "nesani",
-      "name": "Nêşanî",
-      "gender": "female",
-      "letter": "N",
-      "meaning": "Nêşanî; nişan.",
-      "meaning_en": "Nêşanî; a person who places the meaning of sign and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Nêşanî; eine Persönlichkeit, die die Bedeutung von zeichen und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Nêşanî؛ شخص يضع معنى نيشان والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Nêşanî; nişan anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "nesimi",
       "name": "Nesîmî",
       "gender": "male",
@@ -1801,21 +1834,6 @@
         "Kürtçe İsim"
       ],
       "description": "Nesîmî; nesim anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "nesmil",
-      "name": "Neşmîl",
-      "gender": "female",
-      "letter": "N",
-      "meaning": "Neşmîl; şık, zarif, alımlı ve duruşuyla zarafet sergileyen olup.",
-      "origin": "Kurdish",
-      "tags": [
-        "Sevgi / Güzellik"
-      ],
-      "description": "Neşmîl; şık, zarif, alımlı ve duruşuyla zarafet sergileyen olup, yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir.",
-      "meaning_en": "Neşmîl; a respected person who reaches the peaks of wisdom through he is someone who is stylish, elegant, charming and shows elegance with his stance., guiding the society with deep intellect and illuminating words.",
-      "meaning_de": "Neşmîl; eine angesehene Persönlichkeit, die durch Er ist jemand, der stilvoll, elegant und charmant ist und mit seiner Haltung Eleganz zeigt. die Gipfel der Weisheit erreicht und die Gesellschaft mit tiefem Verstand und erleuchtenden Worten führt.",
-      "meaning_ar": "Neşmîl؛ شخصية مرموقة تبلغ ذرى الحكمة من خلال إنه شخص أنيق وأنيق وساحر ويظهر الأناقة بوقفته.، وترشد المجتمع بفكرها العميق وكلماتها المستنيرة."
     },
     {
       "id": "nesrew",
@@ -1861,6 +1879,36 @@
         "Kürtçe İsim"
       ],
       "description": "Nesrinî; yaban gülü gibi gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
+    },
+    {
+      "id": "nesani",
+      "name": "Nêşanî",
+      "gender": "female",
+      "letter": "N",
+      "meaning": "Nêşanî; nişan.",
+      "meaning_en": "Nêşanî; a person who places the meaning of sign and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Nêşanî; eine Persönlichkeit, die die Bedeutung von zeichen und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Nêşanî؛ شخص يضع معنى نيشان والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Nêşanî; nişan anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "nesmil",
+      "name": "Neşmîl",
+      "gender": "female",
+      "letter": "N",
+      "meaning": "Neşmîl; şık, zarif, alımlı ve duruşuyla zarafet sergileyen olup.",
+      "origin": "Kurdish",
+      "tags": [
+        "Sevgi / Güzellik"
+      ],
+      "description": "Neşmîl; şık, zarif, alımlı ve duruşuyla zarafet sergileyen olup, yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir.",
+      "meaning_en": "Neşmîl; a respected person who reaches the peaks of wisdom through he is someone who is stylish, elegant, charming and shows elegance with his stance., guiding the society with deep intellect and illuminating words.",
+      "meaning_de": "Neşmîl; eine angesehene Persönlichkeit, die durch Er ist jemand, der stilvoll, elegant und charmant ist und mit seiner Haltung Eleganz zeigt. die Gipfel der Weisheit erreicht und die Gesellschaft mit tiefem Verstand und erleuchtenden Worten führt.",
+      "meaning_ar": "Neşmîl؛ شخصية مرموقة تبلغ ذرى الحكمة من خلال إنه شخص أنيق وأنيق وساحر ويظهر الأناقة بوقفته.، وترشد المجتمع بفكرها العميق وكلماتها المستنيرة."
     },
     {
       "id": "nesuri",
@@ -2194,6 +2242,22 @@
       "description": "Nexşanî; nakışlı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
+      "id": "nexsin",
+      "name": "Nexşîn",
+      "gender": "female",
+      "letter": "N",
+      "meaning": "Nexşîn; nakışlı, bezeli, süslü ve oya gibi işlenmiş güzellik.",
+      "description": "Nexşîn; nakışlı, bezeli, süslü ve oya gibi işlenmiş güzellik.",
+      "meaning_en": "Nexşîn; embroidered, ornamented, delicate like fine artwork.",
+      "meaning_de": "Nexşîn; verziert, wie feine Stickerei kunstvoll gestaltet.",
+      "meaning_ar": "Nexşîn؛ منقوشة، مزخرفة، كالتطريز الفني البديع.",
+      "origin": "Kurdish",
+      "tags": [
+        "Sevgi / Güzellik",
+        "Kürtçe İsim"
+      ]
+    },
+    {
       "id": "nexsine",
       "name": "Nexşînê",
       "gender": "female",
@@ -2449,21 +2513,6 @@
       "description": "Nîmetî; nimet anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "nisani",
-      "name": "Nîşanî",
-      "gender": "female",
-      "letter": "N",
-      "meaning": "Nîşanî; nişan.",
-      "meaning_en": "Nîşanî; a person who places the meaning of sign and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Nîşanî; eine Persönlichkeit, die die Bedeutung von zeichen und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Nîşanî؛ شخص يضع معنى نيشان والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Nîşanî; nişan anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "nisko",
       "name": "Nisko",
       "gender": "male",
@@ -2477,6 +2526,21 @@
       "meaning_en": "Nisko; a very special and precious person who radiates love and beauty with a heart full of lentils; Metaphorically, he is a small, cute and friendly person., noble stance, and elegance.",
       "meaning_de": "Nisko; eine ganz besondere und kostbare Persönlichkeit, die Liebe und Schönheit mit einem Herzen voller Linsen; Metaphorisch gesehen ist er ein kleiner, süßer und freundlicher Mensch., edler Haltung und Eleganz ausstrahlt.",
       "meaning_ar": "Nisko؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ العدس؛ مجازيًا، هو شخص صغير ولطيف وودود.، وتتميز بوقارها ورقّتها."
+    },
+    {
+      "id": "nisani",
+      "name": "Nîşanî",
+      "gender": "female",
+      "letter": "N",
+      "meaning": "Nîşanî; nişan.",
+      "meaning_en": "Nîşanî; a person who places the meaning of sign and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Nîşanî; eine Persönlichkeit, die die Bedeutung von zeichen und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Nîşanî؛ شخص يضع معنى نيشان والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Nîşanî; nişan anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "nistii",

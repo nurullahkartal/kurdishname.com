@@ -1,6 +1,6 @@
 {
   "letter": "Ş",
-  "count": 127,
+  "count": 128,
   "names": [
     {
       "id": "sadin",
@@ -1684,6 +1684,22 @@
         "Kürtçe İsim"
       ],
       "description": "Şîrinyar; şirin dost dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
+    },
+    {
+      "id": "sirvan",
+      "name": "Şîrvan",
+      "gender": "male",
+      "letter": "Ş",
+      "meaning": "Şîrvan; aslanlar yurdu, cesur ve yiğit; tarihi Kürdistan coğrafyası.",
+      "description": "Şîrvan; aslanlar yurdu, cesur ve yiğit; tarihi Kürdistan coğrafyası.",
+      "meaning_en": "Şîrvan; realm of lions, brave and valiant; historical Kurdish region.",
+      "meaning_de": "Şîrvan; Reich der Löwen, tapfer und mutig; historische Region.",
+      "meaning_ar": "Şîrvan؛ ديار الأسود، شجاع ومقدام؛ موطن تاريخي عريق.",
+      "origin": "Kurdish",
+      "tags": [
+        "Tarih / Kültür",
+        "Popüler"
+      ]
     },
     {
       "id": "sitil",

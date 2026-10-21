@@ -1,6 +1,6 @@
 {
   "letter": "K",
-  "count": 230,
+  "count": 231,
   "names": [
     {
       "id": "kabini",
@@ -1126,6 +1126,22 @@
       "meaning_en": "Kêjê; a very special and precious person who radiates love and beauty with a heart full of beautiful girl between brunette and blonde, noble stance, and elegance.",
       "meaning_de": "Kêjê; eine ganz besondere und kostbare Persönlichkeit, die Liebe und Schönheit mit einem Herzen voller schönes Mädchen zwischen brünett und blond, edler Haltung und Eleganz ausstrahlt.",
       "meaning_ar": "Kêjê؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ فتاة جميلة بين سمراء وشقراء، وتتميز بوقارها ورقّتها."
+    },
+    {
+      "id": "kejin",
+      "name": "Kejîn",
+      "gender": "female",
+      "letter": "K",
+      "meaning": "Kejîn; sarışın, kumral, sarı saçlı güzel kız.",
+      "description": "Kejîn; sarışın, kumral, sarı saçlı güzel kız.",
+      "meaning_en": "Kejîn; fair-haired, blonde beauty with golden locks.",
+      "meaning_de": "Kejîn; blond, hellhaarig, Schönheit mit goldenen Locken.",
+      "meaning_ar": "Kejîn؛ شقراء، صهباء، حسناء ذات خصلات ذهبية.",
+      "origin": "Kurdish",
+      "tags": [
+        "Sevgi / Güzellik",
+        "Kürtçe İsim"
+      ]
     },
     {
       "id": "kejo",

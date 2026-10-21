@@ -148,3 +148,10 @@
 /ar/فئة/X /ar/فئة/x 301
 /ar/فئة/Y /ar/فئة/y 301
 /ar/فئة/Z /ar/فئة/z 301
+
+# Common spelling aliases
+/tr/isim/sirin /tr/isim/serin 301
+/en/name/sirin /en/name/serin 301
+/de/name/sirin /de/name/serin 301
+/ar/اسم/sirin /ar/اسم/serin 301
+

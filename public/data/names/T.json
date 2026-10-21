@@ -1,6 +1,6 @@
 {
   "letter": "T",
-  "count": 95,
+  "count": 96,
   "names": [
     {
       "id": "tabardar",
@@ -346,6 +346,22 @@
       "meaning_en": "Tave; clear, fresh, and vibrant like heavy rain shower, fresh rain signaling abundance; a noble person who embodies the purest and most graceful whispers of nature.",
       "meaning_de": "Tave; rein, frisch und lebendig wie heftiger Regenschauer, frischer Regen, der Überfluss ankündigt; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
       "meaning_ar": "Tave؛ نقي وعذب وحيوي مثل زخة مطر غزيرة، مطر منعش يبشر بالخير والوفرة؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
+    },
+    {
+      "id": "tavin",
+      "name": "Tavîn",
+      "gender": "female",
+      "letter": "T",
+      "meaning": "Tavîn; güneş ışığı tabiatlı, gün ışığı sıcaklığı saçan.",
+      "description": "Tavîn; güneş ışığı tabiatlı, gün ışığı sıcaklığı saçan.",
+      "meaning_en": "Tavîn; of sunlight nature, radiating the warmth of dawn.",
+      "meaning_de": "Tavîn; von der Natur des Sonnenlichts, die Wärme des Tageslichts ausstrahlend.",
+      "meaning_ar": "Tavîn؛ بطبيعة نور الشمس، تشع بدفء ضوء النهار.",
+      "origin": "Kurdish",
+      "tags": [
+        "Işık / Aydınlık",
+        "Kürtçe İsim"
+      ]
     },
     {
       "id": "taxani",

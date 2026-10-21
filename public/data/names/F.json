@@ -888,21 +888,6 @@
       "description": "Feroxî; sevinç getiren, her kalbe sevinç, huzur ve taze başlangıçlar müjdeleyen, umut dolu asil bir esintidir."
     },
     {
-      "id": "fersadi",
-      "name": "Ferşadî",
-      "gender": "male",
-      "letter": "F",
-      "meaning": "Ferşadî; mutlu hakan getiren, umut dolu.",
-      "meaning_en": "Ferşadî; a noble whisper of hope, bringing happy ruler and promising joy, peace, and fresh beginnings to every heart.",
-      "meaning_de": "Ferşadî; ein edler Hauch der Hoffnung, der glücklicher Herrscher bringt und jedem Herzen Freude, Frieden und einen Neuanfang verspricht.",
-      "meaning_ar": "Ferşadî؛ همسة أمل نبيلة تجلب فرشاد، وتبشر كل قلب بالبهجة والسكينة والبدايات الجديدة المشرقة.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Ferşadî; mutlu hakan getiren, her kalbe sevinç, huzur ve taze başlangıçlar müjdeleyen, umut dolu asil bir esintidir."
-    },
-    {
       "id": "fersati",
       "name": "Fersatî",
       "gender": "female",
@@ -916,6 +901,21 @@
         "Kürtçe İsim"
       ],
       "description": "Fersatî; fırsat anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "fersadi",
+      "name": "Ferşadî",
+      "gender": "male",
+      "letter": "F",
+      "meaning": "Ferşadî; mutlu hakan getiren, umut dolu.",
+      "meaning_en": "Ferşadî; a noble whisper of hope, bringing happy ruler and promising joy, peace, and fresh beginnings to every heart.",
+      "meaning_de": "Ferşadî; ein edler Hauch der Hoffnung, der glücklicher Herrscher bringt und jedem Herzen Freude, Frieden und einen Neuanfang verspricht.",
+      "meaning_ar": "Ferşadî؛ همسة أمل نبيلة تجلب فرشاد، وتبشر كل قلب بالبهجة والسكينة والبدايات الجديدة المشرقة.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Ferşadî; mutlu hakan getiren, her kalbe sevinç, huzur ve taze başlangıçlar müjdeleyen, umut dolu asil bir esintidir."
     },
     {
       "id": "ferwertis",

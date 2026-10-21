@@ -1,6 +1,6 @@
 {
   "letter": "R",
-  "count": 203,
+  "count": 207,
   "names": [
     {
       "id": "rabin",
@@ -197,6 +197,22 @@
       "meaning_en": "Rastî; clear, fresh, and vibrant like it represents the character that does not deviate from truth, righteousness, honesty and righteousness.; a noble person who embodies the purest and most graceful whispers of nature.",
       "meaning_de": "Rastî; rein, frisch und lebendig wie Es stellt den Charakter dar, der nicht von Wahrheit, Rechtschaffenheit, Ehrlichkeit und Gerechtigkeit abweicht.; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
       "meaning_ar": "Rastî؛ نقي وعذب وحيوي مثل فهو يمثل الشخصية التي لا تحيد عن الحق والصلاح والصدق والاستقامة.؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
+    },
+    {
+      "id": "rastin",
+      "name": "Rastîn",
+      "gender": "unisex",
+      "letter": "R",
+      "meaning": "Rastîn; doğru, dürüst, hakiki, hakikat peşinde olan.",
+      "description": "Rastîn; doğru, dürüst, hakiki, hakikat peşinde olan.",
+      "meaning_en": "Rastîn; righteous, honest, true, genuine, seeker of truth.",
+      "meaning_de": "Rastîn; wahrhaftig, ehrlich, aufrichtig, der Wahrheit verpflichtet.",
+      "meaning_ar": "Rastîn؛ صادق، مستقيم، حقيقي، باحث عن الحق.",
+      "origin": "Kurdish",
+      "tags": [
+        "Bilgelik / Akıl",
+        "Kürtçe İsim"
+      ]
     },
     {
       "id": "ravgir",
@@ -1669,21 +1685,6 @@
       "meaning_ar": "Rîpê؛ شخصية مشرقة تضيء ما حولها مثل شخص وجهه مشرق ومشرق وينعكس جماله الداخلي على الخارج.، تمتلك بريقًا أبديًا يبدد كل ظلام بنورها النبيل."
     },
     {
-      "id": "risan",
-      "name": "Rîşan",
-      "gender": "female",
-      "letter": "R",
-      "meaning": "Rîşan; köklü, soylu ve aile bağlarına değer veren olma.",
-      "origin": "Kurdish",
-      "tags": [
-        "Bilgelik / Akıl"
-      ],
-      "description": "Rîşan; köklü, asil, soylu ve aile bağlarına değer veren olma anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
-      "meaning_en": "Rîşan; a person who places the meaning of someone who is deep-rooted, noble, noble and values family ties. and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Rîşan; eine Persönlichkeit, die die Bedeutung von jemand, der tief verwurzelt, edel, edel ist und familiäre Bindungen schätzt. und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Rîşan؛ شخص يضع معنى شخص عميق الجذور ونبيل ونبيل ويقدر الروابط الأسرية. والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً."
-    },
-    {
       "id": "ristem",
       "name": "Ristem",
       "gender": "male",
@@ -1714,6 +1715,21 @@
       "meaning_ar": "Ristem-i Zal؛ شخصية نبيلة تتحلى بـ رستم زال، البطل الأسطوري التاريخي الخالد ذو البأس القوي، تمتلك شجاعة مقدامة وعزيمة لا تلين، وتمثل رمز القوة والقيادة."
     },
     {
+      "id": "risan",
+      "name": "Rîşan",
+      "gender": "female",
+      "letter": "R",
+      "meaning": "Rîşan; köklü, soylu ve aile bağlarına değer veren olma.",
+      "origin": "Kurdish",
+      "tags": [
+        "Bilgelik / Akıl"
+      ],
+      "description": "Rîşan; köklü, asil, soylu ve aile bağlarına değer veren olma anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
+      "meaning_en": "Rîşan; a person who places the meaning of someone who is deep-rooted, noble, noble and values family ties. and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Rîşan; eine Persönlichkeit, die die Bedeutung von jemand, der tief verwurzelt, edel, edel ist und familiäre Bindungen schätzt. und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Rîşan؛ شخص يضع معنى شخص عميق الجذور ونبيل ونبيل ويقدر الروابط الأسرية. والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً."
+    },
+    {
       "id": "rizgar",
       "name": "Rizgar",
       "gender": "male",
@@ -1742,6 +1758,22 @@
         "Kürtçe İsim"
       ],
       "description": "Rizgarî; kurtuluş anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "robar",
+      "name": "Robar",
+      "gender": "unisex",
+      "letter": "R",
+      "meaning": "Robar; ırmak, akarsu, vadilerden coşkuyla akan su.",
+      "description": "Robar; ırmak, akarsu, vadilerden coşkuyla akan su.",
+      "meaning_en": "Robar; river, flowing stream running passionately through valleys.",
+      "meaning_de": "Robar; Fluss, strömender Bach der lebendig durch Täler fließt.",
+      "meaning_ar": "Robar؛ نهر، جدول جارٍ يتدفق بحيوية عبر الوديان.",
+      "origin": "Kurdish",
+      "tags": [
+        "Doğa / Yaşam",
+        "Kürtçe İsim"
+      ]
     },
     {
       "id": "robin",
@@ -2209,6 +2241,22 @@
       "description": "Rojhişyar; uyanık gün anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
+      "id": "rojin",
+      "name": "Rojîn",
+      "gender": "female",
+      "letter": "R",
+      "meaning": "Rojîn; güneş ışığı, güneşe ait; parlaklığı ve sıcaklığıyla etrafını aydınlatan, hayat dolu kimse.",
+      "description": "Rojîn; güneş ışığı, güneşe ait; parlaklığı ve sıcaklığıyla etrafını aydınlatan, hayat dolu kimse.",
+      "meaning_en": "Rojîn; belonging to the sun, sunlight; a radiant person who illuminates their surroundings with warmth and vitality.",
+      "meaning_de": "Rojîn; zum Sonnenlicht gehörend, Sonnenlicht; eine strahlende Persönlichkeit, die ihre Umgebung mit Wärme und Vitalität erhellt.",
+      "meaning_ar": "Rojîn؛ منتمية إلى الشمس، نور الشمس؛ شخصية مشرقة تضيء ما حولها بالدفء والحيوية.",
+      "origin": "Kurdish",
+      "tags": [
+        "Işık / Aydınlık",
+        "Popüler"
+      ]
+    },
+    {
       "id": "rojma",
       "name": "Rojma",
       "gender": "female",
@@ -2554,6 +2602,21 @@
       "meaning_ar": "Ronya؛ شخصية مشرقة تضيء ما حولها مثل ضوء، مشرق. إنه شخص نبيل وأنيق يجعل كل مكان جميلاً بتألقه.، تمتلك بريقًا أبديًا يبدد كل ظلام بنورها النبيل."
     },
     {
+      "id": "rosti",
+      "name": "Rosti",
+      "gender": "male",
+      "letter": "R",
+      "meaning": "Rosti; doğru, dürüst, dürüstlük taraftarı (Antik Kürtçe).",
+      "origin": "Kurdish",
+      "tags": [
+        "Klasik İsimler"
+      ],
+      "description": "Rosti; doğru, dürüst, dürüstlük taraftarı (Antik Kürtçe) yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir.",
+      "meaning_en": "Rosti; a respected person who reaches the peaks of wisdom through truthful, upright (Ancient Kurdish), guiding the society with deep intellect and illuminating words.",
+      "meaning_de": "Rosti; eine angesehene Persönlichkeit, die durch wahrheitsgetreu, aufrecht (Altkurdisch) die Gipfel der Weisheit erreicht und die Gesellschaft mit tiefem Verstand und erleuchtenden Worten führt.",
+      "meaning_ar": "Rosti؛ شخصية مرموقة تبلغ ذرى الحكمة من خلال صادق، مستقيم، مخلص (من الكردية القديمة)، وترشد المجتمع بفكرها العميق وكلماتها المستنيرة."
+    },
+    {
       "id": "rosan",
       "name": "Roşan",
       "gender": "male",
@@ -2612,21 +2675,6 @@
       "meaning_en": "Roşna; a person who places the meaning of brightness, light, radiance and luminous glow and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
       "meaning_de": "Roşna; eine Persönlichkeit, die die Bedeutung von Helligkeit, Licht, Glanz und leuchtender Schein und eine edle Haltung in den Mittelpunkt des Lebens stellt und ein tief verwurzeltes Erbe repräsentiert.",
       "meaning_ar": "Roşna؛ شخصية تضع معنى الضياء والنور والإشراق البهي والموقف النبيل في صميم الحياة، وتمثل تاريخًا عريقًا وتراثًا أصيلًا."
-    },
-    {
-      "id": "rosti",
-      "name": "Rosti",
-      "gender": "male",
-      "letter": "R",
-      "meaning": "Rosti; doğru, dürüst, dürüstlük taraftarı (Antik Kürtçe).",
-      "origin": "Kurdish",
-      "tags": [
-        "Klasik İsimler"
-      ],
-      "description": "Rosti; doğru, dürüst, dürüstlük taraftarı (Antik Kürtçe) yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir.",
-      "meaning_en": "Rosti; a respected person who reaches the peaks of wisdom through truthful, upright (Ancient Kurdish), guiding the society with deep intellect and illuminating words.",
-      "meaning_de": "Rosti; eine angesehene Persönlichkeit, die durch wahrheitsgetreu, aufrecht (Altkurdisch) die Gipfel der Weisheit erreicht und die Gesellschaft mit tiefem Verstand und erleuchtenden Worten führt.",
-      "meaning_ar": "Rosti؛ شخصية مرموقة تبلغ ذرى الحكمة من خلال صادق، مستقيم، مخلص (من الكردية القديمة)، وترشد المجتمع بفكرها العميق وكلماتها المستنيرة."
     },
     {
       "id": "roz",
@@ -2720,6 +2768,22 @@
       "meaning_ar": "Rozerîn؛ شخصية مشرقة تضيء ما حولها مثل الشمس الذهبية إنه شخص نبيل يمثل ألمع وأغلى لحظات الشمس.، تمتلك بريقًا أبديًا يبدد كل ظلام بنورها النبيل."
     },
     {
+      "id": "rubar",
+      "name": "Rûbar",
+      "gender": "unisex",
+      "letter": "R",
+      "meaning": "Rûbar; nehir, akarsu, bereket ve hayat taşıyan büyük su.",
+      "description": "Rûbar; nehir, akarsu, bereket ve hayat taşıyan büyük su.",
+      "meaning_en": "Rûbar; great river, flowing waters carrying life and abundance.",
+      "meaning_de": "Rûbar; großer Fluss, lebensspendende und fruchtbare Gewässer.",
+      "meaning_ar": "Rûbar؛ نهر عظيم، مياه جارية تحمل الحياة والخصوبة.",
+      "origin": "Kurdish",
+      "tags": [
+        "Doğa / Yaşam",
+        "Popüler"
+      ]
+    },
+    {
       "id": "rubenci",
       "name": "Rûbenci",
       "gender": "female",
@@ -2765,21 +2829,6 @@
       "meaning_ar": "Rûbixal؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ وجه مع الخلد. شخص يتميز بجماله وله سحر فريد، وتتميز بوقارها ورقّتها."
     },
     {
-      "id": "rucem",
-      "name": "Rûçem",
-      "gender": "female",
-      "letter": "R",
-      "meaning": "Rûçem; ırmak yüzlü; bakışı huzur veren ve duruluğuyla hayran bırakan olup, getiren, umut dolu.",
-      "origin": "Kurdish",
-      "tags": [
-        "Doğa / Yaşam"
-      ],
-      "description": "Rûçem; ırmak yüzlü; bakışı huzur veren ve duruluğuyla hayran bırakan olup, getiren, her kalbe sevinç, huzur ve taze başlangıçlar müjdeleyen, umut dolu asil bir esintidir.",
-      "meaning_en": "Rûçem; a noble whisper of hope, bringing river-faced; He is someone whose look gives peace and amazes with his clarity. and promising joy, peace, and fresh beginnings to every heart.",
-      "meaning_de": "Rûçem; ein edler Hauch der Hoffnung, der mit Blick auf den Fluss; Er ist jemand, dessen Blick Ruhe schenkt und durch seine Klarheit verblüfft. bringt und jedem Herzen Freude, Frieden und einen Neuanfang verspricht.",
-      "meaning_ar": "Rûçem؛ همسة أمل نبيلة تجلب وجه النهر إنه شخص تبعث نظرته الطمأنينة ويذهل بوضوحه.، وتبشر كل قلب بالبهجة والسكينة والبدايات الجديدة المشرقة."
-    },
-    {
       "id": "ruciwan",
       "name": "Rûciwan",
       "gender": "female",
@@ -2793,6 +2842,21 @@
       "meaning_en": "Rûciwan; clear, fresh, and vibrant like he is someone with a beautiful face, a bright face and the energy of youth.; a noble person who embodies the purest and most graceful whispers of nature.",
       "meaning_de": "Rûciwan; rein, frisch und lebendig wie Er ist jemand mit einem schönen Gesicht, einem strahlenden Gesicht und der Energie der Jugend.; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
       "meaning_ar": "Rûciwan؛ نقي وعذب وحيوي مثل إنه شخص ذو وجه جميل ووجه مشرق وطاقة الشباب.؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
+    },
+    {
+      "id": "rucem",
+      "name": "Rûçem",
+      "gender": "female",
+      "letter": "R",
+      "meaning": "Rûçem; ırmak yüzlü; bakışı huzur veren ve duruluğuyla hayran bırakan olup, getiren, umut dolu.",
+      "origin": "Kurdish",
+      "tags": [
+        "Doğa / Yaşam"
+      ],
+      "description": "Rûçem; ırmak yüzlü; bakışı huzur veren ve duruluğuyla hayran bırakan olup, getiren, her kalbe sevinç, huzur ve taze başlangıçlar müjdeleyen, umut dolu asil bir esintidir.",
+      "meaning_en": "Rûçem; a noble whisper of hope, bringing river-faced; He is someone whose look gives peace and amazes with his clarity. and promising joy, peace, and fresh beginnings to every heart.",
+      "meaning_de": "Rûçem; ein edler Hauch der Hoffnung, der mit Blick auf den Fluss; Er ist jemand, dessen Blick Ruhe schenkt und durch seine Klarheit verblüfft. bringt und jedem Herzen Freude, Frieden und einen Neuanfang verspricht.",
+      "meaning_ar": "Rûçem؛ همسة أمل نبيلة تجلب وجه النهر إنه شخص تبعث نظرته الطمأنينة ويذهل بوضوحه.، وتبشر كل قلب بالبهجة والسكينة والبدايات الجديدة المشرقة."
     },
     {
       "id": "ruges",

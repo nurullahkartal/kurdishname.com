@@ -1,6 +1,6 @@
 {
   "letter": "D",
-  "count": 351,
+  "count": 355,
   "names": [
     {
       "id": "dabani",
@@ -680,21 +680,6 @@
       "description": "Darwest; dayanak anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "dasdari",
-      "name": "Daşdarî",
-      "gender": "female",
-      "letter": "D",
-      "meaning": "Daşdarî; yoldaşlık.",
-      "meaning_en": "Daşdarî; a respected person who reaches the peaks of wisdom through comradeship, guiding the society with deep intellect and illuminating words.",
-      "meaning_de": "Daşdarî; eine angesehene Persönlichkeit, die durch kameradschaft die Gipfel der Weisheit erreicht und die Gesellschaft mit tiefem Verstand und erleuchtenden Worten führt.",
-      "meaning_ar": "Daşdarî؛ شخصية مرموقة تبلغ ذرى الحكمة من خلال رفقة، وترشد المجتمع بفكرها العميق وكلماتها المستنيرة.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Daşdarî; yoldaşlık yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir."
-    },
-    {
       "id": "daseni",
       "name": "Dasenî",
       "gender": "male",
@@ -708,6 +693,21 @@
         "Kürtçe İsim"
       ],
       "description": "Dasenî; aşiret mensubu gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
+    },
+    {
+      "id": "dasdari",
+      "name": "Daşdarî",
+      "gender": "female",
+      "letter": "D",
+      "meaning": "Daşdarî; yoldaşlık.",
+      "meaning_en": "Daşdarî; a respected person who reaches the peaks of wisdom through comradeship, guiding the society with deep intellect and illuminating words.",
+      "meaning_de": "Daşdarî; eine angesehene Persönlichkeit, die durch kameradschaft die Gipfel der Weisheit erreicht und die Gesellschaft mit tiefem Verstand und erleuchtenden Worten führt.",
+      "meaning_ar": "Daşdarî؛ شخصية مرموقة تبلغ ذرى الحكمة من خلال رفقة، وترشد المجتمع بفكرها العميق وكلماتها المستنيرة.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Daşdarî; yoldaşlık yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir."
     },
     {
       "id": "davan",
@@ -1569,21 +1569,6 @@
       "description": "Derzînî; iğneleyici anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "dest",
-      "name": "Deşt",
-      "gender": "female",
-      "letter": "D",
-      "meaning": "Deşt; deşt; ova, düzlük, tarımın ve yaşamın yeşerdiği engin verimli arazi.",
-      "origin": "Kurdish",
-      "tags": [
-        "Bölgesel / Coğrafi"
-      ],
-      "description": "Deşt; deşt; ova, düzlük, tarımın ve yaşamın yeşerdiği engin verimli arazi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
-      "meaning_en": "Deşt; a person who places the meaning of valley, plain, vast fertile green lands and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Deşt; eine Persönlichkeit, die die Bedeutung von ebene, Tal, weites fruchtbares grünes Land und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Deşt؛ شخص يضع معنى دشت، السهل الفسيح، المروج الخضراء الواسعة الواهبة للحياة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً."
-    },
-    {
       "id": "destan",
       "name": "Destan",
       "gender": "female",
@@ -1612,21 +1597,6 @@
         "Kürtçe İsim"
       ],
       "description": "Destar; el değirmeni anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "destari",
-      "name": "Deştarî",
-      "gender": "female",
-      "letter": "D",
-      "meaning": "Deştarî; ovalık.",
-      "meaning_en": "Deştarî; a person who places the meaning of plain and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Deştarî; eine Persönlichkeit, die die Bedeutung von ebene und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Deştarî؛ شخص يضع معنى سهلية والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Deştarî; ovalık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "destav",
@@ -1674,21 +1644,6 @@
       "description": "Deste; demet, grup anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "desteni",
-      "name": "Deştenî",
-      "gender": "female",
-      "letter": "D",
-      "meaning": "Deştenî; yabani.",
-      "meaning_en": "Deştenî; a person who places the meaning of wild and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Deştenî; eine Persönlichkeit, die die Bedeutung von wild und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Deştenî؛ شخص يضع معنى برية والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Deştenî; yabani anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "desti",
       "name": "Destî",
       "gender": "male",
@@ -1702,6 +1657,22 @@
         "Kürtçe İsim"
       ],
       "description": "Destî; testi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "destin",
+      "name": "Destîn",
+      "gender": "female",
+      "letter": "D",
+      "meaning": "Destîn; kader, nasip, hayatın getirdiği güzel yazgı.",
+      "description": "Destîn; kader, nasip, hayatın getirdiği güzel yazgı.",
+      "meaning_en": "Destîn; destiny, fate, beautiful fortune brought by life.",
+      "meaning_de": "Destîn; Schicksal, Bestimmung, glückliche Fügung des Lebens.",
+      "meaning_ar": "Destîn؛ قدر، نصيب، مشيئة الحياة الجميلة.",
+      "origin": "Kurdish",
+      "tags": [
+        "Umut / Sevinç",
+        "Kürtçe İsim"
+      ]
     },
     {
       "id": "destina",
@@ -1732,6 +1703,51 @@
         "Kürtçe İsim"
       ],
       "description": "Destpêk; başlangıç anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "dest",
+      "name": "Deşt",
+      "gender": "female",
+      "letter": "D",
+      "meaning": "Deşt; deşt; ova, düzlük, tarımın ve yaşamın yeşerdiği engin verimli arazi.",
+      "origin": "Kurdish",
+      "tags": [
+        "Bölgesel / Coğrafi"
+      ],
+      "description": "Deşt; deşt; ova, düzlük, tarımın ve yaşamın yeşerdiği engin verimli arazi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
+      "meaning_en": "Deşt; a person who places the meaning of valley, plain, vast fertile green lands and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Deşt; eine Persönlichkeit, die die Bedeutung von ebene, Tal, weites fruchtbares grünes Land und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Deşt؛ شخص يضع معنى دشت، السهل الفسيح، المروج الخضراء الواسعة الواهبة للحياة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً."
+    },
+    {
+      "id": "destari",
+      "name": "Deştarî",
+      "gender": "female",
+      "letter": "D",
+      "meaning": "Deştarî; ovalık.",
+      "meaning_en": "Deştarî; a person who places the meaning of plain and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Deştarî; eine Persönlichkeit, die die Bedeutung von ebene und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Deştarî؛ شخص يضع معنى سهلية والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Deştarî; ovalık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "desteni",
+      "name": "Deştenî",
+      "gender": "female",
+      "letter": "D",
+      "meaning": "Deştenî; yabani.",
+      "meaning_en": "Deştenî; a person who places the meaning of wild and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Deştenî; eine Persönlichkeit, die die Bedeutung von wild und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Deştenî؛ شخص يضع معنى برية والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Deştenî; yabani anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "devani",
@@ -2861,6 +2877,37 @@
       "description": "Dilîman; güvenli gönül getiren, her kalbe sevinç, huzur ve taze başlangıçlar müjdeleyen, umut dolu asil bir esintidir."
     },
     {
+      "id": "dilin",
+      "name": "Dilîn",
+      "gender": "female",
+      "letter": "D",
+      "meaning": "Dilîn; gönülden, içten, samimi ve sevgi dolu kimse.",
+      "description": "Dilîn; gönülden, içten, samimi ve sevgi dolu kimse.",
+      "meaning_en": "Dilîn; sincere, from the heart, warm, and loving.",
+      "meaning_de": "Dilîn; von Herzen kommend, aufrichtig, herzlich und liebevoll.",
+      "meaning_ar": "Dilîn؛ قلبية، نابعة من صميم القلب، صادقة ومحبة.",
+      "origin": "Kurdish",
+      "tags": [
+        "Sevgi / Güzellik",
+        "Kürtçe İsim"
+      ]
+    },
+    {
+      "id": "dilistan",
+      "name": "Dilistan",
+      "gender": "female",
+      "letter": "D",
+      "meaning": "Dilistan; gönül diyarı.",
+      "meaning_en": "Dilistan; a person who places the meaning of land of hearts and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Dilistan; eine Persönlichkeit, die die Bedeutung von land der Herzen und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Dilistan؛ شخص يضع معنى ديار القلوب والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Dilistan; gönül diyarı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
       "id": "dilisan",
       "name": "Dilişan",
       "gender": "male",
@@ -2889,21 +2936,6 @@
         "Kürtçe İsim"
       ],
       "description": "Dilişên; şen gönül anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "dilistan",
-      "name": "Dilistan",
-      "gender": "female",
-      "letter": "D",
-      "meaning": "Dilistan; gönül diyarı.",
-      "meaning_en": "Dilistan; a person who places the meaning of land of hearts and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Dilistan; eine Persönlichkeit, die die Bedeutung von land der Herzen und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Dilistan؛ شخص يضع معنى ديار القلوب والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Dilistan; gönül diyarı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "diliyar",
@@ -3461,6 +3493,66 @@
       "description": "Dilronî; gönül aydınlığı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
+      "id": "dilsai",
+      "name": "Dilsaî",
+      "gender": "female",
+      "letter": "D",
+      "meaning": "Dilsaî; saf gönüllü.",
+      "meaning_en": "Dilsaî; a person who places the meaning of pure-hearted and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Dilsaî; eine Persönlichkeit, die die Bedeutung von reinherzig und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Dilsaî؛ شخص يضع معنى قلب صافٍ والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Dilsaî; saf gönüllü anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "dilsat",
+      "name": "Dilsat",
+      "gender": "male",
+      "letter": "D",
+      "meaning": "Dilsat; gönül saati.",
+      "meaning_en": "Dilsat; a person who places the meaning of heart hour and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Dilsat; eine Persönlichkeit, die die Bedeutung von herzensstunde und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Dilsat؛ شخص يضع معنى ساعة القلب والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Dilsat; gönül saati anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "dilsozi",
+      "name": "Dilsozî",
+      "gender": "female",
+      "letter": "D",
+      "meaning": "Dilsozî; gönül sözü, sadakat.",
+      "meaning_en": "Dilsozî; a respected person who reaches the peaks of wisdom through sincerity, loyalty, guiding the society with deep intellect and illuminating words.",
+      "meaning_de": "Dilsozî; eine angesehene Persönlichkeit, die durch herzlichkeit, Loyalität die Gipfel der Weisheit erreicht und die Gesellschaft mit tiefem Verstand und erleuchtenden Worten führt.",
+      "meaning_ar": "Dilsozî؛ شخصية مرموقة تبلغ ذرى الحكمة من خلال وفاء القلب، وترشد المجتمع بفكرها العميق وكلماتها المستنيرة.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Dilsozî; gönül sözü, sadakat yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir."
+    },
+    {
+      "id": "dilsozin",
+      "name": "Dilsozîn",
+      "gender": "female",
+      "letter": "D",
+      "meaning": "Dilsozîn; sadık, sözüne bağlı tabiatlı, sadık, sözüne bağlı özlü.",
+      "origin": "Kurdish",
+      "tags": [
+        "Güç / Cesaret"
+      ],
+      "description": "Dilsozîn; sadık, sözüne bağlı tabiatlı, sadık, sözüne bağlı özlü yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir.",
+      "meaning_en": "Dilsozîn; a respected person who reaches the peaks of wisdom through of loyal, faithful, like loyal, faithful, guiding the society with deep intellect and illuminating words.",
+      "meaning_de": "Dilsozîn; eine angesehene Persönlichkeit, die durch vom treu, loyal, wie treu, loyal die Gipfel der Weisheit erreicht und die Gesellschaft mit tiefem Verstand und erleuchtenden Worten führt.",
+      "meaning_ar": "Dilsozîn؛ شخصية مرموقة تبلغ ذرى الحكمة من خلال متعلقة بـ وفي، mخلص، شبيهة بـ وفي، mخلص، وترشد المجتمع بفكرها العميق وكلماتها المستنيرة."
+    },
+    {
       "id": "dilsa",
       "name": "Dilşa",
       "gender": "female",
@@ -3504,36 +3596,6 @@
         "Kürtçe İsim"
       ],
       "description": "Dilşadî; gönül mutluluğu getiren, her kalbe sevinç, huzur ve taze başlangıçlar müjdeleyen, umut dolu asil bir esintidir."
-    },
-    {
-      "id": "dilsai",
-      "name": "Dilsaî",
-      "gender": "female",
-      "letter": "D",
-      "meaning": "Dilsaî; saf gönüllü.",
-      "meaning_en": "Dilsaî; a person who places the meaning of pure-hearted and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Dilsaî; eine Persönlichkeit, die die Bedeutung von reinherzig und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Dilsaî؛ شخص يضع معنى قلب صافٍ والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Dilsaî; saf gönüllü anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "dilsat",
-      "name": "Dilsat",
-      "gender": "male",
-      "letter": "D",
-      "meaning": "Dilsat; gönül saati.",
-      "meaning_en": "Dilsat; a person who places the meaning of heart hour and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Dilsat; eine Persönlichkeit, die die Bedeutung von herzensstunde und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Dilsat؛ شخص يضع معنى ساعة القلب والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Dilsat; gönül saati anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "dilsaw",
@@ -3701,36 +3763,6 @@
       "description": "Dilşoxî; gönül güzelliği dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
     },
     {
-      "id": "dilsozi",
-      "name": "Dilsozî",
-      "gender": "female",
-      "letter": "D",
-      "meaning": "Dilsozî; gönül sözü, sadakat.",
-      "meaning_en": "Dilsozî; a respected person who reaches the peaks of wisdom through sincerity, loyalty, guiding the society with deep intellect and illuminating words.",
-      "meaning_de": "Dilsozî; eine angesehene Persönlichkeit, die durch herzlichkeit, Loyalität die Gipfel der Weisheit erreicht und die Gesellschaft mit tiefem Verstand und erleuchtenden Worten führt.",
-      "meaning_ar": "Dilsozî؛ شخصية مرموقة تبلغ ذرى الحكمة من خلال وفاء القلب، وترشد المجتمع بفكرها العميق وكلماتها المستنيرة.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Dilsozî; gönül sözü, sadakat yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir."
-    },
-    {
-      "id": "dilsozin",
-      "name": "Dilsozîn",
-      "gender": "female",
-      "letter": "D",
-      "meaning": "Dilsozîn; sadık, sözüne bağlı tabiatlı, sadık, sözüne bağlı özlü.",
-      "origin": "Kurdish",
-      "tags": [
-        "Güç / Cesaret"
-      ],
-      "description": "Dilsozîn; sadık, sözüne bağlı tabiatlı, sadık, sözüne bağlı özlü yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir.",
-      "meaning_en": "Dilsozîn; a respected person who reaches the peaks of wisdom through of loyal, faithful, like loyal, faithful, guiding the society with deep intellect and illuminating words.",
-      "meaning_de": "Dilsozîn; eine angesehene Persönlichkeit, die durch vom treu, loyal, wie treu, loyal die Gipfel der Weisheit erreicht und die Gesellschaft mit tiefem Verstand und erleuchtenden Worten führt.",
-      "meaning_ar": "Dilsozîn؛ شخصية مرموقة تبلغ ذرى الحكمة من خلال متعلقة بـ وفي، mخلص، شبيهة بـ وفي، mخلص، وترشد المجتمع بفكرها العميق وكلماتها المستنيرة."
-    },
-    {
       "id": "dilsun",
       "name": "Dilşûn",
       "gender": "male",
@@ -3789,6 +3821,22 @@
         "Kürtçe İsim"
       ],
       "description": "Diltavî; ışıklı gönül anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "dilvin",
+      "name": "Dilvîn",
+      "gender": "female",
+      "letter": "D",
+      "meaning": "Dilvîn; gönül sevgisi, kalbin derin sevgisi ve güzelliği.",
+      "description": "Dilvîn; gönül sevgisi, kalbin derin sevgisi ve güzelliği.",
+      "meaning_en": "Dilvîn; love of the heart, deep affection, and inner beauty.",
+      "meaning_de": "Dilvîn; Herzensliebe, tiefe Zuneigung und innere Schönheit.",
+      "meaning_ar": "Dilvîn؛ محبة القلب، العاطفة الصادقة والجمال الداخلي.",
+      "origin": "Kurdish",
+      "tags": [
+        "Sevgi / Güzellik",
+        "Kürtçe İsim"
+      ]
     },
     {
       "id": "dilvini",
@@ -4959,6 +5007,22 @@
         "Kürtçe İsim"
       ],
       "description": "Doza; dava, amaç anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "dozdar",
+      "name": "Dozdar",
+      "gender": "male",
+      "letter": "D",
+      "meaning": "Dozdar; davasına inanan, idealist ve ilkeli kimse.",
+      "description": "Dozdar; davasına inanan, idealist ve ilkeli kimse.",
+      "meaning_en": "Dozdar; committed to a noble cause, idealistic and principled.",
+      "meaning_de": "Dozdar; einer edlen Sache verpflichtet, idealistisch und prinzipientreu.",
+      "meaning_ar": "Dozdar؛ صاحب قضية ومبدأ، مخلص لأهدافه النبيلة.",
+      "origin": "Kurdish",
+      "tags": [
+        "Güç / Cesaret",
+        "Kürtçe İsim"
+      ]
     },
     {
       "id": "dozeni",

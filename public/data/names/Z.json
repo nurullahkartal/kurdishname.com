@@ -1,6 +1,6 @@
 {
   "letter": "Z",
-  "count": 95,
+  "count": 91,
   "names": [
     {
       "id": "zabirvan",
@@ -243,6 +243,22 @@
       "description": "Zanmanî; bilge adam yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir."
     },
     {
+      "id": "zanyar",
+      "name": "Zanyar",
+      "gender": "male",
+      "letter": "Z",
+      "meaning": "Zanyar; bilgin, bilim insanı, hakikat ve bilgi peşinde koşan bilge.",
+      "description": "Zanyar; bilgin, bilim insanı, hakikat ve bilgi peşinde koşan bilge.",
+      "meaning_en": "Zanyar; scholar, scientist, wise seeker of knowledge and truth.",
+      "meaning_de": "Zanyar; Gelehrter, Wissenschaftler, weiser Sucher nach Wissen und Wahrheit.",
+      "meaning_ar": "Zanyar؛ عالم، باحث، حكيم يسعى وراء المعرفة والحقيقة.",
+      "origin": "Kurdish",
+      "tags": [
+        "Bilgelik / Akıl",
+        "Popüler"
+      ]
+    },
+    {
       "id": "zanyari",
       "name": "Zanyarî",
       "gender": "female",
@@ -271,81 +287,6 @@
       "meaning_en": "Zap; clear, fresh, and vibrant like zap river, roaring and pristine wild water flow; a noble person who embodies the purest and most graceful whispers of nature.",
       "meaning_de": "Zap; rein, frisch und lebendig wie der Fluss Zap, wildes und reines Gewässer; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
       "meaning_ar": "Zap؛ نقي وعذب وحيوي مثل نهر الزاب، المياه الهادرة الجبلية العذبة النقية؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
-    },
-    {
-      "id": "zaradar",
-      "name": "Zaradar",
-      "gender": "male",
-      "letter": "Z",
-      "meaning": "Zaradar; altın sahibi.",
-      "meaning_en": "Zaradar; a person who places the meaning of gold owner and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Zaradar; eine Persönlichkeit, die die Bedeutung von goldbesitzer und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Zaradar؛ شخص يضع معنى صاحب ذهب والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Zaradar; altın sahibi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "zarati",
-      "name": "Zaratî",
-      "gender": "female",
-      "letter": "Z",
-      "meaning": "Zaratî; altın gibi.",
-      "meaning_en": "Zaratî; a person who places the meaning of gold-like and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Zaratî; eine Persönlichkeit, die die Bedeutung von goldähnlich und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Zaratî؛ شخص يضع معنى ذهبية والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Zaratî; altın gibi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "zarmani",
-      "name": "Zarmanî",
-      "gender": "male",
-      "letter": "Z",
-      "meaning": "Zarmanî; zar adam.",
-      "meaning_en": "Zarmanî; a person who places the meaning of zar man and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Zarmanî; eine Persönlichkeit, die die Bedeutung von zar-Mann und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Zarmanî؛ شخص يضع معنى رجل ذهبي والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Zarmanî; zar adam anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "zarvan",
-      "name": "Zarvan",
-      "gender": "male",
-      "letter": "Z",
-      "meaning": "Zarvan; altın koruyucusu.",
-      "meaning_en": "Zarvan; clear, fresh, and vibrant like guardian of gold; a noble person who embodies the purest and most graceful whispers of nature.",
-      "meaning_de": "Zarvan; rein, frisch und lebendig wie goldhüter; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
-      "meaning_ar": "Zarvan؛ نقي وعذب وحيوي مثل حارس الذهب؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Zarvan; altın koruyucusu gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
-    },
-    {
-      "id": "zaryar",
-      "name": "Zaryar",
-      "gender": "male",
-      "letter": "Z",
-      "meaning": "Zaryar; altın dostu.",
-      "meaning_en": "Zaryar; a very special and precious person who radiates love and beauty with a heart full of gold friend, noble stance, and elegance.",
-      "meaning_de": "Zaryar; eine ganz besondere und kostbare Persönlichkeit, die Liebe und Schönheit mit einem Herzen voller goldfreund, edler Haltung und Eleganz ausstrahlt.",
-      "meaning_ar": "Zaryar؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ صديق الذهب، وتتميز بوقارها ورقّتها.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Zaryar; altın dostu dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
     },
     {
       "id": "zayele",

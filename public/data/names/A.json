@@ -1,6 +1,6 @@
 {
   "letter": "A",
-  "count": 572,
+  "count": 559,
   "names": [
     {
       "id": "adan",
@@ -213,21 +213,6 @@
       "meaning_ar": "Agir؛ شخصية مشرقة تضيء ما حولها مثل النار والحماس والحماس، تمتلك بريقًا أبديًا يبدد كل ظلام بنورها النبيل."
     },
     {
-      "id": "agirbaz",
-      "name": "Agirbaz",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Agirbaz; ateşle oynayan.",
-      "meaning_en": "Agirbaz; a brilliant person who illuminates their surroundings like one who plays with fire, possessing an eternal radiance that scatters all darkness with noble light.",
-      "meaning_de": "Agirbaz; eine strahlende Persönlichkeit, die ihre Umgebung wie einer, der mit Feuer spielt erhellt und einen ewigen Glanz besitzt, der jede Dunkelheit mit edlem Licht vertreibt.",
-      "meaning_ar": "Agirbaz؛ شخصية مشرقة تضيء ما حولها مثل لاعب بالنار، تمتلك بريقًا أبديًا يبدد كل ظلام بنورها النبيل.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Agirbaz; ateşle oynayan gibi etrafını aydınlatan, sönmeyen bir parıltıya sahip ve her karanlığı asil bir ışıkla dağıtan parlak bir kimsedir."
-    },
-    {
       "id": "agirda",
       "name": "Agirda",
       "gender": "male",
@@ -286,6 +271,22 @@
         "Kürtçe İsim"
       ],
       "description": "Agirê; küçük ateş, kıvılcım gibi etrafını aydınlatan, sönmeyen bir parıltıya sahip ve her karanlığı asil bir ışıkla dağıtan parlak bir kimsedir."
+    },
+    {
+      "id": "agirin",
+      "name": "Agirîn",
+      "gender": "female",
+      "letter": "A",
+      "meaning": "Agirîn; ateşli, coşkulu, alev gibi parlak ve cesur.",
+      "description": "Agirîn; ateşli, coşkulu, alev gibi parlak ve cesur.",
+      "meaning_en": "Agirîn; fiery, passionate, radiant like a flame, and brave.",
+      "meaning_de": "Agirîn; feurig, leidenschaftlich, wie eine Flamme strahlend und mutig.",
+      "meaning_ar": "Agirîn؛ نارية، متقدة، مشرقة كاللهب وشجاعة.",
+      "origin": "Kurdish",
+      "tags": [
+        "Güç / Cesaret",
+        "Kürtçe İsim"
+      ]
     },
     {
       "id": "agirjin",
@@ -783,6 +784,22 @@
       "description": "Alîkar; yardımcı, dost dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
     },
     {
+      "id": "alin",
+      "name": "Alîn",
+      "gender": "female",
+      "letter": "A",
+      "meaning": "Alîn; asil ışık, parlaklık, yükseklerde parıldayan zarafet.",
+      "description": "Alîn; asil ışık, parlaklık, yükseklerde parıldayan zarafet.",
+      "meaning_en": "Alîn; noble light, radiance, elegance shining from high places.",
+      "meaning_de": "Alîn; edles Licht, Glanz, in Höhen strahlende Eleganz.",
+      "meaning_ar": "Alîn؛ نور نبيل، بهاء، وأناقة تشع من الأعالي.",
+      "origin": "Kurdish",
+      "tags": [
+        "Işık / Aydınlık",
+        "Kürtçe İsim"
+      ]
+    },
+    {
       "id": "almas",
       "name": "Almas",
       "gender": "female",
@@ -991,36 +1008,6 @@
         "Kürtçe İsim"
       ],
       "description": "Amancîn; gaye ile ilgili anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "amandok",
-      "name": "Amandok",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Amandok; küçük emanet.",
-      "meaning_en": "Amandok; a person who places the meaning of little trust and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Amandok; eine Persönlichkeit, die die Bedeutung von kleines Vertrauen und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Amandok؛ شخص يضع معنى أمانة صغيرة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Amandok; küçük emanet anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "amandoz",
-      "name": "Amandoz",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Amandoz; emanet arayan.",
-      "meaning_en": "Amandoz; a person who places the meaning of seeking trust and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Amandoz; eine Persönlichkeit, die die Bedeutung von vertrauen suchend und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Amandoz؛ شخص يضع معنى باحث عن الأمانة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Amandoz; emanet arayan anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "amanges",
@@ -1339,21 +1326,6 @@
       "description": "Ando; sözünde duran yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir."
     },
     {
-      "id": "andoz",
-      "name": "Andoz",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Andoz; ant arayan.",
-      "meaning_en": "Andoz; a person who places the meaning of seeking oath and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Andoz; eine Persönlichkeit, die die Bedeutung von eid suchend und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Andoz؛ شخص يضع معنى باحث عن العهد والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Andoz; ant arayan anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "andyar",
       "name": "Andyar",
       "gender": "male",
@@ -1519,21 +1491,6 @@
       "description": "Anjo; taze fidan anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "anjos",
-      "name": "Anjos",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Anjos; fidan dostu.",
-      "meaning_en": "Anjos; a very special and precious person who radiates love and beauty with a heart full of friend of sapling, noble stance, and elegance.",
-      "meaning_de": "Anjos; eine ganz besondere und kostbare Persönlichkeit, die Liebe und Schönheit mit einem Herzen voller freund des Schösslings, edler Haltung und Eleganz ausstrahlt.",
-      "meaning_ar": "Anjos؛ شخصية مميزة وثمينة للغاية تشع حبًا وجمالاً بقلب مليء بـ صديق الشتلة، وتتميز بوقارها ورقّتها.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Anjos; fidan dostu dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
-    },
-    {
       "id": "anjyar",
       "name": "Anjyar",
       "gender": "male",
@@ -1577,21 +1534,6 @@
         "Kürtçe İsim"
       ],
       "description": "Ankor; anlam yolu yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir."
-    },
-    {
-      "id": "ankos",
-      "name": "Ankoş",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Ankoş; anlamlı kişi.",
-      "meaning_en": "Ankoş; a person who places the meaning of meaningful person and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Ankoş; eine Persönlichkeit, die die Bedeutung von bedeutungsvolle Person und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Ankoş؛ شخص يضع معنى شخص ذو معنى والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Ankoş; anlamlı kişi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "ankoyi",
@@ -1864,21 +1806,6 @@
       "description": "Arando; ovalı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "arandoz",
-      "name": "Arandoz",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Arandoz; düzlük arayan.",
-      "meaning_en": "Arandoz; a person who places the meaning of seeking the plain and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Arandoz; eine Persönlichkeit, die die Bedeutung von suchender der Ebene und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Arandoz؛ شخص يضع معنى باحث عن السهل والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Arandoz; düzlük arayan anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "arangan",
       "name": "Arangan",
       "gender": "male",
@@ -2087,21 +2014,6 @@
         "Kürtçe İsim"
       ],
       "description": "Arban; ateş yeri gibi etrafını aydınlatan, sönmeyen bir parıltıya sahip ve her karanlığı asil bir ışıkla dağıtan parlak bir kimsedir."
-    },
-    {
-      "id": "arbaz",
-      "name": "Arbaz",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Arbaz; ateşle uğraşan.",
-      "meaning_en": "Arbaz; a brilliant person who illuminates their surroundings like one who deals with fire, possessing an eternal radiance that scatters all darkness with noble light.",
-      "meaning_de": "Arbaz; eine strahlende Persönlichkeit, die ihre Umgebung wie einer, der mit Feuer zu tun hat erhellt und einen ewigen Glanz besitzt, der jede Dunkelheit mit edlem Licht vertreibt.",
-      "meaning_ar": "Arbaz؛ شخصية مشرقة تضيء ما حولها مثل من يتعامل مع النار، تمتلك بريقًا أبديًا يبدد كل ظلام بنورها النبيل.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Arbaz; ateşle uğraşan gibi etrafını aydınlatan, sönmeyen bir parıltıya sahip ve her karanlığı asil bir ışıkla dağıtan parlak bir kimsedir."
     },
     {
       "id": "arbendi",
@@ -2597,21 +2509,6 @@
         "Kürtçe İsim"
       ],
       "description": "Ardoyî; yeryüzü anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "ardoz",
-      "name": "Ardoz",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Ardoz; yer arayan.",
-      "meaning_en": "Ardoz; a person who places the meaning of seeking ground and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Ardoz; eine Persönlichkeit, die die Bedeutung von bodensuchend und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Ardoz؛ شخص يضع معنى باحث عن الأرض والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Ardoz; yer arayan anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "ardraz",
@@ -3334,21 +3231,6 @@
       "description": "Arîkane; ari pınarı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "arikos",
-      "name": "Arîkoş",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Arîkoş; ari mücadeleci.",
-      "meaning_en": "Arîkoş; a person who places the meaning of aryan struggler and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Arîkoş; eine Persönlichkeit, die die Bedeutung von arischer Kämpfer und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Arîkoş؛ شخص يضع معنى مناضل آري والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Arîkoş; ari mücadeleci anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "arim",
       "name": "Arîm",
       "gender": "male",
@@ -3362,6 +3244,22 @@
         "Kürtçe İsim"
       ],
       "description": "Arîm; asil ruh anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "arin",
+      "name": "Arîn",
+      "gender": "female",
+      "letter": "A",
+      "meaning": "Arîn; ateşten olan, soylu, aydınlık ve enerjik kimse.",
+      "description": "Arîn; ateşten olan, soylu, aydınlık ve enerjik kimse.",
+      "meaning_en": "Arîn; of fire, noble, brilliant, and full of vitality.",
+      "meaning_de": "Arîn; aus Feuer, edel, strahlend und voller Lebenskraft.",
+      "meaning_ar": "Arîn؛ من النار، نبيلة، مشرقة ومفعمة بالحيوية.",
+      "origin": "Kurdish",
+      "tags": [
+        "Işık / Aydınlık",
+        "Kürtçe İsim"
+      ]
     },
     {
       "id": "arina",
@@ -3949,21 +3847,6 @@
       "description": "Arkê; ateşçi gibi etrafını aydınlatan, sönmeyen bir parıltıya sahip ve her karanlığı asil bir ışıkla dağıtan parlak bir kimsedir."
     },
     {
-      "id": "arkos",
-      "name": "Arkoş",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Arkoş; ateşli mücadele.",
-      "meaning_en": "Arkoş; a brilliant person who illuminates their surroundings like fiery struggle, possessing an eternal radiance that scatters all darkness with noble light.",
-      "meaning_de": "Arkoş; eine strahlende Persönlichkeit, die ihre Umgebung wie feuriger Kampf erhellt und einen ewigen Glanz besitzt, der jede Dunkelheit mit edlem Licht vertreibt.",
-      "meaning_ar": "Arkoş؛ شخصية مشرقة تضيء ما حولها مثل نضال ناري، تمتلك بريقًا أبديًا يبدد كل ظلام بنورها النبيل.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Arkoş; ateşli mücadele gibi etrafını aydınlatan, sönmeyen bir parıltıya sahip ve her karanlığı asil bir ışıkla dağıtan parlak bir kimsedir."
-    },
-    {
       "id": "armanc",
       "name": "Armanc",
       "gender": "male",
@@ -3992,51 +3875,6 @@
         "Kürtçe İsim"
       ],
       "description": "Armance; hedef anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "arnos",
-      "name": "Arnos",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Arnos; ebedi ateş.",
-      "meaning_en": "Arnos; a brilliant person who illuminates their surroundings like eternal fire, possessing an eternal radiance that scatters all darkness with noble light.",
-      "meaning_de": "Arnos; eine strahlende Persönlichkeit, die ihre Umgebung wie ewiges Feuer erhellt und einen ewigen Glanz besitzt, der jede Dunkelheit mit edlem Licht vertreibt.",
-      "meaning_ar": "Arnos؛ شخصية مشرقة تضيء ما حولها مثل نار أبدية، تمتلك بريقًا أبديًا يبدد كل ظلام بنورها النبيل.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Arnos; ebedi ateş gibi etrafını aydınlatan, sönmeyen bir parıltıya sahip ve her karanlığı asil bir ışıkla dağıtan parlak bir kimsedir."
-    },
-    {
-      "id": "arnoswan",
-      "name": "Arnoswan",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Arnoswan; ebedi ateş koruyucusu.",
-      "meaning_en": "Arnoswan; clear, fresh, and vibrant like guardian of eternal fire; a noble person who embodies the purest and most graceful whispers of nature.",
-      "meaning_de": "Arnoswan; rein, frisch und lebendig wie wächter des ewigen Feuers; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
-      "meaning_ar": "Arnoswan؛ نقي وعذب وحيوي مثل حارس النار الأبدية؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Arnoswan; ebedi ateş koruyucusu gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
-    },
-    {
-      "id": "arnosyar",
-      "name": "Arnosyar",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Arnosyar; ebedi ateş dostu.",
-      "meaning_en": "Arnosyar; a brilliant person who illuminates their surroundings like friend of eternal fire, possessing an eternal radiance that scatters all darkness with noble light.",
-      "meaning_de": "Arnosyar; eine strahlende Persönlichkeit, die ihre Umgebung wie freund des ewigen Feuers erhellt und einen ewigen Glanz besitzt, der jede Dunkelheit mit edlem Licht vertreibt.",
-      "meaning_ar": "Arnosyar؛ شخصية مشرقة تضيء ما حولها مثل صديق النار الأبدية، تمتلك بريقًا أبديًا يبدد كل ظلام بنورها النبيل.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Arnosyar; ebedi ateş dostu gibi etrafını aydınlatan, sönmeyen bir parıltıya sahip ve her karanlığı asil bir ışıkla dağıtan parlak bir kimsedir."
     },
     {
       "id": "arnoz",
@@ -5059,51 +4897,6 @@
       "description": "Asê; sağlam, korunaklı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "asek",
-      "name": "Aşek",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Aşek; değirmenci.",
-      "meaning_en": "Aşek; a person who places the meaning of miller and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Aşek; eine Persönlichkeit, die die Bedeutung von müller und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Aşek؛ شخص يضع معنى طحان والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Aşek; değirmenci anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "asi",
-      "name": "Aşî",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Aşî; değirmen.",
-      "meaning_en": "Aşî; a person who places the meaning of mill and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Aşî; eine Persönlichkeit, die die Bedeutung von mühle und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Aşî؛ شخص يضع معنى طاحونة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Aşî; değirmen anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "asidar",
-      "name": "Aşîdar",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Aşîdar; değirmen sahibi.",
-      "meaning_en": "Aşîdar; a person who places the meaning of mill owner and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Aşîdar; eine Persönlichkeit, die die Bedeutung von mühlenbesitzer und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Aşîdar؛ شخص يضع معنى صاحب طاحونة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Aşîdar; değirmen sahibi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "asiman",
       "name": "Asiman",
       "gender": "female",
@@ -5132,81 +4925,6 @@
         "Kürtçe İsim"
       ],
       "description": "Asimanî; göksel gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
-    },
-    {
-      "id": "asin",
-      "name": "Aşîn",
-      "gender": "female",
-      "letter": "A",
-      "meaning": "Aşîn; değirmen yolu.",
-      "meaning_en": "Aşîn; a respected person who reaches the peaks of wisdom through mill path, guiding the society with deep intellect and illuminating words.",
-      "meaning_de": "Aşîn; eine angesehene Persönlichkeit, die durch mühlenpfad die Gipfel der Weisheit erreicht und die Gesellschaft mit tiefem Verstand und erleuchtenden Worten führt.",
-      "meaning_ar": "Aşîn؛ شخصية مرموقة تبلغ ذرى الحكمة من خلال طريق الطاحونة، وترشد المجتمع بفكرها العميق وكلماتها المستنيرة.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Aşîn; değirmen yolu yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir."
-    },
-    {
-      "id": "asit",
-      "name": "Aşît",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Aşît; çığ.",
-      "meaning_en": "Aşît; a person who places the meaning of avalanche and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Aşît; eine Persönlichkeit, die die Bedeutung von lawine und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Aşît؛ شخص يضع معنى انهيار ثلجي والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Aşît; çığ anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "asiti",
-      "name": "Aşîtî",
-      "gender": "female",
-      "letter": "A",
-      "meaning": "Aşîtî; çığ gibi.",
-      "meaning_en": "Aşîtî; a person who places the meaning of like an avalanche and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Aşîtî; eine Persönlichkeit, die die Bedeutung von wie eine Lawine und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Aşîtî؛ شخص يضع معنى كالانهمار والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Aşîtî; çığ gibi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "asitin",
-      "name": "Aşitîn",
-      "gender": "female",
-      "letter": "A",
-      "meaning": "Aşitîn; barış, sulh tabiatlı, barış, sulh.",
-      "origin": "Kurdish",
-      "tags": [
-        "Güç / Cesaret"
-      ],
-      "description": "Aşitîn; barış, sulh tabiatlı, barış, sulh gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
-      "meaning_en": "Aşitîn; clear, fresh, and vibrant of the nature of peace, like peace; a noble person who embodies the purest and most graceful whispers of nature.",
-      "meaning_de": "Aşitîn; rein, frisch und lebendig wie vom Frieden, wie Frieden; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
-      "meaning_ar": "Aşitîn؛ نقي وعذب وحيوي مثل متعلقة بـ سلام، شبيهة بـ سلام؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
-    },
-    {
-      "id": "asitoki",
-      "name": "Aşitokî",
-      "gender": "female",
-      "letter": "A",
-      "meaning": "Aşitokî; küçük barış, sulh, sevimli barış, sulh.",
-      "origin": "Kurdish",
-      "tags": [
-        "Güç / Cesaret"
-      ],
-      "description": "Aşitokî; küçük barış, sulh, sevimli barış, sulh gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
-      "meaning_en": "Aşitokî; clear, fresh, and vibrant like little sweet peace; a noble person who embodies the purest and most graceful whispers of nature.",
-      "meaning_de": "Aşitokî; rein, frisch und lebendig wie kleine süße Frieden; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
-      "meaning_ar": "Aşitokî؛ نقي وعذب وحيوي مثل سلام الصغيرة واللطيفة؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
     },
     {
       "id": "ask",
@@ -5464,21 +5182,6 @@
       "description": "Asoyî; ufuk çizgisi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "astar",
-      "name": "Aştar",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Aştar; barışçıl getiren, umut dolu.",
-      "meaning_en": "Aştar; a noble whisper of hope, bringing peaceful and promising joy, peace, and fresh beginnings to every heart.",
-      "meaning_de": "Aştar; ein edler Hauch der Hoffnung, der friedfertig bringt und jedem Herzen Freude, Frieden und einen Neuanfang verspricht.",
-      "meaning_ar": "Aştar؛ همسة أمل نبيلة تجلب مسالم، وتبشر كل قلب بالبهجة والسكينة والبدايات الجديدة المشرقة.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Aştar; barışçıl getiren, her kalbe sevinç, huzur ve taze başlangıçlar müjdeleyen, umut dolu asil bir esintidir."
-    },
-    {
       "id": "astara",
       "name": "Astara",
       "gender": "female",
@@ -5492,21 +5195,6 @@
         "Kürtçe İsim"
       ],
       "description": "Astara; parlak yıldız gibi etrafını aydınlatan, sönmeyen bir parıltıya sahip ve her karanlığı asil bir ışıkla dağıtan parlak bir kimsedir."
-    },
-    {
-      "id": "astari",
-      "name": "Aştarî",
-      "gender": "female",
-      "letter": "A",
-      "meaning": "Aştarî; barışçıllık getiren, umut dolu.",
-      "meaning_en": "Aştarî; a noble whisper of hope, bringing peacefulness and promising joy, peace, and fresh beginnings to every heart.",
-      "meaning_de": "Aştarî; ein edler Hauch der Hoffnung, der friedfertigkeit bringt und jedem Herzen Freude, Frieden und einen Neuanfang verspricht.",
-      "meaning_ar": "Aştarî؛ همسة أمل نبيلة تجلب سلمية، وتبشر كل قلب بالبهجة والسكينة والبدايات الجديدة المشرقة.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Aştarî; barışçıllık getiren, her kalbe sevinç, huzur ve taze başlangıçlar müjdeleyen, umut dolu asil bir esintidir."
     },
     {
       "id": "aste",
@@ -5612,6 +5300,156 @@
         "Kürtçe İsim"
       ],
       "description": "Astêryar; yıldız dostu gibi etrafını aydınlatan, sönmeyen bir parıltıya sahip ve her karanlığı asil bir ışıkla dağıtan parlak bir kimsedir."
+    },
+    {
+      "id": "asek",
+      "name": "Aşek",
+      "gender": "male",
+      "letter": "A",
+      "meaning": "Aşek; değirmenci.",
+      "meaning_en": "Aşek; a person who places the meaning of miller and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Aşek; eine Persönlichkeit, die die Bedeutung von müller und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Aşek؛ شخص يضع معنى طحان والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Aşek; değirmenci anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "asi",
+      "name": "Aşî",
+      "gender": "male",
+      "letter": "A",
+      "meaning": "Aşî; değirmen.",
+      "meaning_en": "Aşî; a person who places the meaning of mill and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Aşî; eine Persönlichkeit, die die Bedeutung von mühle und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Aşî؛ شخص يضع معنى طاحونة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Aşî; değirmen anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "asidar",
+      "name": "Aşîdar",
+      "gender": "male",
+      "letter": "A",
+      "meaning": "Aşîdar; değirmen sahibi.",
+      "meaning_en": "Aşîdar; a person who places the meaning of mill owner and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Aşîdar; eine Persönlichkeit, die die Bedeutung von mühlenbesitzer und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Aşîdar؛ شخص يضع معنى صاحب طاحونة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Aşîdar; değirmen sahibi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "asin",
+      "name": "Aşîn",
+      "gender": "female",
+      "letter": "A",
+      "meaning": "Aşîn; değirmen yolu.",
+      "meaning_en": "Aşîn; a respected person who reaches the peaks of wisdom through mill path, guiding the society with deep intellect and illuminating words.",
+      "meaning_de": "Aşîn; eine angesehene Persönlichkeit, die durch mühlenpfad die Gipfel der Weisheit erreicht und die Gesellschaft mit tiefem Verstand und erleuchtenden Worten führt.",
+      "meaning_ar": "Aşîn؛ شخصية مرموقة تبلغ ذرى الحكمة من خلال طريق الطاحونة، وترشد المجتمع بفكرها العميق وكلماتها المستنيرة.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Aşîn; değirmen yolu yoluyla bilgeliğin doruklarına ulaşan, derin aklı ve aydınlatıcı sözleriyle topluma rehberlik eden saygın bir kimsedir."
+    },
+    {
+      "id": "asit",
+      "name": "Aşît",
+      "gender": "male",
+      "letter": "A",
+      "meaning": "Aşît; çığ.",
+      "meaning_en": "Aşît; a person who places the meaning of avalanche and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Aşît; eine Persönlichkeit, die die Bedeutung von lawine und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Aşît؛ شخص يضع معنى انهيار ثلجي والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Aşît; çığ anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "asiti",
+      "name": "Aşîtî",
+      "gender": "female",
+      "letter": "A",
+      "meaning": "Aşîtî; çığ gibi.",
+      "meaning_en": "Aşîtî; a person who places the meaning of like an avalanche and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Aşîtî; eine Persönlichkeit, die die Bedeutung von wie eine Lawine und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Aşîtî؛ شخص يضع معنى كالانهمار والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Aşîtî; çığ gibi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "asitin",
+      "name": "Aşitîn",
+      "gender": "female",
+      "letter": "A",
+      "meaning": "Aşitîn; barış, sulh tabiatlı, barış, sulh.",
+      "origin": "Kurdish",
+      "tags": [
+        "Güç / Cesaret"
+      ],
+      "description": "Aşitîn; barış, sulh tabiatlı, barış, sulh gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
+      "meaning_en": "Aşitîn; clear, fresh, and vibrant of the nature of peace, like peace; a noble person who embodies the purest and most graceful whispers of nature.",
+      "meaning_de": "Aşitîn; rein, frisch und lebendig wie vom Frieden, wie Frieden; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
+      "meaning_ar": "Aşitîn؛ نقي وعذب وحيوي مثل متعلقة بـ سلام، شبيهة بـ سلام؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
+    },
+    {
+      "id": "asitoki",
+      "name": "Aşitokî",
+      "gender": "female",
+      "letter": "A",
+      "meaning": "Aşitokî; küçük barış, sulh, sevimli barış, sulh.",
+      "origin": "Kurdish",
+      "tags": [
+        "Güç / Cesaret"
+      ],
+      "description": "Aşitokî; küçük barış, sulh, sevimli barış, sulh gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir.",
+      "meaning_en": "Aşitokî; clear, fresh, and vibrant like little sweet peace; a noble person who embodies the purest and most graceful whispers of nature.",
+      "meaning_de": "Aşitokî; rein, frisch und lebendig wie kleine süße Frieden; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
+      "meaning_ar": "Aşitokî؛ نقي وعذب وحيوي مثل سلام الصغيرة واللطيفة؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
+    },
+    {
+      "id": "astar",
+      "name": "Aştar",
+      "gender": "male",
+      "letter": "A",
+      "meaning": "Aştar; barışçıl getiren, umut dolu.",
+      "meaning_en": "Aştar; a noble whisper of hope, bringing peaceful and promising joy, peace, and fresh beginnings to every heart.",
+      "meaning_de": "Aştar; ein edler Hauch der Hoffnung, der friedfertig bringt und jedem Herzen Freude, Frieden und einen Neuanfang verspricht.",
+      "meaning_ar": "Aştar؛ همسة أمل نبيلة تجلب مسالم، وتبشر كل قلب بالبهجة والسكينة والبدايات الجديدة المشرقة.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Aştar; barışçıl getiren, her kalbe sevinç, huzur ve taze başlangıçlar müjdeleyen, umut dolu asil bir esintidir."
+    },
+    {
+      "id": "astari",
+      "name": "Aştarî",
+      "gender": "female",
+      "letter": "A",
+      "meaning": "Aştarî; barışçıllık getiren, umut dolu.",
+      "meaning_en": "Aştarî; a noble whisper of hope, bringing peacefulness and promising joy, peace, and fresh beginnings to every heart.",
+      "meaning_de": "Aştarî; ein edler Hauch der Hoffnung, der friedfertigkeit bringt und jedem Herzen Freude, Frieden und einen Neuanfang verspricht.",
+      "meaning_ar": "Aştarî؛ همسة أمل نبيلة تجلب سلمية، وتبشر كل قلب بالبهجة والسكينة والبدايات الجديدة المشرقة.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Aştarî; barışçıllık getiren, her kalbe sevinç, huzur ve taze başlangıçlar müjdeleyen, umut dolu asil bir esintidir."
     },
     {
       "id": "asti",
@@ -5959,6 +5797,21 @@
       "description": "Avame; sakin su gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
     },
     {
+      "id": "awan",
+      "name": "Avan",
+      "gender": "female",
+      "letter": "A",
+      "meaning": "Avan; bayındır, refah ve gelişmiş.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Avan; bayındır, refah ve gelişmiş anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
+      "meaning_en": "Avan; a person who places the meaning of prosperous, wealthy, and developed and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Avan; eine Persönlichkeit, die die Bedeutung von wohlhabend, prosperierend und entwickelt und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Avan؛ شخص يضع معنى مزدهر، رخاء ومتطور والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً."
+    },
+    {
       "id": "avani",
       "name": "Avanî",
       "gender": "female",
@@ -6243,6 +6096,22 @@
         "Kürtçe İsim"
       ],
       "description": "Avco; su coşkusu gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
+    },
+    {
+      "id": "avdar",
+      "name": "Avdar",
+      "gender": "unisex",
+      "letter": "A",
+      "meaning": "Avdar; sulu, taze, bereketli; baharın gelişi ve Mart ayı.",
+      "description": "Avdar; sulu, taze, bereketli; baharın gelişi ve Mart ayı.",
+      "meaning_en": "Avdar; fresh, lush, fertile; the arrival of spring and the month of March.",
+      "meaning_de": "Avdar; saftig, frisch, fruchtbar; Frühlingsbeginn und Monat März.",
+      "meaning_ar": "Avdar؛ ريان، يانع، مبارك؛ قدوم الربيع وشهر آذار.",
+      "origin": "Kurdish",
+      "tags": [
+        "Doğa / Yaşam",
+        "Kürtçe İsim"
+      ]
     },
     {
       "id": "avdas",
@@ -6573,6 +6442,22 @@
         "Kürtçe İsim"
       ],
       "description": "Avîaz; asil aşk dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
+    },
+    {
+      "id": "avin",
+      "name": "Avîn",
+      "gender": "female",
+      "letter": "A",
+      "meaning": "Avîn; aşk, sevgi, berrak su gibi temiz ve derin duygular besleyen.",
+      "description": "Avîn; aşk, sevgi, berrak su gibi temiz ve derin duygular besleyen.",
+      "meaning_en": "Avîn; love, passion; one who nurtures pure and deep feelings like clear water.",
+      "meaning_de": "Avîn; Liebe, Leidenschaft; jemand, der reine und tiefe Gefühle wie klares Wasser hegt.",
+      "meaning_ar": "Avîn؛ حب، عشق؛ صاحبة المشاعر النقية والعميقة كالماء الزلال.",
+      "origin": "Kurdish",
+      "tags": [
+        "Sevgi / Güzellik",
+        "Popüler"
+      ]
     },
     {
       "id": "avini",
@@ -6963,21 +6848,6 @@
         "Kürtçe İsim"
       ],
       "description": "Avkî; sulu gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
-    },
-    {
-      "id": "avkos",
-      "name": "Avkoş",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Avkoş; sulu mücadele.",
-      "meaning_en": "Avkoş; clear, fresh, and vibrant like water struggle; a noble person who embodies the purest and most graceful whispers of nature.",
-      "meaning_de": "Avkoş; rein, frisch und lebendig wie wasserkampf; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
-      "meaning_ar": "Avkoş؛ نقي وعذب وحيوي مثل نضال مائي؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Avkoş; sulu mücadele gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
     },
     {
       "id": "avleheng",
@@ -7624,21 +7494,6 @@
         "Kürtçe İsim"
       ],
       "description": "Avzînyar; su dostu gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
-    },
-    {
-      "id": "awan",
-      "name": "Avan",
-      "gender": "female",
-      "letter": "A",
-      "meaning": "Avan; bayındır, refah ve gelişmiş.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Avan; bayındır, refah ve gelişmiş anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
-      "meaning_en": "Avan; a person who places the meaning of prosperous, wealthy, and developed and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Avan; eine Persönlichkeit, die die Bedeutung von wohlhabend, prosperierend und entwickelt und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Avan؛ شخص يضع معنى مزدهر، رخاء ومتطور والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً."
     },
     {
       "id": "awandei",
@@ -8347,36 +8202,6 @@
       "description": "Azar; acı, sızı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "azari",
-      "name": "Azarî",
-      "gender": "female",
-      "letter": "A",
-      "meaning": "Azarî; acılı.",
-      "meaning_en": "Azarî; a person who places the meaning of painful and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Azarî; eine Persönlichkeit, die die Bedeutung von schmerzhaft und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Azarî؛ شخص يضع معنى متألمة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Azarî; acılı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "azaro",
-      "name": "Azaro",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Azaro; dertli.",
-      "meaning_en": "Azaro; a person who places the meaning of troubled and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Azaro; eine Persönlichkeit, die die Bedeutung von bekümmert und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Azaro؛ شخص يضع معنى متوجع والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Azaro; dertli anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "azarya",
       "name": "Azarya",
       "gender": "female",
@@ -8390,21 +8215,6 @@
         "Kürtçe İsim"
       ],
       "description": "Azarya; acı diyarı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "azaryar",
-      "name": "Azaryar",
-      "gender": "male",
-      "letter": "A",
-      "meaning": "Azaryar; dert ortağı.",
-      "meaning_en": "Azaryar; a person who places the meaning of partner in pain and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Azaryar; eine Persönlichkeit, die die Bedeutung von leidensgenosse und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Azaryar؛ شخص يضع معنى شريك الوجع والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Azaryar; dert ortağı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "azen",

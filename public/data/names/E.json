@@ -1850,21 +1850,6 @@
       "description": "Esaletî; asalet anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "esani",
-      "name": "Eşanî",
-      "gender": "female",
-      "letter": "E",
-      "meaning": "Eşanî; dönem.",
-      "meaning_en": "Eşanî; a person who places the meaning of era and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Eşanî; eine Persönlichkeit, die die Bedeutung von ära und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Eşanî؛ شخص يضع معنى أوان والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Eşanî; dönem anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "esar",
       "name": "Esar",
       "gender": "male",
@@ -1895,21 +1880,6 @@
       "description": "Esed; aslan sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir."
     },
     {
-      "id": "esev",
-      "name": "Eşev",
-      "gender": "male",
-      "letter": "E",
-      "meaning": "Eşev; gece.",
-      "meaning_en": "Eşev; a brilliant person who illuminates their surroundings like night, possessing an eternal radiance that scatters all darkness with noble light.",
-      "meaning_de": "Eşev; eine strahlende Persönlichkeit, die ihre Umgebung wie nacht erhellt und einen ewigen Glanz besitzt, der jede Dunkelheit mit edlem Licht vertreibt.",
-      "meaning_ar": "Eşev؛ شخصية مشرقة تضيء ما حولها مثل ليل، تمتلك بريقًا أبديًا يبدد كل ظلام بنورها النبيل.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Eşev; gece gibi etrafını aydınlatan, sönmeyen bir parıltıya sahip ve her karanlığı asil bir ışıkla dağıtan parlak bir kimsedir."
-    },
-    {
       "id": "esid",
       "name": "Esid",
       "gender": "male",
@@ -1923,51 +1893,6 @@
         "Kürtçe İsim"
       ],
       "description": "Esid; aslan sahibi, asil bir cesaret ve sarsılmaz bir kararlılıkla donatılmış, gücün ve liderliğin sembolü olan asil bir kimsedir."
-    },
-    {
-      "id": "esin",
-      "name": "Eşîn",
-      "gender": "female",
-      "letter": "E",
-      "meaning": "Eşîn; mavi.",
-      "meaning_en": "Eşîn; a person who places the meaning of blue and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Eşîn; eine Persönlichkeit, die die Bedeutung von blau und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Eşîn؛ شخص يضع معنى زرقاء والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Eşîn; mavi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "esiri",
-      "name": "Eşîrî",
-      "gender": "female",
-      "letter": "E",
-      "meaning": "Eşîrî; aşiret ile ilgili olma.",
-      "meaning_en": "Eşîrî; a person who places the meaning of of the tribe and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Eşîrî; eine Persönlichkeit, die die Bedeutung von vom Stamm und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Eşîrî؛ شخص يضع معنى عشائرية والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Eşîrî; aşiret ile ilgili olma anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
-      "id": "eskerei",
-      "name": "Eşkereî",
-      "gender": "female",
-      "letter": "E",
-      "meaning": "Eşkereî; açıklık.",
-      "meaning_en": "Eşkereî; a person who places the meaning of openness and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Eşkereî; eine Persönlichkeit, die die Bedeutung von offenheit und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Eşkereî؛ شخص يضع معنى علانية والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Eşkereî; açıklık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "esman",
@@ -2045,21 +1970,6 @@
       "description": "Esnas; tanıdık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "esoi",
-      "name": "Eşoî",
-      "gender": "male",
-      "letter": "E",
-      "meaning": "Eşoî; ışıklı.",
-      "meaning_en": "Eşoî; a person who places the meaning of shining and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Eşoî; eine Persönlichkeit, die die Bedeutung von leuchtend und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Eşoî؛ شخص يضع معنى مضيء والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Eşoî; ışıklı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "esos",
       "name": "Esos",
       "gender": "male",
@@ -2090,21 +2000,6 @@
       "description": "Esraw; gözyaşı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "esrefi",
-      "name": "Eşrefî",
-      "gender": "male",
-      "letter": "E",
-      "meaning": "Eşrefî; şerefli.",
-      "meaning_en": "Eşrefî; a person who places the meaning of noble and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Eşrefî; eine Persönlichkeit, die die Bedeutung von edel und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Eşrefî؛ شخص يضع معنى أشرفي والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Eşrefî; şerefli anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
-    },
-    {
       "id": "esrin",
       "name": "Esrîn",
       "gender": "female",
@@ -2118,21 +2013,6 @@
       "meaning_en": "Esrîn; a person who places the meaning of tear; one representing purity and deep feelings and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
       "meaning_de": "Esrîn; eine Persönlichkeit, die die Bedeutung von träne; jemand, der Reinheit und tiefe Gefühle repräsentiert und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
       "meaning_ar": "Esrîn؛ شخص يضع معنى دمعة؛ من يمثل النقاء والمشاعر العميقة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً."
-    },
-    {
-      "id": "esrini",
-      "name": "Eşrînî",
-      "gender": "female",
-      "letter": "E",
-      "meaning": "Eşrînî; onuncu.",
-      "meaning_en": "Eşrînî; a person who places the meaning of tenth and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-      "meaning_de": "Eşrînî; eine Persönlichkeit, die die Bedeutung von zehnte und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-      "meaning_ar": "Eşrînî؛ شخص يضع معنى عاشرة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
-      "origin": "Kurdish",
-      "tags": [
-        "Kürtçe İsim"
-      ],
-      "description": "Eşrînî; onuncu anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "este",
@@ -2193,6 +2073,126 @@
       "meaning_en": "Estêre; clear, fresh, and vibrant like star; bright person who is the ornament of the sky and the symbol of hope; a noble person who embodies the purest and most graceful whispers of nature.",
       "meaning_de": "Estêre; rein, frisch und lebendig wie stern; helle Person, die der Schmuck des Himmels und das Symbol der Hoffnung ist; eine edle Persönlichkeit, die das reinste und anmutigste Flüstern der Natur verkörpert.",
       "meaning_ar": "Estêre؛ نقي وعذب وحيوي مثل نجم؛ شخص ساطع هو زينة السماء ورمز الأمل؛ شخصية نبيلة تجسد أنقى همسات الطبيعة وأكثرها رقيًا."
+    },
+    {
+      "id": "esani",
+      "name": "Eşanî",
+      "gender": "female",
+      "letter": "E",
+      "meaning": "Eşanî; dönem.",
+      "meaning_en": "Eşanî; a person who places the meaning of era and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Eşanî; eine Persönlichkeit, die die Bedeutung von ära und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Eşanî؛ شخص يضع معنى أوان والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Eşanî; dönem anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "esev",
+      "name": "Eşev",
+      "gender": "male",
+      "letter": "E",
+      "meaning": "Eşev; gece.",
+      "meaning_en": "Eşev; a brilliant person who illuminates their surroundings like night, possessing an eternal radiance that scatters all darkness with noble light.",
+      "meaning_de": "Eşev; eine strahlende Persönlichkeit, die ihre Umgebung wie nacht erhellt und einen ewigen Glanz besitzt, der jede Dunkelheit mit edlem Licht vertreibt.",
+      "meaning_ar": "Eşev؛ شخصية مشرقة تضيء ما حولها مثل ليل، تمتلك بريقًا أبديًا يبدد كل ظلام بنورها النبيل.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Eşev; gece gibi etrafını aydınlatan, sönmeyen bir parıltıya sahip ve her karanlığı asil bir ışıkla dağıtan parlak bir kimsedir."
+    },
+    {
+      "id": "esin",
+      "name": "Eşîn",
+      "gender": "female",
+      "letter": "E",
+      "meaning": "Eşîn; mavi.",
+      "meaning_en": "Eşîn; a person who places the meaning of blue and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Eşîn; eine Persönlichkeit, die die Bedeutung von blau und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Eşîn؛ شخص يضع معنى زرقاء والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Eşîn; mavi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "esiri",
+      "name": "Eşîrî",
+      "gender": "female",
+      "letter": "E",
+      "meaning": "Eşîrî; aşiret ile ilgili olma.",
+      "meaning_en": "Eşîrî; a person who places the meaning of of the tribe and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Eşîrî; eine Persönlichkeit, die die Bedeutung von vom Stamm und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Eşîrî؛ شخص يضع معنى عشائرية والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Eşîrî; aşiret ile ilgili olma anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "eskerei",
+      "name": "Eşkereî",
+      "gender": "female",
+      "letter": "E",
+      "meaning": "Eşkereî; açıklık.",
+      "meaning_en": "Eşkereî; a person who places the meaning of openness and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Eşkereî; eine Persönlichkeit, die die Bedeutung von offenheit und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Eşkereî؛ شخص يضع معنى علانية والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Eşkereî; açıklık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "esoi",
+      "name": "Eşoî",
+      "gender": "male",
+      "letter": "E",
+      "meaning": "Eşoî; ışıklı.",
+      "meaning_en": "Eşoî; a person who places the meaning of shining and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Eşoî; eine Persönlichkeit, die die Bedeutung von leuchtend und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Eşoî؛ شخص يضع معنى مضيء والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Eşoî; ışıklı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "esrefi",
+      "name": "Eşrefî",
+      "gender": "male",
+      "letter": "E",
+      "meaning": "Eşrefî; şerefli.",
+      "meaning_en": "Eşrefî; a person who places the meaning of noble and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Eşrefî; eine Persönlichkeit, die die Bedeutung von edel und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Eşrefî؛ شخص يضع معنى أشرفي والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Eşrefî; şerefli anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    },
+    {
+      "id": "esrini",
+      "name": "Eşrînî",
+      "gender": "female",
+      "letter": "E",
+      "meaning": "Eşrînî; onuncu.",
+      "meaning_en": "Eşrînî; a person who places the meaning of tenth and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
+      "meaning_de": "Eşrînî; eine Persönlichkeit, die die Bedeutung von zehnte und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
+      "meaning_ar": "Eşrînî؛ شخص يضع معنى عاشرة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+      "origin": "Kurdish",
+      "tags": [
+        "Kürtçe İsim"
+      ],
+      "description": "Eşrînî; onuncu anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
       "id": "etari",
