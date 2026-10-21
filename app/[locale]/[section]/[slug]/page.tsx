@@ -35,6 +35,7 @@ import { generateDynamicFaqs } from '@/lib/faq-generator';
 import { buildPageMetadata, generateContextualHook } from '@/lib/seo-metadata';
 import { getLocalizedMeaning, getLocalizedOrigin } from '@/lib/name-helpers';
 import { FavoriteButton } from '@/components/FavoritesContext';
+import NameCardShareActions from '@/components/NameCardShareActions';
 
 function generatePronunciation(name: string): string {
   let phonetic = name
@@ -573,6 +574,30 @@ export default async function SlugDetailPage({
               </tbody>
             </table>
           </div>
+
+          {/* Action Buttons: WhatsApp Share & HTML5 Canvas Card Download */}
+          <NameCardShareActions
+            name={nameItem.name}
+            meaning={meaning}
+            gender={nameItem.gender}
+            genderText={genderText}
+            origin={origin}
+            locale={locale}
+            pageUrl={pageUrl}
+            labels={{
+              whatsappBtn: t('whatsapp_share_btn'),
+              whatsappMsg: t('whatsapp_share_msg', { name: nameItem.name, meaning }),
+              downloadCardBtn: t('download_card_btn'),
+              copyLinkBtn: t('share_btn'),
+              copiedNotice:
+                {
+                  tr: 'Bağlantı kopyalandı!',
+                  en: 'Link copied!',
+                  de: 'Link kopiert!',
+                  ar: 'تم نسخ الرابط!',
+                }[locale] || 'Link copied!',
+            }}
+          />
         </section>
 
         {/* Similar Names Section */}
