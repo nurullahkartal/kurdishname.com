@@ -3,7 +3,8 @@
 
 User-agent: *
 Allow: /
-Disallow: /NKadmin/
+Disallow: /sosyalmedya/
+Disallow: /*/sosyalmedya/
 
 User-agent: GPTBot
 Allow: /

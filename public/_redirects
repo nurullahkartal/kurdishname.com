@@ -155,3 +155,12 @@
 /de/name/sirin /de/name/serin 301
 /ar/اسم/sirin /ar/اسم/serin 301
 
+# Social tracker redirects
+/tr/sosyalmedya /sosyalmedya 301
+/en/sosyalmedya /sosyalmedya 301
+/de/sosyalmedya /sosyalmedya 301
+/ar/sosyalmedya /sosyalmedya 301
+/NKadmin/* /sosyalmedya 301
+/NKadmin/social-tracker /sosyalmedya 301
+
+
