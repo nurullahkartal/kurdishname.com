@@ -6,6 +6,8 @@ export const stats = {
   male: 2117,
 };
 
+export const homeDescription = "2026'nın en güzel ve modern Kürtçe kız ve erkek isimlerini keşfedin. 4.700+ ismin anlamı, kökeni ve telaffuzu tek bir arşivde.";
+
 // 20 selected premium female names inspired by our high-traffic blog posts
 export const homeGirlNames: NameData[] = [
   {

@@ -168,6 +168,16 @@ const OG_LOCALE_MAP: Record<Locale, string> = {
   ar: 'ar_AR',
 };
 
+export function formatSeoTitle(rawTitle: string): string {
+  if (!rawTitle) return 'KurdishName';
+  let cleaned = rawTitle
+    .replace(/\s*\|\s*KurdishName\.com/gi, '')
+    .replace(/\s*\|\s*KurdishName/gi, '')
+    .replace(/\s*—\s*KurdishName/gi, '')
+    .trim();
+  return `${cleaned} | KurdishName`;
+}
+
 /**
  * Generates strict Enterprise SEO Metadata for Next.js 15 App Router.
  * - Always index, follow
@@ -183,9 +193,10 @@ export function buildPageMetadata({
   ogType = 'website',
 }: PageMetadataParams): Metadata {
   const alternates = buildAlternatesMetadata(locale, routeKey, slugByLocale);
+  const safeTitle = formatSeoTitle(title);
 
   return {
-    title,
+    title: safeTitle,
     description,
     alternates,
     robots: {
@@ -199,7 +210,7 @@ export function buildPageMetadata({
       },
     },
     openGraph: {
-      title,
+      title: safeTitle,
       description,
       url: alternates.canonical,
       siteName: 'KurdishName',
@@ -210,13 +221,13 @@ export function buildPageMetadata({
           url: 'https://kurdishname.com/og-image.jpg',
           width: 1200,
           height: 630,
-          alt: title,
+          alt: safeTitle,
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title,
+      title: safeTitle,
       description,
       images: ['https://kurdishname.com/og-image.jpg'],
     },

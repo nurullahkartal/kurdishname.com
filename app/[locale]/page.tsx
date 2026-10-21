@@ -9,6 +9,7 @@ import {
   themeSlugs,
   Locale,
 } from '@/lib/routes-config';
+import { formatSeoTitle } from '@/lib/seo-metadata';
 import { getActiveLettersWithCounts } from '@/lib/names-data';
 import { stats, homeGirlNames, homeBoyNames } from '@/lib/home-static-data';
 import { getBlogPostsByLang } from '@/lib/blog-registry';
@@ -26,7 +27,7 @@ export async function generateMetadata({
   setRequestLocale(locale);
   const t = await getTranslations({ locale });
   const alternates = buildAlternatesMetadata(locale, null);
-  const title = t('site_title');
+  const title = formatSeoTitle(t('site_title'));
   const description = t('home_description');
 
   return {
