@@ -370,6 +370,7 @@ export default async function SlugDetailPage({
           description: meaning,
           inDefinedTermSet: `https://kurdishname.com/${locale}`,
           termCode: nameItem.id,
+          additionalType: 'https://schema.org/GivenName',
         },
         {
           '@type': 'BreadcrumbList',
@@ -477,14 +478,30 @@ export default async function SlugDetailPage({
               <h1
                 style={{
                   fontFamily: 'var(--font-display)',
-                  fontSize: 'clamp(2rem, 5vw, 3rem)',
+                  fontSize: 'clamp(1.85rem, 4.5vw, 2.75rem)',
                   fontWeight: 900,
                   color: isFemale ? 'var(--female)' : 'var(--male)',
                   margin: 0,
-                  lineHeight: 1.15,
+                  lineHeight: 1.2,
                 }}
               >
-                {nameItem.name}
+                <span>{nameItem.name}</span>
+                <span
+                  style={{
+                    display: 'block',
+                    fontSize: '1rem',
+                    fontWeight: 600,
+                    color: 'var(--text-muted)',
+                    marginTop: '0.35rem',
+                  }}
+                >
+                  {{
+                    tr: `${nameItem.name} İsminin Anlamı ve Kürtçe Kökeni`,
+                    en: `${nameItem.name} Meaning and Kurdish Origin`,
+                    de: `${nameItem.name} Bedeutung und kurdische Herkunft`,
+                    ar: `معنى اسم ${nameItem.name} وأصله الكردي`,
+                  }[locale] || `${nameItem.name} İsminin Anlamı ve Kürtçe Kökeni`}
+                </span>
               </h1>
               <p
                 style={{
@@ -536,6 +553,23 @@ export default async function SlugDetailPage({
               }}
             >
               {meaning}
+            </p>
+            <p
+              style={{
+                fontSize: '0.925rem',
+                lineHeight: 1.65,
+                color: 'var(--text-muted)',
+                marginTop: '0.75rem',
+                borderLeft: `3px solid ${isFemale ? 'var(--female)' : 'var(--male)'}`,
+                paddingLeft: '0.75rem',
+              }}
+            >
+              {{
+                tr: `${nameItem.name}, ${origin} kökenli bir ${genderText} ismi olup Kürtçe ad geleneğinde "${meaning.replace(/^[^;]+;\s*/, '')}" manasını taşır.`,
+                en: `${nameItem.name} is a ${origin} ${genderText} name embodying the meaning "${meaning.replace(/^[^;]+;\s*/, '')}" in Kurdish naming culture.`,
+                de: `${nameItem.name} ist ein ${origin}er ${genderText}name, der in der kurdischen Namentradition die Bedeutung "${meaning.replace(/^[^;]+;\s*/, '')}" trägt.`,
+                ar: `اسم ${nameItem.name} هو اسم ${genderText} ذو أصل ${origin}، يحمل في ثقافة التسمية الكردية دلالة "${meaning.replace(/^[^;]+;\s*/, '')}".`,
+              }[locale]}
             </p>
           </div>
 

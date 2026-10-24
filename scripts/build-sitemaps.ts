@@ -242,19 +242,22 @@ function main() {
     }
 
     const fileName = `sitemap-names-${letter}.xml`;
-    fs.writeFileSync(
-      path.join(PUBLIC_DIR, fileName),
-      wrapUrlset(nameBlocks.join('\n')),
-      'utf-8'
-    );
+    const xmlContent = wrapUrlset(nameBlocks.join('\n'));
+    fs.writeFileSync(path.join(PUBLIC_DIR, fileName), xmlContent, 'utf-8');
+    
+    // Also write lowercase copy for Linux / Cloudflare Pages case-insensitivity
+    const lowerFileName = `sitemap-names-${letter.toLowerCase()}.xml`;
+    if (lowerFileName !== fileName) {
+      fs.writeFileSync(path.join(PUBLIC_DIR, lowerFileName), xmlContent, 'utf-8');
+    }
     sitemapFiles.push(fileName);
   }
 
-  // 5. sitemap.xml (Master Sitemap Index)
+  // 5. sitemap.xml (Master Sitemap Index - fully RFC 3986 percent-encoded for non-ASCII letters)
   const indexEntries = sitemapFiles
     .map(
       (file) => `  <sitemap>
-    <loc>${escapeXml(`${SITE_URL}/${file}`)}</loc>
+    <loc>${escapeXml(encodeURI(`${SITE_URL}/${file}`))}</loc>
     <lastmod>${TODAY}</lastmod>
   </sitemap>`
     )
