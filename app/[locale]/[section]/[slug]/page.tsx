@@ -20,6 +20,7 @@ import {
   getNameBySlug,
   getNamesByLetter,
   getActiveLettersWithCounts,
+  getSimilarNames,
   NameData,
 } from '@/lib/names-data';
 import {
@@ -354,10 +355,7 @@ export default async function SlugDetailPage({
     const dialect = detectDialect(nameItem.origin);
     const faqs = generateDynamicFaqs(nameItem, locale, meaning, origin || 'Kürtçe', genderText);
 
-    const sameLetterNames = getNamesByLetter(nameItem.letter);
-    const similarNames = sameLetterNames
-      .filter((n) => n.id !== nameItem.id && n.gender === nameItem.gender)
-      .slice(0, 8);
+    const similarNames = getSimilarNames(nameItem, 8);
 
     const pageUrl = `https://kurdishname.com${generatePath(locale, 'name', nameItem.id)}`;
     const categoryGenderParam = isFemale ? 'kiz' : 'erkek';

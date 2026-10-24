@@ -87,3 +87,33 @@ export function getActiveLettersWithCounts(): { letter: KurdishLetter; count: nu
     count: (_byLetterCache!.get(letter) || []).length,
   })).filter((item) => item.count > 0);
 }
+
+/**
+ * Intelligent similar names finder based on phonetic rhyme (suffixes), shared themes, and harmonious structure.
+ * Guarantees exactly `limit` relevant recommendations for parents without empty fallbacks.
+ */
+export function getSimilarNames(nameItem: NameData, limit = 8): NameData[] {
+  ensureCacheLoaded();
+  const all = _allNamesCache || [];
+  const pool = all.filter((n) => n.id !== nameItem.id && n.gender === nameItem.gender);
+  const curName = nameItem.name.toLowerCase();
+  const curSuffix = curName.length >= 3 ? curName.slice(-2) : curName.slice(-1);
+  const curTag = nameItem.tags && nameItem.tags[0];
+
+  const scored = pool.map((cand) => {
+    let score = 0;
+    const cName = cand.name.toLowerCase();
+    // High weight for phonetic rhyme/suffix (-în, -an, -dar, etc.)
+    if (cName.endsWith(curSuffix)) score += 10;
+    // Moderate weight for same starting letter
+    if (curName[0] === cName[0]) score += 5;
+    // Weight for shared theme (Doğa, Işık, etc.)
+    if (curTag && cand.tags && cand.tags.includes(curTag)) score += 6;
+    // Weight for balanced syllable/character length
+    if (Math.abs(curName.length - cName.length) <= 1) score += 2;
+    return { cand, score };
+  });
+
+  scored.sort((a, b) => b.score - a.score || a.cand.name.localeCompare(b.cand.name));
+  return scored.slice(0, limit).map((s) => s.cand);
+}

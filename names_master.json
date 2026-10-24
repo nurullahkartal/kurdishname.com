@@ -4,15 +4,15 @@
     "name": "Adan",
     "gender": "female",
     "letter": "A",
-    "meaning": "Adan; bereketli, verimli getiren, umut dolu.",
-    "meaning_en": "Adan; a noble whisper of hope, bringing fruitful, fertile and promising joy, peace, and fresh beginnings to every heart.",
-    "meaning_de": "Adan; ein edler Hauch der Hoffnung, der fruchtbar, ertragreich bringt und jedem Herzen Freude, Frieden und einen Neuanfang verspricht.",
-    "meaning_ar": "Adan؛ همسة أمل نبيلة تجلب خصبة، مثمرة، وتبشر كل قلب بالبهجة والسكينة والبدايات الجديدة المشرقة.",
+    "meaning": "Adan; bereketli, toprağın verimi, bolluk ve umut getiren.",
+    "meaning_en": "Adan; fruitful, fertile, bringing abundance and fresh hope.",
+    "meaning_de": "Adan; fruchtbar, ertragreich, bringt Fülle und frische Hoffnung.",
+    "meaning_ar": "Adan؛ خصبة، معطاءة، تجلب الوفرة والأمل المتجدد.",
     "origin": "Kurdish",
     "tags": [
       "Kürtçe İsim"
     ],
-    "description": "Adan; bereketli, verimli getiren, her kalbe sevinç, huzur ve taze başlangıçlar müjdeleyen, umut dolu asil bir esintidir."
+    "description": "Adan; toprağın bereketini, bolluğu ve taze umutları müjdeleyen kimsedir."
   },
   {
     "id": "adar",
@@ -109,30 +109,30 @@
     "name": "Aferîn",
     "gender": "female",
     "letter": "A",
-    "meaning": "Aferîn; övgü, takdir.",
-    "meaning_en": "Aferîn; a person who places the meaning of praise, appreciation and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-    "meaning_de": "Aferîn; eine Persönlichkeit, die die Bedeutung von lob, Anerkennung und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-    "meaning_ar": "Aferîn؛ شخص يضع معنى ثناء، تقدير والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+    "meaning": "Aferîn; övgüye layık, takdir edilen ve kutlu.",
+    "meaning_en": "Aferîn; praiseworthy, cherished, and virtuous.",
+    "meaning_de": "Aferîn; lobenswert, geschätzt und tugendhaft.",
+    "meaning_ar": "Aferîn؛ جديرة بالثناء والتقدير والفضيلة.",
     "origin": "Kurdish",
     "tags": [
       "Kürtçe İsim"
     ],
-    "description": "Aferîn; övgü, takdir anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    "description": "Aferîn; övgüye layık, takdir edilen, erdemli ve kutlu kimsedir."
   },
   {
     "id": "aferine",
     "name": "Aferînê",
     "gender": "female",
     "letter": "A",
-    "meaning": "Aferînê; övgü.",
-    "meaning_en": "Aferînê; a person who places the meaning of praise and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-    "meaning_de": "Aferînê; eine Persönlichkeit, die die Bedeutung von lob und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-    "meaning_ar": "Aferînê؛ شخص يضع معنى ثناء والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+    "meaning": "Aferînê; övgüyle anılan, takdir gören zarif kız çocuğu.",
+    "meaning_en": "Aferînê; a graceful girl remembered with praise and admiration.",
+    "meaning_de": "Aferînê; ein anmutiges Mädchen, das mit Lob und Bewunderung erinnert wird.",
+    "meaning_ar": "Aferînê؛ فتاة رقيقة تُذكر بالثناء والإعجاب.",
     "origin": "Kurdish",
     "tags": [
       "Kürtçe İsim"
     ],
-    "description": "Aferînê; övgü anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    "description": "Aferînê; övgüyle anılan, takdir gören zarif ve asil kız çocuğudur."
   },
   {
     "id": "afran",
@@ -3247,11 +3247,11 @@
     "name": "Arîn",
     "gender": "female",
     "letter": "A",
-    "meaning": "Arîn; ateşten olan, soylu, aydınlık ve enerjik kimse.",
-    "description": "Arîn; ateşten olan, soylu, aydınlık ve enerjik kimse.",
-    "meaning_en": "Arîn; of fire, noble, brilliant, and full of vitality.",
-    "meaning_de": "Arîn; aus Feuer, edel, strahlend und voller Lebenskraft.",
-    "meaning_ar": "Arîn؛ من النار، نبيلة، مشرقة ومفعمة بالحيوية.",
+    "meaning": "Arîn; ateşten olan, soylu ve aydınlık.",
+    "description": "Arîn; ateşten olan, soylu ve aydınlık kimse.",
+    "meaning_en": "Arîn; of fire, noble, brilliant, and pure.",
+    "meaning_de": "Arîn; aus Feuer, edel, strahlend und rein.",
+    "meaning_ar": "Arîn؛ من النار، نبيلة، مشرقة وطاهرة.",
     "origin": "Kurdish",
     "tags": [
       "Işık / Aydınlık",
@@ -16417,15 +16417,15 @@
     "name": "Caba",
     "gender": "male",
     "letter": "C",
-    "meaning": "Caba; hediye, armağan.",
-    "meaning_en": "Caba; a person who places the meaning of gift, present and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-    "meaning_de": "Caba; eine Persönlichkeit, die die Bedeutung von geschenk, Gabe und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-    "meaning_ar": "Caba؛ شخص يضع معنى هدية؛ عطاء والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+    "meaning": "Caba; karşılıksız armağan, cömertlik, ikram ve hediye.",
+    "meaning_en": "Caba; a generous gift, bounty, hospitality, and benevolence.",
+    "meaning_de": "Caba; eine großzügige Gabe, Freigiebigkeit und Wohlwollen.",
+    "meaning_ar": "Caba؛ عطاء سخي، كرم، ضيافة وإحسان.",
     "origin": "Kurdish",
     "tags": [
       "Kürtçe İsim"
     ],
-    "description": "Caba; hediye, armağan anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    "description": "Caba; karşılıksız hediye, cömertlik ve gönül zenginliğini temsil eden kimsedir."
   },
   {
     "id": "caban",
@@ -20636,15 +20636,15 @@
     "name": "Dabanî",
     "gender": "female",
     "letter": "D",
-    "meaning": "Dabanî; topuklu; sağlam.",
-    "meaning_en": "Dabanî; a person who places the meaning of sturdy and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
-    "meaning_de": "Dabanî; eine Persönlichkeit, die die Bedeutung von stabil und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
-    "meaning_ar": "Dabanî؛ شخص يضع معنى راسخة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
+    "meaning": "Dabanî; köklü, sağlam basan, sarsılmaz ve güvenilir kimse.",
+    "meaning_en": "Dabanî; steadfast, deeply-rooted, solid, and dependable.",
+    "meaning_de": "Dabanî; standhaft, tief verwurzelt, solide und verlässlich.",
+    "meaning_ar": "Dabanî؛ ثابت، راسخ، متين وموثوق به.",
     "origin": "Kurdish",
     "tags": [
       "Kürtçe İsim"
     ],
-    "description": "Dabanî; topuklu; sağlam anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+    "description": "Dabanî; sağlam basan, sarsılmaz bir karaktere ve köklü bir duruşa sahip kimsedir."
   },
   {
     "id": "dabini",

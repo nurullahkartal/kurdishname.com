@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-21T14:19:56.899Z",
+  "generatedAt": "2026-10-24T09:57:42.278Z",
   "totalLetters": 31,
   "totalNames": 4709,
-  "totalBytes": 4767132,
+  "totalBytes": 4765326,
   "letters": [
     {
       "letter": "A",
       "count": 559,
-      "bytes": 533706
+      "bytes": 532632
     },
     {
       "letter": "B",
@@ -17,7 +17,7 @@
     {
       "letter": "C",
       "count": 238,
-      "bytes": 229202
+      "bytes": 228830
     },
     {
       "letter": "Ç",
@@ -27,7 +27,7 @@
     {
       "letter": "D",
       "count": 355,
-      "bytes": 352397
+      "bytes": 352037
     },
     {
       "letter": "E",
