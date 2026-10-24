@@ -11,35 +11,6 @@ export interface BlogPostMeta {
 
 export const blogPostsRegistry: BlogPostMeta[] = [
   {
-    "id": "kuranda-gecen-kurtce-kiz-isimleri",
-    "date": "2026-10-12",
-    "author": "KurdishName Editorial",
-    "slugs": {
-      "tr": "kuranda-gecen-kurtce-kiz-isimleri-ve-anlamlari",
-      "en": "kurdish-islamic-girl-names-and-quranic-analysis",
-      "de": "kurdische-islamische-maedchennamen-bedeutung",
-      "ar": "اسماء-بنات-كردية-اسلامية-ومعانيها"
-    },
-    "tags": {
-      "tr": ["Kur'an", "Kız İsimleri", "Kürtçe İsimler", "İslami İsimler", "Dini İsimler"],
-      "en": ["Quran", "Girl Names", "Kurdish Names", "Islamic Names", "Spiritual Names"],
-      "de": ["Koran", "Mädchennamen", "Kurdische Namen", "Islamische Namen", "Spirituelle Namen"],
-      "ar": ["القرآن", "أسماء بنات", "أسماء كردية", "أسماء إسلامية", "أسماء دينية"]
-    },
-    "titles": {
-      "tr": "Kur'an'da Geçen Kürtçe Kız İsimleri Var Mı? (Detaylı Analiz & İslami Kürt İsimleri)",
-      "en": "Are There Kurdish Girl Names in the Quran? (Linguistic Analysis & Islamic Kurdish Names)",
-      "de": "Gibt es kurdische Mädchennamen im Koran? (Linguistische Analyse & Islamische kurdische Namen)",
-      "ar": "هل توجد أسماء بنات كردية في القرآن الكريم؟ (تحليل لغوي وأسماء كردية إسلامية)"
-    },
-    "descriptions": {
-      "tr": "Kur'an'da Kürtçe kız ismi geçer mi sorusunun dilbilimsel cevabı, İslam fıtratına uygun en güzel Kürtçe kız isimleri ve anlamları rehberi.",
-      "en": "Linguistic analysis of whether Kurdish girl names appear in the Quran, plus the most meaningful Islamic and culturally compatible Kurdish names.",
-      "de": "Linguistische Analyse kurdischer Mädchennamen im Koran sowie die schönsten islamisch konformen kurdischen Vornamen mit Bedeutung.",
-      "ar": "تحليل لغوي حول وجود أسماء كردية في القرآن الكريم، مع دليل لأجمل أسماء البنات الكردية المتوافقة مع القيم الإسلامية ومعانيها."
-    }
-  },
-  {
     "id": "eski-ve-tarihi-kurt-erkek-isimleri",
     "date": "2026-10-12",
     "author": "KurdishName Editorial",
@@ -50,10 +21,34 @@ export const blogPostsRegistry: BlogPostMeta[] = [
       "ar": "اسماء-ذكور-كردية-قديمة-وتاريخية"
     },
     "tags": {
-      "tr": ["Tarihi İsimler", "Erkek İsimleri", "Eski İsimler", "Mitoloji", "Kawa"],
-      "en": ["Historical Names", "Boy Names", "Ancient Names", "Mythology", "Kawa"],
-      "de": ["Historische Namen", "Jungennamen", "Alte Namen", "Mythologie", "Kawa"],
-      "ar": ["أسماء تاريخية", "أسماء أولاد", "أسماء قديمة", "أساطير", "كاوا"]
+      "tr": [
+        "Tarihi İsimler",
+        "Erkek İsimleri",
+        "Eski İsimler",
+        "Mitoloji",
+        "Kawa"
+      ],
+      "en": [
+        "Historical Names",
+        "Boy Names",
+        "Ancient Names",
+        "Mythology",
+        "Kawa"
+      ],
+      "de": [
+        "Historische Namen",
+        "Jungennamen",
+        "Alte Namen",
+        "Mythologie",
+        "Kawa"
+      ],
+      "ar": [
+        "أسماء تاريخية",
+        "أسماء أولاد",
+        "أسماء قديمة",
+        "أساطير",
+        "كاوا"
+      ]
     },
     "titles": {
       "tr": "Eski ve Tarihi Kürt Erkek İsimleri: Mitolojik ve Tarihsel Kökenler",
@@ -79,10 +74,34 @@ export const blogPostsRegistry: BlogPostMeta[] = [
       "ar": "اهمية-الاسماء-واصلها-اللغوي-في-الثقافة-الكردية"
     },
     "tags": {
-      "tr": ["Kültür", "Etimoloji", "Kürtçe İsimler", "Tarih", "Kürt Kültürü"],
-      "en": ["Culture", "Etymology", "Kurdish Names", "History", "Kurdish Culture"],
-      "de": ["Kultur", "Etymologie", "Kurdische Namen", "Geschichte", "Kurdische Kultur"],
-      "ar": ["ثقافة", "علم الاشتقاق", "أسماء كردية", "تاريخ", "ثقافة كردية"]
+      "tr": [
+        "Kültür",
+        "Etimoloji",
+        "Kürtçe İsimler",
+        "Tarih",
+        "Kürt Kültürü"
+      ],
+      "en": [
+        "Culture",
+        "Etymology",
+        "Kurdish Names",
+        "History",
+        "Kurdish Culture"
+      ],
+      "de": [
+        "Kultur",
+        "Etymologie",
+        "Kurdische Namen",
+        "Geschichte",
+        "Kurdische Kultur"
+      ],
+      "ar": [
+        "ثقافة",
+        "علم الاشتقاق",
+        "أسماء كردية",
+        "تاريخ",
+        "ثقافة كردية"
+      ]
     },
     "titles": {
       "tr": "Kürt Kültüründe İsimlerin Önemi ve Etimolojisi",
@@ -108,10 +127,34 @@ export const blogPostsRegistry: BlogPostMeta[] = [
       "ar": "اسماء-النباتات-الطبية-الكردية-ومعانيها"
     },
     "tags": {
-      "tr": ["Şifalı Bitkiler", "Kürtçe İsimler", "Kız İsimleri", "Erkek İsimleri", "Doğa"],
-      "en": ["Medicinal Plants", "Kurdish Names", "Girl Names", "Boy Names", "Nature"],
-      "de": ["Heilpflanzen", "Kurdische Namen", "Mädchennamen", "Jungennamen", "Natur"],
-      "ar": ["النباتات الطبية", "أسماء كردية", "أسماء بنات", "أسماء أولاد", "طبيعة"]
+      "tr": [
+        "Şifalı Bitkiler",
+        "Kürtçe İsimler",
+        "Kız İsimleri",
+        "Erkek İsimleri",
+        "Doğa"
+      ],
+      "en": [
+        "Medicinal Plants",
+        "Kurdish Names",
+        "Girl Names",
+        "Boy Names",
+        "Nature"
+      ],
+      "de": [
+        "Heilpflanzen",
+        "Kurdische Namen",
+        "Mädchennamen",
+        "Jungennamen",
+        "Natur"
+      ],
+      "ar": [
+        "النباتات الطبية",
+        "أسماء كردية",
+        "أسماء بنات",
+        "أسماء أولاد",
+        "طبيعة"
+      ]
     },
     "titles": {
       "tr": "Kürtçe Şifalı Bitki İsimleri ve Anlamları",
@@ -137,10 +180,30 @@ export const blogPostsRegistry: BlogPostMeta[] = [
       "ar": "اسماء-ذكور-كردية-حديثة-ونادرة-2026"
     },
     "tags": {
-      "tr": ["Modern İsimler", "Kürtçe Erkek İsimleri", "Nadir İsimler", "2026 İsimleri"],
-      "en": ["Modern Names", "Kurdish Boy Names", "Rare Names", "2026 Names"],
-      "de": ["Moderne Namen", "Kurdische Jungennamen", "Seltene Namen", "Namen 2026"],
-      "ar": ["أسماء حديثة", "أسماء ذكور كردية", "أسماء نادرة", "أسماء 2026"]
+      "tr": [
+        "Modern İsimler",
+        "Kürtçe Erkek İsimleri",
+        "Nadir İsimler",
+        "2026 İsimleri"
+      ],
+      "en": [
+        "Modern Names",
+        "Kurdish Boy Names",
+        "Rare Names",
+        "2026 Names"
+      ],
+      "de": [
+        "Moderne Namen",
+        "Kurdische Jungennamen",
+        "Seltene Namen",
+        "Namen 2026"
+      ],
+      "ar": [
+        "أسماء حديثة",
+        "أسماء ذكور كردية",
+        "أسماء نادرة",
+        "أسماء 2026"
+      ]
     },
     "titles": {
       "tr": "Duyulmamış Modern Kürtçe Erkek İsimleri (2026 Koleksiyonu)",
@@ -166,10 +229,30 @@ export const blogPostsRegistry: BlogPostMeta[] = [
       "ar": "اسماء-كردية-معانيها-ومجالات-استخدامها"
     },
     "tags": {
-      "tr": ["Kürtçe İsimler", "Kürtçe Kız İsimleri", "Kürtçe Erkek İsimleri", "Kültürel Miras"],
-      "en": ["Kurdish Names", "Kurdish Girl Names", "Kurdish Boy Names", "Cultural Heritage"],
-      "de": ["Kurdische Namen", "Kurdische Mädchennamen", "Kurdische Jungennamen", "Kulturelles Erbe"],
-      "ar": ["أسماء كردية", "أسماء بنات كردية", "أسماء أولاد كردية", "التراث الثقافي"]
+      "tr": [
+        "Kürtçe İsimler",
+        "Kürtçe Kız İsimleri",
+        "Kürtçe Erkek İsimleri",
+        "Kültürel Miras"
+      ],
+      "en": [
+        "Kurdish Names",
+        "Kurdish Girl Names",
+        "Kurdish Boy Names",
+        "Cultural Heritage"
+      ],
+      "de": [
+        "Kurdische Namen",
+        "Kurdische Mädchennamen",
+        "Kurdische Jungennamen",
+        "Kulturelles Erbe"
+      ],
+      "ar": [
+        "أسماء كردية",
+        "أسماء بنات كردية",
+        "أسماء أولاد كردية",
+        "التراث الثقافي"
+      ]
     },
     "titles": {
       "tr": "Kürtçe İsimler: Anlamları ve Kullanım Alanları",
@@ -195,10 +278,30 @@ export const blogPostsRegistry: BlogPostMeta[] = [
       "ar": "اسماء-كردية-حديثة-وشعبية-ومعانيها"
     },
     "tags": {
-      "tr": ["Kürtçe İsimler", "Kürtçe Kız İsimleri", "Kürtçe Erkek İsimleri", "Modern İsimler"],
-      "en": ["Kurdish Names", "Kurdish Girl Names", "Kurdish Boy Names", "Modern Names"],
-      "de": ["Kurdische Namen", "Kurdische Mädchennamen", "Kurdische Jungennamen", "Moderne Namen"],
-      "ar": ["أسماء كردية", "أسماء بنات كردية", "أسماء أولاد كردية", "أسماء حديثة"]
+      "tr": [
+        "Kürtçe İsimler",
+        "Kürtçe Kız İsimleri",
+        "Kürtçe Erkek İsimleri",
+        "Modern İsimler"
+      ],
+      "en": [
+        "Kurdish Names",
+        "Kurdish Girl Names",
+        "Kurdish Boy Names",
+        "Modern Names"
+      ],
+      "de": [
+        "Kurdische Namen",
+        "Kurdische Mädchennamen",
+        "Kurdische Jungennamen",
+        "Moderne Namen"
+      ],
+      "ar": [
+        "أسماء كردية",
+        "أسماء بنات كردية",
+        "أسماء أولاد كردية",
+        "أسماء حديثة"
+      ]
     },
     "titles": {
       "tr": "Modern ve Popüler Kürtçe İsimler ve Anlamları (Güncel Rehber)",
@@ -224,10 +327,30 @@ export const blogPostsRegistry: BlogPostMeta[] = [
       "ar": "دليل-الاسئلة-والاجوبة-للاسماء-الكردية-افا-ارديل"
     },
     "tags": {
-      "tr": ["Ava İsmi Kürtçe Mi", "Ardil Anlamı", "Kürtçe İsimler", "Soru Cevap"],
-      "en": ["Ava Name Kurdish", "Ardil Meaning", "Kurdish Names", "Q&A"],
-      "de": ["Ist Ava Kurdisch", "Ardil Bedeutung", "Kurdische Namen", "FAQ"],
-      "ar": ["هل اسم افا كردي", "معنى ارديل", "أسماء كردية", "سؤال وجواب"]
+      "tr": [
+        "Ava İsmi Kürtçe Mi",
+        "Ardil Anlamı",
+        "Kürtçe İsimler",
+        "Soru Cevap"
+      ],
+      "en": [
+        "Ava Name Kurdish",
+        "Ardil Meaning",
+        "Kurdish Names",
+        "Q&A"
+      ],
+      "de": [
+        "Ist Ava Kurdisch",
+        "Ardil Bedeutung",
+        "Kurdische Namen",
+        "FAQ"
+      ],
+      "ar": [
+        "هل اسم افا كردي",
+        "معنى ارديل",
+        "أسماء كردية",
+        "سؤال وجواب"
+      ]
     },
     "titles": {
       "tr": "Kürtçe İsim Soru-Cevap Rehberi: Ava, Ardil, Ajwan ve Daha Fazlası",
@@ -253,10 +376,30 @@ export const blogPostsRegistry: BlogPostMeta[] = [
       "ar": "تاريخ-الاسماء-الكردية-ومعنى-اسم-باهوز"
     },
     "tags": {
-      "tr": ["Bahoz Ne Demek", "Tarihi İsimler", "Kürtçe İsimler", "Bahoz İsmi Yasak Mı"],
-      "en": ["Bahoz Meaning", "Historical Names", "Kurdish Names", "Is Bahoz Banned"],
-      "de": ["Bahoz Bedeutung", "Historische Namen", "Kurdische Namen", "Ist Bahoz Verboten"],
-      "ar": ["معنى باهوز", "أسماء تاريخية", "أسماء كردية", "هل باهوز ممنوع"]
+      "tr": [
+        "Bahoz Ne Demek",
+        "Tarihi İsimler",
+        "Kürtçe İsimler",
+        "Bahoz İsmi Yasak Mı"
+      ],
+      "en": [
+        "Bahoz Meaning",
+        "Historical Names",
+        "Kurdish Names",
+        "Is Bahoz Banned"
+      ],
+      "de": [
+        "Bahoz Bedeutung",
+        "Historische Namen",
+        "Kurdische Namen",
+        "Ist Bahoz Verboten"
+      ],
+      "ar": [
+        "معنى باهوز",
+        "أسماء تاريخية",
+        "أسماء كردية",
+        "هل باهوز ممنوع"
+      ]
     },
     "titles": {
       "tr": "Kürtçe İsimlerin Tarihi ve Bahoz İsminin Anlamı",
@@ -641,7 +784,7 @@ export const blogPostsRegistry: BlogPostMeta[] = [
       "ar": "أشهر الأسماء الكردية ومعانيها المميزة"
     },
     "descriptions": {
-      "tr": "En popüler, duyulmamış, dini ve modern kız Kürtçe isimler ile Kürtçe kız isimleri rehberi. Bebek bekleyen aileler için harika Kürtçe isim önerileri.",
+      "tr": "En popüler, duyulmamış, modern kız Kürtçe isimler ile Kürtçe kız isimleri rehberi. Bebek bekleyen aileler için harika Kürtçe isim önerileri.",
       "en": "The most popular, unique, and modern Kurdish girl names list. Explore meanings and origins to find the ideal name for your child.",
       "de": "Die beliebtesten und seltensten kurdischen Vornamen für Mädchen. Ein umfassender Führer zur Auswahl des perfekten Vornamens.",
       "ar": "دليل شامل لأشهر وأحب الأسماء الكردية العريقة والجديدة مع معانيها وتفاصيلها الثقافية المميزة للعائلات المعاصرة."
@@ -1517,55 +1660,6 @@ export const blogPostsRegistry: BlogPostMeta[] = [
     }
   },
   {
-    "id": "spiritual-100-names",
-    "date": "2026-05-08",
-    "author": "KurdishName Editorial",
-    "slugs": {
-      "tr": "100-kurtce-ruhani-ve-kutsal-isim-ve-anlamlari",
-      "en": "100-kurdish-spiritual-and-sacred-names-and-meanings",
-      "de": "100-kurdische-spirituelle-und-heilige-namen-und-bedeutungen",
-      "ar": "100-اسم-روحي-ومقدس-كردي-ومعانيها"
-    },
-    "tags": {
-      "tr": [
-        "Ruhani İsimler",
-        "Kutsal İsimler",
-        "Manevi İsimler",
-        "Kürtçe İsimler"
-      ],
-      "en": [
-        "Spiritual Names",
-        "Sacred Names",
-        "Moral Names",
-        "Kurdish Names"
-      ],
-      "de": [
-        "Spirituelle Namen",
-        "Heilige Namen",
-        "Manevi-Namen",
-        "Kurdische Namen"
-      ],
-      "ar": [
-        "أسماء روحية",
-        "أسماء مقدسة",
-        "أسماء معنوية",
-        "أسماء كردية"
-      ]
-    },
-    "titles": {
-      "tr": "100 Kürtçe Ruhani ve Kutsal İsim (Maneviyat & Huzur)",
-      "en": "100 Kurdish Spiritual and Sacred Names (Peace & Harmony)",
-      "de": "100 kurdische spirituelle und heilige Namen (Frieden & Harmonie)",
-      "ar": "100 اسم روحي ومقدس كردي (السكينة والروحانية)"
-    },
-    "descriptions": {
-      "tr": "Kadim inançlardan, dualardan, manevi değerlerden ve yüce ahlaki arınmışlıktan gelen en derin 100 kutsal isim.",
-      "en": "A guide to 100 deeply spiritual and sacred names representing ancient beliefs, blessings, and pure moral harmony.",
-      "de": "Ein Leitfaden zu 100 tief spirituellen und heiligen Namen, die für alten Glauben, Segen und moralische Harmonie stehen.",
-      "ar": "قائمة جليلة تضم 100 اسم روحي ومقدس مستمد من القيم الروحانية العميقة والسلام والسكينة والعبادات والبركة."
-    }
-  },
-  {
     "id": "nature-names",
     "date": "2026-05-19",
     "author": "KurdishName Editorial",
@@ -1851,8 +1945,7 @@ export const blogPostsRegistry: BlogPostMeta[] = [
       "de": "Liste und Bedeutungen der tief verwurzeltesten, traditionellen und klassischen Namen auf Kurdisch.",
       "ar": "قائمة ومعاني الأسماء الأكثر تجذراً وتقليدية وكلاسيكية في الكردية."
     }
-  }
-,
+  },
   {
     "id": "letter-a-boy-names",
     "date": "2026-07-05",

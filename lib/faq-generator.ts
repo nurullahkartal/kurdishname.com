@@ -84,8 +84,8 @@ export function generateDynamicFaqs(
         answer: `${name} ismi geleneksel olarak ${genderAdj} ismi olarak kullanılmaktadır. Kürtçe isim kültüründe bu doğrultuda kabul görmüştür.`,
       },
       {
-        question: `${name} ismi Kur'an-ı Kerim'de geçiyor mu?`,
-        answer: `Kürtçe Hint-Avrupa dil ailesine mensup olduğu için saf Kürtçe kökenli isimler doğrudan Kur'an-ı Kerim Arapça metninde yer almaz. İslam kültüründe isim tercihinde evrensel ölçü, ismin güzel, asil ve olumlu bir anlam taşımasıdır.`,
+        question: `${name} isminin Kürt edebiyatı ve folklorundaki yeri nedir?`,
+        answer: `${name} ismi, Kürt edebiyatında, halk hikayelerinde ve sözlü şiir geleneğinde köklü bir geçmişe sahiptir. Kültürel hafızanın ve zengin söz dağarcığının zarif bir parçasını temsil eder.`,
       },
       {
         question: `${name} ismiyle uyumlu kardeş isimleri nelerdir?`,
@@ -109,8 +109,8 @@ export function generateDynamicFaqs(
         answer: `${name} is traditionally given as a ${genderText} name in Kurdish naming conventions.`,
       },
       {
-        question: `Does the name ${name} appear in the Quran?`,
-        answer: `Because Kurdish belongs to the Indo-European language family, native Kurdish names do not appear in the Quranic Arabic text. In Islamic traditions, the universal principle is choosing names that convey noble and positive meanings.`,
+        question: `What is the significance of ${name} in Kurdish literature and folklore?`,
+        answer: `The name ${name} holds an esteemed place in Kurdish literature, folklore, and poetic tradition, embodying cultural heritage and expressive linguistic beauty.`,
       },
       {
         question: `What sibling names pair well with ${name}?`,
@@ -134,8 +134,8 @@ export function generateDynamicFaqs(
         answer: `${name} wird in kurdischen Namensgebungstraditionen traditionell als ${genderText}-Name vergeben.`,
       },
       {
-        question: `Kommt der Name ${name} im Koran vor?`,
-        answer: `Da die kurdische Sprache zur indoeuropäischen Sprachfamilie gehört, erscheinen rein kurdische Namen nicht im arabischen Korantext. In islamischen Traditionen gilt universell das Prinzip, Namen mit edler und schöner Bedeutung zu wählen.`,
+        question: `Welche Bedeutung hat ${name} in der kurdischen Literatur und Folklore?`,
+        answer: `Der Name ${name} hat einen geschätzten Platz in der kurdischen Literatur und Volkstradition und spiegelt kulturelles Erbe und sprachliche Schönheit wider.`,
       },
       {
         question: `Welche Geschwisternamen passen klanglich zu ${name}?`,
@@ -159,8 +159,8 @@ export function generateDynamicFaqs(
       answer: `يُستخدم اسم ${name} تقليدياً اسماً ${genderText} في تقاليد التسمية الكردية.`,
     },
     {
-      question: `هل يرد اسم ${name} في القرآن الكريم؟`,
-      answer: `نظراً لأن اللغة الكردية تنتمي إلى الأسرة اللغوية الهندية الأوروبية، فإن الأسماء الكردية الأصيلة لا ترد في النص القرآني العربي. والمعيار العام في التقاليد الإسلامية هو اختيار الأسماء ذات المعاني النبيلة والجميلة.`,
+      question: `ما مكانة اسم ${name} في الأدب والفولكلور الكردي؟`,
+      answer: `يحظى اسم ${name} بمكانة مرموقة في الأدب الكردي والتقاليد الشعبية والشعرية، مجسداً الهوية الثقافية والجمال اللغوي الأصيل.`,
     },
     {
       question: `ما أسماء الأشقاء المتناسقة مع ${name}؟`,

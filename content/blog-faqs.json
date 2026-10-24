@@ -1,46 +1,4 @@
 {
-  "kuranda-gecen-kurtce-kiz-isimleri": {
-    "tr": [
-      {
-        "question": "Kur'an-ı Kerim'de Kürtçe kız isimleri geçer mi?",
-        "answer": "Kur'an-ı Kerim Arapça vahyedildiği için metninde doğrudan saf Kürtçe kökenli isimler yer almaz. Ancak İslam dini isimlerin Kur'an'da geçmesini şart koşmaz; anlamı güzel, ahlaki ve hayırlı olan tüm Kürtçe isimlerin konulması caiz ve güzeldir."
-      },
-      {
-        "question": "İslami hassasiyete ve Kürt kültürüne uygun en popüler kız isimleri hangileridir?",
-        "answer": "Rojda (gündoğumu), Ronahî (ışık, nur), Dilşad (huzurlu gönül), Evîn (sevgi) ve Hêvî (umut) gibi anlamı asil ve aydınlık olan isimler hem dini fıtrata hem de zengin Kürt kültürüne tam uyum sağlar."
-      }
-    ],
-    "en": [
-      {
-        "question": "Are there Kurdish girl names mentioned in the Quran?",
-        "answer": "Because the Quran was revealed in Arabic, no purely Kurdish names appear directly in the text. However, Islamic tradition does not require a name to be in the Quran; any name with an honorable, pure, and positive meaning is permissible and respected."
-      },
-      {
-        "question": "Which Kurdish girl names are most compatible with Islamic values?",
-        "answer": "Names such as Rojda (sunrise), Ronahi (light, illumination), Dilshad (joyful heart), Evin (love, compassion), and Hevi (hope) convey beautiful virtues that fully align with Islamic principles."
-      }
-    ],
-    "de": [
-      {
-        "question": "Gibt es kurdische Mädchennamen im Koran?",
-        "answer": "Da der Koran auf Arabisch offenbart wurde, kommen rein kurdische Namen darin nicht vor. Im Islam ist es jedoch keine Pflicht, einen koranischen Namen zu wählen; jeder Name mit einer reinen und edlen Bedeutung ist vollkommen erlaubt."
-      },
-      {
-        "question": "Welche kurdischen Mädchennamen harmonieren am besten mit islamischen Werten?",
-        "answer": "Namen wie Rojda (Sonnenaufgang), Ronahi (Licht), Dilshad (frohes Herz), Evin (Liebe) und Hevi (Hoffnung) besitzen erhabene Bedeutungen im Einklang mit spirituellen Werten."
-      }
-    ],
-    "ar": [
-      {
-        "question": "هل وردت أسماء بنات كردية في القرآن الكريم؟",
-        "answer": "نزل القرآن الكريم باللغة العربية، لذا لا توجد فيه أسماء ذات أصل كردي خالص. ومع ذلك، لا تشترط الشريعة ورود الاسم في القرآن، بل يجوز استحسان أي اسم ذي معنى نبيل وطيب."
-      },
-      {
-        "question": "ما هي أجمل الأسماء الكردية المتوافقة مع القيم الإسلامية؟",
-        "answer": "أسماء مثل روجدا (الضياء)، روناهي (النور)، دلشاد (القلب المنشرح)، إيفين (المحبة)، وهيفي (الأمل والرجاء) تحمل أسمى المعاني الأخلاقية والجمالية."
-      }
-    ]
-  },
   "eski-ve-tarihi-kurt-erkek-isimleri": {
     "tr": [
       {
@@ -1076,32 +1034,6 @@
       {
         "question": "ما هي الميزة اللفظية لأسماء الزهور والنباتات الكردية؟",
         "answer": "تتميز بنغمة نطق رقيقة وجرس موسيقي عذب يعبر عن تفتح الزهور الربيعية البرية وجمال الطبيعة."
-      }
-    ]
-  },
-  "spiritual-100-names": {
-    "tr": [
-      {
-        "question": "Manevi ve kutsal Kürtçe isimler hangi temaları içerir?",
-        "answer": "Kadim inançlardan gelen duaları, kutsal duaları, ruhani huzuru, dinginliği ve yüce manevi arınmışlığı kapsar."
-      }
-    ],
-    "en": [
-      {
-        "question": "What themes do spiritual and sacred Kurdish names cover?",
-        "answer": "They cover blessings, ancient belief prayers, inner peace, cosmic harmony, and sublime spiritual purity."
-      }
-    ],
-    "de": [
-      {
-        "question": "Welche Themen decken spirituelle kurdische Namen ab?",
-        "answer": "Sie umfassen göttlichen Segen, alten Glauben, inneren Frieden, kosmische Harmonie und moralische Reinheit."
-      }
-    ],
-    "ar": [
-      {
-        "question": "ما هي السمات الروحية والمقدسة في الأسماء الكردية؟",
-        "answer": "تشمل الأدعية، والبركة، والسكينة، والسلام الداخلي، والسمو الروحي والأخلاقي المستمد من المعتقدات العريقة."
       }
     ]
   },

@@ -1495,12 +1495,12 @@
       "name": "Barsaz",
       "gender": "male",
       "letter": "B",
-      "meaning": "Barsaz; düzen kuran, nizam getiren ve yapıcı olma.",
+      "meaning": "Barsaz; düzen sağlayan, nizam getiren ve yapıcı olma.",
       "origin": "Kurdish",
       "tags": [
         "Bilgelik / Akıl"
       ],
-      "description": "Barsaz; düzen kuran, nizam getiren ve yapıcı olma anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
+      "description": "Barsaz; nizam getiren, yapıcı ve adil düzeni temsil eden kimsedir.",
       "meaning_en": "Barsaz; a person who places the meaning of order-setter, discipline-bringer, and constructive person and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
       "meaning_de": "Barsaz; eine Persönlichkeit, die die Bedeutung von ordnungshüter, Disziplinbringer und konstruktive Person und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
       "meaning_ar": "Barsaz؛ شخص يضع معنى منظم، ضابط وشخص بناء والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً."
@@ -7996,12 +7996,12 @@
       "name": "Bûyer",
       "gender": "male",
       "letter": "B",
-      "meaning": "Bûyer; olay, hadise ve tarihe yön veren önemli gelişmeleri temsil etme.",
+      "meaning": "Bûyer; olay, tarihi gelişme ve dönüm noktası.",
       "origin": "Kurdish",
       "tags": [
         "Bilgelik / Akıl"
       ],
-      "description": "Bûyer; olay, hadise ve tarihe yön veren önemli gelişmeleri temsil etme anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir.",
+      "description": "Bûyer; tarihe yön veren gelişmeleri ve dönüm noktalarını temsil eden kimsedir.",
       "meaning_en": "Bûyer; a person who places the meaning of a person who represents events, events and important developments that shape history. and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
       "meaning_de": "Bûyer; eine Persönlichkeit, die die Bedeutung von Eine Person, die Ereignisse, Ereignisse und wichtige Entwicklungen repräsentiert, die die Geschichte prägen. und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
       "meaning_ar": "Bûyer؛ شخص يضع معنى الشخص الذي يمثل الأحداث والأحداث والتطورات الهامة التي تشكل التاريخ. والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً."
@@ -8011,7 +8011,7 @@
       "name": "Bûyerî",
       "gender": "female",
       "letter": "B",
-      "meaning": "Bûyerî; hadise.",
+      "meaning": "Bûyerî; tarihi olay, gelişme.",
       "meaning_en": "Bûyerî; a person who places the meaning of incident and a noble stance at the center of life, representing a deeply rooted history and noble heritage.",
       "meaning_de": "Bûyerî; eine Persönlichkeit, die die Bedeutung von vorfall und eine edle Haltung in den Mittelpunkt des Lebens stellt und eine tief verwurzelte Geschichte und ein edles Erbe repräsentiert.",
       "meaning_ar": "Bûyerî؛ شخص يضع معنى واقعة والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً.",
@@ -8019,7 +8019,7 @@
       "tags": [
         "Kürtçe İsim"
       ],
-      "description": "Bûyerî; hadise anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
+      "description": "Bûyerî; önemli gelişmeleri ve tarihi olayları simgeleyen kimsedir."
     }
   ]
 }
