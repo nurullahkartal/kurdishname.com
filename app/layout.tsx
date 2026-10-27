@@ -30,6 +30,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="tr" suppressHydrationWarning>
+      <head>
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="TJ1/pH6WLCLfpnFgVAmZsA"
+          async
+        />
+      </head>
       <body style={{ background: 'var(--bg)', color: 'var(--text)', minHeight: '100vh' }}>
         {children}
       </body>

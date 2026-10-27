@@ -1,3 +1,7 @@
+# Legacy Name path redirects
+/names/* /tr/isim/:splat 301
+/isim/* /tr/isim/:splat 301
+
 # Legacy Turkish category redirects
 /tr/kategori/girls       /tr/kategori/kiz           301
 /tr/kategori/girl        /tr/kategori/kiz           301
