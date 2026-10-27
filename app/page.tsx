@@ -16,6 +16,18 @@ export const metadata: Metadata = {
       'x-default': `${SITE_URL}/en`,
     },
   },
+  openGraph: {
+    title: 'KurdishName — Kurdish Baby Names & Etymology Encyclopedia',
+    description: '4,709+ authentic Kurdish baby names, meanings, origins, and pronunciation guide.',
+    url: SITE_URL,
+    siteName: 'KurdishName',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'KurdishName — Kurdish Baby Names & Etymology Encyclopedia',
+    description: '4,709+ authentic Kurdish baby names, meanings, origins, and pronunciation guide.',
+  },
 };
 
 const languageLabels: Record<string, string> = {

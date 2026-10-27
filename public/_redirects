@@ -1,6 +1,3 @@
-# Root redirect
-/                        /tr                        302
-
 # Legacy Turkish category redirects
 /tr/kategori/girls       /tr/kategori/kiz           301
 /tr/kategori/girl        /tr/kategori/kiz           301

@@ -80,6 +80,20 @@ function main() {
 
   // 1. sitemap-static.xml
   const staticUrlBlocks: string[] = [];
+  // Root URL (Multilingual Entry Hub)
+  staticUrlBlocks.push(
+    `  <url>
+    <loc>${SITE_URL}</loc>
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="${SITE_URL}/tr" />
+    <xhtml:link rel="alternate" hreflang="en" href="${SITE_URL}/en" />
+    <xhtml:link rel="alternate" hreflang="de" href="${SITE_URL}/de" />
+    <xhtml:link rel="alternate" hreflang="ar" href="${SITE_URL}/ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}/en" />
+  </url>`
+  );
   // Homepages
   staticUrlBlocks.push(
     buildUrlBlock(
