@@ -1,0 +1,891 @@
+{
+  "sites": [
+    {
+      "siteUrl": "sc-domain:kurdishname.com",
+      "permissionLevel": "siteFullUser"
+    }
+  ],
+  "sitemaps": [
+    {
+      "path": "https://kurdishname.com/sitemap.xml",
+      "lastDownloaded": "2026-10-27T18:59:07.294Z",
+      "submitted": 19577,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-static.xml",
+      "lastDownloaded": "2026-10-27T18:52:17.179Z",
+      "submitted": 65,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-%C5%9E.xml",
+      "lastDownloaded": "2026-10-27T18:52:17.487Z",
+      "submitted": 512,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-%C3%8E.xml",
+      "lastDownloaded": "2026-10-27T18:52:16.888Z",
+      "submitted": 8,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-%C3%8A.xml",
+      "lastDownloaded": "2026-10-27T18:52:16.804Z",
+      "submitted": 24,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-%C3%87.xml",
+      "lastDownloaded": "2026-10-27T18:52:16.607Z",
+      "submitted": 172,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-Z.xml",
+      "lastDownloaded": "2026-10-27T18:52:16.508Z",
+      "submitted": 364,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-Y.xml",
+      "lastDownloaded": "2026-10-27T18:52:22.184Z",
+      "submitted": 144,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-X.xml",
+      "lastDownloaded": "2026-10-27T18:52:16.279Z",
+      "submitted": 456,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-W.xml",
+      "lastDownloaded": "2026-10-27T18:52:15.949Z",
+      "submitted": 40,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-V.xml",
+      "lastDownloaded": "2026-10-27T18:52:16.176Z",
+      "submitted": 164,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-U.xml",
+      "lastDownloaded": "2026-10-27T18:52:15.412Z",
+      "submitted": 12,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-T.xml",
+      "lastDownloaded": "2026-10-27T18:52:17.892Z",
+      "submitted": 384,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-S.xml",
+      "lastDownloaded": "2026-10-27T18:52:16.412Z",
+      "submitted": 496,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-R.xml",
+      "lastDownloaded": "2026-10-27T18:52:15.108Z",
+      "submitted": 828,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-Q.xml",
+      "lastDownloaded": "2026-10-27T18:52:15.291Z",
+      "submitted": 48,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-P.xml",
+      "lastDownloaded": "2026-10-27T18:52:15.034Z",
+      "submitted": 936,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-O.xml",
+      "lastDownloaded": "2026-10-27T18:52:15.646Z",
+      "submitted": 32,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-N.xml",
+      "lastDownloaded": "2026-10-27T18:52:14.479Z",
+      "submitted": 904,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-M.xml",
+      "lastDownloaded": "2026-10-27T18:52:14.399Z",
+      "submitted": 1116,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-L.xml",
+      "lastDownloaded": "2026-10-27T18:52:14.068Z",
+      "submitted": 468,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-K.xml",
+      "lastDownloaded": "2026-10-27T18:52:14.853Z",
+      "submitted": 924,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-J.xml",
+      "lastDownloaded": "2026-10-27T18:52:15.173Z",
+      "submitted": 328,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-H.xml",
+      "lastDownloaded": "2026-10-27T18:52:17.651Z",
+      "submitted": 1320,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-G.xml",
+      "lastDownloaded": "2026-10-27T18:52:13.967Z",
+      "submitted": 1200,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-F.xml",
+      "lastDownloaded": "2026-10-27T18:52:13.447Z",
+      "submitted": 412,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-E.xml",
+      "lastDownloaded": "2026-10-27T18:52:13.750Z",
+      "submitted": 800,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-D.xml",
+      "lastDownloaded": "2026-10-27T18:52:13.805Z",
+      "submitted": 1420,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-C.xml",
+      "lastDownloaded": "2026-10-27T18:52:13.286Z",
+      "submitted": 952,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-B.xml",
+      "lastDownloaded": "2026-10-27T18:52:12.857Z",
+      "submitted": 2136,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-names-A.xml",
+      "lastDownloaded": "2026-10-27T18:52:12.899Z",
+      "submitted": 2236,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-categories.xml",
+      "lastDownloaded": "2026-10-27T18:52:12.559Z",
+      "submitted": 144,
+      "indexed": 0,
+      "errors": "0"
+    },
+    {
+      "path": "https://kurdishname.com/sitemap-blog.xml",
+      "lastDownloaded": "2026-10-27T18:52:12.349Z",
+      "submitted": 532,
+      "indexed": 0,
+      "errors": "0"
+    }
+  ],
+  "fresh_regex_queries_sample": [
+    {
+      "keys": [
+        "kürtçe kız isimleri",
+        "https://kurdishname.com/tr"
+      ],
+      "clicks": 45,
+      "impressions": 961,
+      "ctr": 0.046826222684703434,
+      "position": 1.2747138397502602
+    },
+    {
+      "keys": [
+        "duyulmamış kürtçe kız isimleri",
+        "https://kurdishname.com/"
+      ],
+      "clicks": 11,
+      "impressions": 403,
+      "ctr": 0.02729528535980149,
+      "position": 1.0099255583126552
+    },
+    {
+      "keys": [
+        "kürtçe erkek isimleri",
+        "https://kurdishname.com/tr"
+      ],
+      "clicks": 11,
+      "impressions": 114,
+      "ctr": 0.09649122807017543,
+      "position": 1.2456140350877192
+    },
+    {
+      "keys": [
+        "kürtçe kız isimleri",
+        "https://kurdishname.com/"
+      ],
+      "clicks": 7,
+      "impressions": 157,
+      "ctr": 0.044585987261146494,
+      "position": 2.67515923566879
+    },
+    {
+      "keys": [
+        "modern kürtçe kız isimleri",
+        "https://kurdishname.com/"
+      ],
+      "clicks": 6,
+      "impressions": 152,
+      "ctr": 0.039473684210526314,
+      "position": 1
+    },
+    {
+      "keys": [
+        "duyulmamış kürtçe kız isimleri",
+        "https://kurdishname.com/tr"
+      ],
+      "clicks": 5,
+      "impressions": 392,
+      "ctr": 0.012755102040816327,
+      "position": 1.010204081632653
+    },
+    {
+      "keys": [
+        "kürtçe kız isimleri 2026",
+        "https://kurdishname.com/tr"
+      ],
+      "clicks": 4,
+      "impressions": 136,
+      "ctr": 0.029411764705882353,
+      "position": 1.0073529411764706
+    },
+    {
+      "keys": [
+        "kürtçe kız çocuk isimleri",
+        "https://kurdishname.com/tr"
+      ],
+      "clicks": 4,
+      "impressions": 65,
+      "ctr": 0.06153846153846154,
+      "position": 1.353846153846154
+    },
+    {
+      "keys": [
+        "duyulmamış kürtçe erkek isimleri",
+        "https://kurdishname.com/"
+      ],
+      "clicks": 3,
+      "impressions": 121,
+      "ctr": 0.024793388429752067,
+      "position": 1.0495867768595042
+    },
+    {
+      "keys": [
+        "duyulmamış kürtçe erkek isimleri",
+        "https://kurdishname.com/tr"
+      ],
+      "clicks": 3,
+      "impressions": 145,
+      "ctr": 0.020689655172413793,
+      "position": 1.089655172413793
+    }
+  ],
+  "total_query_page_rows": 575,
+  "period_deltas": [
+    {
+      "query": "kürtçe kız isimleri",
+      "delta_clicks": 37,
+      "delta_impressions": 947,
+      "delta_position": 0.3,
+      "cur_clicks": 52,
+      "prev_clicks": 15,
+      "cur_imp": 1113,
+      "prev_imp": 166
+    },
+    {
+      "query": "duyulmamış kürtçe kız isimleri",
+      "delta_clicks": 10,
+      "delta_impressions": 677,
+      "delta_position": -0.0,
+      "cur_clicks": 16,
+      "prev_clicks": 6,
+      "cur_imp": 795,
+      "prev_imp": 118
+    },
+    {
+      "query": "kürtçe kız çocuk isimleri",
+      "delta_clicks": 6,
+      "delta_impressions": 96,
+      "delta_position": 1.0,
+      "cur_clicks": 7,
+      "prev_clicks": 1,
+      "cur_imp": 104,
+      "prev_imp": 8
+    },
+    {
+      "query": "kürtçe kız isimleri 2026",
+      "delta_clicks": 6,
+      "delta_impressions": 138,
+      "delta_position": 0.1,
+      "cur_clicks": 6,
+      "prev_clicks": 0,
+      "cur_imp": 151,
+      "prev_imp": 13
+    },
+    {
+      "query": "duyulmamış kürtçe erkek isimleri",
+      "delta_clicks": 5,
+      "delta_impressions": 230,
+      "delta_position": -0.1,
+      "cur_clicks": 6,
+      "prev_clicks": 1,
+      "cur_imp": 267,
+      "prev_imp": 37
+    },
+    {
+      "query": "en güzel kürtçe kız isimleri",
+      "delta_clicks": 4,
+      "delta_impressions": 197,
+      "delta_position": 0.3,
+      "cur_clicks": 4,
+      "prev_clicks": 0,
+      "cur_imp": 202,
+      "prev_imp": 5
+    },
+    {
+      "query": "kürt kız isimleri",
+      "delta_clicks": 4,
+      "delta_impressions": 175,
+      "delta_position": -0.2,
+      "cur_clicks": 4,
+      "prev_clicks": 0,
+      "cur_imp": 209,
+      "prev_imp": 34
+    },
+    {
+      "query": "kurtce kiz isimleri",
+      "delta_clicks": 3,
+      "delta_impressions": 24,
+      "delta_position": -0.6,
+      "cur_clicks": 3,
+      "prev_clicks": 0,
+      "cur_imp": 31,
+      "prev_imp": 7
+    },
+    {
+      "query": "kürtçe kız isimleri nadir",
+      "delta_clicks": 2,
+      "delta_impressions": 6,
+      "delta_position": 0,
+      "cur_clicks": 2,
+      "prev_clicks": 0,
+      "cur_imp": 6,
+      "prev_imp": 0
+    },
+    {
+      "query": "kürtçe kız ismi",
+      "delta_clicks": 2,
+      "delta_impressions": 37,
+      "delta_position": -0.4,
+      "cur_clicks": 2,
+      "prev_clicks": 0,
+      "cur_imp": 41,
+      "prev_imp": 4
+    },
+    {
+      "query": "başka",
+      "delta_clicks": 2,
+      "delta_impressions": 116,
+      "delta_position": -1.0,
+      "cur_clicks": 2,
+      "prev_clicks": 0,
+      "cur_imp": 147,
+      "prev_imp": 31
+    },
+    {
+      "query": "evet",
+      "delta_clicks": 2,
+      "delta_impressions": 8,
+      "delta_position": 0,
+      "cur_clicks": 2,
+      "prev_clicks": 0,
+      "cur_imp": 8,
+      "prev_imp": 0
+    },
+    {
+      "query": "kürtçe kiz isimleri",
+      "delta_clicks": 2,
+      "delta_impressions": 8,
+      "delta_position": 0,
+      "cur_clicks": 2,
+      "prev_clicks": 0,
+      "cur_imp": 8,
+      "prev_imp": 0
+    },
+    {
+      "query": "en güzel kürtçe erkek isimleri",
+      "delta_clicks": 2,
+      "delta_impressions": 45,
+      "delta_position": -0.8,
+      "cur_clicks": 2,
+      "prev_clicks": 0,
+      "cur_imp": 46,
+      "prev_imp": 1
+    },
+    {
+      "query": "en güzel kız isimleri kürtçe",
+      "delta_clicks": 2,
+      "delta_impressions": 25,
+      "delta_position": 0,
+      "cur_clicks": 2,
+      "prev_clicks": 0,
+      "cur_imp": 25,
+      "prev_imp": 0
+    },
+    {
+      "query": "kürtçe dini kız isimleri",
+      "delta_clicks": 2,
+      "delta_impressions": 7,
+      "delta_position": 0,
+      "cur_clicks": 2,
+      "prev_clicks": 0,
+      "cur_imp": 7,
+      "prev_imp": 0
+    },
+    {
+      "query": "kürtçe kız bebek isimleri",
+      "delta_clicks": 2,
+      "delta_impressions": 33,
+      "delta_position": -1.8,
+      "cur_clicks": 2,
+      "prev_clicks": 0,
+      "cur_imp": 39,
+      "prev_imp": 6
+    },
+    {
+      "query": "kürtce kiz isimleri",
+      "delta_clicks": 2,
+      "delta_impressions": 22,
+      "delta_position": 2.0,
+      "cur_clicks": 2,
+      "prev_clicks": 0,
+      "cur_imp": 24,
+      "prev_imp": 2
+    },
+    {
+      "query": "kiz isimi",
+      "delta_clicks": 1,
+      "delta_impressions": 1,
+      "delta_position": 0,
+      "cur_clicks": 1,
+      "prev_clicks": 0,
+      "cur_imp": 1,
+      "prev_imp": 0
+    },
+    {
+      "query": "kürtçe kız isimleri ve anlamları",
+      "delta_clicks": 1,
+      "delta_impressions": 12,
+      "delta_position": -0.6,
+      "cur_clicks": 1,
+      "prev_clicks": 0,
+      "cur_imp": 13,
+      "prev_imp": 1
+    }
+  ],
+  "daily_trend": [
+    {
+      "keys": [
+        "2026-10-13"
+      ],
+      "clicks": 4,
+      "impressions": 85,
+      "ctr": 0.047058823529411764,
+      "position": 4.882352941176471
+    },
+    {
+      "keys": [
+        "2026-10-14"
+      ],
+      "clicks": 10,
+      "impressions": 283,
+      "ctr": 0.0353356890459364,
+      "position": 2.53356890459364
+    },
+    {
+      "keys": [
+        "2026-10-15"
+      ],
+      "clicks": 6,
+      "impressions": 174,
+      "ctr": 0.034482758620689655,
+      "position": 2.4080459770114944
+    },
+    {
+      "keys": [
+        "2026-10-16"
+      ],
+      "clicks": 10,
+      "impressions": 335,
+      "ctr": 0.029850746268656716,
+      "position": 1.68955223880597
+    },
+    {
+      "keys": [
+        "2026-10-17"
+      ],
+      "clicks": 7,
+      "impressions": 313,
+      "ctr": 0.022364217252396165,
+      "position": 1.6325878594249201
+    },
+    {
+      "keys": [
+        "2026-10-18"
+      ],
+      "clicks": 8,
+      "impressions": 371,
+      "ctr": 0.0215633423180593,
+      "position": 1.3180592991913747
+    },
+    {
+      "keys": [
+        "2026-10-19"
+      ],
+      "clicks": 15,
+      "impressions": 589,
+      "ctr": 0.025466893039049237,
+      "position": 1.3769100169779287
+    },
+    {
+      "keys": [
+        "2026-10-20"
+      ],
+      "clicks": 15,
+      "impressions": 406,
+      "ctr": 0.03694581280788178,
+      "position": 1.3497536945812807
+    },
+    {
+      "keys": [
+        "2026-10-21"
+      ],
+      "clicks": 7,
+      "impressions": 330,
+      "ctr": 0.021212121212121213,
+      "position": 1.2484848484848485
+    },
+    {
+      "keys": [
+        "2026-10-22"
+      ],
+      "clicks": 9,
+      "impressions": 240,
+      "ctr": 0.0375,
+      "position": 2.520833333333333
+    },
+    {
+      "keys": [
+        "2026-10-23"
+      ],
+      "clicks": 12,
+      "impressions": 419,
+      "ctr": 0.028639618138424822,
+      "position": 1.6634844868735084
+    },
+    {
+      "keys": [
+        "2026-10-24"
+      ],
+      "clicks": 16,
+      "impressions": 560,
+      "ctr": 0.02857142857142857,
+      "position": 1.6053571428571427
+    },
+    {
+      "keys": [
+        "2026-10-25"
+      ],
+      "clicks": 4,
+      "impressions": 293,
+      "ctr": 0.013651877133105802,
+      "position": 2.1638225255972694
+    }
+  ],
+  "search_appearance": [],
+  "batch_inspection": [
+    {
+      "url": "https://kurdishname.com/",
+      "coverage": "Page with redirect",
+      "verdict": "NEUTRAL",
+      "lastCrawl": "2026-10-25T02:48:42Z",
+      "userCanonical": "https://kurdishname.com/tr",
+      "googleCanonical": "https://kurdishname.com/tr",
+      "canonical_match": true,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    },
+    {
+      "url": "https://kurdishname.com/tr",
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "lastCrawl": "2026-10-25T02:48:42Z",
+      "userCanonical": "https://kurdishname.com/tr",
+      "googleCanonical": "https://kurdishname.com/tr",
+      "canonical_match": true,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    },
+    {
+      "url": "https://kurdishname.com/en",
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "lastCrawl": "2026-10-25T05:26:06Z",
+      "userCanonical": "https://kurdishname.com/en",
+      "googleCanonical": "https://kurdishname.com/en",
+      "canonical_match": true,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    },
+    {
+      "url": "https://kurdishname.com/de",
+      "coverage": "Submitted and indexed",
+      "verdict": "PASS",
+      "lastCrawl": "2026-10-21T21:03:34Z",
+      "userCanonical": "https://kurdishname.com/de",
+      "googleCanonical": "https://kurdishname.com/de",
+      "canonical_match": true,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    },
+    {
+      "url": "https://kurdishname.com/ar",
+      "coverage": "Crawled - currently not indexed",
+      "verdict": "NEUTRAL",
+      "lastCrawl": "2026-10-26T12:36:46Z",
+      "userCanonical": "https://kurdishname.com/ar",
+      "googleCanonical": "https://kurdishname.com/ar",
+      "canonical_match": true,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    },
+    {
+      "url": "https://kurdishname.com/tr/kategori/kiz",
+      "coverage": "Crawled - currently not indexed",
+      "verdict": "NEUTRAL",
+      "lastCrawl": "2026-10-21T10:06:06Z",
+      "userCanonical": "https://kurdishname.com/tr/kategori/kiz",
+      "googleCanonical": "https://kurdishname.com/tr/kategori/kiz",
+      "canonical_match": true,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    },
+    {
+      "url": "https://kurdishname.com/tr/kategori/erkek",
+      "coverage": "Crawled - currently not indexed",
+      "verdict": "NEUTRAL",
+      "lastCrawl": "2026-10-21T10:06:06Z",
+      "userCanonical": "https://kurdishname.com/tr/kategori/erkek",
+      "googleCanonical": "https://kurdishname.com/tr/kategori/erkek",
+      "canonical_match": true,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    },
+    {
+      "url": "https://kurdishname.com/tr/kategori/unisex",
+      "coverage": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "lastCrawl": null,
+      "userCanonical": null,
+      "googleCanonical": null,
+      "canonical_match": false,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    },
+    {
+      "url": "https://kurdishname.com/tr/kategori/kiz/A",
+      "coverage": "Page with redirect",
+      "verdict": "NEUTRAL",
+      "lastCrawl": "2026-06-10T05:17:48Z",
+      "userCanonical": null,
+      "googleCanonical": "https://kurdishname.com/tr/kategori/kiz/A/",
+      "canonical_match": false,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    },
+    {
+      "url": "https://kurdishname.com/tr/kategori/erkek/B",
+      "coverage": "Page with redirect",
+      "verdict": "NEUTRAL",
+      "lastCrawl": "2026-06-11T03:07:47Z",
+      "userCanonical": null,
+      "googleCanonical": "https://kurdishname.com/tr/kategori/erkek/B/",
+      "canonical_match": false,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    },
+    {
+      "url": "https://kurdishname.com/tr/isim/delal",
+      "coverage": "Crawled - currently not indexed",
+      "verdict": "NEUTRAL",
+      "lastCrawl": "2026-08-15T16:46:53Z",
+      "userCanonical": null,
+      "googleCanonical": "https://kurdishname.com/tr/isim/delal",
+      "canonical_match": false,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    },
+    {
+      "url": "https://kurdishname.com/tr/isim/bahoz",
+      "coverage": "Crawled - currently not indexed",
+      "verdict": "NEUTRAL",
+      "lastCrawl": "2026-10-12T20:47:21Z",
+      "userCanonical": "https://kurdishname.com/tr/isim/bahoz",
+      "googleCanonical": "https://kurdishname.com/tr/isim/bahoz",
+      "canonical_match": true,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    },
+    {
+      "url": "https://kurdishname.com/tr/isim/lorin",
+      "coverage": "Duplicate without user-selected canonical",
+      "verdict": "NEUTRAL",
+      "lastCrawl": "2026-05-22T18:03:05Z",
+      "userCanonical": null,
+      "googleCanonical": "https://kurdishname.com/tr/isim/siir",
+      "canonical_match": false,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    },
+    {
+      "url": "https://kurdishname.com/tr/isim/azad",
+      "coverage": "Crawled - currently not indexed",
+      "verdict": "NEUTRAL",
+      "lastCrawl": "2026-09-06T19:54:15Z",
+      "userCanonical": "https://kurdishname.com/tr/isim/azad",
+      "googleCanonical": "https://kurdishname.com/tr/isim/azad",
+      "canonical_match": true,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    },
+    {
+      "url": "https://kurdishname.com/tr/isim/ciwan",
+      "coverage": "Crawled - currently not indexed",
+      "verdict": "NEUTRAL",
+      "lastCrawl": "2026-06-24T09:59:01Z",
+      "userCanonical": null,
+      "googleCanonical": "https://kurdishname.com/tr/isim/ciwan",
+      "canonical_match": false,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    },
+    {
+      "url": "https://kurdishname.com/en/name/delal",
+      "coverage": "Page with redirect",
+      "verdict": "NEUTRAL",
+      "lastCrawl": "2026-06-13T09:07:01Z",
+      "userCanonical": null,
+      "googleCanonical": "https://kurdishname.com/en/name/delal/",
+      "canonical_match": false,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    },
+    {
+      "url": "https://kurdishname.com/de/name/delal",
+      "coverage": "Crawled - currently not indexed",
+      "verdict": "NEUTRAL",
+      "lastCrawl": "2026-06-13T22:01:51Z",
+      "userCanonical": null,
+      "googleCanonical": "https://kurdishname.com/de/name/delal",
+      "canonical_match": false,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    },
+    {
+      "url": "https://kurdishname.com/tr/blog",
+      "coverage": "Crawled - currently not indexed",
+      "verdict": "NEUTRAL",
+      "lastCrawl": "2026-06-16T14:46:48Z",
+      "userCanonical": null,
+      "googleCanonical": "https://kurdishname.com/tr/blog",
+      "canonical_match": false,
+      "mobile_verdict": "VERDICT_UNSPECIFIED",
+      "rich_types": []
+    }
+  ],
+  "categorized_issues": {
+    "redirect_pages": [
+      "https://kurdishname.com/",
+      "https://kurdishname.com/tr/kategori/kiz/A",
+      "https://kurdishname.com/tr/kategori/erkek/B",
+      "https://kurdishname.com/en/name/delal"
+    ],
+    "indexed_success": [
+      "https://kurdishname.com/tr",
+      "https://kurdishname.com/en",
+      "https://kurdishname.com/de"
+    ],
+    "crawled_not_indexed": [
+      "https://kurdishname.com/ar",
+      "https://kurdishname.com/tr/kategori/kiz",
+      "https://kurdishname.com/tr/kategori/erkek",
+      "https://kurdishname.com/tr/isim/delal",
+      "https://kurdishname.com/tr/isim/bahoz",
+      "https://kurdishname.com/tr/isim/azad",
+      "https://kurdishname.com/tr/isim/ciwan",
+      "https://kurdishname.com/de/name/delal",
+      "https://kurdishname.com/tr/blog"
+    ]
+  },
+  "indexing_api_status": "Disabled (Expected for dictionary sites)"
+}
