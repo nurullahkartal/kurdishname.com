@@ -23,6 +23,14 @@ export default function GlobalNotFound() {
         window.location.replace('/tr/isim/' + lower.substring(6));
         return;
       }
+      if (lower.endsWith('ii')) {
+        window.location.replace(lower.slice(0, -1));
+        return;
+      }
+      if (lower.endsWith('2')) {
+        window.location.replace(lower.slice(0, -1));
+        return;
+      }
       if (p !== lower) {
         window.location.replace(lower);
         return;

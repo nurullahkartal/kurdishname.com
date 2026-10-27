@@ -198,7 +198,7 @@
       "description": "Kanarî; kenarlık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "kandii",
+      "id": "kandi",
       "name": "Kandî",
       "gender": "female",
       "letter": "K",
@@ -1008,7 +1008,7 @@
       "description": "Keddarî; emek anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "kederii",
+      "id": "kederi",
       "name": "Kederî",
       "gender": "female",
       "letter": "K",
@@ -1038,7 +1038,7 @@
       "description": "Kedkarî; emekçilik anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "kefii",
+      "id": "kefi",
       "name": "Kêfî",
       "gender": "female",
       "letter": "K",
@@ -1430,7 +1430,7 @@
       "description": "Kendarî; gülüş gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
     },
     {
-      "id": "kengii",
+      "id": "kengi",
       "name": "Kengî",
       "gender": "female",
       "letter": "K",
@@ -1670,7 +1670,7 @@
       "description": "Kestaneî; kestane anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "kestii",
+      "id": "kesti",
       "name": "Keştî",
       "gender": "female",
       "letter": "K",
@@ -3366,7 +3366,7 @@
       "description": "Kutanî; dövüş anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "kuvii",
+      "id": "kuvi",
       "name": "Kûvî",
       "gender": "female",
       "letter": "K",

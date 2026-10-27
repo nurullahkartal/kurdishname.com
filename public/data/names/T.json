@@ -33,7 +33,7 @@
       "description": "Tabatî; sabır anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "tadii",
+      "id": "tadi",
       "name": "Tadî",
       "gender": "female",
       "letter": "T",
@@ -484,7 +484,7 @@
       "description": "Tefatî; sönme anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "tehlii",
+      "id": "tehli",
       "name": "Tehlî",
       "gender": "female",
       "letter": "T",
@@ -754,7 +754,7 @@
       "description": "Tenîdar; isli anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "terkii",
+      "id": "terki",
       "name": "Terkî",
       "gender": "female",
       "letter": "T",
@@ -1370,7 +1370,7 @@
       "description": "Tulyar; intikam dostu dolu kalbi, asil duruşu ve zarafetiyle etrafına sevgi ve güzellik saçan, çok özel ve kıymetli bir kimsedir."
     },
     {
-      "id": "tunii",
+      "id": "tuni",
       "name": "Tûnî",
       "gender": "female",
       "letter": "T",

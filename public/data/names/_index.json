@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-24T10:45:37.472Z",
+  "generatedAt": "2026-10-27T17:20:01.783Z",
   "totalLetters": 31,
   "totalNames": 4709,
-  "totalBytes": 4764979,
+  "totalBytes": 4764862,
   "letters": [
     {
       "letter": "A",
@@ -17,7 +17,7 @@
     {
       "letter": "C",
       "count": 238,
-      "bytes": 228830
+      "bytes": 228819
     },
     {
       "letter": "Ç",
@@ -27,12 +27,12 @@
     {
       "letter": "D",
       "count": 355,
-      "bytes": 351976
+      "bytes": 351962
     },
     {
       "letter": "E",
       "count": 200,
-      "bytes": 194805
+      "bytes": 194791
     },
     {
       "letter": "Ê",
@@ -42,17 +42,17 @@
     {
       "letter": "F",
       "count": 103,
-      "bytes": 101949
+      "bytes": 101940
     },
     {
       "letter": "G",
       "count": 300,
-      "bytes": 291312
+      "bytes": 291300
     },
     {
       "letter": "H",
       "count": 330,
-      "bytes": 329287
+      "bytes": 329273
     },
     {
       "letter": "I",
@@ -67,27 +67,27 @@
     {
       "letter": "J",
       "count": 82,
-      "bytes": 82560
+      "bytes": 82556
     },
     {
       "letter": "K",
       "count": 231,
-      "bytes": 234324
+      "bytes": 234318
     },
     {
       "letter": "L",
       "count": 117,
-      "bytes": 118594
+      "bytes": 118588
     },
     {
       "letter": "M",
       "count": 279,
-      "bytes": 280421
+      "bytes": 280411
     },
     {
       "letter": "N",
       "count": 226,
-      "bytes": 226359
+      "bytes": 226354
     },
     {
       "letter": "O",
@@ -97,7 +97,7 @@
     {
       "letter": "P",
       "count": 234,
-      "bytes": 233288
+      "bytes": 233285
     },
     {
       "letter": "Q",
@@ -107,7 +107,7 @@
     {
       "letter": "R",
       "count": 207,
-      "bytes": 245870
+      "bytes": 245868
     },
     {
       "letter": "S",
@@ -122,7 +122,7 @@
     {
       "letter": "T",
       "count": 96,
-      "bytes": 96941
+      "bytes": 96937
     },
     {
       "letter": "U",
@@ -147,7 +147,7 @@
     {
       "letter": "X",
       "count": 114,
-      "bytes": 115793
+      "bytes": 115791
     },
     {
       "letter": "Y",
@@ -157,7 +157,7 @@
     {
       "letter": "Z",
       "count": 91,
-      "bytes": 96636
+      "bytes": 96635
     }
   ]
 }

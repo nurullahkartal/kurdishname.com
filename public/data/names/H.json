@@ -18,7 +18,7 @@
       "description": "Habûnî; varlık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "hacii",
+      "id": "haci",
       "name": "Hacî",
       "gender": "male",
       "letter": "H",
@@ -858,7 +858,7 @@
       "description": "Hazirî; hazırlık anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "hazmii",
+      "id": "hazmi",
       "name": "Hazmî",
       "gender": "female",
       "letter": "H",
@@ -1698,7 +1698,7 @@
       "description": "Hênerî; sanatsal anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "hengii",
+      "id": "hengi",
       "name": "Hengî",
       "gender": "female",
       "letter": "H",
@@ -2298,7 +2298,7 @@
       "description": "Hestanî; duyuş anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "hestii",
+      "id": "hesti",
       "name": "Hestî",
       "gender": "female",
       "letter": "H",
@@ -3350,7 +3350,7 @@
       "description": "Heyretî; hayret anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "heyvii",
+      "id": "heyvi",
       "name": "Heyvî",
       "gender": "female",
       "letter": "H",
@@ -3500,7 +3500,7 @@
       "meaning_ar": "Hezîran؛ همسة أمل نبيلة تجلب حزيران، شهر الدفء وبداية موسم الحصاد الصيفي، وتبشر كل قلب بالبهجة والسكينة والبدايات الجديدة المشرقة."
     },
     {
-      "id": "hezkii",
+      "id": "hezki",
       "name": "Hezkî",
       "gender": "female",
       "letter": "H",
@@ -3845,7 +3845,7 @@
       "description": "Hindirî; içsel gibi duru, taze ve canlı; tabiatın en saf ve asil esintilerini bünyesinde barındıran asil bir kimsedir."
     },
     {
-      "id": "hingii",
+      "id": "hingi",
       "name": "Hingî",
       "gender": "female",
       "letter": "H",
@@ -3920,7 +3920,7 @@
       "description": "Hinorî; sanatsal anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "hircii",
+      "id": "hirci",
       "name": "Hirçî",
       "gender": "female",
       "letter": "H",
@@ -3935,7 +3935,7 @@
       "description": "Hirçî; ayı gibi anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "hirmii",
+      "id": "hirmi",
       "name": "Hirmî",
       "gender": "female",
       "letter": "H",
@@ -3965,7 +3965,7 @@
       "meaning_ar": "Hirmid؛ شخص يضع معنى هيرميد، الوقار، الأدب السامي، والأخلاق الرفيعة والتهذيب والموقف النبيل في مركز الحياة، ويمثل ثقافة عميقة الجذور وموروثًا أصيلاً."
     },
     {
-      "id": "hirsii",
+      "id": "hirsi",
       "name": "Hirsî",
       "gender": "female",
       "letter": "H",
@@ -4130,7 +4130,7 @@
       "meaning_ar": "Hîvda؛ شخصية مشرقة تضيء ما حولها مثل ارتفع القمر، من القمر، تمتلك بريقًا أبديًا يبدد كل ظلام بنورها النبيل."
     },
     {
-      "id": "hivii",
+      "id": "hivi",
       "name": "Hîvî",
       "gender": "female",
       "letter": "H",
@@ -4580,7 +4580,7 @@
       "description": "Hovanî; vahşilik anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "hovii",
+      "id": "hovi",
       "name": "Hovî",
       "gender": "female",
       "letter": "H",
@@ -4820,7 +4820,7 @@
       "description": "Hunerok; küçük sanat anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "hunii",
+      "id": "huni",
       "name": "Hunî",
       "gender": "female",
       "letter": "H",
@@ -4880,7 +4880,7 @@
       "description": "Huşînî; hışırtı anlamını ve asil bir duruşu hayatın merkezine koyan, köklü bir geçmişi ve asil bir mirası temsil eden kimsedir."
     },
     {
-      "id": "hutii",
+      "id": "huti",
       "name": "Hûtî",
       "gender": "male",
       "letter": "H",

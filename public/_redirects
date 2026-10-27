@@ -2,6 +2,17 @@
 /names/* /tr/isim/:splat 301
 /isim/* /tr/isim/:splat 301
 
+# Legacy cleaned ID redirects
+/tr/isim/lorin2 /tr/isim/lorin 301
+/en/name/lorin2 /en/name/lorin 301
+/de/name/lorin2 /de/name/lorin 301
+/tr/isim/reber2 /tr/isim/reber 301
+/en/name/reber2 /en/name/reber 301
+/de/name/reber2 /de/name/reber 301
+/tr/isim/xane2 /tr/isim/xane 301
+/en/name/xane2 /en/name/xane 301
+/de/name/xane2 /de/name/xane 301
+
 # Legacy Turkish category redirects
 /tr/kategori/girls       /tr/kategori/kiz           301
 /tr/kategori/girl        /tr/kategori/kiz           301
