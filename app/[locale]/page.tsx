@@ -231,7 +231,7 @@ export default async function LocaleHomePage({
             </Link>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-            {homeGirlNames.slice(0, 10).map((item) => (
+            {homeGirlNames.map((item) => (
               <Link
                 key={item.id}
                 href={generatePath(locale, 'name', item.id)}
@@ -290,7 +290,7 @@ export default async function LocaleHomePage({
             </Link>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-            {homeBoyNames.slice(0, 10).map((item) => (
+            {homeBoyNames.map((item) => (
               <Link
                 key={item.id}
                 href={generatePath(locale, 'name', item.id)}

@@ -32,15 +32,15 @@ function buildUrlBlock(
   lastmod: string = TODAY
 ): string {
   const blocks: string[] = [];
-  const xDefaultHref = escapeXml(`${SITE_URL}${locByLocale.en}`);
+  const xDefaultHref = escapeXml(encodeURI(`${SITE_URL}${locByLocale.en}`));
 
   for (const locale of supportedLanguages) {
-    const loc = escapeXml(`${SITE_URL}${locByLocale[locale]}`);
+    const loc = escapeXml(encodeURI(`${SITE_URL}${locByLocale[locale]}`));
     const altLinks = supportedLanguages
       .map(
         (altLang) =>
           `    <xhtml:link rel="alternate" hreflang="${altLang}" href="${escapeXml(
-            `${SITE_URL}${locByLocale[altLang]}`
+            encodeURI(`${SITE_URL}${locByLocale[altLang]}`)
           )}" />`
       )
       .join('\n');

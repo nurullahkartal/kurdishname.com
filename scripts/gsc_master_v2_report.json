@@ -22,7 +22,7 @@
     },
     {
       "path": "https://kurdishname.com/sitemap-names-%C5%9E.xml",
-      "lastDownloaded": "2026-10-27T18:52:17.487Z",
+      "lastDownloaded": "2026-10-31T06:31:06.571Z",
       "submitted": 512,
       "indexed": 0,
       "errors": "0"
@@ -120,7 +120,7 @@
     },
     {
       "path": "https://kurdishname.com/sitemap-names-P.xml",
-      "lastDownloaded": "2026-10-27T18:52:15.034Z",
+      "lastDownloaded": "2026-11-01T18:01:19.321Z",
       "submitted": 936,
       "indexed": 0,
       "errors": "0"
@@ -162,7 +162,7 @@
     },
     {
       "path": "https://kurdishname.com/sitemap-names-J.xml",
-      "lastDownloaded": "2026-10-27T18:52:15.173Z",
+      "lastDownloaded": "2026-10-31T15:01:56.379Z",
       "submitted": 328,
       "indexed": 0,
       "errors": "0"
@@ -197,7 +197,7 @@
     },
     {
       "path": "https://kurdishname.com/sitemap-names-D.xml",
-      "lastDownloaded": "2026-10-27T18:52:13.805Z",
+      "lastDownloaded": "2026-11-01T12:51:50.667Z",
       "submitted": 1420,
       "indexed": 0,
       "errors": "0"
@@ -244,30 +244,20 @@
         "kürtçe kız isimleri",
         "https://kurdishname.com/tr"
       ],
-      "clicks": 45,
-      "impressions": 961,
-      "ctr": 0.046826222684703434,
-      "position": 1.2747138397502602
+      "clicks": 68,
+      "impressions": 1750,
+      "ctr": 0.038857142857142854,
+      "position": 1.1788571428571428
     },
     {
       "keys": [
         "duyulmamış kürtçe kız isimleri",
         "https://kurdishname.com/"
       ],
-      "clicks": 11,
-      "impressions": 403,
-      "ctr": 0.02729528535980149,
-      "position": 1.0099255583126552
-    },
-    {
-      "keys": [
-        "kürtçe erkek isimleri",
-        "https://kurdishname.com/tr"
-      ],
-      "clicks": 11,
-      "impressions": 114,
-      "ctr": 0.09649122807017543,
-      "position": 1.2456140350877192
+      "clicks": 9,
+      "impressions": 333,
+      "ctr": 0.02702702702702703,
+      "position": 1.012012012012012
     },
     {
       "keys": [
@@ -277,37 +267,47 @@
       "clicks": 7,
       "impressions": 157,
       "ctr": 0.044585987261146494,
-      "position": 2.67515923566879
-    },
-    {
-      "keys": [
-        "modern kürtçe kız isimleri",
-        "https://kurdishname.com/"
-      ],
-      "clicks": 6,
-      "impressions": 152,
-      "ctr": 0.039473684210526314,
-      "position": 1
+      "position": 2.7070063694267517
     },
     {
       "keys": [
         "duyulmamış kürtçe kız isimleri",
         "https://kurdishname.com/tr"
       ],
-      "clicks": 5,
-      "impressions": 392,
-      "ctr": 0.012755102040816327,
-      "position": 1.010204081632653
+      "clicks": 6,
+      "impressions": 553,
+      "ctr": 0.0108499095840868,
+      "position": 1.0180831826401446
     },
     {
       "keys": [
         "kürtçe kız isimleri 2026",
         "https://kurdishname.com/tr"
       ],
+      "clicks": 6,
+      "impressions": 138,
+      "ctr": 0.043478260869565216,
+      "position": 1.0217391304347827
+    },
+    {
+      "keys": [
+        "kürt kız isimleri",
+        "https://kurdishname.com/tr"
+      ],
+      "clicks": 5,
+      "impressions": 384,
+      "ctr": 0.013020833333333334,
+      "position": 1.0885416666666667
+    },
+    {
+      "keys": [
+        "duyulmamış kürtçe erkek isimleri",
+        "https://kurdishname.com/"
+      ],
       "clicks": 4,
-      "impressions": 136,
-      "ctr": 0.029411764705882353,
-      "position": 1.0073529411764706
+      "impressions": 174,
+      "ctr": 0.022988505747126436,
+      "position": 1.0344827586206897
     },
     {
       "keys": [
@@ -315,146 +315,116 @@
         "https://kurdishname.com/tr"
       ],
       "clicks": 4,
-      "impressions": 65,
-      "ctr": 0.06153846153846154,
-      "position": 1.353846153846154
+      "impressions": 82,
+      "ctr": 0.04878048780487805,
+      "position": 1.3048780487804879
     },
     {
       "keys": [
-        "duyulmamış kürtçe erkek isimleri",
+        "modern kürtçe kız isimleri",
         "https://kurdishname.com/"
       ],
-      "clicks": 3,
-      "impressions": 121,
-      "ctr": 0.024793388429752067,
-      "position": 1.0495867768595042
+      "clicks": 4,
+      "impressions": 108,
+      "ctr": 0.037037037037037035,
+      "position": 1
     },
     {
       "keys": [
-        "duyulmamış kürtçe erkek isimleri",
+        "en güzel kürtçe kız isimleri",
         "https://kurdishname.com/tr"
       ],
       "clicks": 3,
-      "impressions": 145,
-      "ctr": 0.020689655172413793,
-      "position": 1.089655172413793
+      "impressions": 208,
+      "ctr": 0.014423076923076924,
+      "position": 1.0240384615384615
     }
   ],
-  "total_query_page_rows": 575,
+  "total_query_page_rows": 604,
   "period_deltas": [
     {
       "query": "kürtçe kız isimleri",
-      "delta_clicks": 37,
-      "delta_impressions": 947,
+      "delta_clicks": 50,
+      "delta_impressions": 1492,
       "delta_position": 0.3,
-      "cur_clicks": 52,
-      "prev_clicks": 15,
-      "cur_imp": 1113,
-      "prev_imp": 166
+      "cur_clicks": 68,
+      "prev_clicks": 18,
+      "cur_imp": 1687,
+      "prev_imp": 195
     },
     {
       "query": "duyulmamış kürtçe kız isimleri",
-      "delta_clicks": 10,
-      "delta_impressions": 677,
+      "delta_clicks": 7,
+      "delta_impressions": 676,
       "delta_position": -0.0,
-      "cur_clicks": 16,
-      "prev_clicks": 6,
-      "cur_imp": 795,
-      "prev_imp": 118
-    },
-    {
-      "query": "kürtçe kız çocuk isimleri",
-      "delta_clicks": 6,
-      "delta_impressions": 96,
-      "delta_position": 1.0,
-      "cur_clicks": 7,
-      "prev_clicks": 1,
-      "cur_imp": 104,
-      "prev_imp": 8
+      "cur_clicks": 15,
+      "prev_clicks": 8,
+      "cur_imp": 877,
+      "prev_imp": 201
     },
     {
       "query": "kürtçe kız isimleri 2026",
-      "delta_clicks": 6,
-      "delta_impressions": 138,
-      "delta_position": 0.1,
-      "cur_clicks": 6,
+      "delta_clicks": 7,
+      "delta_impressions": 131,
+      "delta_position": 0.2,
+      "cur_clicks": 7,
       "prev_clicks": 0,
-      "cur_imp": 151,
-      "prev_imp": 13
-    },
-    {
-      "query": "duyulmamış kürtçe erkek isimleri",
-      "delta_clicks": 5,
-      "delta_impressions": 230,
-      "delta_position": -0.1,
-      "cur_clicks": 6,
-      "prev_clicks": 1,
-      "cur_imp": 267,
-      "prev_imp": 37
+      "cur_imp": 154,
+      "prev_imp": 23
     },
     {
       "query": "en güzel kürtçe kız isimleri",
-      "delta_clicks": 4,
-      "delta_impressions": 197,
+      "delta_clicks": 6,
+      "delta_impressions": 268,
       "delta_position": 0.3,
-      "cur_clicks": 4,
+      "cur_clicks": 6,
       "prev_clicks": 0,
-      "cur_imp": 202,
-      "prev_imp": 5
+      "cur_imp": 274,
+      "prev_imp": 6
+    },
+    {
+      "query": "kürtçe kız çocuk isimleri",
+      "delta_clicks": 5,
+      "delta_impressions": 87,
+      "delta_position": 0.1,
+      "cur_clicks": 7,
+      "prev_clicks": 2,
+      "cur_imp": 110,
+      "prev_imp": 23
     },
     {
       "query": "kürt kız isimleri",
-      "delta_clicks": 4,
-      "delta_impressions": 175,
-      "delta_position": -0.2,
-      "cur_clicks": 4,
+      "delta_clicks": 5,
+      "delta_impressions": 314,
+      "delta_position": 0.0,
+      "cur_clicks": 5,
       "prev_clicks": 0,
-      "cur_imp": 209,
-      "prev_imp": 34
+      "cur_imp": 355,
+      "prev_imp": 41
     },
     {
       "query": "kurtce kiz isimleri",
       "delta_clicks": 3,
-      "delta_impressions": 24,
-      "delta_position": -0.6,
+      "delta_impressions": 36,
+      "delta_position": -0.2,
       "cur_clicks": 3,
       "prev_clicks": 0,
-      "cur_imp": 31,
-      "prev_imp": 7
+      "cur_imp": 44,
+      "prev_imp": 8
+    },
+    {
+      "query": "kürtçe kız ismi",
+      "delta_clicks": 3,
+      "delta_impressions": 53,
+      "delta_position": -0.1,
+      "cur_clicks": 3,
+      "prev_clicks": 0,
+      "cur_imp": 58,
+      "prev_imp": 5
     },
     {
       "query": "kürtçe kız isimleri nadir",
       "delta_clicks": 2,
-      "delta_impressions": 6,
-      "delta_position": 0,
-      "cur_clicks": 2,
-      "prev_clicks": 0,
-      "cur_imp": 6,
-      "prev_imp": 0
-    },
-    {
-      "query": "kürtçe kız ismi",
-      "delta_clicks": 2,
-      "delta_impressions": 37,
-      "delta_position": -0.4,
-      "cur_clicks": 2,
-      "prev_clicks": 0,
-      "cur_imp": 41,
-      "prev_imp": 4
-    },
-    {
-      "query": "başka",
-      "delta_clicks": 2,
-      "delta_impressions": 116,
-      "delta_position": -1.0,
-      "cur_clicks": 2,
-      "prev_clicks": 0,
-      "cur_imp": 147,
-      "prev_imp": 31
-    },
-    {
-      "query": "evet",
-      "delta_clicks": 2,
       "delta_impressions": 8,
       "delta_position": 0,
       "cur_clicks": 2,
@@ -463,132 +433,117 @@
       "prev_imp": 0
     },
     {
-      "query": "kürtçe kiz isimleri",
+      "query": "kürtçe kız isimleri dini",
       "delta_clicks": 2,
-      "delta_impressions": 8,
+      "delta_impressions": 21,
       "delta_position": 0,
       "cur_clicks": 2,
       "prev_clicks": 0,
-      "cur_imp": 8,
-      "prev_imp": 0
-    },
-    {
-      "query": "en güzel kürtçe erkek isimleri",
-      "delta_clicks": 2,
-      "delta_impressions": 45,
-      "delta_position": -0.8,
-      "cur_clicks": 2,
-      "prev_clicks": 0,
-      "cur_imp": 46,
-      "prev_imp": 1
-    },
-    {
-      "query": "en güzel kız isimleri kürtçe",
-      "delta_clicks": 2,
-      "delta_impressions": 25,
-      "delta_position": 0,
-      "cur_clicks": 2,
-      "prev_clicks": 0,
-      "cur_imp": 25,
+      "cur_imp": 21,
       "prev_imp": 0
     },
     {
       "query": "kürtçe dini kız isimleri",
       "delta_clicks": 2,
-      "delta_impressions": 7,
+      "delta_impressions": 13,
       "delta_position": 0,
       "cur_clicks": 2,
       "prev_clicks": 0,
-      "cur_imp": 7,
+      "cur_imp": 13,
       "prev_imp": 0
     },
     {
-      "query": "kürtçe kız bebek isimleri",
+      "query": "evet",
       "delta_clicks": 2,
-      "delta_impressions": 33,
-      "delta_position": -1.8,
+      "delta_impressions": 9,
+      "delta_position": -0.1,
       "cur_clicks": 2,
       "prev_clicks": 0,
-      "cur_imp": 39,
-      "prev_imp": 6
+      "cur_imp": 10,
+      "prev_imp": 1
+    },
+    {
+      "query": "kürtçe kiz isimleri",
+      "delta_clicks": 2,
+      "delta_impressions": 8,
+      "delta_position": -1.2,
+      "cur_clicks": 2,
+      "prev_clicks": 0,
+      "cur_imp": 9,
+      "prev_imp": 1
+    },
+    {
+      "query": "en güzel kürtçe erkek isimleri",
+      "delta_clicks": 2,
+      "delta_impressions": 48,
+      "delta_position": 0,
+      "cur_clicks": 2,
+      "prev_clicks": 0,
+      "cur_imp": 48,
+      "prev_imp": 0
+    },
+    {
+      "query": "en güzel kız isimleri kürtçe",
+      "delta_clicks": 2,
+      "delta_impressions": 35,
+      "delta_position": 1.0,
+      "cur_clicks": 2,
+      "prev_clicks": 0,
+      "cur_imp": 36,
+      "prev_imp": 1
+    },
+    {
+      "query": "başka",
+      "delta_clicks": 2,
+      "delta_impressions": 141,
+      "delta_position": -0.9,
+      "cur_clicks": 2,
+      "prev_clicks": 0,
+      "cur_imp": 183,
+      "prev_imp": 42
+    },
+    {
+      "query": "güzel kürtçe kız isimleri",
+      "delta_clicks": 2,
+      "delta_impressions": 43,
+      "delta_position": -0.1,
+      "cur_clicks": 2,
+      "prev_clicks": 0,
+      "cur_imp": 46,
+      "prev_imp": 3
     },
     {
       "query": "kürtce kiz isimleri",
       "delta_clicks": 2,
-      "delta_impressions": 22,
-      "delta_position": 2.0,
+      "delta_impressions": 36,
+      "delta_position": 2.1,
       "cur_clicks": 2,
       "prev_clicks": 0,
-      "cur_imp": 24,
+      "cur_imp": 38,
       "prev_imp": 2
     },
     {
-      "query": "kiz isimi",
+      "query": "en guzel kurtce kiz isimleri",
       "delta_clicks": 1,
-      "delta_impressions": 1,
+      "delta_impressions": 3,
       "delta_position": 0,
       "cur_clicks": 1,
       "prev_clicks": 0,
-      "cur_imp": 1,
+      "cur_imp": 3,
       "prev_imp": 0
     },
     {
-      "query": "kürtçe kız isimleri ve anlamları",
+      "query": "kürtçe isimler",
       "delta_clicks": 1,
-      "delta_impressions": 12,
-      "delta_position": -0.6,
+      "delta_impressions": 73,
+      "delta_position": 2.0,
       "cur_clicks": 1,
       "prev_clicks": 0,
-      "cur_imp": 13,
-      "prev_imp": 1
+      "cur_imp": 76,
+      "prev_imp": 3
     }
   ],
   "daily_trend": [
-    {
-      "keys": [
-        "2026-10-13"
-      ],
-      "clicks": 4,
-      "impressions": 85,
-      "ctr": 0.047058823529411764,
-      "position": 4.882352941176471
-    },
-    {
-      "keys": [
-        "2026-10-14"
-      ],
-      "clicks": 10,
-      "impressions": 283,
-      "ctr": 0.0353356890459364,
-      "position": 2.53356890459364
-    },
-    {
-      "keys": [
-        "2026-10-15"
-      ],
-      "clicks": 6,
-      "impressions": 174,
-      "ctr": 0.034482758620689655,
-      "position": 2.4080459770114944
-    },
-    {
-      "keys": [
-        "2026-10-16"
-      ],
-      "clicks": 10,
-      "impressions": 335,
-      "ctr": 0.029850746268656716,
-      "position": 1.68955223880597
-    },
-    {
-      "keys": [
-        "2026-10-17"
-      ],
-      "clicks": 7,
-      "impressions": 313,
-      "ctr": 0.022364217252396165,
-      "position": 1.6325878594249201
-    },
     {
       "keys": [
         "2026-10-18"
@@ -660,6 +615,51 @@
       "impressions": 293,
       "ctr": 0.013651877133105802,
       "position": 2.1638225255972694
+    },
+    {
+      "keys": [
+        "2026-10-26"
+      ],
+      "clicks": 3,
+      "impressions": 241,
+      "ctr": 0.012448132780082987,
+      "position": 1.5809128630705396
+    },
+    {
+      "keys": [
+        "2026-10-27"
+      ],
+      "clicks": 11,
+      "impressions": 418,
+      "ctr": 0.02631578947368421,
+      "position": 1.5717703349282297
+    },
+    {
+      "keys": [
+        "2026-10-28"
+      ],
+      "clicks": 15,
+      "impressions": 494,
+      "ctr": 0.030364372469635626,
+      "position": 1.2449392712550607
+    },
+    {
+      "keys": [
+        "2026-10-29"
+      ],
+      "clicks": 11,
+      "impressions": 475,
+      "ctr": 0.023157894736842106,
+      "position": 1.4021052631578947
+    },
+    {
+      "keys": [
+        "2026-10-30"
+      ],
+      "clicks": 13,
+      "impressions": 837,
+      "ctr": 0.015531660692951015,
+      "position": 1.2628434886499402
     }
   ],
   "search_appearance": [],
@@ -668,9 +668,9 @@
       "url": "https://kurdishname.com/",
       "coverage": "Page with redirect",
       "verdict": "NEUTRAL",
-      "lastCrawl": "2026-10-25T02:48:42Z",
-      "userCanonical": "https://kurdishname.com/tr",
-      "googleCanonical": "https://kurdishname.com/tr",
+      "lastCrawl": "2026-10-29T11:50:31Z",
+      "userCanonical": "https://kurdishname.com/en",
+      "googleCanonical": "https://kurdishname.com/en",
       "canonical_match": true,
       "mobile_verdict": "VERDICT_UNSPECIFIED",
       "rich_types": []
@@ -679,7 +679,7 @@
       "url": "https://kurdishname.com/tr",
       "coverage": "Submitted and indexed",
       "verdict": "PASS",
-      "lastCrawl": "2026-10-25T02:48:42Z",
+      "lastCrawl": "2026-10-30T12:50:00Z",
       "userCanonical": "https://kurdishname.com/tr",
       "googleCanonical": "https://kurdishname.com/tr",
       "canonical_match": true,
@@ -712,7 +712,7 @@
       "url": "https://kurdishname.com/ar",
       "coverage": "Crawled - currently not indexed",
       "verdict": "NEUTRAL",
-      "lastCrawl": "2026-10-26T12:36:46Z",
+      "lastCrawl": "2026-10-31T22:54:21Z",
       "userCanonical": "https://kurdishname.com/ar",
       "googleCanonical": "https://kurdishname.com/ar",
       "canonical_match": true,

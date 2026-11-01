@@ -21,6 +21,8 @@ import {
   getNamesByLetter,
   getActiveLettersWithCounts,
   getSimilarNames,
+  getAdjacentAndLetterNames,
+  analyzeNameLinguistics,
   NameData,
 } from '@/lib/names-data';
 import {
@@ -356,9 +358,13 @@ export default async function SlugDetailPage({
     const faqs = generateDynamicFaqs(nameItem, locale, meaning, origin || 'Kürtçe', genderText);
 
     const similarNames = getSimilarNames(nameItem, 8);
+    const navContext = getAdjacentAndLetterNames(nameItem, 12);
+    const lingAnalysis = analyzeNameLinguistics(nameItem);
 
-    const pageUrl = `https://kurdishname.com${generatePath(locale, 'name', nameItem.id)}`;
+    const pageUrl = encodeURI(`https://kurdishname.com${generatePath(locale, 'name', nameItem.id)}`);
     const categoryGenderParam = isFemale ? 'kiz' : 'erkek';
+    const hasDistinctDesc =
+      Boolean(nameItem.description) && nameItem.description!.trim() !== nameItem.meaning.trim();
 
     const jsonLd = {
       '@context': 'https://schema.org',
@@ -385,11 +391,17 @@ export default async function SlugDetailPage({
               '@type': 'ListItem',
               position: 2,
               name: isFemale ? t('girl_names') : t('boy_names'),
-              item: `https://kurdishname.com${generatePath(locale, 'category', categoryGenderParam)}`,
+              item: encodeURI(`https://kurdishname.com${generatePath(locale, 'category', categoryGenderParam)}`),
             },
             {
               '@type': 'ListItem',
               position: 3,
+              name: nameItem.letter,
+              item: encodeURI(`https://kurdishname.com${generatePath(locale, 'category', nameItem.letter)}`),
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
               name: nameItem.name,
               item: pageUrl,
             },
@@ -473,6 +485,22 @@ export default async function SlugDetailPage({
                     {dialect.label[locale] || dialect.label.tr}
                   </span>
                 )}
+                {nameItem.tags?.map((tg) => (
+                  <span
+                    key={tg}
+                    style={{
+                      fontSize: '0.72rem',
+                      fontWeight: 600,
+                      padding: '0.12rem 0.5rem',
+                      borderRadius: '4px',
+                      background: 'var(--surface-alt)',
+                      border: '1px solid var(--border-dim)',
+                      color: 'var(--text-muted)',
+                    }}
+                  >
+                    #{tg}
+                  </span>
+                ))}
               </div>
 
               <h1
@@ -554,6 +582,18 @@ export default async function SlugDetailPage({
             >
               {meaning}
             </p>
+            {locale === 'tr' && hasDistinctDesc && (
+              <p
+                style={{
+                  fontSize: '0.95rem',
+                  lineHeight: 1.7,
+                  color: 'var(--text-muted)',
+                  marginTop: '0.65rem',
+                }}
+              >
+                {nameItem.description}
+              </p>
+            )}
             <p
               style={{
                 fontSize: '0.925rem',
@@ -565,17 +605,17 @@ export default async function SlugDetailPage({
               }}
             >
               {{
-                tr: `${nameItem.name}, ${origin} kökenli bir ${genderText} ismi olup Kürtçe ad geleneğinde "${meaning.replace(/^[^;]+;\s*/, '')}" manasını taşır.`,
-                en: `${nameItem.name} is a ${origin} ${genderText} name embodying the meaning "${meaning.replace(/^[^;]+;\s*/, '')}" in Kurdish naming culture.`,
-                de: `${nameItem.name} ist ein ${origin}er ${genderText}name, der in der kurdischen Namentradition die Bedeutung "${meaning.replace(/^[^;]+;\s*/, '')}" trägt.`,
-                ar: `اسم ${nameItem.name} هو اسم ${genderText} ذو أصل ${origin}، يحمل في ثقافة التسمية الكردية دلالة "${meaning.replace(/^[^;]+;\s*/, '')}".`,
+                tr: `${nameItem.name}, ${origin} kökenli bir ${genderText} ismi olup Kürtçe ad geleneğinde "${meaning.replace(/^[^;]+;\s*/, '')}" manasını taşır. Sözlük arşivimizde ${nameItem.letter} harfiyle başlayan ${navContext.letterTotal} isim arasında #${navContext.letterRank}. sırada kayıtlıdır.`,
+                en: `${nameItem.name} is a ${origin} ${genderText} name embodying the meaning "${meaning.replace(/^[^;]+;\s*/, '')}" in Kurdish naming culture, cataloged at #${navContext.letterRank} among ${navContext.letterTotal} names starting with ${nameItem.letter}.`,
+                de: `${nameItem.name} ist ein ${origin}er ${genderText}name mit der Bedeutung „${meaning.replace(/^[^;]+;\s*/, '')}“, verzeichnet auf Platz #${navContext.letterRank} von ${navContext.letterTotal} Namen mit dem Anfangsbuchstaben ${nameItem.letter}.`,
+                ar: `اسم ${nameItem.name} هو اسم ${genderText} ذو أصل ${origin}، يحمل دلالة "${meaning.replace(/^[^;]+;\s*/, '')}" ويصنف في المرتبة #${navContext.letterRank} ضمن ${navContext.letterTotal} اسماً يبدأ بحرف ${nameItem.letter}.`,
               }[locale]}
             </p>
           </div>
 
-          {/* Info Table */}
-          <div style={{ marginTop: '1.75rem' }}>
-            <table className="infobox" style={{ width: '100%', maxWidth: '460px', float: 'none', margin: 0 }}>
+          {/* Info & Linguistic Structure Table */}
+          <div style={{ marginTop: '1.75rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.25rem' }}>
+            <table className="infobox" style={{ width: '100%', float: 'none', margin: 0 }}>
               <tbody>
                 <tr>
                   <td>{t('detail_gender')}</td>
@@ -588,23 +628,81 @@ export default async function SlugDetailPage({
                 <tr>
                   <td>{t('detail_letter')}</td>
                   <td>
-                    <Link href={generatePath(locale, 'category', nameItem.letter)}>{nameItem.letter}</Link>
+                    <Link href={generatePath(locale, 'category', nameItem.letter)}>
+                      {nameItem.letter} ({navContext.letterRank} / {navContext.letterTotal})
+                    </Link>
                   </td>
                 </tr>
                 <tr>
                   <td>{t('compare_stat_length')}</td>
                   <td>
-                    {nameItem.name.length}{' '}
+                    {lingAnalysis.charCount}{' '}
                     {{
-                      tr: 'harf',
-                      en: 'letters',
-                      de: 'Buchstaben',
-                      ar: 'أحرف',
+                      tr: `harf (${lingAnalysis.syllableCount} hece)`,
+                      en: `letters (${lingAnalysis.syllableCount} syllables)`,
+                      de: `Buchstaben (${lingAnalysis.syllableCount} Silben)`,
+                      ar: `أحرف (${lingAnalysis.syllableCount} مقاطع)`,
+                    }[locale]}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    {{
+                      tr: 'Ses Dağılımı',
+                      en: 'Phonetic Profile',
+                      de: 'Lautstruktur',
+                      ar: 'التوزيع الصوتي',
+                    }[locale]}
+                  </td>
+                  <td>
+                    {{
+                      tr: `${lingAnalysis.vowelCount} ünlü (${lingAnalysis.uniqueVowels.join(', ')}), ${lingAnalysis.consonantCount} ünsüz`,
+                      en: `${lingAnalysis.vowelCount} vowels (${lingAnalysis.uniqueVowels.join(', ')}), ${lingAnalysis.consonantCount} consonants`,
+                      de: `${lingAnalysis.vowelCount} Vokale (${lingAnalysis.uniqueVowels.join(', ')}), ${lingAnalysis.consonantCount} Konsonanten`,
+                      ar: `${lingAnalysis.vowelCount} حروف علة (${lingAnalysis.uniqueVowels.join(', ')})، ${lingAnalysis.consonantCount} سواكن`,
                     }[locale]}
                   </td>
                 </tr>
               </tbody>
             </table>
+
+            {/* Linguistic & Morphological Note Box */}
+            <div
+              style={{
+                background: 'var(--surface-alt)',
+                border: '1px solid var(--border-dim)',
+                borderRadius: 'var(--r-lg)',
+                padding: '1.15rem 1.25rem',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                gap: '0.45rem',
+              }}
+            >
+              <h3 style={{ fontSize: '0.88rem', fontWeight: 800, margin: 0, color: 'var(--text)' }}>
+                {{
+                  tr: `${nameItem.name} Dilbilimsel ve Fonetik İncelemesi`,
+                  en: `${nameItem.name} Linguistic & Phonetic Analysis`,
+                  de: `Sprachliche & phonetische Analyse von ${nameItem.name}`,
+                  ar: `التحليل اللغوي والصوتي لاسم ${nameItem.name}`,
+                }[locale]}
+              </h3>
+              <p style={{ fontSize: '0.835rem', lineHeight: 1.65, color: 'var(--text-muted)', margin: 0 }}>
+                {lingAnalysis.detectedSuffix
+                  ? {
+                      tr: `${nameItem.name} adı ${lingAnalysis.syllableCount} heceli bir yapıya sahiptir ve morfolojik olarak ${lingAnalysis.detectedSuffix.meaning.tr} barındırır. "${lingAnalysis.firstLetter}" önsesi ile başlayıp "${lingAnalysis.lastLetter}" sonsesi ile tamamlanır.`,
+                      en: `${nameItem.name} features a ${lingAnalysis.syllableCount}-syllable prosodic structure incorporating ${lingAnalysis.detectedSuffix.meaning.en}. It opens with the "${lingAnalysis.firstLetter}" phoneme and closes with "${lingAnalysis.lastLetter}".`,
+                      de: `${nameItem.name} weist eine ${lingAnalysis.syllableCount}-silbige Struktur auf und beinhaltet ${lingAnalysis.detectedSuffix.meaning.de}.`,
+                      ar: `يتألف اسم ${nameItem.name} من ${lingAnalysis.syllableCount} مقاطع صوتية، ويشتمل صرفياً على ${lingAnalysis.detectedSuffix.meaning.ar}.`,
+                    }[locale]
+                  : {
+                      tr: `${nameItem.name} adı "${lingAnalysis.firstLetter}" harfiyle başlayan, ${lingAnalysis.vowelCount} ünlü (${lingAnalysis.uniqueVowels.join(', ')}) ve ${lingAnalysis.consonantCount} ünsüz harften oluşan ${lingAnalysis.syllableCount} heceli dengeli bir Kürtçe özel isimdir. Genel sözlük dizininde #${navContext.globalRank} / ${navContext.globalTotal} sırada yer alır.`,
+                      en: `${nameItem.name} is a balanced ${lingAnalysis.syllableCount}-syllable Kurdish given name composed of ${lingAnalysis.vowelCount} vowels (${lingAnalysis.uniqueVowels.join(', ')}) and ${lingAnalysis.consonantCount} consonants, indexed at #${navContext.globalRank} of ${navContext.globalTotal} in the master lexicon.`,
+                      de: `${nameItem.name} ist ein ausgewogener ${lingAnalysis.syllableCount}-silbiger kurdischer Vorname aus ${lingAnalysis.vowelCount} Vokalen und ${lingAnalysis.consonantCount} Konsonanten (Lexikonplatz #${navContext.globalRank} von ${navContext.globalTotal}).`,
+                      ar: `اسم ${nameItem.name} اسم علم كردي متوازن يتكون من ${lingAnalysis.syllableCount} مقاطع صوتية (${lingAnalysis.vowelCount} حروف علة و${lingAnalysis.consonantCount} حروف ساكنة)، ومفهرس في المرتبة #${navContext.globalRank} من أصل ${navContext.globalTotal}.`,
+                    }[locale]}
+              </p>
+            </div>
           </div>
 
           {/* Action Buttons: WhatsApp Share & HTML5 Canvas Card Download */}
@@ -631,6 +729,80 @@ export default async function SlugDetailPage({
             }}
           />
         </section>
+
+        {/* Alphabetical Prev / Next Navigation Ring (Unbroken 4,709-Name Crawl Chain) */}
+        <nav
+          aria-label="Alphabetical Name Pagination"
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+            gap: '0.75rem',
+          }}
+        >
+          <Link
+            href={generatePath(locale, 'name', navContext.prevName.id)}
+            style={{
+              padding: '0.85rem 1.1rem',
+              borderRadius: 'var(--r-lg)',
+              border: '1px solid var(--border)',
+              background: 'var(--surface)',
+              textDecoration: 'none',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '0.2rem',
+            }}
+          >
+            <span style={{ fontSize: '0.72rem', color: 'var(--text-faint)', fontWeight: 700, textTransform: 'uppercase' }}>
+              ← {{ tr: 'Önceki İsim', en: 'Previous Name', de: 'Vorheriger Name', ar: 'الاسم السابق' }[locale]}
+            </span>
+            <strong style={{ fontSize: '0.98rem', color: 'var(--text)' }}>{navContext.prevName.name}</strong>
+          </Link>
+
+          <Link
+            href={generatePath(locale, 'category', nameItem.letter)}
+            style={{
+              padding: '0.85rem 1.1rem',
+              borderRadius: 'var(--r-lg)',
+              border: '1px solid var(--border)',
+              background: 'var(--surface)',
+              textDecoration: 'none',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.2rem',
+              textAlign: 'center',
+            }}
+          >
+            <span style={{ fontSize: '0.72rem', color: 'var(--text-faint)', fontWeight: 700, textTransform: 'uppercase' }}>
+              {{ tr: 'Harf Fihristi', en: 'Letter Index', de: 'Buchstabenindex', ar: 'فهرس الحرف' }[locale]}
+            </span>
+            <strong style={{ fontSize: '0.98rem', color: 'var(--accent)' }}>
+              {nameItem.letter} ({{ tr: `${navContext.letterTotal} İsim`, en: `${navContext.letterTotal} Names`, de: `${navContext.letterTotal} Namen`, ar: `${navContext.letterTotal} اسم` }[locale]})
+            </strong>
+          </Link>
+
+          <Link
+            href={generatePath(locale, 'name', navContext.nextName.id)}
+            style={{
+              padding: '0.85rem 1.1rem',
+              borderRadius: 'var(--r-lg)',
+              border: '1px solid var(--border)',
+              background: 'var(--surface)',
+              textDecoration: 'none',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'flex-end',
+              gap: '0.2rem',
+              textAlign: 'right',
+            }}
+          >
+            <span style={{ fontSize: '0.72rem', color: 'var(--text-faint)', fontWeight: 700, textTransform: 'uppercase' }}>
+              {{ tr: 'Sonraki İsim', en: 'Next Name', de: 'Nächster Name', ar: 'الاسم التالي' }[locale]} →
+            </span>
+            <strong style={{ fontSize: '0.98rem', color: 'var(--text)' }}>{navContext.nextName.name}</strong>
+          </Link>
+        </nav>
 
         {/* Similar Names Section */}
         {similarNames.length > 0 && (
@@ -678,7 +850,65 @@ export default async function SlugDetailPage({
           </section>
         )}
 
-        {/* Dynamic 15 FAQs Section (Server-Rendered in HTML for Googlebot) */}
+        {/* Same-Letter Peer Names (12-Node Circulant Graph for Complete Letter Indexing) */}
+        {navContext.letterPeers.length > 0 && (
+          <section>
+            <h2 className="section-heading">
+              {{
+                tr: `${nameItem.letter} Harfiyle Başlayan Diğer Kürtçe İsimler`,
+                en: `More Kurdish Names Starting with ${nameItem.letter}`,
+                de: `Weitere kurdische Namen mit dem Buchstaben ${nameItem.letter}`,
+                ar: `أسماء كردية أخرى تبدأ بحرف ${nameItem.letter}`,
+              }[locale]}
+            </h2>
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(190px, 1fr))',
+                gap: '0.65rem',
+              }}
+            >
+              {navContext.letterPeers.map((peer) => (
+                <Link
+                  key={peer.id}
+                  href={generatePath(locale, 'name', peer.id)}
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '0.2rem',
+                    padding: '0.75rem 0.9rem',
+                    borderRadius: 'var(--r-md)',
+                    border: '1px solid var(--border-dim)',
+                    background: 'var(--surface)',
+                    textDecoration: 'none',
+                  }}
+                >
+                  <strong
+                    style={{
+                      color: peer.gender === 'female' ? 'var(--female)' : 'var(--male)',
+                      fontSize: '0.925rem',
+                    }}
+                  >
+                    {peer.name}
+                  </strong>
+                  <span
+                    style={{
+                      fontSize: '0.76rem',
+                      color: 'var(--text-muted)',
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                      whiteSpace: 'nowrap',
+                    }}
+                  >
+                    {getLocalizedMeaning(peer, locale)}
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Dynamic FAQs Section (Server-Rendered in HTML for Googlebot) */}
         <section>
           <h2 className="section-heading">
             {{
@@ -714,7 +944,7 @@ export default async function SlugDetailPage({
   }
 
   /* ═══════════════════════════════════════════════════════════════════════════
-   * MODULE B: CATEGORY PAGE (/tr/kategori/A, /tr/kategori/Ç, /tr/kategori/kiz, etc.)
+   * MODULE B: CATEGORY PAGE (/tr/kategori/a, /tr/kategori/ç, /tr/kategori/kiz, etc.)
    * ═══════════════════════════════════════════════════════════════════════════ */
   if (routeKey === 'category') {
     const activeLetters = getActiveLettersWithCounts();
@@ -755,10 +985,54 @@ export default async function SlugDetailPage({
     const hookCategory =
       genderCategory === 'female' ? 'female' : genderCategory === 'male' ? 'male' : 'search';
     const contextualHook = generateContextualHook(decodedSlug, hookCategory, locale, title);
-    const pageUrl = `https://kurdishname.com${generatePath(locale, 'category', decodedSlug)}`;
+    const pageUrl = encodeURI(`https://kurdishname.com${generatePath(locale, 'category', decodedSlug)}`);
 
-    // Limit displayed DOM nodes on huge gender pages while rendering full letter categories
-    const displayList = isLetterValid ? categoryNames : categoryNames.slice(0, 200);
+    // On letter pages, render 100% of names in that letter.
+    // On gender/theme pages, sample evenly across ALL 29 active letters (up to 22 per letter)
+    // so letters C through Z are never cut off by an alphabetical .slice(0, 200)!
+    const displayList = isLetterValid
+      ? categoryNames
+      : activeLetters.flatMap(({ letter }) =>
+          categoryNames
+            .filter((n) => (n.letter || n.name.charAt(0)).trim().toUpperCase() === letter)
+            .slice(0, 22)
+        );
+
+    const sampleTopNames = displayList.slice(0, 8).map((n) => n.name).join(', ');
+    const catFaqs = [
+      {
+        question:
+          {
+            tr: `${title} arşivinde kaç isim yer alıyor?`,
+            en: `How many names are included in the ${title} collection?`,
+            de: `Wie viele Namen umfasst die Sammlung ${title}?`,
+            ar: `كم عدد الأسماء المدرجة في قائمة ${title}؟`,
+          }[locale] || `${title} arşivinde kaç isim yer alıyor?`,
+        answer:
+          {
+            tr: `KurdishName sözlüğünün bu kategorisinde toplam ${categoryNames.length} otantik Kürtçe isim, Türkçe ve çok dilli anlam açıklamaları, telaffuz rehberi ve köken bilgileriyle birlikte listelenmektedir. Öne çıkan örnekler arasında ${sampleTopNames} yer alır.`,
+            en: `This collection features ${categoryNames.length} authentic Kurdish names complete with meanings, pronunciation guides, and etymological origins, including notable examples such as ${sampleTopNames}.`,
+            de: `Diese Kategorie umfasst ${categoryNames.length} authentische kurdische Namen mit Bedeutungen, Aussprache und Herkunft, darunter ${sampleTopNames}.`,
+            ar: `تضم هذه الفئة ${categoryNames.length} اسماً كردياً أصيلاً مع معانيها وطريقة نطقها وأصولها اللغوية، ومن أبرزها: ${sampleTopNames}.`,
+          }[locale] || '',
+      },
+      {
+        question:
+          {
+            tr: `Duyulmamış ve nadir ${title.toLowerCase()} nasıl bulunur?`,
+            en: `How can I explore rare and unique names in ${title}?`,
+            de: `Wie finde ich seltene und besondere Namen in ${title}?`,
+            ar: `كيف يمكنني استكشاف الأسماء النادرة والفريدة في ${title}؟`,
+          }[locale] || '',
+        answer:
+          {
+            tr: `Sayfadaki A–Z harf filtrelerini kullanarak her harf grubundaki hem popüler hem de daha önce az duyulmuş, nadir Kürtçe isimleri detaylı anlamlarıyla inceleyebilir; her ismin üzerine tıklayarak hece ve köken analizine ulaşabilirsiniz.`,
+            en: `Use the A–Z alphabetical directory above to browse both popular and rare Kurdish names across all 29 letters of the Kurdish alphabet, and click any name for its full phonetic and morphological profile.`,
+            de: `Nutzen Sie die A–Z-Buchstabennavigation, um sowohl bekannte als auch seltene kurdische Namen aller 29 Buchstaben mit vollständiger Silben- und Herkunftsanalyse zu entdecken.`,
+            ar: `يمكنك استخدام فهرس الحروف الأبجدية (A–Z) أعلاه لتصفح الأسماء الكردية الشائعة والنادرة عبر جميع حروف الأبجدية الكردية التسعة والعشرين.`,
+          }[locale] || '',
+      },
+    ];
 
     const jsonLd = {
       '@context': 'https://schema.org',
@@ -779,7 +1053,7 @@ export default async function SlugDetailPage({
             '@type': 'ListItem',
             position: idx + 1,
             name: item.name,
-            url: `https://kurdishname.com${generatePath(locale, 'name', item.id)}`,
+            url: encodeURI(`https://kurdishname.com${generatePath(locale, 'name', item.id)}`),
           })),
         },
         {
@@ -798,6 +1072,17 @@ export default async function SlugDetailPage({
               item: pageUrl,
             },
           ],
+        },
+        {
+          '@type': 'FAQPage',
+          mainEntity: catFaqs.map((f) => ({
+            '@type': 'Question',
+            name: f.question,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: f.answer,
+            },
+          })),
         },
       ],
     };
@@ -874,6 +1159,26 @@ export default async function SlugDetailPage({
             </tbody>
           </table>
         </div>
+
+        {/* Category FAQs */}
+        <section style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+          {catFaqs.map((faq, i) => (
+            <div
+              key={i}
+              style={{
+                background: 'var(--surface)',
+                border: '1px solid var(--border)',
+                borderRadius: 'var(--r-lg)',
+                padding: '1.1rem 1.25rem',
+              }}
+            >
+              <h2 style={{ fontSize: '0.95rem', fontWeight: 700, margin: '0 0 0.35rem 0' }}>{faq.question}</h2>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, lineHeight: 1.65 }}>
+                {faq.answer}
+              </p>
+            </div>
+          ))}
+        </section>
       </div>
     );
   }

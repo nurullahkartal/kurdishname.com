@@ -13,7 +13,8 @@ import {
 } from '@/lib/routes-config';
 import { buildPageMetadata } from '@/lib/seo-metadata';
 import { getBlogPostsByLang } from '@/lib/blog-registry';
-import { getActiveLettersWithCounts } from '@/lib/names-data';
+import { getActiveLettersWithCounts, getNamesByLetter, getAllNames } from '@/lib/names-data';
+import { getLocalizedMeaning } from '@/lib/name-helpers';
 import FinderClient from '@/components/FinderClient';
 import CompareClient from '@/components/CompareClient';
 import SuggestClient from '@/components/SuggestClient';
@@ -520,24 +521,151 @@ export default async function SectionPage({
 
   // alphabet, mythology, tribes, surnames
   const activeLetters = getActiveLettersWithCounts();
+  const allNames = getAllNames();
+
+  if (routeKey === 'mythology' || routeKey === 'tribes' || routeKey === 'surnames') {
+    const pageTitle =
+      routeKey === 'mythology'
+        ? {
+            tr: 'Kürt Mitolojisi ve Destansı İsimler',
+            en: 'Kurdish Mythology & Epic Names',
+            de: 'Kurdische Mythologie & Epische Namen',
+            ar: 'أسماء الميثولوجيا والملاحم الكردية',
+          }[locale]
+        : routeKey === 'tribes'
+        ? {
+            tr: 'Tarihi Kürt Boyları ve Aşiret İsimleri',
+            en: 'Historical Kurdish Tribes & Heritage Names',
+            de: 'Historische kurdische Stämme & Namen',
+            ar: 'أسماء العشائر والقبائل الكردية التاريخية',
+          }[locale]
+        : {
+            tr: 'Kürtçe Soyadları ve Aile Köken İsimleri',
+            en: 'Kurdish Surnames & Lineage Names',
+            de: 'Kurdische Nachnamen & Familiennamen',
+            ar: 'الألقاب وأسماء العائلات الكردية',
+          }[locale];
+
+    const filteredSample =
+      routeKey === 'mythology'
+        ? allNames.filter((n) => n.tags?.some((tg) => tg.includes('Destan') || tg.includes('Işık'))).slice(0, 60)
+        : routeKey === 'tribes'
+        ? allNames.filter((n) => n.tags?.some((tg) => tg.includes('Cesaret') || tg.includes('Bilgelik'))).slice(0, 60)
+        : allNames.filter((n) => n.name.toLowerCase().endsWith('zad') || n.name.toLowerCase().endsWith('van') || n.name.toLowerCase().endsWith('dar')).slice(0, 60);
+
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '1.75rem' }}>
+        <div>
+          <h1 className="page-title">{pageTitle}</h1>
+          <p style={{ fontSize: '0.925rem', color: 'var(--text-muted)', lineHeight: 1.65 }}>
+            {t('home_description')}
+          </p>
+        </div>
+
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+            gap: '0.75rem',
+          }}
+        >
+          {filteredSample.map((item) => (
+            <Link
+              key={item.id}
+              href={generatePath(locale, 'name', item.id)}
+              style={{
+                padding: '0.9rem 1rem',
+                borderRadius: 'var(--r-lg)',
+                border: '1px solid var(--border)',
+                background: 'var(--surface)',
+                textDecoration: 'none',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.25rem',
+              }}
+            >
+              <strong style={{ color: item.gender === 'female' ? 'var(--female)' : 'var(--male)', fontSize: '1rem' }}>
+                {item.name}
+              </strong>
+              <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+                {getLocalizedMeaning(item, locale)}
+              </span>
+            </Link>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div>
-      <h1 className="page-title">{t('alphabet_title')}</h1>
-      <p style={{ fontSize: '0.925rem', color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
-        {t('home_description')}
-      </p>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-        {activeLetters.map(({ letter, count }) => (
-          <Link
-            key={letter}
-            href={generatePath(locale, 'category', letter)}
-            className="alpha-btn"
-            style={{ width: 'auto', padding: '0 0.85rem', gap: '0.35rem' }}
-          >
-            <strong>{letter}</strong>
-            <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>({count})</span>
-          </Link>
-        ))}
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.75rem' }}>
+      <div>
+        <h1 className="page-title">{t('alphabet_title')}</h1>
+        <p style={{ fontSize: '0.925rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
+          {t('home_description')}
+        </p>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+          {activeLetters.map(({ letter, count }) => (
+            <Link
+              key={letter}
+              href={generatePath(locale, 'category', letter)}
+              className="alpha-btn"
+              style={{ width: 'auto', padding: '0 0.85rem', gap: '0.35rem' }}
+            >
+              <strong>{letter}</strong>
+              <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>({count})</span>
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      {/* A-Z Letter Sections with Sample Names for Deep Crawlability */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+        {activeLetters.map(({ letter, count }) => {
+          const sample = getNamesByLetter(letter).slice(0, 12);
+          return (
+            <section
+              key={letter}
+              style={{
+                background: 'var(--surface)',
+                border: '1px solid var(--border)',
+                borderRadius: 'var(--r-lg)',
+                padding: '1.25rem',
+              }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
+                <h2 style={{ fontSize: '1.15rem', fontWeight: 800, margin: 0 }}>
+                  <Link href={generatePath(locale, 'category', letter)} style={{ textDecoration: 'none', color: 'var(--text)' }}>
+                    {letter} ({count})
+                  </Link>
+                </h2>
+                <Link href={generatePath(locale, 'category', letter)} style={{ fontSize: '0.8rem', fontWeight: 700 }}>
+                  {count} →
+                </Link>
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.45rem' }}>
+                {sample.map((nm) => (
+                  <Link
+                    key={nm.id}
+                    href={generatePath(locale, 'name', nm.id)}
+                    style={{
+                      padding: '0.3rem 0.65rem',
+                      borderRadius: '6px',
+                      border: '1px solid var(--border-dim)',
+                      background: 'var(--surface-alt)',
+                      fontSize: '0.825rem',
+                      fontWeight: 600,
+                      color: nm.gender === 'female' ? 'var(--female)' : 'var(--male)',
+                      textDecoration: 'none',
+                    }}
+                  >
+                    {nm.name}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          );
+        })}
       </div>
     </div>
   );

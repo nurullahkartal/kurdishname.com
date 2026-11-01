@@ -248,6 +248,7 @@ export default function NameCardShareActions({
 
   return (
     <div
+      data-nosnippet
       style={{
         marginTop: '1.75rem',
         paddingTop: '1.5rem',
