@@ -32,6 +32,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="tr" suppressHydrationWarning>
       <head>
         <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-67HLWTCG3P"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-67HLWTCG3P');`,
+          }}
+        />
+        <script
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="TJ1/pH6WLCLfpnFgVAmZsA"
           async

@@ -1,4 +1,8 @@
 import os
+import sys
+
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 out_dir = 'out'
 deleted_count = 0
